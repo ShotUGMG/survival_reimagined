@@ -22,7 +22,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_SWORD_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.DIAMOND_SWORD).copy();
 				_setstack.setCount(1);
@@ -34,7 +34,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_PICKAXE_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.DIAMOND_PICKAXE).copy();
 				_setstack.setCount(1);
@@ -46,7 +46,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_AXE_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.DIAMOND_AXE).copy();
 				_setstack.setCount(1);
@@ -58,7 +58,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_SHOVEL_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.DIAMOND_SHOVEL).copy();
 				_setstack.setCount(1);
@@ -70,7 +70,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_HOE_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(Items.DIAMOND_HOE).copy();
 				_setstack.setCount(1);
@@ -82,7 +82,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_SAW_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.DIAMOND_SAW.get()).copy();
 				_setstack.setCount(1);
@@ -94,7 +94,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_HAMMER_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.DIAMOND_HAMMER.get()).copy();
 				_setstack.setCount(1);
@@ -106,7 +106,7 @@ public class DiamondGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.DIAMOND_KNIFE_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reborn:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.DIAMOND_KNIFE.get()).copy();
 				_setstack.setCount(1);

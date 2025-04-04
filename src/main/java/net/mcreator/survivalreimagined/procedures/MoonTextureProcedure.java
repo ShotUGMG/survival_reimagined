@@ -40,9 +40,9 @@ public class MoonTextureProcedure {
 			return;
 		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true) {
 			if (world.isClientSide()) {
-				Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("survival_reborn:textures/environment/blood_moon.png"));
+				Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png"));
 				Minecraft.getInstance().getTextureManager().register(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"),
-						Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("survival_reborn:textures/environment/blood_moon.png")));
+						Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png")));
 			}
 		} else if (world.getMaxLocalRawBrightness(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())) > 5) {
 			if (world.isClientSide()) {

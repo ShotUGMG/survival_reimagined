@@ -1469,9 +1469,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_smoking": {
+  "survival_reimagined:survival_reborn": {
     "criteria": {
-      "has_beef": "2025-04-03 19:42:55 -0700"
+      "survival_reborn_0": "2025-04-03 19:31:19 -0700"
     },
     "done": true
   },
@@ -1481,6 +1481,24 @@
       "primitive_tools_1": "2025-04-03 19:31:44 -0700"
     },
     "done": false
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2025-04-03 19:42:55 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2025-04-03 19:42:55 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2025-04-03 19:42:55 -0700"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/crimson_planks": {
     "criteria": {
@@ -1500,21 +1518,33 @@
     },
     "done": true
   },
-  "survival_reimagined:survival_reborn": {
+  "survival_reimagined:ready_for_alloys": {
     "criteria": {
-      "survival_reborn_0": "2025-04-03 19:31:19 -0700"
+      "ready_for_alloys_0": "2025-04-04 02:43:51 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef": {
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
     "criteria": {
-      "has_beef": "2025-04-03 19:42:55 -0700"
+      "has_raw_copper": "2025-04-04 02:44:00 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+  "minecraft:recipes/building_blocks/raw_copper_block": {
     "criteria": {
-      "has_beef": "2025-04-03 19:42:55 -0700"
+      "has_raw_copper": "2025-04-04 02:44:00 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2025-04-04 02:44:00 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2025-04-04 02:44:07 -0700"
     },
     "done": true
   },

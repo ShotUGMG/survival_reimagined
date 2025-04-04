@@ -46,7 +46,7 @@ public class ExtraMeatProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reborn:knifes")))
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.COW_LEG.get()) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (new Object() {
@@ -108,7 +108,7 @@ public class ExtraMeatProcedure {
 					world.destroyBlock(BlockPos.containing(x, y, z), false);
 				});
 			}
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reborn:knifes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.COW_HEAD.get()) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (new Object() {

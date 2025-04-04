@@ -45,7 +45,7 @@ public class StrippedLogToCaftingTableProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("survival_reborn:becomes_crafting_table")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("survival_reimagined:becomes_crafting_table")))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.COPPER_CHISEL.get()) {
 				if (Math.random() < 0.1) {
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
