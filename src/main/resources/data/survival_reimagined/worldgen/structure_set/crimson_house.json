@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "survival_reimagined:crimson_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 15,
+    "separation": 10,
+    "salt": 954487129
+  }
+}

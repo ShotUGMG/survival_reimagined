@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:deepslate_rock"
+    }
+  },
+  "result": {
+    "id": "minecraft:cobbled_deepslate",
+    "count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AcaciaPlank"
+      },
+      {
+        "value": "CUSTOM:BoatPaddles"
+      },
+      {
+        "value": "CUSTOM:AcaciaPlank"
+      },
+      {
+        "value": "CUSTOM:AcaciaPlank"
+      },
+      {
+        "value": "CUSTOM:AcaciaPlank"
+      },
+      {
+        "value": "CUSTOM:AcaciaPlank"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.ACACIA_BOAT"
+    },
+    "name": "acacia_boat",
+    "namespace": "minecraft"
+  }
+}

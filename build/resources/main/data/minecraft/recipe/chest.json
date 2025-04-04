@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:single_planks"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "id": "minecraft:chest",
+    "count": 1
+  }
+}

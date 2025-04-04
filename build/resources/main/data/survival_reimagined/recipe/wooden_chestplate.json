@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:single_planks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:wooden_chestplate",
+    "count": 1
+  }
+}

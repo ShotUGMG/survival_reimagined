@@ -1,0 +1,25 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-04-03 20:06:15 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:frozen_river": "2025-04-03 20:06:27 -0700",
+      "minecraft:forest": "2025-04-03 20:07:45 -0700",
+      "minecraft:river": "2025-04-03 20:06:44 -0700",
+      "minecraft:snowy_plains": "2025-04-03 20:06:15 -0700",
+      "minecraft:plains": "2025-04-03 20:06:40 -0700"
+    },
+    "done": false
+  },
+  "survival_reimagined:survival_reborn": {
+    "criteria": {
+      "survival_reborn_0": "2025-04-03 20:06:15 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 73,
+  "_type": "itemextension",
+  "definition": {
+    "item": {
+      "value": "CUSTOM:BirchBark"
+    },
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 300.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

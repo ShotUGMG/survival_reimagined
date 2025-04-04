@@ -1,0 +1,32 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Forge",
+    "blockstateList": [
+      {
+        "texture": "forge_bottom",
+        "textureTop": "forge_top_open",
+        "textureLeft": "forge_side",
+        "textureFront": "forge_side",
+        "textureRight": "forge_side",
+        "textureBack": "forge_side",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

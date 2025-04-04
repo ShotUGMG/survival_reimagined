@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "22": "dried_clay",
+        "11": "sword_blade_mold"
+      },
+      "name": "default"
+    }
+  }
+}

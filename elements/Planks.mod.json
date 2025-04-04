@@ -1,0 +1,37 @@
+{
+  "_fv": 73,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Planks",
+    "achievementDescription": "Make a Saw and use it to make planks",
+    "achievementIcon": {
+      "value": "CUSTOM:OakPlank"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "MRTRecipe",
+      "WoodenSword",
+      "WoodenPickaxe",
+      "WoodenAxe",
+      "WoodenShovel",
+      "WoodenHoe",
+      "WoodenHelmet",
+      "WoodenChestplate",
+      "WoodenLeggings",
+      "WoodenBoots",
+      "WoodenSawRecipe",
+      "WoodenHammerRecipe"
+    ],
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:CraftingTable"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

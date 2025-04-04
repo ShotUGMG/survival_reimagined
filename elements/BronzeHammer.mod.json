@@ -1,0 +1,39 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "MultiTool",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "bronze_hammer",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Bronze Hammer",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreativeTab"
+      }
+    ],
+    "efficiency": 5.0,
+    "attackSpeed": 0.7999999999999999,
+    "enchantability": 7,
+    "damageVsEntity": 6.5,
+    "usageCount": 350,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:BronzeIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "cow_skinned_gutted"
+      },
+      "name": "default"
+    }
+  }
+}

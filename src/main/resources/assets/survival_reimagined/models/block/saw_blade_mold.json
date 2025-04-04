@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/saw_mold",
+  "textures": {
+    "all": "survival_reimagined:block/saw_blade_mold",
+    "particle": "survival_reimagined:block/saw_blade_mold",
+    "22": "survival_reimagined:block/dried_clay",
+    "20": "survival_reimagined:block/saw_blade_mold"
+  },
+  "render_type": "solid"
+}

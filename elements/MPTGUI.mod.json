@@ -1,0 +1,302 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mineral_processing_table",
+          "text": {
+            "fixedValue": "Mineral Processing Table"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 187,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 223,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:ReactorRod"
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "OneRodLimit"
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "EmptyRodInSlot"
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick1"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick2"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick3"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick4"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick5"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick6"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick7"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick8"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick9"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick10"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick11"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick12"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick13"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MPTDisplayTick14"
+          },
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "item_thingy.png",
+          "use1Xscale": false,
+          "x": 206,
+          "y": 99,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "MPTGUIThisGUIIsOpened"
+    },
+    "onClosed": {
+      "name": "MPTGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 13,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

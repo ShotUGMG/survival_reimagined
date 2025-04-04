@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:uranium_dust"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:redstone_charged_uranium_dust",
+    "count": 2
+  }
+}

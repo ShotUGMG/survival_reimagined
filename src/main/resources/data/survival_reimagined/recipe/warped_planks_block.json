@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:warped_plank"
+    }
+  },
+  "result": {
+    "id": "minecraft:warped_planks",
+    "count": 1
+  }
+}

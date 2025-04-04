@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:single_planks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:wooden_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "_fv": 73,
+  "_type": "block",
+  "definition": {
+    "texture": "dead_sheep",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "dead_sheep:default",
+    "rotationMode": 1,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "minecraft:white_wool",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 5.66667,
+        "my": 5.66667,
+        "mz": 0.0,
+        "Mx": 17.66667,
+        "My": 9.66667,
+        "Mz": 4.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.66667,
+        "my": -0.33333,
+        "mz": 0.0,
+        "Mx": 17.66667,
+        "My": 3.66667,
+        "Mz": 4.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.66667,
+        "my": 5.66667,
+        "mz": 12.0,
+        "Mx": 17.66667,
+        "My": 9.66667,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.66667,
+        "my": -0.33333,
+        "mz": 12.0,
+        "Mx": 17.66667,
+        "My": 3.66667,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": -4.33333,
+        "my": 1.66667,
+        "mz": -7.0,
+        "Mx": 1.66667,
+        "My": 7.66667,
+        "Mz": 1.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.16667,
+        "my": 0.33334,
+        "mz": -0.83333,
+        "Mx": 7.16667,
+        "My": 8.33334,
+        "Mz": 15.16667,
+        "subtract": false
+      }
+    ],
+    "customProperties": [],
+    "name": "Sheep Carcass",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 1.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreativeTab"
+      }
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 0,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "NONE"
+    },
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "MUD"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "hasInventory": false,
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "SheepCarcassOnBlockRightClicked"
+    },
+    "onDestroyedByPlayer": {
+      "name": "SheepCarcassBlockDestroyedByPlayer"
+    },
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

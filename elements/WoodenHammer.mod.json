@@ -1,0 +1,35 @@
+{
+  "_fv": 73,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Special",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "wooden_hammer",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "name": "Wooden Hammer",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreativeTab"
+      }
+    ],
+    "efficiency": 2.0,
+    "attackSpeed": 0.8,
+    "enchantability": 15,
+    "damageVsEntity": 2.0,
+    "usageCount": 59,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "WOOD",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

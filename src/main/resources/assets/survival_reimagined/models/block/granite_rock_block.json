@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/granite_rock",
+  "textures": {
+    "all": "minecraft:block/granite",
+    "particle": "minecraft:block/granite",
+    "1": "minecraft:block/granite"
+  },
+  "render_type": "cutout_mipped"
+}

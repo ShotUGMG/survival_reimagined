@@ -1,0 +1,88 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"1": "Survival Reborn:entity/pig_gutted",
+		"particle": "Survival Reborn:entity/pig_gutted"
+	},
+	"elements": [
+		{
+			"name": "head",
+			"from": [4, 0, 4],
+			"to": [12, 8, 12],
+			"rotation": {"angle": 0, "axis": "z", "origin": [14, -6.64286, 12.07143]},
+			"faces": {
+				"north": {"uv": [2, 4, 4, 8], "texture": "#1"},
+				"east": {"uv": [0, 4, 2, 8], "texture": "#1"},
+				"south": {"uv": [6, 4, 8, 8], "texture": "#1"},
+				"west": {"uv": [4, 4, 6, 8], "texture": "#1"},
+				"up": {"uv": [4, 4, 2, 0], "texture": "#1"},
+				"down": {"uv": [6, 0, 4, 4], "texture": "#1"}
+			}
+		},
+		{
+			"name": "head",
+			"from": [6, 1, 3],
+			"to": [10, 4, 4],
+			"rotation": {"angle": 0, "axis": "z", "origin": [14, -6.64286, 12.07143]},
+			"faces": {
+				"north": {"uv": [4.25, 8.5, 5.25, 10], "texture": "#1"},
+				"east": {"uv": [4, 8.5, 4.25, 10], "texture": "#1"},
+				"south": {"uv": [5.5, 8.5, 6.5, 10], "texture": "#1"},
+				"west": {"uv": [5.25, 8.5, 5.5, 10], "texture": "#1"},
+				"up": {"uv": [5.25, 8.5, 4.25, 8], "texture": "#1"},
+				"down": {"uv": [6.25, 8, 5.25, 8.5], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -180, -88],
+			"translation": [-1.25, 0, 0.75],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -180, 92],
+			"translation": [1.5, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 90, -90],
+			"translation": [-11.5, -2.25, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 90],
+			"translation": [-6.5, -2.25, 0]
+		},
+		"ground": {
+			"translation": [0, 4.25, 0]
+		},
+		"gui": {
+			"rotation": [22.5, 160, -90],
+			"translation": [-2.75, -0.75, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"head": {
+			"rotation": [0, 0, -90],
+			"translation": [2.5, 7.75, -3.5]
+		},
+		"fixed": {
+			"translation": [0, 1.75, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "all",
+			"origin": [6, 5, 0],
+			"color": 0,
+			"children": [
+				{
+					"name": "head",
+					"origin": [6, 17, -6],
+					"color": 5,
+					"children": [0, 1]
+				}
+			]
+		}
+	]
+}

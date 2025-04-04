@@ -1,0 +1,37 @@
+{
+  "_fv": 73,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Clay Works",
+    "achievementDescription": "Find clay",
+    "achievementIcon": {
+      "value": "CUSTOM:ClayBrick"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": false,
+    "announceToChat": false,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "SwordMold",
+      "PickaxeMold",
+      "ShovelMold",
+      "AxeMold",
+      "HoeMold",
+      "SawMold",
+      "HammerMold",
+      "HelmetMoldRecipe",
+      "ChestplateMoldRecipe",
+      "LeggingsMoldRecipe",
+      "BootsMoldRecipe",
+      "CrucibleRecipe"
+    ],
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "CUSTOM:CraftingTable"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">Items.CLAY_BALL</field></block></value></block></next></block></xml>"
+  }
+}

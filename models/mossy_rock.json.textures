@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "10": "minecraft:mossy_cobblestone"
+      },
+      "name": "default"
+    }
+  }
+}

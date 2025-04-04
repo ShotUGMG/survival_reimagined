@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:uranium"
+    },
+    "title": {
+      "translate": "advancements.radioactive_metal.title"
+    },
+    "description": {
+      "translate": "advancements.radioactive_metal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "radioactive_metal_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:uranium"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "survival_reimagined:reactor_rod_recipe",
+      "survival_reimagined:mrt_recipe"
+    ]
+  },
+  "parent": "survival_reimagined:steel_age"
+}

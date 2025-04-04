@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "result": {
+    "id": "survival_reimagined:flint_tool",
+    "count": 1
+  }
+}

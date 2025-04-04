@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CryingObsidianRock"
+      },
+      {
+        "value": "CUSTOM:CryingObsidianRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CryingObsidianRock"
+      },
+      {
+        "value": "CUSTOM:CryingObsidianRock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.CRYING_OBSIDIAN"
+    },
+    "name": "crying_obi_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:TinIngot"
+      },
+      {
+        "value": "Items.BRICK"
+      },
+      {
+        "value": "CUSTOM:TinIngot"
+      },
+      {
+        "value": "Items.BRICK"
+      },
+      {
+        "value": "CUSTOM:Crucible"
+      },
+      {
+        "value": "Items.BRICK"
+      },
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      },
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      },
+      {
+        "value": "Blocks.SMOOTH_STONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Forge"
+    },
+    "name": "forge_recipe",
+    "namespace": "mod"
+  }
+}

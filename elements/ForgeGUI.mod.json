@@ -1,0 +1,504 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_forge",
+          "text": {
+            "fixedValue": "Forge"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 201,
+          "y": 43,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 196,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 214,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:minecraft:fuels"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 151,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick14FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick13FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick12FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick11FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick10FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick9FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick8FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick7FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick6FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick5FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick4FuelTimer"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick3FuelMeter"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick2FuelMeter"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick1FuelMeter"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fuel_meter_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick0FuelMeter"
+          },
+          "x": 138,
+          "y": 87,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick0BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick1BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick2BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick3BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick4BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick5BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick6BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick7BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick8BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick9BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick10BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick11BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick12BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick13BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplayTick14BurnTime"
+          },
+          "x": 238,
+          "y": 72,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "ForgeGUIThisGUIIsOpened"
+    },
+    "onClosed": {
+      "name": "ForgeGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 6,
+      "oy": 21,
+      "snapOnGrid": false
+    }
+  }
+}

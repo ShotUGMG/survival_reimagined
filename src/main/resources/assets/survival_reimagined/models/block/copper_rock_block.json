@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/copper_rock",
+  "textures": {
+    "all": "minecraft:block/raw_copper_block",
+    "particle": "minecraft:block/raw_copper_block",
+    "missing": "minecraft:block/raw_copper_block"
+  },
+  "render_type": "solid"
+}

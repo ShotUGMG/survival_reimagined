@@ -1,0 +1,41 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Apple",
+    "blockstateList": [
+      {
+        "texture": "ripe_apple",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "apple_ripe:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 6.5,
+            "my": 12.0,
+            "mz": 6.5,
+            "Mx": 9.5,
+            "My": 15.0,
+            "Mz": 9.5,
+            "subtract": false
+          },
+          {
+            "mx": 7.5,
+            "my": 15.0,
+            "mz": 7.5,
+            "Mx": 8.5,
+            "My": 16.0,
+            "Mz": 8.5,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

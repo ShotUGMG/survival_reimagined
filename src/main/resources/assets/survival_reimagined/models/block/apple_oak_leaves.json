@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "survival_reimagined:block/oak_leaves_apple_stems",
+    "particle": "survival_reimagined:block/oak_leaves_apple_stems"
+  }
+}

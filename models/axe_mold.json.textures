@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "22": "dried_clay",
+        "21": "axe_head_mold"
+      },
+      "name": "default"
+    }
+  }
+}

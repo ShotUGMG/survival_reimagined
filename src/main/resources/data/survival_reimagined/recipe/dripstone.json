@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:dripstone_rock"
+    }
+  },
+  "result": {
+    "id": "minecraft:dripstone_block",
+    "count": 1
+  }
+}

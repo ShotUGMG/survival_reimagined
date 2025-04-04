@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aa ",
+    "bba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "tag": "minecraft:single_planks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:wooden_saw",
+    "count": 1
+  }
+}

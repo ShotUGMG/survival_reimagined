@@ -1,0 +1,32 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MineralProcessingTable",
+    "blockstateList": [
+      {
+        "texture": "mpt_bottom",
+        "textureTop": "mpt_top_no_reactor_rod",
+        "textureLeft": "mpt_side_powered",
+        "textureFront": "mpt_front",
+        "textureRight": "mpt_side_powered",
+        "textureBack": "mpt_side_powered",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 5,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "_fv": 73,
+  "_type": "block",
+  "definition": {
+    "texture": "pig",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "pig_carcass:default",
+    "rotationMode": 0,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "pig_texture",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 9.35714,
+        "my": 0.35714,
+        "mz": 5.0,
+        "Mx": 15.35714,
+        "My": 4.35714,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.35714,
+        "my": 6.35714,
+        "mz": 5.0,
+        "Mx": 15.35714,
+        "My": 10.35714,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.35714,
+        "my": 0.35714,
+        "mz": 17.0,
+        "Mx": 15.35714,
+        "My": 4.35714,
+        "Mz": 21.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.35714,
+        "my": 6.35714,
+        "mz": 17.0,
+        "Mx": 15.35714,
+        "My": 10.35714,
+        "Mz": 21.0,
+        "subtract": false
+      },
+      {
+        "mx": -0.64286,
+        "my": 1.35714,
+        "mz": -2.0,
+        "Mx": 7.35714,
+        "My": 9.35714,
+        "Mz": 6.0,
+        "subtract": false
+      },
+      {
+        "mx": 3.35714,
+        "my": 3.35714,
+        "mz": -3.0,
+        "Mx": 6.35714,
+        "My": 7.35714,
+        "Mz": -2.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.35714,
+        "my": 0.35714,
+        "mz": 4.0,
+        "Mx": 9.35714,
+        "My": 10.35714,
+        "Mz": 20.0,
+        "subtract": false
+      }
+    ],
+    "customProperties": [],
+    "name": "Pig Carcass",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 1.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreativeTab"
+      }
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": true,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "NONE"
+    },
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "MUD"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "hasInventory": false,
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "PigCarcassOnBlockRightClicked"
+    },
+    "onDestroyedByPlayer": {
+      "name": "PigCarcassBlockDestroyedByPlayer"
+    },
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "TAG:stone_ore_replaceables"
+      }
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

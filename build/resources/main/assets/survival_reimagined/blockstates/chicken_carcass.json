@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "survival_reimagined:block/chicken_carcass"
+    },
+    "blockstate=1": {
+      "model": "survival_reimagined:block/chicken_carcass_states_blockstate_0"
+    }
+  }
+}

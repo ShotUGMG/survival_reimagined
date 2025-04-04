@@ -1,0 +1,36 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "crimson_house_intack",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      }
+    ],
+    "spacing": 15,
+    "separation": 10,
+    "restrictionBiomes": [
+      {
+        "value": "crimson_forest"
+      }
+    ],
+    "terrainAdaptation": "beard_box",
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": true,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 32,
+    "startHeightMax": 100,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

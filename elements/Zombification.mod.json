@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Zombification",
+    "icon": "zombie",
+    "color": {
+      "value": -12032461,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "ZombificationOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "ZombificationEffectExpires"
+    }
+  }
+}

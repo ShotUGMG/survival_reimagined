@@ -1,0 +1,96 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"2": "Survival Reborn:entity/skinned_sheep",
+		"particle": "Survival Reborn:entity/gutted_sheep"
+	},
+	"elements": [
+		{
+			"name": "head",
+			"from": [-4.33333, 1.66667, -7],
+			"to": [1.66667, 7.66667, 1],
+			"rotation": {"angle": 0, "axis": "z", "origin": [4, 16.66667, -0.83333]},
+			"faces": {
+				"north": {"uv": [3.5, 4, 2, 7], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [3.5, 0, 5, 4], "rotation": 270, "texture": "#2"},
+				"south": {"uv": [7, 4, 5.5, 7], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [2, 4, 3.5, 0], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [5.5, 4, 3.5, 7], "rotation": 270, "texture": "#2"},
+				"down": {"uv": [2, 4, 0, 7], "rotation": 270, "texture": "#2"}
+			}
+		},
+		{
+			"name": "body",
+			"from": [1.16667, 0.33334, -0.83333],
+			"to": [7.16667, 8.33334, 15.16667],
+			"rotation": {"angle": 0, "axis": "z", "origin": [4, 16.66667, -0.83333]},
+			"faces": {
+				"north": {"uv": [10.5, 7, 8.5, 4], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [8.5, 7, 10.5, 15], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [12.5, 4, 10.5, 7], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [12, 7, 14, 15], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [7, 7, 8.5, 15], "texture": "#2"},
+				"down": {"uv": [10.5, 7, 12, 15], "rotation": 180, "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -180, -88],
+			"translation": [-1.75, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -180, 90],
+			"translation": [1.75, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [90, -90, 0],
+			"translation": [-13, -5, 4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [90, 90, 0],
+			"translation": [-5.25, -5, 4]
+		},
+		"ground": {
+			"translation": [2.5, 3.75, 0]
+		},
+		"gui": {
+			"rotation": [20, 150, -90],
+			"translation": [-1.25, 0.5, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"head": {
+			"rotation": [0, 0, -90],
+			"translation": [3.5, 4, 1]
+		},
+		"fixed": {
+			"translation": [0, 2.75, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "bone",
+			"origin": [10, 5, 0],
+			"color": 0,
+			"children": [
+				{
+					"name": "head",
+					"origin": [10, 23, -8],
+					"color": 5,
+					"shade": false,
+					"children": [0]
+				},
+				{
+					"name": "body",
+					"origin": [10, 24, 2],
+					"color": 6,
+					"shade": false,
+					"children": [1]
+				}
+			]
+		}
+	]
+}

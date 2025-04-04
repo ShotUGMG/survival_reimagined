@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "missing": "minecraft:raw_copper_block"
+      },
+      "name": "default"
+    }
+  }
+}

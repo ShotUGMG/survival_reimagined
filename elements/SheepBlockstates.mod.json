@@ -1,0 +1,155 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SheepCarcass",
+    "blockstateList": [
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "skinned_sheep:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.66667,
+            "my": 5.66667,
+            "mz": 0.0,
+            "Mx": 17.66667,
+            "My": 9.66667,
+            "Mz": 4.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": -0.33333,
+            "mz": 0.0,
+            "Mx": 17.66667,
+            "My": 3.66667,
+            "Mz": 4.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": 5.66667,
+            "mz": 12.0,
+            "Mx": 17.66667,
+            "My": 9.66667,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": -0.33333,
+            "mz": 12.0,
+            "Mx": 17.66667,
+            "My": 3.66667,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -4.33333,
+            "my": 1.66667,
+            "mz": -7.0,
+            "Mx": 1.66667,
+            "My": 7.66667,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "nolegs_sheep:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -4.33333,
+            "my": 1.66667,
+            "mz": -7.0,
+            "Mx": 1.66667,
+            "My": 7.66667,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "headless_sheep:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "gutted_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "gutted_sheep:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

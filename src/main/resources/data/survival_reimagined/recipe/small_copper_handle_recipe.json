@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:small_stick"
+    },
+    "b": {
+      "item": "survival_reimagined:copper_nugget"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:small_copper_handle",
+    "count": 1
+  }
+}

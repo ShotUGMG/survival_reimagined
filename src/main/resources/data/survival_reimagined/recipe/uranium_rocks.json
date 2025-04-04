@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "survival_reimagined:chisels"
+    },
+    "b": {
+      "tag": "survival_reimagined:uranium_rocks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:uranium_dust",
+    "count": 1
+  }
+}

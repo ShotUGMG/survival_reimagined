@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:flesh"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:heart_of_the_blood_moon",
+    "count": 1
+  }
+}

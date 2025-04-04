@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulSandPile"
+      },
+      {
+        "value": "CUSTOM:SoulSandPile"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SoulSandPile"
+      },
+      {
+        "value": "CUSTOM:SoulSandPile"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.SOUL_SAND"
+    },
+    "name": "soul_sand_recipe",
+    "namespace": "mod"
+  }
+}

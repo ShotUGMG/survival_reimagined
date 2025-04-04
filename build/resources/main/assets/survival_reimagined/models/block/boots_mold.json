@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/boots_mold",
+  "textures": {
+    "all": "survival_reimagined:block/boots_mold",
+    "particle": "survival_reimagined:block/boots_mold",
+    "22": "survival_reimagined:block/dried_clay",
+    "12": "survival_reimagined:block/boots_mold"
+  },
+  "render_type": "solid"
+}

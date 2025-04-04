@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/plucked_chicken",
+  "textures": {
+    "all": "survival_reimagined:block/plucked_chicken",
+    "particle": "survival_reimagined:block/chicken_block",
+    "0": "survival_reimagined:block/plucked_chicken"
+  },
+  "render_type": "cutout"
+}

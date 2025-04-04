@@ -1,0 +1,50 @@
+//replace oak_trapdoor ^warped_trapdoor
+//replace stripped_oak_log ^polished_blackstone
+//replace polished_blackstone netherrack
+//replace acacia_log ^warped_stem
+//replace torch ^soul_torch
+//replace lantern ^soul_lantern
+//replace nether_wart_block warped_wart_block
+//replace crimson_planks warped_planks
+//replace crimson_stairs ^warped_stairs
+//replace crimson_slab ^warped_slab
+//replace stripped_crimson_stem ^stripped_warped_stem
+//replace crimson_stem ^warped_stem
+//replace red_nether_bricks polished_blackstone'
+//replace red_nether_bricks polished_blackstone
+//replace red_nether_brick_slab ^polished_blackstone_slab
+//replace crimson_roots ^warped_roots
+//replace crimson_nylium warped_nylium
+//replace crimson_fence ^warped_fence
+//replace crimson_trapdoor ^warped_trapdoor
+//replace red_nether_brick_stairs ^polished_blackstone_stairs
+//replace netherrack red_nether_bricks
+/gamerule doWeatherCycle false
+/weather clear
+//replace netherrack polished_blackstone
+/give Dev minecraft:structure_void
+/locate structure survival_reborn:acacia_house_broken
+/locate structure survival_reborn:crimson_house_broken
+/tp @s 1744 ~ -1120
+/setblock ~ ~ ~ minecraft:nether_portal
+/locate structure survival_reborn:warped_house_broken
+/tp @s 96 ~ 704
+/setblock ~ ~ ~ minecraft:nether_portal
+/locate structure survival_reborn:warped_house_broken
+/tp @s -432 ~ -480
+/locate structure survival_reborn:crimso_house_broken
+/locate structure survival_reborn:crimson_house_broken
+/tp @s 64 ~ 80
+/setblock ~ ~ ~ minecraft:nether_portal
+/locate structure survival_reborn:crimson_house_broken
+/tp @s -1056 ~ 48
+/locate structure survival_reborn:warped_house_broken
+/tp @s -1552 ~ -1088
+/setblock ~ ~ ~ minecraft:nether_portal
+/locate structure survival_reborn:warped_house_broken
+/tp @s -480 ~ 1744
+/locate structure survival_reborn:crimson_house_broken
+/tp @s -1024 ~ 1760
+/setblock ~ ~ ~ minecraft:nether_portal
+/
+/setblock ~ ~ ~ minecraft:nether_portal

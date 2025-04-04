@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DripstoneRock"
+      },
+      {
+        "value": "CUSTOM:DripstoneRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DripstoneRock"
+      },
+      {
+        "value": "CUSTOM:DripstoneRock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.DRIPSTONE_BLOCK"
+    },
+    "name": "dripstone",
+    "namespace": "mod"
+  }
+}

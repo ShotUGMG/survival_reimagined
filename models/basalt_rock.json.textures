@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "minecraft:smooth_basalt"
+      },
+      "name": "default"
+    }
+  }
+}

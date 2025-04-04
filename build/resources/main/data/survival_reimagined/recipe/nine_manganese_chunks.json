@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:manganese_chunk"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:raw_manganese",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "survival_reimagined:jungle_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 35,
+    "separation": 30,
+    "salt": 1626380854
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CalciteRock"
+      },
+      {
+        "value": "CUSTOM:CalciteRock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CalciteRock"
+      },
+      {
+        "value": "CUSTOM:CalciteRock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.CALCITE"
+    },
+    "name": "calcite",
+    "namespace": "mod"
+  }
+}

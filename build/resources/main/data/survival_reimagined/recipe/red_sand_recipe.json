@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:red_sand_pile"
+    }
+  },
+  "result": {
+    "id": "minecraft:red_sand",
+    "count": 1
+  }
+}

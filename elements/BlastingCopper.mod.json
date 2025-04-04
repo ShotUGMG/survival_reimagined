@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Items.RAW_COPPER"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:RoughCopper"
+    },
+    "name": "copper_ingot_from_blastng_raw_copper",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:large_cherry_bark"
+    }
+  ],
+  "result": {
+    "id": "survival_reimagined:cherry_bark",
+    "count": 4
+  }
+}

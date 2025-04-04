@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:block_of_bronze"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:bronze_ingot",
+    "count": 9
+  }
+}

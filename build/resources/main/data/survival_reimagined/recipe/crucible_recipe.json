@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:clay_brick"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:clay_crucible",
+    "count": 1
+  }
+}

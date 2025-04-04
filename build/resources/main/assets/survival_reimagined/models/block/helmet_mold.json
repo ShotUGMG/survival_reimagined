@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/helmet_mold",
+  "textures": {
+    "all": "survival_reimagined:block/helmet_mold",
+    "particle": "survival_reimagined:block/helmet_mold",
+    "22": "survival_reimagined:block/dried_clay",
+    "18": "survival_reimagined:block/helmet_mold"
+  },
+  "render_type": "solid"
+}

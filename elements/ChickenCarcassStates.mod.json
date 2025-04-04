@@ -1,0 +1,77 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ChickenCarcass",
+    "blockstateList": [
+      {
+        "texture": "plucked_chicken",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "chicken_block",
+        "renderType": 2,
+        "customModelName": "plucked_chicken:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.17525,
+            "my": -0.16789,
+            "mz": 5.34315,
+            "Mx": 10.17525,
+            "My": 5.83211,
+            "Mz": 13.34315,
+            "subtract": false
+          },
+          {
+            "mx": 5.83211,
+            "my": -1.16789,
+            "mz": 6.0,
+            "Mx": 9.83211,
+            "My": -0.16789,
+            "Mz": 12.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.83211,
+            "my": 5.83211,
+            "mz": 6.0,
+            "Mx": 9.83211,
+            "My": 6.83211,
+            "Mz": 12.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.83211,
+            "my": 0.83211,
+            "mz": 3.0,
+            "Mx": 7.83211,
+            "My": 4.83211,
+            "Mz": 6.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.83211,
+            "my": 1.83211,
+            "mz": 2.0,
+            "Mx": 7.83211,
+            "My": 3.83211,
+            "Mz": 4.0,
+            "subtract": false
+          },
+          {
+            "mx": 3.83211,
+            "my": 0.83211,
+            "mz": 1.0,
+            "Mx": 5.83211,
+            "My": 4.83211,
+            "Mz": 3.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

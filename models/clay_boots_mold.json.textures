@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "23": "clay_block",
+        "1": "clay_boots_mold"
+      },
+      "name": "default"
+    }
+  }
+}

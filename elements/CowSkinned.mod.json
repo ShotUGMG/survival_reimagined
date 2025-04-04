@@ -1,0 +1,155 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CowCarcass",
+    "blockstateList": [
+      {
+        "texture": "cow_skinned",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "cow_carcass_skinned:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -7.0,
+            "my": 2.0,
+            "mz": -7.0,
+            "Mx": 1.0,
+            "My": 10.0,
+            "Mz": -1.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 8.0,
+            "mz": 13.0,
+            "Mx": 16.0,
+            "My": 12.0,
+            "Mz": 17.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 13.0,
+            "Mx": 16.0,
+            "My": 4.0,
+            "Mz": 17.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 8.0,
+            "mz": -1.0,
+            "Mx": 16.0,
+            "My": 12.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 16.0,
+            "My": 4.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 4.0,
+            "My": 12.0,
+            "Mz": 17.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "cow_skinned",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "cow_carcass_skinned_no_legs:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -7.0,
+            "my": 2.0,
+            "mz": -7.0,
+            "Mx": 1.0,
+            "My": 10.0,
+            "Mz": -1.0,
+            "subtract": false
+          },
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 4.0,
+            "My": 12.0,
+            "Mz": 17.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "cow_skinned",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "cow_carcass_skinned_no_legs_and_head:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 4.0,
+            "My": 12.0,
+            "Mz": 17.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "cow_skinned_gutted",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "minecraft:redstone_block",
+        "renderType": 2,
+        "customModelName": "cow_carcass_gutted:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 4.0,
+            "My": 12.0,
+            "Mz": 17.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

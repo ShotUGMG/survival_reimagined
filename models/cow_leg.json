@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 32],
+	"textures": {
+		"1": "survival_reborn:block/cow_skinned"
+	},
+	"elements": [
+		{
+			"name": "leg2",
+			"from": [6, 0, 6],
+			"to": [10, 12, 10],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 12, 8]},
+			"faces": {
+				"north": {"uv": [1, 10, 2, 16], "texture": "#1"},
+				"east": {"uv": [0, 10, 1, 16], "texture": "#1"},
+				"south": {"uv": [3, 10, 4, 16], "texture": "#1"},
+				"west": {"uv": [2, 10, 3, 16], "texture": "#1"},
+				"up": {"uv": [2, 10, 1, 8], "texture": "#1"},
+				"down": {"uv": [3, 8, 2, 10], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-1, 1, 0]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-1, 1, 0]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [25, -25, 0],
+			"translation": [0, 1.5, 0]
+		},
+		"head": {
+			"rotation": [0, 0, -90],
+			"translation": [2, 0, 1]
+		}
+	},
+	"groups": [
+		{
+			"name": "body",
+			"origin": [-6, 6, 2],
+			"color": 0,
+			"children": [
+				{
+					"name": "leg2",
+					"origin": [-2, -1, -6],
+					"color": 4,
+					"children": [0]
+				}
+			]
+		}
+	]
+}

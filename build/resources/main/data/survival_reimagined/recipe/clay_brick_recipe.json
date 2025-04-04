@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:clay_brick",
+    "count": 1
+  }
+}

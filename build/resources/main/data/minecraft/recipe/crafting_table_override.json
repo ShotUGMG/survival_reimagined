@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "minecraft:air",
+    "count": 1
+  }
+}

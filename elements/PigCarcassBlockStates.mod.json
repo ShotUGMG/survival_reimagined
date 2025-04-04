@@ -1,0 +1,96 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PigCarcass",
+    "blockstateList": [
+      {
+        "texture": "pig_legless",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "pig_texture",
+        "renderType": 2,
+        "customModelName": "pig_legless:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -0.64286,
+            "my": 1.35714,
+            "mz": -2.0,
+            "Mx": 7.35714,
+            "My": 9.35714,
+            "Mz": 6.0,
+            "subtract": false
+          },
+          {
+            "mx": 3.35714,
+            "my": 3.35714,
+            "mz": -3.0,
+            "Mx": 6.35714,
+            "My": 7.35714,
+            "Mz": -2.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.35714,
+            "my": 0.35714,
+            "mz": 4.0,
+            "Mx": 9.35714,
+            "My": 10.35714,
+            "Mz": 20.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pig_legless",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "pig_texture",
+        "renderType": 2,
+        "customModelName": "pig_headless:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.35714,
+            "my": 0.35714,
+            "mz": 4.0,
+            "Mx": 9.35714,
+            "My": 10.35714,
+            "Mz": 20.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pig_gutted",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "pig_texture",
+        "renderType": 2,
+        "customModelName": "pig_gutted:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 1.35714,
+            "my": 0.35714,
+            "mz": 4.0,
+            "Mx": 9.35714,
+            "My": 10.35714,
+            "Mz": 20.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

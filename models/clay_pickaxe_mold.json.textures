@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "23": "clay_block",
+        "3": "clay_pickaxe_head_mold"
+      },
+      "name": "default"
+    }
+  }
+}

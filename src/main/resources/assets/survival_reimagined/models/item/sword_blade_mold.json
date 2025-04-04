@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/sword_blade_mold"
+  },
+  "render_type": "translucent"
+}

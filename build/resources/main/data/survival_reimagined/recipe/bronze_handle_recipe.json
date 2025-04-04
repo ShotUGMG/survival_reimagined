@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a",
+    "ba"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:bronze_nugget"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:bronze_handle",
+    "count": 1
+  }
+}

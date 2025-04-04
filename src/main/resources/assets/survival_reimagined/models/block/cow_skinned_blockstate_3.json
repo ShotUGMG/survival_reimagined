@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/cow_carcass_gutted",
+  "textures": {
+    "all": "survival_reimagined:block/cow_skinned_gutted",
+    "particle": "minecraft:block/redstone_block",
+    "2": "survival_reimagined:block/cow_skinned_gutted"
+  },
+  "render_type": "solid"
+}

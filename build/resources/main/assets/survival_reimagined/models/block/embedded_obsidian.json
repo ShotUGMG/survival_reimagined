@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/embedded_obsidian",
+    "up": "survival_reimagined:block/embedded_obsidian",
+    "north": "survival_reimagined:block/embedded_obsidian",
+    "east": "survival_reimagined:block/embedded_obsidian",
+    "south": "survival_reimagined:block/embedded_obsidian",
+    "west": "survival_reimagined:block/embedded_obsidian",
+    "particle": "survival_reimagined:block/embedded_obsidian"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:oak_plank"
+    },
+    "title": {
+      "translate": "advancements.planks.title"
+    },
+    "description": {
+      "translate": "advancements.planks.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "planks_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "survival_reimagined:mrt_recipe",
+      "minecraft:wooden_sword",
+      "minecraft:wooden_pickaxe",
+      "minecraft:wooden_axe",
+      "minecraft:wooden_shovel",
+      "survival_reimagined:wooden_hoe",
+      "survival_reimagined:wooden_helmet",
+      "survival_reimagined:wooden_chestplate",
+      "survival_reimagined:wooden_leggings",
+      "survival_reimagined:wooden_boots",
+      "survival_reimagined:wooden_saw_recipe",
+      "survival_reimagined:wooden_hammer_recipe"
+    ]
+  },
+  "parent": "survival_reimagined:crafting_table"
+}

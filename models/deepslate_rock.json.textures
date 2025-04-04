@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "minecraft:deepslate_top"
+      },
+      "name": "default"
+    }
+  }
+}

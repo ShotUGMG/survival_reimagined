@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "survival_reimagined:acacia_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 35,
+    "separation": 30,
+    "salt": 2014180524
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "survival_reimagined:block/stage_1",
+    "particle": "survival_reimagined:block/stage_1"
+  },
+  "render_type": "cutout_mipped"
+}

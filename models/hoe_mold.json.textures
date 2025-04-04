@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "22": "dried_clay",
+        "15": "hoe_blade_mold"
+      },
+      "name": "default"
+    }
+  }
+}
