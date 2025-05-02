@@ -42,4 +42,4 @@
 ### - Metal Refining Table
 - Metal Refining Table is now strictly for crafting Steel and Bronze tools.
 
-- Bug Fixes
+### Bug Fixes
