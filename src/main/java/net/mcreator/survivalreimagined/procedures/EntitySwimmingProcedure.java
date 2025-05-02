@@ -49,7 +49,7 @@ public class EntitySwimmingProcedure {
 					_vars.HungerSwimming = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming + 1;
 					_vars.syncPlayerVariables(entity);
 				}
-				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming == 50) {
+				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming == 75) {
 					if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
 						if (entity instanceof Player _player)
 							_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));

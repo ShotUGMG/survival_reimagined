@@ -45,7 +45,7 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.LARGE_CRIMSON_BARK.get());
 				tabData.accept(SurvivalReimaginedModItems.LARGE_WARPED_BARK.get());
 				tabData.accept(SurvivalReimaginedModItems.STONE_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.PLANT_FIBER.get());
+				tabData.accept(SurvivalReimaginedModItems.HEMP_FIBER.get());
 				tabData.accept(SurvivalReimaginedModItems.COPPER_CHUNK.get());
 				tabData.accept(SurvivalReimaginedModItems.COPPER_NUGGET.get());
 				tabData.accept(SurvivalReimaginedModItems.COPPER_CHISEL.get());
@@ -55,8 +55,6 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.TIN_INGOT.get());
 				tabData.accept(SurvivalReimaginedModItems.TIN_NUGGET.get());
 				tabData.accept(SurvivalReimaginedModItems.DEEPSLATE_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.FIBEROUS_LEAVES.get());
-				tabData.accept(SurvivalReimaginedModItems.FIBEROUS_PLANT_SEEDS.get());
 				tabData.accept(SurvivalReimaginedModBlocks.FORGE.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.BRONZE_INGOT.get());
 				tabData.accept(SurvivalReimaginedModItems.ROUGH_BRONZE.get());
@@ -283,6 +281,7 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.DIAMOND_HAMMER_HEAD.get());
 				tabData.accept(SurvivalReimaginedModItems.DIAMOND_SAW_BLADE.get());
 				tabData.accept(SurvivalReimaginedModItems.DIAMOND_HAMMER.get());
+				tabData.accept(SurvivalReimaginedModItems.DIAMOND_KNIFE.get());
 				tabData.accept(SurvivalReimaginedModItems.DIAMOND_CHISEL.get());
 				tabData.accept(SurvivalReimaginedModItems.OBSIDIAN_HANDLE.get());
 				tabData.accept(SurvivalReimaginedModItems.SMALL_OBSIDIAN_HANDLE.get());
@@ -299,6 +298,31 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.APPLE_OAK_LEAVES.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.APPLE_TREE_SAPLING.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.EYE_OF_ENDER_FUSION_DUST.get());
+				tabData.accept(SurvivalReimaginedModItems.WHITE_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.ORANGE_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.MAGENTA_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.LIGHT_BLUE_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.YELLOW_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.LIME_GREEN_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.PINK_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.BLACK_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.LIGHT_GREY_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.CYAN_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.PURPLE_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.BLUE_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.GREEN_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.BROWN_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.RED_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModItems.GREY_GLASS_SHARD.get());
+				tabData.accept(SurvivalReimaginedModBlocks.INGOT_MOLD.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.INGOT_CLAY_MOLD.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.HEMP_SEEDS.get());
+				tabData.accept(SurvivalReimaginedModItems.HEMP_LEAF.get());
+				tabData.accept(SurvivalReimaginedModItems.HEMP_PAPER.get());
+				tabData.accept(SurvivalReimaginedModItems.ROUGH_NETHERITE.get());
+				tabData.accept(SurvivalReimaginedModItems.NETHERITE_HAMMER.get());
+				tabData.accept(SurvivalReimaginedModItems.NETHERITE_KNIFE.get());
+				tabData.accept(SurvivalReimaginedModItems.NETHERITE_SAW.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

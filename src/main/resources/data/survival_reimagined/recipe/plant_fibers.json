@@ -6,11 +6,11 @@
   ],
   "key": {
     "a": {
-      "item": "survival_reimagined:fiberous_leaves"
+      "item": "survival_reimagined:deleted_mod_element"
     }
   },
   "result": {
-    "id": "survival_reimagined:plant_fiber",
+    "id": "survival_reimagined:hemp_fiber",
     "count": 2
   }
 }

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "survival_reimagined:plant_fiber"
+      "id": "survival_reimagined:hemp_fiber"
     },
     "title": {
       "translate": "advancements.primitive_tools.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "survival_reimagined:plant_fiber"
+              "survival_reimagined:hemp_fiber"
             ],
             "count": {
               "min": 1,

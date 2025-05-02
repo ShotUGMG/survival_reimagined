@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "helmet_mold",
+    "itemTexture": "mold1",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

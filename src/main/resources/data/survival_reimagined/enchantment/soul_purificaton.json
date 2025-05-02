@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.survival_reimagined.soul_purificaton"
+  },
+  "supported_items": "#minecraft:foot_armor",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "feet"
+  ],
+  "exclusive_set": []
+}

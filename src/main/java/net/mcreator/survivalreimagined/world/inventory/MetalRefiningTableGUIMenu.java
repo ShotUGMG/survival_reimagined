@@ -93,21 +93,13 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 44, 38) {
 			private final int slot = 0;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
-			}
+			private int x = MetalRefiningTableGUIMenu.this.x;
+			private int y = MetalRefiningTableGUIMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 152, 63) {
 			private final int slot = 1;
-
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
-			}
+			private int x = MetalRefiningTableGUIMenu.this.x;
+			private int y = MetalRefiningTableGUIMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -116,6 +108,8 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 116, 38) {
 			private final int slot = 2;
+			private int x = MetalRefiningTableGUIMenu.this.x;
+			private int y = MetalRefiningTableGUIMenu.this.y;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
@@ -130,6 +124,8 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 38) {
 			private final int slot = 3;
+			private int x = MetalRefiningTableGUIMenu.this.x;
+			private int y = MetalRefiningTableGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

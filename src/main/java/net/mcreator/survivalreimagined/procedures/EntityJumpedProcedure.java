@@ -42,7 +42,7 @@ public class EntityJumpedProcedure {
 			}
 		}.checkGamemode(entity)) {
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 4) {
-				if (Math.random() < 0.25) {
+				if (Math.random() < 0.175) {
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
 							if (entity instanceof Player _player)

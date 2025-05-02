@@ -9,6 +9,8 @@
     "survival_reimagined:cherry_bark",
     "survival_reimagined:acacia_bark",
     "survival_reimagined:jungle_bark",
-    "survival_reimagined:small_coal_chunk"
+    "survival_reimagined:small_coal_chunk",
+    "survival_reimagined:hemp_paper",
+    "minecraft:paper"
   ]
 }

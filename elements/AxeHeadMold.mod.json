@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "axe_head_mold",
+    "itemTexture": "mold7",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

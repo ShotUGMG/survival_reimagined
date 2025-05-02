@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "hoe_blade_mold",
+    "itemTexture": "mold9",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

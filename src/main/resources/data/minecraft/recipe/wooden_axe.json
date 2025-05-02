@@ -3,13 +3,16 @@
   "category": "equipment",
   "pattern": [
     "aa",
-    "ab"
+    "bc"
   ],
   "key": {
     "a": {
       "tag": "minecraft:single_planks"
     },
     "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "c": {
       "item": "minecraft:stick"
     }
   },

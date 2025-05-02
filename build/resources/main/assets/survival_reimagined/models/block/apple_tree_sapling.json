@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "survival_reimagined:block/apple_oak_tree_sapling",
-    "particle": "survival_reimagined:block/apple_oak_tree_sapling"
-  },
-  "render_type": "cutout"
-}

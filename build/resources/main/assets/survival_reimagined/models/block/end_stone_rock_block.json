@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/endstone_rock",
-  "textures": {
-    "all": "minecraft:block/end_stone",
-    "particle": "minecraft:block/end_stone",
-    "8": "minecraft:block/end_stone"
-  },
-  "render_type": "solid"
-}

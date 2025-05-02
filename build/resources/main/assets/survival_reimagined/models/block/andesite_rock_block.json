@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/andesite_rock",
-  "textures": {
-    "all": "minecraft:block/andesite",
-    "particle": "minecraft:block/andesite",
-    "0": "minecraft:block/andesite"
-  },
-  "render_type": "solid"
-}

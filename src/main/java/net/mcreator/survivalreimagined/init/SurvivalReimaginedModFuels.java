@@ -49,8 +49,6 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.SMALL_COAL_CHUNK.get())
 			event.setBurnTime(800);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.FIBEROUS_LEAVES.get())
-			event.setBurnTime(200);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.OAK_PLANK.get())
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.DARK_OAK_PLANK.get())

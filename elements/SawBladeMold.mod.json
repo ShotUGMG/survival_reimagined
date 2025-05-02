@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "saw_blade_mold",
+    "itemTexture": "mold10",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

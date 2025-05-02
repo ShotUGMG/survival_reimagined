@@ -16,9 +16,11 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.procedures.ZombificationEffectExpiresProcedure;
+import net.mcreator.survivalreimagined.procedures.BindingSculkEffectExpiresProcedure;
 import net.mcreator.survivalreimagined.potion.ZombificationMobEffect;
 import net.mcreator.survivalreimagined.potion.ParanoiaMobEffect;
 import net.mcreator.survivalreimagined.potion.FearMobEffect;
+import net.mcreator.survivalreimagined.potion.BindingSculkMobEffect;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber
@@ -27,6 +29,7 @@ public class SurvivalReimaginedModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> PARANOIA = REGISTRY.register("paranoia", () -> new ParanoiaMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> FEAR = REGISTRY.register("fear", () -> new FearMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ZOMBIFICATION = REGISTRY.register("zombification", () -> new ZombificationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> BINDING_SCULK = REGISTRY.register("binding_sculk", () -> new BindingSculkMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -47,6 +50,8 @@ public class SurvivalReimaginedModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(ZOMBIFICATION)) {
 			ZombificationEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(BINDING_SCULK)) {
+			BindingSculkEffectExpiresProcedure.execute(entity.level());
 		}
 	}
 }

@@ -1,5 +1,5 @@
 version:3955
-ao:true
+ao:false
 biomeBlendRadius:2
 enableVsync:false
 entityDistanceScaling:1.0
@@ -14,16 +14,16 @@ glintStrength:0.75
 prioritizeChunkUpdates:0
 fullscreen:false
 gamma:0.5
-graphicsMode:1
+graphicsMode:0
 guiScale:2
 maxFps:260
 mipmapLevels:2
 narrator:0
 particles:0
 reducedDebugInfo:false
-renderClouds:"true"
-renderDistance:12
-simulationDistance:5
+renderClouds:"false"
+renderDistance:8
+simulationDistance:8
 screenEffectScale:1.0
 soundDevice:""
 autoJump:false
@@ -45,10 +45,10 @@ darkMojangStudiosBackground:false
 hideLightningFlashes:false
 hideSplashTexts:false
 mouseSensitivity:0.5
-damageTiltStrength:1.0
+damageTiltStrength:0.2535211267605634
 highContrast:false
 narratorHotkey:true
-resourcePacks:["vanilla","mod_resources"]
+resourcePacks:["vanilla","mod_resources","file/Fancy Crops v1.1.zip"]
 incompatibleResourcePacks:[]
 lastServer:localhost:25463
 lang:en_us
@@ -77,7 +77,7 @@ rawMouseInput:true
 glDebugVerbosity:1
 skipMultiplayerWarning:false
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 hideBundleTutorial:false
 syncChunkWrites:true
 showAutosaveIndicator:true
@@ -124,7 +124,6 @@ key_key.hotbar.9:key.keyboard.9
 key_iris.keybind.reload:key.keyboard.grave.accent
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
-key_iris.keybind.wireframe:key.keyboard.unknown
 soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0

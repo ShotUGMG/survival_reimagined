@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "survival_reimagined:item/clay_chestplate_mold"
+    "layer0": "survival_reimagined:item/clay_mold2"
   },
   "render_type": "translucent"
 }

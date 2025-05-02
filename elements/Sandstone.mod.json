@@ -39,7 +39,7 @@
             "item": {
               "value": "CUSTOM:UraniumSandstoneDeposit"
             },
-            "weight": 2,
+            "weight": 1,
             "minCount": 0,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

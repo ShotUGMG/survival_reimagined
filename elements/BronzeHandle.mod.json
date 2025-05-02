@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "bronze_handle",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
     "customProperties": {},
     "states": [],
     "name": "Bronze Handle",

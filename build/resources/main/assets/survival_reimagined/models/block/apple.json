@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/apple_mature",
-  "textures": {
-    "all": "survival_reimagined:block/apple_mature",
-    "particle": "survival_reimagined:block/apple_mature",
-    "0": "survival_reimagined:block/apple_mature"
-  },
-  "render_type": "solid"
-}

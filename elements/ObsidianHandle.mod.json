@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "obsidian_stick",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
     "customProperties": {},
     "states": [],
     "name": "Obsidian Handle",

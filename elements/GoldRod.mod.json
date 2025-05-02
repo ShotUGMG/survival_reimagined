@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "gold_od",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
     "customProperties": {},
     "states": [],
     "name": "Gold Rod",

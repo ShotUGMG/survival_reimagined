@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "chestplate_mold",
+    "itemTexture": "mold2",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

@@ -47,7 +47,7 @@
         "value": "CUSTOM:CreativeTab"
       }
     ],
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },

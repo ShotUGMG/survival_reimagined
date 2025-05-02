@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    " ab",
+    "a b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    }
+  },
+  "result": {
+    "id": "minecraft:fishing_rod",
+    "count": 1
+  }
+}

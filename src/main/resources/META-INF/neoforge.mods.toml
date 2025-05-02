@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="survival_reimagined"
-version="1.0.0"
+version="1.1.0"
 displayName="Survival Reimagined"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
@@ -16,21 +16,24 @@ description="Harder and a more realistic survival expierence"
 # End of user code block mod configuration
 
 [[dependencies.survival_reimagined]]
-    modId="neoforge"
-    type="required"
-    versionRange="[21.1.65,)"
-    ordering="AFTER"
-    side="BOTH"
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
 
 [[dependencies.survival_reimagined]]
-    modId="minecraft"
-    type="required"
-    versionRange="[1.21.1]"
-    ordering="AFTER"
-    side="BOTH"
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
 
 
 
+
+[[mixins]]
+    config="mixins.survival_reimagined.json"
 
 # Start of user code block dependencies configuration
 # End of user code block dependencies configuration

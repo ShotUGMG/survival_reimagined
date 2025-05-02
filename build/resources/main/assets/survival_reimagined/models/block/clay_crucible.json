@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/crucible",
-  "textures": {
-    "all": "survival_reimagined:block/clay_block",
-    "particle": "survival_reimagined:block/clay_block",
-    "0": "survival_reimagined:block/clay_block"
-  },
-  "render_type": "solid"
-}

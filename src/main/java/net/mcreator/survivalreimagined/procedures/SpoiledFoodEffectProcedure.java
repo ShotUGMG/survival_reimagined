@@ -33,14 +33,14 @@ public class SpoiledFoodEffectProcedure {
 			return;
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:spoiled_food")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 150, 1, true, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 150, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 400, 1, true, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 400, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1, true, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1, false, true));
 		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:raw_meat")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, 1, true, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, 1, false, true));
 		}
 	}
 }

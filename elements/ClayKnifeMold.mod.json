@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "clay_knife_mold",
+    "itemTexture": "clay_mold12",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

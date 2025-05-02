@@ -34,16 +34,15 @@ import net.mcreator.survivalreimagined.block.MetalRefiningTableBlock;
 import net.mcreator.survivalreimagined.block.ManganeseOreBlock;
 import net.mcreator.survivalreimagined.block.LeggingMoldBlock;
 import net.mcreator.survivalreimagined.block.KnifeBladeMoldBlock;
+import net.mcreator.survivalreimagined.block.IngotMoldBlock;
+import net.mcreator.survivalreimagined.block.IngotClayMoldBlock;
 import net.mcreator.survivalreimagined.block.HoeHeadMoldBlock;
+import net.mcreator.survivalreimagined.block.HempBlock;
 import net.mcreator.survivalreimagined.block.HelmetMoldBlock;
 import net.mcreator.survivalreimagined.block.HammerHeadMoldBlock;
 import net.mcreator.survivalreimagined.block.GraniteRockBlockBlock;
 import net.mcreator.survivalreimagined.block.ForgeBlock;
 import net.mcreator.survivalreimagined.block.FlintblockBlock;
-import net.mcreator.survivalreimagined.block.FiberousPlantStage3Block;
-import net.mcreator.survivalreimagined.block.FiberousPlantStage2Block;
-import net.mcreator.survivalreimagined.block.FiberousPlantStage1Block;
-import net.mcreator.survivalreimagined.block.FiberousPlantStage0Block;
 import net.mcreator.survivalreimagined.block.EndStoneRockBlockBlock;
 import net.mcreator.survivalreimagined.block.EmbeddedObsidianBlock;
 import net.mcreator.survivalreimagined.block.DripstoneRockBlockBlock;
@@ -95,10 +94,6 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> FLINTBLOCK = REGISTRY.register("flintblock", FlintblockBlock::new);
 	public static final DeferredBlock<Block> STONE_ROCK_BLOC = REGISTRY.register("stone_rock_bloc", StoneRockBlocBlock::new);
 	public static final DeferredBlock<Block> TIN_ORE = REGISTRY.register("tin_ore", TinOreBlock::new);
-	public static final DeferredBlock<Block> FIBEROUS_PLANT_STAGE_0 = REGISTRY.register("fiberous_plant_stage_0", FiberousPlantStage0Block::new);
-	public static final DeferredBlock<Block> FIBEROUS_PLANT_STAGE_1 = REGISTRY.register("fiberous_plant_stage_1", FiberousPlantStage1Block::new);
-	public static final DeferredBlock<Block> FIBEROUS_PLANT_STAGE_2 = REGISTRY.register("fiberous_plant_stage_2", FiberousPlantStage2Block::new);
-	public static final DeferredBlock<Block> FIBEROUS_PLANT_STAGE_3 = REGISTRY.register("fiberous_plant_stage_3", FiberousPlantStage3Block::new);
 	public static final DeferredBlock<Block> FORGE = REGISTRY.register("forge", ForgeBlock::new);
 	public static final DeferredBlock<Block> METAL_REFINING_TABLE = REGISTRY.register("metal_refining_table", MetalRefiningTableBlock::new);
 	public static final DeferredBlock<Block> CLAY_CRUCIBLE = REGISTRY.register("clay_crucible", ClayCrucibleBlock::new);
@@ -167,6 +162,9 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> APPLE_OAK_LEAVES = REGISTRY.register("apple_oak_leaves", AppleOakLeavesBlock::new);
 	public static final DeferredBlock<Block> APPLE_TREE_SAPLING = REGISTRY.register("apple_tree_sapling", AppleTreeSaplingBlock::new);
 	public static final DeferredBlock<Block> APPLE = REGISTRY.register("apple", AppleBlock::new);
+	public static final DeferredBlock<Block> INGOT_MOLD = REGISTRY.register("ingot_mold", IngotMoldBlock::new);
+	public static final DeferredBlock<Block> INGOT_CLAY_MOLD = REGISTRY.register("ingot_clay_mold", IngotClayMoldBlock::new);
+	public static final DeferredBlock<Block> HEMP = REGISTRY.register("hemp", HempBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

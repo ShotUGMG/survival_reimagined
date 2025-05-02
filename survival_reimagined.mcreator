@@ -1053,14 +1053,14 @@
       "type": "item",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "plant_fiber",
+      "registry_name": "hemp_fiber",
       "metadata": {
         "files": [
-          "src/main/resources/assets/survival_reimagined/models/item/plant_fiber.json",
+          "src/main/resources/assets/survival_reimagined/models/item/hemp_fiber.json",
           "src/main/java/net/mcreator/survivalreimagined/item/PlantFiberItem.java"
         ]
       },
-      "path": "~/Mod Elements/items/Ingredients/Other"
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
     },
     {
       "name": "PlantFiberDrops",
@@ -1095,7 +1095,7 @@
           }
         ]
       },
-      "path": "~/Mod Elements/LootTables"
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
     },
     {
       "name": "StoneLoottable",
@@ -1382,41 +1382,6 @@
       "path": "~/Mod Elements/generation/Rocks"
     },
     {
-      "name": "CopperChunkCode",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_chunk_code",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/CopperChunkCodeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/Code"
-    },
-    {
       "name": "CopperNuggetSmelt",
       "type": "recipe",
       "compiles": true,
@@ -1629,417 +1594,6 @@
       "path": "~/Mod Elements/LootTables/Ore/Vanilla"
     },
     {
-      "name": "FiberousPlantStage0",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_0",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_plant_stage_0.json",
-          "src/main/java/net/mcreator/survivalreimagined/block/FiberousPlantStage0Block.java",
-          "src/main/resources/assets/survival_reimagined/blockstates/fiberous_plant_stage_0.json",
-          "src/main/resources/assets/survival_reimagined/models/block/fiberous_plant_stage_0.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Stages"
-    },
-    {
-      "name": "FiberousPlantStage1",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/block/FiberousPlantStage1Block.java",
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_plant_stage_1.json",
-          "src/main/resources/assets/survival_reimagined/blockstates/fiberous_plant_stage_1.json",
-          "src/main/resources/assets/survival_reimagined/models/block/fiberous_plant_stage_1.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Stages"
-    },
-    {
-      "name": "FiberousLeaves",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_leaves",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/item/FiberousLeavesItem.java",
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_leaves.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Items"
-    },
-    {
-      "name": "FiberousLeavesExt",
-      "type": "itemextension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_leaves_ext",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Items"
-    },
-    {
-      "name": "FiberousPlantSeeds",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_seeds",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/item/FiberousPlantSeedsItem.java",
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_plant_seeds.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Items"
-    },
-    {
-      "name": "FiberousPlantSeedsExt",
-      "type": "itemextension",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_seeds_ext",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Items"
-    },
-    {
-      "name": "FiberousPlantStage2",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/block/FiberousPlantStage2Block.java",
-          "src/main/resources/assets/survival_reimagined/models/block/fiberous_plant_stage_2.json",
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_plant_stage_2.json",
-          "src/main/resources/assets/survival_reimagined/blockstates/fiberous_plant_stage_2.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Stages"
-    },
-    {
-      "name": "FiberousPlantStage3",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/survival_reimagined/models/item/fiberous_plant_stage_3.json",
-          "src/main/java/net/mcreator/survivalreimagined/block/FiberousPlantStage3Block.java",
-          "src/main/resources/assets/survival_reimagined/models/block/fiberous_plant_stage_3.json",
-          "src/main/resources/assets/survival_reimagined/blockstates/fiberous_plant_stage_3.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Stages"
-    },
-    {
-      "name": "Stage0",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stage_0",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/Stage0Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "Stage1",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stage_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/Stage1Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "Stage2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stage_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/Stage2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiberousPlantStage0OnTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_0_on_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiberousPlantStage0OnTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiberousPlantStage1UpdateTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_1_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiberousPlantStage1UpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiberousPlantStage2UpdateTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_2_update_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiberousPlantStage2UpdateTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiiberousPlantDrops",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiiberous_plant_drops",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiiberousPlantDropsProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiberousPlantSeedsRightclickedOnBlock",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_seeds_rightclicked_on_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiberousPlantSeedsRightclickedOnBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
-      "name": "FiberousPlantStage3Loot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_stage_3_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/loot_table/blocks/fiberous_plant_stage_3.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant"
-    },
-    {
-      "name": "FiberousPlantPlacementCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fiberous_plant_placement_condition",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FiberousPlantPlacementConditionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/FiberousPlant/Code"
-    },
-    {
       "name": "PlantFibers",
       "type": "recipe",
       "compiles": true,
@@ -2250,25 +1804,6 @@
           "src/main/resources/data/survival_reimagined/loot_table/blocks/metal_refining_table.json",
           "src/main/resources/assets/survival_reimagined/models/block/metal_refining_table.json",
           "src/main/resources/assets/survival_reimagined/blockstates/metal_refining_table.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/Utility/MetalRefiningTable"
-    },
-    {
-      "name": "IronRecipe",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_recipe",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/IronRecipeProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
         ]
       },
       "path": "~/Mod Elements/blocks/Utility/MetalRefiningTable"
@@ -7899,19 +7434,6 @@
       "path": "~/Mod Elements/Recipes/CraftingRecipes/Other/Nuggets"
     },
     {
-      "name": "CraftingTableOverride",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "crafting_table_override",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipe/crafting_table_override.json"
-        ]
-      },
-      "path": "~/Mod Elements/Recipes/RecipeOverrides"
-    },
-    {
       "name": "BoatPaddles",
       "type": "item",
       "compiles": true,
@@ -11884,7 +11406,7 @@
           "src/main/java/net/mcreator/survivalreimagined/item/GlassShardItem.java"
         ]
       },
-      "path": "~/Mod Elements/items/Ingredients/Other"
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
     },
     {
       "name": "DirtPile",
@@ -12503,14 +12025,14 @@
       "name": "Glass",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "glass",
       "metadata": {
         "files": [
           "src/main/resources/data/minecraft/loot_table/blocks/glass.json"
         ]
       },
-      "path": "~/Mod Elements/LootTables/Glass"
+      "path": "~/Mod Elements/LootTables/Glass/Normal"
     },
     {
       "name": "Mycelium",
@@ -12915,32 +12437,6 @@
       "path": "~/Mod Elements/LootTables/Ore/Vanilla"
     },
     {
-      "name": "Obsidian",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "obsidian",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_table/blocks/obsidian.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
-    },
-    {
-      "name": "CryingObsidian",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crying_obsidian",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_table/blocks/crying_obsidian.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
-    },
-    {
       "name": "AncientDebrisChunk",
       "type": "item",
       "compiles": true,
@@ -12950,54 +12446,6 @@
         "files": [
           "src/main/resources/assets/survival_reimagined/models/item/ancient_debris_chunk.json",
           "src/main/java/net/mcreator/survivalreimagined/item/AncientDebrisChunkItem.java"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
-    },
-    {
-      "name": "AncientDebris",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_debris",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/loot_table/blocks/ancient_debris.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
-    },
-    {
-      "name": "BlocksBroken",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blocks_broken",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/BlocksBrokenProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
@@ -14941,14 +14389,14 @@
       "name": "GlassPane",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "glass_pane",
       "metadata": {
         "files": [
           "src/main/resources/data/minecraft/loot_table/blocks/glass_pane.json"
         ]
       },
-      "path": "~/Mod Elements/LootTables/Glass"
+      "path": "~/Mod Elements/LootTables/Glass/Normal"
     },
     {
       "name": "GoldRod",
@@ -16071,25 +15519,6 @@
       "path": "~/Mod Elements/generation/OakTree/Apple/Code"
     },
     {
-      "name": "FullMoon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "full_moon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/FullMoonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/Blood Moon/Variables"
-    },
-    {
       "name": "Charcoal",
       "type": "recipe",
       "compiles": true,
@@ -16389,19 +15818,6 @@
       "path": "~/Mod Elements/Structures/Houses/Ruined"
     },
     {
-      "name": "EyeOfEnder",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "eye_of_ender",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipe/eye_of_ender.json"
-        ]
-      },
-      "path": "~/Mod Elements/Recipes/RecipeOverrides"
-    },
-    {
       "name": "NetherHouseMining",
       "type": "loottable",
       "compiles": true,
@@ -16512,6 +15928,1941 @@
         ]
       },
       "path": "~/Mod Elements/Structures/Houses/Ruined"
+    },
+    {
+      "name": "IronMelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_melt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/IronMeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes/MeltMetal"
+    },
+    {
+      "name": "GoldMelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_melt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/GoldMeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes/MeltMetal"
+    },
+    {
+      "name": "BronzeMelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bronze_melt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BronzeMeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes/MeltMetal"
+    },
+    {
+      "name": "SteelMelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steel_melt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/SteelMeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes/MeltMetal"
+    },
+    {
+      "name": "DiamondMelt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_melt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/DiamondMeltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes/MeltMetal"
+    },
+    {
+      "name": "GoldSword",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_sword.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldPickaxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_pickaxe.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldAxe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_axe.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldHoe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_hoe.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldShovel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_shovel.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldHelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_helmet.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldChestplate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_chestplate.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldLeggings",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_leggings",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_leggings.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "GoldBoots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/gold_boots.json"
+        ]
+      },
+      "path": "~/VanillaOverrides/Iron"
+    },
+    {
+      "name": "CraftingTableOverride",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_table_override",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/crafting_table.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "GlassBlock",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/glass_block.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "BlockOfRawManganeseRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_of_raw_manganese_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/block_of_raw_manganese_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Blocks/Metal"
+    },
+    {
+      "name": "NineRawManganese",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nine_raw_manganese",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/nine_raw_manganese.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Blocks/Metal"
+    },
+    {
+      "name": "ObsidianRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/ObsidianRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Code"
+    },
+    {
+      "name": "EnderEye",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ender_eye",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/ender_eye.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "WhiteGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/WhiteGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/white_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "OrangeGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/orange_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/OrangeGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "MagentaGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magenta_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/MagentaGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/magenta_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "LightBlueGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/light_blue_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/LightBlueGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "YellowGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/yellow_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/YellowGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "LimeGreenGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lime_green_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/lime_green_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/LimeGreenGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "PinkGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pink_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/PinkGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/pink_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "BlackGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/black_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/BlackGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "LightGreyGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_grey_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/LightGreyGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/light_grey_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "CyanGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cyan_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/cyan_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/CyanGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "PurpleGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/PurpleGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/purple_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "BlueGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/blue_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/BlueGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "GreenGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/GreenGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/green_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "BrownGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brown_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/BrownGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/brown_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "RedGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/red_glass_shard.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/RedGlassShardItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "GreyGlassShard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grey_glass_shard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/GreyGlassShardItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/grey_glass_shard.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other/Glass"
+    },
+    {
+      "name": "WhiteStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/white_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/White"
+    },
+    {
+      "name": "WhiteStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "white_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/white_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/White"
+    },
+    {
+      "name": "OrangeStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/orange_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Orange"
+    },
+    {
+      "name": "OrangeStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "orange_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/orange_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Orange"
+    },
+    {
+      "name": "MagentaStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/magenta_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Magenta"
+    },
+    {
+      "name": "MagentaStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magenta_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/magenta_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Magenta"
+    },
+    {
+      "name": "LightBlueStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/light_blue_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LightBlue"
+    },
+    {
+      "name": "LightBlueStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_blue_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/light_blue_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LightBlue"
+    },
+    {
+      "name": "YellowStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/yellow_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Yellow"
+    },
+    {
+      "name": "YellowStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "yellow_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/yellow_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Yellow"
+    },
+    {
+      "name": "LimeGreenStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_green_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/lime_green_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LimeGreen"
+    },
+    {
+      "name": "LimeGreenStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lime_green_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/lime_green_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LimeGreen"
+    },
+    {
+      "name": "PinkStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/pink_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Pink"
+    },
+    {
+      "name": "PinkStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pink_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/pink_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Pink"
+    },
+    {
+      "name": "GreyStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "grey_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/grey_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Grey"
+    },
+    {
+      "name": "GreyStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "grey_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/grey_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Grey"
+    },
+    {
+      "name": "LightGreyStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_grey_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/light_grey_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LightGrey"
+    },
+    {
+      "name": "LightGreyStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "light_grey_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/light_grey_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/LightGrey"
+    },
+    {
+      "name": "CyanStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/cyan_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Cyan"
+    },
+    {
+      "name": "CyanStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cyan_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/cyan_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Cyan"
+    },
+    {
+      "name": "PurpleStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/purple_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Purple"
+    },
+    {
+      "name": "PurpleStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purple_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/purple_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Purple"
+    },
+    {
+      "name": "BlueStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blue_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Blue"
+    },
+    {
+      "name": "BlueStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "blue_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blue_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Blue"
+    },
+    {
+      "name": "BrownStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/brown_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Brown"
+    },
+    {
+      "name": "BrownStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brown_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/brown_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Brown"
+    },
+    {
+      "name": "GreenStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/green_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Green"
+    },
+    {
+      "name": "GreenStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "green_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/green_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Green"
+    },
+    {
+      "name": "RedStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/red_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Red"
+    },
+    {
+      "name": "RedStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "red_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/red_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Red"
+    },
+    {
+      "name": "BlackStainedGlass",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_stained_glass",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/black_stained_glass.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Black"
+    },
+    {
+      "name": "BlackStainedGlassPane",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "black_stained_glass_pane",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/black_stained_glass_pane.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Glass/Black"
+    },
+    {
+      "name": "IngotMold",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ingot_mold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/ingot_mold.json",
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/ingot_mold.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/ingot_mold.json",
+          "src/main/resources/assets/survival_reimagined/models/block/ingot_mold.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/IngotMoldBlock.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Molds/Dried"
+    },
+    {
+      "name": "IngotClayMold",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ingot_clay_mold",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/block/ingot_clay_mold.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/ingot_clay_mold.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/IngotClayMoldBlock.java",
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/ingot_clay_mold.json",
+          "src/main/resources/assets/survival_reimagined/models/item/ingot_clay_mold.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Molds/Clay"
+    },
+    {
+      "name": "ClayIngotMold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_ingot_mold",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/ClayIngotMoldProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Molds/Clay/TickUpdate"
+    },
+    {
+      "name": "IngotsRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ingots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/IngotsRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes"
+    },
+    {
+      "name": "Obsidian",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsidian",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/obsidian.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
+    },
+    {
+      "name": "CryingObsidian",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crying_obsidian",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/crying_obsidian.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
+    },
+    {
+      "name": "AncientDebris",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_debris",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/blocks/ancient_debris.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/rocks/igneous stones/Harder Blocks"
+    },
+    {
+      "name": "BindingSculk",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/potion/BindingSculkMobEffect.java"
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk"
+    },
+    {
+      "name": "StandingOnSculk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standing_on_sculk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/StandingOnSculkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Code"
+    },
+    {
+      "name": "BindingSculkEffectStartedapplied",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BindingSculkEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Variables"
+    },
+    {
+      "name": "BindingSculkEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BindingSculkEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Variables"
+    },
+    {
+      "name": "HeartTexture",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_texture",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HeartTextureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Client"
+    },
+    {
+      "name": "BindingSculkActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk_active_tick_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BindingSculkActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Client"
+    },
+    {
+      "name": "BindingSculkDamage",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk_damage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/damage_type/binding_sculk_damage.json"
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk"
+    },
+    {
+      "name": "BindingSculkOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "binding_sculk_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BindingSculkOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Code"
+    },
+    {
+      "name": "KilledBySculk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "killed_by_sculk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/KilledBySculkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Code"
+    },
+    {
+      "name": "HeartsReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hearts_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HeartsResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk/Client"
+    },
+    {
+      "name": "SoulProtection",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_purificaton",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/enchantment/soul_purificaton.json"
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk"
+    },
+    {
+      "name": "AncientCity",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ancient_city",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/chests/ancient_city.json"
+        ]
+      },
+      "path": "~/Mod Elements/Status Effects/Sculk"
+    },
+    {
+      "name": "HempSeeds",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_seeds",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/HempSeedsItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/hemp_seeds.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "Hemp",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hemp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/hemp.json",
+          "src/main/resources/assets/survival_reimagined/models/block/hemp.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/hemp.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/HempBlock.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "HempBlockValidPlacementCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_block_valid_placement_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempBlockValidPlacementConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempSeedsRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_seeds_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempSeedsRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_on_block_right_clicked",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempCanBoneMealBeUsedOnThisBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_can_bone_meal_be_used_on_this_block",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempCanBoneMealBeUsedOnThisBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempOnBoneMealSuccess",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_on_bone_meal_success",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/HempOnBoneMealSuccessProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempLeaf",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_leaf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/HempLeafItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/hemp_leaf.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "HempPaper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_paper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/hemp_paper.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/HempPaperItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "Loot",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/LootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Code"
+    },
+    {
+      "name": "HempPaperRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_paper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/hemp_paper_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "HempFiber",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_fiber",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/hemp_fiber.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "HempBook",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/hemp_book.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "MapRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "map_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/map_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "HempLeafExt",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_leaf_ext",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "HempSeedsExt",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hemp_seeds_ext",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Items"
+    },
+    {
+      "name": "BowHemp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bow_hemp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/bow_hemp.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "CrossbowHemp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crossbow_hemp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/crossbow_hemp.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "FishingRodHemp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishing_rod_hemp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/fishing_rod_hemp.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Hemp/Recipes"
+    },
+    {
+      "name": "Barrel",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/barrel.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "NetheriteIngot",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "netherite_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/netherite_ingot.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "NetherteRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherte_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/NetherteRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes"
+    },
+    {
+      "name": "RoughNetherite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rough_netherite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/RoughNetheriteItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/rough_netherite.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Ingredients/Other"
+    },
+    {
+      "name": "NetheriteHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/NetheriteHammerItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/netherite_hammer.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Tools/Netherite"
+    },
+    {
+      "name": "NetheriteKnife",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/NetheriteKnifeItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/netherite_knife.json"
+        ]
+      },
+      "path": "~/Mod Elements/items/Tools/Netherite"
+    },
+    {
+      "name": "NetheriteSaw",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/netherite_saw.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/NetheriteSawItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/items/Tools/Netherite"
+    },
+    {
+      "name": "NetheriteHammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/netherite_hammer_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Netherite"
+    },
+    {
+      "name": "NetheriteSawRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_saw_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/netherite_saw_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Netherite"
+    },
+    {
+      "name": "NetheriteKnifeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/netherite_knife_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Netherite"
     }
   ],
   "variable_elements": [
@@ -16573,6 +17924,12 @@
       "name": "TextureLoaded",
       "type": "logic",
       "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "sculk_hearts",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -16710,11 +18067,6 @@
     }
   ],
   "tag_elements": {
-    "BLOCKS:mod:growing": [
-      "CUSTOM:FiberousPlantStage0",
-      "CUSTOM:FiberousPlantStage1",
-      "CUSTOM:FiberousPlantStage2"
-    ],
     "ITEMS:minecraft:chest_armor": [
       "~CUSTOM:SteelArmor.body",
       "~CUSTOM:Wooden.body",
@@ -16732,7 +18084,11 @@
       "CUSTOM:ChestplateMold",
       "CUSTOM:LeggingMold",
       "CUSTOM:BootsMold",
-      "CUSTOM:KnifeBladeMold"
+      "CUSTOM:KnifeBladeMold",
+      "CUSTOM:IngotMold"
+    ],
+    "ENCHANTMENTS:minecraft:treasure": [
+      "~CUSTOM:SoulProtection"
     ],
     "ENTITIES:mod:living_entities": [
       "EntityPig",
@@ -16800,20 +18156,37 @@
       "CUSTOM:RoughTin"
     ],
     "ITEMS:minecraft:axes": [
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
-      "~CUSTOM:SteelKnife",
       "~CUSTOM:SteelAxe",
-      "~CUSTOM:BronzeKnife",
-      "~CUSTOM:BronzeHammer",
       "~CUSTOM:BronzeAxe"
     ],
     "ITEMS:mod:hide": [
       "CUSTOM:CowHide",
       "CUSTOM:SheepHide"
+    ],
+    "ITEMS:sereneseasons:spring_crops": [
+      "CUSTOM:AppleTreeSapling"
+    ],
+    "ITEMS:minecraft:steel_melt_items": [
+      "CUSTOM:SteelSword",
+      "CUSTOM:SteelPickaxe",
+      "CUSTOM:SteelAxe",
+      "CUSTOM:SteelShovel",
+      "CUSTOM:SteelHoe",
+      "CUSTOM:SteelArmor.helmet",
+      "CUSTOM:SteelArmor.body",
+      "CUSTOM:SteelArmor.legs",
+      "CUSTOM:SteelArmor.boots",
+      "CUSTOM:SteelKnife",
+      "CUSTOM:SteelHammer",
+      "CUSTOM:SteelSaw",
+      "CUSTOM:SteelSwordBlade",
+      "CUSTOM:SteelPickaxeHead",
+      "CUSTOM:SteelAxeHead",
+      "CUSTOM:SteelShovelHead",
+      "CUSTOM:SteelHoeBlade",
+      "CUSTOM:SteelKnifeBlade",
+      "CUSTOM:SteelHammerHead",
+      "CUSTOM:SteelSawBlade"
     ],
     "BLOCKS:minecraft:incorrect_for_gold_tool": [
       "Blocks.IRON_ORE",
@@ -16850,6 +18223,9 @@
     "ENTITIES:minecraft:undead": [
       "~CUSTOM:BloodMoonZombie"
     ],
+    "BLOCKS:sereneseasons:summer_crops": [
+      "CUSTOM:Hemp"
+    ],
     "ITEMS:minecraft:alloy_items": [
       "TAG:mod:copper_items",
       "TAG:mod:tin_items",
@@ -16857,7 +18233,15 @@
       "TAG:mod:manganese_items",
       "TAG:mod:steel_items",
       "TAG:mod:diamond_items",
-      "CUSTOM:UraniumDust"
+      "CUSTOM:UraniumDust",
+      "Items.GOLD_INGOT",
+      "Items.NETHERITE_SCRAP"
+    ],
+    "ENCHANTMENTS:minecraft:tradeable": [
+      "~CUSTOM:SoulProtection"
+    ],
+    "ITEMS:sereneseasons:summer_crops": [
+      "CUSTOM:HempSeeds"
     ],
     "ITEMS:minecraft:raw_meat": [
       "CUSTOM:Brain",
@@ -16878,13 +18262,26 @@
       "CUSTOM:FlintTool",
       "CUSTOM:CopperChisel",
       "CUSTOM:BronzeChisel",
-      "CUSTOM:SteelChisel"
+      "CUSTOM:SteelChisel",
+      "CUSTOM:DiamondChisel"
     ],
     "ITEMS:mod:diamond_processing_items": [
       "CUSTOM:EmbeddedDiamond",
       "CUSTOM:DeepslateEmbeddedDiamond",
       "Blocks.DIAMOND_ORE",
       "Blocks.DEEPSLATE_DIAMOND_ORE"
+    ],
+    "ITEMS:minecraft:rough_ingots": [
+      "CUSTOM:RoughBronze",
+      "CUSTOM:RoughIron",
+      "CUSTOM:RoughGold",
+      "CUSTOM:RoughCopper",
+      "CUSTOM:RoughTin",
+      "CUSTOM:RoughManganese",
+      "CUSTOM:RoughSteel",
+      "CUSTOM:RoughRedstone",
+      "CUSTOM:RoughPlatedDiamond",
+      "CUSTOM:RoughNetherite"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:EmbeddedObsidian",
@@ -16898,6 +18295,7 @@
       "~CUSTOM:DeepslateManganeseOre",
       "~CUSTOM:ManganeseOre",
       "~CUSTOM:BlockOfBronze",
+      "~CUSTOM:Forge",
       "~CUSTOM:TinOre"
     ],
     "ITEMS:mod:iron_items": [
@@ -16910,6 +18308,9 @@
       "CUSTOM:ManganeseIngot",
       "CUSTOM:RawManganese"
     ],
+    "BLOCKS:minecraft:maintains_farmland": [
+      "CUSTOM:Hemp"
+    ],
     "ITEMS:minecraft:bark_large": [
       "CUSTOM:LargeOakBark",
       "CUSTOM:LargeDarkOakBark",
@@ -16918,7 +18319,9 @@
       "CUSTOM:LargeMangroveBark",
       "CUSTOM:LargeCherryBark",
       "CUSTOM:LargeAcaciaBark",
-      "CUSTOM:LargeJungleBark"
+      "CUSTOM:LargeJungleBark",
+      "TAG:minecraft:planks",
+      "TAG:minecraft:logs"
     ],
     "ITEMS:minecraft:foot_armor": [
       "~CUSTOM:SteelArmor.boots",
@@ -16930,9 +18333,10 @@
       "TAG:minecraft:plank_fuels",
       "TAG:minecraft:bark_large",
       "TAG:minecraft:bark_small",
-      "Blocks.COAL_BLOCK",
       "TAG:minecraft:logs",
-      "TAG:minecraft:planks"
+      "TAG:minecraft:planks",
+      "Blocks.COAL_BLOCK",
+      "Items.LAVA_BUCKET"
     ],
     "BLOCKS:minecraft:incorrect_for_stone_tool": [
       "Blocks.IRON_ORE",
@@ -16958,6 +18362,13 @@
       "Blocks.STRIPPED_CRIMSON_STEM",
       "Blocks.STRIPPED_MANGROVE_LOG",
       "Blocks.STRIPPED_CHERRY_LOG"
+    ],
+    "ITEMS:minecraft:melt_items": [
+      "TAG:minecraft:steel_melt_items",
+      "TAG:minecraft:bronze_melt_items",
+      "TAG:minecraft:iron_melt_items",
+      "TAG:minecraft:diamond_melt_items",
+      "TAG:minecraft:gold_melt_items"
     ],
     "ITEMS:mod:hammers": [
       "CUSTOM:StoneHammer",
@@ -16986,6 +18397,28 @@
       "~CUSTOM:SteelHoe",
       "~CUSTOM:BronzeHoe"
     ],
+    "ITEMS:minecraft:bronze_melt_items": [
+      "CUSTOM:BronzePickaxe",
+      "CUSTOM:BronzeAxe",
+      "CUSTOM:BronzeSword",
+      "CUSTOM:BronzeShovel",
+      "CUSTOM:BronzeHoe",
+      "CUSTOM:BronzeArmor.helmet",
+      "CUSTOM:BronzeArmor.body",
+      "CUSTOM:BronzeArmor.legs",
+      "CUSTOM:BronzeArmor.boots",
+      "CUSTOM:BronzeSaw",
+      "CUSTOM:BronzeHammer",
+      "CUSTOM:BronzePickaxeHead",
+      "CUSTOM:BronzeAxeHead",
+      "CUSTOM:BronzeSwordBlade",
+      "CUSTOM:BronzeHoeBlade",
+      "CUSTOM:BronzeShovelHead",
+      "CUSTOM:BronzeHammerHead",
+      "CUSTOM:BronzeSawBlade",
+      "CUSTOM:BronzeKnife",
+      "CUSTOM:BronzeKnifeBlade"
+    ],
     "ITEMS:mod:emerald_processing_items": [
       "CUSTOM:EmbeddedEmerald",
       "CUSTOM:DeepslateEmbeddedEmerald",
@@ -17003,20 +18436,65 @@
       "CUSTOM:SteelKnife",
       "CUSTOM:DiamondKnife"
     ],
+    "ITEMS:minecraft:gold_melt_items": [
+      "Items.GOLDEN_SWORD",
+      "Items.GOLDEN_SHOVEL",
+      "Items.GOLDEN_PICKAXE",
+      "Items.GOLDEN_AXE",
+      "Items.GOLDEN_HOE",
+      "Items.GOLDEN_HELMET",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.GOLDEN_BOOTS",
+      "Items.GOLDEN_HORSE_ARMOR"
+    ],
     "ITEMS:mod:sand_replaceables": [
       "CUSTOM:SandSaltDeposit"
     ],
+    "ITEMS:farmersdelight:knives": [
+      "CUSTOM:StoneKnife",
+      "CUSTOM:BronzeKnife",
+      "CUSTOM:WoodenKnife",
+      "CUSTOM:SteelKnife",
+      "CUSTOM:DiamondKnife",
+      "CUSTOM:NetheriteKnife"
+    ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
-      "~CUSTOM:SteelKnife",
-      "~CUSTOM:SteelSword",
       "~CUSTOM:BronzeKnife",
-      "~CUSTOM:BronzeHammer",
-      "~CUSTOM:BronzeSword"
+      "~CUSTOM:DiamondKnife",
+      "~CUSTOM:NetheriteKnife",
+      "~CUSTOM:SteelSword",
+      "~CUSTOM:BronzeSword",
+      "CUSTOM:StoneKnife",
+      "CUSTOM:WoodenKnife",
+      "CUSTOM:SteelKnife"
+    ],
+    "ENCHANTMENTS:minecraft:on_random_loot": [
+      "~CUSTOM:SoulProtection"
+    ],
+    "ITEMS:minecraft:diamond_melt_items": [
+      "CUSTOM:DiamondSwordBlade",
+      "CUSTOM:DiamondAxeHead",
+      "CUSTOM:DiamondHoeBlade",
+      "CUSTOM:DiamondPickaxeHead",
+      "CUSTOM:DiamondShovelHead",
+      "CUSTOM:DiamondKnifeBlade",
+      "CUSTOM:DiamondHammerHead",
+      "CUSTOM:DiamondSawBlade",
+      "CUSTOM:DiamondHammer",
+      "CUSTOM:DiamondKnife",
+      "CUSTOM:DiamondSaw",
+      "CUSTOM:DiamondChisel",
+      "Items.DIAMOND_SWORD",
+      "Items.DIAMOND_SHOVEL",
+      "Items.DIAMOND_PICKAXE",
+      "Items.DIAMOND_AXE",
+      "Items.DIAMOND_HOE",
+      "Items.DIAMOND_HELMET",
+      "Items.DIAMOND_CHESTPLATE",
+      "Items.DIAMOND_LEGGINGS",
+      "Items.DIAMOND_BOOTS",
+      "Items.DIAMOND_HORSE_ARMOR"
     ],
     "BLOCKS:minecraft:needs_steel_tool": [
       "Blocks.DIAMOND_ORE",
@@ -17026,32 +18504,29 @@
       "Blocks.DEEPSLATE_EMERALD_ORE",
       "Blocks.EMERALD_BLOCK"
     ],
+    "ITEMS:minecraft:iron_melt_items": [
+      "Blocks.IRON_DOOR",
+      "Blocks.IRON_TRAPDOOR",
+      "Blocks.IRON_BARS",
+      "Items.RAW_IRON",
+      "Items.IRON_SWORD",
+      "Items.IRON_SHOVEL",
+      "Items.IRON_PICKAXE",
+      "Items.IRON_AXE",
+      "Items.IRON_HOE",
+      "Items.IRON_HELMET",
+      "Items.IRON_CHESTPLATE",
+      "Items.IRON_LEGGINGS",
+      "Items.IRON_BOOTS",
+      "Items.IRON_HORSE_ARMOR",
+      "Items.IRON_DOOR"
+    ],
     "ITEMS:mod:rod_items": [
       "CUSTOM:ReactorRod"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:DiamondChisel",
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelChisel",
-      "~CUSTOM:BronzeChisel",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
-      "~CUSTOM:SteelKnife",
       "~CUSTOM:SteelPickaxe",
-      "~CUSTOM:WoodenKnife",
-      "~CUSTOM:BronzeKnife",
-      "~CUSTOM:StoneKnife",
-      "~CUSTOM:WoodenHammer",
-      "~CUSTOM:WoodenSaw",
-      "~CUSTOM:BronzeHammer",
-      "~CUSTOM:BronzeSaw",
-      "~CUSTOM:BronzePickaxe",
-      "~CUSTOM:StoneSaw",
-      "~CUSTOM:StoneHammer",
-      "~CUSTOM:CopperChisel",
-      "~CUSTOM:FlintTool"
+      "~CUSTOM:BronzePickaxe"
     ],
     "ITEMS:minecraft:plank_fuels": [
       "CUSTOM:OakPlank",
@@ -17108,7 +18583,9 @@
       "CUSTOM:CherryBark",
       "CUSTOM:AcaciaBark",
       "CUSTOM:JungleBark",
-      "CUSTOM:SmallCoalChunk"
+      "CUSTOM:SmallCoalChunk",
+      "CUSTOM:HempPaper",
+      "Items.PAPER"
     ],
     "ITEMS:minecraft:music_discs": [
       "~CUSTOM:BloodMoonsMusicDisc"
@@ -17126,20 +18603,27 @@
       "CUSTOM:ClayLeggingsMold",
       "CUSTOM:ClayBootsMold",
       "CUSTOM:ClayCrucible",
-      "CUSTOM:ClayKnifeMold"
+      "CUSTOM:ClayKnifeMold",
+      "CUSTOM:IngotClayMold"
     ],
     "BLOCKS:minecraft:crops": [
-      "CUSTOM:FiberousPlantStage0",
-      "CUSTOM:FiberousPlantStage1",
-      "CUSTOM:FiberousPlantStage2",
-      "CUSTOM:FiberousPlantStage3"
+      "CUSTOM:Hemp"
+    ],
+    "ITEMS:sereneseasons:autumn_crops": [
+      "CUSTOM:AppleTreeSapling"
     ],
     "ITEMS:minecraft:netherportal_items": [
       "Items.FIRE_CHARGE",
       "Items.FLINT_AND_STEEL"
     ],
+    "BLOCKS:sereneseasons:spring_crops": [
+      "CUSTOM:AppleTreeSapling"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
       "~CUSTOM:MetalRefiningTable"
+    ],
+    "BLOCKS:sereneseasons:autumn_crops": [
+      "CUSTOM:AppleTreeSapling"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~CUSTOM:SandSaltDeposit"
@@ -17160,6 +18644,9 @@
     "ITEMS:minecraft:shovels": [
       "~CUSTOM:SteelShovel",
       "~CUSTOM:BronzeShovel"
+    ],
+    "ITEMS:minecraft:saplings": [
+      "CUSTOM:AppleTreeSapling"
     ],
     "BLOCKS:neoforge:apple_placeables": [
       "TAG:minecraft:leaves"
@@ -17191,7 +18678,6 @@
       "advancements.bronze_age.title": "Bronze Age",
       "item.survival_reimagined.mangrove_plank": "Mangrove Plank",
       "item.survival_reborn.rough_bronze": "Rough Bronze",
-      "item.survival_reimagined.fiberous_plant_seeds": "Fiberous Plant Seeds",
       "item.survival_reimagined.diamond_hammer_head": "Diamond Hammer Head",
       "item.survival_reimagined.bronze_sword_blade": "Bronze Sword Blade",
       "item.survival_reborn.rough_steel": "Rough Steel",
@@ -17225,7 +18711,9 @@
       "block.survival_reimagined.block_of_steel": "Block Of Steel",
       "item.survival_reborn.bronze_shovel": "Bronze Shovel",
       "item.survival_reimagined.cow_hide": "Cow Hide",
+      "enchantment.survival_reimagined.soul_purificaton": "Soul Purification",
       "item.survival_reborn.large_spruce_bark": "Large Spruce Bark",
+      "item.survival_reimagined.rough_netherite": "Rough Netherite",
       "advancements.survival_reborn.descr": "Follow this advancement tree for mod progression.",
       "item.survival_reimagined.diamond_hoe_blade": "Diamond Hoe Blade",
       "item.survival_reimagined.sand_pile": "Sand Pile",
@@ -17250,10 +18738,12 @@
       "item.survival_reimagined.cured_stomach": "Cured Stomach",
       "item.survival_reimagined.birch_bark": "Birch Bark",
       "item.survival_reimagined.cooked_heart": "Cooked Heart",
+      "item.survival_reimagined.grey_glass_shard": "Grey Glass Shard",
       "block.survival_reimagined.embedded_obsidian": "Embedded Obsidian",
       "item.survival_reborn.redstone_charged_uranium_dust": "Redstone Charged Uranium Dust",
       "item.survival_reimagined.spruce_plank": "Spruce Plank",
       "block.survival_reimagined.clay_knife_mold": "Clay Knife Mold",
+      "block.survival_reimagined.ingot_mold": "Ingot Mold",
       "item.survival_reborn.cured_intestines": "Cured Intestines",
       "item.survival_reimagined.steel_shovel_head": "Steel Shovel Head",
       "item.survival_reimagined.bronze_sword": "Bronze Sword",
@@ -17261,6 +18751,7 @@
       "item.survival_reborn.steel_hoe_blade": "Steel Hoe Blade",
       "item.survival_reborn.mud_rock": "Mud Rock",
       "item.survival_reimagined.flesh": "Flesh",
+      "item.survival_reimagined.purple_glass_shard": "Purple Glass Shard",
       "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
       "item.survival_reimagined.lungs": "Lungs",
@@ -17268,7 +18759,6 @@
       "item.survival_reimagined.salt": "Salt",
       "item.survival_reborn.flint_tool": "Flint Tool",
       "item.survival_reimagined.tin_chunk": "Tin Chunk",
-      "item.survival_reimagined.plant_fiber": "Plant Fiber",
       "block.survival_reimagined.clay_crucible": "Clay Crucible",
       "block.survival_reborn.calcite_rock_block": "Calcite Rock Block",
       "item.survival_reimagined.redstone_nugget": "Redstone Nugget",
@@ -17307,6 +18797,7 @@
       "block.survival_reimagined.netherrack_rock_block": "Netherrack Rock Block",
       "item.survival_reimagined.rough_iron": "Rough Iron",
       "block.survival_reborn.crucible": "Crucible",
+      "item.survival_reimagined.hemp_leaf": "Hemp Leaf",
       "item.survival_reborn.cured_stomach": "Cured Stomach",
       "item.survival_reborn.bronze_hoe": "Bronze Hoe",
       "item.survival_reimagined.stone_rock": "Stone Rock",
@@ -17345,6 +18836,7 @@
       "item.survival_reimagined.spoiled_mutton": "Spoiled Mutton",
       "item.survival_reimagined.steel_armor_boots": "Steel Boots",
       "item.survival_reimagined.manganese_nugget": "Manganese Nugget",
+      "item.survival_reimagined.blue_glass_shard": "Blue Glass Shard",
       "block.survival_reborn.sheep_leg": "Sheep Leg",
       "item.survival_reborn.steel_knife": "Steel Knife",
       "advancements.sharper_flint.descr": "Craft a Flint Tool",
@@ -17373,6 +18865,7 @@
       "block.survival_reborn.clay_sword_blade_mold": "Clay Sword Blade Mold",
       "block.survival_reborn.block_of_raw_tin": "Block Of Raw Tin",
       "block.survival_reborn.block_of_tin": "Block Of Tin",
+      "death.attack.binding_sculk_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.survival_reborn.uranium_red_sandstone_deposit": "Uranium Red Sandstone Deposit",
       "item.survival_reimagined.cured_intestines": "Cured Intestines",
       "item.survival_reimagined.manganese_ingot": "Manganese Ingot",
@@ -17386,6 +18879,7 @@
       "item.survival_reborn.wooden_helmet": "Wooden Helmet",
       "item.survival_reimagined.warped_bark": "Warped Bark",
       "item.survival_reborn.flesh": "Flesh",
+      "item.survival_reimagined.cyan_glass_shard": "Cyan Glass Shard",
       "item.survival_reimagined.stone_saw": "Stone Saw",
       "item.survival_reborn.heart_of_the_nether": "Heart Of The Nether",
       "item.survival_reimagined.steel_hoe_blade": "Steel Hoe Blade",
@@ -17421,8 +18915,10 @@
       "item.survival_reimagined.crimson_bark": "Crimson Bark",
       "item.survival_reimagined.mossy_stone_rock": "Mossy Stone Rock",
       "block.survival_reimagined.metal_refining_table": "Metal Refining Table",
+      "item.survival_reimagined.lime_green_glass_shard": "Lime Green Glass Shard",
       "item.survival_reimagined.spoiled_chicken": "Spoiled Chicken",
       "item.survival_reimagined.rough_plated_diamond": "Rough Plated Diamond",
+      "item.survival_reimagined.pink_glass_shard": "Pink Glass Shard",
       "item.survival_reimagined.steel_chisel": "Steel Chisel",
       "item.survival_reborn.large_mangrove_bark": "Large Mangrove Bark",
       "block.survival_reborn.basalt_rock_block": "Basalt Rock Block",
@@ -17455,6 +18951,7 @@
       "item.survival_reborn.cured_mutton": "Cured Mutton",
       "item.survival_reborn.steel_hammer_head": "Steel Hammer Head",
       "item.survival_reimagined.steel_armor_leggings": "Steel Leggings",
+      "death.attack.binding_sculk_damage.player": "%1$s\u0027s soul was subdued by the sculk whilst trying to escape %2$s",
       "gui.survival_reimagined.mptgui.label_mineral_processing_table": "Mineral Processing Table",
       "item.survival_reimagined.steel_armor_chestplate": "Steel Chestplate",
       "effect.survival_reborn.zombification": "Zombification",
@@ -17489,13 +18986,10 @@
       "block.survival_reborn.fiberous_plant_stage_1": "Fiberous Plant Stage 1",
       "block.survival_reimagined.calcite_rock_block": "Calcite Rock Block",
       "item.survival_reimagined.bronze_hammer_head": "Bronze Hammer Head",
-      "block.survival_reimagined.fiberous_plant_stage_2": "Fiberous Plant Stage 2",
       "block.survival_reborn.sheep_carcass": "Sheep Carcass",
       "item.survival_reborn.steel_nugget": "Steel Nugget",
-      "block.survival_reimagined.fiberous_plant_stage_3": "Fiberous Plant Stage 3",
-      "block.survival_reimagined.fiberous_plant_stage_0": "Fiberous Plant Stage 0",
       "item.survival_reimagined.gravel_pile": "Gravel Pile",
-      "block.survival_reimagined.fiberous_plant_stage_1": "Fiberous Plant Stage 1",
+      "death.attack.binding_sculk_damage": "%1$s\u0027s soul was subdued by the sculk",
       "item.survival_reborn.uranium_sandstone_deposit": "Uranium Sandstone Deposit",
       "item.survival_reimagined.obsidian_rock": "Obsidian Rock",
       "item.survival_reimagined.small_coal_chunk": "Small Coal Chunk",
@@ -17507,13 +19001,16 @@
       "item.survival_reimagined.eye_of_ender_fusion_dust": "Eye Of Ender Fusion Dust",
       "item.survival_reimagined.bronze_hoe_blade": "Bronze Hoe Blade",
       "item.survival_reimagined.spoiled_beef": "Spoiled Beef",
+      "item.survival_reimagined.red_glass_shard": "Red Glass Shard",
       "item.survival_reborn.stone_saw": "Stone Saw",
       "item.survival_reborn.basalt_rock": "Basalt Rock",
       "item.survival_reborn.redstone_chunk": "Redstone Chunk",
+      "item.survival_reimagined.hemp_fiber": "Hemp Fiber",
       "item.survival_reimagined.large_mangrove_bark": "Large Mangrove Bark",
       "item.survival_reimagined.diamond_hammer": "Diamond Hammer",
       "item.survival_reborn.bronze_ingot": "Bronze Ingot",
       "subtitles.block/steel_step": "",
+      "item.survival_reimagined.hemp_seeds": "Hemp Seeds",
       "block.survival_reimagined.sheep_carcass": "Sheep Carcass",
       "item.survival_reimagined.diamond_pickaxe_head": "Diamond Pickaxe Head",
       "block.survival_reimagined.block_of_raw_tin": "Block Of Raw Tin",
@@ -17542,11 +19039,13 @@
       "item.survival_reborn.heart": "Heart",
       "block.survival_reborn.pig_carcass": "Pig Carcass",
       "item.survival_reimagined.raw_redstone": "Raw Redstone",
+      "item.survival_reimagined.netherite_knife": "Netherite Knife",
       "block.survival_reborn.deepslate_rock_block": "Deepslate Rock Block",
       "block.survival_reimagined.chestplate_mold": "Chestplate Mold",
       "block.survival_reimagined.pig_head": "Pig Head",
       "item.survival_reborn.rough_tin": "Rough Tin",
       "subtitles.bloodzombie_hurt": "",
+      "item.survival_reimagined.netherite_hammer": "Netherite Hammer",
       "subtitles.player_digging.stone": "Something Digging",
       "item.survival_reimagined.rough_tin": "Rough Tin",
       "item.survival_reborn.plant_fiber": "Plant Fiber",
@@ -17559,12 +19058,14 @@
       "item.survival_reborn.obsidian_rock": "Obsidian Rock",
       "item.survival_reborn.steel_knife_blade": "Steel Knife Blade",
       "item.survival_reborn.diorite_rock": "Diorite Rock",
+      "item.survival_reimagined.orange_glass_shard": "Orange Glass Shard",
       "item.survival_reborn.bronze_sword_blade": "Bronze Sword Blade",
       "block.survival_reborn.cow_head": "Cow Head",
       "block.survival_reimagined.hammer_head_mold": "Hammer Head Mold",
       "block.survival_reimagined.block_of_bronze": "Block Of Bronze",
       "item.survival_reborn.mossy_stone_rock": "Mossy Stone Rock",
       "item.survival_reimagined.blood_moons_music_disc": "Music Disc",
+      "block.survival_reimagined.ingot_clay_mold": "Clay Knife Mold",
       "item.survival_reborn.large_acacia_bark": "Large Acacia Bark",
       "item.survival_reborn.calcite_rock": "Calcite Rock",
       "item.survival_reimagined.cured_lungs": "Cured Lungs",
@@ -17604,6 +19105,7 @@
       "block.survival_reimagined.boots_mold": "Boots Mold",
       "item.survival_reborn.heart_item": "Heart",
       "advancements.crafting_table.title": "Crafting Table",
+      "item.survival_reimagined.green_glass_shard": "Green Glass Shard",
       "item.survival_reimagined.iron_chunk": "Iron Chunk",
       "item.survival_reimagined.bronze_shovel_head": "Bronze Shovel Head",
       "item.survival_reborn.oak_bark": "Oak Bark",
@@ -17623,6 +19125,7 @@
       "block.survival_reborn.apple_tree_sapling": "Apple Tree Sapling",
       "item.survival_reimagined.clay_brick": "Clay Brick",
       "item.survival_reborn.small_stick": "Small Stick",
+      "item.survival_reimagined.light_grey_glass_shard": "Light Grey Glass Shard",
       "item.survival_reimagined.spoiled_lungs": "Spoiled Lungs",
       "block.survival_reborn.axe_head_mold": "Axe Head Mold",
       "item_group.survival_reimagined.survival_reborn": "Survival Reimagined",
@@ -17638,11 +19141,11 @@
       "item.survival_reimagined.copper_chisel": "Copper Chisel",
       "item.survival_reborn.bronze_sword": "Bronze Sword",
       "item.survival_reimagined.redstone_ingot": "Redstone Ingot",
+      "effect.survival_reimagined.binding_sculk": "Binding Sculk",
       "item.survival_reborn.bronze_hammer": "Bronze Hammer",
       "item.survival_reborn.spoiled_chicken": "Spoiled Chicken",
       "item.survival_reimagined.steel_knife": "Steel Knife",
       "item.survival_reborn.mangrove_plank": "Mangrove Plank",
-      "item.survival_reimagined.fiberous_leaves": "Fiberous Leaves",
       "item.survival_reborn.depleted_reactor_rod": "Depleted Reactor Rod",
       "block.survival_reborn.apple": "Apple",
       "block.survival_reimagined.clay_shovel_head_mold": "Clay Shovel Head Mold",
@@ -17654,10 +19157,12 @@
       "gui.survival_reborn.forge_gui.label_forge": "Forge",
       "item.survival_reimagined.bronze_armor_chestplate": "Bronze Chestplate",
       "item.survival_reborn.bronze_armor_chestplate": "Bronze Chestplate",
+      "item.survival_reimagined.netherite_saw": "Netherite Saw",
       "effect.survival_reborn.fear": "Fear",
       "block.survival_reimagined.clay_hoe_blade_mold": "Clay Hoe Blade Mold",
       "item.survival_reborn.lungs": "Lungs",
       "item.survival_reborn.manganese_nugget": "Manganese Nugget",
+      "item.survival_reimagined.hemp_paper": "Hemp Paper",
       "block.survival_reborn.cobbled_red_sandstone": "Cobbled Red Sandstone",
       "item.survival_reimagined.bronze_hammer": "Bronze Hammer",
       "item.survival_reborn.large_cherry_bark": "Large Cherry Bark",
@@ -17690,10 +19195,12 @@
       "block.survival_reborn.cobbled_sandstone": "Cobbled Sandstone",
       "item.survival_reborn.copper_chunk": "Copper Chunk",
       "advancements.survival_reborn.title": "Survival Reborn",
+      "item.survival_reimagined.brown_glass_shard": "Brown Glass Shard",
       "item.survival_reimagined.cherry_bark": "Cherry Bark",
       "advancements.mpt.title": "Mineral Processing Table",
       "item.survival_reimagined.spoiled_intestines": "Spoiled Intestines",
       "block.survival_reimagined.sheep_head": "Sheep Head",
+      "item.survival_reimagined.magenta_glass_shard": "Magenta Glass Shard",
       "item.survival_reborn.oak_plank": "Oak Plank",
       "block.survival_reborn.granite_rock_block": "Granite Rock Block",
       "item.survival_reborn.sandstone_chunk": "Sandstone Chunk",
@@ -17764,6 +19271,7 @@
       "block.survival_reborn.flintblock": "Flintblock",
       "item.survival_reborn.stone_knife": "Stone Knife",
       "item.survival_reimagined.blood_moon_zombie_spawn_egg": "Blood Moon Zombie Spawn Egg",
+      "item.survival_reimagined.light_blue_glass_shard": "Light Blue Glass Shard",
       "item.survival_reimagined.andesite_rock": "Andesite Rock",
       "block.survival_reborn.stone_rock_bloc": "Stone Rock Block",
       "item.survival_reborn.wooden_boots": "Wooden Boots",
@@ -17802,6 +19310,7 @@
       "item.survival_reborn.spruce_plank": "Spruce Plank",
       "item.survival_reborn.bronze_pickaxe_head": "Bronze Pickaxe Head",
       "item.survival_reborn.liver": "Liver",
+      "item.survival_reimagined.white_glass_shard": "White Glass Shard",
       "item.survival_reimagined.bronze_saw": "Bronze Saw",
       "item.survival_reborn.cured_heart": "Cured Heart",
       "item.survival_reimagined.manganese_chunk": "Manganese Chunk",
@@ -17817,6 +19326,7 @@
       "item.survival_reimagined.wooden_chestplate": "Wooden Chestplate",
       "effect.survival_reimagined.paranoia": "Paranoia",
       "item.survival_reborn.bronze_hammer_head": "Bronze Hammer Head",
+      "item.survival_reimagined.yellow_glass_shard": "Yellow Glass Shard",
       "item.survival_reborn.spoiled_brain": "Spoiled Brain",
       "block.survival_reborn.pickaxe_head_mold": "Pickaxe Head Mold",
       "block.survival_reborn.knife_blade_mold": "Knife Blade Mold",
@@ -17846,8 +19356,10 @@
       "item.survival_reimagined.steel_hammer_head": "Steel Hammer Head",
       "block.survival_reimagined.basalt_rock_block": "Basalt Rock Block",
       "item.survival_reborn.bronze_axe": "Bronze Axe",
+      "item.survival_reimagined.black_glass_shard": "Black Glass Shard",
       "item.survival_reimagined.deepslate_embedded_emerald": "Deepslate Embedded Emerald",
       "item.survival_reimagined.gold_chunk": "Gold Chunk",
+      "block.survival_reimagined.hemp": "Hemp",
       "advancements.radioactive_metal.title": "Radioactive Metal",
       "item.survival_reimagined.acacia_plank": "Acacia Plank",
       "item.survival_reborn.diamond_knife_blade": "Diamond Knife Blade",
@@ -17969,18 +19481,18 @@
                     ]
                   },
                   {
-                    "name": "FiberousPlant",
+                    "name": "Hemp",
                     "children": [
                       {
                         "name": "Items",
                         "children": []
                       },
                       {
-                        "name": "Stages",
+                        "name": "Code",
                         "children": []
                       },
                       {
-                        "name": "Code",
+                        "name": "Recipes",
                         "children": []
                       }
                     ]
@@ -18018,6 +19530,10 @@
                           },
                           {
                             "name": "DiamondRecipes",
+                            "children": []
+                          },
+                          {
+                            "name": "MeltMetal",
                             "children": []
                           }
                         ]
@@ -18174,7 +19690,12 @@
                   },
                   {
                     "name": "Other",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Glass",
+                        "children": []
+                      }
+                    ]
                   },
                   {
                     "name": "Uranium",
@@ -18215,6 +19736,10 @@
                   },
                   {
                     "name": "Diamond",
+                    "children": []
+                  },
+                  {
+                    "name": "Netherite",
                     "children": []
                   }
                 ]
@@ -18304,6 +19829,10 @@
                   },
                   {
                     "name": "Hammer",
+                    "children": []
+                  },
+                  {
+                    "name": "Netherite",
                     "children": []
                   }
                 ]
@@ -18409,7 +19938,76 @@
               },
               {
                 "name": "Glass",
-                "children": []
+                "children": [
+                  {
+                    "name": "Normal",
+                    "children": []
+                  },
+                  {
+                    "name": "White",
+                    "children": []
+                  },
+                  {
+                    "name": "Orange",
+                    "children": []
+                  },
+                  {
+                    "name": "Magenta",
+                    "children": []
+                  },
+                  {
+                    "name": "LightBlue",
+                    "children": []
+                  },
+                  {
+                    "name": "Yellow",
+                    "children": []
+                  },
+                  {
+                    "name": "LimeGreen",
+                    "children": []
+                  },
+                  {
+                    "name": "Pink",
+                    "children": []
+                  },
+                  {
+                    "name": "Grey",
+                    "children": []
+                  },
+                  {
+                    "name": "LightGrey",
+                    "children": []
+                  },
+                  {
+                    "name": "Cyan",
+                    "children": []
+                  },
+                  {
+                    "name": "Purple",
+                    "children": []
+                  },
+                  {
+                    "name": "Blue",
+                    "children": []
+                  },
+                  {
+                    "name": "Brown",
+                    "children": []
+                  },
+                  {
+                    "name": "Green",
+                    "children": []
+                  },
+                  {
+                    "name": "Red",
+                    "children": []
+                  },
+                  {
+                    "name": "Black",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -18489,6 +20087,23 @@
               {
                 "name": "Zombie",
                 "children": []
+              },
+              {
+                "name": "Sculk",
+                "children": [
+                  {
+                    "name": "Code",
+                    "children": []
+                  },
+                  {
+                    "name": "Client",
+                    "children": []
+                  },
+                  {
+                    "name": "Variables",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -18678,10 +20293,6 @@
             "children": []
           },
           {
-            "name": "HarvestConditions",
-            "children": []
-          },
-          {
             "name": "Iron",
             "children": []
           }
@@ -18692,7 +20303,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",
@@ -18707,5 +20318,5 @@
     "credits": "ShotUGMG, WispWoods, Louis",
     "modElementsPackage": "net.mcreator.survivalreimagined"
   },
-  "mcreatorVersion": 202400451119
+  "mcreatorVersion": 202400452410
 }

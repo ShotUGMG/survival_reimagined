@@ -1,0 +1,32 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Binding Sculk",
+    "icon": "binding_sculk",
+    "color": {
+      "value": -16563888,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "BindingSculkEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "BindingSculkOnEffectActiveTick"
+    },
+    "onExpired": {
+      "name": "BindingSculkEffectExpires"
+    },
+    "activeTickCondition": {
+      "name": "BindingSculkActiveTickCondition"
+    }
+  }
+}

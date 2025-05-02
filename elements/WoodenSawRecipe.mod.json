@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.STICK"
+        "value": "CUSTOM:PlantFiber"
+      },
+      {
+        "value": "CUSTOM:PlantFiber"
       },
       {
         "value": "Items.STICK"
-      },
-      {
-        "value": ""
       },
       {
         "value": "TAG:minecraft:single_planks"

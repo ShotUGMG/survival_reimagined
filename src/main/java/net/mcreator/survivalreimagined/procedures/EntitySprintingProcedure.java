@@ -40,7 +40,7 @@ public class EntitySprintingProcedure {
 			}
 		}.checkGamemode(entity)) {
 			if (entity.isSprinting()) {
-				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting == 75) {
+				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting == 95) {
 					if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
 						if (entity instanceof Player _player)
 							_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));

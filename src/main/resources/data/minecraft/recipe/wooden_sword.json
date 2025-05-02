@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-    "a",
-    "a",
-    "b"
+    "a ",
+    "a ",
+    "bc"
   ],
   "key": {
     "a": {
@@ -12,6 +12,9 @@
     },
     "b": {
       "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "survival_reimagined:hemp_fiber"
     }
   },
   "result": {

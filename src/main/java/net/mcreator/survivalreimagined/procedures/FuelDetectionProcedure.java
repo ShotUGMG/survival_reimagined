@@ -69,6 +69,7 @@ public class FuelDetectionProcedure {
 				SteelToolsProcedure.execute(world, x, y, z);
 				DiamondGearProcedure.execute(world, x, y, z);
 				DiamondToolsProcedure.execute(world, x, y, z);
+				IngotsRecipeProcedure.execute(world, x, y, z);
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -93,6 +94,32 @@ public class FuelDetectionProcedure {
 				SteelIngotRecipeProcedure.execute(world, x, y, z);
 				DiamondIngotRecipeProcedure.execute(world, x, y, z);
 				UraniumRecipeProcedure.execute(world, x, y, z);
+				NetherteRecipeProcedure.execute(world, x, y, z);
+			}
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("minecraft:melt_items"))) || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("minecraft:melt_items")))) {
+				IronMeltProcedure.execute(world, x, y, z);
+				GoldMeltProcedure.execute(world, x, y, z);
+				SteelMeltProcedure.execute(world, x, y, z);
+				BronzeMeltProcedure.execute(world, x, y, z);
+				DiamondMeltProcedure.execute(world, x, y, z);
 			}
 			EmptyRecipeProcedure.execute(world, x, y, z);
 		}

@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "knife_mold",
+    "itemTexture": "mold12",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

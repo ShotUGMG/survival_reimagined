@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:diamond_sword_blade",
+    "survival_reimagined:diamond_axe_head",
+    "survival_reimagined:diamond_hoe_blade",
+    "survival_reimagined:diamond_pickaxe_head",
+    "survival_reimagined:diamond_shovel_head",
+    "survival_reimagined:diamond_knife_blade",
+    "survival_reimagined:diamond_hammer_head",
+    "survival_reimagined:diamond_saw_blade",
+    "survival_reimagined:diamond_hammer",
+    "survival_reimagined:diamond_knife",
+    "survival_reimagined:diamond_saw",
+    "survival_reimagined:diamond_chisel",
+    "minecraft:diamond_sword",
+    "minecraft:diamond_shovel",
+    "minecraft:diamond_pickaxe",
+    "minecraft:diamond_axe",
+    "minecraft:diamond_hoe",
+    "minecraft:diamond_helmet",
+    "minecraft:diamond_chestplate",
+    "minecraft:diamond_leggings",
+    "minecraft:diamond_boots",
+    "minecraft:diamond_horse_armor"
+  ]
+}

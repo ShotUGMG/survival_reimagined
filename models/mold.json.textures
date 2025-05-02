@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "dried_clay",
+        "particle": ""
+      },
+      "name": "default"
+    }
+  }
+}

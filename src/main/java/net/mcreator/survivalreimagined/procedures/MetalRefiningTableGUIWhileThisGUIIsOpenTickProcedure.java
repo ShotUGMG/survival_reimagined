@@ -15,7 +15,6 @@ public class MetalRefiningTableGUIWhileThisGUIIsOpenTickProcedure {
 			((Slot) _slots.get(2)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
-		IronRecipeProcedure.execute(entity);
 		BronzeGearRecipesProcedure.execute(entity);
 		SteelGearRecipesProcedure.execute(entity);
 		DiamondGearRecipesProcedure.execute(entity);

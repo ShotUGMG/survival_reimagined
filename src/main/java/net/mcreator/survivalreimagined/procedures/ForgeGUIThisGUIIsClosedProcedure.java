@@ -16,9 +16,9 @@ public class ForgeGUIThisGUIIsClosedProcedure {
 		SurvivalReimaginedMod.queueServerWork(1, () -> {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:close_forge")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:close_forge")), SoundSource.BLOCKS, 6, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:close_forge")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:close_forge")), SoundSource.BLOCKS, 6, 1, false);
 				}
 			}
 		});

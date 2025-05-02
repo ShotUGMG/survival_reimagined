@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "survival_reimagined:item/shovel_head_mold"
+    "layer0": "survival_reimagined:item/mold8"
   },
   "render_type": "translucent"
 }

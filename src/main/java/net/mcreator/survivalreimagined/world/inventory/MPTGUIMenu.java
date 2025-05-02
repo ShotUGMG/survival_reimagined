@@ -88,9 +88,13 @@ public class MPTGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 62, 35) {
 			private final int slot = 0;
+			private int x = MPTGUIMenu.this.x;
+			private int y = MPTGUIMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 98, 35) {
 			private final int slot = 1;
+			private int x = MPTGUIMenu.this.x;
+			private int y = MPTGUIMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -99,6 +103,8 @@ public class MPTGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 62) {
 			private final int slot = 2;
+			private int x = MPTGUIMenu.this.x;
+			private int y = MPTGUIMenu.this.y;
 
 			@Override
 			public boolean mayPickup(Player entity) {

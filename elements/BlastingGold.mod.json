@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Smelting",
+    "recipeType": "Blasting",
     "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
@@ -10,10 +10,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
+    "blastingInputStack": {
       "value": "Items.RAW_GOLD"
     },
-    "smeltingReturnStack": {
+    "blastingReturnStack": {
       "value": "CUSTOM:RoughGold"
     },
     "name": "gold_ingot_from_blasting_raw_gold",

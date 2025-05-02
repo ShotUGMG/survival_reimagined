@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/mossy_rock",
-  "textures": {
-    "all": "minecraft:block/mossy_cobblestone",
-    "particle": "minecraft:block/mossy_cobblestone",
-    "10": "minecraft:block/mossy_cobblestone"
-  },
-  "render_type": "solid"
-}

@@ -88,12 +88,18 @@ public class ForgeGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 71, 36) {
 			private final int slot = 0;
+			private int x = ForgeGUIMenu.this.x;
+			private int y = ForgeGUIMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 89, 36) {
 			private final int slot = 1;
+			private int x = ForgeGUIMenu.this.x;
+			private int y = ForgeGUIMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 26, 62) {
 			private final int slot = 2;
+			private int x = ForgeGUIMenu.this.x;
+			private int y = ForgeGUIMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -102,6 +108,8 @@ public class ForgeGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 134, 36) {
 			private final int slot = 3;
+			private int x = ForgeGUIMenu.this.x;
+			private int y = ForgeGUIMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {

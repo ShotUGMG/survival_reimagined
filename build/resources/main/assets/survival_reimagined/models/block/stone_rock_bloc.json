@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/stone_rock",
-  "textures": {
-    "all": "minecraft:block/stone",
-    "particle": "minecraft:block/stone",
-    "0": "minecraft:block/stone"
-  },
-  "render_type": "solid"
-}

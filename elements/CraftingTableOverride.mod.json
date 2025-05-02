@@ -12,37 +12,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "TAG:minecraft:single_planks"
       },
       {
-        "value": ""
+        "value": "Items.LEATHER"
       },
       {
-        "value": ""
+        "value": "TAG:minecraft:single_planks"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:mod:hammers"
       },
       {
         "value": "Blocks.PLANKS"
       },
       {
-        "value": ""
+        "value": "TAG:minecraft:saws"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:minecraft:single_planks"
       },
       {
-        "value": "Blocks.PLANKS"
+        "value": "TAG:minecraft:single_planks"
+      },
+      {
+        "value": "TAG:minecraft:single_planks"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:AndesiteRockBlock"
+      "value": "Blocks.CRAFTING_TABLE"
     },
-    "name": "crafting_table_override",
+    "name": "crafting_table",
     "namespace": "minecraft"
   }
 }

@@ -7,6 +7,8 @@
     "#survival_reimagined:manganese_items",
     "#survival_reimagined:steel_items",
     "#survival_reimagined:diamond_items",
-    "survival_reimagined:uranium_dust"
+    "survival_reimagined:uranium_dust",
+    "minecraft:gold_ingot",
+    "minecraft:netherite_scrap"
   ]
 }

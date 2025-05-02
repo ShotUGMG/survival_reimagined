@@ -40,9 +40,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "IronRecipe"
-          },
           "x": 169,
           "y": 74,
           "locked": false
@@ -62,9 +59,6 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "IronRecipe"
-          },
           "x": 277,
           "y": 99,
           "locked": false

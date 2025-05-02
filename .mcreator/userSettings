@@ -2,14 +2,11 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 367,
+  "projectBrowserSplitPos": 518,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Survival Reimagined]",
-      "[, Survival Reimagined, Resources (Gradle)]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets\\survival_reimagined]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets\\survival_reimagined\\sounds]"
+      "[, Survival Reimagined, Resources (Gradle)]"
     ]
   }
 }

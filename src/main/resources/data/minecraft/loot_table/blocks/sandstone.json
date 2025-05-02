@@ -54,7 +54,7 @@
         {
           "type": "minecraft:item",
           "name": "survival_reimagined:uranium_sandstone_deposit",
-          "weight": 2,
+          "weight": 1,
           "conditions": [
             {
               "condition": "minecraft:inverted",

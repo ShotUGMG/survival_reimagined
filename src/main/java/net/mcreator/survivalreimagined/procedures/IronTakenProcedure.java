@@ -21,6 +21,7 @@ public class IronTakenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
+		double DamageDelay = 0;
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			((Slot) _slots.get(0)).remove(1);
 			_player.containerMenu.broadcastChanges();

@@ -153,6 +153,7 @@ public class SurvivalReimaginedModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "survival_reimagined_mapvars";
 		public boolean isFullMoon = false;
+		public boolean sculk_hearts = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -162,11 +163,13 @@ public class SurvivalReimaginedModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			isFullMoon = nbt.getBoolean("isFullMoon");
+			sculk_hearts = nbt.getBoolean("sculk_hearts");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putBoolean("isFullMoon", isFullMoon);
+			nbt.putBoolean("sculk_hearts", sculk_hearts);
 			return nbt;
 		}
 

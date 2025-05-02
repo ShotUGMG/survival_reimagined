@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "hammer_head_mold",
+    "itemTexture": "mold11",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

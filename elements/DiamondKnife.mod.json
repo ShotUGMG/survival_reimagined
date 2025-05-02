@@ -12,7 +12,11 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:CreativeTab"
+      }
+    ],
     "efficiency": 7.5,
     "attackSpeed": 2.0,
     "enchantability": 10,

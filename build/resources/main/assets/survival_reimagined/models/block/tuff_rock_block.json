@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/tuff_rock",
-  "textures": {
-    "all": "minecraft:block/tuff",
-    "particle": "minecraft:block/tuff",
-    "6": "minecraft:block/tuff"
-  },
-  "render_type": "solid"
-}

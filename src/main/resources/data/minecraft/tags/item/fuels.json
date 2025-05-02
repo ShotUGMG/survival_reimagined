@@ -5,8 +5,9 @@
     "#minecraft:plank_fuels",
     "#minecraft:bark_large",
     "#minecraft:bark_small",
-    "minecraft:coal_block",
     "#minecraft:logs",
-    "#minecraft:planks"
+    "#minecraft:planks",
+    "minecraft:coal_block",
+    "minecraft:lava_bucket"
   ]
 }

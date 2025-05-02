@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "survival_reimagined:item/diamond_hammer"
-  }
-}
