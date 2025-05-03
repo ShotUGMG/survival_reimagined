@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:flint_tool",
+    "survival_reimagined:copper_chisel",
+    "survival_reimagined:bronze_chisel",
+    "survival_reimagined:steel_chisel",
+    "survival_reimagined:diamond_chisel"
+  ]
+}

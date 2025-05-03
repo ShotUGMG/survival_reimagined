@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:large_jungle_bark"
+    }
+  ],
+  "result": {
+    "id": "survival_reimagined:jungle_bark",
+    "count": 4
+  }
+}

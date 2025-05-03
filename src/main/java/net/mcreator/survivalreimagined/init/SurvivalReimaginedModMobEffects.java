@@ -16,7 +16,6 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.procedures.ZombificationEffectExpiresProcedure;
-import net.mcreator.survivalreimagined.procedures.BindingSculkEffectExpiresProcedure;
 import net.mcreator.survivalreimagined.potion.ZombificationMobEffect;
 import net.mcreator.survivalreimagined.potion.ParanoiaMobEffect;
 import net.mcreator.survivalreimagined.potion.FearMobEffect;
@@ -50,8 +49,6 @@ public class SurvivalReimaginedModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(ZOMBIFICATION)) {
 			ZombificationEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
-		} else if (effectInstance.getEffect().is(BINDING_SCULK)) {
-			BindingSculkEffectExpiresProcedure.execute(entity.level());
 		}
 	}
 }

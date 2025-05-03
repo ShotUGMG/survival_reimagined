@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:sandstone_chunk"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:cobbled_sandstone",
+    "count": 1
+  }
+}

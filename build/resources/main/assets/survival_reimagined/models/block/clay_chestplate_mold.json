@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/clay_chest_mold",
+  "textures": {
+    "all": "survival_reimagined:block/clay_chestplate_mold",
+    "particle": "survival_reimagined:block/clay_chestplate_mold",
+    "23": "survival_reimagined:block/clay_block",
+    "6": "survival_reimagined:block/clay_chestplate_mold"
+  },
+  "render_type": "solid"
+}

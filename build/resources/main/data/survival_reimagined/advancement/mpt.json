@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:mineral_processing_table"
+    },
+    "title": {
+      "translate": "advancements.mpt.title"
+    },
+    "description": {
+      "translate": "advancements.mpt.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mpt_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:mineral_processing_table"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:radioactive_metal"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "ada"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:steel_ingot"
+    },
+    "b": {
+      "item": "survival_reimagined:uranium"
+    },
+    "c": {
+      "item": "survival_reimagined:redstone_ingot"
+    },
+    "d": {
+      "item": "minecraft:polished_diorite"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:mineral_processing_table",
+    "count": 1
+  }
+}

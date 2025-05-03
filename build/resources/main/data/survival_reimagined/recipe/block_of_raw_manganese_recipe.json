@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:raw_manganese"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:block_of_raw_manganese",
+    "count": 1
+  }
+}

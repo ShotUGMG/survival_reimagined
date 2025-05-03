@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:stone_rock"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "c": {
+      "item": "survival_reimagined:small_stick"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:stone_knife",
+    "count": 1
+  }
+}

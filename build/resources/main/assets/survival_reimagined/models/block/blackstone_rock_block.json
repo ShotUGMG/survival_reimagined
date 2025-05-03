@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/blackstone_rock",
+  "textures": {
+    "all": "minecraft:block/blackstone_top",
+    "particle": "minecraft:block/blackstone_top",
+    "9": "minecraft:block/blackstone_top"
+  },
+  "render_type": "cutout_mipped"
+}

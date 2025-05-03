@@ -16,14 +16,8 @@
     "isProtectedByTotem": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "BindingSculkEffectStartedapplied"
-    },
     "onActiveTick": {
       "name": "BindingSculkOnEffectActiveTick"
-    },
-    "onExpired": {
-      "name": "BindingSculkEffectExpires"
     },
     "activeTickCondition": {
       "name": "BindingSculkActiveTickCondition"

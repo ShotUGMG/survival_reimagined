@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/block_of_raw_redstone",
+    "up": "survival_reimagined:block/block_of_raw_redstone",
+    "north": "survival_reimagined:block/block_of_raw_redstone",
+    "east": "survival_reimagined:block/block_of_raw_redstone",
+    "south": "survival_reimagined:block/block_of_raw_redstone",
+    "west": "survival_reimagined:block/block_of_raw_redstone",
+    "particle": "survival_reimagined:block/block_of_raw_redstone"
+  },
+  "render_type": "solid"
+}

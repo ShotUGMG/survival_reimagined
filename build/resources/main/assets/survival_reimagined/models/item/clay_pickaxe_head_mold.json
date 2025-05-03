@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/clay_mold6"
+  },
+  "render_type": "translucent"
+}

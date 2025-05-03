@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/tin_ore",
+    "up": "survival_reimagined:block/tin_ore",
+    "north": "survival_reimagined:block/tin_ore",
+    "east": "survival_reimagined:block/tin_ore",
+    "south": "survival_reimagined:block/tin_ore",
+    "west": "survival_reimagined:block/tin_ore",
+    "particle": "survival_reimagined:block/tin_ore"
+  },
+  "render_type": "solid"
+}

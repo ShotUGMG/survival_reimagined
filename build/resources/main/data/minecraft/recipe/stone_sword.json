@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a ",
+    "a ",
+    "bc"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:stone_rock"
+    },
+    "b": {
+      "item": "minecraft:stick"
+    },
+    "c": {
+      "item": "survival_reimagined:hemp_fiber"
+    }
+  },
+  "result": {
+    "id": "minecraft:stone_sword",
+    "count": 1
+  }
+}

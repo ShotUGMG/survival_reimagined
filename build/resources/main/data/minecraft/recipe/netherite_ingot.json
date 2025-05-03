@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a b",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_ingot"
+    },
+    "b": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "id": "minecraft:air",
+    "count": 1
+  }
+}

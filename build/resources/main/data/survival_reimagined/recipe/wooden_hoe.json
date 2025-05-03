@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    " b",
+    " c"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:single_planks"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "minecraft:wooden_hoe",
+    "count": 1
+  }
+}

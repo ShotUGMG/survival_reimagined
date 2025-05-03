@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:bronze_pickaxe",
+    "survival_reimagined:bronze_axe",
+    "survival_reimagined:bronze_sword",
+    "survival_reimagined:bronze_shovel",
+    "survival_reimagined:bronze_hoe",
+    "survival_reimagined:bronze_armor_helmet",
+    "survival_reimagined:bronze_armor_chestplate",
+    "survival_reimagined:bronze_armor_leggings",
+    "survival_reimagined:bronze_armor_boots",
+    "survival_reimagined:bronze_saw",
+    "survival_reimagined:bronze_hammer",
+    "survival_reimagined:bronze_pickaxe_head",
+    "survival_reimagined:bronze_axe_head",
+    "survival_reimagined:bronze_sword_blade",
+    "survival_reimagined:bronze_hoe_blade",
+    "survival_reimagined:bronze_shovel_head",
+    "survival_reimagined:bronze_hammer_head",
+    "survival_reimagined:bronze_saw_blade",
+    "survival_reimagined:bronze_knife",
+    "survival_reimagined:bronze_knife_blade"
+  ]
+}

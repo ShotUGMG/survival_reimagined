@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:hemp_leaf"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:hemp_paper",
+    "count": 3
+  }
+}

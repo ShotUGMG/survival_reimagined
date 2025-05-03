@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:leathers"
+    },
+    {
+      "item": "survival_reimagined:hemp_paper"
+    },
+    {
+      "item": "survival_reimagined:hemp_paper"
+    },
+    {
+      "item": "survival_reimagined:hemp_paper"
+    }
+  ],
+  "result": {
+    "id": "minecraft:book",
+    "count": 1
+  }
+}

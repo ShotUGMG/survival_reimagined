@@ -76,16 +76,6 @@ public class StandingOnSculkProcedure {
 					}
 				}
 			}
-		} else {
-			if (entity instanceof Player) {
-				if (!(entity instanceof LivingEntity _livEnt16 && _livEnt16.hasEffect(SurvivalReimaginedModMobEffects.BINDING_SCULK))) {
-					if (world.isClientSide()) {
-						Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("minecraft:textures/atlas/gui_new.png"));
-						Minecraft.getInstance().getTextureManager().register(ResourceLocation.parse("minecraft:textures/atlas/gui.png"),
-								Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("minecraft:textures/atlas/gui_new.png")));
-					}
-				}
-			}
 		}
 	}
 }

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:embedded_obsidian",
+    "survival_reimagined:mineral_processing_table",
+    "survival_reimagined:cobbled_red_sandstone",
+    "survival_reimagined:cobbled_sandstone",
+    "survival_reimagined:block_of_raw_redstone",
+    "survival_reimagined:block_of_raw_manganese",
+    "survival_reimagined:block_of_manganese",
+    "survival_reimagined:block_of_steel",
+    "survival_reimagined:deepslate_manganese_ore",
+    "survival_reimagined:manganese_ore",
+    "survival_reimagined:block_of_bronze",
+    "survival_reimagined:forge",
+    "survival_reimagined:tin_ore"
+  ]
+}

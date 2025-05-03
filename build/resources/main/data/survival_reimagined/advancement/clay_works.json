@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:clay_brick"
+    },
+    "title": {
+      "translate": "advancements.clay_works.title"
+    },
+    "description": {
+      "translate": "advancements.clay_works.descr"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "clay_works_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:clay_ball"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "survival_reimagined:sword_mold",
+      "survival_reimagined:pickaxe_mold",
+      "survival_reimagined:shovel_mold",
+      "survival_reimagined:axe_mold",
+      "survival_reimagined:hoe_mold",
+      "survival_reimagined:saw_mold",
+      "survival_reimagined:hammer_mold",
+      "survival_reimagined:helmet_mold_recipe",
+      "survival_reimagined:chestplate_mold_recipe",
+      "survival_reimagined:leggings_mold_recipe",
+      "survival_reimagined:boots_mold_recipe",
+      "survival_reimagined:crucible_recipe"
+    ]
+  },
+  "parent": "survival_reimagined:crafting_table"
+}

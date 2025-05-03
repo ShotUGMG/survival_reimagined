@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:mud_rock"
+    }
+  },
+  "result": {
+    "id": "minecraft:packed_mud",
+    "count": 1
+  }
+}

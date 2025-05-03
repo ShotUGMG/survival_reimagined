@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:hemp_paper"
+    },
+    "b": {
+      "item": "minecraft:compass"
+    }
+  },
+  "result": {
+    "id": "minecraft:map",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "d": {
+      "item": "minecraft:tripwire_hook"
+    }
+  },
+  "result": {
+    "id": "minecraft:crossbow",
+    "count": 1
+  }
+}

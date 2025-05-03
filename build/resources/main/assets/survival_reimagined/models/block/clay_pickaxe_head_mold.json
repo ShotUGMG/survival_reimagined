@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/clay_pickaxe_mold",
+  "textures": {
+    "all": "survival_reimagined:block/clay_pickaxe_head_mold",
+    "particle": "survival_reimagined:block/clay_pickaxe_head_mold",
+    "23": "survival_reimagined:block/clay_block",
+    "3": "survival_reimagined:block/clay_pickaxe_head_mold"
+  },
+  "render_type": "solid"
+}

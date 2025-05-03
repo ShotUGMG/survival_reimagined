@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:block_of_tin"
+    }
+  ],
+  "result": {
+    "id": "survival_reimagined:tin_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "survival_reimagined:block/forge"
+    },
+    "blockstate=1": {
+      "model": "survival_reimagined:block/forge_blockstate_blockstate_0"
+    }
+  }
+}

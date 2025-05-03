@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:rough_iron",
+    "minecraft:raw_iron",
+    "minecraft:iron_ingot"
+  ]
+}

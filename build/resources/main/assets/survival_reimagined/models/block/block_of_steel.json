@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/block_of_steel",
+    "up": "survival_reimagined:block/block_of_steel",
+    "north": "survival_reimagined:block/block_of_steel",
+    "east": "survival_reimagined:block/block_of_steel",
+    "south": "survival_reimagined:block/block_of_steel",
+    "west": "survival_reimagined:block/block_of_steel",
+    "particle": "survival_reimagined:block/block_of_steel"
+  },
+  "render_type": "solid"
+}

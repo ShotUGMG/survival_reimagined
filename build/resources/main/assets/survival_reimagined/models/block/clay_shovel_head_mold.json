@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/clay_shovel_mold",
+  "textures": {
+    "all": "survival_reimagined:block/clay_shovel_head_mold",
+    "particle": "survival_reimagined:block/clay_shovel_head_mold",
+    "23": "survival_reimagined:block/clay_block",
+    "5": "survival_reimagined:block/clay_shovel_head_mold"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/dried_crucible",
+  "textures": {
+    "all": "survival_reimagined:block/dried_clay",
+    "particle": "survival_reimagined:block/dried_clay",
+    "0": "survival_reimagined:block/dried_clay"
+  },
+  "render_type": "solid"
+}

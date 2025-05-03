@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/block_of_manganese",
+    "up": "survival_reimagined:block/block_of_manganese",
+    "north": "survival_reimagined:block/block_of_manganese",
+    "east": "survival_reimagined:block/block_of_manganese",
+    "south": "survival_reimagined:block/block_of_manganese",
+    "west": "survival_reimagined:block/block_of_manganese",
+    "particle": "survival_reimagined:block/block_of_manganese"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:copper_chunk"
+    }
+  },
+  "result": {
+    "id": "minecraft:raw_copper",
+    "count": 1
+  }
+}

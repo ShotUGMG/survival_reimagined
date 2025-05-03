@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "minecraft:single_planks"
+    },
+    "b": {
+      "item": "minecraft:leather"
+    },
+    "c": {
+      "tag": "survival_reimagined:hammers"
+    },
+    "d": {
+      "tag": "minecraft:planks"
+    },
+    "e": {
+      "tag": "minecraft:saws"
+    }
+  },
+  "result": {
+    "id": "minecraft:crafting_table",
+    "count": 1
+  }
+}

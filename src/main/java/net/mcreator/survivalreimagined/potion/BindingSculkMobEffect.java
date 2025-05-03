@@ -10,7 +10,6 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.survivalreimagined.procedures.BindingSculkOnEffectActiveTickProcedure;
-import net.mcreator.survivalreimagined.procedures.BindingSculkEffectStartedappliedProcedure;
 import net.mcreator.survivalreimagined.procedures.BindingSculkActiveTickConditionProcedure;
 
 import java.util.Set;
@@ -23,11 +22,6 @@ public class BindingSculkMobEffect extends MobEffect {
 	@Override
 	public void fillEffectCures(Set<EffectCure> cures, MobEffectInstance effectInstance) {
 		cures.add(EffectCures.PROTECTED_BY_TOTEM);
-	}
-
-	@Override
-	public void onEffectStarted(LivingEntity entity, int amplifier) {
-		BindingSculkEffectStartedappliedProcedure.execute(entity.level());
 	}
 
 	@Override

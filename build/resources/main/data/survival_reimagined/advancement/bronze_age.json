@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:bronze_ingot"
+    },
+    "title": {
+      "translate": "advancements.bronze_age.title"
+    },
+    "description": {
+      "translate": "advancements.bronze_age.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bronze_age_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:rough_bronze"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "survival_reimagined:block_of_bronze_recipe"
+    ]
+  },
+  "parent": "survival_reimagined:ready_for_alloys"
+}

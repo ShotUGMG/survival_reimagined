@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:coals",
+    "#minecraft:plank_fuels",
+    "#minecraft:bark_large",
+    "#minecraft:bark_small",
+    "#minecraft:logs",
+    "#minecraft:planks",
+    "minecraft:coal_block",
+    "minecraft:lava_bucket"
+  ]
+}

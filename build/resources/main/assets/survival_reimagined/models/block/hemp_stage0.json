@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/crop",
+    "textures": {
+      "crop": "survival_reimagined:block/stage_0"
+    },
+    "render_type": "cutout"
+  }

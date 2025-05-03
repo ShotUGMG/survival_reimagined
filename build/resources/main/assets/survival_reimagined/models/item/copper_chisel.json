@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "survival_reimagined:item/copper_chisel"
+  }
+}

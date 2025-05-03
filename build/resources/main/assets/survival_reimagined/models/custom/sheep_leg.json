@@ -1,0 +1,167 @@
+{
+  "credit": "Made with Blockbench",
+  "texture_size": [
+    64,
+    32
+  ],
+  "elements": [
+    {
+      "name": "leg2",
+      "from": [
+        6,
+        0,
+        6
+      ],
+      "to": [
+        10,
+        12,
+        10
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "z",
+        "origin": [
+          8,
+          12,
+          8
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            10,
+            1,
+            16
+          ],
+          "texture": "#2"
+        },
+        "east": {
+          "uv": [
+            3,
+            10,
+            2,
+            16
+          ],
+          "texture": "#2"
+        },
+        "south": {
+          "uv": [
+            4,
+            10,
+            3,
+            16
+          ],
+          "texture": "#2"
+        },
+        "west": {
+          "uv": [
+            1,
+            10,
+            0,
+            16
+          ],
+          "texture": "#2"
+        },
+        "up": {
+          "uv": [
+            1,
+            10,
+            2,
+            8
+          ],
+          "texture": "#2"
+        },
+        "down": {
+          "uv": [
+            2,
+            8,
+            3,
+            10
+          ],
+          "texture": "#2"
+        }
+      }
+    }
+  ],
+  "display": {
+    "firstperson_righthand": {
+      "translation": [
+        2,
+        0,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "translation": [
+        2,
+        0,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4.5,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        25,
+        -25,
+        0
+      ],
+      "translation": [
+        0,
+        1.5,
+        0
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        0,
+        -90
+      ],
+      "translation": [
+        3.5,
+        4,
+        1
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        2.75,
+        0
+      ]
+    }
+  },
+  "groups": [
+    {
+      "name": "bone",
+      "origin": [
+        10,
+        5,
+        0
+      ],
+      "color": 0,
+      "children": [
+        {
+          "name": "leg2",
+          "origin": [
+            7,
+            17,
+            -5
+          ],
+          "color": 2,
+          "shade": false,
+          "children": [
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

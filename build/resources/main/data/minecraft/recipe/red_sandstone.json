@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_sand"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:cobbled_red_sandstone",
+    "count": 4
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    " b ",
+    " c "
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:stone_rock"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "c": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "minecraft:stone_pickaxe",
+    "count": 1
+  }
+}

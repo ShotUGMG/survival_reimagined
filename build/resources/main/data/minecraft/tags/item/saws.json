@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:wooden_saw",
+    "survival_reimagined:stone_saw",
+    "survival_reimagined:bronze_saw",
+    "survival_reimagined:steel_saw",
+    "survival_reimagined:diamond_saw"
+  ]
+}

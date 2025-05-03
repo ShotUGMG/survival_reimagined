@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "plains",
+    "meadow",
+    "forest"
+  ],
+  "features": "survival_reimagined:apple_oak_tree",
+  "step": "vegetal_decoration"
+}

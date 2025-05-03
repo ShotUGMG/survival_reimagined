@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "survival_reimagined:block/pig_carcass"
+    },
+    "blockstate=1": {
+      "model": "survival_reimagined:block/pig_carcass_block_states_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "survival_reimagined:block/pig_carcass_block_states_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "survival_reimagined:block/pig_carcass_block_states_blockstate_2"
+    }
+  }
+}
