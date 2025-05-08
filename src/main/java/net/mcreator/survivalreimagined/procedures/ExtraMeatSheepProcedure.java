@@ -48,7 +48,7 @@ public class ExtraMeatSheepProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SHEEP_LEG.get()) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (new Object() {
@@ -77,7 +77,7 @@ public class ExtraMeatSheepProcedure {
 			});
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					for (int index0 = 0; index0 < 3; index0++) {
 						if (world instanceof ServerLevel _level) {
@@ -110,7 +110,7 @@ public class ExtraMeatSheepProcedure {
 					world.destroyBlock(BlockPos.containing(x, y, z), false);
 				});
 			}
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SHEEP_HEAD.get()) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (new Object() {
@@ -139,7 +139,7 @@ public class ExtraMeatSheepProcedure {
 			});
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					for (int index2 = 0; index2 < 3; index2++) {
 						if (world instanceof ServerLevel _level) {

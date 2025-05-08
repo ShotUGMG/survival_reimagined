@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:ingot_mold"
+    },
+    {
+      "tag": "c:rough_ingots/iron"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "minecraft:iron_ingot",
+    "count": 1
+  }
+}

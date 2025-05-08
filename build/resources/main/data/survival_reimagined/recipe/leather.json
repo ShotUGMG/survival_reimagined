@@ -6,10 +6,10 @@
   ],
   "key": {
     "a": {
-      "tag": "survival_reimagined:hide"
+      "tag": "c:tools/knife"
     },
     "b": {
-      "tag": "survival_reimagined:knifes"
+      "tag": "c:animal/hide"
     }
   },
   "result": {

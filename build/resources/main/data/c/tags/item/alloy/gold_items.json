@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:rough_gold",
+    "minecraft:raw_gold",
+    "minecraft:gold_ingot"
+  ]
+}

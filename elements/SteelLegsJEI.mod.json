@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:SteelArmor.legs"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:LeggingMold"
+      },
+      {
+        "value": "TAG:c:metals/steel"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/diamond"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:diamond_plated_ingot"
+    }
+  ]
+}

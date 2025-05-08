@@ -18,53 +18,17 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class BronzeRecipeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+		if (new Object() {
+			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
 					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
 					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
+						return _itemHandler.getStackInSlot(slotid).getCount();
 				}
-				return ItemStack.EMPTY;
+				return 0;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:copper_items"))) || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:copper_items")))) && ((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:tin_items"))) || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:tin_items"))))) {
-			if (new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).getCount();
-					}
-					return 0;
-				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
+		}.getAmount(world, BlockPos.containing(x, y, z), 3) < 64) {
+			if (((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -73,81 +37,128 @@ public class BronzeRecipeProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModItems.ROUGH_BRONZE.get()) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
-							}
-						}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 0.1));
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-				if (new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy/copper_items"))) || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
 					}
-				}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/copper_items")))) && ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy/tin_items"))) || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/tin_items"))))) {
+				if (new Object() {
+					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).getCount();
+						}
+						return 0;
+					}
+				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
+					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+						if (world instanceof ILevelExtension _ext) {
+							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+							if (_itemHandler != null)
+								return _itemHandler.getStackInSlot(slotid).copy();
+						}
+						return ItemStack.EMPTY;
+					}
+				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModItems.ROUGH_BRONZE.get()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.ROUGH_BRONZE.get()).copy();
-						_setstack.setCount((int) (new Object() {
-							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-								if (world instanceof ILevelExtension _ext) {
-									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-									if (_itemHandler != null)
-										return _itemHandler.getStackInSlot(slotid).getCount();
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null)
+							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
+								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getPersistentData().getDouble(tag);
+									return -1;
 								}
-								return 0;
-							}
-						}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
-						_itemHandlerModifiable.setStackInSlot(3, _setstack);
+							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 0.1));
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						int _slotid = 0;
-						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-						_stk.shrink(1);
-						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
-					}
-					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-						int _slotid = 1;
-						ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-						_stk.shrink(1);
-						_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+					if (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null)
+								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.ROUGH_BRONZE.get()).copy();
+							_setstack.setCount((int) (new Object() {
+								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+									if (world instanceof ILevelExtension _ext) {
+										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+										if (_itemHandler != null)
+											return _itemHandler.getStackInSlot(slotid).getCount();
+									}
+									return 0;
+								}
+							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
 					}
 				}
 			}

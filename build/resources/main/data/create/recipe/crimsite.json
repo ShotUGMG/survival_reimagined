@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "aa",
+      "aa"
+    ],
+    "key": {
+      "a": {
+        "item": "survival_reimagined:crimsite_rock"
+      }
+    },
+    "result": {
+      "id": "create:crimsite",
+      "count": 1
+    }
+  }

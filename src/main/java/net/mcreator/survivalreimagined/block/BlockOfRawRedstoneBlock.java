@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class BlockOfRawRedstoneBlock extends Block {
 	public BlockOfRawRedstoneBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(5f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(5f, 6f).requiresCorrectToolForDrops());
 	}
 
 	@Override

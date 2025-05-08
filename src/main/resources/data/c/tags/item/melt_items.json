@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:melt/bronze_melt_items",
+    "#c:melt/steel_melt_items",
+    "#c:melt/iron_melt_items",
+    "#c:melt/gold_melt_items",
+    "#c:melt/diamond_melt_items"
+  ]
+}

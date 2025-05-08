@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:sword_blade_mold"
+    },
+    {
+      "tag": "c:metals/bronze"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:bronze_sword_blade",
+    "count": 1
+  }
+}

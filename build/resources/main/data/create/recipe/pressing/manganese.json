@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/manganese"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:manganese_ingot"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/redstone"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:redstone_ingot"
+    }
+  ]
+}

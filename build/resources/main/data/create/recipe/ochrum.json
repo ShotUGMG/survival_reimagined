@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "aa",
+      "aa"
+    ],
+    "key": {
+      "a": {
+        "item": "survival_reimagined:ochrum_rock"
+      }
+    },
+    "result": {
+      "id": "create:ochrum",
+      "count": 1
+    }
+  }

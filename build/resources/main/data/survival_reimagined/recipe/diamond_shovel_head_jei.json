@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:shovel_head_mold"
+    },
+    {
+      "tag": "c:metals/diamond"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:diamond_shovel_head",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:RoughBronze"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "TAG:c:alloy/copper_items"
+      },
+      {
+        "value": "TAG:c:alloy/tin_items"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "tag": "c:ingots_rough/steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:rough_diamond"
+    }
+  ]
+}

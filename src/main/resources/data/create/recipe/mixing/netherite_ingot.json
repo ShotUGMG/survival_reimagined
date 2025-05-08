@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "count": 4,
+      "tag": "c:ingots_rough/gold"
+    },
+    {
+      "count": 4,
+      "item": "minecraft:netherite_scrap"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:rough_netherite"
+    }
+  ]
+}

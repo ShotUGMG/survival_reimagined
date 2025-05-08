@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:pickaxe_head_mold"
+    },
+    {
+      "tag": "c:metals/bronze"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:bronze_pickaxe_head",
+    "count": 1
+  }
+}

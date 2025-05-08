@@ -8,7 +8,7 @@
     "texture": "wooden_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
-    "name": "Wooden Knife",
+    "name": "Wooden Survival Knife",
     "specialInformation": {
       "fixedValue": []
     },

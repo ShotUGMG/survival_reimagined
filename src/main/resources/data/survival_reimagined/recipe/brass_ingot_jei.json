@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:ingot_mold"
+    },
+    {
+      "tag": "c:rough_ingots/brass"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "create:brass_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ingots_rough/copper"
+    },
+    {
+      "tag": "c:ingots_rough/tin"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:rough_bronze"
+    }
+  ]
+}

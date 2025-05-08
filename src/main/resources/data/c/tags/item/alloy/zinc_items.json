@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create:raw_zinc",
+    "survival_reimagined:rough_zinc",
+    "create:zinc_ingot"
+  ]
+}

@@ -323,6 +323,17 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.NETHERITE_HAMMER.get());
 				tabData.accept(SurvivalReimaginedModItems.NETHERITE_KNIFE.get());
 				tabData.accept(SurvivalReimaginedModItems.NETHERITE_SAW.get());
+				tabData.accept(SurvivalReimaginedModItems.WOOD_INGOT.get());
+				tabData.accept(SurvivalReimaginedModItems.ASURINE_CRYSTAL.get());
+				tabData.accept(SurvivalReimaginedModItems.SCORIA_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.SCORCHIA_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.CRIMSITE_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.OCHRUM_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.LIMESTONE_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.VIRIDIUM_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.ROUGH_ZINC.get());
+				tabData.accept(SurvivalReimaginedModItems.ROUGH_BRASS.get());
+				tabData.accept(SurvivalReimaginedModItems.RAW_ZINC_NUGGET.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

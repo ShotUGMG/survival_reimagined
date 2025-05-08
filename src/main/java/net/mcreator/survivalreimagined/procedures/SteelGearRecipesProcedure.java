@@ -21,7 +21,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_SWORD_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_SWORD.get()).copy();
 				_setstack.setCount(1);
@@ -33,7 +33,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_PICKAXE_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_PICKAXE.get()).copy();
 				_setstack.setCount(1);
@@ -45,7 +45,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_AXE_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_AXE.get()).copy();
 				_setstack.setCount(1);
@@ -57,7 +57,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_SHOVEL_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_SHOVEL.get()).copy();
 				_setstack.setCount(1);
@@ -69,7 +69,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_HOE_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_HOE.get()).copy();
 				_setstack.setCount(1);
@@ -81,7 +81,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_SAW_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_SAW.get()).copy();
 				_setstack.setCount(1);
@@ -93,7 +93,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_HAMMER_HEAD.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_HAMMER.get()).copy();
 				_setstack.setCount(1);
@@ -105,7 +105,7 @@ public class SteelGearRecipesProcedure {
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
 						.getItem() == SurvivalReimaginedModItems.STEEL_KNIFE_BLADE.get()
 				&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")))) {
+						.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")))) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.STEEL_KNIFE.get()).copy();
 				_setstack.setCount(1);

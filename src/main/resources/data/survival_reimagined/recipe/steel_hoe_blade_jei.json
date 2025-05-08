@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:hoe_head_mold"
+    },
+    {
+      "tag": "c:metals/steel"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:steel_hoe_blade",
+    "count": 1
+  }
+}

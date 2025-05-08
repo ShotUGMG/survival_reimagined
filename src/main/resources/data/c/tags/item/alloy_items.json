@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#c:alloy/copper_items",
+    "#c:alloy/tin_items",
+    "#c:alloy/iron_items",
+    "#c:alloy/manganese_items",
+    "#c:alloy/diamond_items",
+    "#c:alloy/steel_items",
+    "#c:alloy/gold_items",
+    "#c:alloy/netherite_items"
+  ]
+}

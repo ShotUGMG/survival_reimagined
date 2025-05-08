@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.mcreator.survivalreimagined.mixins",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "ArmorMixin"
+  ],
   "client": [],
   "minVersion": "0.8"
 }

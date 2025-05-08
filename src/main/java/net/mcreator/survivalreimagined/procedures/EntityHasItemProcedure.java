@@ -1,4 +1,4 @@
-package net.mcreator.survivalreborn.procedures;
+package net.mcreator.survivalreimagined.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;

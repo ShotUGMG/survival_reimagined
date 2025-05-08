@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:deepslate_manganese_ore"
+    "survival_reimagined:deepslate_manganese_ore",
+    "survival_reimagined:embedded_obsidian"
   ]
 }

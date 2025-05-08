@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/iron"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:iron_ingot"
+    }
+  ]
+}

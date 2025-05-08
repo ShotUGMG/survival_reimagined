@@ -29,7 +29,7 @@ public class MineralProcessingRecipesProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:diamond_processing_items"))) && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/diamond"))) && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
 					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -139,7 +139,7 @@ public class MineralProcessingRecipesProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:emerald_processing_items"))) && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/emerald"))) && (new Object() {
 			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
 					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);

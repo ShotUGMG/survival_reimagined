@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "tag": "c:alloy/gold_items"
+    },
+    {
+      "tag": "c:alloy/netherite_items"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_netherite",
+    "count": 1
+  }
+}

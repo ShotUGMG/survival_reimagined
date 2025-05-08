@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:minecraft:single_planks"
-      },
-      {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
+      },
+      {
+        "value": "TAG:c:planks/single"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:c:planks/single"
       }
     ],
     "recipeReturnStack": {

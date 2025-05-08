@@ -42,7 +42,7 @@ public class ApplePlaceProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("neoforge:apple_placeables")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:apple_placeables")))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.APPLE) {
 				world.setBlock(BlockPos.containing(x, y - 1, z), SurvivalReimaginedModBlocks.APPLE.get().defaultBlockState(), 3);
 				if (entity instanceof LivingEntity _entity)

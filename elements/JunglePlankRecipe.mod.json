@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 8,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -24,7 +24,7 @@
         "value": ""
       },
       {
-        "value": "TAG:minecraft:saws"
+        "value": "TAG:c:tools/saw"
       },
       {
         "value": "TAG:minecraft:jungle_logs"

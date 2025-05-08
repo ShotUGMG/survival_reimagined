@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "#c:rough_ingots/bronze",
+    "#c:rough_ingots/brass",
+    "#c:rough_ingots/diamond",
+    "#c:rough_ingots/steel",
+    "#c:rough_ingots/copper",
+    "#c:rough_ingots/iron",
+    "#c:rough_ingots/gold",
+    "#c:rough_ingots/netherite",
+    "#c:rough_ingots/manganese",
+    "#c:rough_ingots/redstone",
+    "#c:rough_ingots/tin",
+    "#c:rough_ingots/zinc"
+  ]
+}

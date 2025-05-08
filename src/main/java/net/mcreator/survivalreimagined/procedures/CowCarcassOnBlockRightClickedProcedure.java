@@ -32,7 +32,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return InteractionResult.PASS;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knifes")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 0) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -59,7 +59,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.COW_CARCASS.get().defaultBlockState()));
 					{
@@ -91,7 +91,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:saws")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip19 ? blockstate.getValue(_getip19) : -1) == 1) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -118,7 +118,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.COW_HEAD.get().defaultBlockState()));
 					{
@@ -152,7 +152,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:saws")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip35 ? blockstate.getValue(_getip35) : -1) == 2) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -179,7 +179,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.COW_HEAD.get().defaultBlockState()));
 					{
@@ -211,7 +211,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip51 ? blockstate.getValue(_getip51) : -1) == 3) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -238,7 +238,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.COW_HEAD.get().defaultBlockState()));
 					{
@@ -280,7 +280,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
-					for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 1, 3); index1++) {
+					for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 1, 2); index1++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.BEEF));
 							entityToSpawn.setPickUpDelay(10);
@@ -297,7 +297,7 @@ public class CowCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip74 ? blockstate.getValue(_getip74) : -1) == 4) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -324,16 +324,16 @@ public class CowCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
-					for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 3, 6); index3++) {
+					for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 2, 4); index3++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.BONE));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
-					for (int index4 = 0; index4 < Mth.nextInt(RandomSource.create(), 6, 12); index4++) {
+					for (int index4 = 0; index4 < Mth.nextInt(RandomSource.create(), 4, 8); index4++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.BEEF));
 							entityToSpawn.setPickUpDelay(10);

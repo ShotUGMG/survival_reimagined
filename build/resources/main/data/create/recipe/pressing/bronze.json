@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/bronze"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:bronze_ingot"
+    }
+  ]
+}

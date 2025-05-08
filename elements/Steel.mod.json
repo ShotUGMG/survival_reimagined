@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:RoughSteel"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "TAG:c:alloy/iron_items"
+      },
+      {
+        "value": "TAG:c:alloy/manganese_items"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}

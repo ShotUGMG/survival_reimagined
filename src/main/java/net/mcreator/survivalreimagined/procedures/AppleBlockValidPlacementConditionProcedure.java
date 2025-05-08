@@ -7,7 +7,7 @@ import net.minecraft.core.BlockPos;
 
 public class AppleBlockValidPlacementConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("neoforge:apple_placeables")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("c:apple_placeables")))) {
 			return true;
 		}
 		return false;

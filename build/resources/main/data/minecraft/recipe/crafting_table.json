@@ -3,7 +3,7 @@
   "category": "misc",
   "pattern": [
     "aba",
-    "cde",
+    "aca",
     "aaa"
   ],
   "key": {
@@ -14,13 +14,7 @@
       "item": "minecraft:leather"
     },
     "c": {
-      "tag": "survival_reimagined:hammers"
-    },
-    "d": {
       "tag": "minecraft:planks"
-    },
-    "e": {
-      "tag": "minecraft:saws"
     }
   },
   "result": {

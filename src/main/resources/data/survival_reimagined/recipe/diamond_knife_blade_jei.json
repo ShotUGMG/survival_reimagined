@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:knife_blade_mold"
+    },
+    {
+      "tag": "c:metals/diamond"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:diamond_knife_blade",
+    "count": 1
+  }
+}

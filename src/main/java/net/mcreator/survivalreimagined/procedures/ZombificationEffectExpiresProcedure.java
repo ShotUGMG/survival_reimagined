@@ -96,7 +96,7 @@ public class ZombificationEffectExpiresProcedure {
 					}
 				}
 			} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 4) {
-				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("survival_reimagined:zombification_damage")))), 20);
+				entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("survival_reimagined:zombification_damage")))), 40);
 				if (world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_desert")))
 						|| world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_badlands")))) {
 					if (world instanceof ServerLevel _level) {

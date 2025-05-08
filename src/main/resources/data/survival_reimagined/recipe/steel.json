@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "tag": "c:alloy/iron_items"
+    },
+    {
+      "tag": "c:alloy/manganese_items"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_steel",
+    "count": 1
+  }
+}

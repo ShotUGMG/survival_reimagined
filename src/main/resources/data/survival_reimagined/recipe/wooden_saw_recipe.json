@@ -13,7 +13,7 @@
       "item": "minecraft:stick"
     },
     "c": {
-      "tag": "minecraft:single_planks"
+      "tag": "c:planks/single"
     }
   },
   "result": {

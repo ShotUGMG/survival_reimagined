@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:BronzeIngot"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:IngotMold"
+      },
+      {
+        "value": "TAG:c:rough_ingots/bronze"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}

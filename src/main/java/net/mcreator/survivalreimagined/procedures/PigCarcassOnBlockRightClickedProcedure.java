@@ -30,7 +30,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return InteractionResult.PASS;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:saws")))
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) == 0) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -57,7 +57,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.PIG_CARCASS.get().defaultBlockState()));
 					{
@@ -91,7 +91,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:saws")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip19 ? blockstate.getValue(_getip19) : -1) == 1) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -118,7 +118,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.PIG_CARCASS.get().defaultBlockState()));
 					{
@@ -150,7 +150,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 				});
 			}
 			return InteractionResult.SUCCESS;
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:knifes")))
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/knife")))
 				&& (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip35 ? blockstate.getValue(_getip35) : -1) == 2) {
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
@@ -177,7 +177,7 @@ public class PigCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.PIG_CARCASS.get().defaultBlockState()));
 					{

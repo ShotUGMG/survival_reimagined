@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/tin"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:tin_ingot"
+    }
+  ]
+}

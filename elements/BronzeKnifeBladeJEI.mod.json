@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:BronzeKnifeBlade"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:KnifeBladeMold"
+      },
+      {
+        "value": "TAG:c:metals/bronze"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}

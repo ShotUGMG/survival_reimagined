@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "survival_reimagined:steel_ingot"
+    }
+  ]
+}

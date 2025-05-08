@@ -37,7 +37,7 @@ public class ChickenCarcassOnBlockRightClickedProcedure {
 					}
 				}
 			});
-			if (Math.random() < 0.05) {
+			if (Math.random() < 0.15) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(SurvivalReimaginedModBlocks.CHICKEN_CARCASS.get().defaultBlockState()));
 					if (world instanceof Level _level) {
@@ -61,7 +61,7 @@ public class ChickenCarcassOnBlockRightClickedProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-					for (int index0 = 0; index0 < (int) Mth.nextDouble(RandomSource.create(), 6, 12); index0++) {
+					for (int index0 = 0; index0 < (int) Mth.nextDouble(RandomSource.create(), 4, 8); index0++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.FEATHER));
 							entityToSpawn.setPickUpDelay(10);

@@ -1,0 +1,18 @@
+{
+  "favorites": [],
+  "lookup_history": [
+    "item:create:brass_ingot",
+    "item:survival_reimagined:rough_brass",
+    "item:create:brass_block",
+    "item:minecraft:gold_ingot",
+    "item:survival_reimagined:rough_gold"
+  ],
+  "craft_history": [],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}

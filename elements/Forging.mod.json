@@ -1,0 +1,41 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "forge_jei.png",
+    "width": 176,
+    "height": 87,
+    "icon": {
+      "value": "CUSTOM:Forge"
+    },
+    "craftingtables": [],
+    "enableCraftingtable": false,
+    "title": "Forging",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 71,
+        "y": 36,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 89,
+        "y": 36,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 26,
+        "y": 62,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 134,
+        "y": 36,
+        "slotid": 0
+      }
+    ]
+  }
+}

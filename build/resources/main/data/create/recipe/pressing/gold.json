@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:gold_ingot"
+    }
+  ]
+}

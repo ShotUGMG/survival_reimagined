@@ -65,5 +65,7 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.MANGROVE_PLANK.get())
 			event.setBurnTime(400);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.WOOD_INGOT.get())
+			event.setBurnTime(400);
 	}
 }

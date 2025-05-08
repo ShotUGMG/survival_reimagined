@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/netherite"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:netherite_ingot"
+    }
+  ]
+}

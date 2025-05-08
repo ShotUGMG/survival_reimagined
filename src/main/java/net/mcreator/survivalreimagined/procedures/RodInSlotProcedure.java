@@ -27,7 +27,7 @@ public class RodInSlotProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:rod_items")))) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -37,7 +37,6 @@ public class RodInSlotProcedure {
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
-			assert Boolean.TRUE; //#dbg:RodInSlot:call_recipes
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -54,7 +53,7 @@ public class RodInSlotProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("survival_reimagined:rod_items")))) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))) {
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 				ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get()).copy();
 				_setstack.setCount(1);

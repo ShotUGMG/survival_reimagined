@@ -31,7 +31,7 @@ public class SpoiledFoodEffectProcedure {
 	private static void execute(@Nullable Event event, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (itemstack.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:spoiled_food")))) {
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:spoiled_food")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 150, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

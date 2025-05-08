@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:helmet_mold"
+    },
+    {
+      "tag": "c:metals/diamond"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "minecraft:diamond_helmet",
+    "count": 1
+  }
+}

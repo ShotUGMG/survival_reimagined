@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/zinc"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:zinc_ingot"
+    }
+  ]
+}

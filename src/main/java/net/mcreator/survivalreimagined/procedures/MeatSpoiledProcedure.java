@@ -34,301 +34,284 @@ public class MeatSpoiledProcedure {
 			return;
 		if (SurvivalReimaginedModVariables.WorldVariables.get(world).SpoilTimer == 1600) {
 			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.BEEF)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BEEF.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.MUTTON)) : false) {
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.BEEF);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_MUTTON.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_BEEF)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BEEF.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.COOKED_BEEF);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.PORKCHOP)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_PORKCHOP.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.PORKCHOP);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_PORKCHOP)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_PORKCHOP.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.COOKED_PORKCHOP);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.CHICKEN)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_CHICKEN.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.CHICKEN);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_CHICKEN)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_CHICKEN.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.COOKED_CHICKEN);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.MUTTON)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_MUTTON.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(Items.MUTTON);
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_MUTTON)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_MUTTON.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.COOKED_MUTTON);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_MUTTON)) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_MUTTON.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(Items.COOKED_MUTTON);
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
 						}
 					});
-				}
+				});
 			}
 			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.RABBIT)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_RABBIT.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.CHICKEN)) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_CHICKEN.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(Items.CHICKEN);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_CHICKEN)) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_CHICKEN.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(Items.COOKED_CHICKEN);
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+						}
+					});
+				});
+			}
+			if (Math.random() < 0.075) {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.RABBIT)) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_RABBIT.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(Items.RABBIT);
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_RABBIT)) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_RABBIT.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(Items.COOKED_RABBIT);
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_RABBIT)) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_RABBIT.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(Items.COOKED_RABBIT);
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
 						}
 					});
-				}
+				});
 			}
 			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.BRAIN.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BRAIN.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.BEEF)) : false) {
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.BRAIN.get());
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BEEF.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(Items.BEEF);
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_BRAIN.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BRAIN.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_BRAIN.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_BEEF)) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BEEF.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(Items.COOKED_BEEF);
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
 						}
 					});
-				}
+				});
 			}
 			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.HEART_ITEM.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_HEART.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.PORKCHOP)) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_PORKCHOP.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(Items.PORKCHOP);
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.COOKED_PORKCHOP)) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_PORKCHOP.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(Items.COOKED_PORKCHOP);
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+						}
+					});
+				});
+			}
+			if (Math.random() < 0.075) {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.HEART_ITEM.get())) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_HEART.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.HEART_ITEM.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_HEART.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_HEART.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_HEART.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_HEART.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_HEART.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_HEART.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
 						}
 					});
-				}
+				});
 			}
 			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.LIVER.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LIVER.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.LUNGS.get())) : false) {
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.LIVER.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LUNGS.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_LIVER.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LIVER.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_LIVER.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.INTESTINES.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_INTESTINES.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.INTESTINES.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_INTESTINES.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_INTESTINES.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_INTESTINES.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.STOMACH.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_STOMACH.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.STOMACH.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_STOMACH.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_STOMACH.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_STOMACH.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
-						}
-					});
-				}
-			}
-			if (Math.random() < 0.075) {
-				if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.LUNGS.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LUNGS.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						if (entity instanceof Player _player) {
 							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.LUNGS.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
-					});
-				} else if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_LUNGS.get())) : false) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LUNGS.get()).copy();
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_LUNGS.get());
-							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_LUNGS.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LUNGS.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_LUNGS.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
 						}
 					});
-				}
+				});
+			}
+			if (Math.random() < 0.075) {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.BRAIN.get())) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BRAIN.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.BRAIN.get());
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+					}
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_BRAIN.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_BRAIN.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_BRAIN.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+						}
+					});
+				});
+			}
+			if (Math.random() < 0.075) {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.LIVER.get())) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LIVER.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.LIVER.get());
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+					}
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_LIVER.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LIVER.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_LIVER.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+						}
+					});
+				});
+			}
+			if (Math.random() < 0.075) {
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.STOMACH.get())) : false) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_STOMACH.get()).copy();
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+						if (entity instanceof Player _player) {
+							ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.STOMACH.get());
+							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+						}
+					}
+					SurvivalReimaginedMod.queueServerWork(2, () -> {
+						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.COOKED_STOMACH.get())) : false) {
+							if (entity instanceof Player _player) {
+								ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_STOMACH.get()).copy();
+								_setstack.setCount(1);
+								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+							}
+							if (entity instanceof Player _player) {
+								ItemStack _stktoremove = new ItemStack(SurvivalReimaginedModItems.COOKED_STOMACH.get());
+								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+							}
+						}
+					});
+				});
 			}
 		}
 	}

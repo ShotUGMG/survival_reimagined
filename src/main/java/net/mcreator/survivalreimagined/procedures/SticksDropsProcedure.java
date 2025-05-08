@@ -46,15 +46,12 @@ public class SticksDropsProcedure {
 			}
 		}.checkGamemode(entity)) {
 			if (Math.random() < 0.1) {
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(Items.STICK));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(Items.STICK));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
+				for (int index0 = 0; index0 < 2; index0++) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(Items.STICK));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
 				}
 			}
 		}

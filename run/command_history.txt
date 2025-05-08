@@ -1,0 +1,17 @@
+/gamerule doTileDrops true
+/give Dev survival_reimagined:rough_brass
+/enchant Dev minecraft:silk_touch
+/difficulty peaceful
+/weather clear
+/difficulty easy
+/difficulty peaceful
+/time set day
+/effect give Dev survival_reimagined:zombification infinite 4
+/effect clear
+/effect give Dev survival_reimagined:zombification infinite 3
+/difficulty peaceful
+/difficulty easy
+/effect clear
+/effect give Dev survival_reimagined:zombification infinite 2
+/effect clear
+/difficulty easy
