@@ -7980,7 +7980,8 @@
           "src/main/java/net/mcreator/survivalreimagined/item/StoneKnifeItem.java",
           "src/main/resources/assets/survival_reimagined/models/item/stone_knife.json"
         ]
-      }
+      },
+      "path": "~/Mod Elements/items/Tools/Stone"
     },
     {
       "name": "CowCarcassOnBlockRightClicked",
@@ -18711,6 +18712,19 @@
         ]
       },
       "path": "~/Mod Elements/Integration/JEI/Forge/Recipes/Ingot"
+    },
+    {
+      "name": "WoodenIngot",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/wooden_ingot.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
     }
   ],
   "variable_elements": [
@@ -18964,6 +18978,12 @@
       "CUSTOM:LargeCrimsonBark",
       "CUSTOM:LargeWarpedBark"
     ],
+    "ITEMS:c:processng/emerald": [
+      "CUSTOM:EmbeddedEmerald",
+      "CUSTOM:DeepslateEmbeddedEmerald",
+      "Blocks.EMERALD_ORE",
+      "Blocks.DEEPSLATE_EMERALD_ORE"
+    ],
     "ITEMS:c:ingots/iron": [
       "Items.IRON_INGOT"
     ],
@@ -18972,6 +18992,9 @@
     ],
     "BLOCKS:minecraft:leaves": [
       "~CUSTOM:AppleOakLeaves"
+    ],
+    "ITEMS:c:processing/rod_items": [
+      "CUSTOM:ReactorRod"
     ],
     "BLOCKS:minecraft:incorrect_for_iron_tool": [
       "TAG:minecraft:needs_steel_tool"
@@ -18998,18 +19021,7 @@
       "CUSTOM:TinIngot"
     ],
     "ITEMS:minecraft:axes": [
-      "~CUSTOM:NetheriteSaw",
-      "~CUSTOM:NetheriteKnife",
-      "~CUSTOM:NetheriteHammer",
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
-      "~CUSTOM:SteelKnife",
       "~CUSTOM:SteelAxe",
-      "~CUSTOM:BronzeKnife",
-      "~CUSTOM:BronzeHammer",
       "~CUSTOM:BronzeAxe"
     ],
     "ITEMS:sereneseasons:spring_crops": [
@@ -19116,12 +19128,6 @@
       "Items.FISH#0",
       "Items.FISH#1"
     ],
-    "ITEMS:mod:diamond_processing_items": [
-      "CUSTOM:EmbeddedDiamond",
-      "CUSTOM:DeepslateEmbeddedDiamond",
-      "Blocks.DIAMOND_ORE",
-      "Blocks.DEEPSLATE_DIAMOND_ORE"
-    ],
     "BLOCKS:minecraft:dirt": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:EmbeddedObsidian",
@@ -19142,29 +19148,6 @@
       "CUSTOM:BronzeHoeBlade",
       "CUSTOM:SteelHoeBlade",
       "CUSTOM:DiamondHoeBlade"
-    ],
-    "ITEMS:c:turns_into_craftng_table": [
-      "Blocks.STRIPPED_OAK_LOG",
-      "Blocks.STRIPPED_SPRUCE_LOG",
-      "Blocks.STRIPPED_BIRCH_LOG",
-      "Blocks.STRIPPED_JUNGLE_LOG",
-      "Blocks.STRIPPED_ACACIA_LOG",
-      "Blocks.STRIPPED_DARK_OAK_LOG",
-      "Blocks.STRIPPED_WARPED_STEM",
-      "Blocks.STRIPPED_CRIMSON_STEM",
-      "Blocks.STRIPPED_MANGROVE_LOG",
-      "Blocks.STRIPPED_CHERRY_LOG",
-      "Blocks.STRIPPED_BAMBOO_BLOCK",
-      "Blocks.STRIPPED_OAK_WOOD",
-      "Blocks.STRIPPED_SPRUCE_WOOD",
-      "Blocks.STRIPPED_BIRCH_WOOD",
-      "Blocks.STRIPPED_JUNGLE_WOOD",
-      "Blocks.STRIPPED_ACACIA_WOOD",
-      "Blocks.STRIPPED_DARK_OAK_WOOD",
-      "Blocks.STRIPPED_WARPED_HYPHAE",
-      "Blocks.STRIPPED_CRIMSON_HYPHAE",
-      "Blocks.STRIPPED_MANGROVE_WOOD",
-      "Blocks.STRIPPED_CHERRY_WOOD"
     ],
     "BLOCKS:minecraft:maintains_farmland": [
       "CUSTOM:Hemp"
@@ -19246,6 +19229,9 @@
       "~CUSTOM:SteelHoe",
       "~CUSTOM:BronzeHoe"
     ],
+    "ITEMS:c:apple_placeables": [
+      "TAG:minecraft:leaves"
+    ],
     "ITEMS:c:spoiled_food": [
       "CUSTOM:SpoiledBrain",
       "CUSTOM:SpoiledHeart",
@@ -19260,12 +19246,6 @@
       "CUSTOM:SpoiledMutton",
       "CUSTOM:SpoiledPorkchop",
       "CUSTOM:SpoiledBeef"
-    ],
-    "ITEMS:mod:emerald_processing_items": [
-      "CUSTOM:EmbeddedEmerald",
-      "CUSTOM:DeepslateEmbeddedEmerald",
-      "Blocks.EMERALD_ORE",
-      "Blocks.DEEPSLATE_EMERALD_ORE"
     ],
     "ITEMS:c:fuels/bark_large": [
       "CUSTOM:LargeOakBark",
@@ -19289,21 +19269,8 @@
       "CUSTOM:NetheriteKnife"
     ],
     "ITEMS:minecraft:swords": [
-      "~CUSTOM:NetheriteSaw",
-      "~CUSTOM:NetheriteKnife",
-      "~CUSTOM:NetheriteHammer",
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
       "~CUSTOM:SteelSword",
-      "~CUSTOM:BronzeKnife",
-      "~CUSTOM:BronzeHammer",
-      "~CUSTOM:BronzeSword",
-      "CUSTOM:StoneKnife",
-      "CUSTOM:WoodenKnife",
-      "CUSTOM:SteelKnife"
+      "~CUSTOM:BronzeSword"
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:SoulProtection"
@@ -19336,34 +19303,8 @@
       "CUSTOM:WarpedPlank"
     ],
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:NetheriteSaw",
-      "~CUSTOM:NetheriteKnife",
-      "~CUSTOM:NetheriteHammer",
-      "~CUSTOM:DiamondChisel",
-      "~CUSTOM:DiamondSaw",
-      "~CUSTOM:DiamondKnife",
-      "~CUSTOM:DiamondHammer",
-      "~CUSTOM:SteelChisel",
-      "~CUSTOM:BronzeChisel",
-      "~CUSTOM:SteelSaw",
-      "~CUSTOM:SteelHammer",
-      "~CUSTOM:SteelKnife",
       "~CUSTOM:SteelPickaxe",
-      "~CUSTOM:WoodenKnife",
-      "~CUSTOM:BronzeKnife",
-      "~CUSTOM:StoneKnife",
-      "~CUSTOM:WoodenHammer",
-      "~CUSTOM:WoodenSaw",
-      "~CUSTOM:BronzeHammer",
-      "~CUSTOM:BronzeSaw",
-      "~CUSTOM:BronzePickaxe",
-      "~CUSTOM:StoneSaw",
-      "~CUSTOM:StoneHammer",
-      "~CUSTOM:CopperChisel",
-      "~CUSTOM:FlintTool"
-    ],
-    "ITEMS:mod:rod_items": [
-      "CUSTOM:ReactorRod"
+      "~CUSTOM:BronzePickaxe"
     ],
     "ITEMS:c:components/shovel_head": [
       "CUSTOM:BronzeShovelHead",
@@ -19479,6 +19420,12 @@
     "ITEMS:minecraft:enchantable/weapon": [
       "TAG:c:tools/knife"
     ],
+    "ITEMS:c:processing/diamond": [
+      "CUSTOM:EmbeddedDiamond",
+      "CUSTOM:DeepslateEmbeddedDiamond",
+      "Blocks.DIAMOND_ORE",
+      "Blocks.DEEPSLATE_DIAMOND_ORE"
+    ],
     "ENTITIES:minecraft:zombies": [
       "CUSTOM:BloodMoonZombie"
     ],
@@ -19498,9 +19445,6 @@
     "ITEMS:minecraft:coals": [
       "Items.COAL#0",
       "Items.COAL#1"
-    ],
-    "BLOCKS:neoforge:apple_placeables": [
-      "TAG:minecraft:leaves"
     ],
     "ITEMS:mod:uranium_rocks": [
       "CUSTOM:UraniumSandstoneDeposit",
@@ -19527,8 +19471,8 @@
       "item.survival_reimagined.spoiled_liver": "Spoiled Liver",
       "item.survival_reborn.large_crimson_bark": "Large Crimson Bark",
       "advancements.bronze_age.title": "Bronze Age",
-      "item.survival_reborn.rough_bronze": "Rough Bronze",
       "item.survival_reimagined.mangrove_plank": "Mangrove Plank",
+      "item.survival_reborn.rough_bronze": "Rough Bronze",
       "item.survival_reimagined.diamond_hammer_head": "Diamond Hammer Head",
       "item.survival_reimagined.bronze_sword_blade": "Bronze Sword Blade",
       "item.survival_reborn.rough_steel": "Rough Steel",
@@ -19540,8 +19484,8 @@
       "item.survival_reimagined.bronze_ingot": "Bronze Ingot",
       "item.survival_reimagined.steel_ingot": "Steel Ingot",
       "item.survival_reimagined.asurine_crystal": "Asurine Crystal",
-      "block.survival_reborn.clay_pickaxe_head_mold": "Clay Pickaxe Head Mold",
       "item.survival_reborn.steel_hammer": "Steel Hammer",
+      "block.survival_reborn.clay_pickaxe_head_mold": "Clay Pickaxe Head Mold",
       "item.survival_reimagined.heart_item": "Heart",
       "item.survival_reimagined.wooden_knife": "Wooden Survival Knife",
       "item.survival_reborn.small_copper_handle": "Small Copper Handle",
@@ -19550,15 +19494,15 @@
       "item.survival_reborn.bronze_armor_leggings": "Bronze Leggings",
       "item.survival_reborn.bronze_saw_blade": "Bronze Saw Blade",
       "block.survival_reimagined.sword_blade_mold": "Sword Blade Mold",
-      "item.survival_reborn.tin_chunk": "Tin Chunk",
       "block.survival_reimagined.block_of_manganese": "Block Of Manganese",
+      "item.survival_reborn.tin_chunk": "Tin Chunk",
       "death.attack.zombification_damage.player": "%1$s succumbed to Zombification whilst trying to escape %2$s",
-      "item.survival_reborn.blood_moons_music_disc.desc": "ShotUGMG - Blood Moon\u0027s Intimidation",
       "block.survival_reimagined.cobbled_red_sandstone": "Cobbled Red Sandstone",
+      "item.survival_reborn.blood_moons_music_disc.desc": "ShotUGMG - Blood Moon\u0027s Intimidation",
       "item.survival_reimagined.brain": "Brain",
       "item.survival_reimagined.limestone_rock": "Limestone Rock",
-      "item.survival_reimagined.wooden_hammer": "Wooden Hammer",
       "item.survival_reimagined.birch_plank": "Birch Plank",
+      "item.survival_reimagined.wooden_hammer": "Wooden Hammer",
       "item.survival_reimagined.diamond_axe_head": "Diamond Axe Head",
       "block.survival_reborn.blackstone_rock_block": "Blackstone Rock Block",
       "block.survival_reimagined.block_of_steel": "Block Of Steel",
@@ -20996,10 +20940,6 @@
                   {
                     "name": "Hide",
                     "children": []
-                  },
-                  {
-                    "name": "Tools",
-                    "children": []
                   }
                 ]
               },
@@ -21173,6 +21113,14 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "name": "MRT",
+                    "children": []
+                  },
+                  {
+                    "name": "MPT",
+                    "children": []
                   }
                 ]
               }
