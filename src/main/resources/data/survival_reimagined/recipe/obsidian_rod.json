@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "ab"
+    " a",
+    "ba"
   ],
   "key": {
     "a": {
-      "item": "minecraft:stick"
+      "item": "survival_reimagined:obsidian_rock"
     },
     "b": {
-      "item": "survival_reimagined:obsidian_rock"
+      "item": "minecraft:stick"
     }
   },
   "result": {

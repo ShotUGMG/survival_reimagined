@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
         "value": "Items.LEATHER"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
         "value": "Blocks.PLANKS"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       }
     ],
     "recipeReturnStack": {

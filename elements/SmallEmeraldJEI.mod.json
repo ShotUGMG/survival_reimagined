@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "processing",
+    "result": {
+      "value": "CUSTOM:SmallEmerald"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "TAG:c:processing/creates_small_emerald"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

@@ -162,7 +162,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "survival_reimagined:fiberous_leaves",
+          "name": "survival_reimagined:hemp_leaf",
           "weight": 5,
           "functions": [
             {
@@ -212,7 +212,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "survival_reimagined:fiberous_plant_seeds",
+          "name": "survival_reimagined:hemp_seeds",
           "weight": 10,
           "functions": [
             {

@@ -91,8 +91,8 @@ public class MPTGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 			private int x = MPTGUIMenu.this.x;
 			private int y = MPTGUIMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 98, 35) {
-			private final int slot = 1;
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 98, 35) {
+			private final int slot = 2;
 			private int x = MPTGUIMenu.this.x;
 			private int y = MPTGUIMenu.this.y;
 
@@ -101,8 +101,8 @@ public class MPTGUIMenu extends AbstractContainerMenu implements Supplier<Map<In
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 80, 62) {
-			private final int slot = 2;
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 62) {
+			private final int slot = 1;
 			private int x = MPTGUIMenu.this.x;
 			private int y = MPTGUIMenu.this.y;
 

@@ -21,6 +21,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModTabs;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModSounds;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModParticleTypes;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
@@ -57,6 +58,7 @@ public class SurvivalReimaginedMod {
 
 		SurvivalReimaginedModMobEffects.REGISTRY.register(modEventBus);
 		SurvivalReimaginedModMenus.REGISTRY.register(modEventBus);
+		SurvivalReimaginedModParticleTypes.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
 		// End of user code block mod init

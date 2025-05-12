@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "result": {
+      "value": "CUSTOM:BronzeKnife"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SmallCopperHandle"
+      },
+      {
+        "value": "CUSTOM:BronzeKnifeBlade"
+      },
+      {
+        "value": "TAG:c:tools/hammer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "survival_reimagined:processing",
+  "ingredients": [
+    {
+      "tag": "c:processing/diamond"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "minecraft:diamond",
+    "count": 1
+  }
+}

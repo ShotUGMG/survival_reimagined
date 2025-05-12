@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:copper_handle"
+    },
+    {
+      "item": "survival_reimagined:bronze_hoe_blade"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:bronze_hoe",
+    "count": 1
+  }
+}

@@ -53,15 +53,15 @@
           "displayCondition": {
             "name": "MPTDisplayTick"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
       {
         "type": "outputslot",
         "data": {
-          "id": 1,
+          "id": 2,
           "disablePickup": {
             "fixedValue": false
           },
@@ -81,7 +81,7 @@
             "fixedValue": false,
             "name": "OneRodLimit"
           },
-          "id": 2,
+          "id": 1,
           "disablePickup": {
             "fixedValue": false,
             "name": "EmptyRodInSlot"
@@ -100,8 +100,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick1"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -113,8 +113,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick2"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -126,8 +126,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick3"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -139,8 +139,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick4"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -152,8 +152,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick5"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -165,8 +165,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick6"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -178,8 +178,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick7"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -191,8 +191,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick8"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -204,8 +204,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick9"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -217,8 +217,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick10"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -230,8 +230,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick11"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -243,8 +243,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick12"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -256,8 +256,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick13"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -269,8 +269,8 @@
           "displayCondition": {
             "name": "MPTDisplayTick14"
           },
-          "x": 205,
-          "y": 71,
+          "x": 206,
+          "y": 72,
           "locked": false
         }
       },
@@ -281,6 +281,49 @@
           "use1Xscale": false,
           "x": 206,
           "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_empty",
+          "text": {
+            "fixedValue": "",
+            "name": "MPTGUIValue"
+          },
+          "displayCondition": {
+            "name": "MPTTooltipDisplay"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 202,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstome.png",
+          "use1Xscale": false,
+          "x": 134,
+          "y": 100,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_empty1",
+          "text": {
+            "fixedValue": "",
+            "name": "MPTGUIRedstoneValue"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 130,
+          "y": 96,
           "locked": false
         }
       }

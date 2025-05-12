@@ -96,8 +96,8 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 			private int x = MetalRefiningTableGUIMenu.this.x;
 			private int y = MetalRefiningTableGUIMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 152, 63) {
-			private final int slot = 1;
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 152, 63) {
+			private final int slot = 2;
 			private int x = MetalRefiningTableGUIMenu.this.x;
 			private int y = MetalRefiningTableGUIMenu.this.y;
 
@@ -106,15 +106,15 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 				return stack.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")));
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 116, 38) {
-			private final int slot = 2;
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 116, 38) {
+			private final int slot = 3;
 			private int x = MetalRefiningTableGUIMenu.this.x;
 			private int y = MetalRefiningTableGUIMenu.this.y;
 
 			@Override
 			public void onTake(Player entity, ItemStack stack) {
 				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
+				slotChanged(3, 1, 0);
 			}
 
 			@Override
@@ -122,8 +122,8 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 				return false;
 			}
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 80, 38) {
-			private final int slot = 3;
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 38) {
+			private final int slot = 1;
 			private int x = MetalRefiningTableGUIMenu.this.x;
 			private int y = MetalRefiningTableGUIMenu.this.y;
 		}));

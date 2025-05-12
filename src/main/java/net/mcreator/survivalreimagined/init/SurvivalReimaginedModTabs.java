@@ -324,16 +324,18 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.NETHERITE_KNIFE.get());
 				tabData.accept(SurvivalReimaginedModItems.NETHERITE_SAW.get());
 				tabData.accept(SurvivalReimaginedModItems.WOOD_INGOT.get());
-				tabData.accept(SurvivalReimaginedModItems.ASURINE_CRYSTAL.get());
-				tabData.accept(SurvivalReimaginedModItems.SCORIA_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.SCORCHIA_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.CRIMSITE_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.OCHRUM_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.LIMESTONE_ROCK.get());
-				tabData.accept(SurvivalReimaginedModItems.VIRIDIUM_ROCK.get());
 				tabData.accept(SurvivalReimaginedModItems.ROUGH_ZINC.get());
 				tabData.accept(SurvivalReimaginedModItems.ROUGH_BRASS.get());
 				tabData.accept(SurvivalReimaginedModItems.RAW_ZINC_NUGGET.get());
+				tabData.accept(SurvivalReimaginedModBlocks.LIMESTONE_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.VERIDIUM_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.OCHRUM_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.CRIMSITE_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.SCORCHIA_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.ASURINE_CRYSTAL.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.SCORIA_ROCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.SMALL_DIAMOND.get());
+				tabData.accept(SurvivalReimaginedModItems.SMALL_EMERALD.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

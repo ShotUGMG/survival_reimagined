@@ -32,4 +32,5 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> BLOODZOMBIE_DEATH = REGISTRY.register("bloodzombie_death", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "bloodzombie_death")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> PORTAL_OPEN = REGISTRY.register("portal_open", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "portal_open")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BLOODMOON_SONG = REGISTRY.register("bloodmoon_song", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "bloodmoon_song")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MPT_AMBIENCE = REGISTRY.register("mpt/ambience", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "mpt/ambience")));
 }

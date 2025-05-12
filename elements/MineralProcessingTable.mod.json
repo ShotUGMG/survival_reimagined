@@ -128,11 +128,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "MineralProcessingTableBlockAdded"
-    },
     "onTickUpdate": {
       "name": "MineralProcessingTableOnTickUpdate"
+    },
+    "onRandomUpdateEvent": {
+      "name": "MineralProcessingTableOnRandomClientDisplayTick"
     },
     "onRedstoneOn": {
       "name": "MineralProcessingTableRedstoneOn"

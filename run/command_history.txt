@@ -15,3 +15,5 @@
 /effect give Dev survival_reimagined:zombification infinite 2
 /effect clear
 /difficulty easy
+/difficulty peaceful
+/give Dev survival_reimagined:ochrum_rock

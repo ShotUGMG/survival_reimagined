@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "result": {
+      "value": "Items.DIAMOND_SHOVEL"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:ObsidianHandle"
+      },
+      {
+        "value": "CUSTOM:DiamondShovelHead"
+      },
+      {
+        "value": "TAG:c:tools/hammer"
+      }
+    ]
+  }
+}

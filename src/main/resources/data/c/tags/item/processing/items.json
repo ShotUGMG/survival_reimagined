@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:processing/diamond",
+    "#c:processing/emerald",
+    "#c:processing/creates_small_diamond",
+    "#c:processing/creates_small_emerald"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "mrt_jei.png",
+    "width": 176,
+    "height": 90,
+    "icon": {
+      "value": "CUSTOM:MetalRefiningTable"
+    },
+    "craftingtables": [],
+    "enableCraftingtable": false,
+    "title": "Metal Refining",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 44,
+        "y": 38,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 38,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 152,
+        "y": 63,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 116,
+        "y": 38,
+        "slotid": 0
+      }
+    ]
+  }
+}

@@ -12,13 +12,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
-        "value": "TAG:minecraft:single_planks"
+        "value": "TAG:c:planks/single"
       },
       {
         "value": ""

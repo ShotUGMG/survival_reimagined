@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:small_bronze_handle"
+    },
+    {
+      "item": "survival_reimagined:steel_knife_blade"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:steel_knife",
+    "count": 1
+  }
+}

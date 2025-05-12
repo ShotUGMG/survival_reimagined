@@ -54,7 +54,7 @@
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 1,
+          "id": 2,
           "disablePickup": {
             "fixedValue": false
           },
@@ -67,7 +67,7 @@
       {
         "type": "outputslot",
         "data": {
-          "id": 2,
+          "id": 3,
           "disablePickup": {
             "fixedValue": false
           },
@@ -119,7 +119,7 @@
           "disablePlacement": {
             "fixedValue": false
           },
-          "id": 3,
+          "id": 1,
           "disablePickup": {
             "fixedValue": false
           },

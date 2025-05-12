@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:deepslate_embedded_diamond",
+    "survival_reimagined:deepslate_embedded_emerald",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_emerald_ore"
+  ]
+}

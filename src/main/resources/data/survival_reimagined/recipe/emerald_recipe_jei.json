@@ -1,0 +1,15 @@
+{
+  "type": "survival_reimagined:processing",
+  "ingredients": [
+    {
+      "tag": "c:processing/emerald"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "minecraft:emerald",
+    "count": 1
+  }
+}

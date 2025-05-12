@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "result": {
+      "value": "CUSTOM:DiamondKnife"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:SmallObsidianHandle"
+      },
+      {
+        "value": "CUSTOM:DiamondKnifeBlade"
+      },
+      {
+        "value": "TAG:c:tools/hammer"
+      }
+    ]
+  }
+}

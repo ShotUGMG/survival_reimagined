@@ -1,0 +1,35 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "mpt_jei.png",
+    "width": 176,
+    "height": 90,
+    "icon": {
+      "value": "CUSTOM:MineralProcessingTable"
+    },
+    "craftingtables": [],
+    "enableCraftingtable": false,
+    "title": "Processing",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 62,
+        "y": 35,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 62,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 98,
+        "y": 35,
+        "slotid": 0
+      }
+    ]
+  }
+}

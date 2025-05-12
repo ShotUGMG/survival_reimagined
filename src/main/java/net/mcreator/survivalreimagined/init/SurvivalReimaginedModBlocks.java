@@ -13,6 +13,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.survivalreimagined.block.VeridiumRockBlock;
 import net.mcreator.survivalreimagined.block.TuffRockBlockBlock;
 import net.mcreator.survivalreimagined.block.TinOreBlock;
 import net.mcreator.survivalreimagined.block.SwordBladeMoldBlock;
@@ -21,17 +22,21 @@ import net.mcreator.survivalreimagined.block.ShovelHeadMoldBlock;
 import net.mcreator.survivalreimagined.block.SheepLegBlock;
 import net.mcreator.survivalreimagined.block.SheepHeadBlock;
 import net.mcreator.survivalreimagined.block.SheepCarcassBlock;
+import net.mcreator.survivalreimagined.block.ScoriaRockBlock;
+import net.mcreator.survivalreimagined.block.ScorchiaRockBlock;
 import net.mcreator.survivalreimagined.block.SawBladeMoldBlock;
 import net.mcreator.survivalreimagined.block.SandSaltDepositBlock;
 import net.mcreator.survivalreimagined.block.PigLegBlock;
 import net.mcreator.survivalreimagined.block.PigHeadBlock;
 import net.mcreator.survivalreimagined.block.PigCarcassBlock;
 import net.mcreator.survivalreimagined.block.PickaxeHeadMoldBlock;
+import net.mcreator.survivalreimagined.block.OchrumRockBlock;
 import net.mcreator.survivalreimagined.block.NetherrackRockBlockBlock;
 import net.mcreator.survivalreimagined.block.MossyStoneRockBlockBlock;
 import net.mcreator.survivalreimagined.block.MineralProcessingTableBlock;
 import net.mcreator.survivalreimagined.block.MetalRefiningTableBlock;
 import net.mcreator.survivalreimagined.block.ManganeseOreBlock;
+import net.mcreator.survivalreimagined.block.LimestoneRockBlock;
 import net.mcreator.survivalreimagined.block.LeggingMoldBlock;
 import net.mcreator.survivalreimagined.block.KnifeBladeMoldBlock;
 import net.mcreator.survivalreimagined.block.IngotMoldBlock;
@@ -50,6 +55,7 @@ import net.mcreator.survivalreimagined.block.DioriteRockBLockBlock;
 import net.mcreator.survivalreimagined.block.DeepslateRockBlockBlock;
 import net.mcreator.survivalreimagined.block.DeepslateManganeseOreBlock;
 import net.mcreator.survivalreimagined.block.CrucibleBlock;
+import net.mcreator.survivalreimagined.block.CrimsiteBlockBlock;
 import net.mcreator.survivalreimagined.block.CowLegBlock;
 import net.mcreator.survivalreimagined.block.CowHeadBlock;
 import net.mcreator.survivalreimagined.block.CowCarcassBlock;
@@ -83,6 +89,7 @@ import net.mcreator.survivalreimagined.block.BlockOfBronzeBlock;
 import net.mcreator.survivalreimagined.block.BlackstoneRockBlockBlock;
 import net.mcreator.survivalreimagined.block.BasaltRockBlockBlock;
 import net.mcreator.survivalreimagined.block.AxeHeadMoldBlock;
+import net.mcreator.survivalreimagined.block.AsurineCrystalBlock;
 import net.mcreator.survivalreimagined.block.AppleTreeSaplingBlock;
 import net.mcreator.survivalreimagined.block.AppleOakLeavesBlock;
 import net.mcreator.survivalreimagined.block.AppleBlock;
@@ -165,6 +172,13 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> INGOT_MOLD = REGISTRY.register("ingot_mold", IngotMoldBlock::new);
 	public static final DeferredBlock<Block> INGOT_CLAY_MOLD = REGISTRY.register("ingot_clay_mold", IngotClayMoldBlock::new);
 	public static final DeferredBlock<Block> HEMP = REGISTRY.register("hemp", HempBlock::new);
+	public static final DeferredBlock<Block> LIMESTONE_ROCK = REGISTRY.register("limestone_rock", LimestoneRockBlock::new);
+	public static final DeferredBlock<Block> VERIDIUM_ROCK = REGISTRY.register("veridium_rock", VeridiumRockBlock::new);
+	public static final DeferredBlock<Block> OCHRUM_ROCK = REGISTRY.register("ochrum_rock", OchrumRockBlock::new);
+	public static final DeferredBlock<Block> CRIMSITE_ROCK = REGISTRY.register("crimsite_rock", CrimsiteBlockBlock::new);
+	public static final DeferredBlock<Block> SCORCHIA_ROCK = REGISTRY.register("scorchia_rock", ScorchiaRockBlock::new);
+	public static final DeferredBlock<Block> ASURINE_CRYSTAL = REGISTRY.register("asurine_crystal", AsurineCrystalBlock::new);
+	public static final DeferredBlock<Block> SCORIA_ROCK = REGISTRY.register("scoria_rock", ScoriaRockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

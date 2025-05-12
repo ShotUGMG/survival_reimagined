@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "processing",
+    "result": {
+      "value": "CUSTOM:SmallDiamond"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "TAG:c:processing/creates_small_diamond"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

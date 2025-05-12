@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "result": {
+      "value": "CUSTOM:SteelHammer"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:BronzeHandle"
+      },
+      {
+        "value": "CUSTOM:SteelHammerHead"
+      },
+      {
+        "value": "TAG:c:tools/hammer"
+      }
+    ]
+  }
+}

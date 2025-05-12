@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:embedded_diamond",
+    "survival_reimagined:embedded_emerald",
+    "minecraft:diamond_ore",
+    "minecraft:emerald_ore"
+  ]
+}

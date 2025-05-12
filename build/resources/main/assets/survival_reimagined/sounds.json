@@ -193,5 +193,14 @@
         "stream": true
       }
     ]
+  },
+  "mpt/ambience": {
+    "subtitle": "subtitles.mpt/ambience",
+    "sounds": [
+      {
+        "name": "survival_reimagined:mpt_ambient",
+        "stream": false
+      }
+    ]
   }
 }

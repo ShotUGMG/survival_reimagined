@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:bronze_handle"
+    },
+    {
+      "item": "survival_reimagined:steel_shovel_head"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:steel_shovel",
+    "count": 1
+  }
+}

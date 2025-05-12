@@ -21,8 +21,19 @@ public class EmptyRodInSlotProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get()) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get()) {
 			return false;
+		} else if ((new Object() {
+			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+				if (world instanceof ILevelExtension _ext) {
+					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+					if (_itemHandler != null)
+						return _itemHandler.getStackInSlot(slotid).copy();
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModItems.REACTOR_ROD.get()) {
+			return true;
 		}
 		return true;
 	}

@@ -63,7 +63,7 @@ public record MetalRefiningTableGUISlotMessage(int slotID, int x, int y, int z, 
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slot == 2 && changeType == 1) {
+		if (slot == 3 && changeType == 1) {
 
 			IronTakenProcedure.execute(world, x, y, z, entity);
 		}

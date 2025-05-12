@@ -8,7 +8,7 @@
   ],
   "key": {
     "a": {
-      "tag": "minecraft:single_planks"
+      "tag": "c:planks/single"
     },
     "b": {
       "item": "minecraft:stick"

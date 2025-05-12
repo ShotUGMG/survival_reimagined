@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "result": {
+      "value": "CUSTOM:BronzeAxe"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:CopperHandle"
+      },
+      {
+        "value": "CUSTOM:BronzeAxeHead"
+      },
+      {
+        "value": "TAG:c:tools/hammer"
+      }
+    ]
+  }
+}

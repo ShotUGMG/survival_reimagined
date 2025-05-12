@@ -18,7 +18,7 @@ public class OneRodLimitProcedure {
 				}
 				return 0;
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) == 1) {
+		}.getAmount(world, BlockPos.containing(x, y, z), 1) == 1) {
 			return true;
 		}
 		return false;
