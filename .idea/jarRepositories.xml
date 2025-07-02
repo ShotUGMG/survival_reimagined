@@ -51,5 +51,25 @@
       <option name="name" value="MavenRepo" />
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Progwml6's maven" />
+      <option name="name" value="Progwml6's maven" />
+      <option name="url" value="https://dvs1.progwml6.com/files/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Jared's maven" />
+      <option name="name" value="Jared's maven" />
+      <option name="url" value="https://maven.blamejared.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ModMaven" />
+      <option name="name" value="ModMaven" />
+      <option name="url" value="https://modmaven.dev" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Modrinth" />
+      <option name="name" value="Modrinth" />
+      <option name="url" value="https://api.modrinth.com/maven" />
+    </remote-repository>
   </component>
 </project>

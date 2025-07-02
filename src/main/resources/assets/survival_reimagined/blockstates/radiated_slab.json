@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "survival_reimagined:block/radiated_slab"
+    },
+    "type=top": {
+      "model": "survival_reimagined:block/radiated_slab_top"
+    },
+    "type=double": {
+      "model": "survival_reimagined:block/radiated_slab_full"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:titanium_ingot"
+    },
+    "b": {
+      "item": "survival_reimagined:turanite_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:advanced_reactor_rod",
+    "count": 1
+  }
+}

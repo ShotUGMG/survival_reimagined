@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:turanite_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:turanite_block",
+    "count": 1
+  }
+}

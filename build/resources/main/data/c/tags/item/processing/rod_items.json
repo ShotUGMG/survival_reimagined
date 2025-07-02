@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:reactor_rod"
+    "survival_reimagined:reactor_rod",
+    "survival_reimagined:advanced_reactor_rod"
   ]
 }

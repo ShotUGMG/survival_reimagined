@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#c:ingots/uranium",
+    "#c:rough_ingots/uranium"
+  ]
+}

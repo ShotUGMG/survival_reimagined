@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:upgrades/efficiency",
+    "#c:upgrades/yield",
+    "#c:upgrades/fuel",
+    "survival_reimagined:block_packaging_upgrade"
+  ]
+}

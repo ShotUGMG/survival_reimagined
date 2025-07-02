@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_brass"
+    },
+    {
+      "item": "survival_reimagined:ingot_mold"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "create:brass_ingot",
+    "count": 1
+  }
+}

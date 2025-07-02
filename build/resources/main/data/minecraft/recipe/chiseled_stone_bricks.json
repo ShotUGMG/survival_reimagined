@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/chisel"
+    },
+    "b": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "id": "minecraft:chiseled_stone_bricks",
+    "count": 1
+  }
+}

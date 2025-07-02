@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:uraninite"
+    },
+    {
+      "item": "survival_reimagined:uraninite"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_uranium",
+    "count": 1
+  }
+}

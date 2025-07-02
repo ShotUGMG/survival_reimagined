@@ -6,6 +6,7 @@
     "minecraft:raw_iron_block",
     "minecraft:raw_gold_block",
     "minecraft:raw_copper_block",
-    "survival_reimagined:block_of_raw_redstone"
+    "survival_reimagined:block_of_raw_redstone",
+    "survival_reimagined:block_of_raw_titanium"
   ]
 }

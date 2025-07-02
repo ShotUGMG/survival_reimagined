@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:titanium_ingot"
+    },
+    "b": {
+      "item": "survival_reimagined:fuel_upgrade"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:fuel_upgrade_mkii",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "tag": "c:alloy_block/gold_items"
+    },
+    {
+      "tag": "c:alloy_block/netherite_items"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "minecraft:block_of_netherite",
+    "count": 1
+  }
+}

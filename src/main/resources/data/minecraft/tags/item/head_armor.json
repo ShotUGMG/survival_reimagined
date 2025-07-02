@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:gas_mask_armor_helmet",
     "survival_reimagined:steel_armor_helmet",
     "survival_reimagined:wooden_helmet",
     "survival_reimagined:bronze_armor_helmet"

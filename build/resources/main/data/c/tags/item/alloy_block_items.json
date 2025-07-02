@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "c:alloy_block/copper_items",
+    "c:alloy_block/tin_items",
+    "c:alloy_block/iron_items",
+    "c:alloy_block/manganese_items",
+    "c:alloy_block/diamond_items",
+    "c:alloy_block/steel_items",
+    "c:alloy_block/gold_items",
+    "c:alloy_block/netherite_items",
+    "c:alloy_block/titanium_items",
+    "c:alloy_block/uranium_items",
+    "c:alloy_block/zinc_items"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/titanium_block",
+    "up": "survival_reimagined:block/advanced_forge_top",
+    "north": "survival_reimagined:block/advanced_forge_front_fueled",
+    "east": "survival_reimagined:block/advanced_forge_side",
+    "south": "survival_reimagined:block/advanced_forge_side",
+    "west": "survival_reimagined:block/advanced_forge_side",
+    "particle": "survival_reimagined:block/titanium_block"
+  },
+  "render_type": "solid"
+}

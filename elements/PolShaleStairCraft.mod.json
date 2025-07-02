@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      },
+      {
+        "value": "CUSTOM:PolishedShale"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PolishedShaleStairs"
+    },
+    "name": "pol_shale_stair_craft",
+    "namespace": "mod"
+  }
+}

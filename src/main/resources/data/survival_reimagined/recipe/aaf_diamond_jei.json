@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "tag": "c:alloy/diamond_items"
+    },
+    {
+      "tag": "c:alloy/steel_items"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_plated_diamond",
+    "count": 1
+  }
+}

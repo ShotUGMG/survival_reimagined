@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "survival_reimagined:polished_shale"
+  },
+  "result": {
+    "id": "survival_reimagined:polished_shale_wall",
+    "count": 1
+  }
+}

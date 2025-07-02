@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "survival_reimagined:block/advanced_alloy_forge"
+    },
+    "facing=east": {
+      "model": "survival_reimagined:block/advanced_alloy_forge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "survival_reimagined:block/advanced_alloy_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "survival_reimagined:block/advanced_alloy_forge",
+      "y": 270
+    }
+  }
+}

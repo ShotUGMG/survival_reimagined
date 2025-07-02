@@ -15,23 +15,7 @@ public class SurvivalReimaginedModFuels {
 	@SubscribeEvent
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		ItemStack itemstack = event.getItemStack();
-		if (itemstack.getItem() == SurvivalReimaginedModItems.OAK_BARK.get())
-			event.setBurnTime(200);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.DARK_OAK_BARK.get())
-			event.setBurnTime(200);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.SPRUCE_BARK.get())
-			event.setBurnTime(200);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.BIRCH_BARK.get())
-			event.setBurnTime(300);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.MANGROVE_BARK.get())
-			event.setBurnTime(300);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.CHERRY_BARK.get())
-			event.setBurnTime(300);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.ACACIA_BARK.get())
-			event.setBurnTime(200);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.JUNGLE_BARK.get())
-			event.setBurnTime(200);
-		else if (itemstack.getItem() == SurvivalReimaginedModItems.LARGE_OAK_BARK.get())
+		if (itemstack.getItem() == SurvivalReimaginedModItems.LARGE_OAK_BARK.get())
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.LARGE_DARK_OAK_BARK.get())
 			event.setBurnTime(400);

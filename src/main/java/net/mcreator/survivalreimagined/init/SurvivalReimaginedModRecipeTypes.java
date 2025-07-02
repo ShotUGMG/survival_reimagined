@@ -14,6 +14,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.survivalreimagined.jei_recipes.ProcessingRecipe;
 import net.mcreator.survivalreimagined.jei_recipes.MetalRefiningRecipe;
 import net.mcreator.survivalreimagined.jei_recipes.ForgingRecipe;
+import net.mcreator.survivalreimagined.jei_recipes.AAFJEIRecipe;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber(modid = SurvivalReimaginedMod.MODID, bus = EventBusSubscriber.Bus.MOD)
@@ -33,6 +34,8 @@ public class SurvivalReimaginedModRecipeTypes {
 			SERIALIZERS.register("metal_refining", () -> MetalRefiningRecipe.Serializer.INSTANCE);
 			RECIPE_TYPES.register("processing", () -> ProcessingRecipe.Type.INSTANCE);
 			SERIALIZERS.register("processing", () -> ProcessingRecipe.Serializer.INSTANCE);
+			RECIPE_TYPES.register("aafjei", () -> AAFJEIRecipe.Type.INSTANCE);
+			SERIALIZERS.register("aafjei", () -> AAFJEIRecipe.Serializer.INSTANCE);
 		});
 	}
 }

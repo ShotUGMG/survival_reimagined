@@ -95,6 +95,7 @@ public class FuelDetectionProcedure {
 				SteelIngotRecipeProcedure.execute(world, x, y, z);
 				DiamondIngotRecipeProcedure.execute(world, x, y, z);
 				NetherteRecipeProcedure.execute(world, x, y, z);
+				TuraniteRecipeProcedure.execute(world, x, y, z);
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {

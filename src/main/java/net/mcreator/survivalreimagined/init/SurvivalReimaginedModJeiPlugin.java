@@ -12,6 +12,8 @@ import net.mcreator.survivalreimagined.jei_recipes.MetalRefiningRecipeCategory;
 import net.mcreator.survivalreimagined.jei_recipes.MetalRefiningRecipe;
 import net.mcreator.survivalreimagined.jei_recipes.ForgingRecipeCategory;
 import net.mcreator.survivalreimagined.jei_recipes.ForgingRecipe;
+import net.mcreator.survivalreimagined.jei_recipes.AAFJEIRecipeCategory;
+import net.mcreator.survivalreimagined.jei_recipes.AAFJEIRecipe;
 
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
@@ -28,6 +30,7 @@ public class SurvivalReimaginedModJeiPlugin implements IModPlugin {
 	public static mezz.jei.api.recipe.RecipeType<ForgingRecipe> Forging_Type = new mezz.jei.api.recipe.RecipeType<>(ForgingRecipeCategory.UID, ForgingRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<MetalRefiningRecipe> MetalRefining_Type = new mezz.jei.api.recipe.RecipeType<>(MetalRefiningRecipeCategory.UID, MetalRefiningRecipe.class);
 	public static mezz.jei.api.recipe.RecipeType<ProcessingRecipe> Processing_Type = new mezz.jei.api.recipe.RecipeType<>(ProcessingRecipeCategory.UID, ProcessingRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<AAFJEIRecipe> AAFJEI_Type = new mezz.jei.api.recipe.RecipeType<>(AAFJEIRecipeCategory.UID, AAFJEIRecipe.class);
 
 	@Override
 	public ResourceLocation getPluginUid() {
@@ -39,6 +42,7 @@ public class SurvivalReimaginedModJeiPlugin implements IModPlugin {
 		registration.addRecipeCategories(new ForgingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new MetalRefiningRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 		registration.addRecipeCategories(new ProcessingRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new AAFJEIRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 	}
 
 	@Override
@@ -50,6 +54,8 @@ public class SurvivalReimaginedModJeiPlugin implements IModPlugin {
 		registration.addRecipes(MetalRefining_Type, MetalRefiningRecipes);
 		List<ProcessingRecipe> ProcessingRecipes = recipeManager.getAllRecipesFor(ProcessingRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
 		registration.addRecipes(Processing_Type, ProcessingRecipes);
+		List<AAFJEIRecipe> AAFJEIRecipes = recipeManager.getAllRecipesFor(AAFJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(AAFJEI_Type, AAFJEIRecipes);
 	}
 
 	@Override

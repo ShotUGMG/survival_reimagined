@@ -17,6 +17,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.procedures.ZombificationEffectExpiresProcedure;
 import net.mcreator.survivalreimagined.potion.ZombificationMobEffect;
+import net.mcreator.survivalreimagined.potion.RadiationMobEffect;
 import net.mcreator.survivalreimagined.potion.ParanoiaMobEffect;
 import net.mcreator.survivalreimagined.potion.FearMobEffect;
 import net.mcreator.survivalreimagined.potion.BindingSculkMobEffect;
@@ -29,6 +30,7 @@ public class SurvivalReimaginedModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> FEAR = REGISTRY.register("fear", () -> new FearMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> ZOMBIFICATION = REGISTRY.register("zombification", () -> new ZombificationMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BINDING_SCULK = REGISTRY.register("binding_sculk", () -> new BindingSculkMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> RADIATION = REGISTRY.register("radiation", () -> new RadiationMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

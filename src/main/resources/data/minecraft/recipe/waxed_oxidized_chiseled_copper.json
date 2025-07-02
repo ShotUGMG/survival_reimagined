@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/chisel"
+    },
+    "b": {
+      "item": "minecraft:waxed_oxidized_copper_block"
+    }
+  },
+  "result": {
+    "id": "minecraft:waxed_oxidized_chiseled_copper",
+    "count": 1
+  }
+}

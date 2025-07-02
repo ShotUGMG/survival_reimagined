@@ -103,7 +103,7 @@ public class ForgeGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("minecraft:fuels")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("c:fuels")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 134, 36) {

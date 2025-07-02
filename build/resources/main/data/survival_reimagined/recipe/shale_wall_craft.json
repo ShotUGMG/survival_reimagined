@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:shale"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:shale_wall",
+    "count": 6
+  }
+}

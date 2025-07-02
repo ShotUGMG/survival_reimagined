@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "tag": "c:alloy_block/copper_items"
+    },
+    {
+      "tag": "c:alloy_block/zinc_items"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "create:brass_block",
+    "count": 2
+  }
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:needs_steel_tool"
+    "#minecraft:needs_steel_tool",
+    "#neoforge:incorrect_for_bronze_tool"
   ]
 }

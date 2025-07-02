@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:hemp_fiber"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:hemp_mesh",
+    "count": 1
+  }
+}

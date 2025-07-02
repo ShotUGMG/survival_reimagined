@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/birch_plank"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:asdasd_asd": 1
+      },
+      "model": "survival_reimagined:item/asdasd_0"
+    }
+  ]
+}

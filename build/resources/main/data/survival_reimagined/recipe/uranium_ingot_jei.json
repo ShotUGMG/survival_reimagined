@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_uranium"
+    },
+    {
+      "item": "survival_reimagined:ingot_mold"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:uranium_ingot",
+    "count": 1
+  }
+}

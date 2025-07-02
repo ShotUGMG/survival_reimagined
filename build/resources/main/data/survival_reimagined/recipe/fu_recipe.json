@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:gold_nugget"
+    },
+    "b": {
+      "item": "survival_reimagined:uranium_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:fuel_upgrade",
+    "count": 1
+  }
+}

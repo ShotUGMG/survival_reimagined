@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:animal/hide"
+    },
+    "b": {
+      "item": "survival_reimagined:steel_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:gas_mask_armor_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,163 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2025-06-08 17:30:23
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformInstance.lambda$createCleanClassLookup$7(JarTransformInstance.java:201) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+-- Mod loading issue --
+Details:
+	Mod file: <No mod information provided>
+	Failure message: [Connector] Fabric mod discovery failed
+		java.lang.RuntimeException: Could not determine clean minecraft artifact path
+	Mod version: <No mod information provided>
+	Mod issues URL: <No issues URL found>
+	Exception message: java.lang.RuntimeException: Could not determine clean minecraft artifact path
+Stacktrace:
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformInstance.lambda$createCleanClassLookup$7(JarTransformInstance.java:201) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[?:?] {re:mixin}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformInstance.createCleanClassLookup(JarTransformInstance.java:201) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformInstance.<init>(JarTransformInstance.java:103) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformer.transformJars(JarTransformer.java:137) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.transformer.jar.JarTransformer.transform(JarTransformer.java:108) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.locator.ConnectorLocator.locateFabricMods(ConnectorLocator.java:134) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at LAYER SERVICE/org.sinytra.connector@2.0.0-beta.7+1.21.1-full/org.sinytra.connector.locator.ConnectorLocator.scanMods(ConnectorLocator.java:67) ~[connector-2.0.0-beta.7+1.21.1-full.jar%23187!/:2.0.0-beta.7+1.21.1] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.38/net.neoforged.fml.loading.moddiscovery.ModDiscoverer.discoverMods(ModDiscoverer.java:108) ~[loader-4.0.38.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.38/net.neoforged.fml.loading.FMLLoader.beginModScan(FMLLoader.java:125) ~[loader-4.0.38.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.38/net.neoforged.fml.loading.FMLServiceProvider.beginScanning(FMLServiceProvider.java:84) ~[loader-4.0.38.jar%23139!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServiceDecorator.runScan(TransformationServiceDecorator.java:97) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.lambda$runScanningTransformationServices$7(TransformationServicesHandler.java:94) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?] {}
+	at java.base/java.util.HashMap$ValueSpliterator.forEachRemaining(HashMap.java:1787) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.runScanningTransformationServices(TransformationServicesHandler.java:96) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformationServicesHandler.initializeTransformationServices(TransformationServicesHandler.java:50) ~[modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:84) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.4.jar%23121!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {re:mixin}
+	at DevLaunch@1.0.1/net.neoforged.devlaunch.Main.main(Main.java:55) [DevLaunch-1.0.1.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 341560616 bytes (325 MiB) / 801112064 bytes (764 MiB) up to 8573157376 bytes (8176 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 3800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): 3.89
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12288.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.7270
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 47322.82
+	Virtual memory used (MiB): 41365.62
+	Swap memory total (MiB): 14629.82
+	Swap memory used (MiB): 551.17
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 218979.20, total: 1906739.00
+	Space in storage for workdir (MiB): available: 218979.20, total: 1906739.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.38.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.38.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.38.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar connector_loader TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		continuity-3.0.0+1.21.neoforge.jar                |Continuity                    |continuity                    |3.0.0+1.21.neoforge |Manifest: NOSIGNATURE
+		embeddium-1.0.15+mc1.21.1.jar                     |Embeddium                     |embeddium                     |1.0.15+mc1.21.1     |Manifest: NOSIGNATURE
+		forgified-fabric-api-0.107.0+2.0.26+1.21.1.jar    |Forgified Fabric API          |fabric_api                    |0.107.0+2.0.26+1.21.|Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.69+c21168c319.jar    |Forgified Fabric API Lookup AP|fabric_api_lookup_api_v1      |1.6.69+c21168c319   |Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.30+1e62d33c19.jar        |Forgified Fabric Biome API (v1|fabric_biome_api_v1           |13.0.30+1e62d33c19  |Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.22+a6e994cd19.jar         |Forgified Fabric Block API (v1|fabric_block_api_v1           |1.0.22+a6e994cd19   |Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.52+b089b4bd19.jar  |Forgified Fabric BlockRenderLa|fabric_blockrenderlayer_v1    |1.1.52+b089b4bd19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.15+e053909619.jar   |Forgified Fabric Client Tags  |fabric_client_tags_api_v1     |1.1.15+e053909619   |Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.28+36d727be19.jar       |Forgified Fabric Command API (|fabric_command_api_v2         |2.2.28+36d727be19   |Manifest: NOSIGNATURE
+		fabric-content-registries-v0-8.0.17+0a0c14ff19.jar|Forgified Fabric Content Regis|fabric_content_registries_v0  |8.0.17+0a0c14ff19   |Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-2.1.1+7f945d5b19.jar    |Forgified Fabric Convention Ta|fabric_convention_tags_v1     |2.1.1+7f945d5b19    |Manifest: NOSIGNATURE
+		fabric-convention-tags-v2-2.9.1+231468e519.jar    |Forgified Fabric Convention Ta|fabric_convention_tags_v2     |2.9.1+231468e519    |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.2.0+7330bc1b19.jar|Forgified Fabric Data Attachme|fabric_data_attachment_api_v1 |1.2.0+7330bc1b19    |Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-20.2.22+2d91a6db19.j|Forgified Fabric Data Generati|fabric_data_generation_api_v1 |20.2.22+2d91a6db19  |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.7.0+1af6e62419.jar      |Forgified Fabric Entity Events|fabric_entity_events_v1       |1.7.0+1af6e62419    |Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.7.13+7b71cc1619.jar|Forgified Fabric Events Intera|fabric_events_interaction_v0  |0.7.13+7b71cc1619   |Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.53+36d727be19.jar     |Forgified Fabric Game Rule API|fabric_game_rule_api_v1       |1.0.53+36d727be19   |Manifest: NOSIGNATURE
+		fabric-gametest-api-v1-2.0.5+29f188ce19.jar       |Forgified Fabric Game Test API|fabric_gametest_api_v1        |2.0.5+29f188ce19    |Manifest: NOSIGNATURE
+		fabric-item-api-v1-11.1.1+57cdfa8219.jar          |Forgified Fabric Item API (v1)|fabric_item_api_v1            |11.1.1+57cdfa8219   |Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.1.6+e324903319.jar     |Forgified Fabric Item Group AP|fabric_item_group_api_v1      |4.1.6+e324903319    |Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar   |Forgified Fabric Key Binding A|fabric_key_binding_api_v1     |1.0.47+62cc7ce119   |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.4.0+36b6b86a19.jar   |Forgified Fabric Lifecycle Eve|fabric_lifecycle_events_v1    |2.4.0+36b6b86a19    |Manifest: NOSIGNATURE
+		fabric-loot-api-v2-3.0.15+a3ee712d19.jar          |Forgified Fabric Loot API (v2)|fabric_loot_api_v2            |3.0.15+a3ee712d19   |Manifest: NOSIGNATURE
+		fabric-loot-api-v3-1.0.3+333dfad919.jar           |Forgified Fabric Loot API (v3)|fabric_loot_api_v3            |1.0.3+333dfad919    |Manifest: NOSIGNATURE
+		fabric-message-api-v1-6.0.13+e053909619.jar       |Forgified Fabric Message API (|fabric_message_api_v1         |6.0.13+e053909619   |Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-2.0.0+986ae77219.jar  |Forgified Fabric Model Loading|fabric_model_loading_api_v1   |2.0.0+986ae77219    |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-4.3.0+4f690eb619.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |4.3.0+4f690eb619    |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-15.2.1+cc242efd19.jar|Forgified Fabric Object Builde|fabric_object_builder_api_v1  |15.2.1+cc242efd19   |Manifest: NOSIGNATURE
+		fabric-particles-v1-4.0.2+824f924c19.jar          |Forgified Fabric Particles (v1|fabric_particles_v1           |4.0.2+824f924c19    |Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-5.0.13+59440bcc19.jar        |Forgified Fabric Recipe API (v|fabric_recipe_api_v1          |5.0.13+59440bcc19   |Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-5.1.3+0c9b5b5419.jar      |Forgified Fabric Registry Sync|fabric_registry_sync_v0       |5.1.3+0c9b5b5419    |Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.7.0+4198af7119.jar       |Forgified Fabric Renderer - In|fabric_renderer_indigo        |1.7.0+4198af7119    |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+9c40919e19.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+9c40919e19    |Manifest: NOSIGNATURE
+		fabric-rendering-v1-5.0.5+077ba95f19.jar          |Forgified Fabric Rendering (v1|fabric_rendering_v1           |5.0.5+077ba95f19    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.1.6+857185bc19.jar   |Forgified Fabric Rendering Flu|fabric_rendering_fluids_v1    |3.1.6+857185bc19    |Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-4.3.0+5bdd099819|Forgified Fabric Resource Cond|fabric_resource_conditions_api|4.3.0+5bdd099819    |Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-1.3.1+4ea8954419.jar    |Forgified Fabric Resource Load|fabric_resource_loader_v0     |1.3.1+4ea8954419    |Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.25+4228281319.jar        |Forgified Fabric Screen API (v|fabric_screen_api_v1          |2.0.25+4228281319   |Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.87+8dbc56dd19.jar|Forgified Fabric Screen Handle|fabric_screen_handler_api_v1  |1.3.87+8dbc56dd19   |Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.23+10b84f8419.jar         |Forgified Fabric Sound API (v1|fabric_sound_api_v1           |1.0.23+10b84f8419   |Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-5.4.1+628bf5e919.jar       |Forgified Fabric Transfer API |fabric_transfer_api_v1        |5.4.1+628bf5e919    |Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-6.1.0+0df3143|Forgified Fabric Transitive Ac|fabric_transitive_access_widen|6.1.0+0df3143b19    |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.247.jar               |Just Enough Items             |jei                           |19.21.0.247         |Manifest: NOSIGNATURE
+		neoforge-21.1.133-minecraft.jar                   |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.133-minecraft.jar                   |NeoForge                      |neoforge                      |21.1.133            |Manifest: NOSIGNATURE
+		main                                              |Survival Reimagined           |survival_reimagined           |1.1.3               |Manifest: NOSIGNATURE

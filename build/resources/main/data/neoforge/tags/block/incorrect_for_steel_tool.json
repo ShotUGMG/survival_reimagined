@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:needs_wooden_tool",
+    "#minecraft:needs_stone_tool",
+    "#minecraft:needs_iron_tool",
+    "#neoforge:needs_bronze_tool"
+  ]
+}

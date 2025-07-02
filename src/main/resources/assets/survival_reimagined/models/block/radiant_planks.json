@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/radiated_planks",
+    "up": "survival_reimagined:block/radiated_planks",
+    "north": "survival_reimagined:block/radiated_planks",
+    "east": "survival_reimagined:block/radiated_planks",
+    "south": "survival_reimagined:block/radiated_planks",
+    "west": "survival_reimagined:block/radiated_planks",
+    "particle": "survival_reimagined:block/radiated_planks"
+  },
+  "render_type": "solid"
+}

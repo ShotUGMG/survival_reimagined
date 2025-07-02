@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:titanium_ingot"
+    },
+    "b": {
+      "item": "survival_reimagined:raw_uraninite"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:uranium_rod",
+    "count": 2
+  }
+}

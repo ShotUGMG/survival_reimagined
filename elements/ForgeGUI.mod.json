@@ -68,7 +68,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "TAG:minecraft:fuels"
+            "value": "TAG:c:fuels"
           },
           "disablePlacement": {
             "fixedValue": false

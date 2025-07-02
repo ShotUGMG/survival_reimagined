@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "cdc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:blast_furnace"
+    },
+    "c": {
+      "item": "survival_reimagined:block_of_titanium"
+    },
+    "d": {
+      "item": "survival_reimagined:block_of_steel"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:advanced_alloy_forge",
+    "count": 1
+  }
+}

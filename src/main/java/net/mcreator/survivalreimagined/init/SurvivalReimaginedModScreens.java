@@ -13,6 +13,7 @@ import net.mcreator.survivalreimagined.client.gui.MetalRefiningTableGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.MPTGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.ForgeGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.BackpackGUIScreen;
+import net.mcreator.survivalreimagined.client.gui.AdvancedAlloyForgeGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SurvivalReimaginedModScreens {
@@ -22,5 +23,6 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.METAL_REFINING_TABLE_GUI.get(), MetalRefiningTableGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.MPTGUI.get(), MPTGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.ADVANCED_ALLOY_FORGE_GUI.get(), AdvancedAlloyForgeGUIScreen::new);
 	}
 }

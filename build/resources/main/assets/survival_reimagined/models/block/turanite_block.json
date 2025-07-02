@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/turanite_block",
+    "up": "survival_reimagined:block/turanite_block",
+    "north": "survival_reimagined:block/turanite_block",
+    "east": "survival_reimagined:block/turanite_block",
+    "south": "survival_reimagined:block/turanite_block",
+    "west": "survival_reimagined:block/turanite_block",
+    "particle": "survival_reimagined:block/turanite_block"
+  },
+  "render_type": "solid"
+}

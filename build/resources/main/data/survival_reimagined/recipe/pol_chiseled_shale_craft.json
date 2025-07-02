@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/chisel"
+    },
+    "b": {
+      "item": "survival_reimagined:polished_shale"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:polished_chiseled_shale",
+    "count": 1
+  }
+}

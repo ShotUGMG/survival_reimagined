@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Shale"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:PoloshedShaleBrickWall"
+    },
+    "name": "polished_shale_brick_wall_scr",
+    "namespace": "mod"
+  }
+}

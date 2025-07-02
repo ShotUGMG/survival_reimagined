@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:steel_ingot"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_mesh"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:gas_mask_filter",
+    "count": 1
+  }
+}

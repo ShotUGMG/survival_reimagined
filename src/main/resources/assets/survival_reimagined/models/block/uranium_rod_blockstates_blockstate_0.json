@@ -1,0 +1,14 @@
+{
+  "loader": "fusion:model",
+  "type": "base",
+  "emissive": true,
+  "render_type": "translucent",
+  "parent": "survival_reimagined:custom/uranium_rod_1",
+  "textures": {
+    "all": "survival_reimagined:block/uranium_rod",
+    "particle": "survival_reimagined:block/uranium_rod",
+    "0": "survival_reimagined:block/uranium_rod",
+    "1": "survival_reimagined:block/uranium_rod_e",
+    "2": "survival_reimagined:block/uranium_rod_lucent"
+  }
+}

@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:uranium_dust",
-    "survival_reimagined:uranium"
+    "survival_reimagined:rough_uranium",
+    "survival_reimagined:uranium_ingot",
+    "survival_reimagined:raw_uraninite"
   ]
 }

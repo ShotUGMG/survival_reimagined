@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "survival_reimagined:uranium"
+      "id": "survival_reimagined:raw_uraninite"
     },
     "title": {
       "translate": "advancements.radioactive_metal.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "survival_reimagined:uranium"
+              "survival_reimagined:raw_uraninite"
             ],
             "count": {
               "min": 1,

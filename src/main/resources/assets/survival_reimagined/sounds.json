@@ -202,5 +202,118 @@
         "stream": false
       }
     ]
+  },
+  "block/shale_moss_step": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:mossy_step1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_step2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_step3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_step4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_step5",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_step6",
+        "stream": false
+      }
+    ]
+  },
+  "block/mossy_shale_place": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:mossy_block1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_block2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_block3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:mossy_block4",
+        "stream": false
+      }
+    ]
+  },
+  "ambient/radiated_forest": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:radiated_forsest_ambience",
+        "stream": false
+      }
+    ]
+  },
+  "music/radiant_abyss": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:radiant_abyss",
+        "stream": true
+      }
+    ]
+  },
+  "radiation/damage": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:radiation_hit1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:radiation_hit2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:radiation_hit3",
+        "stream": false
+      }
+    ]
+  },
+  "gasmask/filter": {
+    "subtitle": "subtitles.gasmask/filter",
+    "sounds": [
+      {
+        "name": "survival_reimagined:248689-ratchet_mechanism_1",
+        "stream": false
+      }
+    ]
+  },
+  "netherite_scrap/sounds": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:meteor_metal_break1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:meteor_metal_break5",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:metoer_metal_break2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:metoer_metal_break3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:metoer_metal_break4",
+        "stream": false
+      }
+    ]
   }
 }

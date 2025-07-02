@@ -1,0 +1,29 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Radiation",
+    "icon": "radiation_logo",
+    "color": {
+      "value": -5258644,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": false,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onStarted": {
+      "name": "RadiationEffectStartedapplied"
+    },
+    "onActiveTick": {
+      "name": "RadiationOnEffectActiveTick"
+    },
+    "activeTickCondition": {
+      "name": "RadiationActiveTickCondition"
+    }
+  }
+}

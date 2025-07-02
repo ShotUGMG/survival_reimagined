@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "b": {
+      "item": "survival_reimagined:yield_upgrade_mkii"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:yield_upgrade_mkiii",
+    "count": 1
+  }
+}

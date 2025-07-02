@@ -16,4 +16,7 @@ import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 public class SurvivalReimaginedModParticleTypes {
 	public static final DeferredRegister<ParticleType<?>> REGISTRY = DeferredRegister.create(Registries.PARTICLE_TYPE, SurvivalReimaginedMod.MODID);
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> STONE_GRINDING = REGISTRY.register("stone_grinding", () -> new SimpleParticleType(true));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATED = REGISTRY.register("radiated", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATION_PARTICLE = REGISTRY.register("radiation_particle", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATION_PARTICLE_2 = REGISTRY.register("radiation_particle_2", () -> new SimpleParticleType(false));
 }

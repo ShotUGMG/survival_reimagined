@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:raw_titanium"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:raw_titanium_nugget",
+    "count": 9
+  }
+}

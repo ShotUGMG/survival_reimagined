@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:raw_tin"
+    },
+    {
+      "item": "survival_reimagined:raw_tin"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_tin",
+    "count": 1
+  }
+}

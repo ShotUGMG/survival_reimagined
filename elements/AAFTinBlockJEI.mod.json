@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "aafjei",
+    "result": {
+      "value": "Blocks.IRON_BLOCK"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "Blocks.RAW_IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.RAW_IRON_BLOCK"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "aafjei",
+    "result": {
+      "value": "CUSTOM:RoughIron"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "Items.RAW_IRON"
+      },
+      {
+        "value": "Items.RAW_IRON"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

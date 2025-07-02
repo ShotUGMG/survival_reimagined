@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:aafjei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:block_of_raw_titanium"
+    },
+    {
+      "item": "survival_reimagined:block_of_raw_titanium"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:block_of_titanium",
+    "count": 2
+  }
+}

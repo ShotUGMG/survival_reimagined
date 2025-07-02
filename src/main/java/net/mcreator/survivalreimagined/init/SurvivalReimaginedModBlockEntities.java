@@ -18,6 +18,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.mcreator.survivalreimagined.block.entity.MineralProcessingTableBlockEntity;
 import net.mcreator.survivalreimagined.block.entity.MetalRefiningTableBlockEntity;
 import net.mcreator.survivalreimagined.block.entity.ForgeBlockEntity;
+import net.mcreator.survivalreimagined.block.entity.AdvancedAlloyForgeBlockEntity;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
@@ -26,6 +27,7 @@ public class SurvivalReimaginedModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> FORGE = register("forge", SurvivalReimaginedModBlocks.FORGE, ForgeBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> METAL_REFINING_TABLE = register("metal_refining_table", SurvivalReimaginedModBlocks.METAL_REFINING_TABLE, MetalRefiningTableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MINERAL_PROCESSING_TABLE = register("mineral_processing_table", SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE, MineralProcessingTableBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> ADVANCED_ALLOY_FORGE = register("advanced_alloy_forge", SurvivalReimaginedModBlocks.ADVANCED_ALLOY_FORGE, AdvancedAlloyForgeBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -38,5 +40,6 @@ public class SurvivalReimaginedModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, FORGE.get(), (blockEntity, side) -> ((ForgeBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, METAL_REFINING_TABLE.get(), (blockEntity, side) -> ((MetalRefiningTableBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MINERAL_PROCESSING_TABLE.get(), (blockEntity, side) -> ((MineralProcessingTableBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ADVANCED_ALLOY_FORGE.get(), (blockEntity, side) -> ((AdvancedAlloyForgeBlockEntity) blockEntity).getItemHandler());
 	}
 }

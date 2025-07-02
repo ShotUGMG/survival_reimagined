@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/stripped_radiant_log",
+    "up": "survival_reimagined:block/stripped_radiant_log",
+    "north": "survival_reimagined:block/stripped_radiant_log_side",
+    "east": "survival_reimagined:block/stripped_radiant_log_side",
+    "south": "survival_reimagined:block/stripped_radiant_log_side",
+    "west": "survival_reimagined:block/stripped_radiant_log_side",
+    "particle": "survival_reimagined:block/stripped_radiant_log"
+  },
+  "render_type": "solid"
+}

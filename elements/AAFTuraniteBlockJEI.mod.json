@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "aafjei",
+    "result": {
+      "value": "CUSTOM:BlockOfBronze"
+    },
+    "count": 2,
+    "ingredients": [
+      {
+        "value": "TAG:c:alloy_block/copper_items"
+      },
+      {
+        "value": "TAG:c:alloy_block/tin_items"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

@@ -38,7 +38,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 7.0,
+    "hardness": 4.0,
     "resistance": 4.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -82,24 +82,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "COPPER"
     },
     "breakSound": {
-      "value": ""
+      "value": "CUSTOM:block/steel_place"
     },
     "fallSound": {
-      "value": ""
+      "value": "CUSTOM:block/steel_place"
     },
     "hitSound": {
-      "value": ""
+      "value": "CUSTOM:block/steel_step"
     },
     "placeSound": {
-      "value": ""
+      "value": "CUSTOM:block/steel_place"
     },
     "stepSound": {
-      "value": ""
+      "value": "CUSTOM:block/steel_step"
     },
     "luminance": 0,
     "unbreakable": false,

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "survival_reimagined:manganese_ore",
-    "survival_reimagined:tin_ore"
+    "survival_reimagined:tin_ore",
+    "survival_reimagined:titanium_ore"
   ]
 }

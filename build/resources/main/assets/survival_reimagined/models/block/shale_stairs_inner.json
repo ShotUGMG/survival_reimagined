@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "survival_reimagined:block/shale_top",
+    "bottom": "survival_reimagined:block/shale_top",
+    "top": "survival_reimagined:block/shale_top",
+    "side": "survival_reimagined:block/shale_top"
+  },
+  "render_type": "solid"
+}

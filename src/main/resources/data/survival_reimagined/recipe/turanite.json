@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "tag": "c:alloy/uranium_items"
+    },
+    {
+      "tag": "c:alloy/titanium_items"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:rough_turanite",
+    "count": 1
+  }
+}

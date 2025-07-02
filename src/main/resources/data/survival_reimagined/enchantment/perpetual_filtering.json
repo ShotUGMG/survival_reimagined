@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.survival_reimagined.perpetual_filtering"
+  },
+  "supported_items": "survival_reimagined:gas_mask_armor_helmet",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "head"
+  ],
+  "exclusive_set": []
+}

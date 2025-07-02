@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "survival_reimagined:radiated_moss",
+    "survival_reimagined:radiated_shale"
+  ]
 }

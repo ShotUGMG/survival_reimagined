@@ -33,4 +33,16 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> PORTAL_OPEN = REGISTRY.register("portal_open", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "portal_open")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BLOODMOON_SONG = REGISTRY.register("bloodmoon_song", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "bloodmoon_song")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> MPT_AMBIENCE = REGISTRY.register("mpt/ambience", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "mpt/ambience")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_SHALE_MOSS_STEP = REGISTRY.register("block/shale_moss_step",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/shale_moss_step")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_MOSSY_SHALE_PLACE = REGISTRY.register("block/mossy_shale_place",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/mossy_shale_place")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> AMBIENT_RADIATED_FOREST = REGISTRY.register("ambient/radiated_forest",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "ambient/radiated_forest")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MUSIC_RADIANT_ABYSS = REGISTRY.register("music/radiant_abyss",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "music/radiant_abyss")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> RADIATION_DAMAGE = REGISTRY.register("radiation/damage", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "radiation/damage")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GASMASK_FILTER = REGISTRY.register("gasmask/filter", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "gasmask/filter")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_SCRAP_SOUNDS = REGISTRY.register("netherite_scrap/sounds",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "netherite_scrap/sounds")));
 }

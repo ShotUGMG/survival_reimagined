@@ -8,6 +8,8 @@
     "#c:alloy/diamond_items",
     "#c:alloy/steel_items",
     "#c:alloy/gold_items",
-    "#c:alloy/netherite_items"
+    "#c:alloy/netherite_items",
+    "#c:alloy/titanium_items",
+    "#c:alloy/uranium_items"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "survival_reimagined:block/polished_shale_bricks",
+    "bottom": "survival_reimagined:block/polished_shale_bricks",
+    "top": "survival_reimagined:block/polished_shale_bricks",
+    "side": "survival_reimagined:block/polished_shale_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:jigsaw",
+  "start_pool": "survival_reimagined:dome_base",
+  "size": 1,
+  "max_distance_from_center": 64,
+  "spawn_overrides": {},
+  "step": "underground_structures",
+  "terrain_adaptation": "beard_box",
+  "start_height": {
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -64
+    },
+    "max_inclusive": {
+      "absolute": -30
+    }
+  },
+  "biomes": "survival_reimagined:radiated_forest",
+  "use_expansion_hack": false
+}

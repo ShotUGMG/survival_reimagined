@@ -10,11 +10,17 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.survivalreimagined.client.particle.StoneGrindingParticle;
+import net.mcreator.survivalreimagined.client.particle.RadiationParticleParticle;
+import net.mcreator.survivalreimagined.client.particle.RadiationParticle2Particle;
+import net.mcreator.survivalreimagined.client.particle.RadiatedParticle;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SurvivalReimaginedModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.STONE_GRINDING.get(), StoneGrindingParticle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATED.get(), RadiatedParticle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATION_PARTICLE.get(), RadiationParticleParticle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATION_PARTICLE_2.get(), RadiationParticle2Particle::provider);
 	}
 }

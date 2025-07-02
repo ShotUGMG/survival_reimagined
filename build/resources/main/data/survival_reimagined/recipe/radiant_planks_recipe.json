@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:radiated_plank"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:radiant_planks",
+    "count": 1
+  }
+}

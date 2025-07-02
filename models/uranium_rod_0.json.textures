@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "uranium_rod",
+        "1": "uranium_rod_e",
+        "2": "uranium_rod_lucent"
+      },
+      "name": "default"
+    }
+  }
+}

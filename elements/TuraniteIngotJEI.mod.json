@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forging",
+    "result": {
+      "value": "CUSTOM:TuraniteIngot"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:RoughTuranite"
+      },
+      {
+        "value": "CUSTOM:IngotMold"
+      },
+      {
+        "value": "TAG:c:fuels"
+      }
+    ]
+  }
+}
