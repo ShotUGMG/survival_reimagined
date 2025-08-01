@@ -25,6 +25,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 import javax.annotation.Nullable;
@@ -80,6 +81,38 @@ public class StrippedLogToCaftingTableProcedure {
 								_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:block.carving_crafting_table")), SoundSource.BLOCKS, 1, 1, false);
 							}
 						}
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.COPPER_CHISEL.get()) {
+							if (world instanceof ServerLevel _level) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage(), _level, null,
+										_stkprov -> {
+										});
+							}
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.item.break")), SoundSource.PLAYERS, 1, 1);
+								} else {
+									_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.item.break")), SoundSource.PLAYERS, 1, 1, false);
+								}
+							}
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.BRONZE_CHISEL.get()) {
+							if (world instanceof ServerLevel _level) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() / 2),
+										_level, null, _stkprov -> {
+										});
+							}
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.STEEL_CHISEL.get()) {
+							if (world instanceof ServerLevel _level) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() / 3),
+										_level, null, _stkprov -> {
+										});
+							}
+						} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.DIAMOND_CHISEL.get()) {
+							if (world instanceof ServerLevel _level) {
+								(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() / 4),
+										_level, null, _stkprov -> {
+										});
+							}
+						}
 					});
 				}
 				if (entity instanceof LivingEntity _entity)
@@ -87,6 +120,13 @@ public class StrippedLogToCaftingTableProcedure {
 				if (world instanceof ServerLevel _level) {
 					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
 					});
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:block.carve_progress")), SoundSource.BLOCKS, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:block.carve_progress")), SoundSource.BLOCKS, 1, 1, false);
+					}
 				}
 			}
 		}

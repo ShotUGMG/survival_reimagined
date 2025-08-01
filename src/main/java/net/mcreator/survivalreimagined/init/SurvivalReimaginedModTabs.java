@@ -399,6 +399,26 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get());
 				tabData.accept(SurvivalReimaginedModBlocks.PLATED_DIAMOND_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.NETHERITE_SCRAP_BLOCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.BLACK_SAND_PILE.get());
+				tabData.accept(SurvivalReimaginedModItems.ORANGE_SAND_PILE.get());
+				tabData.accept(SurvivalReimaginedModItems.WHITE_SAND_PILE.get());
+				tabData.accept(SurvivalReimaginedModItems.BLACK_SANDSTONE_CHUNK.get());
+				tabData.accept(SurvivalReimaginedModItems.ORANGE_SANDSTONE_CHUNK.get());
+				tabData.accept(SurvivalReimaginedModItems.WHITE_SANDSTONE_CHUNK.get());
+				tabData.accept(SurvivalReimaginedModItems.THERMAL_CALCITE_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.BRIMSTONE_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.FIR_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.PINE_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAPLE_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.REDWOOD_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAHOGANY_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.JACARANDA_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.WILLOW_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.DEAD_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAGIC_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.UMBRAN_B_ARK.get());
+				tabData.accept(SurvivalReimaginedModItems.EMPYREAL_BARK.get());
+				tabData.accept(SurvivalReimaginedModItems.HELL_BARK.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

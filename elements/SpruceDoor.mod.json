@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      },
+      {
+        "value": "CUSTOM:SprucePlank"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.SPRUCE_DOOR"
+    },
+    "name": "spruce_door",
+    "namespace": "mod"
+  }
+}

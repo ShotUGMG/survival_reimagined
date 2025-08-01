@@ -1,50 +1,50 @@
-/gamerule randomTickSpeed 3
-/time set day
-/time set night
-//set air
-//set polished_shale
-//set survival_reimagined:polished_shale
-/gamerule randomTickSpeed 0
-/give Dev minecraft:structure_block
-//wand
-//replacenear 50 survival_reimagined:radiated_leaves air
-//wand
-/give Dev minecraft:structure_void
-//replace air structure_void
-//brush apply sphere set structure_void
-/mask air
-//replace structure_void air
+/locate biome survival_reimagined:radiated_forest
+/tp @s -542 -1 -598
+/locate biome survival_reimagined:radiated_forest
+/tp @s -542 -1 -598
+/locate biome survival_reimagined:radiated_forest
+/tp @s -541 190 -598
+/locate biome survival_reimagined:radiated_forest
+/tp @s -194 3 61
+/locate biome survival_reimagined:radiated_forest
+/tp @s 438 1 -263
+/locate biome survival_reimagined:radiated_forest
+/tp @s -234 0 -125
+/locate biome survival_reimagined:radiated_forest
+/tp @s -950 -1 -515
+/locate biome survival_reimagined:radiated_forest
+/tp @s -806 -62 -585
 /effect give Dev minecraft:night_vision infinite
-/locate structure survival_reimagined:dome_base
-/tp @s 128 ~ -544
-/difficulty easy
+/locate biome survival_reimagined:radiated_forest
+/tp @s -1152 -46 356
+/enchant Dev minecraft:silk_touch
+/difficulty peaceful
 /time set day
-/gamerule randomTickSpeed 3
+/gamerule doDaylightCycle false
+/weather clear
+/tick rate 3000
+/gamerule doMobSpawning false
+/kill @e
+/gamerule doDaylightCycle true
+/gamerule doWeatherCycle false
+/weather clear
+/time set day
+/tick rate 3000
+/time set day
+/tick rate 3000
+/time set day
+/tick rate 1000
+/tick rate 3000
+/tick rate 1000
 /tick rate 20
-/effect give Dev minecraft:night_vision
-/effect give Dev minecraft:night_vision infinite
-/enchant Dev survival_reimagined:perpetual_filtering
-/effect give Dev minecraft:resistance infinite 100
-/effect give Dev minecraft:night_vision infinite
-/enchant Dev survival_reimagined:perpetual_filtering
-/summon minecraft:slime
-/time set night
-/time set dayq
-/time set day
-/gamerule doTileDrops true
-//wand
-//set grass
-//set tall_grass
-//set short_grass_grass
-//set short_grass
-/enchant Dev minecraft:unbreaking 3
-/effect give Dev
-/effect give Dev minecraft:night_vision infinite
-/locate structure survival_reimagined:dome_base
-/tp @s -960 ~ -576
-/effect clear
-/weather bloodmoon
-/effect give Dev minecraft:resistance infinite 255
-/enchant Dev minecraft:sharpness 4
-/enchant Dev minecraft:sharpness 5
-/effect give Dev minecraft:strength infinite 2
+/tick rate 3000
+/tick rate 20
+/time add 40
+/tick rate 3000
+/gamerule doWeatherCycle true
+/tick rate 3000
+/gamerule doWeatherCycle false
+/tick rate 3000
+/tick rate 20
+/locate biome survival_reimagined:radiated_forest
+/tp @s 3433 0 -1357

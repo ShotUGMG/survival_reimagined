@@ -6,7 +6,7 @@ import net.minecraft.world.level.levelgen.feature.RandomPatchFeature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.WorldGenLevel;
 
-import net.mcreator.survivalreimagined.procedures.FlintGenAdditionalGenerationConditionProcedure;
+import net.mcreator.survivalreimagined.procedures.AddedStoneBiomesGenProcedure;
 
 public class StoneGenFeature extends RandomPatchFeature {
 	public StoneGenFeature() {
@@ -18,7 +18,7 @@ public class StoneGenFeature extends RandomPatchFeature {
 		int x = context.origin().getX();
 		int y = context.origin().getY();
 		int z = context.origin().getZ();
-		if (!FlintGenAdditionalGenerationConditionProcedure.execute(world, x, y, z))
+		if (!AddedStoneBiomesGenProcedure.execute(world, x, y, z))
 			return false;
 		return super.place(context);
 	}

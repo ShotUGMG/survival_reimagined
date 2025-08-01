@@ -4,8 +4,8 @@ plugins {
 }
 
 
-version = '1.0'
-base.archivesName = "modid"
+version = '1.2.3-BETA-1.21.1'
+base.archivesName = "survival_reimagined"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 

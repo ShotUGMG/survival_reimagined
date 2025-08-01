@@ -103,7 +103,7 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("survival_reimagined:hammers")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("c:tools/hammer")));
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 116, 38) {

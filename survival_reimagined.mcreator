@@ -6972,19 +6972,6 @@
       "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
     },
     {
-      "name": "BlastingCopper",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blasting_copper",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/recipe/copper_ingot_from_blastng_raw_copper.json"
-        ]
-      },
-      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
-    },
-    {
       "name": "SmeltingIron",
       "type": "recipe",
       "compiles": true,
@@ -13636,6 +13623,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -16272,7 +16263,7 @@
       "name": "IngotClayMold",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ingot_clay_mold",
       "metadata": {
         "files": [
@@ -25291,6 +25282,650 @@
         ]
       },
       "path": "~/Mod Elements/Integration/JEI/AAF/Recipes/Ingots/Non-Alloy"
+    },
+    {
+      "name": "DisplayText",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_text",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/DisplayTextProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty"
+    },
+    {
+      "name": "BlackSandPile",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_sand_pile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/BlackSandPileItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/black_sand_pile.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "OrangeSandPile",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_sand_pile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/OrangeSandPileItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/orange_sand_pile.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "WhiteSandPile",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_sand_pile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/WhiteSandPileItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/white_sand_pile.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "BlackSandstoneChunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_sandstone_chunk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/BlackSandstoneChunkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/black_sandstone_chunk.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "OrangeSandstoneChunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_sandstone_chunk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/orange_sandstone_chunk.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/OrangeSandstoneChunkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "WhiteSandstoneChunk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "white_sandstone_chunk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/WhiteSandstoneChunkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/white_sandstone_chunk.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Sand"
+    },
+    {
+      "name": "ThermalCalciteRock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thermal_calcite_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/thermal_calcite_rock.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/ThermalCalciteRockItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Rocks"
+    },
+    {
+      "name": "BrimstoneRock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brimstone_rock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/BrimstoneRockItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/brimstone_rock.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Rocks"
+    },
+    {
+      "name": "FirBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fir_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/FirBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/fir_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "FirBarkExt",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fir_bark_ext",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark/Ext"
+    },
+    {
+      "name": "PineBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/PineBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/pine_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "MapleBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maple_bark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/maple_bark.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/MapleBarkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "RedwoodBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redwood_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/RedwoodBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/redwood_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "MahoganyBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mahogany_bark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/mahogany_bark.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/MahoganyBarkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "JacarandaBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jacaranda_bark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/jacaranda_bark.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/JacarandaBarkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "PalmBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_bark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/palm_bark.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/PalmBarkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "WillowBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willow_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/WillowBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/willow_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "DeadBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/DeadBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/dead_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "MagicBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/MagicBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/magic_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "UmbranBArk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "umbran_b_ark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/UmbranBArkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/umbran_b_ark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "EmpyrealBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empyreal_bark",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/empyreal_bark.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/EmpyrealBarkItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "HellBark",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell_bark",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/HellBarkItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/hell_bark.json"
+        ]
+      },
+      "path": "~/Mod Elements/Integration/BiomesOPlenty/Items/Bark"
+    },
+    {
+      "name": "Ingots",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ingots",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/IngotsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/MetalRefiningTable"
+    },
+    {
+      "name": "BlastingCopper",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blasting_copper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/copper_ingot_from_blasting_raw_copper.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
+    },
+    {
+      "name": "SmeltingUranium",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_uranium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/smelting_uranium.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
+    },
+    {
+      "name": "BlastingUranium",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blasting_uranium",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/blasting_uranium.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
+    },
+    {
+      "name": "TitaniumSmelting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/titanium_smelting.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
+    },
+    {
+      "name": "TitaniumBlasting",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/titanium_blasting.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/SmeltingRecipes/RoughIngots"
+    },
+    {
+      "name": "OakDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/oak_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "DarkOakDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_oak_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/dark_oak_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "SpruceDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spruce_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/spruce_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "BirchDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/birch_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "AcaciaDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/acacia_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "JungleDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jungle_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/jungle_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "CherryDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/cherry_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "MangroveDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mangrove_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/mangrove_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "CrimsonDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/crimson_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "WarpedDoor",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warped_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/warped_door.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "RadiatedDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_door_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Door"
+    },
+    {
+      "name": "RadiatedStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Radiant/Blocks/Tree/Recipes"
+    },
+    {
+      "name": "RadiatedSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_slab_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Radiant/Blocks/Tree/Recipes"
+    },
+    {
+      "name": "RadiatedFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_fence_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Radiant/Blocks/Tree/Recipes"
+    },
+    {
+      "name": "RadiatedFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Radiant/Blocks/Tree/Recipes"
+    },
+    {
+      "name": "RadiatedPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radiated_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/radiated_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Radiant/Blocks/Tree/Recipes"
+    },
+    {
+      "name": "AddedStoneBiomesGen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "added_stone_biomes_gen",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/AddedStoneBiomesGenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/generation/Rocks"
     }
   ],
   "variable_elements": [
@@ -25364,6 +25999,12 @@
       "name": "MPT_Time",
       "type": "number",
       "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "BloodMoonChanceRan",
+      "type": "number",
+      "scope": "world",
       "value": "0"
     }
   ],
@@ -25603,7 +26244,8 @@
       "CUSTOM:LargeAcaciaBark",
       "CUSTOM:LargeJungleBark",
       "CUSTOM:LargeCrimsonBark",
-      "CUSTOM:LargeWarpedBark"
+      "CUSTOM:LargeWarpedBark",
+      "CUSTOM:FirBark"
     ],
     "ITEMS:c:ingots/uranium": [
       "CUSTOM:UraniumIngot"
@@ -25620,24 +26262,24 @@
       "CUSTOM:ReactorRod",
       "CUSTOM:AdvancedReactorRod"
     ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BlockOfBronze"
+    ],
     "BLOCKS:minecraft:incorrect_for_iron_tool": [
       "TAG:minecraft:needs_steel_tool",
       "TAG:neoforge:incorrect_for_bronze_tool"
     ],
-    "BLOCKS:minecraft:needs_stone_tool": [
-      "~CUSTOM:BlockOfBronze"
-    ],
     "ITEMS:c:fuels/chunks": [
       "CUSTOM:SmallCoalChunk"
-    ],
-    "ITEMS:c:ingots/titanium": [
-      "CUSTOM:TitaniumIngot"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:ShaleStairs",
       "~CUSTOM:PolishedShaleBrickStairs",
       "~CUSTOM:PolishedShaleStairs",
       "~CUSTOM:RadiatedStairs"
+    ],
+    "ITEMS:c:ingots/titanium": [
+      "CUSTOM:TitaniumIngot"
     ],
     "ITEMS:c:components/helmet": [
       "CUSTOM:BronzeArmor.helmet",
@@ -25701,11 +26343,11 @@
       "CUSTOM:SteelHoeBlade",
       "CUSTOM:DiamondHoeBlade"
     ],
-    "BLOCKS:c:stones": [
-      "CUSTOM:Shale"
-    ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:RadiatedFence"
+    ],
+    "BLOCKS:c:stones": [
+      "CUSTOM:Shale"
     ],
     "ITEMS:c:components/hammer_head": [
       "CUSTOM:BronzeHammerHead",
@@ -26219,7 +26861,8 @@
       "CUSTOM:LargeMangroveBark",
       "CUSTOM:LargeCherryBark",
       "CUSTOM:LargeAcaciaBark",
-      "CUSTOM:LargeJungleBark"
+      "CUSTOM:LargeJungleBark",
+      "CUSTOM:FirBark"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:NetheriteSaw",
@@ -26238,29 +26881,6 @@
     ],
     "ENCHANTMENTS:minecraft:on_random_loot": [
       "~CUSTOM:SoulProtection"
-    ],
-    "ITEMS:c:turns_into_crafting_table": [
-      "Blocks.STRIPPED_OAK_LOG",
-      "Blocks.STRIPPED_SPRUCE_LOG",
-      "Blocks.STRIPPED_BIRCH_LOG",
-      "Blocks.STRIPPED_JUNGLE_LOG",
-      "Blocks.STRIPPED_ACACIA_LOG",
-      "Blocks.STRIPPED_DARK_OAK_LOG",
-      "Blocks.STRIPPED_WARPED_STEM",
-      "Blocks.STRIPPED_CRIMSON_STEM",
-      "Blocks.STRIPPED_MANGROVE_LOG",
-      "Blocks.STRIPPED_CHERRY_LOG",
-      "Blocks.STRIPPED_BAMBOO_BLOCK",
-      "Blocks.STRIPPED_OAK_WOOD",
-      "Blocks.STRIPPED_SPRUCE_WOOD",
-      "Blocks.STRIPPED_BIRCH_WOOD",
-      "Blocks.STRIPPED_JUNGLE_WOOD",
-      "Blocks.STRIPPED_ACACIA_WOOD",
-      "Blocks.STRIPPED_DARK_OAK_WOOD",
-      "Blocks.STRIPPED_WARPED_HYPHAE",
-      "Blocks.STRIPPED_CRIMSON_HYPHAE",
-      "Blocks.STRIPPED_MANGROVE_WOOD",
-      "Blocks.STRIPPED_CHERRY_WOOD"
     ],
     "ITEMS:c:melt_items": [
       "TAG:c:melt/bronze_melt_items",
@@ -26449,28 +27069,29 @@
       "block.survival_reborn.pig_leg": "Pig Leg",
       "item.survival_reborn.obsidian_handle": "Obsidian Handle",
       "block.survival_reimagined.dripstone_rock_block": "Dripstone Rock Block",
+      "item.survival_reimagined.redwood_bark": "Redwood Bark",
       "subtitles.netherite_scrap/sounds": "",
       "item.survival_reimagined.steel_sword": "Steel Sword",
       "item.survival_reimagined.cooked_heart": "Cooked Heart",
       "item.survival_reimagined.grey_glass_shard": "Grey Glass Shard",
       "item.survival_reborn.redstone_charged_uranium_dust": "Redstone Charged Uranium Dust",
       "item.survival_reimagined.spruce_plank": "Spruce Plank",
-      "block.survival_reimagined.clay_knife_mold": "Clay Knife Mold",
       "block.survival_reimagined.ingot_mold": "Ingot Mold",
+      "block.survival_reimagined.clay_knife_mold": "Clay Knife Mold",
       "item.survival_reimagined.bronze_sword": "Bronze Sword",
       "item.survival_reborn.large_warped_bark": "Large Warped Bark",
       "item.survival_reimagined.flesh": "Flesh",
       "item.survival_reborn.mud_rock": "Mud Rock",
       "item.survival_reborn.steel_hoe_blade": "Steel Hoe Blade",
-      "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
-      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.survival_reimagined.raw_zinc_nugget": "Raw Zinc Nugget",
+      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
       "item.survival_reborn.flint_tool": "Flint Tool",
       "item.survival_reimagined.tin_chunk": "Tin Chunk",
       "block.survival_reimagined.radiant_trapdoor": "Radiant Trapdoor",
-      "item.survival_reborn.cured_lungs": "Cured Lungs",
-      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
       "block.survival_reimagined.radiated_button": "Radiated Button",
+      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
+      "item.survival_reborn.cured_lungs": "Cured Lungs",
       "block.survival_reborn.clay_helmet_mold": "Clay Helmet Mold",
       "item.survival_reimagined.dripstone_rock": "Dripstone Rock",
       "item.survival_reborn.large_dark_oak_bark": "Large Dark Oak Bark",
@@ -26512,9 +27133,9 @@
       "item.survival_reimagined.heart_of_the_blood_moon": "Heart Of The Blood Moon",
       "item.survival_reborn.dark_oak_plank": "Dark Oak Plank",
       "item.survival_reborn.sand_pile": "Sand Pile",
-      "item.survival_reimagined.cured_chicken": "Cured Chicken",
-      "item.survival_reborn.cooked_lungs": "Cooked Lungs",
       "subtitles.close_forge": "Forge Closed",
+      "item.survival_reborn.cooked_lungs": "Cooked Lungs",
+      "item.survival_reimagined.cured_chicken": "Cured Chicken",
       "block.survival_reimagined.axe_head_mold": "Axe Head Mold",
       "item.survival_reborn.heart_of_the_blood_moon": "Heart Of The Blood Moon",
       "item.survival_reimagined.steel_armor_boots": "Steel Boots",
@@ -26535,8 +27156,8 @@
       "item.survival_reimagined.raw_uraninite_nugget": "Raw Uraninite Nugget",
       "subtitles.block.carving_crafting_table": "Crafting Table Carved",
       "item.survival_reborn.diamond_saw": "Diamond Saw",
-      "item.survival_reimagined.large_acacia_bark": "Large Acacia Bark",
       "item.survival_reimagined.steel_armor_helmet": "Steel Helmet",
+      "item.survival_reimagined.large_acacia_bark": "Large Acacia Bark",
       "block.survival_reborn.clay_sword_blade_mold": "Clay Sword Blade Mold",
       "block.survival_reborn.block_of_raw_tin": "Block Of Raw Tin",
       "block.survival_reborn.block_of_tin": "Block Of Tin",
@@ -26560,8 +27181,8 @@
       "item.survival_reborn.bronze_nugget": "Bronze Nugget",
       "item.survival_reimagined.steel_sword_blade": "Steel Sword Blade",
       "item.survival_reimagined.bronze_chisel": "Bronze Chisel",
-      "item.survival_reimagined.boat_paddles": "Boat Paddles",
       "item.survival_reimagined.diamond_saw": "Diamond Saw",
+      "item.survival_reimagined.boat_paddles": "Boat Paddles",
       "item.survival_reborn.blood_moon_disc_fragment": "Blood Moon Disc Fragment",
       "item.survival_reimagined.stone_hammer": "Stone Hammer",
       "block.survival_reborn.shovel_head_mold": "Shovel Head Mold",
@@ -26577,16 +27198,17 @@
       "item.survival_reimagined.spoiled_rabbit": "Spoiled Rabbit",
       "block.survival_reimagined.block_of_uranium": "Block Of Uranium",
       "item.survival_reimagined.asdasd": "Asdasd",
-      "advancements.primitive_tools.title": "Primitive Ingredients",
       "block.survival_reimagined.radiated_leaves": "Radiated Leaves",
-      "item.survival_reimagined.titanium_ingot": "Titanium Ingot",
+      "advancements.primitive_tools.title": "Primitive Ingredients",
       "block.survival_reimagined.poloshed_shale_brick_wall": "Poloshed Shale Brick Wall",
+      "item.survival_reimagined.titanium_ingot": "Titanium Ingot",
       "item.survival_reimagined.steel_axe_head": "Steel Axe Head",
       "block.survival_reimagined.sheep_leg": "Sheep Leg",
       "block.survival_reborn.mineral_processing_table": "Mineral Processing Table",
       "item.survival_reimagined.wooden_boots": "Wooden Boots",
       "item.survival_reborn.bronze_shovel_head": "Bronze Shovel Head",
       "item.survival_reborn.andesite_rock": "Andesite Rock",
+      "item.survival_reimagined.white_sandstone_chunk": "White Sandstone Chunk",
       "block.survival_reborn.cow_carcass": "Cow Carcass",
       "item.survival_reimagined.used_filter": "Used Gas Mask Filter",
       "block.survival_reborn.embedded_obsidian": "Embedded Obsidian",
@@ -26598,9 +27220,9 @@
       "item.survival_reborn.netherrack_rock": "Netherrack Rock",
       "subtitles.limb_removed": "Limb Removed",
       "block.survival_reborn.block_of_raw_manganese": "Block Of Raw Manganese",
-      "item.survival_reborn.cherry_bark": "Cherry Bark",
-      "block.survival_reimagined.crucible": "Crucible",
       "block.survival_reimagined.clay_boots_mold": "Clay Boots Mold",
+      "block.survival_reimagined.crucible": "Crucible",
+      "item.survival_reborn.cherry_bark": "Cherry Bark",
       "item.survival_reborn.cooked_liver": "Cooked Liver",
       "item.survival_reborn.steel_pickaxe": "Steel Pickaxe",
       "item.survival_reborn.spoiled_heart": "Spoiled Heart",
@@ -26613,19 +27235,21 @@
       "item.survival_reborn.uranium_sandstone_deposit": "Uranium Sandstone Deposit",
       "block.survival_reborn.fiberous_plant_stage_0": "Fiberous Plant Stage 0",
       "item.survival_reimagined.intestines": "Intestines",
-      "block.survival_reimagined.radiant_door": "Radiant Door",
       "block.survival_reborn.clay_axe_head_mold": "Clay Axe Head Mold",
+      "block.survival_reimagined.radiant_door": "Radiant Door",
       "item.survival_reimagined.bronze_hoe_blade": "Bronze Hoe Blade",
-      "item.survival_reborn.basalt_rock": "Basalt Rock",
-      "item.survival_reborn.stone_saw": "Stone Saw",
       "item.survival_reimagined.hemp_fiber": "Hemp Fiber",
+      "item.survival_reborn.stone_saw": "Stone Saw",
+      "item.survival_reborn.basalt_rock": "Basalt Rock",
       "item.survival_reimagined.large_mangrove_bark": "Large Mangrove Bark",
       "item.survival_reimagined.fuel_upgrade": "Fuel Upgrade",
+      "item.survival_reimagined.mahogany_bark": "Mahogany Bark",
       "item.survival_reimagined.hemp_seeds": "Hemp Seeds",
       "block.survival_reimagined.deepslate_uraninite_ore": "Deepslate Uraninite Ore",
       "block.survival_reimagined.sheep_carcass": "Sheep Carcass",
       "item.survival_reimagined.diamond_pickaxe_head": "Diamond Pickaxe Head",
       "block.survival_reimagined.block_of_raw_tin": "Block Of Raw Tin",
+      "item.survival_reimagined.magic_bark": "Magic Bark",
       "item.survival_reimagined.diamond_saw_blade": "Diamond Saw Blade",
       "advancements.ready_for_alloys.descr": "Acquire a Forge ",
       "item.survival_reborn.crimson_plank": "Crimson Plank",
@@ -26633,14 +27257,16 @@
       "block.survival_reimagined.polished_shale_wall": "Polished Shale Wall",
       "item.survival_reborn.gold_rod": "Gold Rod",
       "block.survival_reimagined.cow_head": "Cow Head",
-      "item.survival_reborn.rough_iron": "Rough Iron",
       "item.survival_reborn.copper_chisel": "Copper Chisel",
+      "item.survival_reborn.rough_iron": "Rough Iron",
       "item_group.survival_reborn.survival_reborn": "Survival Reborn",
       "item.survival_reborn.rough_copper": "Rough Copper",
       "item.survival_reimagined.raw_redstone": "Raw Redstone",
-      "block.survival_reborn.deepslate_rock_block": "Deepslate Rock Block",
       "subtitles.radiation/damage": "",
+      "block.survival_reborn.deepslate_rock_block": "Deepslate Rock Block",
       "block.survival_reimagined.radiated_slab": "Radiated Slab",
+      "item.survival_reimagined.hell_bark": "Hell Bark",
+      "item.survival_reimagined.maple_bark": "Maple Bark",
       "block.survival_reimagined.pig_head": "Pig Head",
       "item.survival_reborn.rough_tin": "Rough Tin",
       "subtitles.player_digging.stone": "Something Digging",
@@ -26658,21 +27284,23 @@
       "item.survival_reimagined.large_cherry_bark": "Large Cherry Bark",
       "item.survival_reborn.birch_bark": "Birch Bark",
       "item.survival_reimagined.rough_brass": "Rough Brass",
-      "block.survival_reborn.chicken_carcass": "Chicken Carcass",
       "item.survival_reimagined.diamond_plated_ingot": "Diamond Plated Ingot",
-      "advancements.steel_age.descr": "Acquire Steel",
-      "block.survival_reimagined.clay_chestplate_mold": "Clay Chestplate Mold",
+      "block.survival_reborn.chicken_carcass": "Chicken Carcass",
       "item.survival_reimagined.soul_sand_pile": "Soul Sand Pile",
+      "block.survival_reimagined.clay_chestplate_mold": "Clay Chestplate Mold",
+      "advancements.steel_age.descr": "Acquire Steel",
       "item.survival_reborn.intestines": "Intestines",
       "item.survival_reimagined.backpack": "Backpack",
       "item.survival_reborn.bronze_pickaxe": "Bronze Pickaxe",
+      "item.survival_reimagined.black_sandstone_chunk": "Black Sandstone Chunk",
+      "item.survival_reimagined.brimstone_rock": "Brimstone Rock",
       "item.survival_reimagined.fuel_upgrade_mkii": "Fuel Upgrade MKII",
       "item.survival_reimagined.cherry_plank": "Cherry Plank",
       "item.survival_reborn.bronze_knife": "Bronze Knife",
       "item.survival_reborn.bronze_knife_blade": "Bronze Knife Blade",
       "enchantment.survival_reimagined.perpetual_filtering": "Perpetual Filtering",
-      "item.survival_reborn.uranium_dust": "Uranium Dust",
       "item.survival_reborn.spoiled_lungs": "Spoiled Lungs",
+      "item.survival_reborn.uranium_dust": "Uranium Dust",
       "advancements.crafting_table.title": "Crafting Table",
       "item.survival_reimagined.green_glass_shard": "Green Glass Shard",
       "block.survival_reimagined.radiated_stairs": "Radiated Stairs",
@@ -26693,6 +27321,7 @@
       "item.survival_reborn.reactor_rod": "Reactor Rod",
       "block.survival_reborn.sand_salt_deposit": "Sand Salt Deposit",
       "item.survival_reimagined.steel_axe": "Steel Axe",
+      "item.survival_reimagined.thermal_calcite_rock": "Thermal Calcite Rock",
       "subtitles.block/shale_moss_step": "",
       "item.survival_reborn.redstone_nugget": "Redstone Nugget",
       "advancements.bronze_age.descr": "Acquire Bronze",
@@ -26709,8 +27338,8 @@
       "gui.survival_reborn.forge_gui.label_forge": "Forge",
       "item.survival_reborn.bronze_armor_chestplate": "Bronze Chestplate",
       "block.survival_reimagined.clay_hoe_blade_mold": "Clay Hoe Blade Mold",
-      "item.survival_reborn.manganese_nugget": "Manganese Nugget",
       "item.survival_reborn.lungs": "Lungs",
+      "item.survival_reborn.manganese_nugget": "Manganese Nugget",
       "item.survival_reimagined.bronze_hammer": "Bronze Hammer",
       "item.survival_reimagined.rough_steel": "Rough Steel",
       "block.survival_reimagined.scorchia_rock": "Scorchia Rock",
@@ -26753,16 +27382,16 @@
       "item.survival_reborn.rough_manganese": "Rough Manganese",
       "item.survival_reimagined.stone_knife": "Stone Survival Knife",
       "item.survival_reborn.cured_liver": "Cured Liver",
-      "block.survival_reborn.helmet_mold": "Helmet Mold",
       "item.survival_reborn.wooden_knife": "Wooden Knife",
+      "block.survival_reborn.helmet_mold": "Helmet Mold",
       "item.survival_reborn.gold_chunk": "Gold Chunk",
       "item.survival_reborn.rooted_dirt_pile": "Rooted Dirt Pile",
       "advancements.mpt.descr": "Craft a Mineral Processing Table",
       "item.survival_reimagined.rough_turanite": "Rough Turanite",
       "item.survival_reimagined.large_spruce_bark": "Large Spruce Bark",
       "item.survival_reimagined.gold_rod": "Gold Rod",
-      "subtitles.chimes": "",
       "item.survival_reimagined.raw_manganese": "Raw Manganese",
+      "subtitles.chimes": "",
       "item.survival_reborn.dirt_pile": "Dirt Pile",
       "item.survival_reborn.spoiled_beef": "Spoiled Beef",
       "subtitles.forge_close": "Forge Closed",
@@ -26773,6 +27402,7 @@
       "item.survival_reborn.wooden_boots": "Wooden Boots",
       "effect.survival_reimagined.radiation": "Radiation",
       "item.survival_reimagined.steel_pickaxe": "Steel Pickaxe",
+      "item.survival_reimagined.palm_bark": "Palm Bark",
       "item.survival_reimagined.rough_bronze": "Rough Bronze",
       "advancements.clay_works.descr": "Find clay",
       "item.survival_reborn.warped_bark": "Warped Bark",
@@ -26787,6 +27417,7 @@
       "advancements.crafting_table.descr": "Carve from a stripped log while using a chisel",
       "block.survival_reimagined.polished_shale_stairs": "Polished Shale Stairs",
       "block.survival_reimagined.shale_stairs": "Shale Stairs",
+      "item.survival_reimagined.jacaranda_bark": "Jacaranda Bark",
       "item.survival_reborn.fiberous_leaves": "Fiberous Leaves",
       "item.survival_reimagined.steel_shovel": "Steel Shovel",
       "item.survival_reimagined.small_bronze_handle": "Small Bronze Handle",
@@ -26845,6 +27476,7 @@
       "item.survival_reimagined.bronze_sword_blade": "Bronze Sword Blade",
       "item.survival_reborn.rough_steel": "Rough Steel",
       "item.survival_reimagined.raw_uraninite": "Raw Uraninite",
+      "item.survival_reimagined.orange_sand_pile": "Orange Sand Pile",
       "item.survival_reimagined.rough_gold": "Rough Gold",
       "item.survival_reborn.clay_brick": "Clay Brick",
       "item.survival_reborn.large_birch_bark": "Large Birch Bark",
@@ -26873,6 +27505,7 @@
       "item.survival_reimagined.drained_advanced_reactor_rod": "Drained Advanced Reactor Rod",
       "death.attack.zombification_damage": "%1$s succumbed to Zombification",
       "item.survival_reborn.acacia_plank": "Acacia Plank",
+      "item.survival_reimagined.pine_bark": "Pine Bark",
       "block.survival_reimagined.stone_rock_bloc": "Stone Rock Block",
       "block.survival_reimagined.helmet_mold": "Helmet Mold",
       "item.survival_reimagined.ancient_debris_chunk": "Ancient Debris Chunk",
@@ -26881,9 +27514,11 @@
       "item.survival_reimagined.cooked_liver": "Cooked Liver",
       "item.survival_reimagined.cured_stomach": "Cured Stomach",
       "block.survival_reimagined.shale": "Shale",
+      "item.survival_reimagined.willow_bark": "Willow Bark",
       "block.survival_reimagined.embedded_obsidian": "Embedded Obsidian",
       "item.survival_reborn.cured_intestines": "Cured Intestines",
       "item.survival_reimagined.steel_shovel_head": "Steel Shovel Head",
+      "item.survival_reimagined.fir_bark": "Fir Bark",
       "item.survival_reimagined.purple_glass_shard": "Purple Glass Shard",
       "item.survival_reimagined.lungs": "Lungs",
       "subtitles.block/steel_place": "",
@@ -27029,6 +27664,7 @@
       "item.survival_reimagined.redstone_chunk": "Redstone Chunk",
       "block.survival_reimagined.polished_shale": "Polished Shale",
       "entity.survival_reimagined.blood_moon_zombie": "Blood Moon Zombie",
+      "item.survival_reimagined.umbran_b_ark": "Umbran B Ark",
       "item.survival_reimagined.large_crimson_bark": "Large Crimson Bark",
       "item.survival_reborn.cured_porkchop": "Cured Porkchop",
       "block.survival_reborn.forge": "Forge",
@@ -27047,6 +27683,7 @@
       "item.survival_reimagined.netherite_hammer": "Netherite Hammer",
       "item.survival_reimagined.rough_tin": "Rough Tin",
       "item.survival_reimagined.raw_tin": "Raw Tin",
+      "item.survival_reimagined.dead_bark": "Dead Bark",
       "item.survival_reborn.steel_sword": "Steel Sword",
       "item.survival_reborn.diamond_sword_blade": "Diamond Sword Blade",
       "block.survival_reimagined.clay_sword_blade_mold": "Clay Sword Blade Mold",
@@ -27142,6 +27779,7 @@
       "item.survival_reborn.spoiled_salman": "Spoiled Salman",
       "item.survival_reborn.bronze_handle": "Bronze Handle",
       "block.survival_reimagined.tuff_rock_block": "Tuff Rock Block",
+      "item.survival_reimagined.empyreal_bark": "Empyreal Bark",
       "item.survival_reimagined.obsidian_handle": "Obsidian Handle",
       "block.survival_reborn.chestplate_mold": "Chestplate Mold",
       "block.survival_reimagined.plated_diamond_block": "Plated Diamond Block",
@@ -27170,6 +27808,7 @@
       "block.survival_reimagined.radiated_fence": "Radiated Fence",
       "block.survival_reimagined.deepslate_rock_block": "Deepslate Rock Block",
       "item.survival_reimagined.radiated_bark": "Radiated Bark",
+      "item.survival_reimagined.black_sand_pile": "Black Sand Pile",
       "item.survival_reborn.wooden_hammer": "Wooden Hammer",
       "item.survival_reimagined.steel_nugget": "Steel Nugget",
       "block.survival_reimagined.clay_axe_head_mold": "Clay Axe Head Mold",
@@ -27181,6 +27820,7 @@
       "item.survival_reimagined.rough_copper": "Rough Copper",
       "block.survival_reimagined.shale_uraninite_ore": "Shale Uraninite Ore",
       "block.survival_reborn.legging_mold": "Leggings Mold",
+      "item.survival_reimagined.white_sand_pile": "White Sand Pile",
       "item.survival_reborn.diamond_hammer_head": "Diamond Hammer Head",
       "item.survival_reimagined.copper_handle": "Copper Handle",
       "item.survival_reimagined.spoiled_heart": "Spoiled Heart",
@@ -27214,6 +27854,7 @@
       "item.survival_reimagined.deepslate_embedded_emerald": "Deepslate Embedded Emerald",
       "block.survival_reimagined.hemp": "Hemp",
       "item.survival_reimagined.acacia_plank": "Acacia Plank",
+      "item.survival_reimagined.orange_sandstone_chunk": "Orange Sandstone Chunk",
       "item.survival_reimagined.sheep_hide": "Sheep Hide",
       "block.survival_reimagined.thin_radiated_vine_base": "Thin Radiated Vine Base"
     }
@@ -27775,6 +28416,10 @@
                   {
                     "name": "Netherite",
                     "children": []
+                  },
+                  {
+                    "name": "Door",
+                    "children": []
                   }
                 ]
               },
@@ -28209,7 +28854,34 @@
               },
               {
                 "name": "BiomesOPlenty",
-                "children": []
+                "children": [
+                  {
+                    "name": "Items",
+                    "children": [
+                      {
+                        "name": "Bark",
+                        "children": [
+                          {
+                            "name": "Ext",
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Sand",
+                        "children": []
+                      },
+                      {
+                        "name": "Rocks",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Drops",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "DeeperDarker",
@@ -28550,7 +29222,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.2.0-BETA",
+    "version": "1.2.3-BETA",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",

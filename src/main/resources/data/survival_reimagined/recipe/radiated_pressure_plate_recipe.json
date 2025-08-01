@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:radiant_planks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:radiated_pressure_plate",
+    "count": 1
+  }
+}

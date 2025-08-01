@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 30,
-    "separation": 20,
+    "spacing": 55,
+    "separation": 29,
     "restrictionBiomes": [
       {
         "value": "wooded_badlands_plateau"

@@ -16,7 +16,7 @@
     "blastingReturnStack": {
       "value": "CUSTOM:RoughCopper"
     },
-    "name": "copper_ingot_from_blastng_raw_copper",
+    "name": "copper_ingot_from_blasting_raw_copper",
     "namespace": "minecraft"
   }
 }

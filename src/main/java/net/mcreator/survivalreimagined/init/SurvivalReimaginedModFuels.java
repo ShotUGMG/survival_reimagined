@@ -51,5 +51,7 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.WOOD_INGOT.get())
 			event.setBurnTime(400);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.FIR_BARK.get())
+			event.setBurnTime(400);
 	}
 }

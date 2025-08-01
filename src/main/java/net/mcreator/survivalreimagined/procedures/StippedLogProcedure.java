@@ -15,7 +15,9 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -115,6 +117,44 @@ public class StippedLogProcedure {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = SurvivalReimaginedModBlocks.STRIPPED_RADIANT_LOG.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Property<?> _propertyOld : _bso.getProperties()) {
+						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+							try {
+								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, 1, false);
+						}
+					}
+				});
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axes")))) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.OFF_HAND, true);
+				}
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (BuiltInRegistries.BLOCK.getOrCreateTag(BlockTags.create(ResourceLocation.parse("biomesoplenty:fir_log"))).getRandomElement(RandomSource.create())
+					.orElseGet(() -> BuiltInRegistries.BLOCK.wrapAsHolder(Blocks.AIR)).value())) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 1), (z + 0.5), new ItemStack(SurvivalReimaginedModItems.FIR_BARK.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = (BuiltInRegistries.BLOCK.getOrCreateTag(BlockTags.create(ResourceLocation.parse("biomesoplenty:stripped_fir_log"))).getRandomElement(RandomSource.create())
+							.orElseGet(() -> BuiltInRegistries.BLOCK.wrapAsHolder(Blocks.AIR)).value()).defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Property<?> _propertyOld : _bso.getProperties()) {
 						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());

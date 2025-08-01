@@ -15,8 +15,8 @@
         "value": "Blocks.DIRT#0"
       }
     ],
-    "spacing": 15,
-    "separation": 10,
+    "spacing": 25,
+    "separation": 15,
     "restrictionBiomes": [
       {
         "value": "crimson_forest"

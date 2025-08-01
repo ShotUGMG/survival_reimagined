@@ -15,8 +15,8 @@
         "value": "Blocks.DIRT#0"
       }
     ],
-    "spacing": 10,
-    "separation": 5,
+    "spacing": 25,
+    "separation": 10,
     "restrictionBiomes": [
       {
         "value": "warped_forest"

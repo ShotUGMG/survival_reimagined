@@ -27,7 +27,7 @@ public class IronTakenProcedure {
 			_player.containerMenu.broadcastChanges();
 		}
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(3)).remove(1);
+			((Slot) _slots.get(1)).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
 		SurvivalReimaginedMod.queueServerWork(1, () -> {
@@ -40,7 +40,7 @@ public class IronTakenProcedure {
 			}
 		});
 		if (world instanceof ServerLevel _level) {
-			(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+			(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
 			});
 		}
 	}

@@ -1,0 +1,117 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2025-07-09 19:48:36
+Description: Exception in server tick loop
+
+java.lang.IllegalArgumentException: min > max: 0.0 -0.2
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.biome.Climate$Parameter.span(Climate.java:109) ~[neoforge-21.1.169-minecraft-merged.jar%23195!/:?] {re:classloading}
+	at TRANSFORMER/survival_reimagined@1.2.2/net.mcreator.survivalreimagined.init.SurvivalReimaginedModBiomes.onServerAboutToStart(SurvivalReimaginedModBiomes.java:54) ~[%23203!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23148!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23148!/:?] {}
+	at TRANSFORMER/neoforge@21.1.169/net.neoforged.neoforge.server.ServerLifecycleHooks.handleServerAboutToStart(ServerLifecycleHooks.java:98) ~[neoforge-21.1.169-minecraft-merged.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:76) ~[neoforge-21.1.169-minecraft-merged.jar%23195!/:?] {re:mixin,pl:runtimedistcleaner:A,re:classloading,pl:mixin:APP:c2me-notickvd.mixins.json:client.MixinIntegratedServer from mod c2me_notickvd,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:670) ~[neoforge-21.1.169-minecraft-merged.jar%23195!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinMinecraftServer from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-notickvd.mixins.json:MixinMinecraftServer from mod c2me_notickvd,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinMinecraftServer from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.enhanced_autosave.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.169-minecraft-merged.jar%23195!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinMinecraftServer from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-notickvd.mixins.json:MixinMinecraftServer from mod c2me_notickvd,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinMinecraftServer from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.enhanced_autosave.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:A}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.5, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 318300832 bytes (303 MiB) / 893386752 bytes (852 MiB) up to 8573157376 bytes (8176 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 3800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): 3.89
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12288.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.7270
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 48909.05
+	Virtual memory used (MiB): 43175.90
+	Swap memory total (MiB): 16216.05
+	Swap memory used (MiB): 2157.98
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 187036.22, total: 1906739.00
+	Space in storage for workdir (MiB): available: 187036.22, total: 1906739.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 0 / 8; []
+	Active Data Packs: vanilla, mod_data, mod/c2me_fixes_worldgen_threading_issues, mod/c2me_threading_lighting, mod/c2me_fixes_chunkio_threading_issues, mod/acedium,nvidium (incompatible), mod/c2me_client_uncapvd, mod/c2me_rewrites_chunk_serializer, mod/jei (incompatible), mod/c2me_server_utils, mod/lithium, mod/c2me_opts_natives_math, mod/c2me_opts_dfc, mod/c2me_fixes_general_threading_issues, mod/neoforge, mod/c2me_notickvd, mod/survival_reimagined, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/c2me_opts_math, mod/worldedit (incompatible), mod/c2me, mod/c2me_rewrites_chunk_system, mod/fusion, mod/c2me_base, mod/c2me_rewrites_chunkio, mod/c2me_opts_worldgen_vanilla, mod/c2me_fixes_worldgen_vanilla_bugs, mod/c2me_opts_scheduling, mod/embeddium (incompatible), mod/c2me_opts_allocs
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/acedium,nvidium (incompatible), mod/c2me, mod/c2me_base, mod/c2me_client_uncapvd, mod/c2me_fixes_chunkio_threading_issues, mod/c2me_fixes_general_threading_issues, mod/c2me_fixes_worldgen_threading_issues, mod/c2me_fixes_worldgen_vanilla_bugs, mod/c2me_notickvd, mod/c2me_opts_allocs, mod/c2me_opts_chunkio, mod/c2me_opts_dfc, mod/c2me_opts_math, mod/c2me_opts_natives_math, mod/c2me_opts_scheduling, mod/c2me_opts_worldgen_general, mod/c2me_opts_worldgen_vanilla, mod/c2me_rewrites_chunk_serializer, mod/c2me_rewrites_chunk_system, mod/c2me_rewrites_chunkio, mod/c2me_server_utils, mod/c2me_threading_lighting, mod/embeddium (incompatible), mod/fusion, mod/jei (incompatible), mod/lithium, mod/neoforge, mod/survival_reimagined, mod/worldedit (incompatible), mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 1806084906234482527
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.169
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.39.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.39.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.39.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		acedium-0.3.0.jar                                 |Acedium                       |acedium                       |0.3.0               |Manifest: NOSIGNATURE
+		c2me-neoforge-mc1.21.1-0.3.0+alpha.0.60.jar       |Concurrent Chunk Management En|c2me                          |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-base-mc1.21.1-0.3.0+alpha.0.60-all.jar       |Concurrent Chunk Management En|c2me_base                     |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-client-uncapvd-mc1.21.1-0.3.0+alpha.0.60.jar |Concurrent Chunk Management En|c2me_client_uncapvd           |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-chunkio-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-general-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-threading-issues-mc1.21.1-0.3.|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-vanilla-bugs-mc1.21.1-0.3.0+al|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-notickvd-mc1.21.1-0.3.0+alpha.0.60.jar       |Concurrent Chunk Management En|c2me_notickvd                 |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-chunkio-mc1.21.1-0.3.0+alpha.0.60.jar   |Concurrent Chunk Management En|c2me_opts_chunkio             |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-dfc-mc1.21.1-0.3.0+alpha.0.60.jar       |Concurrent Chunk Management En|c2me_opts_dfc                 |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-general-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-math-mc1.21.1-0.3.0+alpha.0.60.jar      |Concurrent Chunk Management En|c2me_opts_math                |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-allocs-mc1.21.1-0.3.0+alpha.0.60.jar    |Concurrent Chunk Management En|c2me_opts_allocs              |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-natives-math-mc1.21.1-0.3.0+alpha.0.60.j|Concurrent Chunk Management En|c2me_opts_natives_math        |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-scheduling-mc1.21.1-0.3.0+alpha.0.60.jar|Concurrent Chunk Management En|c2me_opts_scheduling          |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-vanilla-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunkio-mc1.21.1-0.3.0+alpha.0.60.ja|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-serializer-mc1.21.1-0.3.0+alph|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_rewrites_chunk_system    |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-server-utils-mc1.21.1-0.3.0+alpha.0.60.jar   |Concurrent Chunk Management En|c2me_server_utils             |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		c2me-threading-lighting-mc1.21.1-0.3.0+alpha.0.60.|Concurrent Chunk Management En|c2me_threading_lighting       |0.3.0+alpha.0.60+1.2|Manifest: NOSIGNATURE
+		embeddium-1.0.15+mc1.21.1.jar                     |Embeddium                     |embeddium                     |1.0.15+mc1.21.1     |Manifest: NOSIGNATURE
+		fusion-1.2.7b-neoforge-mc1.21.jar                 |Fusion                        |fusion                        |1.2.7+b             |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.247.jar               |Just Enough Items             |jei                           |19.21.0.247         |Manifest: NOSIGNATURE
+		lithium-neoforge-0.15.0+mc1.21.1.jar              |Lithium                       |lithium                       |0.15.0+mc1.21.1     |Manifest: NOSIGNATURE
+		neoforge-21.1.169-minecraft-merged.jar            |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.169-minecraft-merged.jar            |NeoForge                      |neoforge                      |21.1.169            |Manifest: NOSIGNATURE
+		main                                              |Survival Reimagined           |survival_reimagined           |1.2.2               |Manifest: NOSIGNATURE
+		worldedit-mod-7.3.8.jar                           |WorldEdit                     |worldedit                     |7.3.8+6939-7d32b45  |Manifest: NOSIGNATURE
+	Crash Report UUID: 7a85387e-9174-4261-a481-646571b2fa65
+	FML: 4.0.39
+	NeoForge: 21.1.169

@@ -104,6 +104,7 @@ public class SurvivalReimaginedModVariables {
 		public boolean isNotDay = false;
 		public boolean AnnouncementPlayed = false;
 		public boolean TextureLoaded = false;
+		public double BloodMoonChanceRan = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -119,6 +120,7 @@ public class SurvivalReimaginedModVariables {
 			isNotDay = nbt.getBoolean("isNotDay");
 			AnnouncementPlayed = nbt.getBoolean("AnnouncementPlayed");
 			TextureLoaded = nbt.getBoolean("TextureLoaded");
+			BloodMoonChanceRan = nbt.getDouble("BloodMoonChanceRan");
 		}
 
 		@Override
@@ -130,6 +132,7 @@ public class SurvivalReimaginedModVariables {
 			nbt.putBoolean("isNotDay", isNotDay);
 			nbt.putBoolean("AnnouncementPlayed", AnnouncementPlayed);
 			nbt.putBoolean("TextureLoaded", TextureLoaded);
+			nbt.putDouble("BloodMoonChanceRan", BloodMoonChanceRan);
 			return nbt;
 		}
 

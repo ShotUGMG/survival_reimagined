@@ -2,8 +2,8 @@
   "parent": "survival_reimagined:custom/mold",
   "textures": {
     "all": "survival_reimagined:block/clay_ingot_mold",
-    "particle": "survival_reimagined:block/",
-    "0": "survival_reimagined:block/dried_clay"
+    "particle": "survival_reimagined:block/clay_ingot_mold",
+    "0": "survival_reimagined:block/clay_block"
   },
   "render_type": "solid"
 }

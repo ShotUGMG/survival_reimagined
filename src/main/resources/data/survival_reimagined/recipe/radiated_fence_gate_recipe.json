@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "survival_reimagined:radiant_planks"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:radiated_fence_gate",
+    "count": 1
+  }
+}

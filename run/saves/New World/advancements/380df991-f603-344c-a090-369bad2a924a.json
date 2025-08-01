@@ -2529,5 +2529,329 @@
     },
     "done": true
   },
+  "survival_reimagined:crafting_table": {
+    "criteria": {
+      "crafting_table_0": "2025-07-09 18:46:56 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/null_end_stone": {
+    "criteria": {
+      "has_null_leaves": "2025-07-15 18:24:55 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_smelts_to_glass": "2025-07-20 06:41:39 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/white_sandstone": {
+    "criteria": {
+      "has_white_sand": "2025-07-20 06:41:39 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/orange_sandstone": {
+    "criteria": {
+      "has_orange_sand": "2025-07-20 06:41:41 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/black_sandstone": {
+    "criteria": {
+      "has_black_sand": "2025-07-20 06:41:43 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_orange_sandstone_slab_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_orange_sandstone_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/orange_sandstone_slab": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_orange_sandstone": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/smooth_orange_sandstone": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_orange_sandstone_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/orange_sandstone_slab_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/orange_sandstone_stairs_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/orange_sandstone_wall": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/orange_sandstone_stairs": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/orange_sandstone_wall_from_orange_sandstone_stonecutting": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_orange_sandstone": {
+    "criteria": {
+      "has_orange_sandstone": "2025-07-20 06:44:59 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_white_sandstone": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/smooth_white_sandstone": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_white_sandstone_slab_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/white_sandstone_wall_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_white_sandstone_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_white_sandstone": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/white_sandstone_slab": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/white_sandstone_stairs": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/white_sandstone_wall": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/white_sandstone_stairs_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/white_sandstone_slab_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_white_sandstone_from_white_sandstone_stonecutting": {
+    "criteria": {
+      "has_white_sandstone": "2025-07-20 06:45:00 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_black_sandstone_slab_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/smooth_black_sandstone": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_black_sandstone": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/black_sandstone_wall_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/black_sandstone_slab_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/cut_black_sandstone_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/black_sandstone_slab": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/black_sandstone_stairs": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/black_sandstone_wall": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/black_sandstone_stairs_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_black_sandstone": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_black_sandstone_from_black_sandstone_stonecutting": {
+    "criteria": {
+      "has_black_sandstone": "2025-07-20 06:45:03 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_cluster": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_fumarole": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_brick_wall_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/chiseled_brimstone_bricks_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/brimstone_brick_stairs_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_bud": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_cluster_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/decorations/brimstone_bud_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/brimstone_bricks_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/brimstone_brick_slab_from_brimstone_stonecutting": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "biomesoplenty:recipes/building_blocks/brimstone_bricks": {
+    "criteria": {
+      "has_brimstone": "2025-07-20 06:46:24 -0700"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-07-21 08:18:32 -0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

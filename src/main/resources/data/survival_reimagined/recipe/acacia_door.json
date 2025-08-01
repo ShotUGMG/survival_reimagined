@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:acacia_plank"
+    }
+  },
+  "result": {
+    "id": "minecraft:acacia_door",
+    "count": 1
+  }
+}

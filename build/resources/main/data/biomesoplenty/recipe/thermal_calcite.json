@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:thermal_calcite_rock"
+    }
+  },
+  "result": {
+    "id": "biomesoplenty:thermal_calcite",
+    "count": 1
+  }
+}
