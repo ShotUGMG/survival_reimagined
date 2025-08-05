@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_iron"
+    },
+    {
+      "tag": "minecraft:air"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "minecraft:iron_ingot",
+    "count": 1
+  }
+}

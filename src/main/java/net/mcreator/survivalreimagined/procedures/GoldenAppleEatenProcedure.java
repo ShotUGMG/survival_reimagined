@@ -41,7 +41,7 @@ public class GoldenAppleEatenProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SurvivalReimaginedModMobEffects.ZOMBIFICATION)) {
-			if (itemstack.getItem() == Items.GOLDEN_APPLE || itemstack.getItem() == Items.GOLDEN_CARROT) {
+			if (itemstack.getItem() == Items.ENCHANTED_GOLDEN_APPLE || itemstack.getItem() == Items.GOLDEN_APPLE || itemstack.getItem() == Items.GOLDEN_CARROT) {
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 5;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
@@ -51,8 +51,10 @@ public class GoldenAppleEatenProcedure {
 						_entity.removeEffect(MobEffects.WEAKNESS);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2400, 0, false, true));
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0, false, true));
+					if (itemstack.getItem() == Items.GOLDEN_CARROT) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0, false, true));
+					}
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.cure")), SoundSource.PLAYERS, 1, 1);

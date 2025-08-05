@@ -10,7 +10,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.Minecraft;
 
@@ -27,26 +26,32 @@ public class MoonTextureProcedure {
 		Entity entity = minecraft.gameRenderer.getMainCamera().getEntity();
 		if (level != null && entity != null) {
 			Vec3 pos = entity.getPosition(minecraft.getTimer().getGameTimeDeltaPartialTick(false));
-			execute(event, level, entity);
+			execute(event, level);
 		}
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(LevelAccessor world) {
+		execute(null, world);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
-		if (entity == null)
-			return;
+	private static void execute(@Nullable Event event, LevelAccessor world) {
 		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true) {
-			if (world.isClientSide()) {
-				Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png"));
-				Minecraft.getInstance().getTextureManager().register(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"),
-						Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png")));
+			if (SurvivalReimaginedModVariables.WorldVariables.get(world).TextureLoaded == false) {
+				if (world.isClientSide()) {
+					Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png"));
+					Minecraft.getInstance().getTextureManager().register(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"),
+							Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png")));
+				}
+				SurvivalReimaginedModVariables.WorldVariables.get(world).TextureLoaded = true;
+				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 			}
-		} else if (world.getMaxLocalRawBrightness(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())) > 5) {
-			if (world.isClientSide()) {
-				Minecraft.getInstance().getTextureManager().release(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"));
+		} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == false) {
+			if (SurvivalReimaginedModVariables.WorldVariables.get(world).TextureLoaded == true) {
+				if (world.isClientSide()) {
+					Minecraft.getInstance().getTextureManager().release(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"));
+				}
+				SurvivalReimaginedModVariables.WorldVariables.get(world).TextureLoaded = false;
+				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 			}
 		}
 	}

@@ -29,6 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.survivalreimagined.procedures.MetalRefiningTableGUIWhileThisGUIIsOpenTickProcedure;
+import net.mcreator.survivalreimagined.procedures.MetalRefiningTableGUIThisGUIIsClosedProcedure;
 import net.mcreator.survivalreimagined.network.MetalRefiningTableGUISlotMessage;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
 
@@ -241,6 +242,7 @@ public class MetalRefiningTableGUIMenu extends AbstractContainerMenu implements 
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
+		MetalRefiningTableGUIThisGUIIsClosedProcedure.execute(world, x, y, z);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {

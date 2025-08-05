@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:stripped_radiant_log",
     "minecraft:stripped_oak_log",
     "minecraft:stripped_spruce_log",
     "minecraft:stripped_birch_log",
@@ -21,7 +22,6 @@
     "minecraft:stripped_warped_hyphae",
     "minecraft:stripped_crimson_hyphae",
     "minecraft:stripped_mangrove_wood",
-    "minecraft:stripped_cherry_wood",
-    "#biomesoplenty:fir_log"
+    "minecraft:stripped_cherry_wood"
   ]
 }

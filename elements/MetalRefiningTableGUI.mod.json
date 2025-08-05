@@ -133,6 +133,9 @@
     "onTick": {
       "name": "MetalRefiningTableGUIWhileThisGUIIsOpenTick"
     },
+    "onClosed": {
+      "name": "MetalRefiningTableGUIThisGUIIsClosed"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
