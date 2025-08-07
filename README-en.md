@@ -18,12 +18,13 @@ Withering Dimension
  - structures (camp ruins, small fortress ruins, jigsaw wither fortress)
 
 gems and necklaces
+ - emerald - passive hero of the village status effect.
+ - diamond - increased fortune (+1 drop to all ore).
+ - ruby - passive chance of regeneration when attacked (5%).
+ - sapphire - passive dolphins grave when completely submerged underwater.
+ - amber - fire resistance chance when taking fire damage (3s, 10%).
+ - amethyst - allows player to look at an enderman without being punished.
+ - spinel - +1 drops to living creatures.
+ - lapis - passive XP chance (1-5 points, 3% chance).
 
-emerald - passive hero of the village status effect.
-diamond - increased fortune (+1 drop to all ore).
-ruby - passive chance of regeneration when attacked (5%).
-sapphire - passive dolphins grave when completely submerged underwater.
-amber - fire resistance chance when taking fire damage (3s, 10%).
-amethyst - allows player to look at an enderman without being punished.
-spinel - +1 drops to living creatures.
-lapis - passive XP chance (1-5 points, 3% chance).
+ - gem geodes drops from gem based ores, requiring chisel to crack and get unprocessed gems
