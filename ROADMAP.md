@@ -24,7 +24,7 @@ gems and necklaces
  - sapphire - passive dolphins grave when completely submerged underwater.
  - amber - fire resistance chance when taking fire damage (3s, 10%).
  - amethyst - allows player to look at an enderman without being punished.
- - spinel - +1 drops to living creatures.
+ - spinel - makes creepers non-hostile when worn
  - lapis - passive XP chance (1-5 points, 3% chance).
 
  - gem geodes drops from gem based ores, requiring chisel to crack and get unprocessed gems
