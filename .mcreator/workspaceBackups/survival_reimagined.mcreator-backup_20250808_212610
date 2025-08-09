@@ -26355,24 +26355,24 @@
       "CUSTOM:ReactorRod",
       "CUSTOM:AdvancedReactorRod"
     ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:BlockOfBronze"
+    ],
     "BLOCKS:minecraft:incorrect_for_iron_tool": [
       "TAG:minecraft:needs_steel_tool",
       "TAG:neoforge:incorrect_for_bronze_tool"
     ],
-    "BLOCKS:minecraft:needs_stone_tool": [
-      "~CUSTOM:BlockOfBronze"
-    ],
     "ITEMS:c:fuels/chunks": [
       "CUSTOM:SmallCoalChunk"
-    ],
-    "ITEMS:c:ingots/titanium": [
-      "CUSTOM:TitaniumIngot"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:ShaleStairs",
       "~CUSTOM:PolishedShaleBrickStairs",
       "~CUSTOM:PolishedShaleStairs",
       "~CUSTOM:RadiatedStairs"
+    ],
+    "ITEMS:c:ingots/titanium": [
+      "CUSTOM:TitaniumIngot"
     ],
     "ITEMS:c:components/helmet": [
       "CUSTOM:BronzeArmor.helmet",
@@ -26436,11 +26436,11 @@
       "CUSTOM:SteelHoeBlade",
       "CUSTOM:DiamondHoeBlade"
     ],
-    "BLOCKS:c:stones": [
-      "CUSTOM:Shale"
-    ],
     "BLOCKS:minecraft:fences": [
       "~CUSTOM:RadiatedFence"
+    ],
+    "BLOCKS:c:stones": [
+      "CUSTOM:Shale"
     ],
     "ITEMS:c:components/hammer_head": [
       "CUSTOM:BronzeHammerHead",
@@ -27193,22 +27193,22 @@
       "item.survival_reimagined.grey_glass_shard": "Grey Glass Shard",
       "item.survival_reborn.redstone_charged_uranium_dust": "Redstone Charged Uranium Dust",
       "item.survival_reimagined.spruce_plank": "Spruce Plank",
-      "block.survival_reimagined.ingot_mold": "Ingot Mold",
       "block.survival_reimagined.clay_knife_mold": "Clay Knife Mold",
+      "block.survival_reimagined.ingot_mold": "Ingot Mold",
       "item.survival_reimagined.bronze_sword": "Bronze Sword",
       "item.survival_reborn.large_warped_bark": "Large Warped Bark",
       "item.survival_reimagined.flesh": "Flesh",
       "item.survival_reborn.mud_rock": "Mud Rock",
       "item.survival_reborn.steel_hoe_blade": "Steel Hoe Blade",
-      "item.survival_reimagined.raw_zinc_nugget": "Raw Zinc Nugget",
-      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
       "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
+      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.survival_reimagined.raw_zinc_nugget": "Raw Zinc Nugget",
       "item.survival_reborn.flint_tool": "Flint Tool",
       "item.survival_reimagined.tin_chunk": "Tin Chunk",
       "block.survival_reimagined.radiant_trapdoor": "Radiant Trapdoor",
-      "block.survival_reimagined.radiated_button": "Radiated Button",
-      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
       "item.survival_reborn.cured_lungs": "Cured Lungs",
+      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
+      "block.survival_reimagined.radiated_button": "Radiated Button",
       "block.survival_reborn.clay_helmet_mold": "Clay Helmet Mold",
       "item.survival_reimagined.dripstone_rock": "Dripstone Rock",
       "item.survival_reborn.large_dark_oak_bark": "Large Dark Oak Bark",
@@ -27250,9 +27250,9 @@
       "item.survival_reimagined.heart_of_the_blood_moon": "Heart Of The Blood Moon",
       "item.survival_reborn.dark_oak_plank": "Dark Oak Plank",
       "item.survival_reborn.sand_pile": "Sand Pile",
-      "subtitles.close_forge": "Forge Closed",
-      "item.survival_reborn.cooked_lungs": "Cooked Lungs",
       "item.survival_reimagined.cured_chicken": "Cured Chicken",
+      "item.survival_reborn.cooked_lungs": "Cooked Lungs",
+      "subtitles.close_forge": "Forge Closed",
       "block.survival_reimagined.axe_head_mold": "Axe Head Mold",
       "item.survival_reborn.heart_of_the_blood_moon": "Heart Of The Blood Moon",
       "item.survival_reimagined.steel_armor_boots": "Steel Boots",
@@ -27273,8 +27273,8 @@
       "item.survival_reimagined.raw_uraninite_nugget": "Raw Uraninite Nugget",
       "subtitles.block.carving_crafting_table": "Crafting Table Carved",
       "item.survival_reborn.diamond_saw": "Diamond Saw",
-      "item.survival_reimagined.steel_armor_helmet": "Steel Helmet",
       "item.survival_reimagined.large_acacia_bark": "Large Acacia Bark",
+      "item.survival_reimagined.steel_armor_helmet": "Steel Helmet",
       "block.survival_reborn.clay_sword_blade_mold": "Clay Sword Blade Mold",
       "block.survival_reborn.block_of_raw_tin": "Block Of Raw Tin",
       "block.survival_reborn.block_of_tin": "Block Of Tin",
@@ -27298,8 +27298,8 @@
       "item.survival_reborn.bronze_nugget": "Bronze Nugget",
       "item.survival_reimagined.steel_sword_blade": "Steel Sword Blade",
       "item.survival_reimagined.bronze_chisel": "Bronze Chisel",
-      "item.survival_reimagined.diamond_saw": "Diamond Saw",
       "item.survival_reimagined.boat_paddles": "Boat Paddles",
+      "item.survival_reimagined.diamond_saw": "Diamond Saw",
       "item.survival_reborn.blood_moon_disc_fragment": "Blood Moon Disc Fragment",
       "item.survival_reimagined.stone_hammer": "Stone Hammer",
       "block.survival_reborn.shovel_head_mold": "Shovel Head Mold",
@@ -27315,10 +27315,10 @@
       "item.survival_reimagined.spoiled_rabbit": "Spoiled Rabbit",
       "block.survival_reimagined.block_of_uranium": "Block Of Uranium",
       "item.survival_reimagined.asdasd": "Asdasd",
-      "block.survival_reimagined.radiated_leaves": "Radiated Leaves",
       "advancements.primitive_tools.title": "Primitive Ingredients",
-      "block.survival_reimagined.poloshed_shale_brick_wall": "Poloshed Shale Brick Wall",
+      "block.survival_reimagined.radiated_leaves": "Radiated Leaves",
       "item.survival_reimagined.titanium_ingot": "Titanium Ingot",
+      "block.survival_reimagined.poloshed_shale_brick_wall": "Poloshed Shale Brick Wall",
       "item.survival_reimagined.steel_axe_head": "Steel Axe Head",
       "block.survival_reimagined.sheep_leg": "Sheep Leg",
       "block.survival_reborn.mineral_processing_table": "Mineral Processing Table",
@@ -27337,9 +27337,9 @@
       "item.survival_reborn.netherrack_rock": "Netherrack Rock",
       "subtitles.limb_removed": "Limb Removed",
       "block.survival_reborn.block_of_raw_manganese": "Block Of Raw Manganese",
-      "block.survival_reimagined.clay_boots_mold": "Clay Boots Mold",
-      "block.survival_reimagined.crucible": "Crucible",
       "item.survival_reborn.cherry_bark": "Cherry Bark",
+      "block.survival_reimagined.crucible": "Crucible",
+      "block.survival_reimagined.clay_boots_mold": "Clay Boots Mold",
       "item.survival_reborn.cooked_liver": "Cooked Liver",
       "item.survival_reborn.steel_pickaxe": "Steel Pickaxe",
       "item.survival_reborn.spoiled_heart": "Spoiled Heart",
@@ -27352,12 +27352,12 @@
       "item.survival_reborn.uranium_sandstone_deposit": "Uranium Sandstone Deposit",
       "block.survival_reborn.fiberous_plant_stage_0": "Fiberous Plant Stage 0",
       "item.survival_reimagined.intestines": "Intestines",
-      "block.survival_reborn.clay_axe_head_mold": "Clay Axe Head Mold",
       "block.survival_reimagined.radiant_door": "Radiant Door",
+      "block.survival_reborn.clay_axe_head_mold": "Clay Axe Head Mold",
       "item.survival_reimagined.bronze_hoe_blade": "Bronze Hoe Blade",
-      "item.survival_reimagined.hemp_fiber": "Hemp Fiber",
-      "item.survival_reborn.stone_saw": "Stone Saw",
       "item.survival_reborn.basalt_rock": "Basalt Rock",
+      "item.survival_reborn.stone_saw": "Stone Saw",
+      "item.survival_reimagined.hemp_fiber": "Hemp Fiber",
       "item.survival_reimagined.large_mangrove_bark": "Large Mangrove Bark",
       "item.survival_reimagined.fuel_upgrade": "Fuel Upgrade",
       "item.survival_reimagined.mahogany_bark": "Mahogany Bark",
@@ -27374,13 +27374,13 @@
       "block.survival_reimagined.polished_shale_wall": "Polished Shale Wall",
       "item.survival_reborn.gold_rod": "Gold Rod",
       "block.survival_reimagined.cow_head": "Cow Head",
-      "item.survival_reborn.copper_chisel": "Copper Chisel",
       "item.survival_reborn.rough_iron": "Rough Iron",
+      "item.survival_reborn.copper_chisel": "Copper Chisel",
       "item_group.survival_reborn.survival_reborn": "Survival Reborn",
       "item.survival_reborn.rough_copper": "Rough Copper",
       "item.survival_reimagined.raw_redstone": "Raw Redstone",
-      "subtitles.radiation/damage": "",
       "block.survival_reborn.deepslate_rock_block": "Deepslate Rock Block",
+      "subtitles.radiation/damage": "",
       "block.survival_reimagined.radiated_slab": "Radiated Slab",
       "item.survival_reimagined.hell_bark": "Hell Bark",
       "item.survival_reimagined.maple_bark": "Maple Bark",
@@ -27401,11 +27401,11 @@
       "item.survival_reimagined.large_cherry_bark": "Large Cherry Bark",
       "item.survival_reborn.birch_bark": "Birch Bark",
       "item.survival_reimagined.rough_brass": "Rough Brass",
-      "item.survival_reimagined.diamond_plated_ingot": "Diamond Plated Ingot",
       "block.survival_reborn.chicken_carcass": "Chicken Carcass",
-      "item.survival_reimagined.soul_sand_pile": "Soul Sand Pile",
-      "block.survival_reimagined.clay_chestplate_mold": "Clay Chestplate Mold",
+      "item.survival_reimagined.diamond_plated_ingot": "Diamond Plated Ingot",
       "advancements.steel_age.descr": "Acquire Steel",
+      "block.survival_reimagined.clay_chestplate_mold": "Clay Chestplate Mold",
+      "item.survival_reimagined.soul_sand_pile": "Soul Sand Pile",
       "item.survival_reborn.intestines": "Intestines",
       "item.survival_reimagined.backpack": "Backpack",
       "item.survival_reborn.bronze_pickaxe": "Bronze Pickaxe",
@@ -27416,8 +27416,8 @@
       "item.survival_reborn.bronze_knife": "Bronze Knife",
       "item.survival_reborn.bronze_knife_blade": "Bronze Knife Blade",
       "enchantment.survival_reimagined.perpetual_filtering": "Perpetual Filtering",
-      "item.survival_reborn.spoiled_lungs": "Spoiled Lungs",
       "item.survival_reborn.uranium_dust": "Uranium Dust",
+      "item.survival_reborn.spoiled_lungs": "Spoiled Lungs",
       "advancements.crafting_table.title": "Crafting Table",
       "item.survival_reimagined.green_glass_shard": "Green Glass Shard",
       "block.survival_reimagined.radiated_stairs": "Radiated Stairs",
@@ -27455,8 +27455,8 @@
       "gui.survival_reborn.forge_gui.label_forge": "Forge",
       "item.survival_reborn.bronze_armor_chestplate": "Bronze Chestplate",
       "block.survival_reimagined.clay_hoe_blade_mold": "Clay Hoe Blade Mold",
-      "item.survival_reborn.lungs": "Lungs",
       "item.survival_reborn.manganese_nugget": "Manganese Nugget",
+      "item.survival_reborn.lungs": "Lungs",
       "item.survival_reimagined.bronze_hammer": "Bronze Hammer",
       "item.survival_reimagined.rough_steel": "Rough Steel",
       "block.survival_reimagined.scorchia_rock": "Scorchia Rock",
@@ -27499,16 +27499,16 @@
       "item.survival_reborn.rough_manganese": "Rough Manganese",
       "item.survival_reimagined.stone_knife": "Stone Survival Knife",
       "item.survival_reborn.cured_liver": "Cured Liver",
-      "item.survival_reborn.wooden_knife": "Wooden Knife",
       "block.survival_reborn.helmet_mold": "Helmet Mold",
+      "item.survival_reborn.wooden_knife": "Wooden Knife",
       "item.survival_reborn.gold_chunk": "Gold Chunk",
       "item.survival_reborn.rooted_dirt_pile": "Rooted Dirt Pile",
       "advancements.mpt.descr": "Craft a Mineral Processing Table",
       "item.survival_reimagined.rough_turanite": "Rough Turanite",
       "item.survival_reimagined.large_spruce_bark": "Large Spruce Bark",
       "item.survival_reimagined.gold_rod": "Gold Rod",
-      "item.survival_reimagined.raw_manganese": "Raw Manganese",
       "subtitles.chimes": "",
+      "item.survival_reimagined.raw_manganese": "Raw Manganese",
       "item.survival_reborn.dirt_pile": "Dirt Pile",
       "item.survival_reborn.spoiled_beef": "Spoiled Beef",
       "subtitles.forge_close": "Forge Closed",
@@ -29318,6 +29318,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "gems",
+            "children": []
           }
         ]
       },
@@ -29343,7 +29347,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.2.3-BETA",
+    "version": "1.2.4",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",

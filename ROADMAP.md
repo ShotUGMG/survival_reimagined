@@ -28,3 +28,5 @@ gems and necklaces
  - lapis - passive XP chance (1-5 points, 3% chance).
 
  - gem geodes drops from gem based ores, requiring chisel to crack and get unprocessed gems
+ 
+ - fruits
