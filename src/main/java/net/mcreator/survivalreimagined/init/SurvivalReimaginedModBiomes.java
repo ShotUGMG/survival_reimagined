@@ -51,8 +51,8 @@ public class SurvivalReimaginedModBiomes {
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
 					addParameterPoint(parameters,
-							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(1.7f, 2.0f),
-									Climate.Parameter.span(0f, 0.75f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "radiated_forest")))));
+							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0f), Climate.Parameter.span(-0.5f, 0.6f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(1.6f, 2.0f),
+									Climate.Parameter.span(0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "radiated_forest")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));

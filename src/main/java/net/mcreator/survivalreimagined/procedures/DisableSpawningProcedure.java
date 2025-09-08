@@ -31,7 +31,7 @@ public class DisableSpawningProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true) {
+		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:skeletons")))
 					|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:zombies"))) && !(entity instanceof BloodMoonZombieEntity)) {
 				if (event instanceof ICancellableEvent _cancellable) {

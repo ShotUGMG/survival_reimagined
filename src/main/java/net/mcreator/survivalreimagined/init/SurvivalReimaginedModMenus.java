@@ -16,6 +16,7 @@ import net.mcreator.survivalreimagined.world.inventory.MPTGUIMenu;
 import net.mcreator.survivalreimagined.world.inventory.ForgeGUIMenu;
 import net.mcreator.survivalreimagined.world.inventory.BackpackGUIMenu;
 import net.mcreator.survivalreimagined.world.inventory.AdvancedAlloyForgeGUIMenu;
+import net.mcreator.survivalreimagined.world.inventory.AAFScriptureGUIMenu;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 public class SurvivalReimaginedModMenus {
@@ -25,4 +26,5 @@ public class SurvivalReimaginedModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<MPTGUIMenu>> MPTGUI = REGISTRY.register("mptgui", () -> IMenuTypeExtension.create(MPTGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BackpackGUIMenu>> BACKPACK_GUI = REGISTRY.register("backpack_gui", () -> IMenuTypeExtension.create(BackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AdvancedAlloyForgeGUIMenu>> ADVANCED_ALLOY_FORGE_GUI = REGISTRY.register("advanced_alloy_forge_gui", () -> IMenuTypeExtension.create(AdvancedAlloyForgeGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<AAFScriptureGUIMenu>> AAF_SCRIPTURE_GUI = REGISTRY.register("aaf_scripture_gui", () -> IMenuTypeExtension.create(AAFScriptureGUIMenu::new));
 }

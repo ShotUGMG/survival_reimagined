@@ -2,7 +2,7 @@
   "description": {
     "translate": "enchantment.survival_reimagined.perpetual_filtering"
   },
-  "supported_items": "survival_reimagined:gas_mask_armor_helmet",
+  "supported_items": "survival_reimagined:gas_mask_helmet",
   "weight": 10,
   "max_level": 1,
   "min_cost": {

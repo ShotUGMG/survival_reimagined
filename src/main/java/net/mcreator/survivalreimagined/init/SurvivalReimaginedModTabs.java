@@ -376,7 +376,6 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.BLOCK_OF_URANIUM.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.GAS_MASK_FILTER.get());
 				tabData.accept(SurvivalReimaginedModItems.HEMP_MESH.get());
-				tabData.accept(SurvivalReimaginedModItems.GAS_MASK_ARMOR_HELMET.get());
 				tabData.accept(SurvivalReimaginedModItems.USED_FILTER.get());
 				tabData.accept(SurvivalReimaginedModBlocks.URANIUM_ROD.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.RADIANT_TRAPDOOR.get().asItem());
@@ -419,6 +418,27 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.UMBRAN_B_ARK.get());
 				tabData.accept(SurvivalReimaginedModItems.EMPYREAL_BARK.get());
 				tabData.accept(SurvivalReimaginedModItems.HELL_BARK.get());
+				tabData.accept(SurvivalReimaginedModBlocks.SILVER_ORE.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.RAW_SILVER.get());
+				tabData.accept(SurvivalReimaginedModItems.ROUGH_SILVER.get());
+				tabData.accept(SurvivalReimaginedModItems.SILVER_INGOT.get());
+				tabData.accept(SurvivalReimaginedModBlocks.RAW_SILVER_BLOCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.SILVER_BLOCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.SILVER_NUGGET.get());
+				tabData.accept(SurvivalReimaginedModItems.RAW_SILVER_NUGGET.get());
+				tabData.accept(SurvivalReimaginedModBlocks.SAPPHIRE_ORE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.SAPPHIRE.get());
+				tabData.accept(SurvivalReimaginedModItems.SMALL_SAPPHIRE.get());
+				tabData.accept(SurvivalReimaginedModItems.SAPPHIRE_GEODE.get());
+				tabData.accept(SurvivalReimaginedModItems.DEEPSLATE_SAPPHIRE_GEODE.get());
+				tabData.accept(SurvivalReimaginedModItems.EMBEDDED_SAPPHIRE.get());
+				tabData.accept(SurvivalReimaginedModItems.DEEPSLATE_EMBEDDED_SAPPHIRE.get());
+				tabData.accept(SurvivalReimaginedModBlocks.SAPPHIRE_BLOCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.SAPPHIRE_SILVER_RUNE.get());
+				tabData.accept(SurvivalReimaginedModItems.SAPPHIRE_GOLD_RUNE.get());
+				tabData.accept(SurvivalReimaginedModItems.AAF_SCRIPTURE.get());
+				tabData.accept(SurvivalReimaginedModItems.GAS_MASK_HELMET.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

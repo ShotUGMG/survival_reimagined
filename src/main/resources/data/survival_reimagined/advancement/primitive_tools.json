@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "survival_reimagined:hemp_fiber"
+      "id": "minecraft:stone_axe"
     },
     "title": {
       "translate": "advancements.primitive_tools.title"
@@ -21,61 +21,16 @@
         "items": [
           {
             "items": [
-              "survival_reimagined:hemp_fiber"
+              "minecraft:stone_axe"
             ],
             "count": {
               "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "primitive_tools_1": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:stone_rock"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "primitive_tools_2": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:stick"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
+              "max": 1
             }
           }
         ]
       }
     }
   },
-  "rewards": {
-    "experience": 0,
-    "recipes": [
-      "minecraft:stone_pickaxe",
-      "minecraft:stone_axe",
-      "minecraft:stone_sword",
-      "minecraft:stone_shovel",
-      "minecraft:stone_hoe",
-      "minecraft:furnace",
-      "survival_reimagined:stone_saw_recipe",
-      "survival_reimagined:stone_hammer_recipe"
-    ]
-  },
-  "parent": "survival_reimagined:sharper_flint"
+  "parent": "survival_reimagined:fibers"
 }

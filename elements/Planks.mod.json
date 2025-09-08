@@ -3,35 +3,22 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Planks",
-    "achievementDescription": "Make a Saw and use it to make planks",
+    "achievementDescription": "Use a saw to make some planks",
     "achievementIcon": {
       "value": "CUSTOM:OakPlank"
     },
     "background": "Default",
     "disableDisplay": false,
-    "showPopup": false,
-    "announceToChat": false,
+    "showPopup": true,
+    "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
-    "rewardRecipes": [
-      "MRTRecipe",
-      "WoodenSword",
-      "WoodenPickaxe",
-      "WoodenAxe",
-      "WoodenShovel",
-      "WoodenHoe",
-      "WoodenHelmet",
-      "WoodenChestplate",
-      "WoodenLeggings",
-      "WoodenBoots",
-      "WoodenSawRecipe",
-      "WoodenHammerRecipe"
-    ],
+    "rewardRecipes": [],
     "rewardXP": 0,
     "achievementType": "task",
     "parent": {
       "value": "CUSTOM:CraftingTable"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:OakPlank</field></block></value></block></next></block></xml>"
   }
 }

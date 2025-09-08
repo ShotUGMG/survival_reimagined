@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:advanced_reactor_rod"
+    },
+    "title": {
+      "translate": "advancements.advanced_forging_operations.title"
+    },
+    "description": {
+      "translate": "advancements.advanced_forging_operations.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "advanced_forging_operations_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:build_aaf"
+}

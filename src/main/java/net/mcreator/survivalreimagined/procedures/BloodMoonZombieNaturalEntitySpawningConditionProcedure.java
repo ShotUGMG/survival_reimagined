@@ -6,7 +6,7 @@ import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 
 public class BloodMoonZombieNaturalEntitySpawningConditionProcedure {
 	public static boolean execute(LevelAccessor world) {
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true) {
+		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
 			return true;
 		}
 		return false;

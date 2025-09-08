@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:hemp_leaf"
+    },
+    "title": {
+      "translate": "advancements.growing_hemp.title"
+    },
+    "description": {
+      "translate": "advancements.growing_hemp.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "growing_hemp_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:fibers"
+}

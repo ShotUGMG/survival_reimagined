@@ -29,6 +29,8 @@ import net.mcreator.survivalreimagined.block.StrippedRadiantLogBlock;
 import net.mcreator.survivalreimagined.block.StoneRockBlocBlock;
 import net.mcreator.survivalreimagined.block.SteelTrapdoorBlock;
 import net.mcreator.survivalreimagined.block.SteelDoorBlock;
+import net.mcreator.survivalreimagined.block.SilverOreBlock;
+import net.mcreator.survivalreimagined.block.SilverBlockBlock;
 import net.mcreator.survivalreimagined.block.ShovelHeadMoldBlock;
 import net.mcreator.survivalreimagined.block.SheepLegBlock;
 import net.mcreator.survivalreimagined.block.SheepHeadBlock;
@@ -43,7 +45,10 @@ import net.mcreator.survivalreimagined.block.ShaleBlock;
 import net.mcreator.survivalreimagined.block.ScoriaRockBlock;
 import net.mcreator.survivalreimagined.block.ScorchiaRockBlock;
 import net.mcreator.survivalreimagined.block.SawBladeMoldBlock;
+import net.mcreator.survivalreimagined.block.SapphireOreBlock;
+import net.mcreator.survivalreimagined.block.SapphireBlockBlock;
 import net.mcreator.survivalreimagined.block.SandSaltDepositBlock;
+import net.mcreator.survivalreimagined.block.RawSilverBlockBlock;
 import net.mcreator.survivalreimagined.block.RadiatedTallGrassBlock;
 import net.mcreator.survivalreimagined.block.RadiatedStairsBlock;
 import net.mcreator.survivalreimagined.block.RadiatedSlabBlock;
@@ -99,6 +104,7 @@ import net.mcreator.survivalreimagined.block.DripstoneRockBlockBlock;
 import net.mcreator.survivalreimagined.block.DioriteRockBLockBlock;
 import net.mcreator.survivalreimagined.block.DeepslateUraniumOreBlock;
 import net.mcreator.survivalreimagined.block.DeepslateTitaniumOreBlock;
+import net.mcreator.survivalreimagined.block.DeepslateSapphireOreBlock;
 import net.mcreator.survivalreimagined.block.DeepslateRockBlockBlock;
 import net.mcreator.survivalreimagined.block.DeepslateManganeseOreBlock;
 import net.mcreator.survivalreimagined.block.CrucibleBlock;
@@ -279,6 +285,12 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> ADVANCED_ALLOY_FORGE = REGISTRY.register("advanced_alloy_forge", AdvancedAlloyForgeBlock::new);
 	public static final DeferredBlock<Block> PLATED_DIAMOND_BLOCK = REGISTRY.register("plated_diamond_block", PlatedDiamondBlockBlock::new);
 	public static final DeferredBlock<Block> NETHERITE_SCRAP_BLOCK = REGISTRY.register("netherite_scrap_block", NetheriteScrapBlockBlock::new);
+	public static final DeferredBlock<Block> SILVER_ORE = REGISTRY.register("silver_ore", SilverOreBlock::new);
+	public static final DeferredBlock<Block> RAW_SILVER_BLOCK = REGISTRY.register("raw_silver_block", RawSilverBlockBlock::new);
+	public static final DeferredBlock<Block> SILVER_BLOCK = REGISTRY.register("silver_block", SilverBlockBlock::new);
+	public static final DeferredBlock<Block> SAPPHIRE_ORE = REGISTRY.register("sapphire_ore", SapphireOreBlock::new);
+	public static final DeferredBlock<Block> DEEPSLATE_SAPPHIRE_ORE = REGISTRY.register("deepslate_sapphire_ore", DeepslateSapphireOreBlock::new);
+	public static final DeferredBlock<Block> SAPPHIRE_BLOCK = REGISTRY.register("sapphire_block", SapphireBlockBlock::new);
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

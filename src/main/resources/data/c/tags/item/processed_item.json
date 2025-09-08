@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:sapphire",
+    "minecraft:diamond",
+    "minecraft:emerald",
+    "survival_reimagined:small_sapphire",
+    "survival_reimagined:small_diamond",
+    "survival_reimagined:small_emerald"
+  ]
+}

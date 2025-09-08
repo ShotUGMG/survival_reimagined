@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:crucible"
+    },
+    "title": {
+      "translate": "advancements.the_crucible.title"
+    },
+    "description": {
+      "translate": "advancements.the_crucible.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_crucible_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:crucible"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:clay_works"
+}

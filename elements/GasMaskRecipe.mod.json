@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:GasMaskArmor.helmet"
+      "value": "CUSTOM:GasMask.helmet"
     },
     "name": "gas_mask_recipe",
     "namespace": "mod"

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:cow_hide"
+    },
+    "title": {
+      "translate": "advancements.animal_hide.title"
+    },
+    "description": {
+      "translate": "advancements.animal_hide.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "animal_hide_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:animal_slaughter"
+}

@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:sapphire_block",
+    "survival_reimagined:deepslate_sapphire_ore",
+    "survival_reimagined:sapphire_ore",
+    "survival_reimagined:silver_block",
+    "survival_reimagined:raw_silver_block",
+    "survival_reimagined:silver_ore",
     "survival_reimagined:plated_diamond_block",
     "survival_reimagined:block_of_raw_redstone",
     "survival_reimagined:block_of_raw_manganese",

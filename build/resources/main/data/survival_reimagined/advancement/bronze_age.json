@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "survival_reimagined:bronze_ingot"
+      "id": "survival_reimagined:rough_bronze"
     },
     "title": {
       "translate": "advancements.bronze_age.title"
@@ -25,18 +25,12 @@
             ],
             "count": {
               "min": 1,
-              "max": 64
+              "max": 1
             }
           }
         ]
       }
     }
-  },
-  "rewards": {
-    "experience": 0,
-    "recipes": [
-      "survival_reimagined:block_of_bronze_recipe"
-    ]
   },
   "parent": "survival_reimagined:ready_for_alloys"
 }

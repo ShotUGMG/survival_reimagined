@@ -14,6 +14,7 @@ import net.mcreator.survivalreimagined.client.gui.MPTGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.ForgeGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.BackpackGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.AdvancedAlloyForgeGUIScreen;
+import net.mcreator.survivalreimagined.client.gui.AAFScriptureGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SurvivalReimaginedModScreens {
@@ -24,5 +25,6 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.MPTGUI.get(), MPTGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.ADVANCED_ALLOY_FORGE_GUI.get(), AdvancedAlloyForgeGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.AAF_SCRIPTURE_GUI.get(), AAFScriptureGUIScreen::new);
 	}
 }

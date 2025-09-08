@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:clay_pickaxe_head_mold"
+    },
+    "title": {
+      "translate": "advancements.molds.title"
+    },
+    "description": {
+      "translate": "advancements.molds.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "molds_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:ready_for_alloys"
+}

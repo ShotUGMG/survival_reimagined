@@ -18,7 +18,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.GasMaskFilterSpecialInformationProcedure;
-import net.mcreator.survivalreimagined.procedures.GasMaskCraftedProcedure;
+import net.mcreator.survivalreimagined.procedures.GasMaskFilterRightclickedProcedure;
 
 import java.util.List;
 
@@ -49,7 +49,7 @@ public class GasMaskFilterItem extends Item {
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
 		entity.startUsingItem(hand);
-		GasMaskCraftedProcedure.execute(world, entity);
+		GasMaskFilterRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
 	}
 }

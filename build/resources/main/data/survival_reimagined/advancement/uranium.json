@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:raw_uraninite"
+    },
+    "title": {
+      "translate": "advancements.uranium.title"
+    },
+    "description": {
+      "translate": "advancements.uranium.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "uranium_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:raw_uraninite"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:radiation_biome"
+}

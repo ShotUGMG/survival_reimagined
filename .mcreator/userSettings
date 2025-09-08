@@ -2,10 +2,11 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 484,
+  "projectBrowserSplitPos": 517,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Survival Reimagined]"
+      "[, Survival Reimagined]",
+      "[, Survival Reimagined, Resources (Gradle)]"
     ]
   }
 }

@@ -10,8 +10,8 @@
       "translate": "advancements.clay_works.descr"
     },
     "frame": "task",
-    "show_toast": false,
-    "announce_to_chat": false,
+    "show_toast": true,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
@@ -25,29 +25,12 @@
             ],
             "count": {
               "min": 1,
-              "max": 64
+              "max": 1
             }
           }
         ]
       }
     }
-  },
-  "rewards": {
-    "experience": 0,
-    "recipes": [
-      "survival_reimagined:sword_mold",
-      "survival_reimagined:pickaxe_mold",
-      "survival_reimagined:shovel_mold",
-      "survival_reimagined:axe_mold",
-      "survival_reimagined:hoe_mold",
-      "survival_reimagined:saw_mold",
-      "survival_reimagined:hammer_mold",
-      "survival_reimagined:helmet_mold_recipe",
-      "survival_reimagined:chestplate_mold_recipe",
-      "survival_reimagined:leggings_mold_recipe",
-      "survival_reimagined:boots_mold_recipe",
-      "survival_reimagined:crucible_recipe"
-    ]
   },
   "parent": "survival_reimagined:crafting_table"
 }

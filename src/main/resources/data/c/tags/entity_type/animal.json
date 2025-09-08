@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "cow",
+    "pig",
+    "sheep",
+    "wolf",
+    "horse",
+    "chicken",
+    "rabbit",
+    "tropical_fish",
+    "cod",
+    "salmon",
+    "pufferfish",
+    "axolotl",
+    "armadillo",
+    "bat",
+    "cat"
+  ]
+}

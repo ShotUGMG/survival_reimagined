@@ -3,9 +3,6 @@ package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -38,13 +35,12 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.world.inventory.MPTGUIMenu;
 import net.mcreator.survivalreimagined.procedures.MineralProcessingTableRedstoneOnProcedure;
 import net.mcreator.survivalreimagined.procedures.MineralProcessingTableRedstoneOffProcedure;
 import net.mcreator.survivalreimagined.procedures.MineralProcessingTableOnTickUpdateProcedure;
-import net.mcreator.survivalreimagined.procedures.MineralProcessingTableOnRandomClientDisplayTickProcedure;
+import net.mcreator.survivalreimagined.procedures.MineralProcessingTableBlockAddedProcedure;
 import net.mcreator.survivalreimagined.block.entity.MineralProcessingTableBlockEntity;
 
 import io.netty.buffer.Unpooled;
@@ -116,6 +112,7 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 5);
+		MineralProcessingTableBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -133,17 +130,6 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 		super.tick(blockstate, world, pos, random);
 		MineralProcessingTableOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 5);
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
-		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		MineralProcessingTableOnRandomClientDisplayTickProcedure.execute(world, x, y, z);
 	}
 
 	@Override

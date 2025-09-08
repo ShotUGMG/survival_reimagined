@@ -5,7 +5,7 @@ cpw.mods.bootstraplauncher.BootstrapLauncher
 --launchTarget
 forgeclientdev
 --version
-21.1.169
+21.1.200
 --assetIndex
 17
 --assetsDir
@@ -13,11 +13,11 @@ C:\\Users\\ashto\\.gradle\\caches\\neoformruntime\\assets
 --gameDir
 .
 --fml.fmlVersion
-4.0.39
+4.0.41
 --fml.mcVersion
 1.21.1
 --fml.neoForgeVersion
-21.1.169
+21.1.200
 --fml.neoFormVersion
 20240808.144430
 

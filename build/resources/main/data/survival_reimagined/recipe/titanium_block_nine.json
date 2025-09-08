@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:block_of_titanium"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:titanium_ingot",
+    "count": 9
+  }
+}

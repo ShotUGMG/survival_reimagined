@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:yield_upgrade_mkiii"
+    },
+    "title": {
+      "translate": "advancements.fully_upgrade_forge.title"
+    },
+    "description": {
+      "translate": "advancements.fully_upgrade_forge.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fully_upgrade_forge_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:a_forge_upgrade"
+}

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:obsidian_rock"
+    },
+    "title": {
+      "translate": "advancements.obsidian_in_the_rocks.title"
+    },
+    "description": {
+      "translate": "advancements.obsidian_in_the_rocks.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "obsidian_in_the_rocks_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:forged_steel"
+}

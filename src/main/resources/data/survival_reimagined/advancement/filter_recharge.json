@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:gas_mask_filter"
+    },
+    "title": {
+      "translate": "advancements.filter_recharge.title"
+    },
+    "description": {
+      "translate": "advancements.filter_recharge.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "filter_recharge_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:radiation_protected"
+}

@@ -45,4 +45,8 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> GASMASK_FILTER = REGISTRY.register("gasmask/filter", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "gasmask/filter")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> NETHERITE_SCRAP_SOUNDS = REGISTRY.register("netherite_scrap/sounds",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "netherite_scrap/sounds")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GEODE_CRACK = REGISTRY.register("geode/crack", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "geode/crack")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> ECLIPSE_GUST = REGISTRY.register("eclipse_gust", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "eclipse_gust")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GAS_MASK_BREATH = REGISTRY.register("gas_mask_breath", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "gas_mask_breath")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FILTER_MENDS = REGISTRY.register("filter_mends", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "filter_mends")));
 }

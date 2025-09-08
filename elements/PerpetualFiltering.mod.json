@@ -11,7 +11,7 @@
     "incompatibleEnchantments": [],
     "supportedItems": [
       {
-        "value": "CUSTOM:GasMaskArmor.helmet"
+        "value": "CUSTOM:GasMask.helmet"
       }
     ],
     "isTreasureEnchantment": false,

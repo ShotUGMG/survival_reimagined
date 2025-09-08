@@ -66,6 +66,8 @@ public class SurvivalReimaginedModVariables {
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
 			PlayerVariables clone = new PlayerVariables();
+			clone.GaskMaskDamage = original.GaskMaskDamage;
+			clone.GasMaskHeal = original.GasMaskHeal;
 			if (!event.isWasDeath()) {
 				clone.HungerSprinting = original.HungerSprinting;
 				clone.HungerSwimming = original.HungerSwimming;
@@ -100,11 +102,12 @@ public class SurvivalReimaginedModVariables {
 		public double HeartBeat = 0;
 		public double SpoilTimer = 0;
 		public double EffectDanger = 0;
-		public boolean isBloodMoon = false;
 		public boolean isNotDay = false;
 		public boolean AnnouncementPlayed = false;
-		public boolean TextureLoaded = false;
 		public double BloodMoonChanceRan = 0;
+		public boolean isSolarEclipse = false;
+		public double EclipseChanceRan = 0;
+		public boolean EclipseAnnouncement = false;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -116,11 +119,12 @@ public class SurvivalReimaginedModVariables {
 			HeartBeat = nbt.getDouble("HeartBeat");
 			SpoilTimer = nbt.getDouble("SpoilTimer");
 			EffectDanger = nbt.getDouble("EffectDanger");
-			isBloodMoon = nbt.getBoolean("isBloodMoon");
 			isNotDay = nbt.getBoolean("isNotDay");
 			AnnouncementPlayed = nbt.getBoolean("AnnouncementPlayed");
-			TextureLoaded = nbt.getBoolean("TextureLoaded");
 			BloodMoonChanceRan = nbt.getDouble("BloodMoonChanceRan");
+			isSolarEclipse = nbt.getBoolean("isSolarEclipse");
+			EclipseChanceRan = nbt.getDouble("EclipseChanceRan");
+			EclipseAnnouncement = nbt.getBoolean("EclipseAnnouncement");
 		}
 
 		@Override
@@ -128,11 +132,12 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("HeartBeat", HeartBeat);
 			nbt.putDouble("SpoilTimer", SpoilTimer);
 			nbt.putDouble("EffectDanger", EffectDanger);
-			nbt.putBoolean("isBloodMoon", isBloodMoon);
 			nbt.putBoolean("isNotDay", isNotDay);
 			nbt.putBoolean("AnnouncementPlayed", AnnouncementPlayed);
-			nbt.putBoolean("TextureLoaded", TextureLoaded);
 			nbt.putDouble("BloodMoonChanceRan", BloodMoonChanceRan);
+			nbt.putBoolean("isSolarEclipse", isSolarEclipse);
+			nbt.putDouble("EclipseChanceRan", EclipseChanceRan);
+			nbt.putBoolean("EclipseAnnouncement", EclipseAnnouncement);
 			return nbt;
 		}
 
@@ -158,6 +163,7 @@ public class SurvivalReimaginedModVariables {
 		public boolean isFullMoon = false;
 		public boolean sculk_hearts = false;
 		public double MPT_Time = 0;
+		public boolean isBloodMoon = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -169,6 +175,7 @@ public class SurvivalReimaginedModVariables {
 			isFullMoon = nbt.getBoolean("isFullMoon");
 			sculk_hearts = nbt.getBoolean("sculk_hearts");
 			MPT_Time = nbt.getDouble("MPT_Time");
+			isBloodMoon = nbt.getBoolean("isBloodMoon");
 		}
 
 		@Override
@@ -176,6 +183,7 @@ public class SurvivalReimaginedModVariables {
 			nbt.putBoolean("isFullMoon", isFullMoon);
 			nbt.putBoolean("sculk_hearts", sculk_hearts);
 			nbt.putDouble("MPT_Time", MPT_Time);
+			nbt.putBoolean("isBloodMoon", isBloodMoon);
 			return nbt;
 		}
 
@@ -239,12 +247,16 @@ public class SurvivalReimaginedModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public double HungerSprinting = 0;
 		public double HungerSwimming = 0;
+		public double GaskMaskDamage = 0;
+		public double GasMaskHeal = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("HungerSprinting", HungerSprinting);
 			nbt.putDouble("HungerSwimming", HungerSwimming);
+			nbt.putDouble("GaskMaskDamage", GaskMaskDamage);
+			nbt.putDouble("GasMaskHeal", GasMaskHeal);
 			return nbt;
 		}
 
@@ -252,6 +264,8 @@ public class SurvivalReimaginedModVariables {
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			HungerSprinting = nbt.getDouble("HungerSprinting");
 			HungerSwimming = nbt.getDouble("HungerSwimming");
+			GaskMaskDamage = nbt.getDouble("GaskMaskDamage");
+			GasMaskHeal = nbt.getDouble("GasMaskHeal");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

@@ -41,7 +41,7 @@ public class CantSleepProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true) {
+		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
 			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.isSleeping()) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FELL_OUT_OF_WORLD)), (float) 0.01);

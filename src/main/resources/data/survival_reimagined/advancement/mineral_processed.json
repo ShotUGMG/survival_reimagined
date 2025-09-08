@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:embedded_diamond"
+    },
+    "title": {
+      "translate": "advancements.mineral_processed.title"
+    },
+    "description": {
+      "translate": "advancements.mineral_processed.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mineral_processed_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:mineral_processing"
+}

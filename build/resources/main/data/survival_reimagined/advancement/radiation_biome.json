@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:radiation_item"
+    },
+    "title": {
+      "translate": "advancements.radiation_biome.title"
+    },
+    "description": {
+      "translate": "advancements.radiation_biome.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "radiation_biome_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "survival_reimagined:radiated_forest"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:plant_mesh"
+}

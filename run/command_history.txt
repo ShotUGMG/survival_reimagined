@@ -1,50 +1,50 @@
-/gamerule doDaylightCycle true
-/gamerule doWeatherCycle false
-/weather clear
-/time set day
-/tick rate 3000
-/time set day
-/tick rate 3000
-/time set day
-/tick rate 1000
-/tick rate 3000
-/tick rate 1000
-/tick rate 20
-/tick rate 3000
-/tick rate 20
-/time add 40
-/tick rate 3000
-/gamerule doWeatherCycle true
-/tick rate 3000
-/gamerule doWeatherCycle false
-/tick rate 3000
-/tick rate 20
-/locate biome survival_reimagined:radiated_forest
-/tp @s 3433 0 -1357
-/difficulty easy
-/gamerule doDaylightCycle false
-/effect give Dev minecraft:hunger 30
-/weather bloodmoon
-/gamerule doDaylightCycle true
-/tick rate 3000
-/effect give Dev minecraft:strength infinite 100
-/summon minecraft:zombie
 /time set night
-/locate structure survival_reimagined:oak_house
-/tp @s -560 ~ -592
-/place structure survival_reimagined:oak_house
-/gamerule doTileDrops true
+/tick rate 3000
+/tick rate 20
+/time set day
 /time set night
-/gamerule doDaylightCycle false
 /time set midnight
-/difficulty hard
-/gamerule doMobSpawning true
-/difficulty hard
-/gamerule randomTickSpeed 3000
-/tick rate 3000
-/tick rate 10000
+/time set day
+/tick rate 2000
+/tick rate 6000
+/print number
+/tick rate 6000
+/print logic
+/tick rate 6000
+/time set day
+/tick rate 6000
+/print number
 /tick rate 20
-/gamerule randomTickSpeed 3
-/summon minecraft:zombie
+/time set day
+/event eclipse
+/time set night
+/event bloodmoon
+/time set day
+/event
+/event bloodmoon
+/time set day
+/time set night
+/event eclipse
+/tick rate 6000
+/advancement grant Dev from survival_reimagined:survival_reimagined
+/time set day
+/time set night
+/time set day
+/difficulty peaceful
 /effect give Dev minecraft:night_vision infinite
-/summon minecraft:zombie
+/locate biome survival_reimagined:radiated_forest
+/tp @s -442 -19 286
+/give Dev minecraft:arrow
+/enchant Dev survival_reimagined:perpetual_filtering
+/difficulty peaceful
+/effect give Dev minecraft:night_vision infinite
+/locate biome survival_reimagined:radiated_forest
+/tp @s -387 25 -322
+/effect give Dev minecraft:night_vision infinite
+/summon minecraft:slime
+/advancement grant Dev from survival_reimagined:survival_reimagined
+/advancement revoke Dev from survival_reimagined:aaf
+/difficulty peaceful
+/give Dev minecraft:command_block
+/re
+/reload

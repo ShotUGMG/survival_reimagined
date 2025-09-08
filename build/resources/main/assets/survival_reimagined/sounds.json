@@ -315,5 +315,52 @@
         "stream": false
       }
     ]
+  },
+  "geode/crack": {
+    "subtitle": "subtitles.geode/crack",
+    "sounds": [
+      {
+        "name": "survival_reimagined:geode_crack",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:geode_crack1",
+        "stream": false
+      }
+    ]
+  },
+  "eclipse_gust": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:eclipse_sound",
+        "stream": false
+      }
+    ]
+  },
+  "gas_mask_breath": {
+    "subtitle": "subtitles.gas_mask_breath",
+    "sounds": [
+      {
+        "name": "survival_reimagined:gas_mack_breath",
+        "stream": false
+      }
+    ]
+  },
+  "filter_mends": {
+    "subtitle": "subtitles.filter_mends",
+    "sounds": [
+      {
+        "name": "survival_reimagined:enchant3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:enchant2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:enchant1",
+        "stream": false
+      }
+    ]
   }
 }

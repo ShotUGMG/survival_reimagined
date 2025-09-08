@@ -1,0 +1,8 @@
+{
+  "_fv": 73,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "minecraft:chests/village/village_toolsmith",
+    "modifierTable": "AAFScriptureLoot"
+  }
+}

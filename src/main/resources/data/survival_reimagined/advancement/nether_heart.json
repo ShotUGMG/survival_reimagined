@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:heart_of_the_nether"
+    },
+    "title": {
+      "translate": "advancements.nether_heart.title"
+    },
+    "description": {
+      "translate": "advancements.nether_heart.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nether_heart_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:heart_bloodmoon"
+}

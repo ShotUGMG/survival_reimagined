@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:bronze_pickaxe_head"
+    },
+    "title": {
+      "translate": "advancements.forged_bronze.title"
+    },
+    "description": {
+      "translate": "advancements.forged_bronze.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "forged_bronze_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:bronze_ingots"
+}

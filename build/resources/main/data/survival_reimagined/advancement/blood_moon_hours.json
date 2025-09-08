@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:blood_moon_item"
+    },
+    "title": {
+      "translate": "advancements.blood_moon_hours.title"
+    },
+    "description": {
+      "translate": "advancements.blood_moon_hours.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "blood_moon_hours_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:survival_reimagined"
+}

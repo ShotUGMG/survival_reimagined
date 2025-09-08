@@ -30,10 +30,10 @@ public class BloodMoonAnnouncementProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == true && SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed == false) {
+		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true && SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed == false) {
 			SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed = true;
 			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-			SurvivalReimaginedMod.queueServerWork(20, () -> {
+			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (!world.isClientSide() && world.getServer() != null)
 					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A74The Bloodmoon is Rising...."), false);
 				if (world instanceof Level _level) {
@@ -44,7 +44,7 @@ public class BloodMoonAnnouncementProcedure {
 					}
 				}
 			});
-		} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).isBloodMoon == false && world instanceof Level _lvl3 && _lvl3.isDay()) {
+		} else if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == false && world instanceof Level _lvl3 && _lvl3.isDay()) {
 			SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed = false;
 			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 		}

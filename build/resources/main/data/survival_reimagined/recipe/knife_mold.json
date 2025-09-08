@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:clay_ball"
+    },
+    "b": {
+      "item": "survival_reimagined:wooden_knife"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:clay_knife_mold",
+    "count": 1
+  }
+}

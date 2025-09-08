@@ -38,7 +38,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "GasMaskCrafted"
+      "name": "GasMaskFilterRightclicked"
     },
     "enableRanged": false,
     "shootConstantly": false,

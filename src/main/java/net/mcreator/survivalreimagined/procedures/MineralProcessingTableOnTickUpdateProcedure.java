@@ -38,7 +38,7 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))
 				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp4
 						&& (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp4)) == true) {
 			MineralProcessingRecipesProcedure.execute(world, x, y, z);
@@ -70,7 +70,7 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get() || (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get() || (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
 							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -88,7 +88,7 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
