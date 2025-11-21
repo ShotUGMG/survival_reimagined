@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:shale_uraninite_ore",
+    "survival_reimagined:uraninite_ore",
+    "survival_reimagined:deepslate_uraninite_ore",
+    "survival_reimagined:basalt_uraninite_ore",
+    "survival_reimagined:uranophane_ore",
+    "survival_reimagined:deepslate_uranophane_ore",
+    "survival_reimagined:basalt_uranophane_ore",
+    "survival_reimagined:shale_uranophane_ore"
+  ]
+}

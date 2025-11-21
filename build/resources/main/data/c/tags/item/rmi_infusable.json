@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#c:rmi_infusable/armor",
+    "#c:rmi_infusable/tool",
+    "#c:rmi_infusable/weapon"
+  ]
+}

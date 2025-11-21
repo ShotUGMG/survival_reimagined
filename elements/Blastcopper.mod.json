@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "TAG:c:metal_rocks/copper"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:RoughCopper"
+    },
+    "name": "blastcopper",
+    "namespace": "mod"
+  }
+}

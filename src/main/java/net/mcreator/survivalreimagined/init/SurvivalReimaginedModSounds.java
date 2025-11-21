@@ -24,8 +24,6 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> PLAYER_DIGGING_STONE = REGISTRY.register("player_digging.stone",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "player_digging.stone")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> LIMB_REMOVE = REGISTRY.register("limb_remove", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "limb_remove")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_STEEL_PLACE = REGISTRY.register("block/steel_place", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/steel_place")));
-	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_STEEL_STEP = REGISTRY.register("block/steel_step", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/steel_step")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> CHIMES = REGISTRY.register("chimes", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "chimes")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BLOODZOMBIE_HURT = REGISTRY.register("bloodzombie_hurt", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "bloodzombie_hurt")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> BLOODZOMBIE_IDLE = REGISTRY.register("bloodzombie_idle", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "bloodzombie_idle")));
@@ -49,4 +47,27 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> ECLIPSE_GUST = REGISTRY.register("eclipse_gust", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "eclipse_gust")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> GAS_MASK_BREATH = REGISTRY.register("gas_mask_breath", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "gas_mask_breath")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> FILTER_MENDS = REGISTRY.register("filter_mends", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "filter_mends")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CRIMSON_ARACHNID_AMBIENT = REGISTRY.register("crimson_arachnid/ambient",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "crimson_arachnid/ambient")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CRIMSON_ARACHNID_DEATH = REGISTRY.register("crimson_arachnid/death",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "crimson_arachnid/death")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> CRIMSON_ARACHNID_HURT = REGISTRY.register("crimson_arachnid/hurt",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "crimson_arachnid/hurt")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GHOST_CREEPER_DEATH = REGISTRY.register("ghost_creeper/death",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "ghost_creeper/death")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GHOST_CREEPER_HIT = REGISTRY.register("ghost_creeper/hit", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "ghost_creeper/hit")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> GHOST_CREEPER_AMBIENT = REGISTRY.register("ghost_creeper/ambient",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "ghost_creeper/ambient")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SKELETON_MOB_HURT = REGISTRY.register("skeleton_mob/hurt", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "skeleton_mob/hurt")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> SKELETON_MOB_DEATH = REGISTRY.register("skeleton_mob/death",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "skeleton_mob/death")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BREAK_WISTERIA_LITTER = REGISTRY.register("break/wisteria_litter",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "break/wisteria_litter")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> PLACE_WISTERA_LITTER = REGISTRY.register("place/wistera_litter",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "place/wistera_litter")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> STEP_WISTERA_LITTER = REGISTRY.register("step/wistera_litter",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "step/wistera_litter")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_STEEL_PLACE = REGISTRY.register("block/steel_place", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/steel_place")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BLOCK_STEEL_STEP = REGISTRY.register("block/steel_step", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "block/steel_step")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> FLINT_SCRAPE = REGISTRY.register("flint_scrape", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "flint_scrape")));
 }

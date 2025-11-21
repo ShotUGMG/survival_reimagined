@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/uranium"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:uranium_ingot"
+    }
+  ]
+}

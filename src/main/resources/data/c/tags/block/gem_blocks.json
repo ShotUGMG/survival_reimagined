@@ -5,6 +5,8 @@
     "survival_reimagined:plated_diamond_block",
     "minecraft:emerald_block",
     "survival_reimagined:sapphire_block",
-    "minecraft:lapis_block"
+    "minecraft:lapis_block",
+    "survival_reimagined:block_of_ruby",
+    "survival_reimagined:block_of_amber"
   ]
 }

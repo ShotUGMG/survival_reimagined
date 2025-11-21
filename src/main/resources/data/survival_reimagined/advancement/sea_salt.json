@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:salt"
+    },
+    "title": {
+      "translate": "advancements.sea_salt.title"
+    },
+    "description": {
+      "translate": "advancements.sea_salt.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sea_salt_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:salt"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:extra_animal_meat"
+}

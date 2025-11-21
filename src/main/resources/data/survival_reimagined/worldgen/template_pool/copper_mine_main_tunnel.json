@@ -1,0 +1,39 @@
+{
+  "name": "survival_reimagined:copper_mine_main_tunnel",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:oak_copper_mine_main_tunnel_sub_tunnels_entrances1",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:oak_copper_mine_main_tunnel_sub_tunnels_entrances2",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:oak_copper_mine_main_tunnel_sub_tunnels_entrances3",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

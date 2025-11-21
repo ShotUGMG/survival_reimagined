@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "survival_reimagined:copper_mine",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 1,
+    "separation": 0,
+    "salt": 1820498267
+  }
+}

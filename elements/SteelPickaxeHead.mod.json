@@ -29,8 +29,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "DisplayInfo"
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

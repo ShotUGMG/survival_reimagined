@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:ruby_ore",
+    "survival_reimagined:deepslate_ruby_ore",
+    "survival_reimagined:basalt_ruby_ore",
+    "survival_reimagined:kimberlite_ruby_ore"
+  ]
+}

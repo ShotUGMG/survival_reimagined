@@ -61,62 +61,6 @@
       }
     ]
   },
-  "block/steel_place": {
-    "sounds": [
-      {
-        "name": "survival_reimagined:break1",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break2",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break3",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break4",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break5",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break6",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break7",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:break8",
-        "stream": false
-      }
-    ]
-  },
-  "block/steel_step": {
-    "sounds": [
-      {
-        "name": "survival_reimagined:step1",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:step2",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:step3",
-        "stream": false
-      },
-      {
-        "name": "survival_reimagined:step4",
-        "stream": false
-      }
-    ]
-  },
   "chimes": {
     "sounds": [
       {
@@ -134,6 +78,7 @@
     ]
   },
   "bloodzombie_hurt": {
+    "subtitle": "subtitles.bloodzombie_hurt",
     "sounds": [
       {
         "name": "survival_reimagined:hurt1",
@@ -154,6 +99,7 @@
     ]
   },
   "bloodzombie_idle": {
+    "subtitle": "subtitles.bloodzombie_idle",
     "sounds": [
       {
         "name": "survival_reimagined:idle1",
@@ -170,6 +116,7 @@
     ]
   },
   "bloodzombie_death": {
+    "subtitle": "subtitles.bloodzombie_death",
     "sounds": [
       {
         "name": "survival_reimagined:bloodzombie_death",
@@ -359,6 +306,271 @@
       },
       {
         "name": "survival_reimagined:enchant1",
+        "stream": false
+      }
+    ]
+  },
+  "crimson_arachnid/ambient": {
+    "subtitle": "subtitles.crimson_arachnid/ambient",
+    "sounds": [
+      {
+        "name": "survival_reimagined:crimson_spider_ambient3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:crimson_spider_ambient2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:crimson_spider_ambient1",
+        "stream": false
+      }
+    ]
+  },
+  "crimson_arachnid/death": {
+    "subtitle": "subtitles.crimson_arachnid/death",
+    "sounds": [
+      {
+        "name": "survival_reimagined:crimson_spider_death",
+        "stream": false
+      }
+    ]
+  },
+  "crimson_arachnid/hurt": {
+    "subtitle": "subtitles.crimson_arachnid/hurt",
+    "sounds": [
+      {
+        "name": "survival_reimagined:crimson_spider_hit3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:crimson_spider_hit2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:crimson_spider_hit1",
+        "stream": false
+      }
+    ]
+  },
+  "ghost_creeper/death": {
+    "subtitle": "subtitles.ghost_creeper/death",
+    "sounds": [
+      {
+        "name": "survival_reimagined:ghost_creeper_death",
+        "stream": false
+      }
+    ]
+  },
+  "ghost_creeper/hit": {
+    "subtitle": "subtitles.ghost_creeper/hit",
+    "sounds": [
+      {
+        "name": "survival_reimagined:ghost_creeper_hit3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:ghost_creeper_hit2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:ghost_creeper_hit1",
+        "stream": false
+      }
+    ]
+  },
+  "ghost_creeper/ambient": {
+    "subtitle": "subtitles.ghost_creeper/ambient",
+    "sounds": [
+      {
+        "name": "survival_reimagined:ghost_creeper_ambient3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:ghost_creeper_ambient2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:ghost_creeper_ambient1",
+        "stream": false
+      }
+    ]
+  },
+  "skeleton_mob/hurt": {
+    "subtitle": "subtitles.skeleton_mob/hurt",
+    "sounds": [
+      {
+        "name": "survival_reimagined:hurt1_skeleton_mob",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:hurt2_skeleton_mob.ogg",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:hurt3_skeleton_mob",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:hurt4_skeleton_mob",
+        "stream": false
+      }
+    ]
+  },
+  "skeleton_mob/death": {
+    "subtitle": "subtitles.skeleton_mob/death",
+    "sounds": [
+      {
+        "name": "survival_reimagined:skeleton_mob_death",
+        "stream": false
+      }
+    ]
+  },
+  "break/wisteria_litter": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:break1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:break2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:break3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:break4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:break5",
+        "stream": false
+      }
+    ]
+  },
+  "place/wistera_litter": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:place1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:place2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:place3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:place4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:place5",
+        "stream": false
+      }
+    ]
+  },
+  "step/wistera_litter": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:step1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:step2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:step3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:step4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:step5",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:step6",
+        "stream": false
+      }
+    ]
+  },
+  "block/steel_place": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:iron_break1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break5",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break6",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break7",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_break8",
+        "stream": false
+      }
+    ]
+  },
+  "block/steel_step": {
+    "sounds": [
+      {
+        "name": "survival_reimagined:iron_step1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_step2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_step3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:iron_step4",
+        "stream": false
+      }
+    ]
+  },
+  "flint_scrape": {
+    "subtitle": "subtitles.flint_scrape",
+    "sounds": [
+      {
+        "name": "survival_reimagined:flint_scrape3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:flint_scrape2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:flint_scrape",
         "stream": false
       }
     ]

@@ -21,6 +21,21 @@
     "survival_reimagined:uraninite_ore",
     "survival_reimagined:deepslate_uraninite_ore",
     "survival_reimagined:block_of_raw_uraninite",
-    "survival_reimagined:embedded_obsidian"
+    "survival_reimagined:embedded_obsidian",
+    "survival_reimagined:hematite_ore",
+    "survival_reimagined:deepslate_hematite_ore",
+    "survival_reimagined:basalt_hematite_ore",
+    "survival_reimagined:hematite_block",
+    "survival_reimagined:magnetite_ore",
+    "survival_reimagined:deepslate_magnetite_ore",
+    "survival_reimagined:basalt_magnetite_ore",
+    "survival_reimagined:magnetite_block",
+    "survival_reimagined:manganite_ore",
+    "survival_reimagined:deepslate_manganite_ore",
+    "survival_reimagined:basalt_manganite_ore",
+    "survival_reimagined:manganite_block",
+    "survival_reimagined:pyrolusite_ore",
+    "survival_reimagined:pyrolusite_block",
+    "survival_reimagined:deepslate_pyrolusite_ore"
   ]
 }

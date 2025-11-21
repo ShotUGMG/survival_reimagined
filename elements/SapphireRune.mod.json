@@ -1,0 +1,21 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SapphireGoldRune"
+      },
+      {
+        "value": "CUSTOM:SapphireSilverRune"
+      }
+    ],
+    "information": [
+      "Armor - Chance to give the wearer Dolphins Grace Status effect. (Full set must be worn)",
+      "",
+      "Tool: Increases underwater mining speed when infused tool held",
+      "",
+      "Weapon: Kill Count based system to achieve and level up the Ocean's Wrath enchantment (Effects only aquatic mobs)"
+    ]
+  }
+}

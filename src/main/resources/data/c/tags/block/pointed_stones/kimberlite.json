@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:kimberlite_stalagmite_top",
+    "survival_reimagined:kimberlite_stalagmite_middle",
+    "survival_reimagined:kimberlite_stalagmite_base",
+    "survival_reimagined:kimberlite_stalagtite_tip",
+    "survival_reimagined:kimberlite_stalagtite_middle",
+    "survival_reimagined:kimberlite_stalagtite_base"
+  ]
+}

@@ -1,8 +1,7 @@
 {
-  "replace": false,
+"replace": true,
   "values": [
-    "survival_reimagined:deepslate_manganese_ore",
-    "survival_reimagined:embedded_obsidian",
-    "survival_reimagined:deepslate_titanium_ore"
-  ]
+	"minecraft:deepslate",
+    "minecraft:tuff"
+  	]
 }

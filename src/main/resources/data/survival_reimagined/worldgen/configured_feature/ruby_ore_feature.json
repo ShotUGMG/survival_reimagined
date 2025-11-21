@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 8,
+    "discard_chance_on_air_exposure": 0.5,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "stone_ore_replaceables"
+        },
+        "state": {
+          "Name": "survival_reimagined:ruby_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "deepslate_ore_replaceables"
+        },
+        "state": {
+          "Name": "survival_reimagined:deepslate_ruby_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "basalt_ore_replaceables"
+        },
+        "state": {
+          "Name": "survival_reimagined:basalt_ruby_ore"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "kimberlite_ore_replaceables"
+        },
+        "state": {
+          "Name": "survival_reimagined:kimberlite_ruby_ore"
+        }
+      }
+    ]
+  }
+}

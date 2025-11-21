@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:rough_diamond",
     "minecraft:diamond"
   ]
 }

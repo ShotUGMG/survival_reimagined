@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "survival_reimagined:block/wisteria_planks",
+    "bottom": "survival_reimagined:block/wisteria_planks",
+    "top": "survival_reimagined:block/wisteria_planks",
+    "side": "survival_reimagined:block/wisteria_planks"
+  },
+  "render_type": "solid"
+}

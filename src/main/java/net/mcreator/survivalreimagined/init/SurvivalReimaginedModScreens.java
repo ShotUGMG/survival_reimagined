@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.survivalreimagined.client.gui.RMIScreen;
 import net.mcreator.survivalreimagined.client.gui.MetalRefiningTableGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.MPTGUIScreen;
 import net.mcreator.survivalreimagined.client.gui.ForgeGUIScreen;
@@ -26,5 +27,6 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.BACKPACK_GUI.get(), BackpackGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.ADVANCED_ALLOY_FORGE_GUI.get(), AdvancedAlloyForgeGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.AAF_SCRIPTURE_GUI.get(), AAFScriptureGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.RMI.get(), RMIScreen::new);
 	}
 }

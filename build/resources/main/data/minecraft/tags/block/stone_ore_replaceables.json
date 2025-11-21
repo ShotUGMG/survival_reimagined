@@ -1,8 +1,9 @@
 {
-  "replace": false,
+"replace": true,
   "values": [
-    "survival_reimagined:manganese_ore",
-    "survival_reimagined:tin_ore",
-    "survival_reimagined:titanium_ore"
-  ]
+	 "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite"
+  	]
 }

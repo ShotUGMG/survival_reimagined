@@ -32,7 +32,7 @@ public class PrintNumbersCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					NumberValuesProcedure.execute(world);
+					NumberValuesProcedure.execute(world, entity);
 					return 0;
 				})));
 	}

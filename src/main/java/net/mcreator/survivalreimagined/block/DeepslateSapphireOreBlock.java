@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DeepslateSapphireOreBlock extends Block {
 	public DeepslateSapphireOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(3.5f, 3f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4.5f, 3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

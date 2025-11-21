@@ -13,6 +13,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 import javax.annotation.Nullable;
@@ -31,30 +32,35 @@ public class EntityJumpedProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+		if (SurvivalReimaginedConfigConfiguration.HUNGER_VANILLA.get() == false) {
+			if (new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+					}
+					return false;
 				}
-				return false;
-			}
-		}.checkGamemode(entity)) {
-			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 4) {
-				if (Math.random() < 0.175) {
-					SurvivalReimaginedMod.queueServerWork(1, () -> {
-						if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
-							if (entity instanceof Player _player)
-								_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
-						} else {
-							if (entity instanceof Player _player)
-								_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
-						}
-					});
+			}.checkGamemode(entity)) {
+				if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 4) {
+					if (Math.random() < 0.175) {
+						SurvivalReimaginedMod.queueServerWork(1, () -> {
+							if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
+								if (entity instanceof Player _player)
+									_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
+							} else {
+								if (entity instanceof Player _player)
+									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+							}
+						});
+					}
+				} else {
+					if (SurvivalReimaginedConfigConfiguration.DEBUFF_HUNGER.get() == true) {
+						entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0, (entity.getDeltaMovement().z())));
+					}
 				}
-			} else {
-				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0, (entity.getDeltaMovement().z())));
 			}
 		}
 	}

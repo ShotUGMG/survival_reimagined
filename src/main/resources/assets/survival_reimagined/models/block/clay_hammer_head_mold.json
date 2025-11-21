@@ -3,8 +3,7 @@
   "textures": {
     "all": "survival_reimagined:block/clay_hammer_head_mold",
     "particle": "survival_reimagined:block/clay_hammer_head_mold",
-    "23": "survival_reimagined:block/clay_block",
-    "8": "survival_reimagined:block/clay_hammer_head_mold"
+    "0": "survival_reimagined:block/nitre"
   },
   "render_type": "solid"
 }

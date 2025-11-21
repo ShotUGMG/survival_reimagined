@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 150
+      "count": 25
     },
     {
       "type": "minecraft:in_square"
@@ -24,7 +24,12 @@
       "type": "environment_scan",
       "direction_of_search": "up",
       "target_condition": {
-        "type": "minecraft:solid"
+        "type": "minecraft:solid",
+        "offset": [
+          0,
+          1,
+          0
+        ]
       },
       "allowed_search_condition": {
         "type": "minecraft:matching_blocks",

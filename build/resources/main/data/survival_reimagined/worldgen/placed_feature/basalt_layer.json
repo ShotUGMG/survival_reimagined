@@ -1,0 +1,21 @@
+{
+  "feature": "survival_reimagined:basalt_layer",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -128
+        },
+        "max_inclusive": {
+          "absolute": -64
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "survival_reimagined:block/wisteria_vines_lower",
+    "particle": "survival_reimagined:block/wisteria_vines_lower"
+  },
+  "render_type": "cutout"
+}

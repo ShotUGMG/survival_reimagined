@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:forging",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:silver_ingot"
+    },
+    {
+      "item": "survival_reimagined:rune_mold"
+    },
+    {
+      "tag": "c:fuels"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:empty_silver_rune",
+    "count": 1
+  }
+}

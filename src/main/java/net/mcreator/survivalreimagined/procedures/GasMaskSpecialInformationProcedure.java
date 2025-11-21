@@ -11,9 +11,9 @@ public class GasMaskSpecialInformationProcedure {
 		if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("survival_reimagined:perpetual_filtering")))) != 0) {
 			return "\n";
 		} else if (itemstack.getDamageValue() < 119 || itemstack.getDamageValue() == 0) {
-			return "\u00A77\u00A7o Condition: \u00A72\u00A7oUsable";
+			return "\u00A77 Condition: \u00A72Usable";
 		} else if (itemstack.getDamageValue() >= 119) {
-			return "\u00A77\u00A7o Condition: \u00A74\u00A7oUnusable";
+			return "\u00A77 Condition: \u00A74Unusable";
 		}
 		return "\n";
 	}

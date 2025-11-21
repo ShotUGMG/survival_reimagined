@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/raw_malachite_block",
+    "up": "survival_reimagined:block/raw_malachite_block",
+    "north": "survival_reimagined:block/raw_malachite_block",
+    "east": "survival_reimagined:block/raw_malachite_block",
+    "south": "survival_reimagined:block/raw_malachite_block",
+    "west": "survival_reimagined:block/raw_malachite_block",
+    "particle": "survival_reimagined:block/raw_malachite_block"
+  },
+  "render_type": "solid"
+}

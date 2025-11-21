@@ -5,7 +5,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -16,7 +15,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -24,14 +23,14 @@ import javax.annotation.Nullable;
 public class StatusEffectsProcedure {
 	@SubscribeEvent
 	public static void onEntityTick(EntityTickEvent.Pre event) {
-		execute(event, event.getEntity().level(), event.getEntity());
+		execute(event, event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world, Entity entity) {
-		execute(null, world, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
 		if (new Object() {
@@ -44,42 +43,50 @@ public class StatusEffectsProcedure {
 				return false;
 			}
 		}.checkGamemode(entity)) {
-			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 6 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 4) {
+			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) <= 6 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 5) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Peckish"), true);
-			} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 3 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 2) {
+			} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) <= 4 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 3) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Famished"), true);
-			} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) < 1 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
+			} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) <= 2 && (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) >= 1) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Starving"), true);
-				if (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-					_livingEntity10.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.05);
+				if (SurvivalReimaginedConfigConfiguration.DEBUFF_HUNGER.get() == true) {
+					if (entity instanceof LivingEntity _livingEntity11 && _livingEntity11.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+						_livingEntity11.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.05);
+				}
 			} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) == 0) {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
 					_player.displayClientMessage(Component.literal("Dying"), true);
-			} else if (entity instanceof LivingEntity _livEnt13 && _livEnt13.hasEffect(MobEffects.HUNGER)) {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("Food Poisoned"), true);
-				if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
-					SurvivalReimaginedMod.queueServerWork(60, () -> {
-						if (Math.random() < 0.1) {
-							if (entity instanceof Player _player)
-								_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
+			} else if (SurvivalReimaginedConfigConfiguration.HUNGEREFFECT_VANILLA.get() == false) {
+				if (entity instanceof LivingEntity _livEnt15 && _livEnt15.hasEffect(MobEffects.HUNGER)) {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("Food Poisoned"), true);
+					if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
+						if (entity.getPersistentData().getDouble("HungerTickDelay") == 19) {
+							if (Math.random() < 0.1) {
+								if (entity instanceof Player _player)
+									_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
+							}
 						}
-					});
-				} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
-					SurvivalReimaginedMod.queueServerWork(60, () -> {
-						if (Math.random() < 0.1) {
-							if (entity instanceof Player _player)
-								_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+					} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
+						if (entity.getPersistentData().getDouble("HungerTickDelay") == 19) {
+							if (Math.random() < 0.1) {
+								if (entity instanceof Player _player)
+									_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+							}
 						}
-					});
+					}
 				}
 			}
 			if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 2) {
-				if (entity instanceof LivingEntity _livingEntity24 && _livingEntity24.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
-					_livingEntity24.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.1);
+				if (entity instanceof LivingEntity _livingEntity26 && _livingEntity26.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+					_livingEntity26.getAttribute(Attributes.MOVEMENT_SPEED).setBaseValue(0.1);
+			}
+			entity.getPersistentData().putDouble("HungerTickDelay", (entity.getPersistentData().getDouble("HungerTickDelay") + 1));
+			if (entity.getPersistentData().getDouble("HungerTickDelay") >= 20) {
+				entity.getPersistentData().putDouble("HungerTickDelay", 0);
 			}
 		}
 	}

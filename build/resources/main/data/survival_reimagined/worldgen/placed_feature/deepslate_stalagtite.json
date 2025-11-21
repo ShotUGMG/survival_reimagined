@@ -1,0 +1,69 @@
+{
+  "feature": "survival_reimagined:deepslate_stalagtite",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": -256
+        },
+        "max_inclusive": {
+          "absolute": 0
+        }
+      }
+    },
+    {
+      "type": "environment_scan",
+      "direction_of_search": "up",
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:solid"
+          },
+          {
+            "type": "minecraft:not",
+            "predicate": {
+              "type": "minecraft:matching_blocks",
+              "blocks": [
+                "survival_reimagined:deepslate_stalagtite_tip",
+                "survival_reimagined:deepslate_stalagtite_middle",
+                "survival_reimagined:deepslate_stalagtite_base"
+              ]
+            }
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:deepslate",
+            "offset": [
+              0,
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      "allowed_search_condition": {
+        "type": "minecraft:matching_blocks",
+        "blocks": "minecraft:air"
+      },
+      "max_steps": 12
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": -1
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 import javax.annotation.Nullable;
@@ -41,19 +42,21 @@ public class CantSleepProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
-			if (entity instanceof LivingEntity _livEnt0 && _livEnt0.isSleeping()) {
-				SurvivalReimaginedMod.queueServerWork(1, () -> {
-					entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FELL_OUT_OF_WORLD)), (float) 0.01);
-				});
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/title @p actionbar [\"\",{\"text\":\"The Blood Moons influence prevents you from sleeping...\",\"color\":\"dark_red\"}]");
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.heartbeat")), SoundSource.PLAYERS, 1, 1);
-					} else {
-						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.heartbeat")), SoundSource.PLAYERS, 1, 1, false);
+		if (SurvivalReimaginedConfigConfiguration.BLOODMOON_SLEEP.get() == false) {
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
+				if (entity instanceof LivingEntity _livEnt1 && _livEnt1.isSleeping()) {
+					SurvivalReimaginedMod.queueServerWork(1, () -> {
+						entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.FELL_OUT_OF_WORLD)), (float) 0.01);
+					});
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"/title @p actionbar [\"\",{\"text\":\"The Blood Moons influence prevents you from sleeping...\",\"color\":\"dark_red\"}]");
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.heartbeat")), SoundSource.PLAYERS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.heartbeat")), SoundSource.PLAYERS, 1, 1, false);
+						}
 					}
 				}
 			}

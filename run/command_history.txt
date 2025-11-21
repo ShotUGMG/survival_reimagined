@@ -1,50 +1,50 @@
 /time set night
-/tick rate 3000
-/tick rate 20
-/time set day
-/time set night
-/time set midnight
-/time set day
-/tick rate 2000
-/tick rate 6000
-/print number
-/tick rate 6000
-/print logic
-/tick rate 6000
-/time set day
-/tick rate 6000
-/print number
-/tick rate 20
-/time set day
-/event eclipse
-/time set night
 /event bloodmoon
-/time set day
-/event
-/event bloodmoon
-/time set day
-/time set night
-/event eclipse
-/tick rate 6000
-/advancement grant Dev from survival_reimagined:survival_reimagined
-/time set day
-/time set night
+/event reset
 /time set day
 /difficulty peaceful
+/difficulty easy
+/effect give Dev minecraft:hunger
+/effect clear
+/locate biome minecraft:warm_ocean
+/tp @s -364 63 -2424
+/effect give Dev minecraft:night_vision infinite
+/give Dev survival_reimagined:cured_steak 64
+/xp set Dev 0 levels
+/xp set Dev 0 points
+/xp set Dev 0 levels
+/attribute Dev minecraft:generic.max_health base set 20
+/effect give Dev minecraft:night_vision infinite
+/difficulty easy
+/effect give Dev minecraft:night_vision infinite
+/effect clear Dev
+/advancement grant Dev from survival_reimagined:survival_reimagined
+/advancement revoke Dev only survival_reimagined:conquered
+/effect give Dev minecraft:night_vision infinite
+/effect clear
+/effect give Dev minecraft:night_vision infinite
+/locate biome minecraft:plains
+/tp @s -395 99 37
 /effect give Dev minecraft:night_vision infinite
 /locate biome survival_reimagined:radiated_forest
-/tp @s -442 -19 286
-/give Dev minecraft:arrow
-/enchant Dev survival_reimagined:perpetual_filtering
-/difficulty peaceful
+/tp @s -249 -76 658
+/locate biome survival_reimagined:radiated_forest
+/tp @s -1401 -111 943
+/locate biome survival_reimagined:radiated_forest
+/tp Dev -6000 ~ 6000
+/locate biome survival_reimagined:radiated_forest
+/tp @s -6193 -68 6093
 /effect give Dev minecraft:night_vision infinite
 /locate biome survival_reimagined:radiated_forest
-/tp @s -387 25 -322
+/tp @s -6109 -103 6481
 /effect give Dev minecraft:night_vision infinite
-/summon minecraft:slime
-/advancement grant Dev from survival_reimagined:survival_reimagined
-/advancement revoke Dev from survival_reimagined:aaf
-/difficulty peaceful
-/give Dev minecraft:command_block
-/re
-/reload
+/locate biome survival_reimagined:radiated_forest
+/tp @s 435 -68 35
+/tp @s -6193 -68 6093
+/locate biome survival_reimagined:radiated_forest
+/tp @s -5969 -68 5421
+/locate biome survival_reimagined:radiated_forest
+/tp @s -6431 -95 4797
+/effect give Dev minecraft:night_vision infinite
+/locate biome survival_reimagined:radiated_forest
+/tp @s 189 -119 -165

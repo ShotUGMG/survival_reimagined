@@ -1,0 +1,21 @@
+{
+  "description": {
+    "translate": "enchantment.survival_reimagined.oceans_wrath"
+  },
+  "supported_items": "#survival_reimagined:oceans_wrath",
+  "weight": 10,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": []
+}

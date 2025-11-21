@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:gold_heart"
+    },
+    "title": {
+      "translate": "advancements.zombification_immunity.title"
+    },
+    "description": {
+      "translate": "advancements.zombification_immunity.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "zombification_immunity_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:cure_zombification"
+}

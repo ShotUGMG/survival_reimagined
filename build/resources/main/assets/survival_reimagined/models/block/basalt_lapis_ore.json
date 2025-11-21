@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/basalt_lazurite_ore",
+    "up": "survival_reimagined:block/basalt_lazurite_ore",
+    "north": "survival_reimagined:block/basalt_lazurite_ore",
+    "east": "survival_reimagined:block/basalt_lazurite_ore",
+    "south": "survival_reimagined:block/basalt_lazurite_ore",
+    "west": "survival_reimagined:block/basalt_lazurite_ore",
+    "particle": "survival_reimagined:block/basalt_lazurite_ore"
+  },
+  "render_type": "solid"
+}

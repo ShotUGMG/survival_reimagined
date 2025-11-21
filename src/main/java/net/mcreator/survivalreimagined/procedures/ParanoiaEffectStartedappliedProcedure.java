@@ -9,6 +9,6 @@ public class ParanoiaEffectStartedappliedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal("You are Paranoid"), true);
+			_player.displayClientMessage(Component.literal("The Darkness makes you paranoid"), true);
 	}
 }

@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 225,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "survival_reimagined:wisteria_leaf_litter",
+                  "Properties": {
+                    "blockstate": "0"
+                  }
+                },
+                "weight": 7
+              },
+              {
+                "data": {
+                  "Name": "survival_reimagined:wisteria_leaf_litter",
+                  "Properties": {
+                    "blockstate": "1"
+                  }
+                },
+                "weight": 5
+              },
+              {
+                "data": {
+                  "Name": "survival_reimagined:wisteria_leaf_litter",
+                  "Properties": {
+                    "blockstate": "2"
+                  }
+                },
+                "weight": 9
+              },
+              {
+                "data": {
+                  "Name": "survival_reimagined:wisteria_leaf_litter",
+                  "Properties": {
+                    "blockstate": "3"
+                  }
+                },
+                "weight": 5
+              },
+              {
+                "data": {
+                  "Name": "minecraft:short_grass"
+                },
+                "weight": 14
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    }
+  }
+}

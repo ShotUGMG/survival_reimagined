@@ -7,8 +7,8 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Sapphire Gold Rune",
-    "rarity": "COMMON",
+    "name": "Rune",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:CreativeTab"
@@ -29,7 +29,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [],
+      "name": "DisplayInfoRunesGems"
     },
     "glowCondition": {
       "fixedValue": false

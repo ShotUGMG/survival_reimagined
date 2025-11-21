@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:ruby_heart"
+    },
+    "title": {
+      "translate": "advancements.max_health.title"
+    },
+    "description": {
+      "translate": "advancements.max_health.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "max_health_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:ruby_heart_adv"
+}

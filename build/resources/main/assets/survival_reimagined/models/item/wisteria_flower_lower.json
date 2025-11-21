@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/wisteria_vines_lower"
+  },
+  "render_type": "translucent"
+}

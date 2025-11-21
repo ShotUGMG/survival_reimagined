@@ -71,6 +71,7 @@ public class FuelDetectionProcedure {
 				DiamondGearProcedure.execute(world, x, y, z);
 				DiamondToolsProcedure.execute(world, x, y, z);
 				IngotsRecipeProcedure.execute(world, x, y, z);
+				RunesProcedure.execute(world, x, y, z);
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -96,6 +97,10 @@ public class FuelDetectionProcedure {
 				DiamondIngotRecipeProcedure.execute(world, x, y, z);
 				NetherteRecipeProcedure.execute(world, x, y, z);
 				TuraniteRecipeProcedure.execute(world, x, y, z);
+				if (ModList.get().isLoaded("create")) {
+					BrassRecipeProcedure.execute(world, x, y, z);
+					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);
+				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -123,9 +128,6 @@ public class FuelDetectionProcedure {
 				DiamondMeltProcedure.execute(world, x, y, z);
 			}
 			EmptyRecipeProcedure.execute(world, x, y, z);
-		}
-		if (ModList.get().isLoaded("create")) {
-			BrassRecipeProcedure.execute(world, x, y, z);
 		}
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {

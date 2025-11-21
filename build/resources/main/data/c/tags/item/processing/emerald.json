@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:embedded_emerald",
-    "survival_reimagined:deepslate_embedded_emerald",
     "minecraft:emerald_ore",
-    "minecraft:deepslate_emerald_ore"
+    "minecraft:deepslate_emerald_ore",
+    "survival_reimagined:rough_emerald"
   ]
 }

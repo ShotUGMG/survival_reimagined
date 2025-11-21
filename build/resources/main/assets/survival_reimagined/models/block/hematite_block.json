@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/raw_hematite_block",
+    "up": "survival_reimagined:block/raw_hematite_block",
+    "north": "survival_reimagined:block/raw_hematite_block",
+    "east": "survival_reimagined:block/raw_hematite_block",
+    "south": "survival_reimagined:block/raw_hematite_block",
+    "west": "survival_reimagined:block/raw_hematite_block",
+    "particle": "survival_reimagined:block/raw_hematite_block"
+  },
+  "render_type": "solid"
+}

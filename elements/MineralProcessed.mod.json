@@ -5,7 +5,7 @@
     "achievementName": "Mineral Processed",
     "achievementDescription": "Use the Mineral Processing Table",
     "achievementIcon": {
-      "value": "CUSTOM:EmbeddedDiamond"
+      "value": "CUSTOM:RoughDiamond"
     },
     "background": "Default",
     "disableDisplay": false,

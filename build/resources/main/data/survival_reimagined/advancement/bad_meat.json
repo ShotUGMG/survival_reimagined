@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:spoiled_beef"
+    },
+    "title": {
+      "translate": "advancements.bad_meat.title"
+    },
+    "description": {
+      "translate": "advancements.bad_meat.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bad_meat_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:extra_animal_meat"
+}

@@ -30,6 +30,6 @@ public class BrainItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		FoodSpoilProcedure.execute(world);
+		FoodSpoilProcedure.execute(world, entity);
 	}
 }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:gold_diamond_rune"
+    },
+    "title": {
+      "translate": "advancements.gem_runes.title"
+    },
+    "description": {
+      "translate": "advancements.gem_runes.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gem_runes_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:runes_adv"
+}

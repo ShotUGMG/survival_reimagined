@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/saw"
+    },
+    "b": {
+      "tag": "survival_reimagined:wisteria_logs"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:wisteria_plank",
+    "count": 8
+  }
+}

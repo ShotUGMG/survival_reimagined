@@ -10,5 +10,6 @@ public class MetalRefiningTableGUIWhileThisGUIIsOpenTickProcedure {
 		SteelGearRecipesProcedure.execute(entity);
 		DiamondGearRecipesProcedure.execute(entity);
 		IngotsProcedure.execute(entity);
+		RunesMPTProcedure.execute(entity);
 	}
 }

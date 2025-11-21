@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#c:runes/sapphire",
+    "#c:runes/amber",
+    "#c:runes/diamond",
+    "#c:runes/emerald",
+    "#c:runes/ruby",
+    "#c:runes/lapis"
+  ]
+}

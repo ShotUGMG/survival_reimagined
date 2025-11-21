@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "spawners": {
+    "type": "survival_reimagined:alpha_crimson_arachnid",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "_fv": 73,
+  "_type": "biome",
+  "definition": {
+    "name": "Wisteria Forest",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "grassColor": {
+      "value": -11885222,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -11366297,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -7222039,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -9919036,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "CUSTOM:StoneGrinding"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.8,
+      "max": -0.1
+    },
+    "genHumidity": {
+      "min": -0.9,
+      "max": 0.1
+    },
+    "genContinentalness": {
+      "min": -0.11,
+      "max": 0.33
+    },
+    "genErosion": {
+      "min": -0.2,
+      "max": 0.2
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "MonsterRooms",
+      "ExtraEmeraldOre",
+      "ExtraGoldOre",
+      "ForestGrass",
+      "ForestFlowers",
+      "Bamboo"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "STANDARD",
+    "spawnEntries": []
+  }
+}

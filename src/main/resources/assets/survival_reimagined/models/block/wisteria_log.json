@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/wisteria_log_top",
+    "up": "survival_reimagined:block/wisteria_log_top",
+    "north": "survival_reimagined:block/wistera_log_side",
+    "east": "survival_reimagined:block/wistera_log_side",
+    "south": "survival_reimagined:block/wistera_log_side",
+    "west": "survival_reimagined:block/wistera_log_side",
+    "particle": "survival_reimagined:block/wisteria_log_top"
+  },
+  "render_type": "solid"
+}

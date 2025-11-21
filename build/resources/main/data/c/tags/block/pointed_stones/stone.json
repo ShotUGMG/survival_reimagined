@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:stone_stalagmite_top",
+    "survival_reimagined:stone_stalagmite_middle",
+    "survival_reimagined:stone_stalagmite_base",
+    "survival_reimagined:stone_stalagtite_tip",
+    "survival_reimagined:stone_stalagtite_middle",
+    "survival_reimagined:stone_stalagtite_base"
+  ]
+}

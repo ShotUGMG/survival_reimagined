@@ -1,0 +1,13 @@
+{
+  "block.minecraft.deepslate_copper_ore": "Deepslate Native Copper Ore",
+  "block.minecraft.copper_ore": "Native Copper Ore",
+   "item.minecraft.raw_copper": "Native Copper",
+   "block.minecraft.gold_ore":"Native Gold Ore",
+   "block.minecraft.deepslate_gold_ore":"Deepslate Native Gold Ore",
+    "item.minecraft.raw_gold": "Native Gold",
+    "block.minecraft.raw_copper_block": "Native Copper Block",
+    "block.minecraft.raw_gold_block": "Native Gold Block",
+    "block.minecraft.lapis_ore": "Lazurite Ore",
+    "block.minecraft.deepslate_lapis_ore": "Deepslate Lazurite Ore"
+ }
+ 

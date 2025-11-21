@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:embedded_diamond",
-    "survival_reimagined:embedded_emerald",
     "minecraft:diamond_ore",
-    "minecraft:emerald_ore"
+    "minecraft:emerald_ore",
+    "survival_reimagined:ruby_ore",
+    "survival_reimagined:sapphire_ore",
+    "survival_reimagined:amber_ore",
+    "minecraft:lapis_ore"
   ]
 }

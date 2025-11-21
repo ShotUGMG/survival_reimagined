@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/stone_rock",
+  "textures": {
+    "all": "survival_reimagined:block/kimberlite",
+    "particle": "survival_reimagined:block/kimberlite",
+    "0": "survival_reimagined:block/kimberlite"
+  },
+  "render_type": "solid"
+}

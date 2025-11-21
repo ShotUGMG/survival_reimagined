@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DeepslateUraniumOreBlock extends Block {
 	public DeepslateUraniumOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4.5f, 3f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4.5f, 3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

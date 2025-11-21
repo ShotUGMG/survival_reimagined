@@ -141,7 +141,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "survival_reimagined:uraninite_ore",
+          "name": "survival_reimagined:deepslate_uraninite_ore",
           "weight": 1,
           "conditions": [
             {

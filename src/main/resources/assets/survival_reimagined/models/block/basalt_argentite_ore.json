@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/basalt_argentite_ore",
+    "up": "survival_reimagined:block/basalt_argentite_ore",
+    "north": "survival_reimagined:block/basalt_argentite_ore",
+    "east": "survival_reimagined:block/basalt_argentite_ore",
+    "south": "survival_reimagined:block/basalt_argentite_ore",
+    "west": "survival_reimagined:block/basalt_argentite_ore",
+    "particle": "survival_reimagined:block/basalt_argentite_ore"
+  },
+  "render_type": "solid"
+}

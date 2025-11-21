@@ -1,0 +1,12 @@
+{
+  "type": "survival_reimagined:structure_feature",
+  "config": {
+    "structure": "survival_reimagined:wisteria_tree_4",
+    "ignored_blocks": "minecraft:air",
+    "offset": [
+      -6,
+      0,
+      -3
+    ]
+  }
+}

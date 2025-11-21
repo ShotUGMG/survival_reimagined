@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:nitre_powder",
     "survival_reimagined:sand_salt_deposit"
   ]
 }

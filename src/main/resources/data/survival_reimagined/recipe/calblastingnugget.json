@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "c:metal_rocks/gold_nuggets"
+  },
+  "result": {
+    "id": "minecraft:gold_nugget"
+  }
+}

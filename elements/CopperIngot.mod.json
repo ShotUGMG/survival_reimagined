@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Items.COPPER_INGOT"
+      "value": "CUSTOM:RoughCopper"
     },
     "name": "copper_ingot",
     "namespace": "mod"

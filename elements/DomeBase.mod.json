@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 20,
-    "separation": 10,
+    "spacing": 15,
+    "separation": 5,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:RadiantForest"
@@ -21,7 +21,7 @@
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "useStartHeight": true,
     "startHeightProviderType": "UNIFORM",
-    "startHeightMin": -64,
+    "startHeightMin": -128,
     "startHeightMax": -30,
     "size": 1,
     "maxDistanceFromCenter": 64,

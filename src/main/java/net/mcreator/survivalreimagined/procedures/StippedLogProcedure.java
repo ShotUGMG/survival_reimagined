@@ -453,6 +453,43 @@ public class StippedLogProcedure {
 						_entity.swing(InteractionHand.OFF_HAND, true);
 				}
 			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WISTERIA_LOG.get()) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 1), (z + 0.5), new ItemStack(SurvivalReimaginedModItems.WISTERIA_BARK.get()));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
+				}
+				{
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockState _bs = SurvivalReimaginedModBlocks.STRIPPED_WISTERIA_LOG.get().defaultBlockState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Property<?> _propertyOld : _bso.getProperties()) {
+						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+						if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+							try {
+								_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+							} catch (Exception e) {
+							}
+					}
+					world.setBlock(_bp, _bs, 3);
+				}
+				SurvivalReimaginedMod.queueServerWork(1, () -> {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, 1);
+						} else {
+							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("item.axe.strip")), SoundSource.BLOCKS, 1, 1, false);
+						}
+					}
+				});
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.MAIN_HAND, true);
+				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:tools/saw")))) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.swing(InteractionHand.OFF_HAND, true);
+				}
+			}
 		}
 	}
 }

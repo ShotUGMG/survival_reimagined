@@ -151,6 +151,30 @@ globalExecutorParallelism = "default"
 	# mitigate this issue.
 	# 
 	fluidPostProcessingToScheduledTick = "default"
+	# (Default: true) Whether to filter fluid post-processing on worldgen threads
+	# 
+	# The worldgen processes creates a lot of unnecessary fluid post-processing tasks,
+	# which can overload the server thread and cause stutters.
+	# This applies a rough filter to filter out fluids that are definitely not going to flow
+	# 
+	filterFluidPostProcessing = "default"
+	# (Default: true) Whether to use legacy scheduling for neighbor chunks
+	# 
+	# Enabling this restores the behavior of always loading in neighbor chunks when a chunk is loaded.
+	# 
+	useLegacyScheduling = "default"
+	# (Default: false) Whether to enable low memory mode
+	# 
+	# This option will attempt to aggressively unload unused chunks.
+	# Only applies when useLegacyScheduling is disabled.
+	# 
+	lowMemoryMode = "default"
+	# (Default: true) Whether to delay full chunk events to after full chunk future have been completed
+	# This restores the buggy behavior in NeoForge that the ecosystem have been relying on
+	# 
+	# Do not change this unless you know what you are doing
+	# 
+	delayFullChunkEvents = "default"
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  

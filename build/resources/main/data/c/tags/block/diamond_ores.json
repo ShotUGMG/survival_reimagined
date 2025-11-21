@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:basalt_diamond_ore",
+    "survival_reimagined:kimberlite_diamond_ore",
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore"
+  ]
+}

@@ -99,7 +99,7 @@ public class BloodMoonZombieEntity extends Monster {
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 2);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 96);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
 		builder = builder.add(Attributes.STEP_HEIGHT, 1);
 		return builder;
 	}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "windswept_forest",
+    "taiga",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "snowy_taiga",
+    "snowy_plains"
+  ]
+}

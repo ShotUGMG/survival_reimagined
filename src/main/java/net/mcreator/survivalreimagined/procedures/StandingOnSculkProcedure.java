@@ -23,6 +23,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -40,39 +41,41 @@ public class StandingOnSculkProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.75, entity.getZ()))).getBlock() == Blocks.SCULK) {
-			if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-					.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("survival_reimagined:soul_purificaton")))) != 0)) {
-				if (world.dayTime() % 40 == 1) {
-					if (entity instanceof Player) {
-						if (new Object() {
-							public boolean checkGamemode(Entity _ent) {
-								if (_ent instanceof ServerPlayer _serverPlayer) {
-									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+		if (SurvivalReimaginedConfigConfiguration.BINDING_SCULK.get() == true) {
+			if ((world.getBlockState(BlockPos.containing(entity.getX(), entity.getY() - 0.75, entity.getZ()))).getBlock() == Blocks.SCULK) {
+				if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
+						.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("survival_reimagined:soul_purificaton")))) != 0)) {
+					if (world.dayTime() % 40 == 1) {
+						if (entity instanceof Player) {
+							if (new Object() {
+								public boolean checkGamemode(Entity _ent) {
+									if (_ent instanceof ServerPlayer _serverPlayer) {
+										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+									}
+									return false;
 								}
-								return false;
-							}
-						}.checkGamemode(entity) || new Object() {
-							public boolean checkGamemode(Entity _ent) {
-								if (_ent instanceof ServerPlayer _serverPlayer) {
-									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
-								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
+							}.checkGamemode(entity) || new Object() {
+								public boolean checkGamemode(Entity _ent) {
+									if (_ent instanceof ServerPlayer _serverPlayer) {
+										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
+									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
+									}
+									return false;
 								}
-								return false;
+							}.checkGamemode(entity)) {
+								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+									_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BINDING_SCULK, 60, 0));
 							}
-						}.checkGamemode(entity)) {
+						}
+						if (!(entity instanceof Player) && !(entity instanceof Warden)) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BINDING_SCULK, 60, 0));
 						}
-					}
-					if (!(entity instanceof Player) && !(entity instanceof Warden)) {
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BINDING_SCULK, 60, 0));
 					}
 				}
 			}

@@ -19,4 +19,6 @@ public class SurvivalReimaginedModParticleTypes {
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATED = REGISTRY.register("radiated", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATION_PARTICLE = REGISTRY.register("radiation_particle", () -> new SimpleParticleType(false));
 	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> RADIATION_PARTICLE_2 = REGISTRY.register("radiation_particle_2", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FALLING_WISTERIA = REGISTRY.register("falling_wisteria", () -> new SimpleParticleType(false));
+	public static final DeferredHolder<ParticleType<?>, SimpleParticleType> FALLING_WISTERIA_DARK = REGISTRY.register("falling_wisteria_dark", () -> new SimpleParticleType(false));
 }

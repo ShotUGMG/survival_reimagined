@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "survival_reimagined:radiated_forest",
-  "features": "survival_reimagined:uranium_ore_feature",
-  "step": "underground_ores"
-}

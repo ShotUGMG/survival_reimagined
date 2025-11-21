@@ -15,6 +15,13 @@ import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.animal.Salmon;
+import net.minecraft.world.entity.animal.Rabbit;
+import net.minecraft.world.entity.animal.Cod;
+import net.minecraft.world.entity.animal.Chicken;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.Brain;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -35,6 +42,8 @@ import java.util.function.Supplier;
 public class SurvivalReimaginedModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, SurvivalReimaginedMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
+	public static double OceansWrathDamageMultiplier = 0;
+	public static AttributeModifier OceansWrath = null;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -68,9 +77,26 @@ public class SurvivalReimaginedModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.GaskMaskDamage = original.GaskMaskDamage;
 			clone.GasMaskHeal = original.GasMaskHeal;
+			clone.DiamondLogicNumber = original.DiamondLogicNumber;
+			clone.ZombificationImmune = original.ZombificationImmune;
 			if (!event.isWasDeath()) {
+				clone.SpoilTimer = original.SpoilTimer;
 				clone.HungerSprinting = original.HungerSprinting;
 				clone.HungerSwimming = original.HungerSwimming;
+				clone.Beef = original.Beef;
+				clone.Pork = original.Pork;
+				clone.Mutton = original.Mutton;
+				clone.Chicken = original.Chicken;
+				clone.Rabbit = original.Rabbit;
+				clone.Cod = original.Cod;
+				clone.Salmon = original.Salmon;
+				clone.Brain = original.Brain;
+				clone.Heart = original.Heart;
+				clone.Lungs = original.Lungs;
+				clone.Intestines = original.Intestines;
+				clone.Liver = original.Liver;
+				clone.Stomach = original.Stomach;
+				clone.ScrapeHandler = original.ScrapeHandler;
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
 		}
@@ -100,7 +126,6 @@ public class SurvivalReimaginedModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "survival_reimagined_worldvars";
 		public double HeartBeat = 0;
-		public double SpoilTimer = 0;
 		public double EffectDanger = 0;
 		public boolean isNotDay = false;
 		public boolean AnnouncementPlayed = false;
@@ -117,7 +142,6 @@ public class SurvivalReimaginedModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			HeartBeat = nbt.getDouble("HeartBeat");
-			SpoilTimer = nbt.getDouble("SpoilTimer");
 			EffectDanger = nbt.getDouble("EffectDanger");
 			isNotDay = nbt.getBoolean("isNotDay");
 			AnnouncementPlayed = nbt.getBoolean("AnnouncementPlayed");
@@ -130,7 +154,6 @@ public class SurvivalReimaginedModVariables {
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("HeartBeat", HeartBeat);
-			nbt.putDouble("SpoilTimer", SpoilTimer);
 			nbt.putDouble("EffectDanger", EffectDanger);
 			nbt.putBoolean("isNotDay", isNotDay);
 			nbt.putBoolean("AnnouncementPlayed", AnnouncementPlayed);
@@ -245,27 +268,78 @@ public class SurvivalReimaginedModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		public double SpoilTimer = 0;
 		public double HungerSprinting = 0;
 		public double HungerSwimming = 0;
 		public double GaskMaskDamage = 0;
 		public double GasMaskHeal = 0;
+		public ItemStack Beef = ItemStack.EMPTY;
+		public ItemStack Pork = ItemStack.EMPTY;
+		public ItemStack Mutton = ItemStack.EMPTY;
+		public ItemStack Chicken = ItemStack.EMPTY;
+		public ItemStack Rabbit = ItemStack.EMPTY;
+		public ItemStack Cod = ItemStack.EMPTY;
+		public ItemStack Salmon = ItemStack.EMPTY;
+		public ItemStack Brain = ItemStack.EMPTY;
+		public ItemStack Heart = ItemStack.EMPTY;
+		public ItemStack Lungs = ItemStack.EMPTY;
+		public ItemStack Intestines = ItemStack.EMPTY;
+		public ItemStack Liver = ItemStack.EMPTY;
+		public ItemStack Stomach = ItemStack.EMPTY;
+		public double ScrapeHandler = 0;
+		public double DiamondLogicNumber = 0;
+		public boolean ZombificationImmune = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
+			nbt.putDouble("SpoilTimer", SpoilTimer);
 			nbt.putDouble("HungerSprinting", HungerSprinting);
 			nbt.putDouble("HungerSwimming", HungerSwimming);
 			nbt.putDouble("GaskMaskDamage", GaskMaskDamage);
 			nbt.putDouble("GasMaskHeal", GasMaskHeal);
+			nbt.put("Beef", Beef.saveOptional(lookupProvider));
+			nbt.put("Pork", Pork.saveOptional(lookupProvider));
+			nbt.put("Mutton", Mutton.saveOptional(lookupProvider));
+			nbt.put("Chicken", Chicken.saveOptional(lookupProvider));
+			nbt.put("Rabbit", Rabbit.saveOptional(lookupProvider));
+			nbt.put("Cod", Cod.saveOptional(lookupProvider));
+			nbt.put("Salmon", Salmon.saveOptional(lookupProvider));
+			nbt.put("Brain", Brain.saveOptional(lookupProvider));
+			nbt.put("Heart", Heart.saveOptional(lookupProvider));
+			nbt.put("Lungs", Lungs.saveOptional(lookupProvider));
+			nbt.put("Intestines", Intestines.saveOptional(lookupProvider));
+			nbt.put("Liver", Liver.saveOptional(lookupProvider));
+			nbt.put("Stomach", Stomach.saveOptional(lookupProvider));
+			nbt.putDouble("ScrapeHandler", ScrapeHandler);
+			nbt.putDouble("DiamondLogicNumber", DiamondLogicNumber);
+			nbt.putBoolean("ZombificationImmune", ZombificationImmune);
 			return nbt;
 		}
 
 		@Override
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
+			SpoilTimer = nbt.getDouble("SpoilTimer");
 			HungerSprinting = nbt.getDouble("HungerSprinting");
 			HungerSwimming = nbt.getDouble("HungerSwimming");
 			GaskMaskDamage = nbt.getDouble("GaskMaskDamage");
 			GasMaskHeal = nbt.getDouble("GasMaskHeal");
+			Beef = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Beef"));
+			Pork = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Pork"));
+			Mutton = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Mutton"));
+			Chicken = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Chicken"));
+			Rabbit = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Rabbit"));
+			Cod = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Cod"));
+			Salmon = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Salmon"));
+			Brain = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Brain"));
+			Heart = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Heart"));
+			Lungs = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Lungs"));
+			Intestines = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Intestines"));
+			Liver = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Liver"));
+			Stomach = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Stomach"));
+			ScrapeHandler = nbt.getDouble("ScrapeHandler");
+			DiamondLogicNumber = nbt.getDouble("DiamondLogicNumber");
+			ZombificationImmune = nbt.getBoolean("ZombificationImmune");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

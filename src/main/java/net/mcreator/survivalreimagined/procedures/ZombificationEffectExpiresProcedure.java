@@ -23,6 +23,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 public class ZombificationEffectExpiresProcedure {
@@ -42,7 +43,7 @@ public class ZombificationEffectExpiresProcedure {
 			if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 0) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, 6000, 1, true, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 1, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 1;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
@@ -56,7 +57,7 @@ public class ZombificationEffectExpiresProcedure {
 			} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 1) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, 6000, 2, true, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 2, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 2;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
@@ -70,7 +71,7 @@ public class ZombificationEffectExpiresProcedure {
 			} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 2) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, 6000, 3, true, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 3, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 3;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
@@ -84,7 +85,7 @@ public class ZombificationEffectExpiresProcedure {
 			} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 3) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, 6000, 4, true, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 4, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 4;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);

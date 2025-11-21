@@ -1,0 +1,244 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "spruce_copper_mine_center",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "spacing": 30,
+    "separation": 15,
+    "restrictionBiomes": [
+      {
+        "value": "void"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 60,
+    "startHeightMax": 70,
+    "size": 20,
+    "maxDistanceFromCenter": 116,
+    "jigsawPools": [
+      {
+        "poolName": "shack",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_shack",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "piles",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 8,
+            "structure": "copper_mine_pile_small",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 7,
+            "structure": "copper_mine_pile_medium",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 6,
+            "structure": "copper_mine_pile_large",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "main_tunnel",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_main_tunnel_sub_tunnels_entrances1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_main_tunnel_sub_tunnels_entrances2",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_main_tunnel_sub_tunnels_entrances3",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "stairs_one",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_stairs_one",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "stairs_two",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_stairs_two",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "sub_tunnels",
+        "fallbackPool": "survival_reimagined:spruce_copper_mine_sub_tunnels_end",
+        "poolParts": [
+          {
+            "weight": 9,
+            "structure": "spruce_copper_mine_sub_tunnel_straight",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 6,
+            "structure": "spruce_copper_mine_sub_tunnel_left_turn",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 6,
+            "structure": "spruce_copper_mine_sub_tunnel_right_turn",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "spruce_copper_mine_sub_tunnel_plus_junction",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "spruce_copper_mine_sub_tunnel_t_junction",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "spruce_copper_mine_sub_tunnel_plus_junction_rooms",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "spruce_copper_mine_sub_tunnel_t_junction_rooms",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "copper_walls",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "copper_wall",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "copper_wall_low",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "sub_tunnels_end",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_sub_tunnels_end",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_unfinished_mine",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "rooms",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 9,
+            "structure": "spruce_copper_mine_unfinished_mine_room",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 6,
+            "structure": "spruce_copper_mine_furnace",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "spruce_copper_mine_storage",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "straight_forced",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 2,
+            "structure": "spruce_copper_mine_sub_tunnel_straight_forced",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "spruce_copper_mine_sub_tunnel_straight_semi_forced",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

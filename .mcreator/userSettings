@@ -2,11 +2,15 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 517,
+  "projectBrowserSplitPos": 420,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Survival Reimagined]",
-      "[, Survival Reimagined, Resources (Gradle)]"
+      "[, Survival Reimagined, Source (Gradle)]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net\\mcreator]",
+      "[, Survival Reimagined, Resources (Gradle)]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets]"
     ]
   }
 }

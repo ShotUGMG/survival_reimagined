@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:amber"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:block_of_amber",
+    "count": 1
+  }
+}

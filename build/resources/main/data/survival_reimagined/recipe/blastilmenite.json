@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "c:metal_rocks/titanium"
+  },
+  "result": {
+    "id": "survival_reimagined:rough_titanium"
+  }
+}

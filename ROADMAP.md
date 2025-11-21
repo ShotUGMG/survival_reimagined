@@ -20,15 +20,28 @@ Withering Dimension
  
 
 gems and necklaces
- - emerald - passive hero of the village status effect, garunteed chance of 2 emeralds when killing a raider, small chance of small emeralds when mining emeralds
- - diamond - increased toughness, increased chance of fortune (+1), increased sharpness (+1)
- - ruby - passive chance of regeneration when attacked (5%), very small chance to take life from living creatures, small chance to obtain health shards when mining underground.
- - sapphire - passive dolphins grace when completely submerged underwater, increased chance of drowned dropping a trident, small chance haste when mining underwater
- - amber - fire resistance chance when taking fire damage (3s, 10%)., chance to inflict fire, chance to auto smelt
- - amethyst - allows player to look at an enderman without being punished., chance for extra ender pearls to drop and very slim chance of shulker shell to drop, chance to get amethyst shhard when mining
- - spinel - makes creepers non-hostile when worn, adds chance to drop music disc when creeper killed, chance to obtian sulfer or nitre when mining stone
- - lapis - passive XP chance (1-5 points, 3% chance)., extra XP dropped when on a tool/weapaon
+ - emerald - 
+ - diamond - 
+ - ruby - 
+ - sapphire - Armor: passive dolphins grace, Weapons (not a trident): killing mobs adds progress bar to gain Oceans Wrath V. Every level increases 10 kills. Wrath I = 10 kills, Wrath II = 20.
+ - amber - 
+ - amethyst - 
+ - spinel - 
+ - lapis - 
  - silver or gold as base for runes
+ - information page on forge
+
+
+mineral mines
+ - nitre mines (25%)
+ - sulfur mines (25%)
+ - coal mines (25%)
+ - copper mines (15%)
+ - tin mines (15%)
+ - iron mines (8%)
+ - manganese mines (8%)
+ - any type of gem mine (5%)
+ - netherite mines (nether) (3%)
 
  - gem geodes drops from gem based ores, requiring chisel to crack and get unprocessed gems
  
@@ -42,4 +55,4 @@ gems and necklaces
    - small, quick
    - black widow design with glowing cresent moon on back, more eyes
 
- - Eclipsed Dimension
+ - Eclipsed Dimension (maybe)

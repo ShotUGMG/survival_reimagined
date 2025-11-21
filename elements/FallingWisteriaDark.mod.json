@@ -1,0 +1,26 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "wisteria_particle_1",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.2,
+    "height": 0.2,
+    "scale": {
+      "fixedValue": 0.3
+    },
+    "speedFactor": 1.0,
+    "gravity": 0.1,
+    "maxAge": 300,
+    "maxAgeDiff": 0,
+    "angularVelocity": 0.025,
+    "angularAcceleration": 0.0,
+    "canCollide": true,
+    "alwaysShow": false,
+    "renderType": "OPAQUE",
+    "additionalExpiryCondition": {
+      "name": "FallingWisteriaAdditionalParticleExpiryCondition"
+    }
+  }
+}

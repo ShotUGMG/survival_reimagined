@@ -6,6 +6,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.piglin.PiglinBrute;
@@ -122,33 +123,37 @@ public class EntityHasItemProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getCount() == 1) {
 				NumGen = Mth.nextInt(RandomSource.create(), 1, 5);
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getMaxDamage() - NumGen));
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = ItemStack.EMPTY.copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+				if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.TRIDENT) == false) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (entity instanceof LivingEntity _entity) {
+						ItemStack _setstack = ItemStack.EMPTY.copy();
+						_setstack.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 				}
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getCount() == 1) {
 				NumGen = Mth.nextInt(RandomSource.create(), 1, 5);
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).setDamageValue((int) ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getMaxDamage() - NumGen));
-				if (world instanceof ServerLevel _level) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY));
-					entityToSpawn.setPickUpDelay(10);
-					_level.addFreshEntity(entityToSpawn);
-				}
-				if (entity instanceof LivingEntity _entity) {
-					ItemStack _setstack = ItemStack.EMPTY.copy();
-					_setstack.setCount(1);
-					_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
-					if (_entity instanceof Player _player)
-						_player.getInventory().setChanged();
+				if (((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == Items.TRIDENT) == false) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (entity instanceof LivingEntity _entity) {
+						ItemStack _setstack = ItemStack.EMPTY.copy();
+						_setstack.setCount(1);
+						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 				}
 			}
 		}

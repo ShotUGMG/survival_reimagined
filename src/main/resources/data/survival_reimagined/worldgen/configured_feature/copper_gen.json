@@ -1,9 +1,8 @@
 {
   "type": "survival_reimagined:copper_gen",
   "config": {
-    "tries": 96,
-    "xz_spread": 12,
-    "y_spread": 6,
+    "tries": 48,
+    "xz_spread": 16,
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",
@@ -23,12 +22,7 @@
             "type": "minecraft:all_of",
             "predicates": [
               {
-                "type": "minecraft:matching_blocks",
-                "blocks": [
-                  "minecraft:grass_block",
-                  "minecraft:sand",
-                  "minecraft:red_sand"
-                ],
+                "type": "minecraft:solid",
                 "offset": [
                   0,
                   -1,

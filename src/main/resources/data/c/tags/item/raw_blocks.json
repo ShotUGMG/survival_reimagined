@@ -7,6 +7,16 @@
     "minecraft:raw_gold_block",
     "minecraft:raw_copper_block",
     "survival_reimagined:block_of_raw_redstone",
-    "survival_reimagined:block_of_raw_titanium"
+    "survival_reimagined:block_of_raw_titanium",
+    "survival_reimagined:raw_malachite_block",
+    "survival_reimagined:raw_azurite_block",
+    "survival_reimagined:hematite_block",
+    "survival_reimagined:magnetite_block",
+    "survival_reimagined:manganite_block",
+    "survival_reimagined:block_of_raw_uraninite",
+    "survival_reimagined:raw_cassiterite_block",
+    "survival_reimagined:calaverite_block",
+    "survival_reimagined:argentite_block",
+    "survival_reimagined:raw_silver_block"
   ]
 }

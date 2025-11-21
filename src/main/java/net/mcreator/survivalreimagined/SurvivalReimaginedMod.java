@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.survivalreimagined.world.features.StructureFeature;
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModTabs;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModSounds;
@@ -55,6 +56,7 @@ public class SurvivalReimaginedMod {
 		SurvivalReimaginedModTabs.REGISTRY.register(modEventBus);
 		SurvivalReimaginedModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		SurvivalReimaginedModFeatures.REGISTRY.register(modEventBus);
+		StructureFeature.REGISTRY.register(modEventBus);
 
 		SurvivalReimaginedModMobEffects.REGISTRY.register(modEventBus);
 		SurvivalReimaginedModMenus.REGISTRY.register(modEventBus);

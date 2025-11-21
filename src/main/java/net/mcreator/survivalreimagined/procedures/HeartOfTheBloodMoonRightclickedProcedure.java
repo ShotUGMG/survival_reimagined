@@ -20,9 +20,9 @@ public class HeartOfTheBloodMoonRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed = true;
-		SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 		if (!(world instanceof Level _lvl0 && _lvl0.isDay())) {
+			SurvivalReimaginedModVariables.WorldVariables.get(world).AnnouncementPlayed = true;
+			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 			SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
 			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
 			if (!world.isClientSide() && world.getServer() != null)
@@ -39,9 +39,9 @@ public class HeartOfTheBloodMoonRightclickedProcedure {
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 		}
-		SurvivalReimaginedModVariables.WorldVariables.get(world).EclipseAnnouncement = true;
-		SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 		if (world instanceof Level _lvl4 && _lvl4.isDay()) {
+			SurvivalReimaginedModVariables.WorldVariables.get(world).EclipseAnnouncement = true;
+			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 			SurvivalReimaginedModVariables.WorldVariables.get(world).isSolarEclipse = true;
 			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 			if (!world.isClientSide() && world.getServer() != null)

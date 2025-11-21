@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:empty_silver_rune"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:silver_diamond_rune",
+    "count": 1
+  }
+}

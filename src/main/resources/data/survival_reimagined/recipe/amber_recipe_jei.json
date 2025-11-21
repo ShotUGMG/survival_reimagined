@@ -1,0 +1,15 @@
+{
+  "type": "survival_reimagined:processing",
+  "ingredients": [
+    {
+      "tag": "c:processing/amber"
+    },
+    {
+      "tag": "c:processing/rod_items"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:amber",
+    "count": 1
+  }
+}

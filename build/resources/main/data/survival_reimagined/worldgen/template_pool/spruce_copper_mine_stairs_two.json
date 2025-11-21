@@ -1,0 +1,17 @@
+{
+  "name": "survival_reimagined:spruce_copper_mine_stairs_two",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_stairs_two",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

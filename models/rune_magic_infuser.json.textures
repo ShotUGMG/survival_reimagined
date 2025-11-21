@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "rune_magic_infuser_back",
+        "1": "rune_magic_infuser_right",
+        "2": "rune_magic_infuser_left",
+        "3": "rune_magic_infuser_front",
+        "4": "rune_magic_infuser_top",
+        "5": "minecraft:obsidian"
+      },
+      "name": "default"
+    }
+  }
+}

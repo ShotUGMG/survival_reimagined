@@ -15,7 +15,7 @@ public class HempOnTickUpdateProcedure {
 				return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
 			}
 		}.with(Blocks.FARMLAND.defaultBlockState(), "moisture", 7)).getBlock()) {
-			if (Math.random() < 0.2) {
+			if (Math.random() < 0.1) {
 				if ((blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 0) {
 					{
 						int _value = 1;

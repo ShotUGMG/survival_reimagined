@@ -9,6 +9,6 @@ public class FearEffectStartedappliedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal("Fear"), true);
+			_player.displayClientMessage(Component.literal("Darkness fills you with fear, seek light immediately"), true);
 	}
 }

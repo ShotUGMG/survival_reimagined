@@ -13,6 +13,8 @@ import net.mcreator.survivalreimagined.client.particle.StoneGrindingParticle;
 import net.mcreator.survivalreimagined.client.particle.RadiationParticleParticle;
 import net.mcreator.survivalreimagined.client.particle.RadiationParticle2Particle;
 import net.mcreator.survivalreimagined.client.particle.RadiatedParticle;
+import net.mcreator.survivalreimagined.client.particle.FallingWisteriaParticle;
+import net.mcreator.survivalreimagined.client.particle.FallingWisteriaDarkParticle;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SurvivalReimaginedModParticles {
@@ -22,5 +24,7 @@ public class SurvivalReimaginedModParticles {
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATED.get(), RadiatedParticle::provider);
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATION_PARTICLE.get(), RadiationParticleParticle::provider);
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATION_PARTICLE_2.get(), RadiationParticle2Particle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.FALLING_WISTERIA.get(), FallingWisteriaParticle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.FALLING_WISTERIA_DARK.get(), FallingWisteriaDarkParticle::provider);
 	}
 }

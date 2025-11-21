@@ -1,0 +1,8 @@
+{
+  "criteria": {
+    "ruby_heart_adv_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:infused_tool"
+}

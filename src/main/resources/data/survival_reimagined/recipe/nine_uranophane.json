@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:uranophane_block"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:uranophane",
+    "count": 9
+  }
+}

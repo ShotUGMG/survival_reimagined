@@ -1,0 +1,17 @@
+{
+    "type": "create:mixing",
+    "heat_requirement": "heated",
+    "ingredients": [
+      {
+        "tag": "c:alloy/uranium_items"
+      },
+      {
+        "tag": "c:alloy/titanium_items"
+      }
+    ],
+    "results": [
+      {
+        "id": "survival_reimagined:rough_turanite"
+      }
+    ]
+  }

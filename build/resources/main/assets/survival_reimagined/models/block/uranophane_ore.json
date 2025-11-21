@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/uranophane_ore",
+    "up": "survival_reimagined:block/uranophane_ore",
+    "north": "survival_reimagined:block/uranophane_ore",
+    "east": "survival_reimagined:block/uranophane_ore",
+    "south": "survival_reimagined:block/uranophane_ore",
+    "west": "survival_reimagined:block/uranophane_ore",
+    "particle": "survival_reimagined:block/uranophane_ore"
+  },
+  "render_type": "solid"
+}

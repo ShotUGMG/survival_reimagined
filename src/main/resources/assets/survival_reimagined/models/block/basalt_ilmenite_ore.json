@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/basalt_ilmenite_ore",
+    "up": "survival_reimagined:block/basalt_ilmenite_ore",
+    "north": "survival_reimagined:block/basalt_ilmenite_ore",
+    "east": "survival_reimagined:block/basalt_ilmenite_ore",
+    "south": "survival_reimagined:block/basalt_ilmenite_ore",
+    "west": "survival_reimagined:block/basalt_ilmenite_ore",
+    "particle": "survival_reimagined:block/basalt_ilmenite_ore"
+  },
+  "render_type": "solid"
+}

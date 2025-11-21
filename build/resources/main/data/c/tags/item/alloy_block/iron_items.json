@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "minecraft:raw_iron_block",
-    "minecraft:iron_block"
+    "minecraft:iron_block",
+    "survival_reimagined:magnetite_block",
+    "survival_reimagined:hematite_block"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:SilverRubyRune"
+      },
+      {
+        "value": "CUSTOM:GoldRubyRune"
+      }
+    ],
+    "information": [
+      "Armor: Slim chance to heal a small amount of health on damage taken.",
+      "",
+      "Tool: Chance to regain a small amount of durability with the added slim chance of dropping Ruby Heart Shard on block broken",
+      "",
+      "Weapon: Chance to heal small amount of health on mob killed"
+    ]
+  }
+}

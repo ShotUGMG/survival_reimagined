@@ -1,0 +1,83 @@
+{
+  "name": "survival_reimagined:spruce_copper_mine_sub_tunnels",
+  "fallback": "survival_reimagined:spruce_copper_mine_sub_tunnels_end",
+  "elements": [
+    {
+      "weight": 9,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_straight",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_left_turn",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_right_turn",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_plus_junction",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_t_junction",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_plus_junction_rooms",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "survival_reimagined:spruce_copper_mine_sub_tunnel_t_junction_rooms",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

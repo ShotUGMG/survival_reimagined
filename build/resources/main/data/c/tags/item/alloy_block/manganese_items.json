@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "survival_reimagined:block_of_manganese",
-    "survival_reimagined:block_of_raw_manganese"
+    "survival_reimagined:block_of_raw_manganese",
+    "survival_reimagined:manganite_block",
+    "survival_reimagined:pyrolusite_block"
   ]
 }

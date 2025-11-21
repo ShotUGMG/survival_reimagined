@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Obsidian In The Rocks",
-    "achievementDescription": "Find and Mine Embedded Obsidian",
+    "achievementDescription": "Obtain Obsidian",
     "achievementIcon": {
-      "value": "CUSTOM:ObsidianRock"
+      "value": "CUSTOM:ObsidianRockBlock"
     },
     "background": "Default",
     "disableDisplay": false,

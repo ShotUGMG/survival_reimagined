@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "#c:iron_ores",
+    "#c:copper_ores",
+    "#c:gold_ores",
+    "#c:silver_ores",
+    "#c:tin_ores",
+    "#c:uraninite_ores",
+    "#c:titanium_ores",
+    "#c:managanese_ores",
+    "#c:netherite_ores",
+    "#c:diamond_ores",
+    "#c:lazurite_ores",
+    "#c:emerald_ores",
+    "#c:sapphire_ores",
+    "#c:amber_ores",
+    "#c:ruby_ores"
+  ]
+}

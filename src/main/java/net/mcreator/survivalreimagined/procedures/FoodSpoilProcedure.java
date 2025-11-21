@@ -6,8 +6,11 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -15,19 +18,32 @@ import javax.annotation.Nullable;
 public class FoodSpoilProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity().level());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
-	public static void execute(LevelAccessor world) {
-		execute(null, world);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world) {
-		SurvivalReimaginedModVariables.WorldVariables.get(world).SpoilTimer = SurvivalReimaginedModVariables.WorldVariables.get(world).SpoilTimer + 1;
-		SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).SpoilTimer == 1600) {
-			SurvivalReimaginedModVariables.WorldVariables.get(world).SpoilTimer = 0;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
+		if (entity == null)
+			return;
+		if (SurvivalReimaginedConfigConfiguration.SPOIL_FOOD.get() == true) {
+			if (entity instanceof Player) {
+				{
+					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+					_vars.SpoilTimer = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).SpoilTimer + 1;
+					_vars.syncPlayerVariables(entity);
+				}
+				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).SpoilTimer == 1600) {
+					{
+						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+						_vars.SpoilTimer = 0;
+						_vars.syncPlayerVariables(entity);
+					}
+					MeatSpoiledProcedure.execute(world, entity);
+				}
+			}
 		}
 	}
 }

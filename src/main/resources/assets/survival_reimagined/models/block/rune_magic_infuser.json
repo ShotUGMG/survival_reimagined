@@ -1,0 +1,14 @@
+{
+  "parent": "survival_reimagined:custom/rune_magic_infuser",
+  "textures": {
+    "all": "survival_reimagined:block/rune_magic_infuser_top",
+    "particle": "survival_reimagined:block/rune_magic_infuser_top",
+    "0": "survival_reimagined:block/rune_magic_infuser_back",
+    "1": "survival_reimagined:block/rune_magic_infuser_right",
+    "2": "survival_reimagined:block/rune_magic_infuser_left",
+    "3": "survival_reimagined:block/rune_magic_infuser_front",
+    "4": "survival_reimagined:block/rune_magic_infuser_top",
+    "5": "minecraft:block/obsidian"
+  },
+  "render_type": "solid"
+}

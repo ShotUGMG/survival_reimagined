@@ -12,6 +12,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -29,41 +30,44 @@ public class EntitySprintingProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-				}
-				return false;
-			}
-		}.checkGamemode(entity)) {
-			if (entity.isSprinting()) {
-				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting == 95) {
-					if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
-						if (entity instanceof Player _player)
-							_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
-					} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
-						if (entity instanceof Player _player)
-							_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+		if (SurvivalReimaginedConfigConfiguration.HUNGER_VANILLA.get() == false) {
+			if (new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 					}
+					return false;
+				}
+			}.checkGamemode(entity)) {
+				if (entity.isSprinting()) {
+					if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting == 95) {
+						if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
+							if (entity instanceof Player _player)
+								_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
+						} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
+							if (entity instanceof Player _player)
+								_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+						}
+						{
+							SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+							_vars.HungerSprinting = 0;
+							_vars.syncPlayerVariables(entity);
+						}
+					}
+					{
+						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+						_vars.HungerSprinting = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting + 1;
+						_vars.syncPlayerVariables(entity);
+					}
+				} else {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.HungerSprinting = 0;
 						_vars.syncPlayerVariables(entity);
 					}
-				}
-				{
-					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-					_vars.HungerSprinting = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting + 1;
-					_vars.syncPlayerVariables(entity);
-				}
-			} else {
-				{
-					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-					_vars.HungerSprinting = 0;
-					_vars.syncPlayerVariables(entity);
 				}
 			}
 		}

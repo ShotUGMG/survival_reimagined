@@ -2,13 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "a a",
+    "aba",
     "aaa",
-    " a "
+    "bab"
   ],
   "key": {
     "a": {
       "item": "survival_reimagined:flesh"
+    },
+    "b": {
+      "item": "survival_reimagined:crimson_thread"
     }
   },
   "result": {

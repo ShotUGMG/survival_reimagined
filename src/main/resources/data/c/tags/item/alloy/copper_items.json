@@ -3,6 +3,8 @@
   "values": [
     "survival_reimagined:rough_copper",
     "minecraft:raw_copper",
-    "minecraft:copper_ingot"
+    "minecraft:copper_ingot",
+    "survival_reimagined:malachite",
+    "survival_reimagined:azurite"
   ]
 }

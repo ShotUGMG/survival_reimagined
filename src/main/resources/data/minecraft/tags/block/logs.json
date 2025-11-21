@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "survival_reimagined:radiant_log",
-    "survival_reimagined:stripped_radiant_log"
+    "survival_reimagined:stripped_radiant_log",
+    "survival_reimagined:wisteria_log",
+    "survival_reimagined:stripped_wisteria_log"
   ]
 }

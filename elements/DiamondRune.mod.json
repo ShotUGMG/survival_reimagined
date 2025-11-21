@@ -1,0 +1,21 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:GoldDiamondRune"
+      },
+      {
+        "value": "CUSTOM:SilverDiamondRune"
+      }
+    ],
+    "information": [
+      "Armor: Chance to recieve Resistance on attacked by mob",
+      "",
+      "Tool: Respective Block Breaking System to  achieve and level up Unbreaking Enchantement",
+      "",
+      "Weapon: Kill based progression system to achieve and level up Unbreaking Enchantement"
+    ]
+  }
+}

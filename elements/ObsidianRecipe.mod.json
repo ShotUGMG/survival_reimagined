@@ -12,31 +12,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": "CUSTOM:ObsidianRock"
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": "CUSTOM:ObsidianRock"
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": ""
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": "CUSTOM:ObsidianRock"
+        "value": "CUSTOM:ObsidianRockBlock"
       },
       {
-        "value": "CUSTOM:ObsidianRock"
+        "value": "CUSTOM:ObsidianRockBlock"
       }
     ],
     "recipeReturnStack": {

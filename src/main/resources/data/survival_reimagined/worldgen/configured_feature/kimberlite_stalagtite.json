@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:block_column",
+  "config": {
+    "allowed_placement": {
+      "type": "minecraft:matching_blocks",
+      "blocks": "minecraft:air"
+    },
+    "direction": "down",
+    "prioritize_tip": true,
+    "layers": [
+      {
+        "height": {
+          "type": "uniform",
+          "min_inclusive": 1,
+          "max_inclusive": 5
+        },
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "survival_reimagined:kimberlite_stalagtite_base"
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "survival_reimagined:kimberlite_stalagtite_middle"
+          }
+        }
+      },
+      {
+        "height": 1,
+        "provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "survival_reimagined:kimberlite_stalagtite_tip"
+          }
+        }
+      }
+    ]
+  }
+}

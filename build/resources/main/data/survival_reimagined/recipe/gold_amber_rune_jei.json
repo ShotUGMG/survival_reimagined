@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:empty_gold_rune"
+    },
+    {
+      "item": "survival_reimagined:amber"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "output": {
+    "id": "survival_reimagined:gold_amber_rune",
+    "count": 1
+  }
+}

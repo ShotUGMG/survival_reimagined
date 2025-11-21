@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:malachite"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:malachite_nugget",
+    "count": 9
+  }
+}

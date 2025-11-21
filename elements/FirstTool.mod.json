@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "First Tool",
-    "achievementDescription": "Acquire a flint tool",
+    "achievementDescription": "Acquire a flint tool by finding wild flint and scrape it on any kind of stone block",
     "achievementIcon": {
       "value": "CUSTOM:FlintTool"
     },

@@ -3,10 +3,10 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "minecraft:diamond"
+      "item": "c:alloy/diamond_items"
     },
     {
-      "tag": "c:ingots_rough/steel"
+      "tag": "c:alloy/steel_items"
     }
   ],
   "results": [

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "survival_reimagined:block/wisteria_pressure_plate"
+    },
+    "powered=true": {
+      "model": "survival_reimagined:block/wisteria_pressure_plate_down"
+    }
+  }
+}

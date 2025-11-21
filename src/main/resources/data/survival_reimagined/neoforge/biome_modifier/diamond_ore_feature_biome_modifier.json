@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "survival_reimagined:diamond_ore_feature",
+  "step": "underground_ores"
+}

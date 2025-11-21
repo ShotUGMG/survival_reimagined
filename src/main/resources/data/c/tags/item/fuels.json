@@ -6,6 +6,7 @@
     "#minecraft:coals",
     "minecraft:lava_bucket",
     "minecraft:coal_block",
-    "#c:fuels/chunks"
+    "#c:fuels/chunks",
+    "#minecraft:planks"
   ]
 }

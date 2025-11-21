@@ -13,6 +13,8 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
+
 import javax.annotation.Nullable;
 
 @EventBusSubscriber
@@ -37,10 +39,12 @@ public class SpoiledFoodEffectProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 400, 1, false, true));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1, false, true));
-		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:raw_meat")))) {
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, 1, false, true));
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 1, false, true));
+		} else if (SurvivalReimaginedConfigConfiguration.HUNGER_RAWFOOD.get() == true) {
+			if (itemstack.is(ItemTags.create(ResourceLocation.parse("minecraft:raw_meat")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 200, 1, false, true));
+			}
 		}
 	}
 }

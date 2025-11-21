@@ -3,10 +3,10 @@
     "heat_requirement": "heated",
     "ingredients": [
       {
-        "tag": "c:ingots_rough/iron"
+        "tag": "c:alloy/iron_items"
       },
       {
-        "tag": "c:ingots_rough/manganese"
+        "tag": "c:alloy/manganese_items"
       }
     ],
     "results": [

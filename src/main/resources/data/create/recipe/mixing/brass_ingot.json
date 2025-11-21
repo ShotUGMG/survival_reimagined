@@ -3,10 +3,10 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "tag": "c:ingots_rough/copper"
+      "tag": "c:alloy/copper_items"
     },
     {
-      "tag": "c:ingots_rough/zinc"
+      "tag": "c:alloy/zinc_items"
     }
   ],
   "results": [

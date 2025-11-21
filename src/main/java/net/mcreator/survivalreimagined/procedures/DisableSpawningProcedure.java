@@ -14,6 +14,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.entity.BloodMoonZombieEntity;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -31,11 +32,20 @@ public class DisableSpawningProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:skeletons")))
-					|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:zombies"))) && !(entity instanceof BloodMoonZombieEntity)) {
-				if (event instanceof ICancellableEvent _cancellable) {
-					_cancellable.setCanceled(true);
+		if (SurvivalReimaginedConfigConfiguration.DISABLE_MOBS.get() == true) {
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
+				if ((entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:skeletons"))) || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:zombies")))
+						|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:spiders")))) && !(entity instanceof BloodMoonZombieEntity)
+						&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:blood_moon/spider")))) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
+				}
+			} else if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == false) {
+				if (entity instanceof BloodMoonZombieEntity || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:blood_moon/spider")))) {
+					if (event instanceof ICancellableEvent _cancellable) {
+						_cancellable.setCanceled(true);
+					}
 				}
 			}
 		}

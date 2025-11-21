@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:sapphire_ore",
+    "survival_reimagined:deepslate_sapphire_ore",
+    "survival_reimagined:basalt_sapphire_ore",
+    "survival_reimagined:kimberlite_sapphire_ore"
+  ]
+}

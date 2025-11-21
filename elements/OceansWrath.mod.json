@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Oceans Wrath",
+    "supportedSlots": "mainhand",
+    "weight": 10,
+    "anvilCost": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "incompatibleEnchantments": [],
+    "supportedItems": [
+      {
+        "value": "TAG:survival_reimagined:oceans_wrath"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": false
+  }
+}

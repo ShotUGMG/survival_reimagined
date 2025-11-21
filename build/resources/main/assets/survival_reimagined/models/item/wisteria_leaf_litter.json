@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/wisteria_leaf_litter_full"
+  },
+  "render_type": "translucent"
+}

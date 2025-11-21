@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Survival Reimagined",
-    "achievementDescription": "Follow this Advancement tree for mod progression",
+    "achievementName": "Click here for Progression guide or press your advancements menu keybind",
+    "achievementDescription": "Your journey starts here",
     "achievementIcon": {
       "value": "CUSTOM:Heart"
     },

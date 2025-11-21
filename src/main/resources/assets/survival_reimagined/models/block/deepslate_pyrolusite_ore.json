@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "up": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "north": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "east": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "south": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "west": "survival_reimagined:block/deepslate_pyrolusite_ore",
+    "particle": "survival_reimagined:block/deepslate_pyrolusite_ore"
+  },
+  "render_type": "solid"
+}

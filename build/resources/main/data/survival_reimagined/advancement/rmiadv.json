@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:rune_magic_infuser"
+    },
+    "title": {
+      "translate": "advancements.rmiadv.title"
+    },
+    "description": {
+      "translate": "advancements.rmiadv.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "rmiadv_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "survival_reimagined:rune_magic_infuser"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:obsidian_in_the_rocks"
+}

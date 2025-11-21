@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wisteria_spider_lily_e",
+        "1": "wisteria_spider_lily"
+      },
+      "name": "default"
+    }
+  }
+}

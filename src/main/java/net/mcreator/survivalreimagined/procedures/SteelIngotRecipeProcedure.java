@@ -37,7 +37,7 @@ public class SteelIngotRecipeProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:iron_items"))) || (new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy/iron_items"))) || (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -46,7 +46,7 @@ public class SteelIngotRecipeProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:iron_items")))) && ((new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/iron_items")))) && ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -55,7 +55,7 @@ public class SteelIngotRecipeProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:manganese_items"))) || (new Object() {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy/manganese_items"))) || (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -64,7 +64,7 @@ public class SteelIngotRecipeProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:manganese_items"))))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/manganese_items"))))) {
 				if (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:silver_ore",
+    "survival_reimagined:argentite_ore",
+    "survival_reimagined:deepslate_argentite_ore",
+    "survival_reimagined:basalt_argentite_ore"
+  ]
+}

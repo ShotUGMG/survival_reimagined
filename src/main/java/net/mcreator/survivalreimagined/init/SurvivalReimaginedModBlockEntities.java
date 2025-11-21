@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.survivalreimagined.block.entity.RuneMagicInfuserBlockEntity;
 import net.mcreator.survivalreimagined.block.entity.MineralProcessingTableBlockEntity;
 import net.mcreator.survivalreimagined.block.entity.MetalRefiningTableBlockEntity;
 import net.mcreator.survivalreimagined.block.entity.ForgeBlockEntity;
@@ -28,6 +29,7 @@ public class SurvivalReimaginedModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> METAL_REFINING_TABLE = register("metal_refining_table", SurvivalReimaginedModBlocks.METAL_REFINING_TABLE, MetalRefiningTableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> MINERAL_PROCESSING_TABLE = register("mineral_processing_table", SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE, MineralProcessingTableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> ADVANCED_ALLOY_FORGE = register("advanced_alloy_forge", SurvivalReimaginedModBlocks.ADVANCED_ALLOY_FORGE, AdvancedAlloyForgeBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> RUNE_MAGIC_INFUSER = register("rune_magic_infuser", SurvivalReimaginedModBlocks.RUNE_MAGIC_INFUSER, RuneMagicInfuserBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -41,5 +43,6 @@ public class SurvivalReimaginedModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, METAL_REFINING_TABLE.get(), (blockEntity, side) -> ((MetalRefiningTableBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MINERAL_PROCESSING_TABLE.get(), (blockEntity, side) -> ((MineralProcessingTableBlockEntity) blockEntity).getItemHandler());
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ADVANCED_ALLOY_FORGE.get(), (blockEntity, side) -> ((AdvancedAlloyForgeBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RUNE_MAGIC_INFUSER.get(), (blockEntity, side) -> ((RuneMagicInfuserBlockEntity) blockEntity).getItemHandler());
 	}
 }

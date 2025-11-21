@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:rough_ingots/turanite"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:turanite_ingot"
+    }
+  ]
+}

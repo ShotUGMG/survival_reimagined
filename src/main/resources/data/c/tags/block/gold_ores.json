@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:gold_ore",
+    "minecraft:deepslate_gold_ore",
+    "survival_reimagined:calaverite_ore",
+    "survival_reimagined:deepslate_calaverite_ore",
+    "survival_reimagined:basalt_calaverite_ore"
+  ]
+}

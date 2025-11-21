@@ -1,10 +1,21 @@
-#  Survival Reimagined 1.2.5 Update
-### Progression
-- Fully finished mod progression system through the Advancements tab. This will continue to be expanded on as future updates are released.
-- Added Book Scriptures to give additional in-game documentation on things that need an in depth explanation.
-- Added Advanced Alloy Forge Book Scripture. (Can only be found in Mineshafts and Village Blacksmith Chests)
+#  Survival Reimagined 1.3.0 Update
+## New Content
 
+### Blood Moon
+ - Added Crimson Arachnid
+ - Added Alpha Crimson Arachnid
+ - Added Crimson Thread
+ - Right Clicking Heart Of The Blood Moon now forces the Bloodmoon Event but will consume the heart
 
-### Changes
-- Reworked Gas Mask Filter Code (Should now feel less buggy)
-- Reworked Blood Moon Spawn Code
+## Celestial Events
+ - Added Solar Eclipse (*Event as a chance to occur at anytime during the day*)
+ 
+### Solar Eclipse
+ - Added Ghost Creeper
+ - Added Skeleton Animal varients (Pig, Cow, Chicken)
+ - These mobs  will only spawn during a Solar Eclipse
+ 
+
+## Changes
+ - Crafting Recipe for Heart Of The Bloodmoon now also requires Crimson Thread
+ 

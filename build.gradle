@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '1.0.21'
 }
 
-version = '1.2.5'
+version = '1.3.0'
 base.archivesName = "survival_reimagined-1.21.1"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -15,6 +15,7 @@ neoForge {
         client {
             client()
 
+			
             def mcreatorJvmOptions = System.getenv('MCREATOR_JVM_OPTIONS')
             if (mcreatorJvmOptions) {
                 mcreatorJvmOptions.split("\\s+").findAll { it.trim() }.each { arg ->

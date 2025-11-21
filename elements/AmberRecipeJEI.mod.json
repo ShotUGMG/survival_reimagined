@@ -1,0 +1,19 @@
+{
+  "_fv": 73,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "processing",
+    "result": {
+      "value": "Items.EMERALD"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "TAG:c:processing/emerald"
+      },
+      {
+        "value": "TAG:c:processing/rod_items"
+      }
+    ]
+  }
+}

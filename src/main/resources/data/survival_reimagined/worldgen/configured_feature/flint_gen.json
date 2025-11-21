@@ -1,9 +1,8 @@
 {
   "type": "survival_reimagined:flint_gen",
   "config": {
-    "tries": 96,
-    "xz_spread": 14,
-    "y_spread": 6,
+    "tries": 64,
+    "xz_spread": 16,
     "feature": {
       "feature": {
         "type": "minecraft:simple_block",
@@ -27,7 +26,9 @@
                 "blocks": [
                   "minecraft:grass_block",
                   "minecraft:sand",
-                  "minecraft:red_sand"
+                  "minecraft:red_sand",
+                  "minecraft:gravel",
+                  "minecraft:stone"
                 ],
                 "offset": [
                   0,

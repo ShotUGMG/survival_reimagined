@@ -67,7 +67,7 @@ public class FearEffectAppliedProcedure {
 					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.heartbeat")), SoundSource.PLAYERS, 2, (float) 0.8, false);
 				}
 			}
-			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("survival_reimagined:fear_damage")))), 4);
+			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("survival_reimagined:fear_damage")))), 2);
 		}
 		entity.getPersistentData().putDouble("EffectTick", (entity.getPersistentData().getDouble("EffectTick") + 1));
 	}

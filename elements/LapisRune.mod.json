@@ -1,0 +1,21 @@
+{
+  "_fv": 73,
+  "_type": "jeiinformation",
+  "definition": {
+    "items": [
+      {
+        "value": "CUSTOM:GoldLapisRune"
+      },
+      {
+        "value": "CUSTOM:SilverLapisRune"
+      }
+    ],
+    "information": [
+      "Armor: Slim chance to gain a small of XP passively",
+      "",
+      "Tool: Chance to drop XP points on respective block broken. Pickaxes have a 100% success rate if block broken is ore",
+      "",
+      "Weapon: Chance for mobs to drop additional XP when killed"
+    ]
+  }
+}

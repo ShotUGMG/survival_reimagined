@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "Blocks.BASALT"
+      "value": "Blocks.SMOOTH_BASALT"
     },
     "name": "basalt",
     "namespace": "mod"

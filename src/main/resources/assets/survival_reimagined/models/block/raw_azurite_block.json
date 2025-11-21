@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/raw_azurite_block",
+    "up": "survival_reimagined:block/raw_azurite_block",
+    "north": "survival_reimagined:block/raw_azurite_block",
+    "east": "survival_reimagined:block/raw_azurite_block",
+    "south": "survival_reimagined:block/raw_azurite_block",
+    "west": "survival_reimagined:block/raw_azurite_block",
+    "particle": "survival_reimagined:block/raw_azurite_block"
+  },
+  "render_type": "solid"
+}

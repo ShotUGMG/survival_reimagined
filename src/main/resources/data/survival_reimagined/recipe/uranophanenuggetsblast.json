@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "c:metal_rocks/uranium_nuggets"
+  },
+  "result": {
+    "id": "survival_reimagined:uranium_nugget"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/stalagtite_middle",
+  "textures": {
+    "all": "minecraft:block/smooth_basalt",
+    "particle": "minecraft:block/smooth_basalt"
+  },
+  "render_type": "solid"
+}

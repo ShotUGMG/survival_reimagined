@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#c:rmi_compatible/bronze",
+    "#c:rmi_compatible/diamond",
+    "#c:rmi_compatible/gold",
+    "#c:rmi_compatible/iron",
+    "#c:rmi_compatible/netherite",
+    "#c:rmi_compatible/steel",
+    "#c:rmi_compatible/stone",
+    "#c:rmi_compatible/wooden"
+  ]
+}

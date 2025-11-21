@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:azurite"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:raw_azurite_block",
+    "count": 1
+  }
+}

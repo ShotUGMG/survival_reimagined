@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  a",
+    "b b",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:small_stick"
+    },
+    "b": {
+      "tag": "c:planks/single"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:mortar_pestal",
+    "count": 1
+  }
+}

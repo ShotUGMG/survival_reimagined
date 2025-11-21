@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:andesite_rock"
+    },
+    {
+      "tag": "c:nuggets/zinc"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:andesite_alloy"
+    }
+  ]
+}

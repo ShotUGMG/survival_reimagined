@@ -16,6 +16,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -33,41 +34,44 @@ public class EntitySwimmingProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-				}
-				return false;
-			}
-		}.checkGamemode(entity)) {
-			if (entity.isSwimming() || !((entity.getVehicle()) instanceof Boat) && (world.getBlockState(BlockPos.containing(x, y - 0.1, z))).getBlock() == Blocks.WATER) {
-				{
-					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-					_vars.HungerSwimming = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming + 1;
-					_vars.syncPlayerVariables(entity);
-				}
-				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming == 75) {
-					if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
-						if (entity instanceof Player _player)
-							_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
-					} else {
-						if (entity instanceof Player _player)
-							_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+		if (SurvivalReimaginedConfigConfiguration.HUNGER_VANILLA.get() == false) {
+			if (new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 					}
+					return false;
+				}
+			}.checkGamemode(entity)) {
+				if (entity.isSwimming() || !((entity.getVehicle()) instanceof Boat) && (world.getBlockState(BlockPos.containing(x, y - 0.1, z))).getBlock() == Blocks.WATER) {
+					{
+						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+						_vars.HungerSwimming = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming + 1;
+						_vars.syncPlayerVariables(entity);
+					}
+					if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSwimming == 75) {
+						if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
+							if (entity instanceof Player _player)
+								_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
+						} else {
+							if (entity instanceof Player _player)
+								_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+						}
+						{
+							SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+							_vars.HungerSwimming = 0;
+							_vars.syncPlayerVariables(entity);
+						}
+					}
+				} else {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.HungerSwimming = 0;
 						_vars.syncPlayerVariables(entity);
 					}
-				}
-			} else {
-				{
-					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-					_vars.HungerSwimming = 0;
-					_vars.syncPlayerVariables(entity);
 				}
 			}
 		}

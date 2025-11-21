@@ -38,6 +38,7 @@ public class MineralProcessingRecipesProcedure {
 				return 0;
 			}
 		}.getAmount(world, BlockPos.containing(x, y, z), 2) < 64) {
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Diamond
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
@@ -118,7 +119,16 @@ public class MineralProcessingRecipesProcedure {
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Items.DIAMOND).copy();
-							_setstack.setCount(1);
+							_setstack.setCount((int) (new Object() {
+								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+									if (world instanceof ILevelExtension _ext) {
+										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+										if (_itemHandler != null)
+											return _itemHandler.getStackInSlot(slotid).getCount();
+									}
+									return 0;
+								}
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -129,7 +139,9 @@ public class MineralProcessingRecipesProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
+			}
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Emerald
+			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -209,7 +221,16 @@ public class MineralProcessingRecipesProcedure {
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Items.EMERALD).copy();
-							_setstack.setCount(1);
+							_setstack.setCount((int) (new Object() {
+								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+									if (world instanceof ILevelExtension _ext) {
+										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+										if (_itemHandler != null)
+											return _itemHandler.getStackInSlot(slotid).getCount();
+									}
+									return 0;
+								}
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -220,7 +241,9 @@ public class MineralProcessingRecipesProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
+			}
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Sapphire
+			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -300,7 +323,16 @@ public class MineralProcessingRecipesProcedure {
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SAPPHIRE.get()).copy();
-							_setstack.setCount(1);
+							_setstack.setCount((int) (new Object() {
+								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+									if (world instanceof ILevelExtension _ext) {
+										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+										if (_itemHandler != null)
+											return _itemHandler.getStackInSlot(slotid).getCount();
+									}
+									return 0;
+								}
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -312,26 +344,7 @@ public class MineralProcessingRecipesProcedure {
 					}
 				}
 			}
-		}
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) == 0 || new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) < 62) {
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Ruby
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
@@ -341,7 +354,7 @@ public class MineralProcessingRecipesProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/creates_small_diamond")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/ruby")))) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
@@ -351,7 +364,7 @@ public class MineralProcessingRecipesProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.SMALL_DIAMOND.get() || (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.RUBY.get() || (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
 							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -393,15 +406,6 @@ public class MineralProcessingRecipesProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putBoolean("Grinding", true);
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
 					if (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -420,7 +424,7 @@ public class MineralProcessingRecipesProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SMALL_DIAMOND.get()).copy();
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.RUBY.get()).copy();
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									if (world instanceof ILevelExtension _ext) {
@@ -430,7 +434,7 @@ public class MineralProcessingRecipesProcedure {
 									}
 									return 0;
 								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 1) + 2));
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -441,7 +445,9 @@ public class MineralProcessingRecipesProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
+			}
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Lapis
+			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -450,7 +456,7 @@ public class MineralProcessingRecipesProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/creates_small_emerald")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/lapis")))) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
@@ -460,7 +466,7 @@ public class MineralProcessingRecipesProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.SMALL_EMERALD.get() || (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == Items.LAPIS_LAZULI || (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
 							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -520,7 +526,7 @@ public class MineralProcessingRecipesProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SMALL_EMERALD.get()).copy();
+							ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									if (world instanceof ILevelExtension _ext) {
@@ -530,7 +536,7 @@ public class MineralProcessingRecipesProcedure {
 									}
 									return 0;
 								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 1) + 2));
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -541,7 +547,9 @@ public class MineralProcessingRecipesProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
+			}
+			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Amber
+			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -550,7 +558,7 @@ public class MineralProcessingRecipesProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/creates_small_sapphire")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/amber")))) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
@@ -560,7 +568,7 @@ public class MineralProcessingRecipesProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.SMALL_SAPPHIRE.get() || (new Object() {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.AMBER.get() || (new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
 							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -620,7 +628,7 @@ public class MineralProcessingRecipesProcedure {
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SMALL_SAPPHIRE.get()).copy();
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.AMBER.get()).copy();
 							_setstack.setCount((int) (new Object() {
 								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 									if (world instanceof ILevelExtension _ext) {
@@ -630,7 +638,7 @@ public class MineralProcessingRecipesProcedure {
 									}
 									return 0;
 								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 1) + 2));
+							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {

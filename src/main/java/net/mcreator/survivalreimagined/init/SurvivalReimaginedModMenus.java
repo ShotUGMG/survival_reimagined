@@ -11,6 +11,7 @@ import net.neoforged.neoforge.common.extensions.IMenuTypeExtension;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.survivalreimagined.world.inventory.RMIMenu;
 import net.mcreator.survivalreimagined.world.inventory.MetalRefiningTableGUIMenu;
 import net.mcreator.survivalreimagined.world.inventory.MPTGUIMenu;
 import net.mcreator.survivalreimagined.world.inventory.ForgeGUIMenu;
@@ -27,4 +28,5 @@ public class SurvivalReimaginedModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<BackpackGUIMenu>> BACKPACK_GUI = REGISTRY.register("backpack_gui", () -> IMenuTypeExtension.create(BackpackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AdvancedAlloyForgeGUIMenu>> ADVANCED_ALLOY_FORGE_GUI = REGISTRY.register("advanced_alloy_forge_gui", () -> IMenuTypeExtension.create(AdvancedAlloyForgeGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AAFScriptureGUIMenu>> AAF_SCRIPTURE_GUI = REGISTRY.register("aaf_scripture_gui", () -> IMenuTypeExtension.create(AAFScriptureGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RMIMenu>> RMI = REGISTRY.register("rmi", () -> IMenuTypeExtension.create(RMIMenu::new));
 }

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "survival_reimagined:block_of_raw_uraninite",
-    "survival_reimagined:block_of_uranium"
+    "survival_reimagined:block_of_uranium",
+    "survival_reimagined:uranophane_block"
   ]
 }

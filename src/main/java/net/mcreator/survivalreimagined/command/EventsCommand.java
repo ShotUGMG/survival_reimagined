@@ -14,7 +14,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.survivalreimagined.procedures.SolarEclipseCommandProcedure;
 import net.mcreator.survivalreimagined.procedures.EventsResetProcedure;
 import net.mcreator.survivalreimagined.procedures.BloodMoonCommandProcedure;
 
@@ -35,20 +34,6 @@ public class EventsCommand {
 				direction = entity.getDirection();
 
 			EventsResetProcedure.execute(world);
-			return 0;
-		})).then(Commands.literal("eclipse").executes(arguments -> {
-			Level world = arguments.getSource().getUnsidedLevel();
-			double x = arguments.getSource().getPosition().x();
-			double y = arguments.getSource().getPosition().y();
-			double z = arguments.getSource().getPosition().z();
-			Entity entity = arguments.getSource().getEntity();
-			if (entity == null && world instanceof ServerLevel _servLevel)
-				entity = FakePlayerFactory.getMinecraft(_servLevel);
-			Direction direction = Direction.DOWN;
-			if (entity != null)
-				direction = entity.getDirection();
-
-			SolarEclipseCommandProcedure.execute(world);
 			return 0;
 		})).then(Commands.literal("bloodmoon").executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
