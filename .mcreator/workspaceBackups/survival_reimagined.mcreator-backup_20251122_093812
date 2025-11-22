@@ -26928,25 +26928,6 @@
       "path": "~/Mod Elements/Commands"
     },
     {
-      "name": "BloodMoon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blood_moon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/BloodMoonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/Events/Blood Moon/System"
-    },
-    {
       "name": "BloodMoonTexture",
       "type": "procedure",
       "compiles": true,
@@ -36606,6 +36587,25 @@
         ]
       },
       "path": "~/Compat/Create"
+    },
+    {
+      "name": "BloodMoon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_moon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BloodMoonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Events/Blood Moon/System"
     }
   ],
   "variable_elements": [
@@ -36640,21 +36640,15 @@
       "value": "0"
     },
     {
-      "name": "isFullMoon",
+      "name": "BloodMoonTimer",
       "type": "logic",
       "scope": "map",
       "value": "false"
     },
     {
-      "name": "isNotDay",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
       "name": "AnnouncementPlayed",
       "type": "logic",
-      "scope": "world",
+      "scope": "map",
       "value": "false"
     },
     {
@@ -36672,26 +36666,8 @@
     {
       "name": "BloodMoonChanceRan",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "isSolarEclipse",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "EclipseChanceRan",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "EclipseAnnouncement",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
     },
     {
       "name": "isBloodMoon",
@@ -36817,6 +36793,24 @@
       "name": "ZombificationImmune",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "BloodMoon",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ValueSetBloodMoon",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isDay",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -37919,24 +37913,6 @@
       "Items.GOLD_INGOT"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:BasaltStalagtiteBase",
-      "~CUSTOM:BasaltStalagtiteMiddle",
-      "~CUSTOM:BasaltStalagtiteTip",
-      "~CUSTOM:BasaltStalagmiteBase",
-      "~CUSTOM:BasaltStalagmiteMiddle",
-      "~CUSTOM:BasaltStalagmiteTop",
-      "~CUSTOM:DeepslateStalagtiteBase",
-      "~CUSTOM:DeepslateStalagtiteMiddle",
-      "~CUSTOM:DeepslateStalagtiteTip",
-      "~CUSTOM:DeepslateStalagmiteBase",
-      "~CUSTOM:DeepslateStalagmiteMiddle",
-      "~CUSTOM:DeepslateStalagmiteTop",
-      "~CUSTOM:StoneStalagtiteBase",
-      "~CUSTOM:StoneStalagtiteMiddle",
-      "~CUSTOM:StoneStalagtiteTip",
-      "~CUSTOM:StoneStalagmiteBase",
-      "~CUSTOM:StoneStalagmiteMiddle",
-      "~CUSTOM:StoneStalagmiteTop",
       "~CUSTOM:SulfurOre",
       "~CUSTOM:KimberliteAmberOre",
       "~CUSTOM:BasaltAmberOre",
@@ -39979,7 +39955,7 @@
       "item.survival_reimagined.bronze_armor_helmet": "Bronze Helmet",
       "item.survival_reborn.tin_ingot": "Tin Ingot",
       "item.survival_reimagined.liver": "Liver",
-      "advancements.survival_reimagined.descr": "Follow this Advancement tree for mod progression",
+      "advancements.survival_reimagined.descr": "Your journey starts here",
       "advancements.eye_of_ender.title": "Eye Of Ender",
       "block.survival_reimagined.basalt_stalagtite_base": "Stone Stalagtite",
       "advancements.build_aaf.title": "Advanced Alloy Forge",
@@ -40147,7 +40123,7 @@
       "item.survival_reborn.rough_gold": "Rough Gold",
       "item.survival_reimagined.radiation_item": "Radiation Item",
       "item.survival_reimagined.pyrolusite_nugget": "Pyrolusite Nugget",
-      "advancements.survival_reimagined.title": "Survival Reimagined",
+      "advancements.survival_reimagined.title": "Click here for Progression guide or press your advancements menu keybind",
       "advancements.alloy_refining.title": "Metal Refining",
       "advancements.a_forge_upgrade.title": "A Forge Upgrade",
       "item.survival_reimagined.cured_mutton": "Cured Mutton",
@@ -42001,7 +41977,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.3.0-ALPHA2",
+    "version": "1.3.0-BETA1",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",

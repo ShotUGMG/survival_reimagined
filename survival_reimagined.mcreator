@@ -26876,10 +26876,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -26926,25 +26922,6 @@
         ]
       },
       "path": "~/Mod Elements/Commands"
-    },
-    {
-      "name": "BloodMoon",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blood_moon",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/BloodMoonProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/Events/Blood Moon/System"
     },
     {
       "name": "BloodMoonTexture",
@@ -36606,6 +36583,25 @@
         ]
       },
       "path": "~/Compat/Create"
+    },
+    {
+      "name": "BloodMoon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_moon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BloodMoonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mod Elements/Events/Blood Moon/System"
     }
   ],
   "variable_elements": [
@@ -36640,21 +36636,15 @@
       "value": "0"
     },
     {
-      "name": "isFullMoon",
+      "name": "BloodMoonTimer",
       "type": "logic",
       "scope": "map",
       "value": "false"
     },
     {
-      "name": "isNotDay",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
       "name": "AnnouncementPlayed",
       "type": "logic",
-      "scope": "world",
+      "scope": "map",
       "value": "false"
     },
     {
@@ -36672,26 +36662,8 @@
     {
       "name": "BloodMoonChanceRan",
       "type": "number",
-      "scope": "world",
+      "scope": "map",
       "value": "0"
-    },
-    {
-      "name": "isSolarEclipse",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
-    },
-    {
-      "name": "EclipseChanceRan",
-      "type": "number",
-      "scope": "world",
-      "value": "0"
-    },
-    {
-      "name": "EclipseAnnouncement",
-      "type": "logic",
-      "scope": "world",
-      "value": "false"
     },
     {
       "name": "isBloodMoon",
@@ -36817,6 +36789,24 @@
       "name": "ZombificationImmune",
       "type": "logic",
       "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "BloodMoon",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ValueSetBloodMoon",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "isDay",
+      "type": "logic",
+      "scope": "map",
       "value": "false"
     }
   ],
@@ -37219,6 +37209,19 @@
       "CUSTOM:Manganite",
       "CUSTOM:Pyrolusite"
     ],
+    "ITEMS:c:rmi_runes/silver": [
+      "CUSTOM:SapphireSilverRune",
+      "CUSTOM:SilverAmberRune",
+      "CUSTOM:SilverDiamondRune",
+      "CUSTOM:SilverEmeraldRune",
+      "CUSTOM:SilverRubyRune",
+      "CUSTOM:SilverLapisRune",
+      "CUSTOM:SilverSpinelRune"
+    ],
+    "ITEMS:c:meat/intestines": [
+      "CUSTOM:Intestines",
+      "CUSTOM:CookedIntestines"
+    ],
     "ITEMS:c:bark/large": [
       "CUSTOM:LargeOakBark",
       "CUSTOM:LargeDarkOakBark",
@@ -37232,19 +37235,6 @@
       "CUSTOM:LargeWarpedBark",
       "CUSTOM:FirBark",
       "CUSTOM:WisteriaBark"
-    ],
-    "ITEMS:c:meat/intestines": [
-      "CUSTOM:Intestines",
-      "CUSTOM:CookedIntestines"
-    ],
-    "ITEMS:c:rmi_runes/silver": [
-      "CUSTOM:SapphireSilverRune",
-      "CUSTOM:SilverAmberRune",
-      "CUSTOM:SilverDiamondRune",
-      "CUSTOM:SilverEmeraldRune",
-      "CUSTOM:SilverRubyRune",
-      "CUSTOM:SilverLapisRune",
-      "CUSTOM:SilverSpinelRune"
     ],
     "ITEMS:c:meat/cod": [
       "Items.FISH#0",
@@ -37326,10 +37316,6 @@
       "CUSTOM:MangrovePlank",
       "CUSTOM:RadiatedPlank"
     ],
-    "BLOCKS:minecraft:needs_diamond_tool": [
-      "~CUSTOM:NetheriteScrapBlock",
-      "~CUSTOM:EmbeddedObsidian"
-    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:KimberliteAmberOre",
       "~CUSTOM:BasaltAmberOre",
@@ -37380,6 +37366,10 @@
       "~CUSTOM:DeepslateManganeseOre",
       "~CUSTOM:ManganeseOre"
     ],
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:NetheriteScrapBlock",
+      "~CUSTOM:EmbeddedObsidian"
+    ],
     "ITEMS:c:tools/chisel": [
       "CUSTOM:CopperChisel",
       "CUSTOM:BronzeChisel",
@@ -37389,16 +37379,16 @@
     "BLOCKS:minecraft:basalt_ore_replaceables": [
       "Blocks.SMOOTH_BASALT"
     ],
+    "ITEMS:c:processing/emerald": [
+      "Blocks.EMERALD_ORE",
+      "Blocks.DEEPSLATE_EMERALD_ORE",
+      "CUSTOM:RoughEmerald"
+    ],
     "ITEMS:c:alloy/tin_items": [
       "CUSTOM:RawTin",
       "CUSTOM:TinIngot",
       "CUSTOM:RoughTin",
       "CUSTOM:Cassiterite"
-    ],
-    "ITEMS:c:processing/emerald": [
-      "Blocks.EMERALD_ORE",
-      "Blocks.DEEPSLATE_EMERALD_ORE",
-      "CUSTOM:RoughEmerald"
     ],
     "BLOCKS:c:iron_ores": [
       "Blocks.IRON_ORE",
@@ -37522,14 +37512,22 @@
       "CUSTOM:ManganiteBlock",
       "CUSTOM:PyrolusiteBlock"
     ],
+    "ENTITIES:minecraft:spiders": [
+      "EntityCaveSpider",
+      "EntitySpider"
+    ],
     "ITEMS:c:processing/amber": [
       "CUSTOM:AmberOre",
       "CUSTOM:DeepslateAmberOre",
       "CUSTOM:RoughAmber"
     ],
-    "ENTITIES:minecraft:spiders": [
-      "EntityCaveSpider",
-      "EntitySpider"
+    "ITEMS:farmersdelight:knives": [
+      "CUSTOM:StoneKnife",
+      "CUSTOM:BronzeKnife",
+      "CUSTOM:WoodenKnife",
+      "CUSTOM:SteelKnife",
+      "CUSTOM:DiamondKnife",
+      "CUSTOM:NetheriteKnife"
     ],
     "ITEMS:c:rune_type/gold": [
       "CUSTOM:SapphireGoldRune",
@@ -37540,14 +37538,6 @@
       "CUSTOM:GoldRubyRune",
       "CUSTOM:GoldLapisRune",
       "CUSTOM:GoldSpinelRune"
-    ],
-    "ITEMS:farmersdelight:knives": [
-      "CUSTOM:StoneKnife",
-      "CUSTOM:BronzeKnife",
-      "CUSTOM:WoodenKnife",
-      "CUSTOM:SteelKnife",
-      "CUSTOM:DiamondKnife",
-      "CUSTOM:NetheriteKnife"
     ],
     "BLOCKS:c:pointed_stones/kimberlite": [
       "CUSTOM:KimberliteStalagmiteTop",
@@ -37583,12 +37573,6 @@
       "Blocks.EMERALD_BLOCK",
       "CUSTOM:EmbeddedObsidian"
     ],
-    "BLOCKS:c:tin_ores": [
-      "CUSTOM:TinOre",
-      "CUSTOM:DeepslateTinOre",
-      "CUSTOM:CassiteriteOre",
-      "CUSTOM:DeepslateCassiteriteOre"
-    ],
     "ITEMS:c:rmi_compatible/gold": [
       "Items.GOLDEN_SWORD",
       "Items.GOLDEN_SHOVEL",
@@ -37599,6 +37583,12 @@
       "Items.GOLDEN_CHESTPLATE",
       "Items.GOLDEN_LEGGINGS",
       "Items.GOLDEN_BOOTS"
+    ],
+    "BLOCKS:c:tin_ores": [
+      "CUSTOM:TinOre",
+      "CUSTOM:DeepslateTinOre",
+      "CUSTOM:CassiteriteOre",
+      "CUSTOM:DeepslateCassiteriteOre"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:NetheriteSaw",
@@ -37651,12 +37641,12 @@
     "ITEMS:c:ingots/redstone": [
       "CUSTOM:RedstoneIngot"
     ],
-    "BLOCKS:sereneseasons:spring_crops": [
-      "CUSTOM:AppleTreeSapling"
-    ],
     "ITEMS:minecraft:netherportal_items": [
       "Items.FIRE_CHARGE",
       "Items.FLINT_AND_STEEL"
+    ],
+    "BLOCKS:sereneseasons:spring_crops": [
+      "CUSTOM:AppleTreeSapling"
     ],
     "ITEMS:c:meat/liver": [
       "CUSTOM:Liver",
@@ -37770,6 +37760,9 @@
     "ITEMS:c:alloy_block/netherite_items": [
       "CUSTOM:NetheriteScrapBlock"
     ],
+    "ITEMS:sereneseasons:spring_crops": [
+      "CUSTOM:AppleTreeSapling"
+    ],
     "ITEMS:c:tool_part/bronze": [
       "CUSTOM:BronzePickaxeHead",
       "CUSTOM:BronzeAxeHead",
@@ -37779,9 +37772,6 @@
       "CUSTOM:BronzeHammerHead",
       "CUSTOM:BronzeSawBlade",
       "CUSTOM:BronzeKnifeBlade"
-    ],
-    "ITEMS:sereneseasons:spring_crops": [
-      "CUSTOM:AppleTreeSapling"
     ],
     "ITEMS:c:ingots/manganese": [
       "CUSTOM:ManganeseIngot"
@@ -37919,24 +37909,6 @@
       "Items.GOLD_INGOT"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:BasaltStalagtiteBase",
-      "~CUSTOM:BasaltStalagtiteMiddle",
-      "~CUSTOM:BasaltStalagtiteTip",
-      "~CUSTOM:BasaltStalagmiteBase",
-      "~CUSTOM:BasaltStalagmiteMiddle",
-      "~CUSTOM:BasaltStalagmiteTop",
-      "~CUSTOM:DeepslateStalagtiteBase",
-      "~CUSTOM:DeepslateStalagtiteMiddle",
-      "~CUSTOM:DeepslateStalagtiteTip",
-      "~CUSTOM:DeepslateStalagmiteBase",
-      "~CUSTOM:DeepslateStalagmiteMiddle",
-      "~CUSTOM:DeepslateStalagmiteTop",
-      "~CUSTOM:StoneStalagtiteBase",
-      "~CUSTOM:StoneStalagtiteMiddle",
-      "~CUSTOM:StoneStalagtiteTip",
-      "~CUSTOM:StoneStalagmiteBase",
-      "~CUSTOM:StoneStalagmiteMiddle",
-      "~CUSTOM:StoneStalagmiteTop",
       "~CUSTOM:SulfurOre",
       "~CUSTOM:KimberliteAmberOre",
       "~CUSTOM:BasaltAmberOre",
@@ -39143,9 +39115,9 @@
       "item.survival_reborn.raw_manganese": "Raw Manganese",
       "item.survival_reimagined.uranophane_nugget": "Uranophane Nugget",
       "item.survival_reborn.bronze_chisel": "Bronze Chisel",
-      "item.survival_reimagined.bronze_ingot": "Bronze Ingot",
-      "item.survival_reimagined.steel_ingot": "Steel Ingot",
       "advancements.ruby_heart_adv.descr": "Craft and use the Ruby Heart to gain an additional heart",
+      "item.survival_reimagined.steel_ingot": "Steel Ingot",
+      "item.survival_reimagined.bronze_ingot": "Bronze Ingot",
       "item.survival_reborn.steel_hammer": "Steel Hammer",
       "item.survival_reimagined.heart_item": "Heart",
       "advancements.nether_heart.descr": "Craft Heart Of The Nether and use it to light a Nether Portal",
@@ -39169,9 +39141,9 @@
       "item.survival_reborn.rough_plated_diamond": "Rough Plated Diamond",
       "block.survival_reimagined.clay_hammer_head_mold": "Clay Hammer Head Mold",
       "item.survival_reimagined.netherrack_rock": "Netherrack Rock",
-      "block.survival_reborn.pig_leg": "Pig Leg",
-      "item.survival_reborn.obsidian_handle": "Obsidian Handle",
       "block.survival_reimagined.dripstone_rock_block": "Dripstone Rock Block",
+      "item.survival_reborn.obsidian_handle": "Obsidian Handle",
+      "block.survival_reborn.pig_leg": "Pig Leg",
       "item.survival_reimagined.redwood_bark": "Redwood Bark",
       "subtitles.netherite_scrap/sounds": "",
       "block.survival_reimagined.pyrolusite_ore": "Pyrolusite Ore",
@@ -39185,28 +39157,28 @@
       "item.survival_reimagined.ilmenite_nugget": "Ilmenite Nugget",
       "item.survival_reimagined.spruce_plank": "Spruce Plank",
       "item.survival_reborn.redstone_charged_uranium_dust": "Redstone Charged Uranium Dust",
-      "block.survival_reimagined.ingot_mold": "Ingot Mold",
       "block.survival_reimagined.clay_knife_mold": "Clay Knife Mold",
+      "block.survival_reimagined.ingot_mold": "Ingot Mold",
       "item.survival_reimagined.bronze_sword": "Bronze Sword",
       "advancements.first_solar_eclipse.title": "Solar Eclipse",
       "item.survival_reborn.large_warped_bark": "Large Warped Bark",
       "item.survival_reimagined.gold_emerald_rune": "Rune",
-      "item.survival_reimagined.flesh": "Flesh",
-      "item.survival_reborn.mud_rock": "Mud Rock",
       "item.survival_reborn.steel_hoe_blade": "Steel Hoe Blade",
-      "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
-      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
-      "item.survival_reimagined.raw_zinc_nugget": "Raw Zinc Nugget",
+      "item.survival_reborn.mud_rock": "Mud Rock",
+      "item.survival_reimagined.flesh": "Flesh",
       "advancements.blood_moon_hours.title": "Blood Moon",
+      "item.survival_reimagined.raw_zinc_nugget": "Raw Zinc Nugget",
+      "death.attack.fear_damage.item": "%1$s was killed by %2$s using %3$s",
+      "item.survival_reborn.spoiled_rabbit": "Spoiled Rabbit",
       "advancements.steel_ingots.descr": "Use an Ingot Mold to make Steel Ingots",
       "item.survival_reborn.flint_tool": "Flint Tool",
       "item.survival_reimagined.tin_chunk": "Tin Chunk",
       "block.survival_reimagined.radiant_trapdoor": "Radiant Trapdoor",
       "item.survival_reimagined.sapphire_gold_rune": "Rune",
       "block.survival_reimagined.wisteria_button": "Wisteria Planks",
-      "block.survival_reimagined.radiated_button": "Radiated Button",
-      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
       "item.survival_reborn.cured_lungs": "Cured Lungs",
+      "item.survival_reimagined.bronze_nugget": "Bronze Nugget",
+      "block.survival_reimagined.radiated_button": "Radiated Button",
       "block.survival_reborn.clay_helmet_mold": "Clay Helmet Mold",
       "item.survival_reimagined.dripstone_rock": "Dripstone Rock",
       "block.survival_reimagined.basalt_sapphire_ore": "Basalt Sapphire Ore",
@@ -39215,9 +39187,9 @@
       "item.survival_reimagined.diamond_knife": "Diamond Survival Knife",
       "block.survival_reimagined.basalt_stalagmite_base": "Basalt Stalagmite",
       "block.survival_reborn.hoe_head_mold": "Hoe Head Mold",
-      "item.survival_reborn.steel_hoe": "Steel Hoe",
-      "item.survival_reborn.spoiled_intestines": "Spoiled Intestines",
       "block.survival_reimagined.shovel_head_mold": "Shovel Head Mold",
+      "item.survival_reborn.spoiled_intestines": "Spoiled Intestines",
+      "item.survival_reborn.steel_hoe": "Steel Hoe",
       "advancements.uranium.title": "Uranium",
       "block.survival_reimagined.mineral_processing_table": "Mineral Processing Table",
       "item.survival_reimagined.sulfur_powder": "Sulfur Powder",
@@ -39288,8 +39260,8 @@
       "item.survival_reborn.stone_rock": "Stone Rock",
       "item.survival_reimagined.reactor_rod": "Reactor Rod",
       "item.survival_reimagined.yield_upgrade": "Yield Upgrade MKI",
-      "subtitles.music/radiant_abyss": "",
       "advancements.planks.descr": "Use a saw to make some planks",
+      "subtitles.music/radiant_abyss": "",
       "item.survival_reborn.diamond_pickaxe_head": "Diamond Pickaxe Head",
       "item.survival_reimagined.raw_uraninite_nugget": "Raw Uraninite Nugget",
       "block.survival_reimagined.sapphire_block": "Sapphire Block",
@@ -39301,9 +39273,9 @@
       "item.survival_reborn.diamond_saw": "Diamond Saw",
       "block.survival_reimagined.amber_ore": "Amber Ore",
       "item.survival_reimagined.azurite": "Azurite",
-      "gui.survival_reimagined.aaf_scripture_gui.tooltip_previous_page": "Previous Page",
-      "item.survival_reimagined.large_acacia_bark": "Acacia Bark",
       "item.survival_reimagined.steel_armor_helmet": "Steel Helmet",
+      "item.survival_reimagined.large_acacia_bark": "Acacia Bark",
+      "gui.survival_reimagined.aaf_scripture_gui.tooltip_previous_page": "Previous Page",
       "block.survival_reborn.clay_sword_blade_mold": "Clay Sword Blade Mold",
       "block.survival_reborn.block_of_raw_tin": "Block Of Raw Tin",
       "block.survival_reborn.block_of_tin": "Block Of Tin",

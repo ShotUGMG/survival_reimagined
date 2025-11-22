@@ -26,13 +26,13 @@ public class BloodMoonTextureProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
 		if (world.isClientSide()) {
-			if (SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan == 1) {
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == true) {
 				if (world.isClientSide()) {
 					Minecraft.getInstance().getTextureManager().bindForSetup(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png"));
 					Minecraft.getInstance().getTextureManager().register(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"),
 							Minecraft.getInstance().getTextureManager().getTexture(ResourceLocation.parse("survival_reimagined:textures/environment/blood_moon.png")));
 				}
-			} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan == 0) {
+			} else if (SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon == false) {
 				if (world.isClientSide()) {
 					Minecraft.getInstance().getTextureManager().release(ResourceLocation.parse("minecraft:textures/environment/moon_phases.png"));
 				}

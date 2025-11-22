@@ -1,50 +1,50 @@
-/time set night
-/event bloodmoon
-/event reset
 /time set day
-/difficulty peaceful
-/difficulty easy
-/effect give Dev minecraft:hunger
-/effect clear
-/locate biome minecraft:warm_ocean
-/tp @s -364 63 -2424
-/effect give Dev minecraft:night_vision infinite
-/give Dev survival_reimagined:cured_steak 64
-/xp set Dev 0 levels
-/xp set Dev 0 points
-/xp set Dev 0 levels
-/attribute Dev minecraft:generic.max_health base set 20
-/effect give Dev minecraft:night_vision infinite
-/difficulty easy
-/effect give Dev minecraft:night_vision infinite
-/effect clear Dev
-/advancement grant Dev from survival_reimagined:survival_reimagined
-/advancement revoke Dev only survival_reimagined:conquered
-/effect give Dev minecraft:night_vision infinite
-/effect clear
-/effect give Dev minecraft:night_vision infinite
-/locate biome minecraft:plains
-/tp @s -395 99 37
-/effect give Dev minecraft:night_vision infinite
-/locate biome survival_reimagined:radiated_forest
-/tp @s -249 -76 658
-/locate biome survival_reimagined:radiated_forest
-/tp @s -1401 -111 943
-/locate biome survival_reimagined:radiated_forest
-/tp Dev -6000 ~ 6000
-/locate biome survival_reimagined:radiated_forest
-/tp @s -6193 -68 6093
-/effect give Dev minecraft:night_vision infinite
-/locate biome survival_reimagined:radiated_forest
-/tp @s -6109 -103 6481
-/effect give Dev minecraft:night_vision infinite
-/locate biome survival_reimagined:radiated_forest
-/tp @s 435 -68 35
-/tp @s -6193 -68 6093
-/locate biome survival_reimagined:radiated_forest
-/tp @s -5969 -68 5421
-/locate biome survival_reimagined:radiated_forest
-/tp @s -6431 -95 4797
-/effect give Dev minecraft:night_vision infinite
-/locate biome survival_reimagined:radiated_forest
-/tp @s 189 -119 -165
+/time add 6000
+/time add 2000
+/time add 500
+/time add 1500
+/time add 600
+/time add 6000
+/time set day
+/time add 6000
+/time add 3000
+/time add 1000
+/time set day
+/time add 6000
+/time add 3000
+/time add 1000
+/time add 500
+/time set day
+/print logic
+/time set night
+/print logic
+/time set day
+/print logic
+/time set day
+/time add 24000
+/print logic
+/time set night
+/print logic
+/time set day
+/time add 12000
+/print logic
+/time add 12000
+/print logic
+/time add 12000
+/print logic
+/time add 12000
+/print logic
+/tick rate 6000
+/print logic
+/tick rate 6000
+/print number
+/time set day
+/print number
+/time set night
+/print number
+/time set day
+/time set night
+/time set day
+/tick rate 6000
+/time set day
+/tick rate 6000

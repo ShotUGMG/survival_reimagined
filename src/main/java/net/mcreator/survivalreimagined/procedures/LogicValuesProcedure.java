@@ -10,6 +10,6 @@ public class LogicValuesProcedure {
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Blood Moon Value: " + SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon)), false);
 		if (!world.isClientSide() && world.getServer() != null)
-			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Solar Eclipse Value: " + SurvivalReimaginedModVariables.WorldVariables.get(world).isSolarEclipse)), false);
+			world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("isDay Value: " + SurvivalReimaginedModVariables.MapVariables.get(world).isDay)), false);
 	}
 }

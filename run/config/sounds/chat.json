@@ -7,7 +7,7 @@
 		"soundEvent": "minecraft:block.note_block.hat"
 	},
 	"messageSoundEffect": {
-		"shouldPlay": true,
+		"shouldPlay": false,
 		"pitch": 2.0,
 		"volume": 0.8,
 		"id": "message",

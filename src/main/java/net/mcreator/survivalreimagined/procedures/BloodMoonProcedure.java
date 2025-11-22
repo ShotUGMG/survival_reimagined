@@ -6,7 +6,8 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
@@ -25,52 +26,54 @@ public class BloodMoonProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		if (SurvivalReimaginedConfigConfiguration.BLOOD_MOON.get() == true) {
-			if (world.dayTime() % 12000 == 1) {
-				if (world instanceof Level _lvl2 && _lvl2.isDay()) {
-					if (SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan == 1 || SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan == 2) {
-						SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = false;
+		if (world.dayTime() % 24000 >= 0 && world.dayTime() % 24000 <= 12000) {
+			SurvivalReimaginedModVariables.MapVariables.get(world).isDay = true;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+		} else {
+			SurvivalReimaginedModVariables.MapVariables.get(world).isDay = false;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+		}
+		if (SurvivalReimaginedModVariables.MapVariables.get(world).isDay == false) {
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).ValueSetBloodMoon == false) {
+				SurvivalReimaginedModVariables.MapVariables.get(world).ValueSetBloodMoon = true;
+				SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan = Math.round(Mth.nextInt(RandomSource.create(), 0, 1000));
+				SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon < 1000) {
+				SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon = Math.round(SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon + 1);
+				SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+			}
+			if (SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon == SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan) {
+				SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan = 1001;
+				SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+				if (world.dimensionType().moonPhase(world.dayTime()) == 1) {
+					if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.FULL_MOON.get()) {
+						SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
 						SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
-						SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 0;
-						SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
 					}
-				} else {
-					if (SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan == 0) {
-						if (world.dimensionType().moonPhase(world.dayTime()) == 1) {
-							if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.FULL_MOON.get()) {
-								SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
-								SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 1;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							} else {
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 2;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							}
-						} else if (world.dimensionType().moonPhase(world.dayTime()) == 2 || world.dimensionType().moonPhase(world.dayTime()) == 3 || world.dimensionType().moonPhase(world.dayTime()) == 7
-								|| world.dimensionType().moonPhase(world.dayTime()) == 8) {
-							if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.PHASES_ONE.get()) {
-								SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
-								SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 1;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							} else {
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 2;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							}
-						} else if (world.dimensionType().moonPhase(world.dayTime()) == 4 || world.dimensionType().moonPhase(world.dayTime()) == 5 || world.dimensionType().moonPhase(world.dayTime()) == 6) {
-							if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.PHASES_TWO.get()) {
-								SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
-								SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 1;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							} else {
-								SurvivalReimaginedModVariables.WorldVariables.get(world).BloodMoonChanceRan = 2;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
-							}
-						}
+				} else if (world.dimensionType().moonPhase(world.dayTime()) == 2 || world.dimensionType().moonPhase(world.dayTime()) == 3 || world.dimensionType().moonPhase(world.dayTime()) == 7
+						|| world.dimensionType().moonPhase(world.dayTime()) == 8) {
+					if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.PHASES_ONE.get()) {
+						SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
+						SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+					}
+				} else if (world.dimensionType().moonPhase(world.dayTime()) == 4 || world.dimensionType().moonPhase(world.dayTime()) == 5 || world.dimensionType().moonPhase(world.dayTime()) == 6) {
+					if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.PHASES_TWO.get()) {
+						SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
+						SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
 					}
 				}
 			}
+		} else {
+			SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan = 0;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+			SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon = 0;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+			SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = false;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
+			SurvivalReimaginedModVariables.MapVariables.get(world).ValueSetBloodMoon = false;
+			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
 		}
 	}
 }

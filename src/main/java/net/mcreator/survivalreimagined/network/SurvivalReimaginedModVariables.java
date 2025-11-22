@@ -127,12 +127,6 @@ public class SurvivalReimaginedModVariables {
 		public static final String DATA_NAME = "survival_reimagined_worldvars";
 		public double HeartBeat = 0;
 		public double EffectDanger = 0;
-		public boolean isNotDay = false;
-		public boolean AnnouncementPlayed = false;
-		public double BloodMoonChanceRan = 0;
-		public boolean isSolarEclipse = false;
-		public double EclipseChanceRan = 0;
-		public boolean EclipseAnnouncement = false;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -143,24 +137,12 @@ public class SurvivalReimaginedModVariables {
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			HeartBeat = nbt.getDouble("HeartBeat");
 			EffectDanger = nbt.getDouble("EffectDanger");
-			isNotDay = nbt.getBoolean("isNotDay");
-			AnnouncementPlayed = nbt.getBoolean("AnnouncementPlayed");
-			BloodMoonChanceRan = nbt.getDouble("BloodMoonChanceRan");
-			isSolarEclipse = nbt.getBoolean("isSolarEclipse");
-			EclipseChanceRan = nbt.getDouble("EclipseChanceRan");
-			EclipseAnnouncement = nbt.getBoolean("EclipseAnnouncement");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("HeartBeat", HeartBeat);
 			nbt.putDouble("EffectDanger", EffectDanger);
-			nbt.putBoolean("isNotDay", isNotDay);
-			nbt.putBoolean("AnnouncementPlayed", AnnouncementPlayed);
-			nbt.putDouble("BloodMoonChanceRan", BloodMoonChanceRan);
-			nbt.putBoolean("isSolarEclipse", isSolarEclipse);
-			nbt.putDouble("EclipseChanceRan", EclipseChanceRan);
-			nbt.putBoolean("EclipseAnnouncement", EclipseAnnouncement);
 			return nbt;
 		}
 
@@ -183,10 +165,15 @@ public class SurvivalReimaginedModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "survival_reimagined_mapvars";
-		public boolean isFullMoon = false;
+		public boolean BloodMoonTimer = false;
+		public boolean AnnouncementPlayed = false;
 		public boolean sculk_hearts = false;
 		public double MPT_Time = 0;
+		public double BloodMoonChanceRan = 0;
 		public boolean isBloodMoon = false;
+		public double BloodMoon = 0;
+		public boolean ValueSetBloodMoon = false;
+		public boolean isDay = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -195,18 +182,28 @@ public class SurvivalReimaginedModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			isFullMoon = nbt.getBoolean("isFullMoon");
+			BloodMoonTimer = nbt.getBoolean("BloodMoonTimer");
+			AnnouncementPlayed = nbt.getBoolean("AnnouncementPlayed");
 			sculk_hearts = nbt.getBoolean("sculk_hearts");
 			MPT_Time = nbt.getDouble("MPT_Time");
+			BloodMoonChanceRan = nbt.getDouble("BloodMoonChanceRan");
 			isBloodMoon = nbt.getBoolean("isBloodMoon");
+			BloodMoon = nbt.getDouble("BloodMoon");
+			ValueSetBloodMoon = nbt.getBoolean("ValueSetBloodMoon");
+			isDay = nbt.getBoolean("isDay");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
-			nbt.putBoolean("isFullMoon", isFullMoon);
+			nbt.putBoolean("BloodMoonTimer", BloodMoonTimer);
+			nbt.putBoolean("AnnouncementPlayed", AnnouncementPlayed);
 			nbt.putBoolean("sculk_hearts", sculk_hearts);
 			nbt.putDouble("MPT_Time", MPT_Time);
+			nbt.putDouble("BloodMoonChanceRan", BloodMoonChanceRan);
 			nbt.putBoolean("isBloodMoon", isBloodMoon);
+			nbt.putDouble("BloodMoon", BloodMoon);
+			nbt.putBoolean("ValueSetBloodMoon", ValueSetBloodMoon);
+			nbt.putBoolean("isDay", isDay);
 			return nbt;
 		}
 
