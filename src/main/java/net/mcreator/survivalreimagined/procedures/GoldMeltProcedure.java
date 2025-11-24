@@ -118,7 +118,7 @@ public class GoldMeltProcedure {
 								}
 								return 0;
 							}
-						}.getAmount(world, BlockPos.containing(x, y, z), 3) + Mth.nextInt(RandomSource.create(), 3, 6)));
+						}.getAmount(world, BlockPos.containing(x, y, z), 3) + Mth.nextInt(RandomSource.create(), 1, 3)));
 						_itemHandlerModifiable.setStackInSlot(3, _setstack);
 					}
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {

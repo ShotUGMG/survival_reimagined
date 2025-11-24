@@ -6,11 +6,12 @@
   "projectBrowserState": {
     "expandedPaths": [
       "[, Survival Reimagined]",
-      "[, Survival Reimagined, Source (Gradle)]",
-      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net]",
-      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\java\\net\\mcreator]",
       "[, Survival Reimagined, Resources (Gradle)]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\assets]"
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item\\metal_rocks]"
     ]
   }
 }

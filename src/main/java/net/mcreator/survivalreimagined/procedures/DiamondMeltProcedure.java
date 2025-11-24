@@ -118,7 +118,7 @@ public class DiamondMeltProcedure {
 								}
 								return 0;
 							}
-						}.getAmount(world, BlockPos.containing(x, y, z), 3) + Mth.nextInt(RandomSource.create(), 1, 4)));
+						}.getAmount(world, BlockPos.containing(x, y, z), 3) + Mth.nextInt(RandomSource.create(), 1, 2)));
 						_itemHandlerModifiable.setStackInSlot(3, _setstack);
 					}
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {

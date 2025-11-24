@@ -4,11 +4,15 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 public class DayDetectionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (world instanceof Level _lvl0 && _lvl0.isDay() && !world.getLevelData().isRaining() && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+		if (world instanceof Level _lvl0 && _lvl0.isDay() && (!world.getLevelData().isRaining() || world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("c:is_dry"))))
+				&& world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);

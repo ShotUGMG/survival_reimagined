@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "create:raw_zinc"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:raw_zinc_nugget",
+    "count": 9
+  }
+}

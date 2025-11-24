@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:basalt_magnetite_ore",
+    "survival_reimagined:deepslate_magnetite_ore",
+    "survival_reimagined:magnetite_ore",
+    "survival_reimagined:basalt_hematite_ore",
+    "survival_reimagined:deepslate_hematite_ore",
+    "survival_reimagined:hematite_ore",
+    "survival_reimagined:basalt_manganite_ore",
+    "survival_reimagined:deepslate_manganite_ore",
+    "survival_reimagined:manganite_ore",
+    "survival_reimagined:pyrolusite_ore",
+    "survival_reimagined:deepslate_pyrolusite_ore",
     "survival_reimagined:kimberlite_amber_ore",
     "survival_reimagined:basalt_amber_ore",
     "survival_reimagined:kimberlite_ruby_ore",

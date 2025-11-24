@@ -51,17 +51,16 @@ public class ConqueredADVProcedure {
 					}
 				}
 			}
-		} else {
-			if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) > 0) {
-				if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(SurvivalReimaginedModMobEffects.PARANOIA) || entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(SurvivalReimaginedModMobEffects.FEAR)) {
-					if (entity instanceof ServerPlayer _player) {
-						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:conquered"));
-						if (_adv != null) {
-							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-							if (!_ap.isDone()) {
-								for (String criteria : _ap.getRemainingCriteria())
-									_player.getAdvancements().award(_adv, criteria);
-							}
+		}
+		if (world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) > 0) {
+			if (entity instanceof LivingEntity _livEnt10 && _livEnt10.hasEffect(SurvivalReimaginedModMobEffects.PARANOIA) || entity instanceof LivingEntity _livEnt11 && _livEnt11.hasEffect(SurvivalReimaginedModMobEffects.FEAR)) {
+				if (entity instanceof ServerPlayer _player) {
+					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:conquered"));
+					if (_adv != null) {
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
 						}
 					}
 				}

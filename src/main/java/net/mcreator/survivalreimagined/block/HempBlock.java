@@ -1,6 +1,8 @@
 
 package net.mcreator.survivalreimagined.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -32,7 +34,17 @@ public class HempBlock extends Block implements BonemealableBlock {
 	public static final IntegerProperty AGE_3 = BlockStateProperties.AGE_3;
 
 	public HempBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(AGE_3) == 1)
+					return 0;
+				if (s.getValue(AGE_3) == 2)
+					return 0;
+				if (s.getValue(AGE_3) == 3)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AGE_3, 0));
 	}
 
@@ -49,6 +61,20 @@ public class HempBlock extends Block implements BonemealableBlock {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(AGE_3) == 1) {
+			return box(0, 0, 0, 16, 5, 16);
+		}
+		if (state.getValue(AGE_3) == 2) {
+			return box(0, 0, 0, 16, 12, 16);
+		}
+		if (state.getValue(AGE_3) == 3) {
+			return box(0, 0, 0, 16, 16, 16);
+		}
+		return box(0, 0, 0, 16, 2, 16);
 	}
 
 	@Override

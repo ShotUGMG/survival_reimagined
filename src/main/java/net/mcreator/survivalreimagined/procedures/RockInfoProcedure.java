@@ -22,6 +22,8 @@ public class RockInfoProcedure {
 			return "\u00A77Manganese";
 		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:metal_rocks/titanium"))) || itemstack.is(ItemTags.create(ResourceLocation.parse("c:metal_rocks/titanium_nuggets")))) {
 			return "\u00A77Titanium";
+		} else if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:metal_rocks/zinc"))) || itemstack.is(ItemTags.create(ResourceLocation.parse("c:metal_rocks/zinc_nuggets")))) {
+			return "\u00A77Zinc";
 		}
 		return "\n";
 	}
