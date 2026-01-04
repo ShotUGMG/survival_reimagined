@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "tab",
+  "definition": {
+    "name": "SR Compat Items",
+    "icon": {
+      "value": "CUSTOM:Heart"
+    },
+    "showSearch": true
+  }
+}

@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "create:raw_zinc",
-    "create:zinc_ingot",
-    "survival_reimagined:rough_zinc"
+    "survival_reimagined:rough_zinc",
+    "#c:compat/zinc_compat_items"
   ]
 }

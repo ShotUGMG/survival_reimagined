@@ -45,7 +45,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:CreativeTab"
+        "value": "CUSTOM:SRCompatItems"
       }
     ],
     "destroyTool": "Not specified",

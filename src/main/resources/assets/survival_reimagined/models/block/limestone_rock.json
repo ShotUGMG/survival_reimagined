@@ -1,8 +1,9 @@
 {
   "parent": "survival_reimagined:custom/stone_rock",
   "textures": {
-    "0": "create:block/palettes/stone_types/limestone",
-    "particle": "create:block/palettes/stone_types/limestone"
+    "all": "create:block/palettes/stone_types/limestone",
+    "particle": "create:block/palettes/stone_types/limestone",
+    "0": "create:block/palettes/stone_types/limestone"
   },
   "render_type": "solid"
 }

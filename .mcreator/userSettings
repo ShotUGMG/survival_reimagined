@@ -2,16 +2,10 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 420,
+  "projectBrowserSplitPos": 415,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Survival Reimagined]",
-      "[, Survival Reimagined, Resources (Gradle)]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn\\src\\main\\resources\\data\\c\\tags\\item\\metal_rocks]"
+      "[, Survival Reimagined]"
     ]
   }
 }

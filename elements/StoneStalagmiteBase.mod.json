@@ -121,7 +121,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
-      "name": "DeepslateStalagmiteUpdates"
+      "name": "StoneStalagmiteUpdates"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

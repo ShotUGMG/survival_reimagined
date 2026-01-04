@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class AmberOreBlock extends Block {
 	public AmberOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

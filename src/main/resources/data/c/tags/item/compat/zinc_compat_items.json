@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create:raw_zinc",
+    "create:zinc_ingot"
+  ]
+}

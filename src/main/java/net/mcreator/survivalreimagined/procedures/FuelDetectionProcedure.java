@@ -82,35 +82,6 @@ public class FuelDetectionProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy_items"))) || (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy_items")))) {
-				BronzeRecipeProcedure.execute(world, x, y, z);
-				SteelIngotRecipeProcedure.execute(world, x, y, z);
-				DiamondIngotRecipeProcedure.execute(world, x, y, z);
-				NetherteRecipeProcedure.execute(world, x, y, z);
-				TuraniteRecipeProcedure.execute(world, x, y, z);
-				if (ModList.get().isLoaded("create")) {
-					BrassRecipeProcedure.execute(world, x, y, z);
-					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);
-				}
-			}
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
 			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:melt_items"))) || (new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
@@ -126,6 +97,45 @@ public class FuelDetectionProcedure {
 				SteelMeltProcedure.execute(world, x, y, z);
 				BronzeMeltProcedure.execute(world, x, y, z);
 				DiamondMeltProcedure.execute(world, x, y, z);
+			}
+			if ((new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:alloy"))) || (new Object() {
+				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+					if (world instanceof ILevelExtension _ext) {
+						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+						if (_itemHandler != null)
+							return _itemHandler.getStackInSlot(slotid).copy();
+					}
+					return ItemStack.EMPTY;
+				}
+			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy")))) {
+				BronzeRecipeProcedure.execute(world, x, y, z);
+				SteelIngotRecipeProcedure.execute(world, x, y, z);
+				DiamondIngotRecipeProcedure.execute(world, x, y, z);
+				NetherteRecipeProcedure.execute(world, x, y, z);
+				TuraniteRecipeProcedure.execute(world, x, y, z);
+				if (ModList.get().isLoaded("create")) {
+					BrassRecipeProcedure.execute(world, x, y, z);
+					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);
+				}
+			} else {
+				if (!world.isClientSide()) {
+					BlockPos _bp = BlockPos.containing(x, y, z);
+					BlockEntity _blockEntity = world.getBlockEntity(_bp);
+					BlockState _bs = world.getBlockState(_bp);
+					if (_blockEntity != null)
+						_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+					if (world instanceof Level _level)
+						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+				}
 			}
 			EmptyRecipeProcedure.execute(world, x, y, z);
 		}

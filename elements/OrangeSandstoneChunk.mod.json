@@ -11,7 +11,7 @@
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:CreativeTab"
+        "value": "CUSTOM:SRCompatItems"
       }
     ],
     "stackSize": 64,

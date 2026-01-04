@@ -16,8 +16,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalreimagined.procedures.StoneStalagmiteUpdatesProcedure;
 import net.mcreator.survivalreimagined.procedures.StalagmitePlacementProcedure;
-import net.mcreator.survivalreimagined.procedures.DeepslateStalagmiteUpdatesProcedure;
 
 public class StoneStalagmiteMiddleBlock extends Block {
 	public StoneStalagmiteMiddleBlock() {
@@ -63,6 +63,6 @@ public class StoneStalagmiteMiddleBlock extends Block {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		DeepslateStalagmiteUpdatesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		StoneStalagmiteUpdatesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

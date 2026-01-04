@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DeepslateAmberOreBlock extends Block {
 	public DeepslateAmberOreBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4.5f, 3f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(4.5f, 3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -433,7 +433,7 @@ public class MeatSpoiledProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_INTESTINES.get()).copy();
+						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_LIVER.get()).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
@@ -469,7 +469,7 @@ public class MeatSpoiledProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_INTESTINES.get()).copy();
+						ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SPOILED_STOMACH.get()).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}

@@ -16,8 +16,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalreimagined.procedures.StoneStalagtiteUpdatesProcedure;
 import net.mcreator.survivalreimagined.procedures.StalagtitePlacementProcedure;
-import net.mcreator.survivalreimagined.procedures.DeepslateStalagtiteUpdatesProcedure;
 
 public class StoneStalagtiteBaseBlock extends Block {
 	public StoneStalagtiteBaseBlock() {
@@ -63,6 +63,6 @@ public class StoneStalagtiteBaseBlock extends Block {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		DeepslateStalagtiteUpdatesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		StoneStalagtiteUpdatesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

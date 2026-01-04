@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:limestone_rock",
+    "survival_reimagined:veridium_rock",
+    "survival_reimagined:ochrum_rock",
+    "survival_reimagined:scorchia_rock",
+    "survival_reimagined:scoria_rock",
+    "survival_reimagined:asurine_crystal",
+    "survival_reimagined:rough_zinc",
+    "survival_reimagined:raw_zinc_nugget",
+    "survival_reimagined:rough_brass"
+  ]
+}

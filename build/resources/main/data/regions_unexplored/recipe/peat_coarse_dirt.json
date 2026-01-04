@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:peat_pile"
+    }
+  },
+  "result": {
+    "id": "regions_unexplored:peat_coarse_dirt",
+    "count": 1
+  }
+}
