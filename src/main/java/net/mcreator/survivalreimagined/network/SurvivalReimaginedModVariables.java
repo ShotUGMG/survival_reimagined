@@ -174,6 +174,7 @@ public class SurvivalReimaginedModVariables {
 		public double BloodMoon = 0;
 		public boolean ValueSetBloodMoon = false;
 		public boolean isDay = false;
+		public ItemStack MoldOutput = ItemStack.EMPTY;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -191,6 +192,7 @@ public class SurvivalReimaginedModVariables {
 			BloodMoon = nbt.getDouble("BloodMoon");
 			ValueSetBloodMoon = nbt.getBoolean("ValueSetBloodMoon");
 			isDay = nbt.getBoolean("isDay");
+			MoldOutput = ItemStack.parseOptional(lookupProvider, nbt.getCompound("MoldOutput"));
 		}
 
 		@Override
@@ -204,6 +206,7 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("BloodMoon", BloodMoon);
 			nbt.putBoolean("ValueSetBloodMoon", ValueSetBloodMoon);
 			nbt.putBoolean("isDay", isDay);
+			nbt.put("MoldOutput", MoldOutput.saveOptional(lookupProvider));
 			return nbt;
 		}
 

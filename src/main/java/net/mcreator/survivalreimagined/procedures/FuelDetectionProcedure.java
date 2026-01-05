@@ -14,6 +14,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
+
+import java.util.Calendar;
+
 public class FuelDetectionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (new Object() {
@@ -72,6 +76,9 @@ public class FuelDetectionProcedure {
 				DiamondToolsProcedure.execute(world, x, y, z);
 				IngotsRecipeProcedure.execute(world, x, y, z);
 				RunesProcedure.execute(world, x, y, z);
+				if (Calendar.getInstance().get(Calendar.SECOND) == 30) {
+					SurvivalReimaginedMod.LOGGER.info("Molds");
+				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
@@ -125,16 +132,6 @@ public class FuelDetectionProcedure {
 				if (ModList.get().isLoaded("create")) {
 					BrassRecipeProcedure.execute(world, x, y, z);
 					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);
-				}
-			} else {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("BurnTime", 0);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
 			EmptyRecipeProcedure.execute(world, x, y, z);
