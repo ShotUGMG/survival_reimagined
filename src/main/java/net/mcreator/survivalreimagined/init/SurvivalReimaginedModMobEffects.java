@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -16,12 +15,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.procedures.ZombificationEffectExpiresProcedure;
-import net.mcreator.survivalreimagined.potion.ZombificationMobEffect;
-import net.mcreator.survivalreimagined.potion.RadiationMobEffect;
-import net.mcreator.survivalreimagined.potion.ParanoiaMobEffect;
-import net.mcreator.survivalreimagined.potion.FearMobEffect;
-import net.mcreator.survivalreimagined.potion.BleedingMobEffect;
-import net.mcreator.survivalreimagined.potion.BindingSculkMobEffect;
+import net.mcreator.survivalreimagined.potion.*;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber

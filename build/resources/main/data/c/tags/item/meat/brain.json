@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:brain",
-    "survival_reimagined:cooked_brain"
+    "survival_reimagined:cooked_brain",
+    "survival_reimagined:brain"
   ]
 }

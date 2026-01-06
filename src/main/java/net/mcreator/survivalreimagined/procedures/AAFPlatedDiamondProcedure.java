@@ -19,177 +19,40 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class AAFPlatedDiamondProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/diamond_items"))) && (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("c:alloy/steel_items"))) || (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).is(ItemTags.create(ResourceLocation.parse("c:alloy/diamond_items"))) && (new Object() {
-			public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).copy();
-				}
-				return ItemStack.EMPTY;
-			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("c:alloy/steel_items")))) {
-			if (2 * YieldMultiplierProcedure.execute(world, x, y, z) + new Object() {
-				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).getCount();
-					}
-					return 0;
-				}
-			}.getAmount(world, BlockPos.containing(x, y, z), 0) < 64) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 4)).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 5)).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 6)).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 7)).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get()) {
-					if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.PLATED_DIAMOND_BLOCK.get().asItem() || (new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) {
+		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy/diamond_items")))
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy/steel_items")))
+				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy/diamond_items")))
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy/steel_items")))) {
+			if (2 * YieldMultiplierProcedure.execute(world, x, y, z) + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() < 64) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 4).copy()).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 5).copy()).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 6).copy()).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 7).copy()).getItem() == SurvivalReimaginedModItems.BLOCK_PACKAGING_UPGRADE.get()) {
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.PLATED_DIAMOND_BLOCK.get().asItem()
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("SmeltTime", (new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "SmeltTime") + 1 * EfficiencyMultiplierProcedure.execute(world, x, y, z)));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("FuelCapacity", ((new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "FuelCapacity")) - 6 / EfficiencyMultiplierProcedure.execute(world, x, y, z)));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("SmeltTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "SmeltTime") + 1 * EfficiencyMultiplierProcedure.execute(world, x, y, z)));
+								_blockEntity.getPersistentData().putDouble("FuelCapacity", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelCapacity") - 6 / EfficiencyMultiplierProcedure.execute(world, x, y, z)));
 							}
-						}.getValue(world, BlockPos.containing(x, y, z), "SmeltTime") == 300) {
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "SmeltTime") == 300) {
 							if (!world.isClientSide()) {
 								BlockPos _bp = BlockPos.containing(x, y, z);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
+								if (_blockEntity != null) {
 									_blockEntity.getPersistentData().putDouble("SmeltTime", 0);
+								}
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
-							if (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 1) + new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) >= 18) {
+							if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() + itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() >= 18) {
 								if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 									int _slotid = 1;
 									ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
@@ -204,16 +67,7 @@ public class AAFPlatedDiamondProcedure {
 								}
 								if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 									ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.PLATED_DIAMOND_BLOCK.get()).copy();
-									_setstack.setCount((int) (new Object() {
-										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-											if (world instanceof ILevelExtension _ext) {
-												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-												if (_itemHandler != null)
-													return _itemHandler.getStackInSlot(slotid).getCount();
-											}
-											return 0;
-										}
-									}.getAmount(world, BlockPos.containing(x, y, z), 0) + 2));
+									_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() + 2);
 									_itemHandlerModifiable.setStackInSlot(0, _setstack);
 								}
 							}
@@ -223,78 +77,35 @@ public class AAFPlatedDiamondProcedure {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("SmeltTime", (-1));
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 					}
 				} else {
-					if ((new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModItems.ROUGH_PLATED_DIAMOND.get() || (new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == ItemStack.EMPTY.getItem()) {
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModItems.ROUGH_PLATED_DIAMOND.get()
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("SmeltTime", (new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "SmeltTime") + 2 * EfficiencyMultiplierProcedure.execute(world, x, y, z)));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("FuelCapacity", ((new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "FuelCapacity")) - 4 / EfficiencyMultiplierProcedure.execute(world, x, y, z)));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("SmeltTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "SmeltTime") + 2 * EfficiencyMultiplierProcedure.execute(world, x, y, z)));
+								_blockEntity.getPersistentData().putDouble("FuelCapacity", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelCapacity") - 4 / EfficiencyMultiplierProcedure.execute(world, x, y, z)));
 							}
-						}.getValue(world, BlockPos.containing(x, y, z), "SmeltTime") == 300) {
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "SmeltTime") == 300) {
 							if (!world.isClientSide()) {
 								BlockPos _bp = BlockPos.containing(x, y, z);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
+								if (_blockEntity != null) {
 									_blockEntity.getPersistentData().putDouble("SmeltTime", 0);
+								}
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -313,31 +124,13 @@ public class AAFPlatedDiamondProcedure {
 							if (YieldMultiplierProcedure.execute(world, x, y, z) > 0) {
 								if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 									ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.ROUGH_PLATED_DIAMOND.get()).copy();
-									_setstack.setCount((int) (new Object() {
-										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-											if (world instanceof ILevelExtension _ext) {
-												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-												if (_itemHandler != null)
-													return _itemHandler.getStackInSlot(slotid).getCount();
-											}
-											return 0;
-										}
-									}.getAmount(world, BlockPos.containing(x, y, z), 0) + 2 * YieldMultiplierProcedure.execute(world, x, y, z)));
+									_setstack.setCount((int) (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() + 2 * YieldMultiplierProcedure.execute(world, x, y, z)));
 									_itemHandlerModifiable.setStackInSlot(0, _setstack);
 								}
 							} else {
 								if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 									ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.ROUGH_PLATED_DIAMOND.get()).copy();
-									_setstack.setCount((int) (new Object() {
-										public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-											if (world instanceof ILevelExtension _ext) {
-												IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-												if (_itemHandler != null)
-													return _itemHandler.getStackInSlot(slotid).getCount();
-											}
-											return 0;
-										}
-									}.getAmount(world, BlockPos.containing(x, y, z), 0) + 2));
+									_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() + 2);
 									_itemHandlerModifiable.setStackInSlot(0, _setstack);
 								}
 							}
@@ -347,8 +140,9 @@ public class AAFPlatedDiamondProcedure {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("SmeltTime", (-1));
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -356,5 +150,21 @@ public class AAFPlatedDiamondProcedure {
 				}
 			}
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

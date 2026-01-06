@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:empty_silver_rune",
-    "survival_reimagined:empty_gold_rune"
+    "survival_reimagined:empty_gold_rune",
+    "survival_reimagined:empty_silver_rune"
   ]
 }

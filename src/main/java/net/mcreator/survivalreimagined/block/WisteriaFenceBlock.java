@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class WisteriaFenceBlock extends FenceBlock {
 	public WisteriaFenceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f).forceSolidOn());
 	}
 
 	@Override

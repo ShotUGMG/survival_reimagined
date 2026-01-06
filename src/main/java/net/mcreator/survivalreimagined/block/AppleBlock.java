@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -30,6 +29,8 @@ import net.mcreator.survivalreimagined.procedures.AppleAdditionalHarvestConditio
 
 public class AppleBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+	private static final VoxelShape SHAPE_1 = Shapes.or(box(6.5, 12, 6.5, 9.5, 15, 9.5), box(7.5, 15, 7.5, 8.5, 16, 8.5));
+	private static final VoxelShape SHAPE = Shapes.or(box(5.5, 10, 5.5, 10.5, 15, 10.5), box(7.5, 15, 7.5, 8.5, 16, 8.5));
 
 	public AppleBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().lightLevel(s -> (new Object() {
@@ -58,12 +59,11 @@ public class AppleBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			Vec3 offset = state.getOffset(world, pos);
-			return Shapes.or(box(6.5, 12, 6.5, 9.5, 15, 9.5), box(7.5, 15, 7.5, 8.5, 16, 8.5)).move(offset.x, offset.y, offset.z);
-		}
 		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(5.5, 10, 5.5, 10.5, 15, 10.5), box(7.5, 15, 7.5, 8.5, 16, 8.5)).move(offset.x, offset.y, offset.z);
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return (SHAPE_1).move(offset.x, offset.y, offset.z);
+		}
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

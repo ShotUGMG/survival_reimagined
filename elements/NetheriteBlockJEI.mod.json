@@ -1,0 +1,64 @@
+{
+  "_fv": 79,
+  "_type": "custom_recipe",
+  "definition": {
+    "category": "AlloyForge",
+    "recipeType": "alloy_forge",
+    "inputs": [
+      {
+        "type": "Item",
+        "name": "alloy_input_1",
+        "itemId": {
+          "value": "TAG:c:alloy_block/gold_items"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      },
+      {
+        "type": "Item",
+        "name": "alloy_input_2",
+        "itemId": {
+          "value": "TAG:c:alloy_block/netherite_items"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      },
+      {
+        "type": "Item",
+        "name": "alloy_input_3",
+        "itemId": {
+          "value": "TAG:c:processing/rod_items"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ],
+    "outputs": [
+      {
+        "type": "Item",
+        "name": "alloy_output",
+        "itemId": {
+          "value": "Blocks.NETHERITE_BLOCK"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ]
+  }
+}

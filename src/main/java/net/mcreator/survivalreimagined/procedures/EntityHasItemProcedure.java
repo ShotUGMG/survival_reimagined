@@ -130,9 +130,9 @@ public class EntityHasItemProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = ItemStack.EMPTY.copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						ItemStack _setstack60 = ItemStack.EMPTY.copy();
+						_setstack60.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack60);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
@@ -148,9 +148,9 @@ public class EntityHasItemProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (entity instanceof LivingEntity _entity) {
-						ItemStack _setstack = ItemStack.EMPTY.copy();
-						_setstack.setCount(1);
-						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack);
+						ItemStack _setstack73 = ItemStack.EMPTY.copy();
+						_setstack73.setCount(1);
+						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack73);
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}

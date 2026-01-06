@@ -1,8 +1,6 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 
@@ -10,7 +8,7 @@ import net.mcreator.survivalreimagined.procedures.StoneRockRightclickedOnBlockPr
 
 public class StoneRockItem extends Item {
 	public StoneRockItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties());
 	}
 
 	@Override

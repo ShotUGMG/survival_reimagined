@@ -1,21 +1,69 @@
 {
   "replace": false,
   "values": [
-    "#c:rough_ingots/bronze",
-    "#c:rough_ingots/brass",
-    "#c:rough_ingots/diamond",
-    "#c:rough_ingots/steel",
-    "#c:rough_ingots/copper",
-    "#c:rough_ingots/iron",
-    "#c:rough_ingots/gold",
-    "#c:rough_ingots/netherite",
-    "#c:rough_ingots/manganese",
-    "#c:rough_ingots/redstone",
-    "#c:rough_ingots/tin",
-    "#c:rough_ingots/zinc",
-    "#c:rough_ingots/titanium",
-    "#c:rough_ingots/turanite",
-    "#c:rough_ingots/uranium",
-    "#c:rough_ingots/silver"
+    {
+      "id": "#c:rough_ingots/copper",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/uranium",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/brass",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/steel",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/silver",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/gold",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/netherite",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/manganese",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/turanite",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/titanium",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/tin",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/bronze",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/redstone",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/zinc",
+      "required": false
+    },
+    {
+      "id": "#c:rough_ingots/iron",
+      "required": false
+    }
   ]
 }

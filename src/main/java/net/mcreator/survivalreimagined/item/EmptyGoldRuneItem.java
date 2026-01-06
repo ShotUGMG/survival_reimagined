@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -18,7 +17,7 @@ import java.util.List;
 
 public class EmptyGoldRuneItem extends Item {
 	public EmptyGoldRuneItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

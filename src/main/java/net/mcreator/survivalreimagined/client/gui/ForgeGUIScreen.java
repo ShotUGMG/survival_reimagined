@@ -9,46 +9,16 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.survivalreimagined.world.inventory.ForgeGUIMenu;
-import net.mcreator.survivalreimagined.procedures.DisplayTick9FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick9BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick8FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick8BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick7FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick7BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick6FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick6BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick5FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick5BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick4FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick4BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick3FuelMeterProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick3BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick2FuelMeterProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick2BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick1FuelMeterProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick1BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick14FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick14BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick13FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick13BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick12FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick12BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick11FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick11BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick10FuelTimerProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick10BurnTimeProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick0FuelMeterProcedure;
-import net.mcreator.survivalreimagined.procedures.DisplayTick0BurnTimeProcedure;
-
-import java.util.HashMap;
+import net.mcreator.survivalreimagined.procedures.*;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class ForgeGUIScreen extends AbstractContainerScreen<ForgeGUIMenu> {
-	private final static HashMap<String, Object> guistate = ForgeGUIMenu.guistate;
+public class ForgeGUIScreen extends AbstractContainerScreen<ForgeGUIMenu> implements SurvivalReimaginedModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public ForgeGUIScreen(ForgeGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -61,17 +31,22 @@ public class ForgeGUIScreen extends AbstractContainerScreen<ForgeGUIMenu> {
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/forge_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();

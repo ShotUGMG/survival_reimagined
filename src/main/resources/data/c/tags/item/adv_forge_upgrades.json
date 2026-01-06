@@ -1,9 +1,18 @@
 {
   "replace": false,
   "values": [
-    "#c:upgrades/efficiency",
-    "#c:upgrades/yield",
-    "#c:upgrades/fuel",
+    {
+      "id": "#c:upgrades/efficiency",
+      "required": false
+    },
+    {
+      "id": "#c:upgrades/yield",
+      "required": false
+    },
+    {
+      "id": "#c:upgrades/fuel",
+      "required": false
+    },
     "survival_reimagined:block_packaging_upgrade"
   ]
 }

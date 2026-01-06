@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -13,7 +12,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
@@ -49,9 +47,17 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty REDSTONE_POWER = BooleanProperty.create("redstone_power");
+	private static final VoxelShape SHAPE_1_NORTH = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_1_SOUTH = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_1_EAST = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_1_WEST = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_NORTH = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_SOUTH = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_EAST = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE_WEST = box(0, 0, 0, 16, 16, 16);
 
 	public MineralProcessingTableBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(3.5f).lightLevel(s -> (new Object() {
+		super(BlockBehaviour.Properties.of().strength(3.5f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
 					return 5;
@@ -69,19 +75,21 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 16, 16);
-				case NORTH -> box(0, 0, 0, 16, 16, 16);
-				case EAST -> box(0, 0, 0, 16, 16, 16);
-				case WEST -> box(0, 0, 0, 16, 16, 16);
-			};
+			return (switch (state.getValue(FACING)) {
+				case NORTH -> SHAPE_1_NORTH;
+				case SOUTH -> SHAPE_1_SOUTH;
+				case EAST -> SHAPE_1_EAST;
+				case WEST -> SHAPE_1_WEST;
+				default -> SHAPE_1_NORTH;
+			});
 		}
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 16);
-			case NORTH -> box(0, 0, 0, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 16, 16, 16);
-			case WEST -> box(0, 0, 0, 16, 16, 16);
-		};
+		return (switch (state.getValue(FACING)) {
+			case NORTH -> SHAPE_NORTH;
+			case SOUTH -> SHAPE_SOUTH;
+			case EAST -> SHAPE_EAST;
+			case WEST -> SHAPE_WEST;
+			default -> SHAPE_NORTH;
+		});
 	}
 
 	@Override
@@ -166,7 +174,7 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

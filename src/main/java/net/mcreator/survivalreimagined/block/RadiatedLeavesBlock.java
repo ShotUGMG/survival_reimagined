@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class RadiatedLeavesBlock extends LeavesBlock {
 	public RadiatedLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.AZALEA_LEAVES).strength(0.2f).noOcclusion());
+		super(BlockBehaviour.Properties.of().sound(SoundType.AZALEA_LEAVES).strength(0.2f).noOcclusion().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

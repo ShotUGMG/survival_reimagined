@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -16,13 +15,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.world.inventory.MetalRefiningTableGUIMenu;
 import net.mcreator.survivalreimagined.procedures.IronTakenProcedure;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
-import java.util.HashMap;
-
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record MetalRefiningTableGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
 
 	public static final Type<MetalRefiningTableGUISlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SurvivalReimaginedMod.MODID, "metal_refining_table_gui_slots"));
@@ -41,16 +37,7 @@ public record MetalRefiningTableGUISlotMessage(int slotID, int x, int y, int z, 
 
 	public static void handleData(final MetalRefiningTableGUISlotMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
-			context.enqueueWork(() -> {
-				Player entity = context.player();
-				int slotID = message.slotID;
-				int changeType = message.changeType;
-				int meta = message.meta;
-				int x = message.x;
-				int y = message.y;
-				int z = message.z;
-				handleSlotAction(entity, slotID, changeType, meta, x, y, z);
-			}).exceptionally(e -> {
+			context.enqueueWork(() -> handleSlotAction(context.player(), message.slotID, message.changeType, message.meta, message.x, message.y, message.z)).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
 			});
@@ -59,11 +46,11 @@ public record MetalRefiningTableGUISlotMessage(int slotID, int x, int y, int z, 
 
 	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = MetalRefiningTableGUIMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (slot == 3 && changeType == 1) {
+			int amount = meta;
 
 			IronTakenProcedure.execute(world, x, y, z, entity);
 		}

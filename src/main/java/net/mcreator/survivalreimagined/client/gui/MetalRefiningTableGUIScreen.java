@@ -9,16 +9,15 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.survivalreimagined.world.inventory.MetalRefiningTableGUIMenu;
-
-import java.util.HashMap;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRefiningTableGUIMenu> {
-	private final static HashMap<String, Object> guistate = MetalRefiningTableGUIMenu.guistate;
+public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRefiningTableGUIMenu> implements SurvivalReimaginedModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public MetalRefiningTableGUIScreen(MetalRefiningTableGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -31,28 +30,29 @@ public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRe
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/metal_refining_table_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/plus.png"), this.leftPos + 62, this.topPos + 38, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/arrow.png"), this.leftPos + 98, this.topPos + 37, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/hammer_outline.png"), this.leftPos + 152, this.topPos + 63, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.disableBlend();
 	}
 

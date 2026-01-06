@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -21,8 +20,10 @@ import net.mcreator.survivalreimagined.procedures.SolidBlockBelowProcedure;
 import net.mcreator.survivalreimagined.procedures.RadiatedTallGrassAdditionalHarvestConditionProcedure;
 
 public class RadiatedTallGrassBlock extends Block {
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 11, 16);
+
 	public RadiatedTallGrassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -43,7 +44,7 @@ public class RadiatedTallGrassBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 11, 16).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -28,8 +27,10 @@ import net.mcreator.survivalreimagined.procedures.PlacementThinVinesProcedure;
 import net.mcreator.survivalreimagined.procedures.LowerBlockUpdateProcedure;
 
 public class ThinRadiatedVinesBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 16, 13);
+
 	public ThinRadiatedVinesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -50,7 +51,7 @@ public class ThinRadiatedVinesBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:liver",
-    "survival_reimagined:cooked_liver"
+    "survival_reimagined:cooked_liver",
+    "survival_reimagined:liver"
   ]
 }

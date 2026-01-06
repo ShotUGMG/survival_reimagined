@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -26,6 +25,10 @@ import net.mcreator.survivalreimagined.procedures.ChickenCarcassBlockDestroyedBy
 
 public class ChickenCarcassBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+	private static final VoxelShape SHAPE_1 = Shapes.or(box(4.17525, -0.16789, 5.34315, 10.17525, 5.83211, 13.34315), box(5.83211, -1.16789, 6, 9.83211, -0.16789, 12), box(5.83211, 5.83211, 6, 9.83211, 6.83211, 12),
+			box(1.83211, 0.83211, 3, 7.83211, 4.83211, 6), box(5.83211, 1.83211, 2, 7.83211, 3.83211, 4), box(3.83211, 0.83211, 1, 5.83211, 4.83211, 3));
+	private static final VoxelShape SHAPE = Shapes.or(box(4.17525, -0.16789, 5.34315, 10.17525, 5.83211, 13.34315), box(5.83211, -1.16789, 6, 9.83211, -0.16789, 12), box(5.83211, 5.83211, 6, 9.83211, 6.83211, 12),
+			box(1.83211, 0.83211, 3, 7.83211, 4.83211, 6), box(5.83211, 1.83211, 2, 7.83211, 3.83211, 4), box(3.83211, 0.83211, 1, 5.83211, 4.83211, 3));
 
 	public ChickenCarcassBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f, 10f).lightLevel(s -> (new Object() {
@@ -55,11 +58,9 @@ public class ChickenCarcassBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return Shapes.or(box(4.17525, -0.16789, 5.34315, 10.17525, 5.83211, 13.34315), box(5.83211, -1.16789, 6, 9.83211, -0.16789, 12), box(5.83211, 5.83211, 6, 9.83211, 6.83211, 12), box(1.83211, 0.83211, 3, 7.83211, 4.83211, 6),
-					box(5.83211, 1.83211, 2, 7.83211, 3.83211, 4), box(3.83211, 0.83211, 1, 5.83211, 4.83211, 3));
+			return (SHAPE_1);
 		}
-		return Shapes.or(box(4.17525, -0.16789, 5.34315, 10.17525, 5.83211, 13.34315), box(5.83211, -1.16789, 6, 9.83211, -0.16789, 12), box(5.83211, 5.83211, 6, 9.83211, 6.83211, 12), box(1.83211, 0.83211, 3, 7.83211, 4.83211, 6),
-				box(5.83211, 1.83211, 2, 7.83211, 3.83211, 4), box(3.83211, 0.83211, 1, 5.83211, 4.83211, 3));
+		return (SHAPE);
 	}
 
 	@Override

@@ -1,11 +1,29 @@
 {
   "replace": false,
   "values": [
-    "#c:processing/diamond",
-    "#c:processing/emerald",
-    "#c:processing/sapphire",
-    "#c:processing/ruby",
-    "#c:processing/lapis",
-    "#c:processing/amber"
+    {
+      "id": "#c:processing/emerald",
+      "required": false
+    },
+    {
+      "id": "#c:processing/amber",
+      "required": false
+    },
+    {
+      "id": "#c:processing/diamond",
+      "required": false
+    },
+    {
+      "id": "#c:processing/ruby",
+      "required": false
+    },
+    {
+      "id": "#c:processing/sapphire",
+      "required": false
+    },
+    {
+      "id": "#c:processing/lapis",
+      "required": false
+    }
   ]
 }

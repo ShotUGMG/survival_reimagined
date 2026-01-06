@@ -1,18 +1,22 @@
 {
   "type": "survival_reimagined:forging",
-  "ingredients": [
-    {
-      "item": "survival_reimagined:legging_mold"
-    },
-    {
-      "tag": "c:metals/steel"
-    },
-    {
-      "tag": "c:fuels"
-    }
-  ],
-  "output": {
+  "forge_input_1": {
+    "item": "survival_reimagined:legging_mold",
+    "count": 1
+  },
+  "forge_input_2": {
+    "item": "survival_reimagined:steel_ingot",
+    "count": 7
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
     "id": "survival_reimagined:steel_armor_leggings",
     "count": 1
-  }
+  },
+  "category": [
+    "misc"
+  ]
 }

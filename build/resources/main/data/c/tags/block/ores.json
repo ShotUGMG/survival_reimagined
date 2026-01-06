@@ -1,20 +1,65 @@
 {
   "replace": false,
   "values": [
-    "#c:iron_ores",
-    "#c:copper_ores",
-    "#c:gold_ores",
-    "#c:silver_ores",
-    "#c:tin_ores",
-    "#c:uraninite_ores",
-    "#c:titanium_ores",
-    "#c:managanese_ores",
-    "#c:netherite_ores",
-    "#c:diamond_ores",
-    "#c:lazurite_ores",
-    "#c:emerald_ores",
-    "#c:sapphire_ores",
-    "#c:amber_ores",
-    "#c:ruby_ores"
+    {
+      "id": "#c:gold_ores",
+      "required": false
+    },
+    {
+      "id": "#c:lazurite_ores",
+      "required": false
+    },
+    {
+      "id": "#c:uraninite_ores",
+      "required": false
+    },
+    {
+      "id": "#c:tin_ores",
+      "required": false
+    },
+    {
+      "id": "#c:emerald_ores",
+      "required": false
+    },
+    {
+      "id": "#c:sapphire_ores",
+      "required": false
+    },
+    {
+      "id": "#c:silver_ores",
+      "required": false
+    },
+    {
+      "id": "#c:copper_ores",
+      "required": false
+    },
+    {
+      "id": "#c:titanium_ores",
+      "required": false
+    },
+    {
+      "id": "#c:ruby_ores",
+      "required": false
+    },
+    {
+      "id": "#c:iron_ores",
+      "required": false
+    },
+    {
+      "id": "#c:netherite_ores",
+      "required": false
+    },
+    {
+      "id": "#c:diamond_ores",
+      "required": false
+    },
+    {
+      "id": "#c:amber_ores",
+      "required": false
+    },
+    {
+      "id": "#c:managanese_ores",
+      "required": false
+    }
   ]
 }

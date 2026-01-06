@@ -9,49 +9,19 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.survivalreimagined.world.inventory.AdvancedAlloyForgeGUIMenu;
-import net.mcreator.survivalreimagined.procedures.XDisplayTickProcedure;
-import net.mcreator.survivalreimagined.procedures.ST9Procedure;
-import net.mcreator.survivalreimagined.procedures.ST8Procedure;
-import net.mcreator.survivalreimagined.procedures.ST7Procedure;
-import net.mcreator.survivalreimagined.procedures.ST6Procedure;
-import net.mcreator.survivalreimagined.procedures.ST5Procedure;
-import net.mcreator.survivalreimagined.procedures.ST4Procedure;
-import net.mcreator.survivalreimagined.procedures.ST3Procedure;
-import net.mcreator.survivalreimagined.procedures.ST2Procedure;
-import net.mcreator.survivalreimagined.procedures.ST1Procedure;
-import net.mcreator.survivalreimagined.procedures.ST15Procedure;
-import net.mcreator.survivalreimagined.procedures.ST14Procedure;
-import net.mcreator.survivalreimagined.procedures.ST13Procedure;
-import net.mcreator.survivalreimagined.procedures.ST12Procedure;
-import net.mcreator.survivalreimagined.procedures.ST11Procedure;
-import net.mcreator.survivalreimagined.procedures.ST10Procedure;
-import net.mcreator.survivalreimagined.procedures.FuelCover2Procedure;
-import net.mcreator.survivalreimagined.procedures.FuelCover1Procedure;
-import net.mcreator.survivalreimagined.procedures.FuelCover0Procedure;
-import net.mcreator.survivalreimagined.procedures.FC9Procedure;
-import net.mcreator.survivalreimagined.procedures.FC8Procedure;
-import net.mcreator.survivalreimagined.procedures.FC7Procedure;
-import net.mcreator.survivalreimagined.procedures.FC6Procedure;
-import net.mcreator.survivalreimagined.procedures.FC5Procedure;
-import net.mcreator.survivalreimagined.procedures.FC4Procedure;
-import net.mcreator.survivalreimagined.procedures.FC3Procedure;
-import net.mcreator.survivalreimagined.procedures.FC2Procedure;
-import net.mcreator.survivalreimagined.procedures.FC1Procedure;
-import net.mcreator.survivalreimagined.procedures.FC12Procedure;
-import net.mcreator.survivalreimagined.procedures.FC11Procedure;
-import net.mcreator.survivalreimagined.procedures.FC10Procedure;
-import net.mcreator.survivalreimagined.procedures.FC0Procedure;
-import net.mcreator.survivalreimagined.procedures.AdvancedAlloyForgeGUIValueProcedure;
+import net.mcreator.survivalreimagined.procedures.*;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModScreens;
 
-import java.util.HashMap;
+import java.util.stream.Collectors;
+import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class AdvancedAlloyForgeGUIScreen extends AbstractContainerScreen<AdvancedAlloyForgeGUIMenu> {
-	private final static HashMap<String, Object> guistate = AdvancedAlloyForgeGUIMenu.guistate;
+public class AdvancedAlloyForgeGUIScreen extends AbstractContainerScreen<AdvancedAlloyForgeGUIMenu> implements SurvivalReimaginedModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public AdvancedAlloyForgeGUIScreen(AdvancedAlloyForgeGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -64,26 +34,36 @@ public class AdvancedAlloyForgeGUIScreen extends AbstractContainerScreen<Advance
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/advanced_alloy_forge_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
-		if (mouseX > leftPos + 8 && mouseX < leftPos + 22 && mouseY > topPos + 5 && mouseY < topPos + 54)
-			guiGraphics.renderTooltip(font, Component.literal(AdvancedAlloyForgeGUIValueProcedure.execute(world, x, y, z)), mouseX, mouseY);
+		boolean customTooltipShown = false;
+		if (mouseX > leftPos + 8 && mouseX < leftPos + 22 && mouseY > topPos + 5 && mouseY < topPos + 54) {
+			String hoverText = AdvancedAlloyForgeGUIValueProcedure.execute(world, x, y, z);
+			if (hoverText != null) {
+				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+			}
+			customTooltipShown = true;
+		}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/alloy_forge_upgrades.png"), this.leftPos + 178, this.topPos + 0, 0, 0, 72, 75, 72, 75);
-
 		if (FC0Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/aaf_empty.png"), this.leftPos + 8, this.topPos + 5, 0, 0, 14, 49, 14, 49);
 		}
@@ -132,17 +112,11 @@ public class AdvancedAlloyForgeGUIScreen extends AbstractContainerScreen<Advance
 		if (ST15Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/arrow15.png"), this.leftPos + 111, this.topPos + 39, 0, 0, 16, 16, 16, 16);
 		}
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/rod_texture.png"), this.leftPos + 8, this.topPos + 57, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/upgrade_texture.png"), this.leftPos + 197, this.topPos + 19, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/upgrade_texture.png"), this.leftPos + 215, this.topPos + 19, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/upgrade_texture.png"), this.leftPos + 197, this.topPos + 37, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/upgrade_texture.png"), this.leftPos + 215, this.topPos + 37, 0, 0, 16, 16, 16, 16);
-
 		if (FuelCover0Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/capacity_marker.png"), this.leftPos + 23, this.topPos + 35, 0, 0, 7, 5, 7, 5);
 		}

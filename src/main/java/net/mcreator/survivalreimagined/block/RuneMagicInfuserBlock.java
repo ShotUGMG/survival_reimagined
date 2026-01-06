@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -8,7 +7,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
@@ -30,8 +28,10 @@ import net.mcreator.survivalreimagined.block.entity.RuneMagicInfuserBlockEntity;
 import io.netty.buffer.Unpooled;
 
 public class RuneMagicInfuserBlock extends Block implements EntityBlock {
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 12, 16);
+
 	public RuneMagicInfuserBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(5f, 1200f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().strength(5f, 1200f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class RuneMagicInfuserBlock extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 16, 12, 16);
+		return (SHAPE);
 	}
 
 	@Override
@@ -88,7 +88,7 @@ public class RuneMagicInfuserBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

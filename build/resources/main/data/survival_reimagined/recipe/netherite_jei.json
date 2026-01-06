@@ -1,0 +1,22 @@
+{
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "item": "survival_reimagined:ingot_mold",
+    "count": 1
+  },
+  "forge_input_2": {
+    "item": "survival_reimagined:rough_netherite",
+    "count": 1
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
+}

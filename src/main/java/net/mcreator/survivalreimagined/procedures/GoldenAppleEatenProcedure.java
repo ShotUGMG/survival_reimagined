@@ -46,7 +46,7 @@ public class GoldenAppleEatenProcedure {
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SurvivalReimaginedModMobEffects.ZOMBIFICATION)) {
 			if (itemstack.getItem() == Items.ENCHANTED_GOLDEN_APPLE || itemstack.getItem() == Items.GOLDEN_APPLE || itemstack.getItem() == Items.GOLDEN_CARROT) {
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 5;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(SurvivalReimaginedModMobEffects.ZOMBIFICATION);

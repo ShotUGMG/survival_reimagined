@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -9,15 +8,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.survivalreimagined.client.gui.RMIScreen;
-import net.mcreator.survivalreimagined.client.gui.MetalRefiningTableGUIScreen;
-import net.mcreator.survivalreimagined.client.gui.MPTGUIScreen;
-import net.mcreator.survivalreimagined.client.gui.ForgeGUIScreen;
-import net.mcreator.survivalreimagined.client.gui.BackpackGUIScreen;
-import net.mcreator.survivalreimagined.client.gui.AdvancedAlloyForgeGUIScreen;
-import net.mcreator.survivalreimagined.client.gui.AAFScriptureGUIScreen;
+import net.mcreator.survivalreimagined.client.gui.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class SurvivalReimaginedModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
@@ -28,5 +21,9 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.ADVANCED_ALLOY_FORGE_GUI.get(), AdvancedAlloyForgeGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.AAF_SCRIPTURE_GUI.get(), AAFScriptureGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.RMI.get(), RMIScreen::new);
+	}
+
+	public interface ScreenAccessor {
+		void updateMenuState(int elementType, String name, Object elementState);
 	}
 }

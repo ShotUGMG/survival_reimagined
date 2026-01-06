@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -23,7 +22,7 @@ import java.util.List;
 
 public class GoldHeartItem extends Item {
 	public GoldHeartItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().rarity(Rarity.EPIC));
 	}
 
 	@Override

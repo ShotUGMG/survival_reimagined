@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
@@ -29,7 +28,7 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class AppleOakLeavesBlock extends LeavesBlock implements BonemealableBlock {
 	public AppleOakLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).strength(0.2f).noOcclusion().isSuffocating((bs, br, bp) -> false).isViewBlocking((bs, br, bp) -> false));
 	}
 
 	@Override

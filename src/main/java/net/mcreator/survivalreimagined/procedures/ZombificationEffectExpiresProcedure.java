@@ -19,6 +19,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
@@ -30,23 +31,14 @@ public class ZombificationEffectExpiresProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (new Object() {
-			public boolean checkGamemode(Entity _ent) {
-				if (_ent instanceof ServerPlayer _serverPlayer) {
-					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-				}
-				return false;
-			}
-		}.checkGamemode(entity)) {
+		if (getEntityGameType(entity) == GameType.SURVIVAL) {
 			if (SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger == 0) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 1, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 1;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.converted")), SoundSource.PLAYERS, 1, 1);
@@ -60,7 +52,7 @@ public class ZombificationEffectExpiresProcedure {
 						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 2, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 2;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.converted")), SoundSource.PLAYERS, 1, 1);
@@ -74,7 +66,7 @@ public class ZombificationEffectExpiresProcedure {
 						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 3, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 3;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.converted")), SoundSource.PLAYERS, 1, 1);
@@ -88,7 +80,7 @@ public class ZombificationEffectExpiresProcedure {
 						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 4, true, false));
 				});
 				SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 4;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.converted")), SoundSource.PLAYERS, 1, 1);
@@ -123,5 +115,16 @@ public class ZombificationEffectExpiresProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

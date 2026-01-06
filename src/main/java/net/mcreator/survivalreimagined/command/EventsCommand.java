@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.command;
 
 import org.checkerframework.checker.units.qual.s;
@@ -51,4 +50,5 @@ public class EventsCommand {
 			return 0;
 		})));
 	}
+
 }

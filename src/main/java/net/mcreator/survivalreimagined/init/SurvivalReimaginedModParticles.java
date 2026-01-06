@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -9,14 +8,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.survivalreimagined.client.particle.StoneGrindingParticle;
-import net.mcreator.survivalreimagined.client.particle.RadiationParticleParticle;
-import net.mcreator.survivalreimagined.client.particle.RadiationParticle2Particle;
-import net.mcreator.survivalreimagined.client.particle.RadiatedParticle;
-import net.mcreator.survivalreimagined.client.particle.FallingWisteriaParticle;
-import net.mcreator.survivalreimagined.client.particle.FallingWisteriaDarkParticle;
+import net.mcreator.survivalreimagined.client.particle.*;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class SurvivalReimaginedModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {

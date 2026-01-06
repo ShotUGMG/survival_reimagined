@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.neoforged.neoforge.common.util.DeferredSoundType;
@@ -30,7 +29,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.AdvancedAlloyForgeOnTickUpdateProcedure;
 import net.mcreator.survivalreimagined.procedures.AdvancedAlloyForgeOnRandomClientDisplayTickProcedure;
@@ -88,15 +86,11 @@ public class AdvancedAlloyForgeBlock extends Block implements EntityBlock {
 		world.scheduleTick(pos, this, 2);
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		AdvancedAlloyForgeOnRandomClientDisplayTickProcedure.execute(world, x, y, z, blockstate);
+		AdvancedAlloyForgeOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override
@@ -128,7 +122,7 @@ public class AdvancedAlloyForgeBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

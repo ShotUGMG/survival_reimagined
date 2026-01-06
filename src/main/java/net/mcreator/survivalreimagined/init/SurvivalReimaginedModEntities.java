@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -21,13 +20,13 @@ import net.mcreator.survivalreimagined.entity.BloodMoonZombieEntity;
 import net.mcreator.survivalreimagined.entity.AlphaCrimsonArachnidEntity;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class SurvivalReimaginedModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, SurvivalReimaginedMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<BloodMoonZombieEntity>> BLOOD_MOON_ZOMBIE = register("blood_moon_zombie",
 			EntityType.Builder.<BloodMoonZombieEntity>of(BloodMoonZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(16).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CrimsonArachnidEntity>> CRIMSON_ARACHNID = register("crimson_arachnid",
 			EntityType.Builder.<CrimsonArachnidEntity>of(CrimsonArachnidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 

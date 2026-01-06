@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:rough_iron",
-    "minecraft:raw_iron",
-    "minecraft:iron_ingot",
     "survival_reimagined:hematite_chunk",
-    "survival_reimagined:magnetite_chunk"
+    "minecraft:iron_ingot",
+    "minecraft:raw_iron",
+    "survival_reimagined:magnetite_chunk",
+    "survival_reimagined:rough_iron"
   ]
 }

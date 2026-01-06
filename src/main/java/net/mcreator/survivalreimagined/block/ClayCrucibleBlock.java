@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -20,14 +19,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.DayDetectionProcedure;
 import net.mcreator.survivalreimagined.procedures.ClayCrucibleOnTickUpdateProcedure;
@@ -37,6 +34,8 @@ import net.mcreator.survivalreimagined.procedures.ClayCrucibleBlockValidPlacemen
 
 public class ClayCrucibleBlock extends Block {
 	public static final BooleanProperty CAN_BURN = BooleanProperty.create("can_burn");
+	private static final VoxelShape SHAPE = Shapes.or(box(4, 0, 4, 12, 1, 12), box(3, 3, 3, 13, 9, 4), box(3, 3, 12, 13, 9, 13), box(3, 3, 4, 4, 9, 12), box(12, 3, 4, 13, 9, 12), box(11, 1, 4, 12, 3, 12), box(5, 1, 11, 11, 3, 12),
+			box(4, 1, 4, 5, 3, 12), box(5, 1, 4, 11, 3, 5));
 
 	public ClayCrucibleBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -60,7 +59,7 @@ public class ClayCrucibleBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(4, 0, 4, 12, 1, 12), box(3, 3, 3, 13, 9, 4), box(3, 3, 12, 13, 9, 13), box(3, 3, 4, 4, 9, 12), box(12, 3, 4, 13, 9, 12), box(11, 1, 4, 12, 3, 12), box(5, 1, 11, 11, 3, 12), box(4, 1, 4, 5, 3, 12), box(5, 1, 4, 11, 3, 5));
+		return (SHAPE);
 	}
 
 	@Override
@@ -109,15 +108,11 @@ public class ClayCrucibleBlock extends Block {
 		world.scheduleTick(pos, this, 120);
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		ClayCrucibleOnRandomClientDisplayTickProcedure.execute(world, x, y, z, blockstate);
+		ClayCrucibleOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

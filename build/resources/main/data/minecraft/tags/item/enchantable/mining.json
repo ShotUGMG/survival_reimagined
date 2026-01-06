@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#c:tools/saw",
-    "#c:tools/hammer"
+    {
+      "id": "#c:tools/saw",
+      "required": false
+    },
+    {
+      "id": "#c:tools/hammer",
+      "required": false
+    }
   ]
 }

@@ -15,17 +15,16 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.mcreator.survivalreimagined.world.inventory.RMIMenu;
 import net.mcreator.survivalreimagined.procedures.DisplayButtonProcedure;
 import net.mcreator.survivalreimagined.network.RMIButtonMessage;
-
-import java.util.HashMap;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModScreens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class RMIScreen extends AbstractContainerScreen<RMIMenu> {
-	private final static HashMap<String, Object> guistate = RMIMenu.guistate;
+public class RMIScreen extends AbstractContainerScreen<RMIMenu> implements SurvivalReimaginedModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_rmi_button;
+	private boolean menuStateUpdateActive = false;
+	private ImageButton imagebutton_rmi_button;
 
 	public RMIScreen(RMIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -38,28 +37,29 @@ public class RMIScreen extends AbstractContainerScreen<RMIMenu> {
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/rmi.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/rune_putline.png"), this.leftPos + 80, this.topPos + 41, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/lapis_outline.png"), this.leftPos + 116, this.topPos + 61, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/rmi_unpressable.png"), this.leftPos + 72, this.topPos + 61, 0, 0, 32, 16, 32, 16);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -82,18 +82,21 @@ public class RMIScreen extends AbstractContainerScreen<RMIMenu> {
 		super.init();
 		imagebutton_rmi_button = new ImageButton(this.leftPos + 72, this.topPos + 61, 32, 16,
 				new WidgetSprites(ResourceLocation.parse("survival_reimagined:textures/screens/rmi_button.png"), ResourceLocation.parse("survival_reimagined:textures/screens/rmi_hovered.png")), e -> {
+					int x = RMIScreen.this.x;
+					int y = RMIScreen.this.y;
 					if (DisplayButtonProcedure.execute(entity)) {
 						PacketDistributor.sendToServer(new RMIButtonMessage(0, x, y, z));
 						RMIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 					}
 				}) {
 			@Override
-			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+			public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+				int x = RMIScreen.this.x;
+				int y = RMIScreen.this.y;
 				if (DisplayButtonProcedure.execute(entity))
 					guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
 		};
-		guistate.put("button:imagebutton_rmi_button", imagebutton_rmi_button);
 		this.addRenderableWidget(imagebutton_rmi_button);
 	}
 }

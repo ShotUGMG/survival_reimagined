@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.client.particle;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -57,7 +56,7 @@ public class RadiatedParticle extends TextureSheetParticle {
 
 	@Override
 	public ParticleRenderType getRenderType() {
-		return ParticleRenderType.PARTICLE_SHEET_LIT;
+		return ParticleRenderType.PARTICLE_SHEET_OPAQUE;
 	}
 
 	@Override

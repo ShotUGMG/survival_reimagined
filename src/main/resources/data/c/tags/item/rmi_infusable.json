@@ -1,8 +1,17 @@
 {
   "replace": false,
   "values": [
-    "#c:rmi_infusable/armor",
-    "#c:rmi_infusable/tool",
-    "#c:rmi_infusable/weapon"
+    {
+      "id": "#c:rmi_infusable/weapon",
+      "required": false
+    },
+    {
+      "id": "#c:rmi_infusable/tool",
+      "required": false
+    },
+    {
+      "id": "#c:rmi_infusable/armor",
+      "required": false
+    }
   ]
 }

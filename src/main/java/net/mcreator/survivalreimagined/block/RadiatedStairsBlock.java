@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class RadiatedStairsBlock extends StairBlock {
 	public RadiatedStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f));
 	}
 
 	@Override

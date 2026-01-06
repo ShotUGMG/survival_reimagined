@@ -23,115 +23,35 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class RawBlocksProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 3) <= 62) {
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_IRON_BLOCK.asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_IRON_BLOCK.asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Blocks.IRON_BLOCK.asItem()) {
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() <= 62) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_IRON_BLOCK.asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_IRON_BLOCK.asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == Blocks.IRON_BLOCK.asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Blocks.IRON_BLOCK).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -148,105 +68,34 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_GOLD_BLOCK.asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_GOLD_BLOCK.asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Blocks.GOLD_BLOCK.asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_GOLD_BLOCK.asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_GOLD_BLOCK.asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == Blocks.GOLD_BLOCK.asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Blocks.GOLD_BLOCK).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -263,105 +112,34 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == Blocks.COPPER_BLOCK.asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == Blocks.COPPER_BLOCK.asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Blocks.COPPER_BLOCK).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -378,105 +156,34 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_TIN.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_TIN.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_TIN.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -493,105 +200,35 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_MANGANESE.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_MANGANESE.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_MANGANESE.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -608,105 +245,34 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_TITANIUM.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_TITANIUM.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_TITANIUM.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -723,105 +289,34 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_URANIUM.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_URANIUM.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_URANIUM.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -839,107 +334,36 @@ public class RawBlocksProcedure {
 					}
 				}
 			} else if (ModList.get().isLoaded("create")) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks"))) && (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks")))) {
-					if (new Object() {
-						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).getCount();
-							}
-							return 0;
-						}
-					}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == (BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:zinc_blocks"))).getRandomElement(RandomSource.create())
-							.orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks")))
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks")))) {
+					if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == (BuiltInRegistries.ITEM
+							.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:zinc_blocks"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+								_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 							}
-						}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 							if (!world.isClientSide()) {
 								BlockPos _bp = BlockPos.containing(x, y, z);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
+								if (_blockEntity != null) {
 									_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+								}
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
 							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 								ItemStack _setstack = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:zinc_blocks"))).getRandomElement(RandomSource.create())
 										.orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-								_setstack.setCount((int) (new Object() {
-									public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-										if (world instanceof ILevelExtension _ext) {
-											IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-											if (_itemHandler != null)
-												return _itemHandler.getStackInSlot(slotid).getCount();
-										}
-										return 0;
-									}
-								}.getAmount(world, BlockPos.containing(x, y, z), 3) + 2));
+								_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 2);
 								_itemHandlerModifiable.setStackInSlot(3, _setstack);
 							}
 							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -959,133 +383,37 @@ public class RawBlocksProcedure {
 				}
 			}
 		}
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 3) < 64) {
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_IRON_BLOCK.asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem() || (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_IRON_BLOCK.asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_STEEL.get().asItem()) {
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() < 64) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_IRON_BLOCK.asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem()
+					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_MANGANESE.get().asItem()
+							&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_IRON_BLOCK.asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_STEEL.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_STEEL.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -1102,123 +430,36 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem() || (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_BRONZE.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem()
+					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TIN.get().asItem()
+							&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_BRONZE.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.BLOCK_OF_BRONZE.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -1235,123 +476,36 @@ public class RawBlocksProcedure {
 						}
 					}
 				}
-			} else if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem() || (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem() && (new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()) {
-				if (new Object() {
-					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).getCount();
-						}
-						return 0;
-					}
-				}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == SurvivalReimaginedModBlocks.TURANITE_BLOCK.get().asItem()) {
+			} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem()
+					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_TITANIUM.get().asItem()
+							&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.BLOCK_OF_RAW_URANINITE.get().asItem()) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModBlocks.TURANITE_BLOCK.get().asItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModBlocks.TURANITE_BLOCK.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(3, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -1369,125 +523,38 @@ public class RawBlocksProcedure {
 					}
 				}
 			} else if (ModList.get().isLoaded("create")) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks"))) && (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks"))) && (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
-					if (new Object() {
-						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).getCount();
-							}
-							return 0;
-						}
-					}.getAmount(world, BlockPos.containing(x, y, z), 3) == 0 || (new Object() {
-						public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-							if (world instanceof ILevelExtension _ext) {
-								IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-								if (_itemHandler != null)
-									return _itemHandler.getStackInSlot(slotid).copy();
-							}
-							return ItemStack.EMPTY;
-						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).getItem() == (BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:brass_blocks"))).getRandomElement(RandomSource.create())
-							.orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks")))
+						&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("create:raw_zinc_blocks")))
+								&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == Blocks.RAW_COPPER_BLOCK.asItem()) {
+					if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == (BuiltInRegistries.ITEM
+							.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:brass_blocks"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("BurnTime", (new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (!world.isClientSide()) {
-							BlockPos _bp = BlockPos.containing(x, y, z);
-							BlockEntity _blockEntity = world.getBlockEntity(_bp);
-							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
-								_blockEntity.getPersistentData().putDouble("FuelMeter", ((new Object() {
-									public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-										BlockEntity blockEntity = world.getBlockEntity(pos);
-										if (blockEntity != null)
-											return blockEntity.getPersistentData().getDouble(tag);
-										return -1;
-									}
-								}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter")) - 1));
-							if (world instanceof Level _level)
-								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-						}
-						if (new Object() {
-							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-								BlockEntity blockEntity = world.getBlockEntity(pos);
-								if (blockEntity != null)
-									return blockEntity.getPersistentData().getDouble(tag);
-								return -1;
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+								_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
 							}
-						}.getValue(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 							if (!world.isClientSide()) {
 								BlockPos _bp = BlockPos.containing(x, y, z);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
-								if (_blockEntity != null)
+								if (_blockEntity != null) {
 									_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+								}
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
 							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 								ItemStack _setstack = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("create:brass_blocks"))).getRandomElement(RandomSource.create())
 										.orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-								_setstack.setCount((int) (new Object() {
-									public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-										if (world instanceof ILevelExtension _ext) {
-											IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-											if (_itemHandler != null)
-												return _itemHandler.getStackInSlot(slotid).getCount();
-										}
-										return 0;
-									}
-								}.getAmount(world, BlockPos.containing(x, y, z), 3) + 1));
+								_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 1);
 								_itemHandlerModifiable.setStackInSlot(3, _setstack);
 							}
 							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -1507,5 +574,21 @@ public class RawBlocksProcedure {
 				}
 			}
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

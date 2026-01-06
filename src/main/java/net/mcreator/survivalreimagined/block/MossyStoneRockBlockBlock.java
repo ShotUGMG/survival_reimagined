@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -7,7 +6,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
@@ -19,8 +17,10 @@ import net.mcreator.survivalreimagined.procedures.MossyStoneRockBlockNeighbourBl
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class MossyStoneRockBlockBlock extends Block {
+	private static final VoxelShape SHAPE = box(6, 0, 5, 10, 2, 11);
+
 	public MossyStoneRockBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class MossyStoneRockBlockBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(6, 0, 5, 10, 2, 11).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.BlockHitResult;
@@ -29,7 +28,7 @@ import io.netty.buffer.Unpooled;
 
 public class MetalRefiningTableBlock extends Block implements EntityBlock {
 	public MetalRefiningTableBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.WOOD).strength(3f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(3f).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
@@ -71,7 +70,7 @@ public class MetalRefiningTableBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

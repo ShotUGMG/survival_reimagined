@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:netherite_scrap_block",
-    "survival_reimagined:embedded_obsidian"
+    "survival_reimagined:embedded_obsidian",
+    "survival_reimagined:netherite_scrap_block"
   ]
 }

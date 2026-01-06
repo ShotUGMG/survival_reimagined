@@ -9,6 +9,7 @@ import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
@@ -31,17 +32,7 @@ public class EntitySprintingProcedure {
 		if (entity == null)
 			return;
 		if (SurvivalReimaginedConfigConfiguration.HUNGER_VANILLA.get() == false) {
-			if (new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-					}
-					return false;
-				}
-			}.checkGamemode(entity)) {
+			if (getEntityGameType(entity) == GameType.SURVIVAL) {
 				if (entity.isSprinting()) {
 					if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting == 95) {
 						if ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) > 0) {
@@ -49,27 +40,38 @@ public class EntitySprintingProcedure {
 								_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) - 1));
 						} else if ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) > 0) {
 							if (entity instanceof Player _player)
-								_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1));
+								_player.getFoodData().setFoodLevel((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) - 1);
 						}
 						{
 							SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 							_vars.HungerSprinting = 0;
-							_vars.syncPlayerVariables(entity);
+							_vars.markSyncDirty();
 						}
 					}
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.HungerSprinting = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).HungerSprinting + 1;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				} else {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.HungerSprinting = 0;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

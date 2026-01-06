@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.command;
 
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
@@ -36,4 +35,5 @@ public class PrintLogicCommand {
 					return 0;
 				})));
 	}
+
 }

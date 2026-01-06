@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -19,19 +18,19 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.SolidBlockBelowProcedure;
 import net.mcreator.survivalreimagined.procedures.RadiatedOrchidOnRandomClientDisplayTickProcedure;
 
 public class RadiatedOrchidBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 11, 13);
+
 	public RadiatedOrchidBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().lightLevel(s -> 8).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
-				.dynamicShape().offsetType(Block.OffsetType.XZ));
+				.offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -52,7 +51,7 @@ public class RadiatedOrchidBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 13, 11, 13).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -71,14 +70,10 @@ public class RadiatedOrchidBlock extends Block {
 		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		RadiatedOrchidOnRandomClientDisplayTickProcedure.execute(world, x, y, z);
+		RadiatedOrchidOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

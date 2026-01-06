@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:yield_upgrade_mkiii",
     "survival_reimagined:yield_upgrade",
-    "survival_reimagined:yield_upgrade_mkii",
-    "survival_reimagined:yield_upgrade_mkiii"
+    "survival_reimagined:yield_upgrade_mkii"
   ]
 }

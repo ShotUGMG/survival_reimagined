@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:raw_titanium",
     "survival_reimagined:rough_titanium",
     "survival_reimagined:titanium_ingot",
-    "survival_reimagined:ilmenite"
+    "survival_reimagined:ilmenite",
+    "survival_reimagined:raw_titanium"
   ]
 }

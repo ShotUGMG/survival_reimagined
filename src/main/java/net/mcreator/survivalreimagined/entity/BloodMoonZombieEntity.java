@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;

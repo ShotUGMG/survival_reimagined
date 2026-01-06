@@ -1,0 +1,64 @@
+{
+  "_fv": 79,
+  "_type": "custom_recipe",
+  "definition": {
+    "category": "Forging",
+    "recipeType": "forging",
+    "inputs": [
+      {
+        "type": "Item",
+        "name": "forge_input_1",
+        "itemId": {
+          "value": "CUSTOM:HelmetMold"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      },
+      {
+        "type": "Item",
+        "name": "forge_input_2",
+        "itemId": {
+          "value": "CUSTOM:BronzeIngot"
+        },
+        "itemAmount": 8,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      },
+      {
+        "type": "Item",
+        "name": "forge_input_3",
+        "itemId": {
+          "value": "TAG:c:fuels"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ],
+    "outputs": [
+      {
+        "type": "Item",
+        "name": "forge_output",
+        "itemId": {
+          "value": "CUSTOM:BronzeArmor.helmet"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ]
+  }
+}

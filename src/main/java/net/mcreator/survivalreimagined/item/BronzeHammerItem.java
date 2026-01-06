@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.neoforged.neoforge.common.ItemAbility;

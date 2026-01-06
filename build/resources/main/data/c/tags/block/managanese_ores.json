@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     "survival_reimagined:manganese_ore",
-    "survival_reimagined:deepslate_manganese_ore",
     "survival_reimagined:manganite_ore",
+    "survival_reimagined:pyrolusite_ore",
+    "survival_reimagined:deepslate_manganese_ore",
     "survival_reimagined:deepslate_manganite_ore",
     "survival_reimagined:basalt_manganite_ore",
-    "survival_reimagined:pyrolusite_ore",
     "survival_reimagined:deepslate_pyrolusite_ore"
   ]
 }

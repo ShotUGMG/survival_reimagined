@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "survival_reimagined:titanium_ore",
-    "survival_reimagined:deepslate_titanium_ore",
-    "survival_reimagined:shale_titanium_ore",
     "survival_reimagined:ilmenite_ore",
+    "survival_reimagined:shale_titanium_ore",
+    "survival_reimagined:deepslate_titanium_ore",
     "survival_reimagined:deepslate_ilmenite_ore",
     "survival_reimagined:basalt_ilmenite_ore"
   ]

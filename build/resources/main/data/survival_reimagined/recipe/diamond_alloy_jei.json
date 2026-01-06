@@ -1,0 +1,22 @@
+{
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "tag": "c:alloy/steel_items",
+    "count": 1
+  },
+  "forge_input_2": {
+    "tag": "c:alloy/diamond_items",
+    "count": 1
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "survival_reimagined:rough_plated_diamond",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
+}

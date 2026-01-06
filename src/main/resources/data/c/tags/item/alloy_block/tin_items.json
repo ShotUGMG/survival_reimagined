@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:block_of_raw_tin",
+    "survival_reimagined:raw_cassiterite_block",
     "survival_reimagined:block_of_tin",
-    "survival_reimagined:raw_cassiterite_block"
+    "survival_reimagined:block_of_raw_tin"
   ]
 }

@@ -11,13 +11,13 @@ import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.survivalreimagined.jei_recipes.ProcessingRecipe;
-import net.mcreator.survivalreimagined.jei_recipes.MetalRefiningRecipe;
-import net.mcreator.survivalreimagined.jei_recipes.ForgingRecipe;
-import net.mcreator.survivalreimagined.jei_recipes.AAFJEIRecipe;
+import net.mcreator.survivalreimagined.recipe.ProcessingRecipe;
+import net.mcreator.survivalreimagined.recipe.MetalRefiningRecipe;
+import net.mcreator.survivalreimagined.recipe.ForgingRecipe;
+import net.mcreator.survivalreimagined.recipe.AlloyForgeRecipe;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
-@EventBusSubscriber(modid = SurvivalReimaginedMod.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = SurvivalReimaginedMod.MODID)
 public class SurvivalReimaginedModRecipeTypes {
 	public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES = DeferredRegister.create(BuiltInRegistries.RECIPE_TYPE, "survival_reimagined");
 	public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS = DeferredRegister.create(BuiltInRegistries.RECIPE_SERIALIZER, "survival_reimagined");
@@ -28,14 +28,16 @@ public class SurvivalReimaginedModRecipeTypes {
 		event.enqueueWork(() -> {
 			RECIPE_TYPES.register(bus);
 			SERIALIZERS.register(bus);
+			// Recipe Types
 			RECIPE_TYPES.register("forging", () -> ForgingRecipe.Type.INSTANCE);
-			SERIALIZERS.register("forging", () -> ForgingRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("metal_refining", () -> MetalRefiningRecipe.Type.INSTANCE);
-			SERIALIZERS.register("metal_refining", () -> MetalRefiningRecipe.Serializer.INSTANCE);
 			RECIPE_TYPES.register("processing", () -> ProcessingRecipe.Type.INSTANCE);
+			RECIPE_TYPES.register("metal_refining", () -> MetalRefiningRecipe.Type.INSTANCE);
+			RECIPE_TYPES.register("alloy_forge", () -> AlloyForgeRecipe.Type.INSTANCE);
+			// Recipe Serializer
+			SERIALIZERS.register("forging", () -> ForgingRecipe.Serializer.INSTANCE);
 			SERIALIZERS.register("processing", () -> ProcessingRecipe.Serializer.INSTANCE);
-			RECIPE_TYPES.register("aafjei", () -> AAFJEIRecipe.Type.INSTANCE);
-			SERIALIZERS.register("aafjei", () -> AAFJEIRecipe.Serializer.INSTANCE);
+			SERIALIZERS.register("metal_refining", () -> MetalRefiningRecipe.Serializer.INSTANCE);
+			SERIALIZERS.register("alloy_forge", () -> AlloyForgeRecipe.Serializer.INSTANCE);
 		});
 	}
 }

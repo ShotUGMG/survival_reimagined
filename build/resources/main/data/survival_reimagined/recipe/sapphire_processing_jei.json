@@ -1,0 +1,18 @@
+{
+  "type": "survival_reimagined:processing",
+  "processing_input_1": {
+    "tag": "c:processing/sapphire",
+    "count": 1
+  },
+  "processing_input_2": {
+    "item": "survival_reimagined:reactor_rod",
+    "count": 1
+  },
+  "processing_output": {
+    "id": "survival_reimagined:sapphire",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
+}

@@ -16,6 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
@@ -39,17 +40,7 @@ public class PointedStonesLootOverridesProcedure {
 	private static ItemStack execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
 		ItemStack ItemDrop = ItemStack.EMPTY;
 		for (Entity entityiterator : new ArrayList<>(world.players())) {
-			if (!(new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(entityiterator))) {
+			if (!(getEntityGameType(entityiterator) == GameType.CREATIVE)) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:pointed_stones/kimberlite")))) {
 					ItemDrop = new ItemStack(SurvivalReimaginedModBlocks.KIMBERLITE_ROCK.get()).copy();
 				} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:pointed_stones/deepslate")))) {
@@ -69,5 +60,16 @@ public class PointedStonesLootOverridesProcedure {
 			_level.addFreshEntity(entityToSpawn);
 		}
 		return ItemDrop;
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

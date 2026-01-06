@@ -1,35 +1,85 @@
 {
-  "_fv": 73,
-  "_type": "jeirecipetype",
+  "_fv": 79,
+  "_type": "recipe_type",
   "definition": {
-    "textureSelector": "mpt_jei.png",
+    "name": "Processing",
+    "texture": "mpt_jei",
+    "x": 0,
+    "y": 0,
     "width": 176,
     "height": 90,
     "icon": {
       "value": "CUSTOM:MineralProcessingTable"
     },
-    "craftingtables": [],
-    "enableCraftingtable": false,
+    "enableTables": true,
+    "tables": [
+      {
+        "value": "CUSTOM:MineralProcessingTable"
+      }
+    ],
     "title": "Processing",
     "slotList": [
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "processing_input_1",
         "x": 62,
         "y": 35,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "processing_input_2",
         "x": 80,
         "y": 62,
-        "slotid": 1
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "OUTPUT",
+        "io": "Output",
+        "type": "Item",
+        "name": "processing_output",
         "x": 98,
         "y": 35,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       }
-    ]
+    ],
+    "renderXML": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"render_start\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "enableRendering": false,
+    "enableClickArea": false,
+    "clickAreaList": []
   }
 }

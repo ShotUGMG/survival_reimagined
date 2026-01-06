@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "livingentity",
   "definition": {
     "mobName": "Alpha Crimson Arachnid",
@@ -162,6 +162,8 @@
       4,
       4,
       2
-    ]
+    ],
+    "sensitiveToVibration": false,
+    "vibrationalEvents": []
   }
 }

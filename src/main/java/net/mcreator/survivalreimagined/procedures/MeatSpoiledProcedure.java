@@ -28,9 +28,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Beef = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/beef"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Beef) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Beef)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Beef;
@@ -44,7 +44,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Beef = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -64,9 +64,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Pork = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/pork"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Pork) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Pork)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Pork;
@@ -80,7 +80,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Pork = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -100,9 +100,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Mutton = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/mutton"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Mutton) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Mutton)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Mutton;
@@ -116,7 +116,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Mutton = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -136,9 +136,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Chicken = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/chicken"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Mutton) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Mutton)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Chicken;
@@ -152,7 +152,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Chicken = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -172,9 +172,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Rabbit = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/rabbit"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Rabbit) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Rabbit)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Rabbit;
@@ -188,7 +188,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Rabbit = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -208,9 +208,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Cod = new ItemStack((BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/cod"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()))
 						.copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Cod) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Cod)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Cod;
@@ -224,7 +224,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Cod = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -244,9 +244,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Salmon = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/salmon"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Salmon) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Salmon)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Salmon;
@@ -260,7 +260,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Salmon = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -280,9 +280,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Brain = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/brain"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Brain) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Brain)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Brain;
@@ -296,7 +296,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Brain = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -316,9 +316,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Heart = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/heart"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Heart) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Heart)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Heart;
@@ -332,7 +332,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Heart = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -352,9 +352,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Lungs = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/lungs"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Lungs) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Lungs)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Lungs;
@@ -368,7 +368,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Lungs = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -388,9 +388,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Intestines = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/intestines"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Intestines) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Intestines)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Intestines;
@@ -404,7 +404,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Intestines = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -424,9 +424,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Liver = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/liver"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Liver) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Liver)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Liver;
@@ -440,7 +440,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Liver = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -460,9 +460,9 @@ public class MeatSpoiledProcedure {
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.Stomach = new ItemStack(
 						(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:meat/stomach"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value())).copy();
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
-			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Stomach) : false) {
+			if (hasEntityInInventory(entity, entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Stomach)) {
 				SurvivalReimaginedMod.queueServerWork(1, () -> {
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).Stomach;
@@ -476,7 +476,7 @@ public class MeatSpoiledProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.Stomach = ItemStack.EMPTY.copy();
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:bad_meat"));
@@ -491,5 +491,11 @@ public class MeatSpoiledProcedure {
 				});
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

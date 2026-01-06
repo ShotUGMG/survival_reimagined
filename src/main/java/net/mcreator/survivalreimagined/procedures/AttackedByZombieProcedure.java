@@ -53,7 +53,7 @@ public class AttackedByZombieProcedure {
 						if (!(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(SurvivalReimaginedModMobEffects.ZOMBIFICATION))) {
 							if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.CHANCE_ZOMBIFICATION.get()) {
 								SurvivalReimaginedModVariables.WorldVariables.get(world).EffectDanger = 0;
-								SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+								SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 									_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.ZOMBIFICATION, (int) (double) SurvivalReimaginedConfigConfiguration.TIME_ZOMBIFICATION.get(), 0, true, false));
 								if (world instanceof Level _level) {

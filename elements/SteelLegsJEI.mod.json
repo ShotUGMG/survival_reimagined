@@ -1,21 +1,63 @@
 {
-  "_fv": 73,
-  "_type": "jeirecipe",
+  "_fv": 79,
+  "_type": "custom_recipe",
   "definition": {
-    "category": "forging",
-    "result": {
-      "value": "CUSTOM:SteelArmor.legs"
-    },
-    "count": 1,
-    "ingredients": [
+    "category": "Forging",
+    "recipeType": "forging",
+    "inputs": [
       {
-        "value": "CUSTOM:LeggingMold"
+        "type": "Item",
+        "name": "forge_input_1",
+        "itemId": {
+          "value": "CUSTOM:LeggingMold"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       },
       {
-        "value": "TAG:c:metals/steel"
+        "type": "Item",
+        "name": "forge_input_2",
+        "itemId": {
+          "value": "CUSTOM:SteelIngot"
+        },
+        "itemAmount": 7,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       },
       {
-        "value": "TAG:c:fuels"
+        "type": "Item",
+        "name": "forge_input_3",
+        "itemId": {
+          "value": "TAG:c:fuels"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ],
+    "outputs": [
+      {
+        "type": "Item",
+        "name": "forge_output",
+        "itemId": {
+          "value": "CUSTOM:SteelArmor.legs"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       }
     ]
   }

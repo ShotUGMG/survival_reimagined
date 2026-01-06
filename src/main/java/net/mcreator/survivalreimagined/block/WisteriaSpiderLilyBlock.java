@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -19,8 +18,10 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.survivalreimagined.procedures.FlintblockBlockValidPlacementConditionProcedure;
 
 public class WisteriaSpiderLilyBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 10, 11, 10);
+
 	public WisteriaSpiderLilyBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -36,7 +37,7 @@ public class WisteriaSpiderLilyBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 10, 11, 10).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

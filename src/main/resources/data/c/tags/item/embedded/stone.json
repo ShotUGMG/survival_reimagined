@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:diamond_ore",
+    "survival_reimagined:sapphire_ore",
     "minecraft:emerald_ore",
     "survival_reimagined:ruby_ore",
-    "survival_reimagined:sapphire_ore",
-    "survival_reimagined:amber_ore",
-    "minecraft:lapis_ore"
+    "minecraft:lapis_ore",
+    "minecraft:diamond_ore",
+    "survival_reimagined:amber_ore"
   ]
 }

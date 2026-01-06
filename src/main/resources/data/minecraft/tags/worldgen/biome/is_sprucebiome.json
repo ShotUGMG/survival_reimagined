@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "windswept_forest",
+    "snowy_plains",
     "taiga",
     "old_growth_pine_taiga",
     "old_growth_spruce_taiga",
-    "snowy_taiga",
-    "snowy_plains"
+    "snowy_taiga"
   ]
 }

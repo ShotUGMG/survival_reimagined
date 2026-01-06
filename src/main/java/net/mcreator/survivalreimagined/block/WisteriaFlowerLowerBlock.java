@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -23,6 +22,8 @@ import net.mcreator.survivalreimagined.procedures.WisteriaFlowerLowerOnTickUpdat
 import net.mcreator.survivalreimagined.procedures.WisteriaFlowerLowerNeighbourBlockChangesProcedure;
 
 public class WisteriaFlowerLowerBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 16, 13);
+
 	public WisteriaFlowerLowerBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CAVE_VINES).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -44,7 +45,7 @@ public class WisteriaFlowerLowerBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(3, 0, 3, 13, 16, 13);
+		return (SHAPE);
 	}
 
 	@Override

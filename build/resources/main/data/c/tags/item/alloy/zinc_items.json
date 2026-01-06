@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:rough_zinc",
-    "#c:compat/zinc_compat_items"
+    {
+      "id": "#c:compat/zinc_compat_items",
+      "required": false
+    },
+    "survival_reimagined:rough_zinc"
   ]
 }

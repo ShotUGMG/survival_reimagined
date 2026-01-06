@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "survival_reimagined:bronze_armor_leggings",
-    "survival_reimagined:steel_armor_leggings",
-    "minecraft:diamond_leggings"
+    "minecraft:diamond_leggings",
+    "survival_reimagined:steel_armor_leggings"
   ]
 }

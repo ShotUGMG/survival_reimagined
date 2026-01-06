@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "minecraft:diamond_ore",
+    "survival_reimagined:embedded_obsidian",
     "minecraft:deepslate_diamond_ore",
-    "minecraft:diamond_block",
-    "minecraft:emerald_ore",
-    "minecraft:deepslate_emerald_ore",
     "minecraft:emerald_block",
-    "survival_reimagined:embedded_obsidian"
+    "minecraft:emerald_ore",
+    "minecraft:diamond_ore",
+    "minecraft:diamond_block",
+    "minecraft:deepslate_emerald_ore"
   ]
 }

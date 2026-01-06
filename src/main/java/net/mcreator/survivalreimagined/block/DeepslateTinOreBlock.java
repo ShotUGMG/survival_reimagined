@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -11,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class DeepslateTinOreBlock extends Block {
 	public DeepslateTinOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DEEPSLATE).strength(3.5f, 2f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).strength(3.5f, 2f).requiresCorrectToolForDrops().instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override

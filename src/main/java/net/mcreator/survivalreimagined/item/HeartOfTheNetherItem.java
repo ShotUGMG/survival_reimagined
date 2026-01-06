@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.item.context.UseOnContext;

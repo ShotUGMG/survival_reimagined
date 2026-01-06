@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.level.Level;
@@ -13,7 +12,7 @@ import net.mcreator.survivalreimagined.procedures.HeartOfTheBloodMoonRightclicke
 
 public class HeartOfTheBloodMoonItem extends Item {
 	public HeartOfTheBloodMoonItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().rarity(Rarity.RARE));
 	}
 
 	@Override

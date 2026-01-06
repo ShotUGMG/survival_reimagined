@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,6 +24,8 @@ import net.mcreator.survivalreimagined.procedures.RadiatedSaplingBoneMealSuccess
 import net.mcreator.survivalreimagined.procedures.RadiatedSaplingBlockValidPlacementConditionProcedure;
 
 public class RadiatedSaplingBlock extends Block implements BonemealableBlock {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 14, 13);
+
 	public RadiatedSaplingBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -46,7 +47,7 @@ public class RadiatedSaplingBlock extends Block implements BonemealableBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(3, 0, 3, 13, 14, 13);
+		return (SHAPE);
 	}
 
 	@Override

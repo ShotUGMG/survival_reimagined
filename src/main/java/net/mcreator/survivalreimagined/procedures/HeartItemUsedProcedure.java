@@ -107,7 +107,7 @@ public class HeartItemUsedProcedure {
 					{
 						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 						_vars.ZombificationImmune = true;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 					if (entity instanceof ServerPlayer _player) {
 						AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:zombification_immunity"));

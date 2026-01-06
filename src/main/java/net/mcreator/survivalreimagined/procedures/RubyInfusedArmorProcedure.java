@@ -61,7 +61,7 @@ public class RubyInfusedArmorProcedure {
 				if (ArmorGold) {
 					if (Math.random() == 0.5) {
 						if (entity instanceof LivingEntity _entity)
-							_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4));
+							_entity.setHealth((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 40, 2));
 						if (world instanceof Level _level) {
@@ -75,7 +75,7 @@ public class RubyInfusedArmorProcedure {
 				} else if (ArmorSilver) {
 					if (Math.random() == 0.25) {
 						if (entity instanceof LivingEntity _entity)
-							_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));
+							_entity.setHealth((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 20, 2));
 						if (world instanceof Level _level) {

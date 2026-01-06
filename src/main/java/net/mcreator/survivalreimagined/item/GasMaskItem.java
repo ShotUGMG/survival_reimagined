@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.item;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -43,7 +42,7 @@ import java.util.Collections;
 
 import com.google.common.collect.Iterables;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public abstract class GasMaskItem extends ArmorItem {
 	public static Holder<ArmorMaterial> ARMOR_MATERIAL = null;
 
@@ -65,12 +64,18 @@ public abstract class GasMaskItem extends ArmorItem {
 	@SubscribeEvent
 	public static void registerItemExtensions(RegisterClientExtensionsEvent event) {
 		event.registerItem(new IClientItemExtensions() {
+			private HumanoidModel armorModel = null;
+
 			@Override
+			@OnlyIn(Dist.CLIENT)
 			public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-				HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-						Map.of("head", new ModelGas_Mask_Converted(Minecraft.getInstance().getEntityModels().bakeLayer(ModelGas_Mask_Converted.LAYER_LOCATION)).gas_mask, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-								new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
-								"right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				if (armorModel == null) {
+					armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("head", new ModelGas_Mask_Converted(Minecraft.getInstance().getEntityModels().bakeLayer(ModelGas_Mask_Converted.LAYER_LOCATION)).gas_mask, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+				}
 				armorModel.crouching = living.isShiftKeyDown();
 				armorModel.riding = defaultModel.riding;
 				armorModel.young = living.isBaby();

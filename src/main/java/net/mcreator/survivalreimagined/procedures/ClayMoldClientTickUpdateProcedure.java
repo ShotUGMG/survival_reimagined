@@ -13,7 +13,7 @@ public class ClayMoldClientTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((blockstate.getBlock().getStateDefinition().getProperty("can_burn") instanceof BooleanProperty _getbp1 && blockstate.getValue(_getbp1)) == true) {
 			world.addParticle(ParticleTypes.WHITE_SMOKE, (x + Mth.nextDouble(RandomSource.create(), 0, 1)), (y + Mth.nextDouble(RandomSource.create(), 0, 0.25)), (z + Mth.nextDouble(RandomSource.create(), 0, 1)), 0, 0.0025, 0);
-			if ((world.getBlockState(BlockPos.containing(x, y - 2, z))).getBlock() == Blocks.LAVA) {
+			if ((world.getBlockState(BlockPos.containing(x, y - 2, z))).getBlock() == Blocks.AIR) {
 				world.addParticle(ParticleTypes.SMOKE, (x + Mth.nextDouble(RandomSource.create(), 0, 1)), (y + Mth.nextDouble(RandomSource.create(), 0, 0.25)), (z + Mth.nextDouble(RandomSource.create(), 0, 1)), 0, 0.0025, 0);
 			}
 		}

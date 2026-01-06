@@ -6,7 +6,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
@@ -16,11 +15,9 @@ import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.survivalreimagined.world.inventory.AdvancedAlloyForgeGUIMenu;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
 
 import javax.annotation.Nullable;
-
-import java.util.function.Supplier;
-import java.util.Map;
 
 @EventBusSubscriber
 public class AAFFueledProcedure {
@@ -37,11 +34,11 @@ public class AAFFueledProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _plr0 && _plr0.containerMenu instanceof AdvancedAlloyForgeGUIMenu) {
-			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu1 ? _menu1.getSlots().get(3).getItem() : ItemStack.EMPTY)
 					.is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY)
+					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu3 ? _menu3.getSlots().get(1).getItem() : ItemStack.EMPTY)
 							.is(ItemTags.create(ResourceLocation.parse("c:alloy_items")))
-					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
+					&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu5 ? _menu5.getSlots().get(2).getItem() : ItemStack.EMPTY)
 							.is(ItemTags.create(ResourceLocation.parse("c:alloy_items")))) {
 				if (entity instanceof ServerPlayer _player) {
 					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:advanced_forging_operations"));

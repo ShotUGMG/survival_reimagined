@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "recipe_type",
+  "definition": {
+    "name": "AlloyForge",
+    "texture": "aaf_gui",
+    "x": 0,
+    "y": 0,
+    "width": 176,
+    "height": 86,
+    "icon": {
+      "value": "CUSTOM:AdvancedAlloyForge"
+    },
+    "enableTables": true,
+    "tables": [
+      {
+        "value": "CUSTOM:AdvancedAlloyForge"
+      }
+    ],
+    "title": "Alloy Forge",
+    "slotList": [
+      {
+        "io": "Input",
+        "type": "Item",
+        "name": "alloy_input_1",
+        "x": 71,
+        "y": 39,
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
+      },
+      {
+        "io": "Input",
+        "type": "Item",
+        "name": "alloy_input_2",
+        "x": 89,
+        "y": 39,
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
+      },
+      {
+        "io": "Input",
+        "type": "Item",
+        "name": "alloy_input_3",
+        "x": 8,
+        "y": 57,
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
+      },
+      {
+        "io": "Output",
+        "type": "Item",
+        "name": "alloy_output",
+        "x": 134,
+        "y": 39,
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
+      }
+    ],
+    "renderXML": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"render_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"jei_render_tooltip\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><value name=\"xPos\"><block type=\"jei_number_input\"><field name=\"number\">155</field></block></value><value name=\"yPos\"><block type=\"jei_number_input\"><field name=\"number\">66</field></block></value><value name=\"width\"><block type=\"jei_number_input\"><field name=\"number\">16</field></block></value><value name=\"height\"><block type=\"jei_number_input\"><field name=\"number\">16</field></block></value><value name=\"entry0\"><block type=\"jei_text_input\"><field name=\"text\">Forge recipes can be used here. (Alloy Only)</field></block></value></block></next></block></xml>",
+    "enableRendering": true,
+    "enableClickArea": false,
+    "clickAreaList": []
+  }
+}

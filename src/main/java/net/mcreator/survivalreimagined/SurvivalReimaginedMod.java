@@ -20,16 +20,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.survivalreimagined.world.features.StructureFeature;
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModTabs;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModSounds;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModParticleTypes;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModFeatures;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModEntities;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlockEntities;
+import net.mcreator.survivalreimagined.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -57,11 +48,9 @@ public class SurvivalReimaginedMod {
 		SurvivalReimaginedModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		SurvivalReimaginedModFeatures.REGISTRY.register(modEventBus);
 		StructureFeature.REGISTRY.register(modEventBus);
-
 		SurvivalReimaginedModMobEffects.REGISTRY.register(modEventBus);
 		SurvivalReimaginedModMenus.REGISTRY.register(modEventBus);
 		SurvivalReimaginedModParticleTypes.REGISTRY.register(modEventBus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

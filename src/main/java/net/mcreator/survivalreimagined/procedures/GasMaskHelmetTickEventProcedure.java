@@ -27,35 +27,35 @@ public class GasMaskHelmetTickEventProcedure {
 			{
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.GaskMaskDamage = 200;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GaskMaskDamage <= 200) {
 			{
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.GaskMaskDamage = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GaskMaskDamage - 1;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GasMaskHeal == 0) {
 			{
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.GasMaskHeal = 20;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GasMaskHeal <= 20) {
 			{
 				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 				_vars.GasMaskHeal = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GasMaskHeal - 1;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("survival_reimagined:radiated_forest"))) {
 			if (itemstack.getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(ResourceKey.create(Registries.ENCHANTMENT, ResourceLocation.parse("survival_reimagined:perpetual_filtering")))) != 0) {
 				if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).GasMaskHeal == 0) {
 					if (itemstack.getDamageValue() != 0) {
-						itemstack.setDamageValue((int) (itemstack.getDamageValue() - 10));
+						itemstack.setDamageValue(itemstack.getDamageValue() - 10);
 						if (world.isClientSide()) {
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {

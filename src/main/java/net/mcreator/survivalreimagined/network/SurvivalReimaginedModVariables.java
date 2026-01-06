@@ -4,6 +4,8 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.common.util.INBTSerializable;
 import net.neoforged.neoforge.attachment.AttachmentType;
@@ -22,7 +24,6 @@ import net.minecraft.world.entity.animal.Cod;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.Brain;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -38,7 +39,7 @@ import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 import java.util.function.Supplier;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class SurvivalReimaginedModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, SurvivalReimaginedMod.MODID);
 	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
@@ -51,80 +52,102 @@ public class SurvivalReimaginedModVariables {
 		SurvivalReimaginedMod.addNetworkMessage(PlayerVariablesSyncMessage.TYPE, PlayerVariablesSyncMessage.STREAM_CODEC, PlayerVariablesSyncMessage::handleData);
 	}
 
-	@EventBusSubscriber
-	public static class EventBusVariableHandlers {
-		@SubscribeEvent
-		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player)
-				player.getData(PLAYER_VARIABLES).syncPlayerVariables(event.getEntity());
-		}
+	@SubscribeEvent
+	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player)
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+	}
 
-		@SubscribeEvent
-		public static void clonePlayer(PlayerEvent.Clone event) {
-			PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
-			PlayerVariables clone = new PlayerVariables();
-			clone.GaskMaskDamage = original.GaskMaskDamage;
-			clone.GasMaskHeal = original.GasMaskHeal;
-			clone.DiamondLogicNumber = original.DiamondLogicNumber;
-			clone.ZombificationImmune = original.ZombificationImmune;
-			if (!event.isWasDeath()) {
-				clone.SpoilTimer = original.SpoilTimer;
-				clone.HungerSprinting = original.HungerSprinting;
-				clone.HungerSwimming = original.HungerSwimming;
-				clone.Beef = original.Beef;
-				clone.Pork = original.Pork;
-				clone.Mutton = original.Mutton;
-				clone.Chicken = original.Chicken;
-				clone.Rabbit = original.Rabbit;
-				clone.Cod = original.Cod;
-				clone.Salmon = original.Salmon;
-				clone.Brain = original.Brain;
-				clone.Heart = original.Heart;
-				clone.Lungs = original.Lungs;
-				clone.Intestines = original.Intestines;
-				clone.Liver = original.Liver;
-				clone.Stomach = original.Stomach;
-				clone.ScrapeHandler = original.ScrapeHandler;
+	@SubscribeEvent
+	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
+		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			player.getData(PLAYER_VARIABLES)._syncDirty = false;
+		}
+	}
+
+	@SubscribeEvent
+	public static void clonePlayer(PlayerEvent.Clone event) {
+		PlayerVariables original = event.getOriginal().getData(PLAYER_VARIABLES);
+		PlayerVariables clone = new PlayerVariables();
+		clone.GaskMaskDamage = original.GaskMaskDamage;
+		clone.GasMaskHeal = original.GasMaskHeal;
+		clone.DiamondLogicNumber = original.DiamondLogicNumber;
+		clone.ZombificationImmune = original.ZombificationImmune;
+		if (!event.isWasDeath()) {
+			clone.SpoilTimer = original.SpoilTimer;
+			clone.HungerSprinting = original.HungerSprinting;
+			clone.HungerSwimming = original.HungerSwimming;
+			clone.Beef = original.Beef;
+			clone.Pork = original.Pork;
+			clone.Mutton = original.Mutton;
+			clone.Chicken = original.Chicken;
+			clone.Rabbit = original.Rabbit;
+			clone.Cod = original.Cod;
+			clone.Salmon = original.Salmon;
+			clone.Brain = original.Brain;
+			clone.Heart = original.Heart;
+			clone.Lungs = original.Lungs;
+			clone.Intestines = original.Intestines;
+			clone.Liver = original.Liver;
+			clone.Stomach = original.Stomach;
+			clone.ScrapeHandler = original.ScrapeHandler;
+		}
+		event.getEntity().setData(PLAYER_VARIABLES, clone);
+	}
+
+	@SubscribeEvent
+	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData mapdata = MapVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (mapdata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+		if (event.getEntity() instanceof ServerPlayer player) {
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			if (worlddata != null)
+				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+		}
+	}
+
+	@SubscribeEvent
+	public static void onWorldTick(LevelTickEvent.Post event) {
+		if (event.getLevel() instanceof ServerLevel level) {
+			WorldVariables worldVariables = WorldVariables.get(level);
+			if (worldVariables._syncDirty) {
+				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, worldVariables));
+				worldVariables._syncDirty = false;
 			}
-			event.getEntity().setData(PLAYER_VARIABLES, clone);
-		}
-
-		@SubscribeEvent
-		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData mapdata = MapVariables.get(event.getEntity().level());
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (mapdata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
-			}
-		}
-
-		@SubscribeEvent
-		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (event.getEntity() instanceof ServerPlayer player) {
-				SavedData worlddata = WorldVariables.get(event.getEntity().level());
-				if (worlddata != null)
-					PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
+			MapVariables mapVariables = MapVariables.get(level);
+			if (mapVariables._syncDirty) {
+				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, mapVariables));
+				mapVariables._syncDirty = false;
 			}
 		}
 	}
 
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "survival_reimagined_worldvars";
+		boolean _syncDirty = false;
 		public double HeartBeat = 0;
 		public double EffectDanger = 0;
 
@@ -146,10 +169,9 @@ public class SurvivalReimaginedModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof ServerLevel level)
-				PacketDistributor.sendToPlayersInDimension(level, new SavedDataSyncMessage(1, this));
+			this._syncDirty = true;
 		}
 
 		static WorldVariables clientSide = new WorldVariables();
@@ -165,6 +187,7 @@ public class SurvivalReimaginedModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "survival_reimagined_mapvars";
+		boolean _syncDirty = false;
 		public boolean BloodMoonTimer = false;
 		public boolean AnnouncementPlayed = false;
 		public boolean sculk_hearts = false;
@@ -210,10 +233,9 @@ public class SurvivalReimaginedModVariables {
 			return nbt;
 		}
 
-		public void syncData(LevelAccessor world) {
+		public void markSyncDirty() {
 			this.setDirty();
-			if (world instanceof Level && !world.isClientSide())
-				PacketDistributor.sendToAllPlayers(new SavedDataSyncMessage(0, this));
+			_syncDirty = true;
 		}
 
 		static MapVariables clientSide = new MapVariables();
@@ -268,6 +290,7 @@ public class SurvivalReimaginedModVariables {
 	}
 
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
+		boolean _syncDirty = false;
 		public double SpoilTimer = 0;
 		public double HungerSprinting = 0;
 		public double HungerSwimming = 0;
@@ -342,9 +365,8 @@ public class SurvivalReimaginedModVariables {
 			ZombificationImmune = nbt.getBoolean("ZombificationImmune");
 		}
 
-		public void syncPlayerVariables(Entity entity) {
-			if (entity instanceof ServerPlayer serverPlayer)
-				PacketDistributor.sendToPlayer(serverPlayer, new PlayerVariablesSyncMessage(this));
+		public void markSyncDirty() {
+			_syncDirty = true;
 		}
 	}
 

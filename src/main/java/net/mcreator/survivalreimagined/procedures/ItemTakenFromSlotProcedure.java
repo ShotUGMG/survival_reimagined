@@ -41,7 +41,7 @@ public class ItemTakenFromSlotProcedure {
 				for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 					ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
 					if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:tool_part/bronze")))) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+						if (hasEntityInInventory(entity, itemstackiterator)) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:forged_bronze"));
 								if (_adv != null) {
@@ -55,7 +55,7 @@ public class ItemTakenFromSlotProcedure {
 						}
 					}
 					if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:tool_part/steel")))) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+						if (hasEntityInInventory(entity, itemstackiterator)) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:forged_steel"));
 								if (_adv != null) {
@@ -69,7 +69,7 @@ public class ItemTakenFromSlotProcedure {
 						}
 					}
 					if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:tool_part/diamond")))) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+						if (hasEntityInInventory(entity, itemstackiterator)) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:forged_plated_diamond"));
 								if (_adv != null) {
@@ -90,7 +90,7 @@ public class ItemTakenFromSlotProcedure {
 				for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 					ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
 					if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:processed_item")))) {
-						if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+						if (hasEntityInInventory(entity, itemstackiterator)) {
 							if (entity instanceof ServerPlayer _player) {
 								AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:mineral_processed"));
 								if (_adv != null) {
@@ -106,5 +106,11 @@ public class ItemTakenFromSlotProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

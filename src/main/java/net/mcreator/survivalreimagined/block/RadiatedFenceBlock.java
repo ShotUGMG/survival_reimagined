@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,7 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class RadiatedFenceBlock extends FenceBlock {
 	public RadiatedFenceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
 	}
 
 	@Override

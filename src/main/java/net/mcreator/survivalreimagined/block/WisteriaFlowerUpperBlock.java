@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -20,6 +19,8 @@ import net.mcreator.survivalreimagined.procedures.WisteriaFlowerUpperNeighbourBl
 import net.mcreator.survivalreimagined.procedures.WisteriaFlowerUpperBlockValidPlacementConditionProcedure;
 
 public class WisteriaFlowerUpperBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 16, 13);
+
 	public WisteriaFlowerUpperBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CAVE_VINES).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -41,7 +42,7 @@ public class WisteriaFlowerUpperBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(3, 0, 3, 13, 16, 13);
+		return (SHAPE);
 	}
 
 	@Override

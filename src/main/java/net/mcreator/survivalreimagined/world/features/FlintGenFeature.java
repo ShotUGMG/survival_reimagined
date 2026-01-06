@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.world.features;
 
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;

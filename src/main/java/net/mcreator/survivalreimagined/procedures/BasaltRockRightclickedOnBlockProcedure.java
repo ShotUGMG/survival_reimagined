@@ -16,7 +16,7 @@ public class BasaltRockRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == Blocks.AIR) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), SurvivalReimaginedModBlocks.BASALT_ROCK_BLOCK.get().defaultBlockState(), 3);
-			itemstack.setCount((int) (itemstack.getCount() - 1));
+			itemstack.setCount(itemstack.getCount() - 1);
 			SurvivalReimaginedMod.queueServerWork(1, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -32,6 +31,34 @@ import net.mcreator.survivalreimagined.procedures.SheepCarcassBlockDestroyedByPl
 public class SheepCarcassBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	private static final VoxelShape SHAPE_1_NORTH = Shapes.or(box(5.66667, 5.66667, 0, 17.66667, 9.66667, 4), box(5.66667, -0.33333, 0, 17.66667, 3.66667, 4), box(5.66667, 5.66667, 12, 17.66667, 9.66667, 16),
+			box(5.66667, -0.33333, 12, 17.66667, 3.66667, 16), box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
+	private static final VoxelShape SHAPE_1_SOUTH = Shapes.or(box(-1.66667, 5.66667, 12, 10.33333, 9.66667, 16), box(-1.66667, -0.33333, 12, 10.33333, 3.66667, 16), box(-1.66667, 5.66667, 0, 10.33333, 9.66667, 4),
+			box(-1.66667, -0.33333, 0, 10.33333, 3.66667, 4), box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
+	private static final VoxelShape SHAPE_1_EAST = Shapes.or(box(12, 5.66667, 5.66667, 16, 9.66667, 17.66667), box(12, -0.33333, 5.66667, 16, 3.66667, 17.66667), box(0, 5.66667, 5.66667, 4, 9.66667, 17.66667),
+			box(0, -0.33333, 5.66667, 4, 3.66667, 17.66667), box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
+	private static final VoxelShape SHAPE_1_WEST = Shapes.or(box(0, 5.66667, -1.66667, 4, 9.66667, 10.33333), box(0, -0.33333, -1.66667, 4, 3.66667, 10.33333), box(12, 5.66667, -1.66667, 16, 9.66667, 10.33333),
+			box(12, -0.33333, -1.66667, 16, 3.66667, 10.33333), box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
+	private static final VoxelShape SHAPE_2_NORTH = Shapes.or(box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
+	private static final VoxelShape SHAPE_2_SOUTH = Shapes.or(box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
+	private static final VoxelShape SHAPE_2_EAST = Shapes.or(box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
+	private static final VoxelShape SHAPE_2_WEST = Shapes.or(box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
+	private static final VoxelShape SHAPE_3_NORTH = box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667);
+	private static final VoxelShape SHAPE_3_SOUTH = box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333);
+	private static final VoxelShape SHAPE_3_EAST = box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667);
+	private static final VoxelShape SHAPE_3_WEST = box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333);
+	private static final VoxelShape SHAPE_4_NORTH = box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667);
+	private static final VoxelShape SHAPE_4_SOUTH = box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333);
+	private static final VoxelShape SHAPE_4_EAST = box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667);
+	private static final VoxelShape SHAPE_4_WEST = box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333);
+	private static final VoxelShape SHAPE_NORTH = Shapes.or(box(5.66667, 5.66667, 0, 17.66667, 9.66667, 4), box(5.66667, -0.33333, 0, 17.66667, 3.66667, 4), box(5.66667, 5.66667, 12, 17.66667, 9.66667, 16),
+			box(5.66667, -0.33333, 12, 17.66667, 3.66667, 16), box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
+	private static final VoxelShape SHAPE_SOUTH = Shapes.or(box(-1.66667, 5.66667, 12, 10.33333, 9.66667, 16), box(-1.66667, -0.33333, 12, 10.33333, 3.66667, 16), box(-1.66667, 5.66667, 0, 10.33333, 9.66667, 4),
+			box(-1.66667, -0.33333, 0, 10.33333, 3.66667, 4), box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
+	private static final VoxelShape SHAPE_EAST = Shapes.or(box(12, 5.66667, 5.66667, 16, 9.66667, 17.66667), box(12, -0.33333, 5.66667, 16, 3.66667, 17.66667), box(0, 5.66667, 5.66667, 4, 9.66667, 17.66667),
+			box(0, -0.33333, 5.66667, 4, 3.66667, 17.66667), box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
+	private static final VoxelShape SHAPE_WEST = Shapes.or(box(0, 5.66667, -1.66667, 4, 9.66667, 10.33333), box(0, -0.33333, -1.66667, 4, 3.66667, 10.33333), box(12, 5.66667, -1.66667, 16, 9.66667, 10.33333),
+			box(12, -0.33333, -1.66667, 16, 3.66667, 10.33333), box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
 
 	public SheepCarcassBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).lightLevel(s -> (new Object() {
@@ -68,51 +95,48 @@ public class SheepCarcassBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> Shapes.or(box(-1.66667, 5.66667, 12, 10.33333, 9.66667, 16), box(-1.66667, -0.33333, 12, 10.33333, 3.66667, 16), box(-1.66667, 5.66667, 0, 10.33333, 9.66667, 4), box(-1.66667, -0.33333, 0, 10.33333, 3.66667, 4),
-						box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
-				case NORTH -> Shapes.or(box(5.66667, 5.66667, 0, 17.66667, 9.66667, 4), box(5.66667, -0.33333, 0, 17.66667, 3.66667, 4), box(5.66667, 5.66667, 12, 17.66667, 9.66667, 16), box(5.66667, -0.33333, 12, 17.66667, 3.66667, 16),
-						box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
-				case EAST -> Shapes.or(box(12, 5.66667, 5.66667, 16, 9.66667, 17.66667), box(12, -0.33333, 5.66667, 16, 3.66667, 17.66667), box(0, 5.66667, 5.66667, 4, 9.66667, 17.66667), box(0, -0.33333, 5.66667, 4, 3.66667, 17.66667),
-						box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
-				case WEST -> Shapes.or(box(0, 5.66667, -1.66667, 4, 9.66667, 10.33333), box(0, -0.33333, -1.66667, 4, 3.66667, 10.33333), box(12, 5.66667, -1.66667, 16, 9.66667, 10.33333), box(12, -0.33333, -1.66667, 16, 3.66667, 10.33333),
-						box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
-			};
+			return (switch (state.getValue(FACING)) {
+				case NORTH -> SHAPE_1_NORTH;
+				case SOUTH -> SHAPE_1_SOUTH;
+				case EAST -> SHAPE_1_EAST;
+				case WEST -> SHAPE_1_WEST;
+				default -> SHAPE_1_NORTH;
+			});
 		}
 		if (state.getValue(BLOCKSTATE) == 2) {
-			return switch (state.getValue(FACING)) {
-				default -> Shapes.or(box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
-				case NORTH -> Shapes.or(box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
-				case EAST -> Shapes.or(box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
-				case WEST -> Shapes.or(box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
-			};
+			return (switch (state.getValue(FACING)) {
+				case NORTH -> SHAPE_2_NORTH;
+				case SOUTH -> SHAPE_2_SOUTH;
+				case EAST -> SHAPE_2_EAST;
+				case WEST -> SHAPE_2_WEST;
+				default -> SHAPE_2_NORTH;
+			});
 		}
 		if (state.getValue(BLOCKSTATE) == 3) {
-			return switch (state.getValue(FACING)) {
-				default -> box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333);
-				case NORTH -> box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667);
-				case EAST -> box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667);
-				case WEST -> box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333);
-			};
+			return (switch (state.getValue(FACING)) {
+				case NORTH -> SHAPE_3_NORTH;
+				case SOUTH -> SHAPE_3_SOUTH;
+				case EAST -> SHAPE_3_EAST;
+				case WEST -> SHAPE_3_WEST;
+				default -> SHAPE_3_NORTH;
+			});
 		}
 		if (state.getValue(BLOCKSTATE) == 4) {
-			return switch (state.getValue(FACING)) {
-				default -> box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333);
-				case NORTH -> box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667);
-				case EAST -> box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667);
-				case WEST -> box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333);
-			};
+			return (switch (state.getValue(FACING)) {
+				case NORTH -> SHAPE_4_NORTH;
+				case SOUTH -> SHAPE_4_SOUTH;
+				case EAST -> SHAPE_4_EAST;
+				case WEST -> SHAPE_4_WEST;
+				default -> SHAPE_4_NORTH;
+			});
 		}
-		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(-1.66667, 5.66667, 12, 10.33333, 9.66667, 16), box(-1.66667, -0.33333, 12, 10.33333, 3.66667, 16), box(-1.66667, 5.66667, 0, 10.33333, 9.66667, 4), box(-1.66667, -0.33333, 0, 10.33333, 3.66667, 4),
-					box(14.33333, 1.66667, 15, 20.33333, 7.66667, 23), box(8.83333, 0.33334, 0.83333, 14.83333, 8.33334, 16.83333));
-			case NORTH -> Shapes.or(box(5.66667, 5.66667, 0, 17.66667, 9.66667, 4), box(5.66667, -0.33333, 0, 17.66667, 3.66667, 4), box(5.66667, 5.66667, 12, 17.66667, 9.66667, 16), box(5.66667, -0.33333, 12, 17.66667, 3.66667, 16),
-					box(-4.33333, 1.66667, -7, 1.66667, 7.66667, 1), box(1.16667, 0.33334, -0.83333, 7.16667, 8.33334, 15.16667));
-			case EAST -> Shapes.or(box(12, 5.66667, 5.66667, 16, 9.66667, 17.66667), box(12, -0.33333, 5.66667, 16, 3.66667, 17.66667), box(0, 5.66667, 5.66667, 4, 9.66667, 17.66667), box(0, -0.33333, 5.66667, 4, 3.66667, 17.66667),
-					box(15, 1.66667, -4.33333, 23, 7.66667, 1.66667), box(0.83333, 0.33334, 1.16667, 16.83333, 8.33334, 7.16667));
-			case WEST -> Shapes.or(box(0, 5.66667, -1.66667, 4, 9.66667, 10.33333), box(0, -0.33333, -1.66667, 4, 3.66667, 10.33333), box(12, 5.66667, -1.66667, 16, 9.66667, 10.33333), box(12, -0.33333, -1.66667, 16, 3.66667, 10.33333),
-					box(-7, 1.66667, 14.33333, 1, 7.66667, 20.33333), box(-0.83333, 0.33334, 8.83333, 15.16667, 8.33334, 14.83333));
-		};
+		return (switch (state.getValue(FACING)) {
+			case NORTH -> SHAPE_NORTH;
+			case SOUTH -> SHAPE_SOUTH;
+			case EAST -> SHAPE_EAST;
+			case WEST -> SHAPE_WEST;
+			default -> SHAPE_NORTH;
+		});
 	}
 
 	@Override

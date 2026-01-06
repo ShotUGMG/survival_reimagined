@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "minecraft:iron_ore",
-    "minecraft:deepslate_iron_ore",
-    "survival_reimagined:hematite_ore",
-    "survival_reimagined:deepslate_hematite_ore",
-    "survival_reimagined:basalt_hematite_ore",
-    "survival_reimagined:magnetite_ore",
     "survival_reimagined:deepslate_magnetite_ore",
-    "survival_reimagined:basalt_magnetite_ore"
+    "survival_reimagined:basalt_hematite_ore",
+    "minecraft:iron_ore",
+    "survival_reimagined:basalt_magnetite_ore",
+    "survival_reimagined:hematite_ore",
+    "minecraft:deepslate_iron_ore",
+    "survival_reimagined:magnetite_ore",
+    "survival_reimagined:deepslate_hematite_ore"
   ]
 }

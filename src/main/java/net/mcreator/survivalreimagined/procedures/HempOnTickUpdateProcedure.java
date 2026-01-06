@@ -9,12 +9,7 @@ import net.minecraft.core.BlockPos;
 
 public class HempOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == (new Object() {
-			public BlockState with(BlockState _bs, String _property, int _newValue) {
-				Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-				return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-			}
-		}.with(Blocks.FARMLAND.defaultBlockState(), "moisture", 7)).getBlock()) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == (blockStateWithInt(Blocks.FARMLAND.defaultBlockState(), "moisture", 7)).getBlock()) {
 			if (Math.random() < 0.1) {
 				if ((blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 0) {
 					{
@@ -43,5 +38,10 @@ public class HempOnTickUpdateProcedure {
 				}
 			}
 		}
+	}
+
+	private static BlockState blockStateWithInt(BlockState blockState, String property, int newValue) {
+		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty(property);
+		return prop instanceof IntegerProperty ip && prop.getPossibleValues().contains(newValue) ? blockState.setValue(ip, newValue) : blockState;
 	}
 }

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:tin_ore",
+    "survival_reimagined:deepslate_cassiterite_ore",
     "survival_reimagined:deepslate_tin_ore",
-    "survival_reimagined:cassiterite_ore",
-    "survival_reimagined:deepslate_cassiterite_ore"
+    "survival_reimagined:tin_ore",
+    "survival_reimagined:cassiterite_ore"
   ]
 }

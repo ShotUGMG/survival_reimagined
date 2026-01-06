@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class WisteriaFenceGateBlock extends FenceGateBlock {
 	public WisteriaFenceGateBlock() {
-		super(WoodType.OAK, BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f).dynamicShape().forceSolidOn());
+		super(WoodType.OAK, BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f).forceSolidOn());
 	}
 
 	@Override

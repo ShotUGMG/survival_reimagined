@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -18,7 +17,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class SurvivalReimaginedModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SurvivalReimaginedMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SURVIVAL_REBORN = REGISTRY.register("survival_reborn",

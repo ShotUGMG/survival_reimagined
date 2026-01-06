@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -13,7 +12,7 @@ import net.mcreator.survivalreimagined.client.model.Modeleclipsed_arrow;
 import net.mcreator.survivalreimagined.client.model.Modelboat2;
 import net.mcreator.survivalreimagined.client.model.ModelGas_Mask_Converted;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(Dist.CLIENT)
 public class SurvivalReimaginedModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {

@@ -6,23 +6,16 @@ import net.minecraft.core.BlockPos;
 
 public class FC11Procedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "FuelCapacity") >= 7500 && new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "FuelCapacity") <= 8250) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelCapacity") >= 7500 && getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelCapacity") <= 8250) {
 			return true;
 		}
 		return false;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

@@ -1,18 +1,22 @@
 {
-  "type": "survival_reimagined:metal_refining",
-  "ingredients": [
-    {
-      "item": "survival_reimagined:bronze_handle"
-    },
-    {
-      "item": "survival_reimagined:steel_sword_blade"
-    },
-    {
-      "tag": "c:tools/hammer"
-    }
-  ],
-  "output": {
-    "id": "survival_reimagined:steel_sword",
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "item": "survival_reimagined:sword_blade_mold",
     "count": 1
-  }
+  },
+  "forge_input_2": {
+    "item": "survival_reimagined:steel_ingot",
+    "count": 2
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "survival_reimagined:steel_sword_blade",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
 }

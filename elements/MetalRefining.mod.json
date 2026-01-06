@@ -1,41 +1,104 @@
 {
-  "_fv": 73,
-  "_type": "jeirecipetype",
+  "_fv": 79,
+  "_type": "recipe_type",
   "definition": {
-    "textureSelector": "mrt_jei.png",
+    "name": "MetalRefining",
+    "texture": "mrt_jei",
+    "x": 0,
+    "y": 0,
     "width": 176,
     "height": 90,
     "icon": {
       "value": "CUSTOM:MetalRefiningTable"
     },
-    "craftingtables": [],
-    "enableCraftingtable": false,
+    "enableTables": true,
+    "tables": [
+      {
+        "value": "CUSTOM:MetalRefiningTable"
+      }
+    ],
     "title": "Metal Refining",
     "slotList": [
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "metal_input_1",
         "x": 44,
         "y": 38,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "metal_input_2",
         "x": 80,
         "y": 38,
-        "slotid": 1
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "metal_input_3",
         "x": 152,
         "y": 63,
-        "slotid": 2
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "OUTPUT",
+        "io": "Output",
+        "type": "Item",
+        "name": "metal_output",
         "x": 116,
         "y": 38,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       }
-    ]
+    ],
+    "renderXML": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"render_start\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "enableRendering": false,
+    "enableClickArea": false,
+    "clickAreaList": []
   }
 }

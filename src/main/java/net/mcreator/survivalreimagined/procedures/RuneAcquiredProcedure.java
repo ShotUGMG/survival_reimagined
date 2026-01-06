@@ -31,8 +31,7 @@ public class RuneAcquiredProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.EMPTY_SILVER_RUNE.get())) : false)
-				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SurvivalReimaginedModItems.EMPTY_GOLD_RUNE.get())) : false)) {
+		if (hasEntityInInventory(entity, new ItemStack(SurvivalReimaginedModItems.EMPTY_SILVER_RUNE.get())) || hasEntityInInventory(entity, new ItemStack(SurvivalReimaginedModItems.EMPTY_GOLD_RUNE.get()))) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:runes_adv"));
 				if (_adv != null) {
@@ -44,5 +43,11 @@ public class RuneAcquiredProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

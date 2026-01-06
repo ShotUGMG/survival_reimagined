@@ -1,0 +1,51 @@
+{
+  "_fv": 79,
+  "_type": "custom_recipe",
+  "definition": {
+    "category": "Processing",
+    "recipeType": "processing",
+    "inputs": [
+      {
+        "type": "Item",
+        "name": "processing_input_1",
+        "itemId": {
+          "value": "TAG:c:processing/emerald"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      },
+      {
+        "type": "Item",
+        "name": "processing_input_2",
+        "itemId": {
+          "value": "CUSTOM:ReactorRod"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ],
+    "outputs": [
+      {
+        "type": "Item",
+        "name": "processing_output",
+        "itemId": {
+          "value": "Items.EMERALD"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ]
+  }
+}

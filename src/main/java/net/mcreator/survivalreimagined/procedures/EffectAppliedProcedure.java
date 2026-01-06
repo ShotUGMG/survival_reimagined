@@ -17,6 +17,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
@@ -41,17 +42,7 @@ public class EffectAppliedProcedure {
 		if (entity == null)
 			return;
 		if (SurvivalReimaginedConfigConfiguration.DARKNESS_EFFECTS.get() == true) {
-			if (new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-					}
-					return false;
-				}
-			}.checkGamemode(entity)) {
+			if (getEntityGameType(entity) == GameType.SURVIVAL) {
 				if (entity instanceof Player && world.getMaxLocalRawBrightness(BlockPos.containing(entity.getX(), entity.getY() + 0.2, entity.getZ())) == (double) SurvivalReimaginedConfigConfiguration.DARKNESS_LEVEL.get()
 						&& ((ModList.get().isLoaded("dynamiclights") || ModList.get().isLoaded("lambdynlights"))
 								&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("c:dynlights/light")))
@@ -93,5 +84,16 @@ public class EffectAppliedProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

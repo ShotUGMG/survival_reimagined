@@ -1,0 +1,22 @@
+{
+  "type": "survival_reimagined:alloy_forge",
+  "alloy_input_1": {
+    "tag": "c:alloy_block/iron_items",
+    "count": 1
+  },
+  "alloy_input_2": {
+    "tag": "c:alloy_block/manganese_items",
+    "count": 1
+  },
+  "alloy_input_3": {
+    "tag": "c:processing/rod_items",
+    "count": 1
+  },
+  "alloy_output": {
+    "id": "survival_reimagined:block_of_steel",
+    "count": 2
+  },
+  "category": [
+    "misc"
+  ]
+}

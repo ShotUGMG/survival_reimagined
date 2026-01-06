@@ -1,17 +1,17 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:wooden_saw",
-    "survival_reimagined:wooden_hammer",
-    "survival_reimagined:wooden_helmet",
-    "survival_reimagined:wooden_chestplate",
-    "survival_reimagined:wooden_leggings",
-    "survival_reimagined:wooden_boots",
-    "survival_reimagined:wooden_knife",
-    "minecraft:wooden_sword",
-    "minecraft:wooden_shovel",
-    "minecraft:wooden_pickaxe",
     "minecraft:wooden_axe",
-    "minecraft:wooden_hoe"
+    "minecraft:wooden_hoe",
+    "survival_reimagined:wooden_leggings",
+    "survival_reimagined:wooden_saw",
+    "survival_reimagined:wooden_helmet",
+    "survival_reimagined:wooden_boots",
+    "survival_reimagined:wooden_chestplate",
+    "minecraft:wooden_shovel",
+    "survival_reimagined:wooden_hammer",
+    "minecraft:wooden_sword",
+    "minecraft:wooden_pickaxe",
+    "survival_reimagined:wooden_knife"
   ]
 }

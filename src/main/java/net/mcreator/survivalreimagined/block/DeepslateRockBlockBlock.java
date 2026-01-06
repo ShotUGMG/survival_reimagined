@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -19,6 +18,8 @@ import net.mcreator.survivalreimagined.procedures.DeepslateRockBlockNeighbourBlo
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class DeepslateRockBlockBlock extends Block {
+	private static final VoxelShape SHAPE = box(6, 0, 5, 10, 2, 11);
+
 	public DeepslateRockBlockBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 	}
@@ -41,7 +42,7 @@ public class DeepslateRockBlockBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(6, 0, 5, 10, 2, 11).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

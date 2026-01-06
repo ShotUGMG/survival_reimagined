@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.neoforged.neoforge.common.util.DeferredSoundType;

@@ -1,41 +1,104 @@
 {
-  "_fv": 73,
-  "_type": "jeirecipetype",
+  "_fv": 79,
+  "_type": "recipe_type",
   "definition": {
-    "textureSelector": "forge_jei.png",
+    "name": "Forging",
+    "texture": "forge_jei",
+    "x": 0,
+    "y": 0,
     "width": 176,
     "height": 87,
     "icon": {
       "value": "CUSTOM:Forge"
     },
-    "craftingtables": [],
-    "enableCraftingtable": false,
+    "enableTables": true,
+    "tables": [
+      {
+        "value": "CUSTOM:Forge"
+      }
+    ],
     "title": "Forging",
     "slotList": [
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "forge_input_1",
         "x": 71,
         "y": 36,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "forge_input_2",
         "x": 89,
         "y": 36,
-        "slotid": 1
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "INPUT",
+        "io": "Input",
+        "type": "Item",
+        "name": "forge_input_3",
         "x": 26,
         "y": 62,
-        "slotid": 2
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       },
       {
-        "type": "OUTPUT",
+        "io": "Output",
+        "type": "Item",
+        "name": "forge_output",
         "x": 134,
         "y": 36,
-        "slotid": 0
+        "singleItem": false,
+        "height": 16,
+        "fullTank": false,
+        "tankCapacity": 1,
+        "optional": false,
+        "resource": "",
+        "custom": "",
+        "resourceWidth": 16,
+        "resourceHeight": 16,
+        "defaultBoolean": true,
+        "defaultDouble": 0.0,
+        "defaultString": ""
       }
-    ]
+    ],
+    "renderXML": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"render_start\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "enableRendering": false,
+    "enableClickArea": false,
+    "clickAreaList": []
   }
 }

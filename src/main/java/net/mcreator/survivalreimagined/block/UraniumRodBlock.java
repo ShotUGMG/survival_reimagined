@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -27,7 +26,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.UraniumRodOnRandomClientDisplayTickProcedure;
 import net.mcreator.survivalreimagined.procedures.UraniumRodNeighbourBlockChangesProcedure;
@@ -36,6 +34,10 @@ import net.mcreator.survivalreimagined.procedures.UraniumRodBlockDestroyedByPlay
 public class UraniumRodBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
 	public static final BooleanProperty LIT = BlockStateProperties.LIT;
+	private static final VoxelShape SHAPE_1 = Shapes.or(box(4, 0, 4, 12, 1, 12), box(6, 1, 6, 10, 16, 10), box(5, 1, 5, 11, 16, 11));
+	private static final VoxelShape SHAPE_2 = Shapes.or(box(4, 15, 4, 12, 16, 12), box(6, 0, 6, 10, 15, 10), box(5, 0, 5, 11, 15, 11));
+	private static final VoxelShape SHAPE_3 = Shapes.or(box(6, 0, 6, 10, 16, 10), box(5, 0, 5, 11, 16, 11));
+	private static final VoxelShape SHAPE = Shapes.or(box(4, 15, 4, 12, 16, 12), box(4, 0, 4, 12, 1, 12), box(6, 1, 6, 10, 15, 10), box(5, 1, 5, 11, 15, 11));
 
 	public UraniumRodBlock() {
 		super(BlockBehaviour.Properties.of()
@@ -79,15 +81,15 @@ public class UraniumRodBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return Shapes.or(box(4, 0, 4, 12, 1, 12), box(6, 1, 6, 10, 16, 10), box(5, 1, 5, 11, 16, 11));
+			return (SHAPE_1);
 		}
 		if (state.getValue(BLOCKSTATE) == 2) {
-			return Shapes.or(box(4, 15, 4, 12, 16, 12), box(6, 0, 6, 10, 15, 10), box(5, 0, 5, 11, 15, 11));
+			return (SHAPE_2);
 		}
 		if (state.getValue(BLOCKSTATE) == 3) {
-			return Shapes.or(box(6, 0, 6, 10, 16, 10), box(5, 0, 5, 11, 16, 11));
+			return (SHAPE_3);
 		}
-		return Shapes.or(box(4, 15, 4, 12, 16, 12), box(4, 0, 4, 12, 1, 12), box(6, 1, 6, 10, 15, 10), box(5, 1, 5, 11, 15, 11));
+		return (SHAPE);
 	}
 
 	@Override
@@ -107,15 +109,11 @@ public class UraniumRodBlock extends Block {
 		UraniumRodNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		UraniumRodOnRandomClientDisplayTickProcedure.execute(world, x, y, z);
+		UraniumRodOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

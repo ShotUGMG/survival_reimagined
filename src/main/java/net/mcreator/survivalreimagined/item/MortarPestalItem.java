@@ -1,13 +1,11 @@
-
 package net.mcreator.survivalreimagined.item;
 
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 
 public class MortarPestalItem extends Item {
 	public MortarPestalItem() {
-		super(new Item.Properties().durability(32).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(32));
 	}
 
 	@Override

@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:bronze_pickaxe_head",
-    "survival_reimagined:bronze_axe_head",
-    "survival_reimagined:bronze_sword_blade",
-    "survival_reimagined:bronze_hoe_blade",
-    "survival_reimagined:bronze_shovel_head",
-    "survival_reimagined:bronze_hammer_head",
     "survival_reimagined:bronze_saw_blade",
-    "survival_reimagined:bronze_knife_blade"
+    "survival_reimagined:bronze_hammer_head",
+    "survival_reimagined:bronze_hoe_blade",
+    "survival_reimagined:bronze_knife_blade",
+    "survival_reimagined:bronze_axe_head",
+    "survival_reimagined:bronze_pickaxe_head",
+    "survival_reimagined:bronze_shovel_head",
+    "survival_reimagined:bronze_sword_blade"
   ]
 }

@@ -1,18 +1,22 @@
 {
-  "type": "survival_reimagined:metal_refining",
-  "ingredients": [
-    {
-      "item": "survival_reimagined:obsidian_handle"
-    },
-    {
-      "item": "survival_reimagined:diamond_shovel_head"
-    },
-    {
-      "tag": "c:tools/hammer"
-    }
-  ],
-  "output": {
-    "id": "minecraft:diamond_shovel",
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "item": "survival_reimagined:shovel_head_mold",
     "count": 1
-  }
+  },
+  "forge_input_2": {
+    "item": "survival_reimagined:diamond_plated_ingot",
+    "count": 1
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "survival_reimagined:diamond_shovel_head",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
 }

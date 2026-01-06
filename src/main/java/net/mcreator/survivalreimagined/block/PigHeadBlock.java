@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -12,6 +11,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class PigHeadBlock extends Block {
+	private static final VoxelShape SHAPE = Shapes.or(box(4, 0, 4, 12, 8, 12), box(6, 1, 3, 10, 4, 4));
+
 	public PigHeadBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -33,6 +34,6 @@ public class PigHeadBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(4, 0, 4, 12, 8, 12), box(6, 1, 3, 10, 4, 4));
+		return (SHAPE);
 	}
 }

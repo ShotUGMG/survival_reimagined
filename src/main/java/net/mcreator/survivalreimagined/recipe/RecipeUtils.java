@@ -1,0 +1,165 @@
+package net.mcreator.survivalreimagined.recipe;
+
+import net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient;
+import net.neoforged.neoforge.fluids.FluidStack;
+import net.neoforged.neoforge.common.crafting.SizedIngredient;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.RecipeInput;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+
+import java.util.Optional;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+public class RecipeUtils {
+	private RecipeUtils() {
+		throw new AssertionError("Recipe Utils should NEVER be initialized");
+	}
+
+	// Returns a list of all recipes from the given recipe type
+	public static <I extends RecipeInput, R extends Recipe<I>> List<R> getRecipes(LevelAccessor world, RecipeType<R> type) {
+		List<R> recipes = new ArrayList<>();
+		if (world instanceof Level level) {
+			recipes.addAll(level.getRecipeManager().getAllRecipesFor(type).stream().map(RecipeHolder::value).toList());
+		}
+		return recipes;
+	}
+
+	// Generic method for handling Optional<>
+	public static <T> T unwrap(Object value, Class<T> clazz, T defaultValue) {
+		if (value == null) {
+			return defaultValue;
+		}
+		if (clazz.isInstance(value)) {
+			return clazz.cast(value);
+		}
+		if (value instanceof Optional<?> opt && opt.isPresent()) {
+			if (clazz.isInstance(opt.get())) {
+				return clazz.cast(opt.get());
+			}
+		}
+		return defaultValue;
+	}
+
+	// Gets all inputs from the recipe object as a List<ItemStack> of all possible values
+	public static List<ItemStack> getItemStacks(Object in) {
+		if (in instanceof SizedIngredient sized) {
+			return Arrays.asList(sized.getItems());
+		} else if (in instanceof Ingredient ingre) {
+			return Arrays.asList(ingre.getItems());
+		} else if (in instanceof Optional<?> opt) {
+			if (opt.isPresent()) {
+				if (opt.get() instanceof SizedIngredient sizedO) {
+					return Arrays.asList(sizedO.getItems());
+				} else if (opt.get() instanceof Ingredient ingreO) {
+					return Arrays.asList(ingreO.getItems());
+				}
+			}
+		}
+		return new ArrayList<>();
+	}
+
+	// Gets all inputs from the recipe object as a List<FluidStack> of all possible values
+	public static List<FluidStack> getFluidStacks(Object in) {
+		if (in instanceof SizedFluidIngredient sized) {
+			return Arrays.asList(sized.getFluids());
+		} else if (in instanceof Optional<?> opt) {
+			if (opt.isPresent()) {
+				if (opt.get() instanceof SizedFluidIngredient sizedO) {
+					return Arrays.asList(sizedO.getFluids());
+				}
+			}
+		}
+		return new ArrayList<>();
+	}
+
+	// Validates a recipe ingredient with it's given recipe input
+	public static boolean validate(Object given, Object recipe) {
+		// Test Item
+		if (given instanceof ItemStack item) {
+			if (recipe instanceof SizedIngredient sIngre) {
+				return sIngre.test(item);
+			} else if (recipe instanceof Ingredient ingre) {
+				return ingre.test(item);
+			} else if (recipe instanceof Optional<?> opt) {
+				if (item.isEmpty()) {
+					return opt.isEmpty();
+				}
+				if (opt.isPresent()) {
+					if (opt.get() instanceof SizedIngredient sIngred) {
+						return sIngred.test(item);
+					} else if (opt.get() instanceof Ingredient ingred) {
+						return ingred.test(item);
+					}
+				}
+				return false;
+			}
+		}
+		// Test Fluid
+		if (given instanceof FluidStack fluid) {
+			if (recipe instanceof SizedFluidIngredient ingre) {
+				return ingre.test(fluid);
+			} else if (recipe instanceof Optional<?> opt) {
+				if (fluid.isEmpty()) {
+					return opt.isEmpty();
+				}
+				if (opt.isPresent()) {
+					if (opt.get() instanceof SizedFluidIngredient ingred) {
+						return ingred.test(fluid);
+					}
+				}
+				return false;
+			}
+		}
+		// Test boolean
+		if (given instanceof Boolean bool && recipe instanceof Boolean rec) {
+			return bool.equals(rec);
+		}
+		// Test double
+		if (given instanceof double[] doub && recipe instanceof Double rec) {
+			return doub[0] >= rec;
+		}
+		// Test String
+		if (given instanceof String str && recipe instanceof String rec) {
+			return str.equals(rec);
+		}
+		return false;
+	}
+
+	// Returns the recipe ingredient amount
+	public static int amount(Object recipe) {
+		if (recipe instanceof SizedIngredient sized) {
+			return sized.count();
+		} else if (recipe instanceof Ingredient) {
+			return 1;
+		} else if (recipe instanceof Optional<?> opt) {
+			if (opt.isPresent()) {
+				if (opt.get() instanceof SizedIngredient sizedO) {
+					return sizedO.count();
+				} else if (opt.get() instanceof Ingredient) {
+					return 1;
+				}
+			}
+		}
+		if (recipe instanceof SizedFluidIngredient sizedF) {
+			return sizedF.amount();
+		} else if (recipe instanceof Optional<?> opt) {
+			if (opt.isPresent()) {
+				if (opt.get() instanceof SizedFluidIngredient sizedFO) {
+					return sizedFO.amount();
+				}
+			}
+		}
+		if (recipe instanceof Double doub) {
+			return doub.intValue();
+		}
+		return 0;
+	}
+}

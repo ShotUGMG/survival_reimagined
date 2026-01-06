@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -12,6 +11,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class LeggingMoldBlock extends Block {
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 2, 16);
+
 	public LeggingMoldBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.DECORATED_POT).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -33,6 +34,6 @@ public class LeggingMoldBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 16, 2, 16);
+		return (SHAPE);
 	}
 }

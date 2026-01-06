@@ -1,7 +1,13 @@
 {
   "replace": false,
   "values": [
-    "#c:rmi_runes/gold",
-    "#c:rmi_runes/silver"
+    {
+      "id": "#c:rmi_runes/gold",
+      "required": false
+    },
+    {
+      "id": "#c:rmi_runes/silver",
+      "required": false
+    }
   ]
 }

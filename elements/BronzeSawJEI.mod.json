@@ -1,21 +1,63 @@
 {
-  "_fv": 73,
-  "_type": "jeirecipe",
+  "_fv": 79,
+  "_type": "custom_recipe",
   "definition": {
-    "category": "metal_refining",
-    "result": {
-      "value": "CUSTOM:BronzeSaw"
-    },
-    "count": 1,
-    "ingredients": [
+    "category": "Forging",
+    "recipeType": "forging",
+    "inputs": [
       {
-        "value": "CUSTOM:CopperHandle"
+        "type": "Item",
+        "name": "forge_input_1",
+        "itemId": {
+          "value": "CUSTOM:SawBladeMold"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       },
       {
-        "value": "CUSTOM:BronzeSawBlade"
+        "type": "Item",
+        "name": "forge_input_2",
+        "itemId": {
+          "value": "CUSTOM:BronzeIngot"
+        },
+        "itemAmount": 2,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       },
       {
-        "value": "TAG:c:tools/hammer"
+        "type": "Item",
+        "name": "forge_input_3",
+        "itemId": {
+          "value": "TAG:c:fuels"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
+      }
+    ],
+    "outputs": [
+      {
+        "type": "Item",
+        "name": "forge_output",
+        "itemId": {
+          "value": "CUSTOM:BronzeSawBlade"
+        },
+        "itemAmount": 1,
+        "singleIngredient": false,
+        "fluidAmount": 1,
+        "logic": true,
+        "number": 0.0,
+        "text": ""
       }
     ]
   }

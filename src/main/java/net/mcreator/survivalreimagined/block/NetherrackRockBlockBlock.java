@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -19,6 +18,8 @@ import net.mcreator.survivalreimagined.procedures.NetherrackRockBlockNeighbourBl
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class NetherrackRockBlockBlock extends Block {
+	private static final VoxelShape SHAPE = box(6, 0, 5, 10, 2, 11);
+
 	public NetherrackRockBlockBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 	}
@@ -41,7 +42,7 @@ public class NetherrackRockBlockBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(6, 0, 5, 10, 2, 11).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

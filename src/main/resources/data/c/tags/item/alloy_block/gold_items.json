@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:raw_gold_block",
     "minecraft:gold_block",
-    "survival_reimagined:calaverite_block"
+    "survival_reimagined:calaverite_block",
+    "minecraft:raw_gold_block"
   ]
 }

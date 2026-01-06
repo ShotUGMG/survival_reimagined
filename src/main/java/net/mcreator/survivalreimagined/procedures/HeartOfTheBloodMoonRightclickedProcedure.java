@@ -6,6 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,11 +21,11 @@ public class HeartOfTheBloodMoonRightclickedProcedure {
 			return;
 		if (!(world instanceof Level _lvl0 && _lvl0.isDay())) {
 			SurvivalReimaginedModVariables.MapVariables.get(world).AnnouncementPlayed = true;
-			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
 			SurvivalReimaginedModVariables.MapVariables.get(world).isBloodMoon = true;
-			SurvivalReimaginedModVariables.MapVariables.get(world).syncData(world);
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A74Heart Of The Bloodmoons essence is released into the air, forcing a BloodMoon"), false);
+			SurvivalReimaginedModVariables.MapVariables.get(world).markSyncDirty();
+			if (world instanceof ServerLevel _level) {
+				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A74Heart Of The Bloodmoons essence is released into the air, forcing a BloodMoon"), false);
+			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.zombie_villager.cure")), SoundSource.NEUTRAL, 1, 1);

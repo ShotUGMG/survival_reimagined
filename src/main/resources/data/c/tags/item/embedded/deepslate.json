@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:deepslate_diamond_ore",
-    "minecraft:deepslate_emerald_ore",
-    "survival_reimagined:deepslate_ruby_ore",
     "survival_reimagined:deepslate_sapphire_ore",
-    "survival_reimagined:deepslate_amber_ore",
-    "minecraft:deepslate_lapis_ore"
+    "survival_reimagined:deepslate_ruby_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:deepslate_emerald_ore",
+    "survival_reimagined:deepslate_amber_ore"
   ]
 }

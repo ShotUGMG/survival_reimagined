@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:gold_ruby_rune",
+    "survival_reimagined:gold_lapis_rune",
     "survival_reimagined:sapphire_gold_rune",
-    "survival_reimagined:empty_gold_rune",
-    "survival_reimagined:gold_amber_rune",
     "survival_reimagined:gold_diamond_rune",
     "survival_reimagined:gold_emerald_rune",
-    "survival_reimagined:gold_ruby_rune",
-    "survival_reimagined:gold_lapis_rune"
+    "survival_reimagined:empty_gold_rune",
+    "survival_reimagined:gold_amber_rune"
   ]
 }

@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "minecraft:raw_copper_block",
+    "survival_reimagined:raw_azurite_block",
     "minecraft:copper_block",
     "survival_reimagined:raw_malachite_block",
-    "survival_reimagined:raw_azurite_block"
+    "minecraft:raw_copper_block"
   ]
 }

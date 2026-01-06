@@ -41,6 +41,8 @@
 	[Gameplay."Mechanic Overrides"]
 		#Block Breaking Speed. Default is 0.45 (45%) Vanilla is 1 (100%)
 		"Block Break Speed" = 0.45
+		#Disable Nether portal override mechanics (reverts to vanilla nether portal)
+		"Vanilla Portal" = false
 
 	[Gameplay.Hunger]
 		#Disable hunger bar changes (Reverts to vanilla mechanics)

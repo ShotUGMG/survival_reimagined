@@ -30,10 +30,10 @@ public class HeartBeatSoundProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SurvivalReimaginedModMobEffects.FEAR)) {
 			SurvivalReimaginedModVariables.WorldVariables.get(world).HeartBeat = SurvivalReimaginedModVariables.WorldVariables.get(world).HeartBeat + 1;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 		} else if (SurvivalReimaginedModVariables.WorldVariables.get(world).HeartBeat == 100) {
 			SurvivalReimaginedModVariables.WorldVariables.get(world).HeartBeat = 0;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).syncData(world);
+			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 		}
 	}
 }

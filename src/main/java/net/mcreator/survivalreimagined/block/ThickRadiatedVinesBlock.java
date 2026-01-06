@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -17,7 +16,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
@@ -29,8 +27,10 @@ import net.mcreator.survivalreimagined.procedures.PlacementThickVinesProcedure;
 import net.mcreator.survivalreimagined.procedures.LowerBlockUpdateProcedure;
 
 public class ThickRadiatedVinesBlock extends Block {
+	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 16, 13);
+
 	public ThickRadiatedVinesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -51,7 +51,7 @@ public class ThickRadiatedVinesBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(3, 0, 3, 13, 16, 13).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -73,11 +73,6 @@ public class ThickRadiatedVinesBlock extends Block {
 	@Override
 	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return PathType.OPEN;
-	}
-
-	@Override
-	public boolean isLadder(BlockState state, LevelReader world, BlockPos pos, LivingEntity entity) {
-		return true;
 	}
 
 	@Override

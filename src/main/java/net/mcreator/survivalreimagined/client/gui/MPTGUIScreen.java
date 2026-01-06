@@ -9,34 +9,19 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.survivalreimagined.world.inventory.MPTGUIMenu;
-import net.mcreator.survivalreimagined.procedures.MPTTooltipDisplayProcedure;
-import net.mcreator.survivalreimagined.procedures.MPTGUIValueProcedure;
-import net.mcreator.survivalreimagined.procedures.MPTGUIRedstoneValueProcedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTickProcedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick9Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick8Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick7Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick6Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick5Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick4Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick3Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick2Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick1Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick14Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick13Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick12Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick11Procedure;
-import net.mcreator.survivalreimagined.procedures.MPTDisplayTick10Procedure;
+import net.mcreator.survivalreimagined.procedures.*;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModScreens;
 
-import java.util.HashMap;
+import java.util.stream.Collectors;
+import java.util.Arrays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class MPTGUIScreen extends AbstractContainerScreen<MPTGUIMenu> {
-	private final static HashMap<String, Object> guistate = MPTGUIMenu.guistate;
+public class MPTGUIScreen extends AbstractContainerScreen<MPTGUIMenu> implements SurvivalReimaginedModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public MPTGUIScreen(MPTGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -49,22 +34,39 @@ public class MPTGUIScreen extends AbstractContainerScreen<MPTGUIMenu> {
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/mptgui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		boolean customTooltipShown = false;
 		if (MPTTooltipDisplayProcedure.execute(entity))
-			if (mouseX > leftPos + 76 && mouseX < leftPos + 100 && mouseY > topPos + 31 && mouseY < topPos + 55)
-				guiGraphics.renderTooltip(font, Component.literal(MPTGUIValueProcedure.execute(world, x, y, z, entity)), mouseX, mouseY);
-		if (mouseX > leftPos + 4 && mouseX < leftPos + 28 && mouseY > topPos + 59 && mouseY < topPos + 83)
-			guiGraphics.renderTooltip(font, Component.literal(MPTGUIRedstoneValueProcedure.execute(world, x, y, z)), mouseX, mouseY);
+			if (mouseX > leftPos + 76 && mouseX < leftPos + 100 && mouseY > topPos + 31 && mouseY < topPos + 55) {
+				String hoverText = MPTGUIValueProcedure.execute(world, x, y, z, entity);
+				if (hoverText != null) {
+					guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+				}
+				customTooltipShown = true;
+			}
+		if (mouseX > leftPos + 4 && mouseX < leftPos + 28 && mouseY > topPos + 59 && mouseY < topPos + 83) {
+			String hoverText = MPTGUIRedstoneValueProcedure.execute(world, x, y, z);
+			if (hoverText != null) {
+				guiGraphics.renderComponentTooltip(font, Arrays.stream(hoverText.split("\n")).map(Component::literal).collect(Collectors.toList()), mouseX, mouseY);
+			}
+			customTooltipShown = true;
+		}
+		if (!customTooltipShown)
+			this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
@@ -114,11 +116,8 @@ public class MPTGUIScreen extends AbstractContainerScreen<MPTGUIMenu> {
 		if (MPTDisplayTick14Procedure.execute(world, x, y, z)) {
 			guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/arrow15.png"), this.leftPos + 80, this.topPos + 35, 0, 0, 16, 16, 16, 16);
 		}
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/item_thingy.png"), this.leftPos + 80, this.topPos + 62, 0, 0, 16, 16, 16, 16);
-
 		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/redstome.png"), this.leftPos + 8, this.topPos + 63, 0, 0, 16, 16, 16, 16);
-
 		RenderSystem.disableBlend();
 	}
 

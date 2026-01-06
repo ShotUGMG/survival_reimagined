@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -15,7 +14,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
@@ -32,7 +30,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.world.inventory.ForgeGUIMenu;
 import net.mcreator.survivalreimagined.procedures.ForgeOnTickUpdateProcedure;
@@ -43,15 +40,17 @@ import io.netty.buffer.Unpooled;
 
 public class ForgeBlock extends Block implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
+	private static final VoxelShape SHAPE_1 = box(0, 0, 0, 16, 16, 16);
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 16, 16);
 
 	public ForgeBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3f).lightLevel(s -> (new Object() {
+		super(BlockBehaviour.Properties.of().strength(3f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
 					return 0;
 				return 0;
 			}
-		}.getLightLevel())));
+		}.getLightLevel())).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
@@ -62,9 +61,9 @@ public class ForgeBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return box(0, 0, 0, 16, 16, 16);
+			return (SHAPE_1);
 		}
-		return box(0, 0, 0, 16, 16, 16);
+		return (SHAPE);
 	}
 
 	@Override
@@ -86,15 +85,11 @@ public class ForgeBlock extends Block implements EntityBlock {
 		world.scheduleTick(pos, this, 5);
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		ForgeOnRandomClientDisplayTickProcedure.execute(world, x, y, z);
+		ForgeOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -131,7 +126,7 @@ public class ForgeBlock extends Block implements EntityBlock {
 	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
 		super.triggerEvent(state, world, pos, eventID, eventParam);
 		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
 	}
 
 	@Override

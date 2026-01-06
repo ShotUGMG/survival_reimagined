@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -12,6 +11,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
 public class SheepHeadBlock extends Block {
+	private static final VoxelShape SHAPE = box(5, 0, 4, 11, 6, 12);
+
 	public SheepHeadBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
@@ -33,6 +34,6 @@ public class SheepHeadBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(5, 0, 4, 11, 6, 12);
+		return (SHAPE);
 	}
 }

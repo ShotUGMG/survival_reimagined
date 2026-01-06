@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.client.particle;
 
 import net.neoforged.api.distmarker.OnlyIn;

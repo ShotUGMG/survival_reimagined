@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:deepslate_stalagmite_top",
     "survival_reimagined:deepslate_stalagmite_middle",
-    "survival_reimagined:deepslate_stalagmite_base",
-    "survival_reimagined:deepslate_stalagtite_tip",
+    "survival_reimagined:deepslate_stalagmite_top",
     "survival_reimagined:deepslate_stalagtite_middle",
-    "survival_reimagined:deepslate_stalagtite_base"
+    "survival_reimagined:deepslate_stalagmite_base",
+    "survival_reimagined:deepslate_stalagtite_base",
+    "survival_reimagined:deepslate_stalagtite_tip"
   ]
 }

@@ -37,7 +37,7 @@ public class ItemInInventoryProcedure {
 			for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 				ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
 				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:cured_eat")))) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+					if (hasEntityInInventory(entity, itemstackiterator)) {
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:cured_meat"));
 							if (_adv != null) {
@@ -51,7 +51,7 @@ public class ItemInInventoryProcedure {
 					}
 				}
 				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:rmi_runes")))) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+					if (hasEntityInInventory(entity, itemstackiterator)) {
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:gem_runes"));
 							if (_adv != null) {
@@ -65,7 +65,7 @@ public class ItemInInventoryProcedure {
 					}
 				}
 				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:metal_rocks/uranium")))) {
-					if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(itemstackiterator) : false) {
+					if (hasEntityInInventory(entity, itemstackiterator)) {
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:uranium"));
 							if (_adv != null) {
@@ -80,5 +80,11 @@ public class ItemInInventoryProcedure {
 				}
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

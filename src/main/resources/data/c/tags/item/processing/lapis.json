@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:lapis_ore",
-    "minecraft:deepslate_lapis_ore"
+    "minecraft:deepslate_lapis_ore",
+    "survival_reimagined:kimberlite_lapis_ore"
   ]
 }

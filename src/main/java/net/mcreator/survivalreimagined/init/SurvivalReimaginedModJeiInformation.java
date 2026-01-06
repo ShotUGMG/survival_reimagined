@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.init;
 
 import net.minecraft.world.item.ItemStack;

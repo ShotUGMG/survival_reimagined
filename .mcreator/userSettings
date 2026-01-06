@@ -4,6 +4,16 @@
   "workspacePanelSortAscending": true,
   "projectBrowserSplitPos": 415,
   "projectBrowserState": {
-    "expandedPaths": []
+    "expandedPaths": [
+      "[, Survival Reimagined]",
+      "[, Survival Reimagined, Source (Gradle)]",
+      "[, Survival Reimagined, Resources (Gradle)]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags\\item]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags\\item, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags\\item\\alloy_block]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags\\item, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\c\\tags\\item\\processing]"
+    ]
   }
 }

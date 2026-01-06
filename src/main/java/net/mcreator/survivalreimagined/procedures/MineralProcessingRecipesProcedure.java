@@ -19,116 +19,35 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class MineralProcessingRecipesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) == 0 || new Object() {
-			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-				if (world instanceof ILevelExtension _ext) {
-					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-					if (_itemHandler != null)
-						return _itemHandler.getStackInSlot(slotid).getCount();
-				}
-				return 0;
-			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) < 64) {
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() == 0 || itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() < 64) {
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Diamond
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/diamond")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == Items.DIAMOND || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/diamond")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Items.DIAMOND || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Items.DIAMOND).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -141,96 +60,33 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Emerald
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/emerald")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == Items.EMERALD || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/emerald")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Items.EMERALD || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Items.EMERALD).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -243,96 +99,34 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Sapphire
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/sapphire")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.SAPPHIRE.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/sapphire")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == SurvivalReimaginedModItems.SAPPHIRE.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.SAPPHIRE.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -345,96 +139,34 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Ruby
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/ruby")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.RUBY.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/ruby")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == SurvivalReimaginedModItems.RUBY.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.RUBY.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -447,96 +179,33 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Lapis
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/lapis")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == Items.LAPIS_LAZULI || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/lapis")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Items.LAPIS_LAZULI || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -549,96 +218,34 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 			assert Boolean.TRUE; //#dbg:MineralProcessingRecipes:Amber
-			if ((new Object() {
-				public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-					if (world instanceof ILevelExtension _ext) {
-						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-						if (_itemHandler != null)
-							return _itemHandler.getStackInSlot(slotid).copy();
-					}
-					return ItemStack.EMPTY;
-				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("c:processing/amber")))) {
-				if ((new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == SurvivalReimaginedModItems.AMBER.get() || (new Object() {
-					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-						if (world instanceof ILevelExtension _ext) {
-							IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-							if (_itemHandler != null)
-								return _itemHandler.getStackInSlot(slotid).copy();
-						}
-						return ItemStack.EMPTY;
-					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == ItemStack.EMPTY.getItem()) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/amber")))) {
+				if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == SurvivalReimaginedModItems.AMBER.get()
+						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", ((new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "ReactorRodDepletion")) - 0.1));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (!world.isClientSide()) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockEntity _blockEntity = world.getBlockEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_blockEntity != null)
-							_blockEntity.getPersistentData().putDouble("MineralProcessing", (new Object() {
-								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-									BlockEntity blockEntity = world.getBlockEntity(pos);
-									if (blockEntity != null)
-										return blockEntity.getPersistentData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
-						if (world instanceof Level _level)
-							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-					}
-					if (new Object() {
-						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-							BlockEntity blockEntity = world.getBlockEntity(pos);
-							if (blockEntity != null)
-								return blockEntity.getPersistentData().getDouble(tag);
-							return -1;
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("ReactorRodDepletion", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "ReactorRodDepletion") - 0.1));
+							_blockEntity.getPersistentData().putDouble("MineralProcessing", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") + 5));
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "MineralProcessing") == 300) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
-							if (_blockEntity != null)
+							if (_blockEntity != null) {
 								_blockEntity.getPersistentData().putDouble("MineralProcessing", 0);
+							}
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.AMBER.get()).copy();
-							_setstack.setCount((int) (new Object() {
-								public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
-									if (world instanceof ILevelExtension _ext) {
-										IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
-										if (_itemHandler != null)
-											return _itemHandler.getStackInSlot(slotid).getCount();
-									}
-									return 0;
-								}
-							}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
 							_itemHandlerModifiable.setStackInSlot(2, _setstack);
 						}
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -651,5 +258,21 @@ public class MineralProcessingRecipesProcedure {
 				}
 			}
 		}
+	}
+
+	private static ItemStack itemFromBlockInventory(LevelAccessor world, BlockPos pos, int slot) {
+		if (world instanceof ILevelExtension ext) {
+			IItemHandler itemHandler = ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+			if (itemHandler != null)
+				return itemHandler.getStackInSlot(slot);
+		}
+		return ItemStack.EMPTY;
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

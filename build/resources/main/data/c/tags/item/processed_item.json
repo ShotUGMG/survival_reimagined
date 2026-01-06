@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
     "survival_reimagined:sapphire",
-    "minecraft:diamond",
     "minecraft:emerald",
-    "survival_reimagined:ruby",
-    "survival_reimagined:amber"
+    "survival_reimagined:amber",
+    "minecraft:diamond",
+    "survival_reimagined:ruby"
   ]
 }

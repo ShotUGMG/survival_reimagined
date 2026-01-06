@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -25,8 +24,10 @@ import net.mcreator.survivalreimagined.procedures.FlintblockBlockValidPlacementC
 import net.mcreator.survivalreimagined.procedures.FlintblockBlockIsPlacedByProcedure;
 
 public class FlintblockBlock extends Block {
+	private static final VoxelShape SHAPE = Shapes.or(box(6, 0, 6, 9, 2, 9), box(6, 2, 6, 8, 3, 8));
+
 	public FlintblockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.DRIPSTONE_BLOCK).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.DRIPSTONE_BLOCK).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ).instrument(NoteBlockInstrument.BASEDRUM));
 	}
 
 	@Override
@@ -47,7 +48,7 @@ public class FlintblockBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return Shapes.or(box(6, 0, 6, 9, 2, 9), box(6, 2, 6, 8, 3, 8)).move(offset.x, offset.y, offset.z);
+		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

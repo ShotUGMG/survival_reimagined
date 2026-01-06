@@ -5,27 +5,24 @@ import net.neoforged.neoforge.event.entity.item.ItemTossEvent;
 import net.neoforged.neoforge.common.MutableDataComponentHolder;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.client.Minecraft;
 
+import net.mcreator.survivalreimagined.world.inventory.BackpackGUIMenu;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
-import net.mcreator.survivalreimagined.client.gui.BackpackGUIScreen;
 
 import javax.annotation.Nonnull;
 
-@EventBusSubscriber(Dist.CLIENT)
+@EventBusSubscriber
 public class BackpackInventoryCapability extends ComponentItemHandler {
 	@SubscribeEvent
-	@OnlyIn(Dist.CLIENT)
 	public static void onItemDropped(ItemTossEvent event) {
 		if (event.getEntity().getItem().getItem() == SurvivalReimaginedModItems.BACKPACK.get()) {
-			if (Minecraft.getInstance().screen instanceof BackpackGUIScreen) {
-				Minecraft.getInstance().player.closeContainer();
-			}
+			Player player = event.getPlayer();
+			if (player.containerMenu instanceof BackpackGUIMenu)
+				player.closeContainer();
 		}
 	}
 

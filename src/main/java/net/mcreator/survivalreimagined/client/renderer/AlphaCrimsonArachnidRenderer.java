@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

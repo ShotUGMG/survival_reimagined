@@ -3,7 +3,6 @@ package net.mcreator.survivalreimagined.procedures;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
@@ -16,22 +15,17 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
-
-import java.util.function.Supplier;
-import java.util.Map;
 
 public class IronTakenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double DamageDelay = 0;
-		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(0)).remove(1);
-			_player.containerMenu.broadcastChanges();
-		}
-		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			((Slot) _slots.get(1)).remove(1);
+		if (entity instanceof Player _player && _player.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu) {
+			_menu.getSlots().get(0).remove(1);
+			_menu.getSlots().get(1).remove(1);
 			_player.containerMenu.broadcastChanges();
 		}
 		SurvivalReimaginedMod.queueServerWork(1, () -> {
@@ -44,10 +38,10 @@ public class IronTakenProcedure {
 			}
 		});
 		if (world instanceof ServerLevel _level) {
-			(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
+			(entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu4 ? _menu4.getSlots().get(2).getItem() : ItemStack.EMPTY).hurtAndBreak(1, _level, null, _stkprov -> {
 			});
 		}
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY)
+		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof SurvivalReimaginedModMenus.MenuAccessor _menu6 ? _menu6.getSlots().get(3).getItem() : ItemStack.EMPTY)
 				.is(ItemTags.create(ResourceLocation.parse("c:soft_metals")))) {
 			if (entity instanceof ServerPlayer _player) {
 				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:quick_metal"));

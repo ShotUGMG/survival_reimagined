@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -13,7 +12,7 @@ import net.mcreator.survivalreimagined.client.renderer.CrimsonArachnidRenderer;
 import net.mcreator.survivalreimagined.client.renderer.BloodMoonZombieRenderer;
 import net.mcreator.survivalreimagined.client.renderer.AlphaCrimsonArachnidRenderer;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class SurvivalReimaginedModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {

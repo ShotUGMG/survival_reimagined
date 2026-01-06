@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class WisteriaStairsBlock extends StairBlock {
 	public WisteriaStairsBlock() {
-		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(2f));
 	}
 
 	@Override

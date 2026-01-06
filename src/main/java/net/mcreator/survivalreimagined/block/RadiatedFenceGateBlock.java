@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class RadiatedFenceGateBlock extends FenceGateBlock {
 	public RadiatedFenceGateBlock() {
-		super(WoodType.OAK, BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape().forceSolidOn());
+		super(WoodType.OAK, BlockBehaviour.Properties.of().sound(SoundType.NETHER_WOOD).strength(2f, 3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).forceSolidOn());
 	}
 
 	@Override

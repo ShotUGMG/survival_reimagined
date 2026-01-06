@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 79,
   "_type": "structure",
   "definition": {
     "structure": "oak_copper_mine_center",
@@ -12,8 +12,8 @@
         "value": "Blocks.AIR"
       }
     ],
-    "spacing": 1,
-    "separation": 0,
+    "spacing": 30,
+    "separation": 15,
     "restrictionBiomes": [
       {
         "value": "void"

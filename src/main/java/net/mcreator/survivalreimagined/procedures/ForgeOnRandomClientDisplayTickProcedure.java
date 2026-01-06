@@ -10,14 +10,7 @@ import net.minecraft.core.BlockPos;
 
 public class ForgeOnRandomClientDisplayTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
-			}
-		}.getValue(world, BlockPos.containing(x, y, z), "FuelMeter") > 0) {
+		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") > 0) {
 			if (Math.random() < 0.3) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -28,5 +21,12 @@ public class ForgeOnRandomClientDisplayTickProcedure {
 				}
 			}
 		}
+	}
+
+	private static double getBlockNBTNumber(LevelAccessor world, BlockPos pos, String tag) {
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		if (blockEntity != null)
+			return blockEntity.getPersistentData().getDouble(tag);
+		return -1;
 	}
 }

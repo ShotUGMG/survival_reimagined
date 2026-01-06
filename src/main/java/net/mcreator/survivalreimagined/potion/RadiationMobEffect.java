@@ -1,7 +1,5 @@
-
 package net.mcreator.survivalreimagined.potion;
 
-import net.neoforged.neoforge.common.EffectCure;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientMobEffectExtensions;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -17,16 +15,10 @@ import net.mcreator.survivalreimagined.procedures.RadiationEffectStartedappliedP
 import net.mcreator.survivalreimagined.procedures.RadiationActiveTickConditionProcedure;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
 
-import java.util.Set;
-
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class RadiationMobEffect extends MobEffect {
 	public RadiationMobEffect() {
 		super(MobEffectCategory.HARMFUL, -5258644);
-	}
-
-	@Override
-	public void fillEffectCures(Set<EffectCure> cures, MobEffectInstance effectInstance) {
 	}
 
 	@Override

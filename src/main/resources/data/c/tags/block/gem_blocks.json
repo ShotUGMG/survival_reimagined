@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "minecraft:diamond_block",
-    "survival_reimagined:plated_diamond_block",
-    "minecraft:emerald_block",
+    "survival_reimagined:block_of_amber",
     "survival_reimagined:sapphire_block",
-    "minecraft:lapis_block",
+    "minecraft:emerald_block",
+    "survival_reimagined:plated_diamond_block",
+    "minecraft:diamond_block",
     "survival_reimagined:block_of_ruby",
-    "survival_reimagined:block_of_amber"
+    "minecraft:lapis_block"
   ]
 }

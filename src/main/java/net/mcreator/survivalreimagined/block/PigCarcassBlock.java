@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import org.checkerframework.checker.units.qual.s;
@@ -26,6 +25,11 @@ import net.mcreator.survivalreimagined.procedures.PigCarcassBlockDestroyedByPlay
 
 public class PigCarcassBlock extends Block {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
+	private static final VoxelShape SHAPE_1 = Shapes.or(box(-0.64286, 1.35714, -2, 7.35714, 9.35714, 6), box(3.35714, 3.35714, -3, 6.35714, 7.35714, -2), box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20));
+	private static final VoxelShape SHAPE_2 = box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20);
+	private static final VoxelShape SHAPE_3 = box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20);
+	private static final VoxelShape SHAPE = Shapes.or(box(9.35714, 0.35714, 5, 15.35714, 4.35714, 9), box(9.35714, 6.35714, 5, 15.35714, 10.35714, 9), box(9.35714, 0.35714, 17, 15.35714, 4.35714, 21),
+			box(9.35714, 6.35714, 17, 15.35714, 10.35714, 21), box(-0.64286, 1.35714, -2, 7.35714, 9.35714, 6), box(3.35714, 3.35714, -3, 6.35714, 7.35714, -2), box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20));
 
 	public PigCarcassBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).lightLevel(s -> (new Object() {
@@ -59,16 +63,15 @@ public class PigCarcassBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return Shapes.or(box(-0.64286, 1.35714, -2, 7.35714, 9.35714, 6), box(3.35714, 3.35714, -3, 6.35714, 7.35714, -2), box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20));
+			return (SHAPE_1);
 		}
 		if (state.getValue(BLOCKSTATE) == 2) {
-			return box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20);
+			return (SHAPE_2);
 		}
 		if (state.getValue(BLOCKSTATE) == 3) {
-			return box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20);
+			return (SHAPE_3);
 		}
-		return Shapes.or(box(9.35714, 0.35714, 5, 15.35714, 4.35714, 9), box(9.35714, 6.35714, 5, 15.35714, 10.35714, 9), box(9.35714, 0.35714, 17, 15.35714, 4.35714, 21), box(9.35714, 6.35714, 17, 15.35714, 10.35714, 21),
-				box(-0.64286, 1.35714, -2, 7.35714, 9.35714, 6), box(3.35714, 3.35714, -3, 6.35714, 7.35714, -2), box(1.35714, 0.35714, 4, 9.35714, 10.35714, 20));
+		return (SHAPE);
 	}
 
 	@Override

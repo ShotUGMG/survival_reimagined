@@ -1,18 +1,22 @@
 {
-  "type": "survival_reimagined:metal_refining",
-  "ingredients": [
-    {
-      "item": "survival_reimagined:small_copper_handle"
-    },
-    {
-      "item": "survival_reimagined:bronze_knife_blade"
-    },
-    {
-      "tag": "c:tools/hammer"
-    }
-  ],
-  "output": {
-    "id": "survival_reimagined:bronze_knife",
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "item": "survival_reimagined:knife_blade_mold",
     "count": 1
-  }
+  },
+  "forge_input_2": {
+    "item": "survival_reimagined:bronze_ingot",
+    "count": 1
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "survival_reimagined:bronze_knife_blade",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
 }
