@@ -9,17 +9,11 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 45,
-    "separation": 30,
+    "spacing": 90,
+    "separation": 60,
     "restrictionBiomes": [
       {
-        "value": "jungle_edge"
-      },
-      {
-        "value": "bamboo_jungle"
-      },
-      {
-        "value": "jungle"
+        "value": "#minecraft:is_jungle"
       }
     ],
     "terrainAdaptation": "beard_thin",

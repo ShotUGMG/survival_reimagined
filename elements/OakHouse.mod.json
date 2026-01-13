@@ -9,26 +9,11 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 45,
-    "separation": 30,
+    "spacing": 90,
+    "separation": 60,
     "restrictionBiomes": [
       {
-        "value": "birch_forest"
-      },
-      {
-        "value": "mutated_forest"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "plains"
-      },
-      {
-        "value": "mutated_birch_forest"
-      },
-      {
-        "value": "extreme_hills_with_trees"
+        "value": "#minecraft:is_forest"
       }
     ],
     "terrainAdaptation": "beard_thin",

@@ -22,7 +22,7 @@ public class AdvancedAlloyForgeOnRandomClientDisplayTickProcedure {
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.SOUTH) {
 				if (Math.random() < 0.8) {
 					for (int index1 = 0; index1 < 10; index1++) {
-						world.addParticle(ParticleTypes.LARGE_SMOKE, (x + Math.random()), y, (z - (1 + Math.random())), 0, 0.2, 0);
+						world.addParticle(ParticleTypes.LARGE_SMOKE, (x + Math.random()), y, (z - Math.random()), 0, 0.2, 0);
 					}
 				}
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.WEST) {
@@ -34,7 +34,7 @@ public class AdvancedAlloyForgeOnRandomClientDisplayTickProcedure {
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.EAST) {
 				if (Math.random() < 0.8) {
 					for (int index3 = 0; index3 < 10; index3++) {
-						world.addParticle(ParticleTypes.LARGE_SMOKE, (x - (1 + Math.random())), y, (z + Math.random()), 0, 0.2, 0);
+						world.addParticle(ParticleTypes.LARGE_SMOKE, (x - Math.random()), y, (z + Math.random()), 0, 0.2, 0);
 					}
 				}
 			}

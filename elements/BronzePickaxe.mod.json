@@ -8,6 +8,7 @@
     "texture": "bronze_pickaxe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Bronze Pickaxe",
     "specialInformation": {
       "fixedValue": []

@@ -663,6 +663,26 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> PEAT_COARSE_DIRT_PILE;
 	public static final DeferredItem<Item> PEAT_MUD_PILE;
 	public static final DeferredItem<Item> ASHEN_DIRT_PILE;
+	public static final DeferredItem<Item> CHALK_ROCK;
+	public static final DeferredItem<Item> ALPHA_OAK_PLANK;
+	public static final DeferredItem<Item> BAOBAB_PLANK;
+	public static final DeferredItem<Item> BLACKWOOD_PLANK;
+	public static final DeferredItem<Item> BRIMWOOD_PLANK;
+	public static final DeferredItem<Item> COBALT_PLANK;
+	public static final DeferredItem<Item> CYPRESS_PLANK;
+	public static final DeferredItem<Item> DEAD_PLANK;
+	public static final DeferredItem<Item> EUCALYPTUS_PLANK;
+	public static final DeferredItem<Item> JOSHUA_PLANK;
+	public static final DeferredItem<Item> KAPOK_PLANK;
+	public static final DeferredItem<Item> LARCH_PLANK;
+	public static final DeferredItem<Item> MAGNOLIA_PLANK;
+	public static final DeferredItem<Item> MAPLE_PLANK;
+	public static final DeferredItem<Item> MAUVE_PLANK;
+	public static final DeferredItem<Item> PALM_PLANK;
+	public static final DeferredItem<Item> PINE_PLANK;
+	public static final DeferredItem<Item> REDWOOD_PLANK;
+	public static final DeferredItem<Item> SOCOTRA_PLANK;
+	public static final DeferredItem<Item> WILLOW_PLANK;
 	static {
 		FLINTBLOCK = block(SurvivalReimaginedModBlocks.FLINTBLOCK);
 		FLINT_TOOL = REGISTRY.register("flint_tool", FlintToolItem::new);
@@ -1302,6 +1322,26 @@ public class SurvivalReimaginedModItems {
 		PEAT_COARSE_DIRT_PILE = REGISTRY.register("peat_coarse_dirt_pile", PeatCoarseDirtPileItem::new);
 		PEAT_MUD_PILE = REGISTRY.register("peat_mud_pile", PeatMudPileItem::new);
 		ASHEN_DIRT_PILE = REGISTRY.register("ashen_dirt_pile", AshenDirtPileItem::new);
+		CHALK_ROCK = REGISTRY.register("chalk_rock", ChalkRockItem::new);
+		ALPHA_OAK_PLANK = REGISTRY.register("alpha_oak_plank", AlphaOakPlankItem::new);
+		BAOBAB_PLANK = REGISTRY.register("baobab_plank", BaobabPlankItem::new);
+		BLACKWOOD_PLANK = REGISTRY.register("blackwood_plank", BlackwoodPlankItem::new);
+		BRIMWOOD_PLANK = REGISTRY.register("brimwood_plank", BrimwoodPlankItem::new);
+		COBALT_PLANK = REGISTRY.register("cobalt_plank", CobaltPlankItem::new);
+		CYPRESS_PLANK = REGISTRY.register("cypress_plank", CypressPlankItem::new);
+		DEAD_PLANK = REGISTRY.register("dead_plank", DeadPlankItem::new);
+		EUCALYPTUS_PLANK = REGISTRY.register("eucalyptus_plank", EucalyptusPlankItem::new);
+		JOSHUA_PLANK = REGISTRY.register("joshua_plank", JoshuaPlankItem::new);
+		KAPOK_PLANK = REGISTRY.register("kapok_plank", KapokPlankItem::new);
+		LARCH_PLANK = REGISTRY.register("larch_plank", LarchPlankItem::new);
+		MAGNOLIA_PLANK = REGISTRY.register("magnolia_plank", MagnoliaPlankItem::new);
+		MAPLE_PLANK = REGISTRY.register("maple_plank", MaplePlankItem::new);
+		MAUVE_PLANK = REGISTRY.register("mauve_plank", MauvePlankItem::new);
+		PALM_PLANK = REGISTRY.register("palm_plank", PalmPlankItem::new);
+		PINE_PLANK = REGISTRY.register("pine_plank", PinePlankItem::new);
+		REDWOOD_PLANK = REGISTRY.register("redwood_plank", RedwoodPlankItem::new);
+		SOCOTRA_PLANK = REGISTRY.register("socotra_plank", SocotraPlankItem::new);
+		WILLOW_PLANK = REGISTRY.register("willow_plank", WillowPlankItem::new);
 	}
 
 	// Start of user code block custom items

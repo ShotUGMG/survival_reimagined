@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:ender_pearl"
+    },
+    "b": {
+      "item": "survival_reimagined:mortar_pestal"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:eye_of_ender_fusion_dust",
+    "count": 1
+  }
+}

@@ -54,7 +54,7 @@ public class SurvivalReimaginedModBiomes {
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.8f, -0.1f), Climate.Parameter.span(-0.9f, 0.1f), Climate.Parameter.span(-0.11f, 0.33f), Climate.Parameter.span(-0.2f, 0.2f),
 							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")))));
 					addParameterPoint(parameters,
-							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0f), Climate.Parameter.span(-0.5f, 0.6f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(1.7f, 2.0f),
+							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0f), Climate.Parameter.span(-0.8f, 0.8f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(1.5f, 2.0f),
 									Climate.Parameter.span(0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "radiated_forest")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers

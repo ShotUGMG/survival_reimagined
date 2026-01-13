@@ -1,50 +1,50 @@
-/time set day
-/print number
-/time set night
-/print number
-/time set day
-/time set night
-/time set day
-/tick rate 6000
-/time set day
-/tick rate 6000
-/give Dev minecraft:debug_stick
-/effect give Dev minecraft:night_vision infinite
-/weather clear
-/weather clear 9999
-/time set day
-/locate biome regions_unexplored:redstone_caves
-/tp @s 171 66 -1618
-/locate biome regions_unexplored:prismachasm
-/tp @s -30 1 -1390
-/effect clear
-/weather clear
-/gamerule doWeatherCycle false
-/event bloodmoon
 /event reset
+/scoreboard objectives setdisplay sidebar Item
+/scoreboard objectives setdisplay sidebar ItemCount
+/scoreboard objectives setdisplay sidebar Item
+/scoreboard objectives setdisplay sidebar ItemCount
 /time set day
-/setblock ~ ~ ~ minecraft:nether_portal
 /kill Dev
-/setblock ~ ~ ~ minecraft:end_portal
+/scoreboard objectives remove ItemCount
+/kill Dev
+/effect clearq
+/effect clear
+/give Dev minecraft:golden_apple
+/give Dev minecraft:golden_apple 64
+/effect clear
+/effect give Dev minecraft:regeneration 10 3
+/effect give Dev minecraft:regeneration 5 3
+/effect give Dev minecraft:regeneration 1 10
+/kill Dev
+/effect give Dev minecraft:regeneration 1 10
+/effect clear
+/effect give Dev minecraft:regeneration 1 10
+/effect clear
+/effect give Dev minecraft:regeneration 1 10
+/effect clear
+/effect give Dev minecraft:regeneration 1 10
+/locate biome survival_reimagined:radiated_forest
+/tp @s -1510 -103 -1643
+/effect give Dev minecraft:night_vision infinite
+/give Dev minecraft:debug_stick
+/locate structure minecraft:mineshaft
+/tp @s -3584 ~ -720
+/locate structure minecraft:village_plains
+/locate structure minecraft:village_taiga
+/locate structure minecraft:mineshaft
+/tp @s -4032 ~ -1936
+/time set ng
+/time set night
+/event bloodmoon
+/effect clear
+/time set midnight
 /event reset
+/time set day
+/effect give Dev minecraft:regeneration 1 10
 /time set day
 /gamerule doDaylightCycle false
-/effect give Dev minecraft:night_vision infinite
+/effect give Dev minecraft:haste infinite 2
+/effect give Dev minecraft:haste infinite 4
+/effect give Dev minecraft:haste infinite 10
 /effect clear
-/locate biome survival_reimagined:radiated_forest
-/tp @s -161 -1 -104
-/effect give Dev minecraft:night_vision infinite
-/tp Dev 6000 ~ 6000
-/locate biome survival_reimagined:radiated_forest
-/tp @s 6320 29 6960'
-/tp @s 6320 29 6960
-/effect give Dev minecraft:night_vision infinite
-/effect clear
-/locate structure survival_reimagined:copper_mine
-/tp @s 112 ~ -32
-/locate structure survival_reimagined:copper_mine
-/tp @s -848 ~ 1088
-/tp Dev 6000 ~ 65000
-/locate structure survival_reimagined:copper_mine
-/tp @s 5488 ~ 64832
 /effect give Dev minecraft:night_vision infinite

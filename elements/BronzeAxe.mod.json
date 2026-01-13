@@ -8,6 +8,7 @@
     "texture": "bronze_axe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Bronze Axe",
     "specialInformation": {
       "fixedValue": []

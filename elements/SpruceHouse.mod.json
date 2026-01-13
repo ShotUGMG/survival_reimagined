@@ -9,23 +9,11 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 45,
-    "separation": 30,
+    "spacing": 90,
+    "separation": 60,
     "restrictionBiomes": [
       {
-        "value": "redwood_taiga"
-      },
-      {
-        "value": "mutated_redwood_taiga"
-      },
-      {
-        "value": "taiga_cold"
-      },
-      {
-        "value": "taiga"
-      },
-      {
-        "value": "snowy_tundra"
+        "value": "#minecraft:is_taiga"
       }
     ],
     "terrainAdaptation": "beard_thin",

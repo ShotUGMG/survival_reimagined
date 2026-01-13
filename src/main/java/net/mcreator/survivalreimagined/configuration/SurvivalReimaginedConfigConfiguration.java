@@ -33,6 +33,9 @@ public class SurvivalReimaginedConfigConfiguration {
 
 	public static final ModConfigSpec.ConfigValue<Boolean> BLEEDING_EFFECT;
 	public static final ModConfigSpec.ConfigValue<Double> BLEED_CHANCE;
+	public static final ModConfigSpec.ConfigValue<Boolean> WEIGHT;
+	public static final ModConfigSpec.ConfigValue<Boolean> BROKEN_LEGS;
+	public static final ModConfigSpec.ConfigValue<Double> BROKEN_LEG_CHANCE;
 	static {
 		BUILDER.push("status_effects");
 		BUILDER.push("zombification");
@@ -80,6 +83,11 @@ public class SurvivalReimaginedConfigConfiguration {
 		BUILDER.push("bleeding");
 		BLEEDING_EFFECT = BUILDER.comment("Allow Crimson Arachnid to Inflict Bleeding").define("bleeding", false);
 		BLEED_CHANCE = BUILDER.comment("Chance to contract Bleeding Effect. Defualt is 0.1 (10%)").define("bleeding_chance", (double) 0.1);
+		BUILDER.pop();
+		BUILDER.push("difficulty");
+		WEIGHT = BUILDER.comment("Enable/Disable Weight System").define("weight_system", false);
+		BROKEN_LEGS = BUILDER.comment("Enable/Disable breaking your legs from fall damage").define("broken_legs", false);
+		BROKEN_LEG_CHANCE = BUILDER.comment("Chance to break your leg from a fall. Defualt is 0.2 (20%)").define("broken_leg_chance", (double) 0.2);
 		BUILDER.pop();
 		BUILDER.pop();
 

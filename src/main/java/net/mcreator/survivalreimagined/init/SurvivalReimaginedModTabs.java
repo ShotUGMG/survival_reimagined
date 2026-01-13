@@ -613,6 +613,26 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.PEAT_COARSE_DIRT_PILE.get());
 				tabData.accept(SurvivalReimaginedModItems.PEAT_MUD_PILE.get());
 				tabData.accept(SurvivalReimaginedModItems.ASHEN_DIRT_PILE.get());
+				tabData.accept(SurvivalReimaginedModItems.CHALK_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.ALPHA_OAK_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.BAOBAB_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.BLACKWOOD_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.BRIMWOOD_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.COBALT_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.CYPRESS_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.DEAD_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.EUCALYPTUS_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.JOSHUA_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.KAPOK_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.LARCH_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAGNOLIA_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAPLE_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.MAUVE_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.PALM_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.PINE_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.REDWOOD_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.SOCOTRA_PLANK.get());
+				tabData.accept(SurvivalReimaginedModItems.WILLOW_PLANK.get());
 			}).withSearchBar().withTabsBefore(SURVIVAL_REBORN.getId()).build());
 
 	@SubscribeEvent

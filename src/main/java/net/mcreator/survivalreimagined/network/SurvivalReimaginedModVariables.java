@@ -24,6 +24,7 @@ import net.minecraft.world.entity.animal.Cod;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.Brain;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -55,25 +56,25 @@ public class SurvivalReimaginedModVariables {
 	@SubscribeEvent
 	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
 		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
-			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
+			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
 			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
@@ -104,6 +105,8 @@ public class SurvivalReimaginedModVariables {
 			clone.Liver = original.Liver;
 			clone.Stomach = original.Stomach;
 			clone.ScrapeHandler = original.ScrapeHandler;
+			clone.ItemCount = original.ItemCount;
+			clone.WeightMediumItems = original.WeightMediumItems;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -150,6 +153,11 @@ public class SurvivalReimaginedModVariables {
 		boolean _syncDirty = false;
 		public double HeartBeat = 0;
 		public double EffectDanger = 0;
+		public double SkyboxAlpha = 0;
+		public double SkyboxClock = 0.0;
+		public double BloodmoonFog = 0;
+		public double FogStart = 0;
+		public double FogEnd = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -160,12 +168,22 @@ public class SurvivalReimaginedModVariables {
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			HeartBeat = nbt.getDouble("HeartBeat");
 			EffectDanger = nbt.getDouble("EffectDanger");
+			SkyboxAlpha = nbt.getDouble("SkyboxAlpha");
+			SkyboxClock = nbt.getDouble("SkyboxClock");
+			BloodmoonFog = nbt.getDouble("BloodmoonFog");
+			FogStart = nbt.getDouble("FogStart");
+			FogEnd = nbt.getDouble("FogEnd");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putDouble("HeartBeat", HeartBeat);
 			nbt.putDouble("EffectDanger", EffectDanger);
+			nbt.putDouble("SkyboxAlpha", SkyboxAlpha);
+			nbt.putDouble("SkyboxClock", SkyboxClock);
+			nbt.putDouble("BloodmoonFog", BloodmoonFog);
+			nbt.putDouble("FogStart", FogStart);
+			nbt.putDouble("FogEnd", FogEnd);
 			return nbt;
 		}
 
@@ -312,6 +330,8 @@ public class SurvivalReimaginedModVariables {
 		public double ScrapeHandler = 0;
 		public double DiamondLogicNumber = 0;
 		public boolean ZombificationImmune = false;
+		public double ItemCount = 0;
+		public ItemStack WeightMediumItems = ItemStack.EMPTY;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -337,6 +357,8 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("ScrapeHandler", ScrapeHandler);
 			nbt.putDouble("DiamondLogicNumber", DiamondLogicNumber);
 			nbt.putBoolean("ZombificationImmune", ZombificationImmune);
+			nbt.putDouble("ItemCount", ItemCount);
+			nbt.put("WeightMediumItems", WeightMediumItems.saveOptional(lookupProvider));
 			return nbt;
 		}
 
@@ -363,6 +385,8 @@ public class SurvivalReimaginedModVariables {
 			ScrapeHandler = nbt.getDouble("ScrapeHandler");
 			DiamondLogicNumber = nbt.getDouble("DiamondLogicNumber");
 			ZombificationImmune = nbt.getBoolean("ZombificationImmune");
+			ItemCount = nbt.getDouble("ItemCount");
+			WeightMediumItems = ItemStack.parseOptional(lookupProvider, nbt.getCompound("WeightMediumItems"));
 		}
 
 		public void markSyncDirty() {
@@ -370,14 +394,16 @@ public class SurvivalReimaginedModVariables {
 		}
 	}
 
-	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
+	public record PlayerVariablesSyncMessage(PlayerVariables data, int player) implements CustomPacketPayload {
 		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SurvivalReimaginedMod.MODID, "player_variables_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
-				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
-					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
-					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
-					return message;
-				});
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
+			buffer.writeInt(message.player());
+			buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess()));
+		}, (RegistryFriendlyByteBuf buffer) -> {
+			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables(), buffer.readInt());
+			message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+			return message;
+		});
 
 		@Override
 		public Type<PlayerVariablesSyncMessage> type() {
@@ -386,7 +412,12 @@ public class SurvivalReimaginedModVariables {
 
 		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
+				context.enqueueWork(() -> {
+					Entity player = context.player().level().getEntity(message.player);
+					if (player == null)
+						return;
+					player.getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()));
+				}).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});

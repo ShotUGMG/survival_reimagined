@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:cypress_plank"
+    }
+  },
+  "result": {
+    "id": "regions_unexplored:cypress_planks",
+    "count": 1
+  }
+}

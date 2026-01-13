@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:alpha_oak_plank"
+    }
+  },
+  "result": {
+    "id": "regions_unexplored:alpha_oak_planks",
+    "count": 1
+  }
+}

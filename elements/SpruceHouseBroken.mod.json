@@ -9,8 +9,8 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 55,
-    "separation": 29,
+    "spacing": 90,
+    "separation": 30,
     "restrictionBiomes": [
       {
         "value": "redwood_taiga"

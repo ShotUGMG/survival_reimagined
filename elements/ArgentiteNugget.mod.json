@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "argentite_nugget",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -31,8 +32,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "RockInfo"
+      "fixedValue": []
     },
     "glowCondition": {
       "fixedValue": false

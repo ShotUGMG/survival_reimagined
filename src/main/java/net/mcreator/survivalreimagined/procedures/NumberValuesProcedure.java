@@ -11,7 +11,8 @@ public class NumberValuesProcedure {
 		if (world instanceof ServerLevel _level) {
 			_level.getServer().getPlayerList()
 					.broadcastSystemMessage(Component.literal(
-							("Blood Moon Chance Ran: " + Math.round(SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan) + "Blood Moon Number" + Math.round(SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon))),
+							("Blood Moon Chance Ran: " + Math.round(SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoonChanceRan) + "Blood Moon Number" + Math.round(SurvivalReimaginedModVariables.MapVariables.get(world).BloodMoon)
+									+ "Skybox Clock: " + Math.round(SurvivalReimaginedModVariables.WorldVariables.get(world).SkyboxClock) + "Skybox Alpha: " + Math.round(SurvivalReimaginedModVariables.WorldVariables.get(world).SkyboxAlpha))),
 							false);
 		}
 	}

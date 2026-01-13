@@ -6,7 +6,8 @@
     "NoiseGeneratorSettingsMixin",
     "RuneOnItemMixin",
     "NoiseBasedChunkGeneratorMixin",
-    "DimensionTypesMixin"
+    "DimensionTypesMixin",
+    "RockTypeMixin"
   ],
   "client": [],
   "injectors": {

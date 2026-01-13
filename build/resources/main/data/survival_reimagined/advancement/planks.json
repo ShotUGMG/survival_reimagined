@@ -16,20 +16,7 @@
   },
   "criteria": {
     "planks_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:oak_plank"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "parent": "survival_reimagined:crafting_table"

@@ -1,4 +1,3 @@
-
 package net.mcreator.survivalreimagined.block;
 
 import net.neoforged.api.distmarker.OnlyIn;
@@ -19,13 +18,11 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.procedures.EntityCollidesClayMoldProcedure;
 import net.mcreator.survivalreimagined.procedures.DayDetectionProcedure;
@@ -35,6 +32,7 @@ import net.mcreator.survivalreimagined.procedures.BlockDetectionProcedure;
 
 public class ClayHammerHeadMoldBlock extends Block {
 	public static final BooleanProperty CAN_BURN = BooleanProperty.create("can_burn");
+	private static final VoxelShape SHAPE = box(0, 0, 0, 16, 2, 16);
 
 	public ClayHammerHeadMoldBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).instabreak().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
@@ -58,7 +56,7 @@ public class ClayHammerHeadMoldBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0, 0, 16, 2, 16);
+		return (SHAPE);
 	}
 
 	@Override
@@ -102,15 +100,11 @@ public class ClayHammerHeadMoldBlock extends Block {
 		world.scheduleTick(pos, this, 100);
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		ClayMoldClientTickUpdateProcedure.execute(world, x, y, z, blockstate);
+		ClayMoldClientTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

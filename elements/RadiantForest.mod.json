@@ -64,8 +64,8 @@
       "max": 0.0
     },
     "genHumidity": {
-      "min": -0.5,
-      "max": 0.6
+      "min": -0.8,
+      "max": 0.8
     },
     "genContinentalness": {
       "min": 0.0,

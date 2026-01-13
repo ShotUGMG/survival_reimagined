@@ -27,6 +27,7 @@ public class SurvivalReimaginedModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> BINDING_SCULK = REGISTRY.register("binding_sculk", () -> new BindingSculkMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> RADIATION = REGISTRY.register("radiation", () -> new RadiationMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEEDING = REGISTRY.register("bleeding", () -> new BleedingMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> BROKEN_LEG_POTION = REGISTRY.register("broken_leg_potion", () -> new BrokenLegPotionMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

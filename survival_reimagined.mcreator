@@ -3677,10 +3677,10 @@
       "registry_name": "clay_hammer_head_mold",
       "metadata": {
         "files": [
-          "src/main/resources/assets/survival_reimagined/blockstates/clay_hammer_head_mold.json",
-          "src/main/resources/assets/survival_reimagined/models/block/clay_hammer_head_mold.json",
-          "src/main/resources/data/survival_reimagined/loot_table/blocks/clay_hammer_head_mold.json",
           "src/main/resources/assets/survival_reimagined/models/item/clay_hammer_head_mold.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/clay_hammer_head_mold.json",
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/clay_hammer_head_mold.json",
+          "src/main/resources/assets/survival_reimagined/models/block/clay_hammer_head_mold.json",
           "src/main/java/net/mcreator/survivalreimagined/block/ClayHammerHeadMoldBlock.java"
         ]
       },
@@ -28845,26 +28845,6 @@
       "path": "~/Mod Elements/LootTables/Rocks"
     },
     {
-      "name": "RockInfo",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "rock_info",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/RockInfoProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/Ore/NaturalOres"
-    },
-    {
       "name": "MagnetiteChunk",
       "type": "item",
       "compiles": true,
@@ -36757,6 +36737,563 @@
         ]
       },
       "path": "~/Compat/JEI/Forging/Alloys"
+    },
+    {
+      "name": "WeightCalcuations",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weight_calcuations",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/WeightCalcuationsProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Weight"
+    },
+    {
+      "name": "BrokenLeg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_leg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BrokenLegProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/BrokenLeg"
+    },
+    {
+      "name": "BrokenLegPotion",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_leg_potion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/potion/BrokenLegPotionMobEffect.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/BrokenLeg"
+    },
+    {
+      "name": "BrokenLegPotionActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_leg_potion_active_tick_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BrokenLegPotionActiveTickConditionProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/BrokenLeg"
+    },
+    {
+      "name": "BrokenLegPotionOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broken_leg_potion_on_effect_active_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BrokenLegPotionOnEffectActiveTickProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/BrokenLeg"
+    },
+    {
+      "name": "Clay",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "clay",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipe/clay.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/RecipeOverrides"
+    },
+    {
+      "name": "DustRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dust_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/dust_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Recipes/CraftingRecipes/Mortar"
+    },
+    {
+      "name": "PlanksADV",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "planks_adv",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/PlanksADVProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Procedure Advancement Triggers"
+    },
+    {
+      "name": "RefineIronIngot",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_iron_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/refine_iron_ingot.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Ingots"
+    },
+    {
+      "name": "RefineGoldIngot",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_gold_ingot",
+      "metadata": {},
+      "path": "~/Compat/JEI/MetalRefining/Ingots"
+    },
+    {
+      "name": "RefineCopperIngot",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_copper_ingot",
+      "metadata": {},
+      "path": "~/Compat/JEI/MetalRefining/Ingots"
+    },
+    {
+      "name": "RefineTinIngot",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "refine_tin_ingot",
+      "metadata": {},
+      "path": "~/Compat/JEI/MetalRefining/Ingots"
+    },
+    {
+      "name": "ChalkRock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chalk_rock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/ChalkRockItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/chalk_rock.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Rock"
+    },
+    {
+      "name": "Chalk",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "chalk",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_table/chalk.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Rock"
+    },
+    {
+      "name": "RULogsDrops",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ru_logs_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/RULogsDropsProcedure.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Bark"
+    },
+    {
+      "name": "AlphaOakPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alpha_oak_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/AlphaOakPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/alpha_oak_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BaobabPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baobab_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/baobab_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/BaobabPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BlackwoodPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackwood_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/BlackwoodPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/blackwood_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BrimwoodPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brimwood_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/brimwood_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/BrimwoodPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "CobaltPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/cobalt_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/CobaltPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "CypressPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cypress_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/cypress_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/CypressPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "DeadPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/dead_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/DeadPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "EucalyptusPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eucalyptus_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/EucalyptusPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/eucalyptus_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "JoshuaPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joshua_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/JoshuaPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/joshua_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "KapokPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kapok_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/KapokPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/kapok_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "LarchPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "larch_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/LarchPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/larch_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MagnoliaPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnolia_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/MagnoliaPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/magnolia_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MaplePlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maple_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/maple_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/MaplePlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MauvePlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mauve_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/MauvePlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/mauve_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "PalmPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/palm_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/PalmPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "PinePlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/PinePlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/pine_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "RedwoodPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redwood_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/redwood_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/RedwoodPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "SocotraPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "socotra_plank",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/socotra_plank.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/SocotraPlankItem.java"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "WillowPlank",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willow_plank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/WillowPlankItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/willow_plank.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "AlphaPlanks",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "alpha_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/alpha_planks.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "RockType",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rock_type",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/mixin/RockTypeMixin.java"
+        ]
+      },
+      "path": "~/Mixins"
     }
   ],
   "variable_elements": [
@@ -36968,6 +37505,48 @@
       "name": "MoldOutput",
       "type": "itemstack",
       "scope": "map",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "SkyboxAlpha",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "SkyboxClock",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "BloodmoonFog",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "FogStart",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "FogEnd",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "ItemCount",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "WeightMediumItems",
+      "type": "itemstack",
+      "scope": "player_lifetime",
       "value": "ItemStack.EMPTY"
     }
   ],
@@ -38272,8 +38851,6 @@
       "~CUSTOM:TinOre"
     ],
     "BLOCKS:neoforge:incorrect_for_bronze_tool": [
-      "TAG:minecraft:needs_wooden_tool",
-      "TAG:minecraft:needs_stone_tool",
       "TAG:minecraft:needs_iron_tool"
     ],
     "ITEMS:c:alloy_block/iron_items": [
@@ -38646,8 +39223,7 @@
       "Items.NETHERITE_BOOTS"
     ],
     "BLOCKS:minecraft:incorrect_for_iron_tool": [
-      "TAG:minecraft:needs_steel_tool",
-      "TAG:neoforge:incorrect_for_bronze_tool"
+      "TAG:minecraft:needs_steel_tool"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:SulfurOre",
@@ -39403,6 +39979,61 @@
     "BLOCKS:minecraft:climbable": [
       "~CUSTOM:ThickRadiatedVinesBase",
       "~CUSTOM:ThickRadiatedVines"
+    ],
+    "ITEMS:c:weight/medium": [
+      "TAG:c:weight/wood"
+    ],
+    "ITEMS:c:weight/wood": [
+      "CUSTOM:RadiantLog",
+      "CUSTOM:StrippedRadiantLog",
+      "CUSTOM:WisteriaLog",
+      "CUSTOM:StrippedWisteriaLog",
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1",
+      "Blocks.MANGROVE_LOG",
+      "Blocks.CHERRY_LOG",
+      "Blocks.STRIPPED_OAK_LOG",
+      "Blocks.STRIPPED_SPRUCE_LOG",
+      "Blocks.STRIPPED_BIRCH_LOG",
+      "Blocks.STRIPPED_JUNGLE_LOG",
+      "Blocks.STRIPPED_ACACIA_LOG",
+      "Blocks.STRIPPED_DARK_OAK_LOG",
+      "Blocks.STRIPPED_MANGROVE_LOG",
+      "Blocks.STRIPPED_CHERRY_LOG",
+      "CUSTOM:RadiantPlanks",
+      "CUSTOM:WisteriaPlanks",
+      "Blocks.PLANKS#0",
+      "Blocks.PLANKS#1",
+      "Blocks.PLANKS#2",
+      "Blocks.PLANKS#3",
+      "Blocks.PLANKS#4",
+      "Blocks.PLANKS#5",
+      "Blocks.CRIMSON_PLANKS",
+      "Blocks.WARPED_PLANKS",
+      "Blocks.MANGROVE_PLANKS",
+      "Blocks.CHERRY_PLANKS",
+      "Blocks.BAMBOO_PLANKS",
+      "CUSTOM:WisteriaWood",
+      "Blocks.OAK_WOOD",
+      "Blocks.SPRUCE_WOOD",
+      "Blocks.BIRCH_WOOD",
+      "Blocks.JUNGLE_WOOD",
+      "Blocks.ACACIA_WOOD",
+      "Blocks.DARK_OAK_WOOD",
+      "Blocks.MANGROVE_WOOD",
+      "Blocks.CHERRY_WOOD",
+      "Blocks.STRIPPED_OAK_WOOD",
+      "Blocks.STRIPPED_SPRUCE_WOOD",
+      "Blocks.STRIPPED_BIRCH_WOOD",
+      "Blocks.STRIPPED_JUNGLE_WOOD",
+      "Blocks.STRIPPED_ACACIA_WOOD",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "Blocks.STRIPPED_MANGROVE_WOOD",
+      "Blocks.STRIPPED_CHERRY_WOOD"
     ]
   },
   "tab_element_order": {},
@@ -40640,7 +41271,42 @@
       "jei.survival_reimagined.forging": "Forging",
       "jei.survival_reimagined.processing": "Processing",
       "jei.survival_reimagined.metal_refining": "Metal Refining",
-      "jei.survival_reimagined.alloy_forge": "Alloy Forge"
+      "jei.survival_reimagined.alloy_forge": "Alloy Forge",
+      "survival_reimagined.configuration.blood_moon_vfx": "BloodMoon VFX",
+      "effect.survival_reimagined.broken_leg_potion": "Broken Leg",
+      "survival_reimagined.configuration.broken_legs": "Broken Legs",
+      "survival_reimagined.configuration.weight_system": "Weight System",
+      "survival_reimagined.configuration.difficulty": "Difficulty",
+      "survival_reimagined.configuration.broken_leg_chance": "Broken Leg Chance",
+      "item.survival_reimagined.chalk_rock": "Chlk Rock",
+      "item.survival_reimagined.alpha_oak_plank": "Alpha Oak Plank",
+      "item.survival_reimagined.baobab_plank": "Baobab Plank",
+      "item.survival_reimagined.blackwood_plank": "Blackwood Plank",
+      "item.survival_reimagined.brimwood_plank": "Brimwood Plank",
+      "item.survival_reimagined.cobalt_plank": "Cobalt Plank",
+      "item.survival_reimagined.cypress_plank": "Cypress Plank",
+      "item.survival_reimagined.dead_plank": "Dead Plank",
+      "item.survival_reimagined.eucalyptus_plank": "Eucalyptus Plank",
+      "item.survival_reimagined.joshua_plank": "Joshua Plank",
+      "item.survival_reimagined.kapok_plank": "Kapok Plank",
+      "item.survival_reimagined.larch_plank": "Larch Plank",
+      "item.survival_reimagined.magnolia_plank": "Magnolia Plank",
+      "item.survival_reimagined.maple_plank": "Maple Plank",
+      "item.survival_reimagined.mauve_plank": "Mauve Plank",
+      "item.survival_reimagined.palm_plank": "Palm Plank",
+      "item.survival_reimagined.pine_plank": "Pine Plank",
+      "item.survival_reimagined.redwood_plank": "Redwood Plank",
+      "item.survival_reimagined.socotra_plank": "Socotra Plank",
+      "item.survival_reimagined.willow_plank": "Willow Plank",
+      "iron.tooltip": "Iron",
+      "copper.tooltip": "Copper",
+      "gold.tooltip": "Gold",
+      "manganese.tooltip": "Manganese",
+      "silver.tooltip": "Silver",
+      "tin.tooltip": "Tin",
+      "titanium.tooltip": "Titanium",
+      "uranium.tooltip": "Uranium",
+      "zinc.tooltip": "Zinc"
     }
   },
   "metadata": {
@@ -42164,6 +42830,19 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Difficulty",
+            "children": [
+              {
+                "name": "Weight",
+                "children": []
+              },
+              {
+                "name": "BrokenLeg",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -42299,6 +42978,10 @@
                   {
                     "name": "Diamond",
                     "children": []
+                  },
+                  {
+                    "name": "Ingots",
+                    "children": []
                   }
                 ]
               },
@@ -42367,7 +43050,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.3.4",
+    "version": "1.3.5",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",

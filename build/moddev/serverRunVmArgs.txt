@@ -12,6 +12,6 @@ java.base/sun.security.util=cpw.mods.securejarhandler
 jdk.naming.dns/com.sun.jndi.dns=java.naming
 -Dlog4j2.configurationFile=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\build\\moddev\\serverLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
--DignoreList=mixinextras-neoforge-0.5.0.jar,client-extra,neoforge-
+-DignoreList=mixinextras-neoforge-0.4.1.jar,client-extra,neoforge-
 -DlegacyClassPath.file=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\build\\moddev\\serverLegacyClasspath.txt
 -Dforge.logging.markers=REGISTRIES

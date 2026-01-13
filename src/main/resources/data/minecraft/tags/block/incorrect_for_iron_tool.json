@@ -4,10 +4,6 @@
     {
       "id": "#minecraft:needs_steel_tool",
       "required": false
-    },
-    {
-      "id": "#neoforge:incorrect_for_bronze_tool",
-      "required": false
     }
   ]
 }

@@ -10,13 +10,6 @@
     "absolute": 0
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
-  "biomes": [
-    "birch_forest",
-    "flower_forest",
-    "forest",
-    "plains",
-    "old_growth_birch_forest",
-    "windswept_forest"
-  ],
+  "biomes": "#minecraft:is_forest",
   "use_expansion_hack": false
 }
