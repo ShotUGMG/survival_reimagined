@@ -2,7 +2,9 @@
   "entries": [
     "survival_reimagined:aaf_scripture_integrate",
     "survival_reimagined:aaf_scriputre_loot",
-    "survival_reimagined:aaf_weapons_smith"
+    "survival_reimagined:aaf_weapons_smith",
+    "survival_reimagined:aaf_ruined_portal",
+    "survival_reimagined:aaf_buried_treasure"
   ],
   "replace": false
 }

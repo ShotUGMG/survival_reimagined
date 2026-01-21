@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:salt_rock"
+    },
+    "b": {
+      "item": "survival_reimagined:mortar_pestal"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:salt",
+    "count": 2
+  }
+}

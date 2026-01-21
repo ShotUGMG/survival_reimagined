@@ -8,7 +8,7 @@ import net.minecraft.core.BlockPos;
 
 public class BlockOfRawTinBlock extends Block {
 	public BlockOfRawTinBlock() {
-		super(BlockBehaviour.Properties.of().strength(5f, 4f));
+		super(BlockBehaviour.Properties.of().strength(5f, 4f).requiresCorrectToolForDrops());
 	}
 
 	@Override

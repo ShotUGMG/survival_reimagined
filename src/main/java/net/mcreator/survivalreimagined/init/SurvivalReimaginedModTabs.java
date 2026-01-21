@@ -399,7 +399,6 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModItems.CRIMSON_ARACHNID_SPAWN_EGG.get());
 				tabData.accept(SurvivalReimaginedModItems.ALPHA_CRIMSON_ARACHNID_SPAWN_EGG.get());
 				tabData.accept(SurvivalReimaginedModItems.CRIMSON_THREAD.get());
-				tabData.accept(SurvivalReimaginedModBlocks.SULFUR_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.NITRE_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.SULFUR.get());
 				tabData.accept(SurvivalReimaginedModItems.NITRE.get());
@@ -548,6 +547,9 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.WISTERIA_BUTTON.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.WISTERIA_PRESSURE_PLATE.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.WISTERIA_BARK.get());
+				tabData.accept(SurvivalReimaginedModBlocks.PURE_SALT_BLOCK.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.SALT_DEPOSIT.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.SALT_ROCK.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SR_COMPAT_ITEMS = REGISTRY.register("sr_compat_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.survival_reimagined.sr_compat_items")).icon(() -> new ItemStack(SurvivalReimaginedModItems.HEART.get())).displayItems((parameters, tabData) -> {

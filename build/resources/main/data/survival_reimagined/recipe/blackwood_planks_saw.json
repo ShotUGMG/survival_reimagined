@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "regions_unexplored:barked/blackwood_logs"
+    },
+    "b": {
+      "tag": "c:tools/saw"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:blackwood_plank",
+    "count": 8
+  }
+}

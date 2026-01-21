@@ -8,6 +8,7 @@
     "texture": "wooden_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Wooden Survival Knife",
     "specialInformation": {
       "fixedValue": []
@@ -29,7 +30,7 @@
     "immuneToFire": false,
     "blockDropsTier": "WOOD",
     "blocksAffected": [],
-    "stayInGridWhenCrafting": true,
+    "stayInGridWhenCrafting": false,
     "damageOnCrafting": true
   }
 }

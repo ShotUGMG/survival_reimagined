@@ -5,7 +5,7 @@
     "count": 1
   },
   "forge_input_2": {
-    "tag": "c:ingots/zinc",
+    "id": "survival_reimagined:rough_zinc",
     "count": 1
   },
   "forge_input_3": {
@@ -13,7 +13,7 @@
     "count": 1
   },
   "forge_output": {
-    "id": "survival_reimagined:uranium_ingot",
+    "id": "create:zinc_ingot",
     "count": 1
   },
   "category": [

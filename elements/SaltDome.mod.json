@@ -1,0 +1,47 @@
+{
+  "_fv": 79,
+  "_type": "structure",
+  "definition": {
+    "structure": "salt_top",
+    "projection": "terrain_matching",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 30,
+    "separation": 15,
+    "restrictionBiomes": [
+      {
+        "value": "#minecraft:is_overworld"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 3,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "pool",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "salt_shaft",
+            "projection": "terrain_matching",
+            "ignoredBlocks": [
+              {
+                "value": "Blocks.STRUCTURE_BLOCK"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

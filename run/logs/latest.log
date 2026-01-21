@@ -1,13 +1,13 @@
-[13Jan2026 14:26:52.638] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.190, --assetIndex, 17, --assetsDir, C:\\Users\\ashto\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.41, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.190, --fml.neoFormVersion, 20240808.144430]
-[13Jan2026 14:26:52.642] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
-[13Jan2026 14:26:52.643] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[13Jan2026 14:26:52.820] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[13Jan2026 14:26:52.904] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[13Jan2026 14:26:53.067] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[13Jan2026 14:26:53.270] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/ashto/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
-[13Jan2026 14:26:53.384] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.44, NVIDIA Corporation
-[13Jan2026 14:26:54.085] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 39 dependencies adding them to mods collection
-[13Jan2026 14:26:54.087] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[19Jan2026 23:29:58.953] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.190, --assetIndex, 17, --assetsDir, C:\\Users\\ashto\\.mcreator\\gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.41, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.190, --fml.neoFormVersion, 20240808.144430]
+[19Jan2026 23:29:58.956] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.8+9-LTS
+[19Jan2026 23:29:58.958] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.8 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[19Jan2026 23:29:59.535] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[19Jan2026 23:29:59.650] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[19Jan2026 23:29:59.865] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[19Jan2026 23:29:59.976] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/ashto/.mcreator/gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[19Jan2026 23:30:00.272] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 3060/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.44, NVIDIA Corporation
+[19Jan2026 23:30:01.110] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 39 dependencies adding them to mods collection
+[19Jan2026 23:30:01.113] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
@@ -50,195 +50,195 @@
 		Ponder 1.0.46 (ponder)
 		Regions Unexplored 0.5.6.1 (regions_unexplored)
 		Sodium 0.6.13+mc1.21.1 (sodium)
-		Survival Reimagined 1.3.4 (survival_reimagined)
+		Survival Reimagined 1.3.6 (survival_reimagined)
 		TerraBlender 4.1.0.8 (terrablender)
-[13Jan2026 14:26:55.966] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[13Jan2026 14:26:56.151] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.190, --gameDir, ., --assetsDir, C:\Users\ashto\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[13Jan2026 14:26:56.385] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
-[13Jan2026 14:26:56.449] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.450] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.451] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.threading.lighting.mixin
-[13Jan2026 14:26:56.455] [main/WARN] [mixin/]: Reference map 'regions_unexplored.refmap.json' for regions_unexplored.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.455] [main/WARN] [mixin/]: Reference map 'regions_unexplored.refmap.json' for regions_unexplored.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.455] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
-[13Jan2026 14:26:56.457] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.client.uncapvd.mixin
-[13Jan2026 14:26:56.504] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
-[13Jan2026 14:26:56.505] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
-[13Jan2026 14:26:56.506] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.server.utils.mixin
-[13Jan2026 14:26:56.541] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
-[13Jan2026 14:26:56.541] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
-[13Jan2026 14:26:56.541] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
-[13Jan2026 14:26:56.541] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
-[13Jan2026 14:26:56.542] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 146 options available, 0 override(s) found
-[13Jan2026 14:26:56.550] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.natives_math.mixin
-[13Jan2026 14:26:56.591] [main/WARN] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.natives_math.mixin due to incompatible Java version, see debug logs for details
-[13Jan2026 14:26:56.591] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.natives_math.mixin
-[13Jan2026 14:26:56.592] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.dfc.mixin
-[13Jan2026 14:26:56.595] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.dfc.mixin
-[13Jan2026 14:26:56.599] [main/WARN] [mixin/]: Reference map 'ponder.refmap.json' for ponder.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.601] [main/WARN] [mixin/]: Reference map 'create.refmap.json' for create.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.601] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
-[13Jan2026 14:26:56.605] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.notickvd.mixin
-[13Jan2026 14:26:56.638] [main/INFO] [C2ME Config System/]: Global Executor Parallelism: 9 configured, 9 evaluated, 9 default evaluated
-[13Jan2026 14:26:56.697] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.700] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.701] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.702] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.702] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.709] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
-[13Jan2026 14:26:56.718] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.chunkio.mixin
-[13Jan2026 14:26:56.722] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.math.mixin
-[13Jan2026 14:26:56.724] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
-[13Jan2026 14:26:56.790] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.793] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.796] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.802] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.805] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.808] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.817] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.824] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.829] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:56.869] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
-[13Jan2026 14:26:56.877] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.base.mixin
-[13Jan2026 14:26:56.884] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
-[13Jan2026 14:26:56.888] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
-[13Jan2026 14:26:56.894] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
-[13Jan2026 14:26:56.900] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.scheduling.mixin
-[13Jan2026 14:26:56.917] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.allocs.mixin
-[13Jan2026 14:26:56.923] [main/WARN] [mixin/]: Reference map 'gpu_tape.refmap.json' for gpu_tape.mixins.json could not be read. If this is a development environment you can ignore this message
-[13Jan2026 14:26:57.345] [main/WARN] [mixin/]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca.spottedleaf.starlight.common.thread.SchedulingUtil)
-[13Jan2026 14:26:57.399] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
-[13Jan2026 14:26:57.400] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
-[13Jan2026 14:26:57.409] [main/WARN] [mixin/]: Error loading class: net/vulkanmod/config/option/Options (java.lang.ClassNotFoundException: net.vulkanmod.config.option.Options)
-[13Jan2026 14:26:58.195] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
-[13Jan2026 14:26:58.197] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
-[13Jan2026 14:26:58.198] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
-[13Jan2026 14:26:58.200] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
-[13Jan2026 14:26:58.201] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
-[13Jan2026 14:26:58.204] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
-[13Jan2026 14:26:58.284] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
-[13Jan2026 14:26:58.284] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
-[13Jan2026 14:26:58.284] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
-[13Jan2026 14:26:58.412] [main/WARN] [mixin/]: Error loading class: journeymap/client/render/map/MapRenderer (java.lang.ClassNotFoundException: journeymap.client.render.map.MapRenderer)
-[13Jan2026 14:26:58.412] [main/WARN] [mixin/]: @Mixin target journeymap.client.render.map.MapRenderer was not found create.mixins.json:compat.journeymap.MapRendererAccessor from mod create
-[13Jan2026 14:26:58.430] [main/WARN] [mixin/]: Error loading class: journeymap/client/ui/fullscreen/Fullscreen (java.lang.ClassNotFoundException: journeymap.client.ui.fullscreen.Fullscreen)
-[13Jan2026 14:26:58.430] [main/WARN] [mixin/]: @Mixin target journeymap.client.ui.fullscreen.Fullscreen was not found create.mixins.json:compat.journeymap.JourneyFullscreenMapMixin from mod create
-[13Jan2026 14:26:58.460] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
-[13Jan2026 14:26:58.461] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
-[13Jan2026 14:26:58.462] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
-[13Jan2026 14:26:58.463] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
-[13Jan2026 14:26:58.605] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[13Jan2026 14:27:01.056] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 482 milliseconds
-[13Jan2026 14:27:01.316] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[13Jan2026 14:27:06.219] [main/INFO] [net.minecraft.data.worldgen.DimensionTypes/]: Mixin bootstrap method called
-[13Jan2026 14:27:06.220] [main/INFO] [net.minecraft.data.worldgen.DimensionTypes/]: Dimension types registered, cancelling original method
-[13Jan2026 14:27:06.909] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[13Jan2026 14:27:06.911] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[13Jan2026 14:27:06.915] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[13Jan2026 14:27:06.916] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[13Jan2026 14:27:06.917] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[13Jan2026 14:27:07.135] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ashto/MCreatorWorkspaces/survival_reborn_development/build/moddev/artifacts/neoforge-21.1.190.jar%23200!/assets/.mcassetsroot' uses unexpected schema
-[13Jan2026 14:27:07.135] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ashto/MCreatorWorkspaces/survival_reborn_development/build/moddev/artifacts/neoforge-21.1.190.jar%23200!/data/.mcassetsroot' uses unexpected schema
-[13Jan2026 14:27:07.168] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[13Jan2026 14:27:07.177] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[13Jan2026 14:27:07.320] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[13Jan2026 14:27:07.423] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Vendor: NVIDIA Corporation
-[13Jan2026 14:27:07.423] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
-[13Jan2026 14:27:07.423] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Version: 4.6.0 NVIDIA 591.44
-[13Jan2026 14:27:07.433] [Render thread/INFO] [Sodium-NvidiaWorkarounds/]: Modifying OpenGL context to apply workarounds for the NVIDIA graphics driver...
-[13Jan2026 14:27:07.807] [Render thread/INFO] [Iris/]: Debug functionality is disabled.
-[13Jan2026 14:27:07.809] [Render thread/INFO] [Iris/]: OpenGL 4.5 detected, enabling DSA.
-[13Jan2026 14:27:07.813] [ForkJoinPool.commonPool-worker-8/WARN] [Iris/]: [Iris Update Check] This version doesn't have an update index, skipping.
-[13Jan2026 14:27:07.831] [Render thread/INFO] [Iris/]: Shaders are disabled because enableShaders is set to false in iris.properties
-[13Jan2026 14:27:07.909] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Booting... (platform: NeoForge/KNeoForge, manual: false)
-[13Jan2026 14:27:07.910] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Ready. As always, this mod will speed up your world loading and might or might not break it. (mixinVersion: 0.8.7, time: 0 ms)
-[13Jan2026 14:27:07.913] [modloading-worker-0/INFO] [noisium/]: Loading Noisium.
-[13Jan2026 14:27:07.951] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.190, for MC 1.21.1
-[13Jan2026 14:27:08.006] [modloading-worker-0/INFO] [Regions Unexplored/]: Initializing Regions Unexplored from Forge Mod Initializer entrypoint.
-[13Jan2026 14:27:08.109] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.4 initializing! Commit hash: 8d3eda53e4de913a966c9daf050e3fb893b5d638
-[13Jan2026 14:27:08.400] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[13Jan2026 14:27:08.406] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 3.094 ms
-[13Jan2026 14:27:11.718] [Render thread/INFO] [Iris/]: Hardware information:
-[13Jan2026 14:27:11.718] [Render thread/INFO] [Iris/]: CPU: 16x AMD Ryzen 7 3800X 8-Core Processor 
-[13Jan2026 14:27:11.719] [Render thread/INFO] [Iris/]: GPU: NVIDIA GeForce RTX 3060/PCIe/SSE2 (Supports OpenGL 4.6.0 NVIDIA 591.44)
-[13Jan2026 14:27:11.719] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
-[13Jan2026 14:27:11.879] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
-[13Jan2026 14:27:12.210] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/c2me_fixes_worldgen_threading_issues, mod/terrablender, mod/fabric_api_base, mod/fabric_renderer_api_v1, mod/c2me_threading_lighting, mod/regions_unexplored, mod/c2me_fixes_chunkio_threading_issues, mod/c2me_client_uncapvd, mod/c2me_rewrites_chunk_serializer, mod/c2me_server_utils, mod/jei, mod/lithium, mod/ksyxis, mod/c2me_opts_natives_math, mod/c2me_opts_dfc, mod/flywheel, mod/ponder, mod/create, mod/c2me_fixes_general_threading_issues, mod/neoforge, mod/c2me_notickvd, mod/fabric_block_view_api_v2, mod/survival_reimagined, mod/noisium, mod/iris, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/c2me_opts_math, mod/c2me, mod/c2me_rewrites_chunk_system, mod/ferritecore, mod/fabric_rendering_data_attachment_v1, mod/c2me_base, mod/c2me_rewrites_chunkio, mod/c2me_fixes_worldgen_vanilla_bugs, mod/c2me_opts_worldgen_vanilla, mod/c2me_opts_scheduling, mod/c2me_opts_allocs, mod/gpu_tape
-[13Jan2026 14:27:12.298] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Starting version check at https://raw.githubusercontent.com/VidTu/Ksyxis/main/updater_ksyxis_neoforge.json
-[13Jan2026 14:27:12.350] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[13Jan2026 14:27:12.385] [Worker-Main-11/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes.ogg does not exist, cannot add it to event survival_reimagined:chimes
-[13Jan2026 14:27:12.386] [Worker-Main-11/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes2.ogg does not exist, cannot add it to event survival_reimagined:chimes
-[13Jan2026 14:27:12.386] [Worker-Main-11/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes3.ogg does not exist, cannot add it to event survival_reimagined:chimes
-[13Jan2026 14:27:12.391] [Worker-Main-11/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[13Jan2026 14:27:12.455] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[13Jan2026 14:27:12.456] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[13Jan2026 14:27:12.456] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:primary to index 1 for type OVERWORLD
-[13Jan2026 14:27:12.456] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:secondary to index 2 for type OVERWORLD
-[13Jan2026 14:27:12.456] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:nether to index 1 for type NETHER
-[13Jan2026 14:27:12.870] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Found status: UP_TO_DATE Current: 1.3.4 Target: null
-[13Jan2026 14:27:13.241] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 1: 1
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 2: 2
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 3: 3
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 4: 4
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 5: 5
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 6: 6
-[13Jan2026 14:27:13.242] [Worker-Main-12/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 7: 7
-[13Jan2026 14:27:13.314] [Worker-Main-9/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture survival_reimagined:item/heart with size 9x9 limits mip level from 2 to 0
-[13Jan2026 14:27:16.129] [Worker-Main-14/INFO] [PonderIndex/]: Registering Ponder Scenes took 53.78 ms
-[13Jan2026 14:27:16.133] [Worker-Main-14/INFO] [PonderIndex/]: Registering Ponder Tags took 4.170 ms
-[13Jan2026 14:27:16.259] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[13Jan2026 14:27:16.261] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[13Jan2026 14:27:16.292] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
-[13Jan2026 14:27:16.292] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[13Jan2026 14:27:16.388] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
-[13Jan2026 14:27:16.419] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/signs.png-atlas
-[13Jan2026 14:27:16.420] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[13Jan2026 14:27:16.421] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[13Jan2026 14:27:16.421] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
-[13Jan2026 14:27:16.431] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[13Jan2026 14:27:16.432] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
-[13Jan2026 14:27:16.432] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[13Jan2026 14:27:16.432] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[13Jan2026 14:27:16.499] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[13Jan2026 14:27:16.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[13Jan2026 14:27:16.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[13Jan2026 14:27:16.501] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[13Jan2026 14:27:16.502] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[13Jan2026 14:27:16.519] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[13Jan2026 14:27:16.565] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[13Jan2026 14:27:16.594] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 24.712 ms
-[13Jan2026 14:27:16.615] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 51 train hat configurations.
-[13Jan2026 14:27:16.616] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[13Jan2026 14:27:16.639] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
-[13Jan2026 14:27:19.909] [Render thread/INFO] [com.simibubi.create.Create/]: Created 448 recipes which will be injected into the game
-[13Jan2026 14:27:19.916] [Render thread/INFO] [com.simibubi.create.Create/]: Created 3 tags which will be injected into the game
-[13Jan2026 14:27:20.946] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/basalt_emerald_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:basalt_emerald_ore
-[13Jan2026 14:27:20.971] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/basalt_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:basalt_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
-[13Jan2026 14:27:20.974] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/black_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sandstone
-[13Jan2026 14:27:20.989] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/mossy_black_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:mossy_black_sand
-[13Jan2026 14:27:20.994] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/porous_flesh - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:porous_flesh
-[13Jan2026 14:27:20.998] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/white_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sandstone
-[13Jan2026 14:27:21.004] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/flesh - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:flesh
-[13Jan2026 14:27:21.019] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/deepslate_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:deepslate_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
-[13Jan2026 14:27:21.036] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/orange_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sandstone
-[13Jan2026 14:27:21.052] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/black_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sand
-[13Jan2026 14:27:21.059] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:regions_unexplored:blocks/silt_podzel - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: regions_unexplored:silt_podzel
-[13Jan2026 14:27:21.060] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/thermal_calcite - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:thermal_calcite
-[13Jan2026 14:27:21.061] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/kimberlite_emerald_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:kimberlite_emerald_ore
-[13Jan2026 14:27:21.072] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/orange_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sand
-[13Jan2026 14:27:21.073] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/white_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sand
-[13Jan2026 14:27:21.079] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/brimstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:brimstone
-[13Jan2026 14:27:21.084] [Worker-Main-10/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/kimberlite_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:kimberlite_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
-[13Jan2026 14:27:21.295] [Worker-Main-10/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:fir_log as it is missing following references: 
+[19Jan2026 23:30:02.599] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[19Jan2026 23:30:02.704] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.190, --gameDir, ., --assetsDir, C:\Users\ashto\.mcreator\gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[19Jan2026 23:30:02.905] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[19Jan2026 23:30:02.978] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:02.979] [main/WARN] [mixin/]: Reference map 'terrablender.refmap.json' for terrablender_neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:02.981] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.threading.lighting.mixin
+[19Jan2026 23:30:02.986] [main/WARN] [mixin/]: Reference map 'regions_unexplored.refmap.json' for regions_unexplored.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:02.986] [main/WARN] [mixin/]: Reference map 'regions_unexplored.refmap.json' for regions_unexplored.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:02.986] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[19Jan2026 23:30:02.992] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.client.uncapvd.mixin
+[19Jan2026 23:30:03.048] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[19Jan2026 23:30:03.049] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
+[19Jan2026 23:30:03.050] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.server.utils.mixin
+[19Jan2026 23:30:03.113] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[19Jan2026 23:30:03.113] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[19Jan2026 23:30:03.113] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
+[19Jan2026 23:30:03.113] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[19Jan2026 23:30:03.114] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 146 options available, 0 override(s) found
+[19Jan2026 23:30:03.123] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.natives_math.mixin
+[19Jan2026 23:30:03.162] [main/WARN] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.natives_math.mixin due to incompatible Java version, see debug logs for details
+[19Jan2026 23:30:03.162] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.natives_math.mixin
+[19Jan2026 23:30:03.163] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.dfc.mixin
+[19Jan2026 23:30:03.164] [main/INFO] [C2ME Modules Manager/]: Disabling com.ishland.c2me.opts.dfc.mixin
+[19Jan2026 23:30:03.170] [main/WARN] [mixin/]: Reference map 'ponder.refmap.json' for ponder.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.171] [main/WARN] [mixin/]: Reference map 'create.refmap.json' for create.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.173] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[19Jan2026 23:30:03.176] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.notickvd.mixin
+[19Jan2026 23:30:03.206] [main/INFO] [C2ME Config System/]: Global Executor Parallelism: 9 configured, 9 evaluated, 9 default evaluated
+[19Jan2026 23:30:03.236] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.238] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.238] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.239] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.240] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.247] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[19Jan2026 23:30:03.249] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[19Jan2026 23:30:03.253] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.math.mixin
+[19Jan2026 23:30:03.255] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
+[19Jan2026 23:30:03.294] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.295] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.296] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.297] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.299] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.308] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.310] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.313] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.314] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.338] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
+[19Jan2026 23:30:03.341] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.base.mixin
+[19Jan2026 23:30:03.343] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[19Jan2026 23:30:03.346] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[19Jan2026 23:30:03.348] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[19Jan2026 23:30:03.351] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[19Jan2026 23:30:03.358] [main/INFO] [C2ME Modules Manager/]: Initializing com.ishland.c2me.opts.allocs.mixin
+[19Jan2026 23:30:03.361] [main/WARN] [mixin/]: Reference map 'gpu_tape.refmap.json' for gpu_tape.mixins.json could not be read. If this is a development environment you can ignore this message
+[19Jan2026 23:30:03.608] [main/WARN] [mixin/]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca.spottedleaf.starlight.common.thread.SchedulingUtil)
+[19Jan2026 23:30:03.643] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
+[19Jan2026 23:30:03.644] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
+[19Jan2026 23:30:03.648] [main/WARN] [mixin/]: Error loading class: net/vulkanmod/config/option/Options (java.lang.ClassNotFoundException: net.vulkanmod.config.option.Options)
+[19Jan2026 23:30:04.250] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[19Jan2026 23:30:04.251] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[19Jan2026 23:30:04.251] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[19Jan2026 23:30:04.252] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[19Jan2026 23:30:04.253] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[19Jan2026 23:30:04.255] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[19Jan2026 23:30:04.296] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[19Jan2026 23:30:04.296] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[19Jan2026 23:30:04.298] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[19Jan2026 23:30:04.400] [main/WARN] [mixin/]: Error loading class: journeymap/client/render/map/MapRenderer (java.lang.ClassNotFoundException: journeymap.client.render.map.MapRenderer)
+[19Jan2026 23:30:04.400] [main/WARN] [mixin/]: @Mixin target journeymap.client.render.map.MapRenderer was not found create.mixins.json:compat.journeymap.MapRendererAccessor from mod create
+[19Jan2026 23:30:04.416] [main/WARN] [mixin/]: Error loading class: journeymap/client/ui/fullscreen/Fullscreen (java.lang.ClassNotFoundException: journeymap.client.ui.fullscreen.Fullscreen)
+[19Jan2026 23:30:04.416] [main/WARN] [mixin/]: @Mixin target journeymap.client.ui.fullscreen.Fullscreen was not found create.mixins.json:compat.journeymap.JourneyFullscreenMapMixin from mod create
+[19Jan2026 23:30:04.448] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
+[19Jan2026 23:30:04.449] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
+[19Jan2026 23:30:04.451] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/sodium/client/gui/SodiumGameOptionPages (java.lang.ClassNotFoundException: me.jellysquid.mods.sodium.client.gui.SodiumGameOptionPages)
+[19Jan2026 23:30:04.452] [main/WARN] [mixin/]: Error loading class: net/caffeinemc/sodium/config/user/UserConfigCategories (java.lang.ClassNotFoundException: net.caffeinemc.sodium.config.user.UserConfigCategories)
+[19Jan2026 23:30:04.588] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[19Jan2026 23:30:06.649] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 485 milliseconds
+[19Jan2026 23:30:06.910] [main/WARN] [oshi.driver.windows.perfmon.PerfmonDisabled/]: Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[19Jan2026 23:30:12.466] [main/INFO] [net.minecraft.data.worldgen.DimensionTypes/]: Mixin bootstrap method called
+[19Jan2026 23:30:12.467] [main/INFO] [net.minecraft.data.worldgen.DimensionTypes/]: Dimension types registered, cancelling original method
+[19Jan2026 23:30:13.113] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[19Jan2026 23:30:13.114] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[19Jan2026 23:30:13.118] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[19Jan2026 23:30:13.119] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[19Jan2026 23:30:13.120] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[19Jan2026 23:30:13.349] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ashto/MCreatorWorkspaces/survival_reborn_development/build/moddev/artifacts/neoforge-21.1.190.jar%23200!/assets/.mcassetsroot' uses unexpected schema
+[19Jan2026 23:30:13.349] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ashto/MCreatorWorkspaces/survival_reborn_development/build/moddev/artifacts/neoforge-21.1.190.jar%23200!/data/.mcassetsroot' uses unexpected schema
+[19Jan2026 23:30:13.381] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[19Jan2026 23:30:13.389] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[19Jan2026 23:30:13.550] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[19Jan2026 23:30:13.633] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Vendor: NVIDIA Corporation
+[19Jan2026 23:30:13.633] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2
+[19Jan2026 23:30:13.633] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Version: 4.6.0 NVIDIA 591.44
+[19Jan2026 23:30:13.636] [Render thread/INFO] [Sodium-NvidiaWorkarounds/]: Modifying OpenGL context to apply workarounds for the NVIDIA graphics driver...
+[19Jan2026 23:30:13.932] [Render thread/INFO] [Iris/]: Debug functionality is disabled.
+[19Jan2026 23:30:13.939] [Render thread/INFO] [Iris/]: OpenGL 4.5 detected, enabling DSA.
+[19Jan2026 23:30:13.976] [Render thread/INFO] [Iris/]: Shaders are disabled because enableShaders is set to false in iris.properties
+[19Jan2026 23:30:14.108] [ForkJoinPool.commonPool-worker-8/WARN] [Iris/]: [Iris Update Check] This version doesn't have an update index, skipping.
+[19Jan2026 23:30:19.405] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Booting... (platform: NeoForge/KNeoForge, manual: false)
+[19Jan2026 23:30:19.405] [modloading-worker-0/INFO] [Ksyxis/MOD_KSYXIS]: Ksyxis: Ready. As always, this mod will speed up your world loading and might or might not break it. (mixinVersion: 0.8.7, time: 0 ms)
+[19Jan2026 23:30:19.408] [modloading-worker-0/INFO] [noisium/]: Loading Noisium.
+[19Jan2026 23:30:19.433] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.190, for MC 1.21.1
+[19Jan2026 23:30:19.486] [modloading-worker-0/INFO] [Regions Unexplored/]: Initializing Regions Unexplored from Forge Mod Initializer entrypoint.
+[19Jan2026 23:30:19.558] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.4 initializing! Commit hash: 8d3eda53e4de913a966c9daf050e3fb893b5d638
+[19Jan2026 23:30:19.769] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[19Jan2026 23:30:19.771] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.594 ms
+[19Jan2026 23:30:23.333] [Render thread/INFO] [Iris/]: Hardware information:
+[19Jan2026 23:30:23.334] [Render thread/INFO] [Iris/]: CPU: 16x AMD Ryzen 7 3800X 8-Core Processor 
+[19Jan2026 23:30:23.334] [Render thread/INFO] [Iris/]: GPU: NVIDIA GeForce RTX 3060/PCIe/SSE2 (Supports OpenGL 4.6.0 NVIDIA 591.44)
+[19Jan2026 23:30:23.334] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
+[19Jan2026 23:30:23.489] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[19Jan2026 23:30:23.793] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/c2me_fixes_worldgen_threading_issues, mod/terrablender, mod/fabric_api_base, mod/fabric_renderer_api_v1, mod/c2me_threading_lighting, mod/regions_unexplored, mod/c2me_fixes_chunkio_threading_issues, mod/c2me_client_uncapvd, mod/c2me_rewrites_chunk_serializer, mod/c2me_server_utils, mod/jei, mod/lithium, mod/ksyxis, mod/c2me_opts_natives_math, mod/c2me_opts_dfc, mod/flywheel, mod/ponder, mod/create, mod/c2me_fixes_general_threading_issues, mod/neoforge, mod/c2me_notickvd, mod/fabric_block_view_api_v2, mod/survival_reimagined, mod/noisium, mod/iris, mod/c2me_opts_worldgen_general, mod/c2me_opts_chunkio, mod/c2me_opts_math, mod/c2me, mod/c2me_rewrites_chunk_system, mod/ferritecore, mod/fabric_rendering_data_attachment_v1, mod/c2me_base, mod/c2me_rewrites_chunkio, mod/c2me_fixes_worldgen_vanilla_bugs, mod/c2me_opts_worldgen_vanilla, mod/c2me_opts_scheduling, mod/c2me_opts_allocs, mod/gpu_tape
+[19Jan2026 23:30:23.878] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Starting version check at https://raw.githubusercontent.com/VidTu/Ksyxis/main/updater_ksyxis_neoforge.json
+[19Jan2026 23:30:23.973] [Worker-Main-13/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[19Jan2026 23:30:24.052] [Render thread/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[19Jan2026 23:30:24.052] [Render thread/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[19Jan2026 23:30:24.052] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:primary to index 1 for type OVERWORLD
+[19Jan2026 23:30:24.053] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:secondary to index 2 for type OVERWORLD
+[19Jan2026 23:30:24.053] [Render thread/INFO] [terrablender/]: Registered region regions_unexplored:nether to index 1 for type NETHER
+[19Jan2026 23:30:24.100] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes.ogg does not exist, cannot add it to event survival_reimagined:chimes
+[19Jan2026 23:30:24.100] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes2.ogg does not exist, cannot add it to event survival_reimagined:chimes
+[19Jan2026 23:30:24.100] [Worker-Main-2/WARN] [net.minecraft.client.sounds.SoundManager/]: File survival_reimagined:sounds/chimes3.ogg does not exist, cannot add it to event survival_reimagined:chimes
+[19Jan2026 23:30:24.381] [Worker-Main-14/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[19Jan2026 23:30:24.519] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [ksyxis] Found status: UP_TO_DATE Current: 1.3.4 Target: null
+[19Jan2026 23:30:24.780] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 1: 1
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 2: 2
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 3: 3
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 4: 4
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 5: 5
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 6: 6
+[19Jan2026 23:30:24.782] [Worker-Main-2/WARN] [net.minecraft.client.renderer.texture.SpriteContents/]: Invalid frame index on sprite survival_reimagined:block/wisteria_leaves frame 7: 7
+[19Jan2026 23:30:24.815] [Worker-Main-7/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture survival_reimagined:item/heart with size 9x9 limits mip level from 2 to 0
+[19Jan2026 23:30:27.856] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Scenes took 80.49 ms
+[19Jan2026 23:30:27.861] [Worker-Main-5/INFO] [PonderIndex/]: Registering Ponder Tags took 4.387 ms
+[19Jan2026 23:30:27.999] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[19Jan2026 23:30:27.999] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[19Jan2026 23:30:28.033] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek(R) Audio)
+[19Jan2026 23:30:28.034] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[19Jan2026 23:30:28.125] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/blocks.png-atlas
+[19Jan2026 23:30:28.160] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/signs.png-atlas
+[19Jan2026 23:30:28.161] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[19Jan2026 23:30:28.162] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[19Jan2026 23:30:28.163] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 2048x1024x2 minecraft:textures/atlas/armor_trims.png-atlas
+[19Jan2026 23:30:28.171] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[19Jan2026 23:30:28.172] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x2 minecraft:textures/atlas/decorated_pot.png-atlas
+[19Jan2026 23:30:28.172] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[19Jan2026 23:30:28.172] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[19Jan2026 23:30:28.249] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[19Jan2026 23:30:28.252] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[19Jan2026 23:30:28.252] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[19Jan2026 23:30:28.252] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[19Jan2026 23:30:28.254] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[19Jan2026 23:30:28.274] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[19Jan2026 23:30:28.324] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[19Jan2026 23:30:28.355] [Render thread/INFO] [flywheel/backend/shaders/]: Loaded 77 shader sources in 26.729 ms
+[19Jan2026 23:30:28.375] [Render thread/INFO] [com.simibubi.create.Create/]: Loaded 51 train hat configurations.
+[19Jan2026 23:30:28.376] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[19Jan2026 23:30:28.399] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[19Jan2026 23:30:52.617] [Render thread/INFO] [com.simibubi.create.Create/]: Created 448 recipes which will be injected into the game
+[19Jan2026 23:30:52.624] [Render thread/INFO] [com.simibubi.create.Create/]: Created 3 tags which will be injected into the game
+[19Jan2026 23:30:53.509] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/basalt_emerald_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:basalt_emerald_ore
+[19Jan2026 23:30:53.530] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/basalt_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:basalt_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
+[19Jan2026 23:30:53.533] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/black_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sandstone
+[19Jan2026 23:30:53.544] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/mossy_black_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:mossy_black_sand
+[19Jan2026 23:30:53.552] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/porous_flesh - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:porous_flesh
+[19Jan2026 23:30:53.556] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/white_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sandstone
+[19Jan2026 23:30:53.563] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/flesh - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:flesh
+[19Jan2026 23:30:53.580] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/deepslate_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:deepslate_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
+[19Jan2026 23:30:53.596] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:regions_unexplored:blocks/silt_podzol - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: regions_unexplored:silt_podzel
+[19Jan2026 23:30:53.600] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/orange_sandstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sandstone
+[19Jan2026 23:30:53.618] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/black_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sand
+[19Jan2026 23:30:53.632] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/thermal_calcite - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:thermal_calcite
+[19Jan2026 23:30:53.634] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/kimberlite_emerald_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:kimberlite_emerald_ore
+[19Jan2026 23:30:53.652] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/orange_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sand
+[19Jan2026 23:30:53.654] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/white_sand - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sand
+[19Jan2026 23:30:53.664] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:biomesoplenty:blocks/brimstone - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:brimstone
+[19Jan2026 23:30:53.671] [Worker-Main-15/ERROR] [net.minecraft.world.level.storage.loot.LootDataType/]: Couldn't parse element ResourceKey[minecraft:root / minecraft:loot_table]:survival_reimagined:blocks/kimberlite_spinel_ore - Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:kimberlite_spinel_ore; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:rough_spinel
+[19Jan2026 23:30:53.934] [Worker-Main-14/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:fir_log as it is missing following references: 
 	biomesoplenty:fir_log (from mod/survival_reimagined)
-[13Jan2026 14:27:21.296] [Worker-Main-10/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:stripped_fir_log as it is missing following references: 
+[19Jan2026 23:30:53.935] [Worker-Main-14/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:stripped_fir_log as it is missing following references: 
 	biomesoplenty:stripped_fir_log (from mod/survival_reimagined)
-[13Jan2026 14:27:21.398] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:fir_log as it is missing following references: 
+[19Jan2026 23:30:54.081] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag biomesoplenty:fir_log as it is missing following references: 
 	biomesoplenty:fir_log (from mod/survival_reimagined)
-[13Jan2026 14:27:21.399] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag c:alloy_block/silver_items as it is missing following references: 
+[19Jan2026 23:30:54.084] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag c:alloy_block/silver_items as it is missing following references: 
 	minecraft:raw_silver_block (from mod/survival_reimagined)
 	minecraft:silver_block (from mod/survival_reimagined)
-[13Jan2026 14:27:21.401] [Worker-Main-3/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag c:alloy_block_items as it is missing following references: 
+[19Jan2026 23:30:54.086] [Worker-Main-5/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag c:alloy_block_items as it is missing following references: 
 	c:alloy_block/copper_items (from mod/survival_reimagined)
 	c:alloy_block/tin_items (from mod/survival_reimagined)
 	c:alloy_block/iron_items (from mod/survival_reimagined)
@@ -250,7 +250,7 @@
 	c:alloy_block/titanium_items (from mod/survival_reimagined)
 	c:alloy_block/uranium_items (from mod/survival_reimagined)
 	c:alloy_block/zinc_items (from mod/survival_reimagined)
-[13Jan2026 14:27:21.633] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:flesh
+[19Jan2026 23:30:54.363] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:flesh
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:flesh
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -304,7 +304,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.642] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_helmet
+[19Jan2026 23:30:54.368] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_helmet
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -358,7 +358,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.648] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_oxidized_chiseled_copper
+[19Jan2026 23:30:54.373] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_oxidized_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:waxed_oxidized_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:waxed_oxidized_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:waxed_oxidized_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -412,7 +412,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.652] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_shovel
+[19Jan2026 23:30:54.376] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_shovel
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -466,7 +466,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.655] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_hoe
+[19Jan2026 23:30:54.379] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_hoe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -520,7 +520,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.664] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_sword
+[19Jan2026 23:30:54.386] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_sword
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -574,7 +574,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.667] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:crimson_planks
+[19Jan2026 23:30:54.389] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:crimson_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -628,7 +628,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.676] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:mangrove_planks
+[19Jan2026 23:30:54.390] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:mangrove_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -682,7 +682,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.683] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_axe
+[19Jan2026 23:30:54.396] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_axe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -736,7 +736,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.690] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_weathered_chiseled_copper
+[19Jan2026 23:30:54.402] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_weathered_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:waxed_weathered_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:waxed_weathered_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:waxed_weathered_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -790,7 +790,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.693] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:exposed_chiseled_copper
+[19Jan2026 23:30:54.404] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:exposed_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:exposed_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:exposed_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:exposed_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -844,7 +844,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.696] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:dark_oak_planks
+[19Jan2026 23:30:54.406] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:dark_oak_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -898,7 +898,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.698] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_helmet
+[19Jan2026 23:30:54.406] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_helmet
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -952,7 +952,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.701] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:turanite
+[19Jan2026 23:30:54.409] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:turanite
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/uranium_items"},{"tag":"c:alloy/titanium_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_turanite","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/uranium_items"},{"tag":"c:alloy/titanium_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_turanite","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/uranium_items"},{"tag":"c:alloy/titanium_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_turanite","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/uranium_items"},{"tag":"c:alloy/titanium_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_turanite","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1006,7 +1006,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.704] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_axe
+[19Jan2026 23:30:54.412] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_axe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1060,7 +1060,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.708] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_boots
+[19Jan2026 23:30:54.415] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_boots
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1114,7 +1114,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.710] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:oak_planks
+[19Jan2026 23:30:54.416] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:oak_planks
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1168,7 +1168,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.712] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:orange_sand
+[19Jan2026 23:30:54.418] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:orange_sand
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sand
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1222,7 +1222,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.714] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_pickaxe
+[19Jan2026 23:30:54.421] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_pickaxe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1276,7 +1276,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.716] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:white_sandstone
+[19Jan2026 23:30:54.422] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:white_sandstone
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sandstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1330,7 +1330,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.718] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:cherry_planks
+[19Jan2026 23:30:54.424] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:cherry_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1384,7 +1384,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.720] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:plated_diamond
+[19Jan2026 23:30:54.425] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:plated_diamond
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/steel_items"},{"tag":"c:alloy/diamond_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_plated_diamond","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/steel_items"},{"tag":"c:alloy/diamond_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_plated_diamond","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/steel_items"},{"tag":"c:alloy/diamond_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_plated_diamond","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/steel_items"},{"tag":"c:alloy/diamond_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_plated_diamond","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1438,7 +1438,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.724] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:black_sandstone
+[19Jan2026 23:30:54.429] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:black_sandstone
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sandstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1492,7 +1492,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.726] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:white_sand
+[19Jan2026 23:30:54.431] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:white_sand
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:white_sand
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1546,7 +1546,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.729] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_shovel
+[19Jan2026 23:30:54.433] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_shovel
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1600,7 +1600,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.731] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:black_sand
+[19Jan2026 23:30:54.436] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:black_sand
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:black_sand
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1654,7 +1654,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.732] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_axe
+[19Jan2026 23:30:54.437] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_axe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1708,7 +1708,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.735] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_boots
+[19Jan2026 23:30:54.438] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_boots
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1762,7 +1762,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.737] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_chestplate
+[19Jan2026 23:30:54.439] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_chestplate
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1816,7 +1816,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.738] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:netherite_ingot
+[19Jan2026 23:30:54.440] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:netherite_ingot
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1870,7 +1870,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.741] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:acacia_planks
+[19Jan2026 23:30:54.442] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:acacia_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1924,7 +1924,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.744] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:spruce_planks
+[19Jan2026 23:30:54.445] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:spruce_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -1978,7 +1978,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.745] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:bronze
+[19Jan2026 23:30:54.446] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:bronze
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/copper_items"},{"tag":"c:alloy/tin_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_bronze","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/copper_items"},{"tag":"c:alloy/tin_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_bronze","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/copper_items"},{"tag":"c:alloy/tin_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_bronze","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/copper_items"},{"tag":"c:alloy/tin_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_bronze","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2032,7 +2032,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.747] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:mixing/netherite_ingot
+[19Jan2026 23:30:54.448] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:mixing/netherite_ingot
 com.google.gson.JsonParseException: Failed to parse either. First: Failed to parse either. First: Not a json array: {"count":4,"item":"c:alloy/netherite_items"}; Second: No key tag in MapLike[{"count":4,"item":"c:alloy/netherite_items"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: c:alloy/netherite_items; Second: Input does not contain a key [type]: MapLike[{"count":4,"item":"c:alloy/netherite_items"}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2086,7 +2086,7 @@ com.google.gson.JsonParseException: Failed to parse either. First: Failed to par
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.748] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:netherite
+[19Jan2026 23:30:54.449] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:netherite
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/gold_items"},{"tag":"c:alloy/netherite_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_netherite","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/gold_items"},{"tag":"c:alloy/netherite_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_netherite","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/gold_items"},{"tag":"c:alloy/netherite_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_netherite","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/gold_items"},{"tag":"c:alloy/netherite_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_netherite","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2140,7 +2140,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.752] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:orange_sandstone
+[19Jan2026 23:30:54.451] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:orange_sandstone
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:orange_sandstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2194,7 +2194,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.758] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:chiseled_red_sandstone
+[19Jan2026 23:30:54.457] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:chiseled_red_sandstone
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:red_sanstone"}; Second: No key tag in MapLike[{"item":"minecraft:red_sanstone"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:red_sanstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2248,7 +2248,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.760] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_exposed_chiseled_copper
+[19Jan2026 23:30:54.460] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:waxed_exposed_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:waxed_exposed_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:waxed_exposed_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:waxed_exposed_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2302,7 +2302,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.761] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_hoe
+[19Jan2026 23:30:54.461] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_hoe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2356,7 +2356,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.764] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_pickaxe
+[19Jan2026 23:30:54.465] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_pickaxe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2410,7 +2410,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.768] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_sword
+[19Jan2026 23:30:54.469] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_sword
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2464,7 +2464,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.771] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:gold_sapphire_rune
+[19Jan2026 23:30:54.471] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:gold_sapphire_rune
 com.google.gson.JsonParseException: No key metal_output in MapLike[{"type":"survival_reimagined:metal_refining","ingredients":[{"item":"survival_reimagined:empty_gold_rune"},{"item":"survival_reimagined:sapphire"},{"tag":"c:tools/hammer"}],"output":{"id":"survival_reimagined:sapphire_gold_rune","count":1}}]; No key metal_input_3 in MapLike[{"type":"survival_reimagined:metal_refining","ingredients":[{"item":"survival_reimagined:empty_gold_rune"},{"item":"survival_reimagined:sapphire"},{"tag":"c:tools/hammer"}],"output":{"id":"survival_reimagined:sapphire_gold_rune","count":1}}]; No key metal_input_2 in MapLike[{"type":"survival_reimagined:metal_refining","ingredients":[{"item":"survival_reimagined:empty_gold_rune"},{"item":"survival_reimagined:sapphire"},{"tag":"c:tools/hammer"}],"output":{"id":"survival_reimagined:sapphire_gold_rune","count":1}}]; No key metal_input_1 in MapLike[{"type":"survival_reimagined:metal_refining","ingredients":[{"item":"survival_reimagined:empty_gold_rune"},{"item":"survival_reimagined:sapphire"},{"tag":"c:tools/hammer"}],"output":{"id":"survival_reimagined:sapphire_gold_rune","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2518,7 +2518,7 @@ com.google.gson.JsonParseException: No key metal_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.774] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_leggings
+[19Jan2026 23:30:54.474] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_leggings
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2572,7 +2572,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.775] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:warped_planks
+[19Jan2026 23:30:54.475] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:warped_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2626,7 +2626,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.777] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:thermal_calcite
+[19Jan2026 23:30:54.476] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:thermal_calcite
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:thermal_calcite
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2680,7 +2680,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.778] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_chestplate
+[19Jan2026 23:30:54.478] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_chestplate
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2734,7 +2734,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.779] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_pickaxe
+[19Jan2026 23:30:54.479] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_pickaxe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2788,7 +2788,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.780] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:jungle_planks
+[19Jan2026 23:30:54.480] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:jungle_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2842,7 +2842,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.782] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe regions_unexplored:alpha_planks
+[19Jan2026 23:30:54.480] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe regions_unexplored:alpha_planks
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: regions_unexplored:alpha_oak_planks
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2896,7 +2896,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.783] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_leggings
+[19Jan2026 23:30:54.482] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_leggings
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -2950,7 +2950,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.784] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:chiseled_sandstone
+[19Jan2026 23:30:54.483] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:chiseled_sandstone
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:sanstone"}; Second: No key tag in MapLike[{"item":"minecraft:sanstone"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:sanstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3004,7 +3004,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.785] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_leggings
+[19Jan2026 23:30:54.483] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_leggings
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3058,7 +3058,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.786] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_hoe
+[19Jan2026 23:30:54.484] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_hoe
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3112,7 +3112,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.790] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:mixing/diamond_ingot
+[19Jan2026 23:30:54.488] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:mixing/diamond_ingot
 com.google.gson.JsonParseException: Failed to parse either. First: Failed to parse either. First: Not a json array: {"item":"c:alloy/diamond_items"}; Second: No key tag in MapLike[{"item":"c:alloy/diamond_items"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: c:alloy/diamond_items; Second: Input does not contain a key [type]: MapLike[{"item":"c:alloy/diamond_items"}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3166,7 +3166,7 @@ com.google.gson.JsonParseException: Failed to parse either. First: Failed to par
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.792] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:birch_planks
+[19Jan2026 23:30:54.490] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:birch_planks
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3220,7 +3220,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.795] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_helmet
+[19Jan2026 23:30:54.493] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_helmet
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3274,7 +3274,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.802] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_boots
+[19Jan2026 23:30:54.516] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:diamond_boots
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3328,7 +3328,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.804] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:silver_rune
+[19Jan2026 23:30:54.518] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:silver_rune
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"survival_reimagined:silver_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_silver_rune","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"survival_reimagined:silver_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_silver_rune","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"survival_reimagined:silver_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_silver_rune","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"survival_reimagined:silver_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_silver_rune","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3382,7 +3382,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.805] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:steel
+[19Jan2026 23:30:54.521] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:steel
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/iron_items"},{"tag":"c:alloy/manganese_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_steel","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/iron_items"},{"tag":"c:alloy/manganese_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_steel","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/iron_items"},{"tag":"c:alloy/manganese_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_steel","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"tag":"c:alloy/iron_items"},{"tag":"c:alloy/manganese_items"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:rough_steel","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3436,7 +3436,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.808] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:brimstone
+[19Jan2026 23:30:54.524] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe biomesoplenty:brimstone
 com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: biomesoplenty:brimstone
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3490,7 +3490,7 @@ com.google.gson.JsonParseException: Unknown registry key in ResourceKey[minecraf
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.812] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_sword
+[19Jan2026 23:30:54.528] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_sword
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3544,7 +3544,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.817] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:clay
+[19Jan2026 23:30:54.533] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:clay
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3598,7 +3598,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.819] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:limestone
+[19Jan2026 23:30:54.535] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe create:limestone
 com.google.gson.JsonParseException: Map entry 'a' : Failed to parse either. First: Not a json array: {"item":"survival_reimagined:limetstone_rock"}; Second: No key tag in MapLike[{"item":"survival_reimagined:limetstone_rock"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: survival_reimagined:limetstone_rock
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3652,7 +3652,7 @@ com.google.gson.JsonParseException: Map entry 'a' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.822] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:weathered_chiseled_copper
+[19Jan2026 23:30:54.539] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:weathered_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:weathered_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:weathered_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:weathered_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3706,7 +3706,7 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.826] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:gold_rune
+[19Jan2026 23:30:54.543] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe survival_reimagined:gold_rune
 com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"minecraft:gold_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_gold_rune","count":1}}]; No key forge_input_3 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"minecraft:gold_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_gold_rune","count":1}}]; No key forge_input_2 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"minecraft:gold_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_gold_rune","count":1}}]; No key forge_input_1 in MapLike[{"type":"survival_reimagined:forging","ingredients":[{"item":"minecraft:gold_ingot"},{"item":"survival_reimagined:rune_mold"},{"tag":"c:fuels"}],"output":{"id":"survival_reimagined:empty_gold_rune","count":1}}]
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3760,7 +3760,7 @@ com.google.gson.JsonParseException: No key forge_output in MapLike[{"type":"surv
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.830] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_shovel
+[19Jan2026 23:30:54.547] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:iron_shovel
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3814,7 +3814,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.832] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_chestplate
+[19Jan2026 23:30:54.550] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:gold_chestplate
 com.google.gson.JsonParseException: Item must not be minecraft:air
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3868,7 +3868,7 @@ com.google.gson.JsonParseException: Item must not be minecraft:air
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.835] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:oxidized_chiseled_copper
+[19Jan2026 23:30:54.555] [Render thread/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe minecraft:oxidized_chiseled_copper
 com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. First: Not a json array: {"item":"minecraft:oxidized_copper_block"}; Second: No key tag in MapLike[{"item":"minecraft:oxidized_copper_block"}]; Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:oxidized_copper_block
 	at MC-BOOTSTRAP/datafixerupper@8.0.16/com.mojang.serialization.DataResult$Error.getOrThrow(DataResult.java:287) ~[datafixerupper-8.0.16.jar%23121!/:?]
 	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.item.crafting.RecipeManager.apply(RecipeManager.java:60) ~[neoforge-21.1.190.jar%23200!/:?]
@@ -3922,100 +3922,138 @@ com.google.gson.JsonParseException: Map entry 'b' : Failed to parse either. Firs
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
 	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
-[13Jan2026 14:27:21.839] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 4298 recipes
-[13Jan2026 14:27:22.026] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3223 advancements
-[13Jan2026 14:27:22.825] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
-[13Jan2026 14:27:22.916] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[13Jan2026 14:27:22.917] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[13Jan2026 14:27:23.030] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:eucalyptus_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
-[13Jan2026 14:27:23.045] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:slime that was registered with MONSTER mob category but was added under AMBIENT mob category for survival_reimagined:radiated_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
-[13Jan2026 14:27:23.045] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
-[13Jan2026 14:27:23.050] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:sparse_rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
-[13Jan2026 14:27:23.052] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:tropics biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
-[13Jan2026 14:27:23.070] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
-[13Jan2026 14:27:23.094] [Server thread/INFO] [CheckedThreadLocalRandom/]: Enforcing safe world random access
-[13Jan2026 14:27:23.349] [Server thread/INFO] [TheSpeedyObjectFactory/]: Using TheSpeedyObjectFactory with Unsafe
-[13Jan2026 14:27:23.473] [Server thread/INFO] [Regions Unexplored/]: Loading dimension "minecraft:the_nether" with biome source: "minecraft:multi_noise".
-[13Jan2026 14:27:23.473] [Server thread/INFO] [Ksyxis/MinecraftServerMixin/MOD_KSYXIS]: Ksyxis: Hey. This is Ksyxis. We will now load the world and will try to do it quickly. If the game is not responding after this, it's probably us to blame or delete for good. This message appears always, even if the mod works flawlessly. (injector: modern, ci: CallbackInfo[TYPE=CallbackInfo,NAME=prepareLevels,CANCELLABLE=false], server: net.minecraft.client.server.IntegratedServer@351b9520)
-[13Jan2026 14:27:23.473] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[13Jan2026 14:27:23.497] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 19 ms
-[13Jan2026 14:27:23.497] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[13Jan2026 14:27:23.498] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
+[19Jan2026 23:30:54.558] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 4322 recipes
+[19Jan2026 23:30:54.798] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3223 advancements
+[19Jan2026 23:30:55.573] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent too early, ignoring
+[19Jan2026 23:30:55.655] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[19Jan2026 23:30:55.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[19Jan2026 23:30:55.762] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:eucalyptus_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[19Jan2026 23:30:55.773] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:slime that was registered with MONSTER mob category but was added under AMBIENT mob category for survival_reimagined:radiated_forest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[19Jan2026 23:30:55.774] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[19Jan2026 23:30:55.778] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:sparse_rainforest biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[19Jan2026 23:30:55.780] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:ocelot that was registered with CREATURE mob category but was added under MONSTER mob category for regions_unexplored:tropics biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[19Jan2026 23:30:55.795] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[19Jan2026 23:30:55.818] [Server thread/INFO] [CheckedThreadLocalRandom/]: Enforcing safe world random access
+[19Jan2026 23:30:56.042] [Server thread/INFO] [TheSpeedyObjectFactory/]: Using TheSpeedyObjectFactory with Unsafe
+[19Jan2026 23:30:56.166] [Server thread/INFO] [Regions Unexplored/]: Loading dimension "minecraft:the_nether" with biome source: "minecraft:multi_noise".
+[19Jan2026 23:30:56.167] [Server thread/INFO] [Ksyxis/MinecraftServerMixin/MOD_KSYXIS]: Ksyxis: Hey. This is Ksyxis. We will now load the world and will try to do it quickly. If the game is not responding after this, it's probably us to blame or delete for good. This message appears always, even if the mod works flawlessly. (injector: modern, ci: CallbackInfo[TYPE=CallbackInfo,NAME=prepareLevels,CANCELLABLE=false], server: net.minecraft.client.server.IntegratedServer@346ee7b6)
+[19Jan2026 23:30:56.167] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[19Jan2026 23:30:56.194] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[19Jan2026 23:30:56.195] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
    Dev warning - Legacy Tags detected. Please migrate your 'forge' namespace tags to the 'c' namespace! See net.neoforged.neoforge.common.Tags.java for all tags.
    NOTE: Many tags have been moved around or renamed. Some new ones were added so please review the new tags.
     And make sure you follow tag conventions for new tags! The convention is `c` with nouns generally being plural and adjectives being singular.
    You can disable this message in NeoForge's common config by setting `logLegacyTagWarnings` to "SILENCED" or see individual tags with "DEV_VERBOSE".
 
-[13Jan2026 14:27:23.587] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 9, from 10
-[13Jan2026 14:27:23.587] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[13Jan2026 14:27:23.893] [Render thread/INFO] [com.simibubi.create.Create/]: Created 448 recipes which will be injected into the game
-[13Jan2026 14:27:23.897] [Render thread/INFO] [com.simibubi.create.Create/]: Created 3 tags which will be injected into the game
-[13Jan2026 14:27:24.069] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
-[13Jan2026 14:27:24.738] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:2cd94968] logged in with entity id 1 at (34.51424784084332, 4.0, 18.472458433043855)
-[13Jan2026 14:27:24.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[13Jan2026 14:27:24.811] [Render thread/INFO] [Iris/]: Reloading pipeline on dimension change: minecraft:overworld => minecraft:overworld
-[13Jan2026 14:27:24.813] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
-[13Jan2026 14:27:24.813] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
-[13Jan2026 14:27:25.059] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
-[13Jan2026 14:27:25.188] [Render thread/INFO] [flywheel/]: Started 10 worker threads
-[13Jan2026 14:27:25.273] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
-[13Jan2026 14:27:25.274] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
-[13Jan2026 14:27:25.276] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[13Jan2026 14:27:25.290] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[13Jan2026 14:27:25.305] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 13.12 milliseconds
-[13Jan2026 14:27:25.305] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 14.36 ms
-[13Jan2026 14:27:25.306] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[13Jan2026 14:27:25.311] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 5.868 ms
-[13Jan2026 14:27:25.316] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[13Jan2026 14:27:25.426] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
-[13Jan2026 14:27:25.556] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 238.4 milliseconds
-[13Jan2026 14:27:25.557] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 240.0 ms
-[13Jan2026 14:27:25.558] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
-[13Jan2026 14:27:25.571] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering extra ingredients: create:jei_plugin took 12.93 milliseconds
-[13Jan2026 14:27:25.571] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 13.98 ms
-[13Jan2026 14:27:25.573] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
-[13Jan2026 14:27:25.574] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.316 ms
-[13Jan2026 14:27:25.627] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
-[13Jan2026 14:27:25.628] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 810.2 μs
-[13Jan2026 14:27:25.675] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[13Jan2026 14:27:25.731] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 55.36 milliseconds
-[13Jan2026 14:27:25.864] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 133.0 milliseconds
-[13Jan2026 14:27:25.877] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: survival_reimagined:jei_plugin took 12.76 milliseconds
-[13Jan2026 14:27:25.889] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 214.2 ms
-[13Jan2026 14:27:25.892] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[13Jan2026 14:27:25.900] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 8.242 ms
-[13Jan2026 14:27:25.902] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[13Jan2026 14:27:25.906] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 3.203 ms
-[13Jan2026 14:27:25.907] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[13Jan2026 14:27:25.941] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 33.33 ms
-[13Jan2026 14:27:25.942] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[13Jan2026 14:27:25.943] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 852.6 μs
-[13Jan2026 14:27:25.944] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[13Jan2026 14:27:26.243] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 298.5 milliseconds
-[13Jan2026 14:27:26.390] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 146.5 milliseconds
-[13Jan2026 14:27:26.518] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 111.7 milliseconds
-[13Jan2026 14:27:26.519] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 574.0 ms
-[13Jan2026 14:27:26.530] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[13Jan2026 14:27:26.537] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 6.702 ms
-[13Jan2026 14:27:26.538] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[13Jan2026 14:27:26.544] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[13Jan2026 14:27:26.560] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 15.32 ms
-[13Jan2026 14:27:26.568] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[13Jan2026 14:27:26.569] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[13Jan2026 14:27:26.570] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[13Jan2026 14:27:26.607] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 36.50 ms
-[13Jan2026 14:27:26.607] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[13Jan2026 14:27:26.657] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3734 ingredients
-[13Jan2026 14:27:27.123] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3734 ingredients
-[13Jan2026 14:27:27.124] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 515.9 ms
-[13Jan2026 14:27:27.252] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 683.7 milliseconds
-[13Jan2026 14:27:27.252] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 684.5 ms
-[13Jan2026 14:27:27.253] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 715.2 ms
-[13Jan2026 14:27:27.255] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[13Jan2026 14:27:27.255] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 428.8 μs
-[13Jan2026 14:27:27.255] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.978 s
-[13Jan2026 14:27:27.274] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 536 advancements
-[13Jan2026 14:30:01.749] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[13Jan2026 14:30:01.796] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:overworld
-[13Jan2026 14:30:01.810] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_end
-[13Jan2026 14:30:01.810] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_nether
+[19Jan2026 23:30:56.209] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 38 ms
+[19Jan2026 23:30:56.361] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 9, from 10
+[19Jan2026 23:30:56.361] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[19Jan2026 23:30:56.709] [Render thread/INFO] [com.simibubi.create.Create/]: Created 448 recipes which will be injected into the game
+[19Jan2026 23:30:56.712] [Render thread/INFO] [com.simibubi.create.Create/]: Created 3 tags which will be injected into the game
+[19Jan2026 23:30:56.874] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.event.TagsUpdatedEvent
+[19Jan2026 23:30:57.516] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:88fb335b] logged in with entity id 1 at (37.493653036464536, 5.153107963508567, 143.49847390965704)
+[19Jan2026 23:30:57.588] [Render thread/INFO] [Iris/]: Reloading pipeline on dimension change: minecraft:overworld => minecraft:overworld
+[19Jan2026 23:30:57.589] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
+[19Jan2026 23:30:57.589] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[19Jan2026 23:30:57.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[19Jan2026 23:30:57.838] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[19Jan2026 23:30:57.973] [Render thread/INFO] [flywheel/]: Started 10 worker threads
+[19Jan2026 23:30:58.059] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.RecipesUpdatedEvent
+[19Jan2026 23:30:58.059] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from LISTENING to JEI_STARTED
+[19Jan2026 23:30:58.061] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[19Jan2026 23:30:58.076] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[19Jan2026 23:30:58.085] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 9.440 ms
+[19Jan2026 23:30:58.086] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[19Jan2026 23:30:58.093] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 5.872 ms
+[19Jan2026 23:30:58.098] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[19Jan2026 23:30:58.227] [Render thread/WARN] [mezz.jei.library.plugins.vanilla.ingredients.ItemStackListFactory/]: Item Group has no display items and no search tab display items. Items from this group will be missing from the JEI ingredient list. Operator Utilities
+[19Jan2026 23:30:58.301] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 202.6 milliseconds
+[19Jan2026 23:30:58.301] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 203.7 ms
+[19Jan2026 23:30:58.301] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[19Jan2026 23:30:58.311] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 8.185 ms
+[19Jan2026 23:30:58.311] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[19Jan2026 23:30:58.312] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 1.014 ms
+[19Jan2026 23:30:58.364] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[19Jan2026 23:30:58.365] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 780.6 μs
+[19Jan2026 23:30:58.404] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[19Jan2026 23:30:58.449] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 43.81 milliseconds
+[19Jan2026 23:30:58.557] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: create:jei_plugin took 107.6 milliseconds
+[19Jan2026 23:30:58.570] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: survival_reimagined:jei_plugin took 12.56 milliseconds
+[19Jan2026 23:30:58.580] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 176.6 ms
+[19Jan2026 23:30:58.583] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[19Jan2026 23:30:58.588] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 4.319 ms
+[19Jan2026 23:30:58.589] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[19Jan2026 23:30:58.592] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 2.266 ms
+[19Jan2026 23:30:58.592] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[19Jan2026 23:30:58.626] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 32.51 ms
+[19Jan2026 23:30:58.626] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[19Jan2026 23:30:58.629] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 935.6 μs
+[19Jan2026 23:30:58.630] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[19Jan2026 23:30:58.979] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 347.7 milliseconds
+[19Jan2026 23:30:59.165] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: create:jei_plugin took 185.5 milliseconds
+[19Jan2026 23:30:59.183] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: survival_reimagined:jei_plugin took 13.88 milliseconds
+[19Jan2026 23:30:59.323] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 139.4 milliseconds
+[19Jan2026 23:30:59.323] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 692.1 ms
+[19Jan2026 23:30:59.335] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[19Jan2026 23:30:59.342] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 7.343 ms
+[19Jan2026 23:30:59.345] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[19Jan2026 23:30:59.352] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[19Jan2026 23:30:59.366] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 14.78 ms
+[19Jan2026 23:30:59.375] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[19Jan2026 23:30:59.378] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[19Jan2026 23:30:59.378] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[19Jan2026 23:30:59.421] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 42.31 ms
+[19Jan2026 23:30:59.421] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[19Jan2026 23:30:59.501] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 3736 ingredients
+[19Jan2026 23:30:59.969] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 3736 ingredients
+[19Jan2026 23:30:59.970] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 549.1 ms
+[19Jan2026 23:31:00.098] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 721.9 milliseconds
+[19Jan2026 23:31:00.099] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 723.0 ms
+[19Jan2026 23:31:00.101] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 755.9 ms
+[19Jan2026 23:31:00.102] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[19Jan2026 23:31:00.103] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 818.5 μs
+[19Jan2026 23:31:00.103] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 2.042 s
+[19Jan2026 23:31:00.123] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 661 advancements
+[19Jan2026 23:31:00.896] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[19Jan2026 23:31:00.960] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:overworld
+[19Jan2026 23:31:00.984] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_end
+[19Jan2026 23:31:00.985] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_nether
+[19Jan2026 23:31:30.045] [Server thread/INFO] [net.mcreator.survivalreimagined.SurvivalReimaginedMod/]: Molds
+[19Jan2026 23:31:30.296] [Server thread/INFO] [net.mcreator.survivalreimagined.SurvivalReimaginedMod/]: Molds
+[19Jan2026 23:31:30.547] [Server thread/INFO] [net.mcreator.survivalreimagined.SurvivalReimaginedMod/]: Molds
+[19Jan2026 23:31:30.796] [Server thread/INFO] [net.mcreator.survivalreimagined.SurvivalReimaginedMod/]: Molds
+[19Jan2026 23:32:09.796] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[19Jan2026 23:32:09.818] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:overworld
+[19Jan2026 23:32:09.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_end
+[19Jan2026 23:32:09.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_nether
+[19Jan2026 23:32:10.042] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver received class net.neoforged.neoforge.client.event.ClientPlayerNetworkEvent$LoggingOut
+[19Jan2026 23:32:10.042] [Render thread/INFO] [mezz.jei.neoforge.startup.StartEventObserver/]: JEI StartEventObserver transitioning state from JEI_STARTED to LISTENING
+[19Jan2026 23:32:10.042] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[19Jan2026 23:32:10.043] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[19Jan2026 23:32:10.043] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[19Jan2026 23:32:10.045] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.673 ms
+[19Jan2026 23:32:10.098] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[19Jan2026 23:32:10.098] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[19Jan2026 23:32:10.119] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[19Jan2026 23:32:10.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[19Jan2026 23:32:10.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[19Jan2026 23:32:10.182] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[19Jan2026 23:32:10.191] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ServerLevel[Showcase]/minecraft:overworld: waiting for 2601 chunks to unload
+[19Jan2026 23:32:10.453] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:overworld
+[19Jan2026 23:32:10.550] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_end
+[19Jan2026 23:32:10.556] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Showcase]'/minecraft:the_nether
+[19Jan2026 23:32:10.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Showcase): All chunks are saved
+[19Jan2026 23:32:10.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19Jan2026 23:32:10.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19Jan2026 23:32:10.571] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19Jan2026 23:32:10.586] [C2ME Storage #3/INFO] [C2ME Storage/]: Storage thread Thread[#157,C2ME Storage #3,8,SERVER] stopped
+[19Jan2026 23:32:10.601] [C2ME Storage #2/INFO] [C2ME Storage/]: Storage thread Thread[#156,C2ME Storage #2,8,SERVER] stopped
+[19Jan2026 23:32:10.612] [C2ME Storage #1/INFO] [C2ME Storage/]: Storage thread Thread[#155,C2ME Storage #1,8,SERVER] stopped
+[19Jan2026 23:32:10.613] [C2ME Storage #6/INFO] [C2ME Storage/]: Storage thread Thread[#160,C2ME Storage #6,8,SERVER] stopped
+[19Jan2026 23:32:10.615] [C2ME Storage #5/INFO] [C2ME Storage/]: Storage thread Thread[#159,C2ME Storage #5,8,SERVER] stopped
+[19Jan2026 23:32:10.617] [C2ME Storage #4/INFO] [C2ME Storage/]: Storage thread Thread[#158,C2ME Storage #4,8,SERVER] stopped
+[19Jan2026 23:32:10.618] [C2ME Storage #9/INFO] [C2ME Storage/]: Storage thread Thread[#163,C2ME Storage #9,8,SERVER] stopped
+[19Jan2026 23:32:10.619] [C2ME Storage #8/INFO] [C2ME Storage/]: Storage thread Thread[#162,C2ME Storage #8,8,SERVER] stopped
+[19Jan2026 23:32:10.621] [C2ME Storage #7/INFO] [C2ME Storage/]: Storage thread Thread[#161,C2ME Storage #7,8,SERVER] stopped
+[19Jan2026 23:32:10.628] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[19Jan2026 23:32:10.893] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

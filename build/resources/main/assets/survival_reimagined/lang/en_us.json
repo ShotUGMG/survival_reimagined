@@ -562,7 +562,6 @@
   "item.survival_reborn.liver": "Liver",
   "item.survival_reimagined.white_glass_shard": "White Glass Shard",
   "item.survival_reimagined.manganese_chunk": "Manganese Chunk",
-  "block.survival_reimagined.sulfur_block": "Sulfur",
   "block.survival_reimagined.deepslate_manganese_ore": "Deepslate Manganese Ore",
   "item.survival_reborn.salt": "Salt",
   "item.survival_reimagined.crimson_plank": "Crimson Plank",
@@ -1266,5 +1265,8 @@
   "tin.tooltip": "Tin",
   "titanium.tooltip": "Titanium",
   "uranium.tooltip": "Uranium",
-  "zinc.tooltip": "Zinc"
+  "zinc.tooltip": "Zinc",
+  "block.survival_reimagined.pure_salt_block": "Pure Salt Block",
+  "block.survival_reimagined.salt_deposit": "Stone Salt Deposit",
+  "item.survival_reimagined.salt_rock": "Salt Rock"
 }

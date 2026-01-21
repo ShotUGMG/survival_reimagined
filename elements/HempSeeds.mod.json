@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "fiberous_plant_seeds",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],

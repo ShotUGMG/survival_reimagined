@@ -9,7 +9,7 @@ import net.minecraft.core.BlockPos;
 
 public class BlockOfTinBlock extends Block {
 	public BlockOfTinBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.COPPER).strength(4f, 3f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.COPPER).strength(4f, 3f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -54,27 +54,6 @@ public class IngotsRecipeProcedure {
 									(BuiltInRegistries.ITEM.getOrCreateTag(ItemTags.create(ResourceLocation.parse("c:ingots/brass"))).getRandomElement(RandomSource.create()).orElseGet(() -> BuiltInRegistries.ITEM.wrapAsHolder(Items.AIR)).value()))
 									.copy();
 						}
-					} else if (ModList.get().isLoaded("minecraft")) {
-						if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/copper")))
-								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/copper")))) {
-							Result = new ItemStack(Items.COPPER_INGOT).copy();
-						}
-						if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/iron")))
-								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/iron")))) {
-							Result = new ItemStack(Items.IRON_INGOT).copy();
-						}
-						if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/gold")))
-								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/gold")))) {
-							Result = new ItemStack(Items.GOLD_INGOT).copy();
-						}
-						if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/redstone")))
-								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/redstone")))) {
-							Result = new ItemStack(SurvivalReimaginedModItems.REDSTONE_INGOT.get()).copy();
-						}
-						if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/netherite")))
-								|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/netherite")))) {
-							Result = new ItemStack(Items.NETHERITE_INGOT).copy();
-						}
 					}
 					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/titanium")))
 							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/titanium")))) {
@@ -111,6 +90,26 @@ public class IngotsRecipeProcedure {
 					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/diamond")))
 							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/diamond")))) {
 						Result = new ItemStack(SurvivalReimaginedModItems.DIAMOND_PLATED_INGOT.get()).copy();
+					}
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/copper")))
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/copper")))) {
+						Result = new ItemStack(Items.COPPER_INGOT).copy();
+					}
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/iron")))
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/iron")))) {
+						Result = new ItemStack(Items.IRON_INGOT).copy();
+					}
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/gold")))
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/gold")))) {
+						Result = new ItemStack(Items.GOLD_INGOT).copy();
+					}
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/redstone")))
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/redstone")))) {
+						Result = new ItemStack(SurvivalReimaginedModItems.REDSTONE_INGOT.get()).copy();
+					}
+					if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/netherite")))
+							|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:rough_ingots/netherite")))) {
+						Result = new ItemStack(Items.NETHERITE_INGOT).copy();
 					}
 					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
 						if (!world.isClientSide()) {

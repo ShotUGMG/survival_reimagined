@@ -16022,9 +16022,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/survival_reimagined/models/item/hemp.json",
-          "src/main/resources/assets/survival_reimagined/models/block/hemp.json",
           "src/main/resources/assets/survival_reimagined/blockstates/hemp.json",
-          "src/main/java/net/mcreator/survivalreimagined/block/HempBlock.java"
+          "src/main/java/net/mcreator/survivalreimagined/block/HempBlock.java",
+          "src/main/resources/assets/survival_reimagined/models/block/hemp.json"
         ]
       },
       "path": "~/Mod Elements/blocks/natural/Hemp/Items"
@@ -25932,23 +25932,6 @@
       "path": "~/Mod Elements/Events/Blood Moon/Entities/CrimsonArchnid/Code"
     },
     {
-      "name": "SulfurBlock",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sulfur_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/loot_table/blocks/sulfur_block.json",
-          "src/main/resources/assets/survival_reimagined/models/block/sulfur_block.json",
-          "src/main/resources/assets/survival_reimagined/models/item/sulfur_block.json",
-          "src/main/resources/assets/survival_reimagined/blockstates/sulfur_block.json",
-          "src/main/java/net/mcreator/survivalreimagined/block/SulfurBlockBlock.java"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/Ore/Minerals"
-    },
-    {
       "name": "NitreBlock",
       "type": "block",
       "compiles": true,
@@ -25963,7 +25946,7 @@
           "src/main/resources/assets/survival_reimagined/models/item/nitre_block.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/Minerals"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "Sulfur",
@@ -25991,7 +25974,7 @@
           "src/main/resources/assets/survival_reimagined/models/item/nitre.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/Minerals"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "NitreLoot",
@@ -26004,20 +25987,7 @@
           "src/main/resources/data/survival_reimagined/loot_table/blocks/nitre_block.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/Minerals"
-    },
-    {
-      "name": "SulfurLoot",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sulfur_loot",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/loot_table/blocks/sulfur_block.json"
-        ]
-      },
-      "path": "~/Mod Elements/blocks/natural/Ore/Minerals"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "MortarPestal",
@@ -26791,7 +26761,7 @@
       "name": "DeepslateAmberOre",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "deepslate_amber_ore",
       "metadata": {
         "files": [
@@ -33322,7 +33292,7 @@
           "src/main/resources/assets/survival_reimagined/blockstates/nitre_powder.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/NaturalOres/Nitre"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "NitrePowderLoot",
@@ -33335,7 +33305,7 @@
           "src/main/resources/data/survival_reimagined/loot_table/blocks/nitre_powder.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/NaturalOres/Nitre"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "SulfurOreFeature",
@@ -33365,7 +33335,7 @@
           "src/main/resources/data/survival_reimagined/worldgen/configured_feature/nitre_feature.json"
         ]
       },
-      "path": "~/Mod Elements/blocks/natural/Ore/NaturalOres/Nitre"
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Nitre"
     },
     {
       "name": "LapisInfusedArmor",
@@ -35699,7 +35669,7 @@
       "name": "ZincJEI",
       "type": "custom_recipe",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "zinc_jei",
       "metadata": {
         "files": [
@@ -37270,19 +37240,6 @@
       "path": "~/Compat/RegionsUnexplored/Plank"
     },
     {
-      "name": "AlphaPlanks",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "alpha_planks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/alpha_planks.json"
-        ]
-      },
-      "path": "~/Compat/RegionsUnexplored/Plank"
-    },
-    {
       "name": "RockType",
       "type": "mixin",
       "compiles": true,
@@ -37294,6 +37251,640 @@
         ]
       },
       "path": "~/Mixins"
+    },
+    {
+      "name": "AlphaPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alpha_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/alpha_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BaobabPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baobab_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/baobab_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BlackwoodPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackwood_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/blackwood_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BrimwoodPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brimwood_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/brimwood_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "CobaltPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/cobalt_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "CypressPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cypress_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/cypress_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "DeadPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dead_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/dead_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "EucalyptusPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eucalyptus_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/eucalyptus_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "JoshuaPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "joshua_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/joshua_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "KapokPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kapok_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/kapok_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "LarchPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "larch_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/larch_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MagnoliaPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnolia_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/magnolia_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MaplePlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maple_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/maple_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "MauvePlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mauve_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/mauve_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "PalmPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "palm_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/palm_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "PinePlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/pine_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "RedwoodPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redwood_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/redwood_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "BirchPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "birch_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/birch_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "OakPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oak_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/oak_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "SocotraPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "socotra_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/socotra_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "WillowPlanksSaw",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willow_planks_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/willow_planks_saw.json"
+        ]
+      },
+      "path": "~/Compat/RegionsUnexplored/Plank"
+    },
+    {
+      "name": "AAFRuinedPortal",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaf_ruined_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_modifiers/aaf_ruined_portal.json"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/AAF"
+    },
+    {
+      "name": "AAFBuriedTreasure",
+      "type": "lootmodifier",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aaf_buried_treasure",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_modifiers/aaf_buried_treasure.json"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/AAF"
+    },
+    {
+      "name": "PureSaltBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pure_salt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/pure_salt_block.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/pure_salt_block.json",
+          "src/main/resources/assets/survival_reimagined/models/block/pure_salt_block.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/PureSaltBlockBlock.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "SaltDeposit",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_deposit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/blockstates/salt_deposit.json",
+          "src/main/resources/assets/survival_reimagined/models/item/salt_deposit.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/SaltDepositBlock.java",
+          "src/main/resources/assets/survival_reimagined/models/block/salt_deposit.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "SaltDome",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_dome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/worldgen/structure/salt_dome.json",
+          "src/main/resources/data/survival_reimagined/worldgen/structure_set/salt_dome.json",
+          "src/main/resources/data/survival_reimagined/worldgen/template_pool/salt_dome_pool.json",
+          "src/main/resources/data/survival_reimagined/worldgen/template_pool/salt_dome.json"
+        ]
+      },
+      "path": "~/Mod Elements/Structures/SaltDome"
+    },
+    {
+      "name": "SaltRock",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_rock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/salt_rock.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/SaltRockItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "SaltBlock",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/pure_salt_block.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "SaltDepositLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "salt_deposit_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_table/salt_deposit_loot.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "SaltRocktoSalt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_rockto_salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/salt_rock_to_salt.json"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/natural/Ore/Minerals/Salt"
+    },
+    {
+      "name": "GoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Runes"
+    },
+    {
+      "name": "SilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Runes"
+    },
+    {
+      "name": "DiamondSilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/diamond_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "EmeraldSilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/emerald_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "LapisSilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/lapis_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "RubySilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/ruby_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "AmberSilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/amber_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "SapphireSilverRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_silver_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/sapphire_silver_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Silver"
+    },
+    {
+      "name": "DiamondGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/diamond_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "EmeraldGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/emerald_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "LapisGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lapis_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/lapis_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "SapphireGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sapphire_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/sapphire_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "RubyGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/ruby_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "AmberGoldRuneJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amber_gold_rune_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/amber_gold_rune_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/MetalRefining/Runes/Gold"
+    },
+    {
+      "name": "AndesiteAlloyJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "andesite_alloy_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/andesite_alloy_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Ingots/Alloy/Compat"
+    },
+    {
+      "name": "AndesiteAlloy2JEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "andesite_alloy_2_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/andesite_alloy_2_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Ingots/Alloy/Compat"
+    },
+    {
+      "name": "BrassJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brass_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/brass_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Ingots/Alloy/Compat"
+    },
+    {
+      "name": "BrassIngotJEI",
+      "type": "custom_recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "brass_ingot_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/brass_ingot_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forging/Ingots/Compat"
     }
   ],
   "variable_elements": [
@@ -38062,7 +38653,10 @@
       "CUSTOM:AdvancedReactorRod"
     ],
     "ITEMS:c:fuels/chunks": [
-      "CUSTOM:SmallCoalChunk"
+      "CUSTOM:SmallCoalChunk",
+      "CUSTOM:PeatPile",
+      "CUSTOM:PeatCoarseDirtPile",
+      "CUSTOM:PeatMudPile"
     ],
     "ITEMS:c:ingots/titanium": [
       "CUSTOM:TitaniumIngot"
@@ -38088,7 +38682,29 @@
       "CUSTOM:JunglePlank",
       "CUSTOM:CherryPlank",
       "CUSTOM:MangrovePlank",
-      "CUSTOM:RadiatedPlank"
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:CrimsonPlank",
+      "CUSTOM:WarpedPlank",
+      "CUSTOM:WisteriaPlank",
+      "CUSTOM:AlphaOakPlank",
+      "CUSTOM:BaobabPlank",
+      "CUSTOM:BlackwoodPlank",
+      "CUSTOM:BrimwoodPlank",
+      "CUSTOM:CobaltPlank",
+      "CUSTOM:CypressPlank",
+      "CUSTOM:DeadPlank",
+      "CUSTOM:EucalyptusPlank",
+      "CUSTOM:JoshuaPlank",
+      "CUSTOM:KapokPlank",
+      "CUSTOM:LarchPlank",
+      "CUSTOM:MagnoliaPlank",
+      "CUSTOM:MaplePlank",
+      "CUSTOM:MauvePlank",
+      "CUSTOM:PalmPlank",
+      "CUSTOM:PinePlank",
+      "CUSTOM:RedwoodPlank",
+      "CUSTOM:SocotraPlank",
+      "CUSTOM:WillowPlank"
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:KimberliteAmberOre",
@@ -38737,6 +39353,10 @@
       "Items.GOLD_INGOT"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:BlockOfRawTin",
+      "~CUSTOM:BlockOfTin",
+      "~CUSTOM:SaltDeposit",
+      "~CUSTOM:PureSaltBlock",
       "~CUSTOM:SulfurOre",
       "~CUSTOM:KimberliteAmberOre",
       "~CUSTOM:BasaltAmberOre",
@@ -38802,7 +39422,6 @@
       "~CUSTOM:RubyOre",
       "~CUSTOM:RuneMagicInfuser",
       "~CUSTOM:NitreBlock",
-      "~CUSTOM:SulfurBlock",
       "~CUSTOM:SapphireBlock",
       "~CUSTOM:DeepslateSapphireOre",
       "~CUSTOM:SapphireOre",
@@ -38848,7 +39467,31 @@
       "~CUSTOM:ManganeseOre",
       "~CUSTOM:BlockOfBronze",
       "~CUSTOM:Forge",
-      "~CUSTOM:TinOre"
+      "~CUSTOM:TinOre",
+      "CUSTOM:KimberliteStalagmiteTop",
+      "CUSTOM:KimberliteStalagmiteMiddle",
+      "CUSTOM:KimberliteStalagmiteBase",
+      "CUSTOM:KimberliteStalagtiteTip",
+      "CUSTOM:KimberliteStalagtiteMiddle",
+      "CUSTOM:KimberliteStalagtiteBase",
+      "CUSTOM:DeepslateStalagmiteTop",
+      "CUSTOM:DeepslateStalagmiteMiddle",
+      "CUSTOM:DeepslateStalagmiteBase",
+      "CUSTOM:DeepslateStalagtiteTip",
+      "CUSTOM:DeepslateStalagtiteMiddle",
+      "CUSTOM:DeepslateStalagtiteBase",
+      "CUSTOM:StoneStalagmiteTop",
+      "CUSTOM:StoneStalagmiteMiddle",
+      "CUSTOM:StoneStalagmiteBase",
+      "CUSTOM:StoneStalagtiteTip",
+      "CUSTOM:StoneStalagtiteMiddle",
+      "CUSTOM:StoneStalagtiteBase",
+      "CUSTOM:BasaltStalagmiteTop",
+      "CUSTOM:BasaltStalagmiteMiddle",
+      "CUSTOM:BasaltStalagmiteBase",
+      "CUSTOM:BasaltStalagtiteTip",
+      "CUSTOM:BasaltStalagtiteMiddle",
+      "CUSTOM:BasaltStalagtiteBase"
     ],
     "BLOCKS:neoforge:incorrect_for_bronze_tool": [
       "TAG:minecraft:needs_iron_tool"
@@ -38984,7 +39627,6 @@
     "ITEMS:c:tools/knife": [
       "CUSTOM:StoneKnife",
       "CUSTOM:BronzeKnife",
-      "CUSTOM:WoodenKnife",
       "CUSTOM:SteelKnife",
       "CUSTOM:DiamondKnife",
       "CUSTOM:NetheriteKnife",
@@ -39226,6 +39868,9 @@
       "TAG:minecraft:needs_steel_tool"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:RawCassiteriteBlock",
+      "~CUSTOM:BlockOfRawTin",
+      "~CUSTOM:BlockOfTin",
       "~CUSTOM:SulfurOre",
       "~CUSTOM:KimberliteLapisOre",
       "~CUSTOM:BasaltLazuriteOre",
@@ -39364,7 +40009,8 @@
       "Blocks.STRIPPED_WARPED_HYPHAE",
       "Blocks.STRIPPED_CRIMSON_HYPHAE",
       "Blocks.STRIPPED_MANGROVE_WOOD",
-      "Blocks.STRIPPED_CHERRY_WOOD"
+      "Blocks.STRIPPED_CHERRY_WOOD",
+      "TAG:regions_unexplored:stripped/stripped_logs"
     ],
     "BLOCKS:c:pointed_stones/stone": [
       "CUSTOM:StoneStalagmiteTop",
@@ -39446,7 +40092,27 @@
       "CUSTOM:MangrovePlank",
       "CUSTOM:CrimsonPlank",
       "CUSTOM:WarpedPlank",
-      "CUSTOM:RadiatedPlank"
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:WisteriaPlank",
+      "CUSTOM:AlphaOakPlank",
+      "CUSTOM:BaobabPlank",
+      "CUSTOM:BlackwoodPlank",
+      "CUSTOM:BrimwoodPlank",
+      "CUSTOM:CobaltPlank",
+      "CUSTOM:CypressPlank",
+      "CUSTOM:DeadPlank",
+      "CUSTOM:EucalyptusPlank",
+      "CUSTOM:JoshuaPlank",
+      "CUSTOM:KapokPlank",
+      "CUSTOM:LarchPlank",
+      "CUSTOM:MagnoliaPlank",
+      "CUSTOM:MaplePlank",
+      "CUSTOM:MauvePlank",
+      "CUSTOM:PalmPlank",
+      "CUSTOM:PinePlank",
+      "CUSTOM:RedwoodPlank",
+      "CUSTOM:SocotraPlank",
+      "CUSTOM:WillowPlank"
     ],
     "ITEMS:c:embedded/deepslate": [
       "CUSTOM:DeepslateEmbeddedDiamond",
@@ -39840,7 +40506,9 @@
       "CUSTOM:JoshuaBark",
       "CUSTOM:AlphaOakBark",
       "CUSTOM:BlackwoodBark",
-      "CUSTOM:PalmBarkRU"
+      "CUSTOM:PalmBarkRU",
+      "CUSTOM:LargeCrimsonBark",
+      "CUSTOM:LargeWarpedBark"
     ],
     "ITEMS:minecraft:swords": [
       "~CUSTOM:NetheriteSaw",
@@ -40034,6 +40702,9 @@
       "Blocks.STRIPPED_DARK_OAK_WOOD",
       "Blocks.STRIPPED_MANGROVE_WOOD",
       "Blocks.STRIPPED_CHERRY_WOOD"
+    ],
+    "BLOCKS:c:farmland": [
+      "Blocks.FARMLAND"
     ]
   },
   "tab_element_order": {},
@@ -40602,7 +41273,6 @@
       "item.survival_reborn.liver": "Liver",
       "item.survival_reimagined.white_glass_shard": "White Glass Shard",
       "item.survival_reimagined.manganese_chunk": "Manganese Chunk",
-      "block.survival_reimagined.sulfur_block": "Sulfur",
       "block.survival_reimagined.deepslate_manganese_ore": "Deepslate Manganese Ore",
       "item.survival_reborn.salt": "Salt",
       "item.survival_reimagined.crimson_plank": "Crimson Plank",
@@ -41306,7 +41976,10 @@
       "tin.tooltip": "Tin",
       "titanium.tooltip": "Titanium",
       "uranium.tooltip": "Uranium",
-      "zinc.tooltip": "Zinc"
+      "zinc.tooltip": "Zinc",
+      "block.survival_reimagined.pure_salt_block": "Pure Salt Block",
+      "block.survival_reimagined.salt_deposit": "Stone Salt Deposit",
+      "item.survival_reimagined.salt_rock": "Salt Rock"
     }
   },
   "metadata": {
@@ -41465,7 +42138,20 @@
                       },
                       {
                         "name": "Minerals",
-                        "children": []
+                        "children": [
+                          {
+                            "name": "Salt",
+                            "children": []
+                          },
+                          {
+                            "name": "Nitre",
+                            "children": []
+                          },
+                          {
+                            "name": "Sulfur",
+                            "children": []
+                          }
+                        ]
                       },
                       {
                         "name": "NaturalOres",
@@ -41504,10 +42190,6 @@
                           },
                           {
                             "name": "Sulfur",
-                            "children": []
-                          },
-                          {
-                            "name": "Nitre",
                             "children": []
                           }
                         ]
@@ -42451,6 +43133,10 @@
                     ]
                   }
                 ]
+              },
+              {
+                "name": "SaltDome",
+                "children": []
               }
             ]
           },
@@ -42925,7 +43611,12 @@
                     "children": [
                       {
                         "name": "Alloy",
-                        "children": []
+                        "children": [
+                          {
+                            "name": "Compat",
+                            "children": []
+                          }
+                        ]
                       },
                       {
                         "name": "NonAlloy",
@@ -42956,6 +43647,15 @@
                   },
                   {
                     "name": "Alloys",
+                    "children": [
+                      {
+                        "name": "Compat",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Runes",
                     "children": []
                   }
                 ]
@@ -42982,6 +43682,19 @@
                   {
                     "name": "Ingots",
                     "children": []
+                  },
+                  {
+                    "name": "Runes",
+                    "children": [
+                      {
+                        "name": "Silver",
+                        "children": []
+                      },
+                      {
+                        "name": "Gold",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -43050,7 +43763,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.3.5",
+    "version": "1.3.7",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://mcreator.net",

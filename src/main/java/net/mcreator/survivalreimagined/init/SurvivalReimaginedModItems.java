@@ -460,7 +460,6 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> CRIMSON_ARACHNID_SPAWN_EGG;
 	public static final DeferredItem<Item> ALPHA_CRIMSON_ARACHNID_SPAWN_EGG;
 	public static final DeferredItem<Item> CRIMSON_THREAD;
-	public static final DeferredItem<Item> SULFUR_BLOCK;
 	public static final DeferredItem<Item> NITRE_BLOCK;
 	public static final DeferredItem<Item> SULFUR;
 	public static final DeferredItem<Item> NITRE;
@@ -683,6 +682,9 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> REDWOOD_PLANK;
 	public static final DeferredItem<Item> SOCOTRA_PLANK;
 	public static final DeferredItem<Item> WILLOW_PLANK;
+	public static final DeferredItem<Item> PURE_SALT_BLOCK;
+	public static final DeferredItem<Item> SALT_DEPOSIT;
+	public static final DeferredItem<Item> SALT_ROCK;
 	static {
 		FLINTBLOCK = block(SurvivalReimaginedModBlocks.FLINTBLOCK);
 		FLINT_TOOL = REGISTRY.register("flint_tool", FlintToolItem::new);
@@ -1119,7 +1121,6 @@ public class SurvivalReimaginedModItems {
 		CRIMSON_ARACHNID_SPAWN_EGG = REGISTRY.register("crimson_arachnid_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.CRIMSON_ARACHNID, -14941694, -426884, new Item.Properties()));
 		ALPHA_CRIMSON_ARACHNID_SPAWN_EGG = REGISTRY.register("alpha_crimson_arachnid_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.ALPHA_CRIMSON_ARACHNID, -14941694, -426884, new Item.Properties()));
 		CRIMSON_THREAD = REGISTRY.register("crimson_thread", CrimsonThreadItem::new);
-		SULFUR_BLOCK = block(SurvivalReimaginedModBlocks.SULFUR_BLOCK);
 		NITRE_BLOCK = block(SurvivalReimaginedModBlocks.NITRE_BLOCK);
 		SULFUR = REGISTRY.register("sulfur", SulfurItem::new);
 		NITRE = REGISTRY.register("nitre", NitreItem::new);
@@ -1342,6 +1343,9 @@ public class SurvivalReimaginedModItems {
 		REDWOOD_PLANK = REGISTRY.register("redwood_plank", RedwoodPlankItem::new);
 		SOCOTRA_PLANK = REGISTRY.register("socotra_plank", SocotraPlankItem::new);
 		WILLOW_PLANK = REGISTRY.register("willow_plank", WillowPlankItem::new);
+		PURE_SALT_BLOCK = block(SurvivalReimaginedModBlocks.PURE_SALT_BLOCK);
+		SALT_DEPOSIT = block(SurvivalReimaginedModBlocks.SALT_DEPOSIT);
+		SALT_ROCK = REGISTRY.register("salt_rock", SaltRockItem::new);
 	}
 
 	// Start of user code block custom items

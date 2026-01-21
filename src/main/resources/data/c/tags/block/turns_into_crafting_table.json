@@ -4,6 +4,10 @@
     "minecraft:stripped_jungle_log",
     "minecraft:stripped_spruce_wood",
     "minecraft:stripped_dark_oak_log",
+    {
+      "id": "#regions_unexplored:stripped/stripped_logs",
+      "required": false
+    },
     "minecraft:stripped_oak_log",
     "minecraft:stripped_spruce_log",
     "minecraft:stripped_warped_hyphae",

@@ -1,0 +1,22 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "metal_input_1": {
+    "item": "survival_reimagined:empty_silver_rune",
+    "count": 1
+  },
+  "metal_input_2": {
+    "item": "survival_reimagined:ruby",
+    "count": 1
+  },
+  "metal_input_3": {
+    "tag": "c:tools/hammer",
+    "count": 1
+  },
+  "metal_output": {
+    "id": "survival_reimagined:silver_ruby_rune",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
+}

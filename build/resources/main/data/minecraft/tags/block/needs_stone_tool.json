@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:raw_cassiterite_block",
+    "survival_reimagined:block_of_tin",
+    "survival_reimagined:azurite_ore",
     "survival_reimagined:deepslate_cassiterite_ore",
     "survival_reimagined:basalt_lapis_ore",
     "survival_reimagined:malachite_ore",
@@ -9,7 +12,7 @@
     "survival_reimagined:kimberlite_lapis_ore",
     "survival_reimagined:block_of_bronze",
     "survival_reimagined:sulfur_ore",
-    "survival_reimagined:azurite_ore",
+    "survival_reimagined:block_of_raw_tin",
     "survival_reimagined:cassiterite_ore"
   ]
 }

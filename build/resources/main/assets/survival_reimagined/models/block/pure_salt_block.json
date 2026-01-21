@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/pure_salt",
+    "up": "survival_reimagined:block/pure_salt",
+    "north": "survival_reimagined:block/pure_salt",
+    "east": "survival_reimagined:block/pure_salt",
+    "south": "survival_reimagined:block/pure_salt",
+    "west": "survival_reimagined:block/pure_salt",
+    "particle": "survival_reimagined:block/pure_salt"
+  },
+  "render_type": "solid"
+}

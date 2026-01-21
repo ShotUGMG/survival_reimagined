@@ -11,6 +11,7 @@
 	"#c:alloy/netherite_items",
 	"#c:alloy/titanium_items",
 	"#c:alloy/uranium_items",
-	"#c:alloy/silver_items"
+	"#c:alloy/silver_items",
+	"#c:alloy/andesite_items"
   ]
 }

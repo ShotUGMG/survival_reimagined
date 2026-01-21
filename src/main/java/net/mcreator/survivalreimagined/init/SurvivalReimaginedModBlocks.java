@@ -154,7 +154,6 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> SAPPHIRE_ORE;
 	public static final DeferredBlock<Block> DEEPSLATE_SAPPHIRE_ORE;
 	public static final DeferredBlock<Block> SAPPHIRE_BLOCK;
-	public static final DeferredBlock<Block> SULFUR_BLOCK;
 	public static final DeferredBlock<Block> NITRE_BLOCK;
 	public static final DeferredBlock<Block> RUNE_CLAY_MOLD;
 	public static final DeferredBlock<Block> RUNE_MOLD;
@@ -269,6 +268,8 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> WISTERIA_TRAPDOOR;
 	public static final DeferredBlock<Block> WISTERIA_BUTTON;
 	public static final DeferredBlock<Block> WISTERIA_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> PURE_SALT_BLOCK;
+	public static final DeferredBlock<Block> SALT_DEPOSIT;
 	static {
 		FLINTBLOCK = REGISTRY.register("flintblock", FlintblockBlock::new);
 		STONE_ROCK_BLOC = REGISTRY.register("stone_rock_bloc", StoneRockBlocBlock::new);
@@ -407,7 +408,6 @@ public class SurvivalReimaginedModBlocks {
 		SAPPHIRE_ORE = REGISTRY.register("sapphire_ore", SapphireOreBlock::new);
 		DEEPSLATE_SAPPHIRE_ORE = REGISTRY.register("deepslate_sapphire_ore", DeepslateSapphireOreBlock::new);
 		SAPPHIRE_BLOCK = REGISTRY.register("sapphire_block", SapphireBlockBlock::new);
-		SULFUR_BLOCK = REGISTRY.register("sulfur_block", SulfurBlockBlock::new);
 		NITRE_BLOCK = REGISTRY.register("nitre_block", NitreBlockBlock::new);
 		RUNE_CLAY_MOLD = REGISTRY.register("rune_clay_mold", RuneClayMoldBlock::new);
 		RUNE_MOLD = REGISTRY.register("rune_mold", RuneMoldBlock::new);
@@ -522,6 +522,8 @@ public class SurvivalReimaginedModBlocks {
 		WISTERIA_TRAPDOOR = REGISTRY.register("wisteria_trapdoor", WisteriaTrapdoorBlock::new);
 		WISTERIA_BUTTON = REGISTRY.register("wisteria_button", WisteriaButtonBlock::new);
 		WISTERIA_PRESSURE_PLATE = REGISTRY.register("wisteria_pressure_plate", WisteriaPressurePlateBlock::new);
+		PURE_SALT_BLOCK = REGISTRY.register("pure_salt_block", PureSaltBlockBlock::new);
+		SALT_DEPOSIT = REGISTRY.register("salt_deposit", SaltDepositBlock::new);
 	}
 
 	// Start of user code block custom blocks

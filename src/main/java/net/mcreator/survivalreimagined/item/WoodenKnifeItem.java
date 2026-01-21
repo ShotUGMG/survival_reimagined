@@ -38,24 +38,4 @@ public class WoodenKnifeItem extends Item {
 	public int getEnchantmentValue() {
 		return 15;
 	}
-
-	@Override
-	public boolean hasCraftingRemainingItem(ItemStack stack) {
-		return true;
-	}
-
-	@Override
-	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
-		ItemStack retval = new ItemStack(this);
-		retval.setDamageValue(itemstack.getDamageValue() + 1);
-		if (retval.getDamageValue() >= retval.getMaxDamage()) {
-			return ItemStack.EMPTY;
-		}
-		return retval;
-	}
-
-	@Override
-	public boolean isRepairable(ItemStack itemstack) {
-		return false;
-	}
 }

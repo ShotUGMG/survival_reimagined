@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "regions_unexplored:barked/socotra_logs"
+    },
+    "b": {
+      "tag": "c:tools/saw"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:socotra_plank",
+    "count": 8
+  }
+}

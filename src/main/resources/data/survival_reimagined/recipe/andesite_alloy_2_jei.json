@@ -1,0 +1,22 @@
+{
+  "type": "survival_reimagined:forging",
+  "forge_input_1": {
+    "tag": "c:alloy/andesite_items",
+    "count": 1
+  },
+  "forge_input_2": {
+    "tag": "c:alloy/iron_items",
+    "count": 1
+  },
+  "forge_input_3": {
+    "tag": "c:fuels",
+    "count": 1
+  },
+  "forge_output": {
+    "id": "create:andesite_alloy",
+    "count": 1
+  },
+  "category": [
+    "misc"
+  ]
+}

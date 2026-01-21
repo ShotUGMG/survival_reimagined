@@ -1,26 +1,3 @@
-/event reset
-/scoreboard objectives setdisplay sidebar Item
-/scoreboard objectives setdisplay sidebar ItemCount
-/scoreboard objectives setdisplay sidebar Item
-/scoreboard objectives setdisplay sidebar ItemCount
-/time set day
-/kill Dev
-/scoreboard objectives remove ItemCount
-/kill Dev
-/effect clearq
-/effect clear
-/give Dev minecraft:golden_apple
-/give Dev minecraft:golden_apple 64
-/effect clear
-/effect give Dev minecraft:regeneration 10 3
-/effect give Dev minecraft:regeneration 5 3
-/effect give Dev minecraft:regeneration 1 10
-/kill Dev
-/effect give Dev minecraft:regeneration 1 10
-/effect clear
-/effect give Dev minecraft:regeneration 1 10
-/effect clear
-/effect give Dev minecraft:regeneration 1 10
 /effect clear
 /effect give Dev minecraft:regeneration 1 10
 /locate biome survival_reimagined:radiated_forest
@@ -48,3 +25,26 @@
 /effect give Dev minecraft:haste infinite 10
 /effect clear
 /effect give Dev minecraft:night_vision infinite
+/give Dev minecraft:jigsaw
+/give Dev minecraft:structure_block
+/effect give Dev minecraft:night_vision infinite
+/locate structure survival_reimagined:salt_dome
+/tp @s 1008 ~ 176
+/locate structure survival_reimagined:salt_dome
+/tp @s -624 ~ 272
+/place structure survival_reimagined:salt_dome
+/place structure survival_reimagined:spruce_copper_mine
+/place structure survival_reimagined:copper_mine
+/locate structure survival_reimagined:salt_dome
+/tp @s -576 ~ 304
+/locate structure survival_reimagined:salt_dome
+/tp @s 96 ~ 0
+/place structure survival_reimagined:salt_dome
+/locate structure survival_reimagined:salt_dome
+/tp @s 224 ~ 208
+/locate structure survival_reimagined:salt_dome
+/tp @s -912 ~ -256
+/locate structure survival_reimagined:salt_dome
+/tp @s -336 ~ -400
+/locate structure survival_reimagined:salt_dome
+/tp @s 512 ~ -928

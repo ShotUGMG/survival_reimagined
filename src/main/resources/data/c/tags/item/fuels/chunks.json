@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:small_coal_chunk"
+    "survival_reimagined:peat_pile",
+    "survival_reimagined:peat_mud_pile",
+    "survival_reimagined:small_coal_chunk",
+    "survival_reimagined:peat_coarse_dirt_pile"
   ]
 }

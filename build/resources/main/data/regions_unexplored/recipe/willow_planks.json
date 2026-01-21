@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:willow_plank"
+    }
+  },
+  "result": {
+    "id": "regions_unexplored:willow_planks",
+    "count": 1
+  }
+}

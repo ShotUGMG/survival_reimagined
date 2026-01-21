@@ -7,11 +7,11 @@
   ],
   "key": {
     "a": {
-      "item": "survival_reimagined:baobab_plank"
+      "item": "survival_reimagined:cobalt_plank"
     }
   },
   "result": {
-    "id": "regions_unexplored:baobab_planks",
+    "id": "regions_unexplored:cobalt_planks",
     "count": 1
   }
 }
