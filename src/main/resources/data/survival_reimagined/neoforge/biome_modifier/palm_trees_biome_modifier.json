@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "survival_reimagined:tropical_coast",
+  "features": "survival_reimagined:palm_trees",
+  "step": "vegetal_decoration"
+}

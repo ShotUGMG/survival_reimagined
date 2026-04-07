@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#survival_reimagined:e_logs",
+      "required": false
+    }
+  ]
+}

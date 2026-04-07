@@ -1,0 +1,55 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "StrawberryPlant",
+    "blockstateList": [
+      {
+        "texture": "strawberry_plant_flowering",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 2.0,
+            "Mx": 14.0,
+            "My": 9.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant_fruiting",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 2.0,
+            "Mx": 14.0,
+            "My": 9.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

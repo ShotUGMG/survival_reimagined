@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "8": "minecraft:spruce_planks",
+        "9": "minecraft:polished_andesite",
+        "10": "minecraft:iron_block"
+      }
+    }
+  }
+}

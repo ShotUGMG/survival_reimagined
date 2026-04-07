@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:simple_random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_1",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_2",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_3",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_4",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_5",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:palm_tree_6",
+            "random_rotation": true,
+            "random_mirror": true,
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

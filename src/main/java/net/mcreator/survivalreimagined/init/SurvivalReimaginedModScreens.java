@@ -21,6 +21,7 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.ADVANCED_ALLOY_FORGE_GUI.get(), AdvancedAlloyForgeGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.AAF_SCRIPTURE_GUI.get(), AAFScriptureGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.RMI.get(), RMIScreen::new);
+		event.register(SurvivalReimaginedModMenus.SMALL_TROUGH_GUI.get(), SmallTroughGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

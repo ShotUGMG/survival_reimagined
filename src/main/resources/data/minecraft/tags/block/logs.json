@@ -1,9 +1,13 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:palm_crown",
     "survival_reimagined:radiant_log",
+    "survival_reimagined:palm_log_barked_top",
+    "survival_reimagined:palm_log",
     "survival_reimagined:stripped_radiant_log",
     "survival_reimagined:wisteria_log",
-    "survival_reimagined:stripped_wisteria_log"
+    "survival_reimagined:stripped_wisteria_log",
+    "survival_reimagined:small_palm_log"
   ]
 }

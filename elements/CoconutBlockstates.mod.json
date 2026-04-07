@@ -1,0 +1,55 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CoconutMature",
+    "blockstateList": [
+      {
+        "texture": "coconut_ripe",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "coconut_ripe:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 9.0,
+            "Mx": 11.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "coconut_new",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "coconut_new:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 9.0,
+            "Mx": 11.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

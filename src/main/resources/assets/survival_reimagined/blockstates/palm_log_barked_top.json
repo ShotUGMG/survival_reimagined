@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "survival_reimagined:block/palm_log_barked_top",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "survival_reimagined:block/palm_log_barked_top"
+    },
+    "axis=z": {
+      "model": "survival_reimagined:block/palm_log_barked_top",
+      "x": 90
+    }
+  }
+}

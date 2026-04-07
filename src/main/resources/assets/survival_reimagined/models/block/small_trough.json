@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/small_trough",
+  "textures": {
+    "all": "minecraft:block/oak_planks",
+    "particle": "minecraft:block/oak_planks",
+    "missing": "minecraft:block/spruce_planks"
+  },
+  "render_type": "solid"
+}

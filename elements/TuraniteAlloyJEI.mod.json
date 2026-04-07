@@ -9,7 +9,7 @@
         "type": "Item",
         "name": "forge_input_1",
         "itemId": {
-          "value": "TAG:c:alloy/gold_items"
+          "value": "TAG:c:alloy/uranium_items"
         },
         "itemAmount": 1,
         "singleIngredient": false,

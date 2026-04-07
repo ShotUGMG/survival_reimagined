@@ -481,7 +481,7 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.CALAVERITE_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.MANGANITE_ORE.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.DEEPSLATE_MANGANITE_ORE.get().asItem());
-				tabData.accept(SurvivalReimaginedModBlocks.BASALT_MANGANITE_ORE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.BASALT_PYROLUSITE_ORE.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.MANGANITE_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.MANGANITE.get());
 				tabData.accept(SurvivalReimaginedModItems.MANGANITE_NUGGET.get());
@@ -550,6 +550,21 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.PURE_SALT_BLOCK.get().asItem());
 				tabData.accept(SurvivalReimaginedModBlocks.SALT_DEPOSIT.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.SALT_ROCK.get());
+				tabData.accept(SurvivalReimaginedModItems.BOAR_SPAWN_EGG.get());
+				tabData.accept(SurvivalReimaginedModItems.SOW_SPAWN_EGG.get());
+				tabData.accept(SurvivalReimaginedModItems.PIGLET_SPAWN_EGG.get());
+				tabData.accept(SurvivalReimaginedModBlocks.SMALL_TROUGH.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MILLSTONE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.SMALL_PALM_LOG.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.PALM_LOG.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.PALM_LOG_BARKED_TOP.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.PALM_CROWN.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.COCONUT_SHELL.get());
+				tabData.accept(SurvivalReimaginedModItems.COCONUT_FRUIT.get());
+				tabData.accept(SurvivalReimaginedModItems.STRAWBERRY.get());
+				tabData.accept(SurvivalReimaginedModBlocks.BANANA_JUNGLE_LOG.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.BANANA_CLUSTER.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.BANANA.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SR_COMPAT_ITEMS = REGISTRY.register("sr_compat_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.survival_reimagined.sr_compat_items")).icon(() -> new ItemStack(SurvivalReimaginedModItems.HEART.get())).displayItems((parameters, tabData) -> {
@@ -643,6 +658,8 @@ public class SurvivalReimaginedModTabs {
 			tabData.accept(SurvivalReimaginedModItems.STEEL_HOE.get());
 			tabData.accept(SurvivalReimaginedModItems.STEEL_SAW.get());
 			tabData.accept(SurvivalReimaginedModItems.DIAMOND_SAW.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(SurvivalReimaginedModItems.GHOST_SPAWN_EGG.get());
 		}
 	}
 }

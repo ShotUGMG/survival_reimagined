@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/palm_crown",
+  "textures": {
+    "all": "survival_reimagined:block/palm_log_crown",
+    "particle": "survival_reimagined:block/palm_log_crown",
+    "0": "survival_reimagined:block/palm_log_crown"
+  },
+  "render_type": "cutout"
+}

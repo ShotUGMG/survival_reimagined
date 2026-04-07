@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/palm_frond"
+  },
+  "render_type": "translucent"
+}

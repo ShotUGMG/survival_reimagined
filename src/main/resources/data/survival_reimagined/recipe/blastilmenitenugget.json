@@ -4,7 +4,7 @@
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "tag": "c:metal_rocks/titanium_nugget"
+    "tag": "c:metal_rocks/titanium_nuggets"
   },
   "result": {
     "id": "survival_reimagined:titanium_nugget"

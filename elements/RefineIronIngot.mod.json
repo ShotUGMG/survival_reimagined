@@ -21,12 +21,15 @@
       {
         "type": "Item",
         "name": "metal_input_2",
+        "itemId": {
+          "value": "CUSTOM:JEIAIR"
+        },
         "itemAmount": 1,
         "singleIngredient": false,
         "fluidAmount": 1,
         "logic": true,
         "number": 0.0,
-        "text": ""
+        "text": "Empty"
       },
       {
         "type": "Item",

@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "minecraft:entities/enderman",
+    "modifierTable": "FusionDust"
+  }
+}

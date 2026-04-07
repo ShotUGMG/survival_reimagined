@@ -1,0 +1,290 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SmallTrough",
+    "blockstateList": [
+      {
+        "texture": "minecraft:spruce_planks",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "small_trough_1:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 10.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 11.5,
+            "My": 2.5,
+            "Mz": 6.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 9.5,
+            "Mx": 11.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 11.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 12.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 4.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 1.0,
+            "mz": 6.5,
+            "Mx": 11.5,
+            "My": 1.0,
+            "Mz": 9.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:spruce_planks",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "small_trough_2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 10.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 11.5,
+            "My": 2.5,
+            "Mz": 6.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 9.5,
+            "Mx": 11.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 11.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 12.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 4.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 1.5,
+            "mz": 6.5,
+            "Mx": 11.5,
+            "My": 1.5,
+            "Mz": 9.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:spruce_planks",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "small_trough_3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 10.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 11.5,
+            "My": 2.5,
+            "Mz": 6.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 9.5,
+            "Mx": 11.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 11.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 12.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 4.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 2.0,
+            "mz": 6.5,
+            "Mx": 11.5,
+            "My": 2.0,
+            "Mz": 9.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "minecraft:spruce_planks",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "small_trough_4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 10.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 11.5,
+            "My": 2.5,
+            "Mz": 6.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 0.5,
+            "mz": 9.5,
+            "Mx": 11.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 11.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 12.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 0.5,
+            "mz": 5.5,
+            "Mx": 4.5,
+            "My": 3.5,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 2.5,
+            "mz": 6.5,
+            "Mx": 11.5,
+            "My": 2.5,
+            "Mz": 7.5,
+            "subtract": false
+          },
+          {
+            "mx": 4.5,
+            "my": 2.0,
+            "mz": 7.0,
+            "Mx": 11.5,
+            "My": 3.0,
+            "Mz": 10.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

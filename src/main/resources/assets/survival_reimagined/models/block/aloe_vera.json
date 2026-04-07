@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/aloe_vera",
+  "textures": {
+    "all": "survival_reimagined:block/aloe_vera",
+    "particle": "survival_reimagined:block/aloe_vera",
+    "0": "survival_reimagined:block/aloe_vera"
+  },
+  "render_type": "cutout"
+}

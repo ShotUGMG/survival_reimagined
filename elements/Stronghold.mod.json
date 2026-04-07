@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "lootmodifier",
+  "definition": {
+    "modifiedTable": "minecraft:chests/stronghold_corridor",
+    "modifierTable": "FusionDust"
+  }
+}

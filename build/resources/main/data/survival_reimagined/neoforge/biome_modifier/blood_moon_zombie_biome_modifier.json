@@ -5,8 +5,8 @@
   },
   "spawners": {
     "type": "survival_reimagined:blood_moon_zombie",
-    "weight": 80,
-    "minCount": 3,
-    "maxCount": 6
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 3
   }
 }

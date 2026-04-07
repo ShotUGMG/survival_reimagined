@@ -16,11 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.survivalreimagined.block.entity.RuneMagicInfuserBlockEntity;
-import net.mcreator.survivalreimagined.block.entity.MineralProcessingTableBlockEntity;
-import net.mcreator.survivalreimagined.block.entity.MetalRefiningTableBlockEntity;
-import net.mcreator.survivalreimagined.block.entity.ForgeBlockEntity;
-import net.mcreator.survivalreimagined.block.entity.AdvancedAlloyForgeBlockEntity;
+import net.mcreator.survivalreimagined.block.entity.*;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber
@@ -32,6 +28,12 @@ public class SurvivalReimaginedModBlockEntities {
 			MineralProcessingTableBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AdvancedAlloyForgeBlockEntity>> ADVANCED_ALLOY_FORGE = register("advanced_alloy_forge", SurvivalReimaginedModBlocks.ADVANCED_ALLOY_FORGE, AdvancedAlloyForgeBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RuneMagicInfuserBlockEntity>> RUNE_MAGIC_INFUSER = register("rune_magic_infuser", SurvivalReimaginedModBlocks.RUNE_MAGIC_INFUSER, RuneMagicInfuserBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SmallTroughBlockEntity>> SMALL_TROUGH = register("small_trough", SurvivalReimaginedModBlocks.SMALL_TROUGH, SmallTroughBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MillstoneBlockEntity>> MILLSTONE = register("millstone", SurvivalReimaginedModBlocks.MILLSTONE, MillstoneBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PalmLeavesBlockEntity>> PALM_LEAVES = register("palm_leaves", SurvivalReimaginedModBlocks.PALM_LEAVES, PalmLeavesBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<StrawberryPlantBlockEntity>> STRAWBERRY_PLANT = register("strawberry_plant", SurvivalReimaginedModBlocks.STRAWBERRY_PLANT, StrawberryPlantBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<StrawberryCropBlockEntity>> STRAWBERRY_CROP = register("strawberry_crop", SurvivalReimaginedModBlocks.STRAWBERRY_CROP, StrawberryCropBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<BananaLeavesBlockEntity>> BANANA_LEAVES = register("banana_leaves", SurvivalReimaginedModBlocks.BANANA_LEAVES, BananaLeavesBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -46,5 +48,11 @@ public class SurvivalReimaginedModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MINERAL_PROCESSING_TABLE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, ADVANCED_ALLOY_FORGE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RUNE_MAGIC_INFUSER.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SMALL_TROUGH.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MILLSTONE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PALM_LEAVES.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, STRAWBERRY_PLANT.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, STRAWBERRY_CROP.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BANANA_LEAVES.get(), SidedInvWrapper::new);
 	}
 }

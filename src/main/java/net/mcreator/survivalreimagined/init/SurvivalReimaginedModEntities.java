@@ -15,18 +15,14 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.survivalreimagined.entity.CrimsonArachnidEntity;
-import net.mcreator.survivalreimagined.entity.BloodMoonZombieEntity;
-import net.mcreator.survivalreimagined.entity.AlphaCrimsonArachnidEntity;
+import net.mcreator.survivalreimagined.entity.*;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber
 public class SurvivalReimaginedModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, SurvivalReimaginedMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<BloodMoonZombieEntity>> BLOOD_MOON_ZOMBIE = register("blood_moon_zombie",
-			EntityType.Builder.<BloodMoonZombieEntity>of(BloodMoonZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(16).setUpdateInterval(3)
-
-					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
+			EntityType.Builder.<BloodMoonZombieEntity>of(BloodMoonZombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(8).setUpdateInterval(3).fireImmune().ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CrimsonArachnidEntity>> CRIMSON_ARACHNID = register("crimson_arachnid",
 			EntityType.Builder.<CrimsonArachnidEntity>of(CrimsonArachnidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
@@ -35,6 +31,21 @@ public class SurvivalReimaginedModEntities {
 			EntityType.Builder.<AlphaCrimsonArachnidEntity>of(AlphaCrimsonArachnidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(1.4f, 0.9f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BoarEntity>> BOAR = register("boar",
+			EntityType.Builder.<BoarEntity>of(BoarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SowEntity>> SOW = register("sow", EntityType.Builder.<SowEntity>of(SowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+			.sized(0.6f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<PigletEntity>> PIGLET = register("piglet",
+			EntityType.Builder.<PigletEntity>of(PigletEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(1f, 1f));
+	public static final DeferredHolder<EntityType<?>, EntityType<GhostEntity>> GHOST = register("ghost",
+			EntityType.Builder.<GhostEntity>of(GhostEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -47,6 +58,10 @@ public class SurvivalReimaginedModEntities {
 		BloodMoonZombieEntity.init(event);
 		CrimsonArachnidEntity.init(event);
 		AlphaCrimsonArachnidEntity.init(event);
+		BoarEntity.init(event);
+		SowEntity.init(event);
+		PigletEntity.init(event);
+		GhostEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -54,5 +69,9 @@ public class SurvivalReimaginedModEntities {
 		event.put(BLOOD_MOON_ZOMBIE.get(), BloodMoonZombieEntity.createAttributes().build());
 		event.put(CRIMSON_ARACHNID.get(), CrimsonArachnidEntity.createAttributes().build());
 		event.put(ALPHA_CRIMSON_ARACHNID.get(), AlphaCrimsonArachnidEntity.createAttributes().build());
+		event.put(BOAR.get(), BoarEntity.createAttributes().build());
+		event.put(SOW.get(), SowEntity.createAttributes().build());
+		event.put(PIGLET.get(), PigletEntity.createAttributes().build());
+		event.put(GHOST.get(), GhostEntity.createAttributes().build());
 	}
 }

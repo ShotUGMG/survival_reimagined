@@ -3,7 +3,7 @@
   "_type": "structure",
   "definition": {
     "structure": "salt_top",
-    "projection": "terrain_matching",
+    "projection": "rigid",
     "ignoredBlocks": [
       {
         "value": "Blocks.STRUCTURE_BLOCK"
@@ -13,17 +13,17 @@
     "separation": 15,
     "restrictionBiomes": [
       {
-        "value": "#minecraft:is_overworld"
+        "value": "#minecraft:salt_dome_spawn"
       }
     ],
     "terrainAdaptation": "none",
-    "generationStep": "SURFACE_STRUCTURES",
-    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
+    "generationStep": "UNDERGROUND_STRUCTURES",
+    "surfaceDetectionType": "OCEAN_FLOOR_WG",
     "useStartHeight": false,
     "startHeightProviderType": "UNIFORM",
     "startHeightMin": 0,
     "startHeightMax": 128,
-    "size": 3,
+    "size": 1,
     "maxDistanceFromCenter": 64,
     "jigsawPools": [
       {
@@ -33,7 +33,7 @@
           {
             "weight": 1,
             "structure": "salt_shaft",
-            "projection": "terrain_matching",
+            "projection": "rigid",
             "ignoredBlocks": [
               {
                 "value": "Blocks.STRUCTURE_BLOCK"

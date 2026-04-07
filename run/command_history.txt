@@ -1,50 +1,50 @@
-/effect clear
-/effect give Dev minecraft:regeneration 1 10
-/locate biome survival_reimagined:radiated_forest
-/tp @s -1510 -103 -1643
+/tp @s -580 152 530
+/effect give Dev hunger 30 3
+/effect give Dev minecraft:night_vision
 /effect give Dev minecraft:night_vision infinite
+/give Dev survival_reimagined:strawberry_crop
 /give Dev minecraft:debug_stick
-/locate structure minecraft:mineshaft
-/tp @s -3584 ~ -720
-/locate structure minecraft:village_plains
-/locate structure minecraft:village_taiga
-/locate structure minecraft:mineshaft
-/tp @s -4032 ~ -1936
-/time set ng
+/gamerule randomTickSpeed 3000
+/gamerule randomTickSpeed 3
+/give Dev survival_reimagined:strawberry_plant
+/season set fall
+/give Dev survival_reimagined:small_banana_jungle_log
+/give Dev survival_reimagined:banana_leaves
+/give Dev survival_reimagined:banana_cluster
+/give Dev minecraft:debug_stick
+/give Dev survival_reimagined:banana_grow_block
+/gamerule randomTickSpeed 3000
+/gamerule randomTickSpeed 3
+/give Dev survival_reimagined:banana_cluster
+/give Dev survival_reimagined:banana_grow_block
+/give Dev survival_reimagined:banana_jungle_log
+/give Dev survival_reimagined:small_banana_jungle_log
+/give Dev survival_reimagined:banana_leaves
+/give Dev minecraft:structure_block
+/give Dev minecraft:debug_stick
+/place feature survival_reimagined:banana_trees
+/locate biome #c:is_jungle
+/tp @s 1817 101 2122
+/summon survival_reimagined:ghost
+/difficulty easy
+/summon survival_reimagined:ghost
+/difficulty peaceful
+/gamerule randomTickSpeed 3
+/locate biome #c:is_jungle
+/tp @s -1442 95 120
+/give Dev minecraft:debug_stick
+/effect give Dev minecraft:night_vision infinite
+/time set6 d
+/time set day
+/effect clear
+/give Dev survival_reimagined:ruby
+/give Dev survival_reimagined:rough_ruby
+/difficulty peaceful
+/gamerule doDaylightCycle false
+/difficulty peaceful
+/gamerule doDaylightCycle false
+/summon survival_reimagined:ghost ~50 ~ ~
+/difficulty easy
 /time set night
 /event bloodmoon
-/effect clear
-/time set midnight
-/event reset
 /time set day
-/effect give Dev minecraft:regeneration 1 10
-/time set day
-/gamerule doDaylightCycle false
-/effect give Dev minecraft:haste infinite 2
-/effect give Dev minecraft:haste infinite 4
-/effect give Dev minecraft:haste infinite 10
-/effect clear
-/effect give Dev minecraft:night_vision infinite
-/give Dev minecraft:jigsaw
-/give Dev minecraft:structure_block
-/effect give Dev minecraft:night_vision infinite
-/locate structure survival_reimagined:salt_dome
-/tp @s 1008 ~ 176
-/locate structure survival_reimagined:salt_dome
-/tp @s -624 ~ 272
-/place structure survival_reimagined:salt_dome
-/place structure survival_reimagined:spruce_copper_mine
-/place structure survival_reimagined:copper_mine
-/locate structure survival_reimagined:salt_dome
-/tp @s -576 ~ 304
-/locate structure survival_reimagined:salt_dome
-/tp @s 96 ~ 0
-/place structure survival_reimagined:salt_dome
-/locate structure survival_reimagined:salt_dome
-/tp @s 224 ~ 208
-/locate structure survival_reimagined:salt_dome
-/tp @s -912 ~ -256
-/locate structure survival_reimagined:salt_dome
-/tp @s -336 ~ -400
-/locate structure survival_reimagined:salt_dome
-/tp @s 512 ~ -928

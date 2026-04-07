@@ -2,15 +2,10 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 415,
+  "projectBrowserSplitPos": 548,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Survival Reimagined]",
-      "[, Survival Reimagined, Resources (Gradle)]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored\\loot_table]",
-      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored\\loot_table, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reborn_development\\src\\main\\resources\\data\\regions_unexplored\\loot_table\\blocks]"
+      "[, Survival Reimagined]"
     ]
   }
 }

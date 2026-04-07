@@ -36,7 +36,7 @@ public class ItemInInventoryProcedure {
 		if (entity.getCapability(Capabilities.ItemHandler.ENTITY, null) instanceof IItemHandlerModifiable _modHandlerIter) {
 			for (int _idx = 0; _idx < _modHandlerIter.getSlots(); _idx++) {
 				ItemStack itemstackiterator = _modHandlerIter.getStackInSlot(_idx).copy();
-				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:cured_eat")))) {
+				if (itemstackiterator.is(ItemTags.create(ResourceLocation.parse("c:cured_meat")))) {
 					if (hasEntityInInventory(entity, itemstackiterator)) {
 						if (entity instanceof ServerPlayer _player) {
 							AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("survival_reimagined:cured_meat"));

@@ -12,6 +12,8 @@ java.base/sun.security.util=cpw.mods.securejarhandler
 jdk.naming.dns/com.sun.jndi.dns=java.naming
 
 # User JVM Arguments
+-Xdebug
+-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005
 -Dcom.sun.management.jmxremote.port=1099
 -Dcom.sun.management.jmxremote.local.only=true
 -Dcom.sun.management.jmxremote.ssl=false

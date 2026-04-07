@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "missing": "minecraft:spruce_planks"
+      }
+    }
+  }
+}

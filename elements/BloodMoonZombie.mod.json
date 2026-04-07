@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Blood Moon Zombie",
+    "mobName": "Faceless Demon",
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "bloodmoonzombie.png",
@@ -16,19 +16,12 @@
       "fixedValue": false
     },
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.5
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.5
     },
-    "modelLayers": [
-      {
-        "model": "Default",
-        "texture": "bloodmoonzombieemission.png",
-        "disableHurtOverlay": false,
-        "glow": true
-      }
-    ],
+    "modelLayers": [],
     "animations": [],
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -36,13 +29,14 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -8966363,
+      "value": -14150636,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
       "value": -12046045,
       "falpha": 0.0
     },
+    "spawnEggTexture": "",
     "creativeTabs": [
       {
         "value": "CUSTOM:CreativeTab"
@@ -70,16 +64,16 @@
       "value": ""
     },
     "mobBehaviourType": "Mob",
-    "mobCreatureType": "UNDEAD",
-    "attackStrength": 2,
+    "mobCreatureType": "UNDEFINED",
+    "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.25,
-    "stepHeight": 1.0,
+    "movementSpeed": 0.35,
+    "stepHeight": 0.6,
     "armorBaseValue": 0.0,
-    "trackingRange": 16,
-    "followRange": 64,
-    "health": 20,
+    "trackingRange": 8,
+    "followRange": 32,
+    "health": 30,
     "xpAmount": 12,
     "waterMob": false,
     "breatheUnderwater": {
@@ -95,7 +89,7 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
@@ -112,24 +106,21 @@
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:bloodzombie_idle"
+      "value": "CUSTOM:demon/ambient"
     },
     "hurtSound": {
-      "value": "CUSTOM:bloodzombie_hurt"
+      "value": "CUSTOM:demon/hit"
     },
     "deathSound": {
-      "value": "CUSTOM:bloodzombie_death"
+      "value": "CUSTOM:demon/death"
     },
     "stepSound": {
-      "value": "entity.zombie.step"
+      "value": "CUSTOM:demon/step"
     },
     "raidCelebrationSound": {
       "value": ""
     },
     "entityDataEntries": [],
-    "onMobTickUpdate": {
-      "name": "BloodMoonZombieOnEntityTickUpdate"
-    },
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"-49\" y=\"-70\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_with_range\"><field name=\"range\">1</field><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"restrict_sun\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
@@ -148,10 +139,10 @@
     "spawningCondition": {
       "name": "BloodMoonZombieNaturalEntitySpawningCondition"
     },
-    "spawningProbability": 80,
+    "spawningProbability": 40,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 3,
-    "maxNumberOfMobsPerGroup": 6,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [],
     "spawnInDungeons": false,
     "raidSpawnsCount": [
@@ -164,6 +155,9 @@
       2
     ],
     "sensitiveToVibration": false,
-    "vibrationalEvents": []
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    }
   }
 }

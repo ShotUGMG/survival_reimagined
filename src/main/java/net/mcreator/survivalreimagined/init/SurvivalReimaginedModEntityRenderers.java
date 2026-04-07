@@ -8,9 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import net.mcreator.survivalreimagined.client.renderer.CrimsonArachnidRenderer;
-import net.mcreator.survivalreimagined.client.renderer.BloodMoonZombieRenderer;
-import net.mcreator.survivalreimagined.client.renderer.AlphaCrimsonArachnidRenderer;
+import net.mcreator.survivalreimagined.client.renderer.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class SurvivalReimaginedModEntityRenderers {
@@ -19,5 +17,9 @@ public class SurvivalReimaginedModEntityRenderers {
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.BLOOD_MOON_ZOMBIE.get(), BloodMoonZombieRenderer::new);
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.CRIMSON_ARACHNID.get(), CrimsonArachnidRenderer::new);
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.ALPHA_CRIMSON_ARACHNID.get(), AlphaCrimsonArachnidRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.BOAR.get(), BoarRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.SOW.get(), SowRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.PIGLET.get(), PigletRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.GHOST.get(), GhostRenderer::new);
 	}
 }

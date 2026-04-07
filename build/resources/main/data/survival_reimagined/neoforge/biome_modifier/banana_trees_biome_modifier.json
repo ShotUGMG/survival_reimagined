@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_jungle",
+  "features": "survival_reimagined:banana_trees",
+  "step": "vegetal_decoration"
+}

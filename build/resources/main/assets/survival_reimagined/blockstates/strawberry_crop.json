@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "survival_reimagined:block/strawberry_crop"
+    },
+    "age=1": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_0"
+    },
+    "age=2": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_1"
+    },
+    "age=3": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_2"
+    },
+    "age=4": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_3"
+    },
+    "age=5": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_4"
+    },
+    "age=6": {
+      "model": "survival_reimagined:block/strawberry_crop_blockstate_blockstate_5"
+    }
+  }
+}

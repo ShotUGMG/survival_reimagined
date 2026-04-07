@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/saw"
+    },
+    "b": {
+      "item": "survival_reimagined:small_palm_log"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:coconut_palm_plank",
+    "count": 4
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "_fv": 79,
+  "_type": "blockstates",
+  "definition": {
+    "block": "StrawberryCrop",
+    "blockstateList": [
+      {
+        "texture": "strawberry_plant",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant_stage2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 11.0,
+            "My": 1.0,
+            "Mz": 11.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant_stage3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 5.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 11.0,
+            "My": 1.0,
+            "Mz": 11.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant_stage4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 12.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_plant_stage5:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 12.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant_flowering",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_crop_flowering:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 12.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "strawberry_plant_fruiting",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "strawberry_crop_fruiting:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 4.0,
+            "Mx": 12.0,
+            "My": 1.0,
+            "Mz": 12.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

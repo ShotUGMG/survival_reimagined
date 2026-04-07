@@ -574,5 +574,164 @@
         "stream": false
       }
     ]
+  },
+  "demon/death": {
+    "subtitle": "subtitles.demon/death",
+    "sounds": [
+      {
+        "name": "survival_reimagined:demon_death",
+        "stream": false
+      }
+    ]
+  },
+  "demon/hit": {
+    "subtitle": "subtitles.demon/hit",
+    "sounds": [
+      {
+        "name": "survival_reimagined:demon_hit3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_hit2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_hit1",
+        "stream": false
+      }
+    ]
+  },
+  "demon/ambient": {
+    "subtitle": "subtitles.demon/ambient",
+    "sounds": [
+      {
+        "name": "survival_reimagined:demon_ambient3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_ambient2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_ambient1",
+        "stream": false
+      }
+    ]
+  },
+  "demon/step": {
+    "subtitle": "subtitles.demon/step",
+    "sounds": [
+      {
+        "name": "survival_reimagined:demon_step4",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_step3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_step2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:demon_step1",
+        "stream": false
+      }
+    ]
+  },
+  "ambient/baor": {
+    "subtitle": "subtitles.ambient/baor",
+    "sounds": [
+      {
+        "name": "survival_reimagined:boar_ambient1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:boar_ambient2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:boar_ambient3",
+        "stream": false
+      }
+    ]
+  },
+  "death/boar": {
+    "subtitle": "subtitles.death/boar",
+    "sounds": [
+      {
+        "name": "survival_reimagined:boar_death",
+        "stream": false
+      }
+    ]
+  },
+  "hit/boar": {
+    "subtitle": "subtitles.hit/boar",
+    "sounds": [
+      {
+        "name": "survival_reimagined:boar_hit1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:boar_hit2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:boar_hit3",
+        "stream": false
+      }
+    ]
+  },
+  "squeal/boar": {
+    "subtitle": "subtitles.squeal/boar",
+    "sounds": [
+      {
+        "name": "survival_reimagined:boar_fear",
+        "stream": false
+      }
+    ]
+  },
+  "ambient/piglet": {
+    "subtitle": "subtitles.ambient/piglet",
+    "sounds": [
+      {
+        "name": "survival_reimagined:piglet_ambient1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:piglet_ambient2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:piglet_ambient3",
+        "stream": false
+      }
+    ]
+  },
+  "hurt/piglet": {
+    "subtitle": "subtitles.hurt/piglet",
+    "sounds": [
+      {
+        "name": "survival_reimagined:piglet_hurt1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:piglet_hurt2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:piglet_hurt3",
+        "stream": false
+      }
+    ]
+  },
+  "squeal/piglet": {
+    "subtitle": "subtitles.squeal/piglet",
+    "sounds": [
+      {
+        "name": "survival_reimagined:piglet_fear",
+        "stream": false
+      }
+    ]
   }
 }

@@ -30,6 +30,7 @@ public class SurvivalReimaginedModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<AdvancedAlloyForgeGUIMenu>> ADVANCED_ALLOY_FORGE_GUI = REGISTRY.register("advanced_alloy_forge_gui", () -> IMenuTypeExtension.create(AdvancedAlloyForgeGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<AAFScriptureGUIMenu>> AAF_SCRIPTURE_GUI = REGISTRY.register("aaf_scripture_gui", () -> IMenuTypeExtension.create(AAFScriptureGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RMIMenu>> RMI = REGISTRY.register("rmi", () -> IMenuTypeExtension.create(RMIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<SmallTroughGUIMenu>> SMALL_TROUGH_GUI = REGISTRY.register("small_trough_gui", () -> IMenuTypeExtension.create(SmallTroughGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

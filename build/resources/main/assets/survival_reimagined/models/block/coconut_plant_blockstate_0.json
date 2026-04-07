@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/coconut_plant",
+  "textures": {
+    "all": "survival_reimagined:block/coconut_plant",
+    "particle": "survival_reimagined:block/coconut_new",
+    "0": "survival_reimagined:block/coconut_plant"
+  },
+  "render_type": "solid"
+}

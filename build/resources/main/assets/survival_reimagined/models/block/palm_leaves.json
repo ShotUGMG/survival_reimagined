@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "survival_reimagined:block/palm_leaves",
+    "particle": "survival_reimagined:block/palm_leaves"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/strawberry_plant_stage3",
+  "textures": {
+    "all": "survival_reimagined:block/strawberry_plant",
+    "particle": "survival_reimagined:block/strawberry_plant",
+    "1": "survival_reimagined:block/strawberry_plant"
+  },
+  "render_type": "cutout"
+}

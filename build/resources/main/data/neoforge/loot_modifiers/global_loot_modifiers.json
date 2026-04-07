@@ -4,7 +4,11 @@
     "survival_reimagined:aaf_scriputre_loot",
     "survival_reimagined:aaf_weapons_smith",
     "survival_reimagined:aaf_ruined_portal",
-    "survival_reimagined:aaf_buried_treasure"
+    "survival_reimagined:aaf_buried_treasure",
+    "survival_reimagined:enderman",
+    "survival_reimagined:ruined_portal",
+    "survival_reimagined:stronghold",
+    "survival_reimagined:mineshaft"
   ],
   "replace": false
 }

@@ -1,15 +1,21 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:small_trough",
     "survival_reimagined:radiated_slab",
     "survival_reimagined:radiant_planks",
     "survival_reimagined:radiated_fence_gate",
-    "survival_reimagined:radiated_fence",
+    "survival_reimagined:palm_leaves",
     "survival_reimagined:radiant_log",
+    "survival_reimagined:palm_log_barked_top",
     "survival_reimagined:wisteria_log",
     "survival_reimagined:stripped_radiant_log",
     "survival_reimagined:radiated_stairs",
-    "survival_reimagined:metal_refining_table",
-    "survival_reimagined:stripped_wisteria_log"
+    "survival_reimagined:small_palm_log",
+    "survival_reimagined:stripped_wisteria_log",
+    "survival_reimagined:radiated_fence",
+    "survival_reimagined:palm_crown",
+    "survival_reimagined:palm_log",
+    "survival_reimagined:metal_refining_table"
   ]
 }

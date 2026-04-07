@@ -12,7 +12,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "smeltingInputStack": {
-      "value": "TAG:c:metal_rocks/titanium_nugget"
+      "value": "TAG:c:metal_rocks/titanium_nuggets"
     },
     "smeltingReturnStack": {
       "value": "CUSTOM:TitaniumNugget"

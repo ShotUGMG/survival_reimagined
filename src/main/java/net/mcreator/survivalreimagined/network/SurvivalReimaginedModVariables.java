@@ -87,6 +87,7 @@ public class SurvivalReimaginedModVariables {
 		clone.GasMaskHeal = original.GasMaskHeal;
 		clone.DiamondLogicNumber = original.DiamondLogicNumber;
 		clone.ZombificationImmune = original.ZombificationImmune;
+		clone.PlayerPositionSet = original.PlayerPositionSet;
 		if (!event.isWasDeath()) {
 			clone.SpoilTimer = original.SpoilTimer;
 			clone.HungerSprinting = original.HungerSprinting;
@@ -107,6 +108,8 @@ public class SurvivalReimaginedModVariables {
 			clone.ScrapeHandler = original.ScrapeHandler;
 			clone.ItemCount = original.ItemCount;
 			clone.WeightMediumItems = original.WeightMediumItems;
+			clone.HungryProc = original.HungryProc;
+			clone.Hungry = original.Hungry;
 		}
 		event.getEntity().setData(PLAYER_VARIABLES, clone);
 	}
@@ -158,6 +161,11 @@ public class SurvivalReimaginedModVariables {
 		public double BloodmoonFog = 0;
 		public double FogStart = 0;
 		public double FogEnd = 0;
+		public double FruitTree = 0;
+		public boolean GhostSpawned = false;
+		public double GhostSpawnChance = 0;
+		public double GhostSpawnNumberVariable = 0;
+		public double GhostDespawnTimer = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -173,6 +181,11 @@ public class SurvivalReimaginedModVariables {
 			BloodmoonFog = nbt.getDouble("BloodmoonFog");
 			FogStart = nbt.getDouble("FogStart");
 			FogEnd = nbt.getDouble("FogEnd");
+			FruitTree = nbt.getDouble("FruitTree");
+			GhostSpawned = nbt.getBoolean("GhostSpawned");
+			GhostSpawnChance = nbt.getDouble("GhostSpawnChance");
+			GhostSpawnNumberVariable = nbt.getDouble("GhostSpawnNumberVariable");
+			GhostDespawnTimer = nbt.getDouble("GhostDespawnTimer");
 		}
 
 		@Override
@@ -184,6 +197,11 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("BloodmoonFog", BloodmoonFog);
 			nbt.putDouble("FogStart", FogStart);
 			nbt.putDouble("FogEnd", FogEnd);
+			nbt.putDouble("FruitTree", FruitTree);
+			nbt.putBoolean("GhostSpawned", GhostSpawned);
+			nbt.putDouble("GhostSpawnChance", GhostSpawnChance);
+			nbt.putDouble("GhostSpawnNumberVariable", GhostSpawnNumberVariable);
+			nbt.putDouble("GhostDespawnTimer", GhostDespawnTimer);
 			return nbt;
 		}
 
@@ -332,6 +350,9 @@ public class SurvivalReimaginedModVariables {
 		public boolean ZombificationImmune = false;
 		public double ItemCount = 0;
 		public ItemStack WeightMediumItems = ItemStack.EMPTY;
+		public double HungryProc = 0;
+		public boolean Hungry = false;
+		public boolean PlayerPositionSet = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -359,6 +380,9 @@ public class SurvivalReimaginedModVariables {
 			nbt.putBoolean("ZombificationImmune", ZombificationImmune);
 			nbt.putDouble("ItemCount", ItemCount);
 			nbt.put("WeightMediumItems", WeightMediumItems.saveOptional(lookupProvider));
+			nbt.putDouble("HungryProc", HungryProc);
+			nbt.putBoolean("Hungry", Hungry);
+			nbt.putBoolean("PlayerPositionSet", PlayerPositionSet);
 			return nbt;
 		}
 
@@ -387,6 +411,9 @@ public class SurvivalReimaginedModVariables {
 			ZombificationImmune = nbt.getBoolean("ZombificationImmune");
 			ItemCount = nbt.getDouble("ItemCount");
 			WeightMediumItems = ItemStack.parseOptional(lookupProvider, nbt.getCompound("WeightMediumItems"));
+			HungryProc = nbt.getDouble("HungryProc");
+			Hungry = nbt.getBoolean("Hungry");
+			PlayerPositionSet = nbt.getBoolean("PlayerPositionSet");
 		}
 
 		public void markSyncDirty() {

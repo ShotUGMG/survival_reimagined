@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "survival_reimagined:block/bannana_leaf",
+    "particle": "survival_reimagined:block/bannana_leaf"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -203,7 +203,7 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> CALAVERITE_BLOCK;
 	public static final DeferredBlock<Block> MANGANITE_ORE;
 	public static final DeferredBlock<Block> DEEPSLATE_MANGANITE_ORE;
-	public static final DeferredBlock<Block> BASALT_MANGANITE_ORE;
+	public static final DeferredBlock<Block> BASALT_PYROLUSITE_ORE;
 	public static final DeferredBlock<Block> MANGANITE_BLOCK;
 	public static final DeferredBlock<Block> PYROLUSITE_ORE;
 	public static final DeferredBlock<Block> PYROLUSITE_BLOCK;
@@ -270,6 +270,25 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> WISTERIA_PRESSURE_PLATE;
 	public static final DeferredBlock<Block> PURE_SALT_BLOCK;
 	public static final DeferredBlock<Block> SALT_DEPOSIT;
+	public static final DeferredBlock<Block> JEIAIR;
+	public static final DeferredBlock<Block> SMALL_TROUGH;
+	public static final DeferredBlock<Block> MILLSTONE;
+	public static final DeferredBlock<Block> SMALL_PALM_LOG;
+	public static final DeferredBlock<Block> PALM_LOG;
+	public static final DeferredBlock<Block> PALM_LOG_BARKED_TOP;
+	public static final DeferredBlock<Block> COCONUT;
+	public static final DeferredBlock<Block> COCONUT_MATURE;
+	public static final DeferredBlock<Block> PALM_CROWN;
+	public static final DeferredBlock<Block> PALM_LEAVES;
+	public static final DeferredBlock<Block> ALOE_VERA;
+	public static final DeferredBlock<Block> COCONUT_SEEDLING;
+	public static final DeferredBlock<Block> STRAWBERRY_PLANT;
+	public static final DeferredBlock<Block> STRAWBERRY_CROP;
+	public static final DeferredBlock<Block> BANANA_JUNGLE_LOG;
+	public static final DeferredBlock<Block> SMALL_BANANA_JUNGLE_LOG;
+	public static final DeferredBlock<Block> BANANA_LEAVES;
+	public static final DeferredBlock<Block> BANANA_CLUSTER;
+	public static final DeferredBlock<Block> BANANA_GROW_BLOCK;
 	static {
 		FLINTBLOCK = REGISTRY.register("flintblock", FlintblockBlock::new);
 		STONE_ROCK_BLOC = REGISTRY.register("stone_rock_bloc", StoneRockBlocBlock::new);
@@ -457,7 +476,7 @@ public class SurvivalReimaginedModBlocks {
 		CALAVERITE_BLOCK = REGISTRY.register("calaverite_block", CalaveriteBlockBlock::new);
 		MANGANITE_ORE = REGISTRY.register("manganite_ore", ManganiteOreBlock::new);
 		DEEPSLATE_MANGANITE_ORE = REGISTRY.register("deepslate_manganite_ore", DeepslateManganiteOreBlock::new);
-		BASALT_MANGANITE_ORE = REGISTRY.register("basalt_manganite_ore", BasaltManganiteOreBlock::new);
+		BASALT_PYROLUSITE_ORE = REGISTRY.register("basalt_pyrolusite_ore", BasaltManganiteOreBlock::new);
 		MANGANITE_BLOCK = REGISTRY.register("manganite_block", ManganiteBlockBlock::new);
 		PYROLUSITE_ORE = REGISTRY.register("pyrolusite_ore", PyrolusiteOreBlock::new);
 		PYROLUSITE_BLOCK = REGISTRY.register("pyrolusite_block", PyrolusiteBlockBlock::new);
@@ -524,6 +543,25 @@ public class SurvivalReimaginedModBlocks {
 		WISTERIA_PRESSURE_PLATE = REGISTRY.register("wisteria_pressure_plate", WisteriaPressurePlateBlock::new);
 		PURE_SALT_BLOCK = REGISTRY.register("pure_salt_block", PureSaltBlockBlock::new);
 		SALT_DEPOSIT = REGISTRY.register("salt_deposit", SaltDepositBlock::new);
+		JEIAIR = REGISTRY.register("jeiair", JEIAIRBlock::new);
+		SMALL_TROUGH = REGISTRY.register("small_trough", SmallTroughBlock::new);
+		MILLSTONE = REGISTRY.register("millstone", MillstoneBlock::new);
+		SMALL_PALM_LOG = REGISTRY.register("small_palm_log", SmallPalmLogBlock::new);
+		PALM_LOG = REGISTRY.register("palm_log", PalmLogBlock::new);
+		PALM_LOG_BARKED_TOP = REGISTRY.register("palm_log_barked_top", PalmLogBarkedTopBlock::new);
+		COCONUT = REGISTRY.register("coconut", CoconutBlock::new);
+		COCONUT_MATURE = REGISTRY.register("coconut_mature", CoconutMatureBlock::new);
+		PALM_CROWN = REGISTRY.register("palm_crown", PalmCrownBlock::new);
+		PALM_LEAVES = REGISTRY.register("palm_leaves", PalmLeavesBlock::new);
+		ALOE_VERA = REGISTRY.register("aloe_vera", AloeVeraBlock::new);
+		COCONUT_SEEDLING = REGISTRY.register("coconut_seedling", CoconutSeedlingBlock::new);
+		STRAWBERRY_PLANT = REGISTRY.register("strawberry_plant", StrawberryPlantBlock::new);
+		STRAWBERRY_CROP = REGISTRY.register("strawberry_crop", StrawberryCropBlock::new);
+		BANANA_JUNGLE_LOG = REGISTRY.register("banana_jungle_log", BananaJungleLogBlock::new);
+		SMALL_BANANA_JUNGLE_LOG = REGISTRY.register("small_banana_jungle_log", SmallBananaJungleLogBlock::new);
+		BANANA_LEAVES = REGISTRY.register("banana_leaves", BananaLeavesBlock::new);
+		BANANA_CLUSTER = REGISTRY.register("banana_cluster", BananaBlock::new);
+		BANANA_GROW_BLOCK = REGISTRY.register("banana_grow_block", BananaGrowBlockBlock::new);
 	}
 
 	// Start of user code block custom blocks

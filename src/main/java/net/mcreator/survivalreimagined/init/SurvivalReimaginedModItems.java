@@ -544,7 +544,7 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> CALAVERITE_BLOCK;
 	public static final DeferredItem<Item> MANGANITE_ORE;
 	public static final DeferredItem<Item> DEEPSLATE_MANGANITE_ORE;
-	public static final DeferredItem<Item> BASALT_MANGANITE_ORE;
+	public static final DeferredItem<Item> BASALT_PYROLUSITE_ORE;
 	public static final DeferredItem<Item> MANGANITE_BLOCK;
 	public static final DeferredItem<Item> MANGANITE;
 	public static final DeferredItem<Item> MANGANITE_NUGGET;
@@ -685,6 +685,35 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> PURE_SALT_BLOCK;
 	public static final DeferredItem<Item> SALT_DEPOSIT;
 	public static final DeferredItem<Item> SALT_ROCK;
+	public static final DeferredItem<Item> JEIAIR;
+	public static final DeferredItem<Item> BOAR_SPAWN_EGG;
+	public static final DeferredItem<Item> SOW_SPAWN_EGG;
+	public static final DeferredItem<Item> PIGLET_SPAWN_EGG;
+	public static final DeferredItem<Item> SMALL_TROUGH;
+	public static final DeferredItem<Item> MILLSTONE;
+	public static final DeferredItem<Item> SMALL_PALM_LOG;
+	public static final DeferredItem<Item> PALM_LOG;
+	public static final DeferredItem<Item> PALM_LOG_BARKED_TOP;
+	public static final DeferredItem<Item> COCONUT;
+	public static final DeferredItem<Item> COCONUT_MATURE;
+	public static final DeferredItem<Item> PALM_CROWN;
+	public static final DeferredItem<Item> PALM_LEAVES;
+	public static final DeferredItem<Item> ALOE_VERA;
+	public static final DeferredItem<Item> COCONUT_PALM_PLANK;
+	public static final DeferredItem<Item> COCONUT_PALM_BARK;
+	public static final DeferredItem<Item> COCONUT_SEEDLING;
+	public static final DeferredItem<Item> COCONUT_SHELL;
+	public static final DeferredItem<Item> COCONUT_FRUIT;
+	public static final DeferredItem<Item> STRAWBERRY_PLANT;
+	public static final DeferredItem<Item> STRAWBERRY;
+	public static final DeferredItem<Item> STRAWBERRY_CROP;
+	public static final DeferredItem<Item> BANANA_JUNGLE_LOG;
+	public static final DeferredItem<Item> SMALL_BANANA_JUNGLE_LOG;
+	public static final DeferredItem<Item> BANANA_LEAVES;
+	public static final DeferredItem<Item> BANANA_CLUSTER;
+	public static final DeferredItem<Item> BANANA_GROW_BLOCK;
+	public static final DeferredItem<Item> BANANA;
+	public static final DeferredItem<Item> GHOST_SPAWN_EGG;
 	static {
 		FLINTBLOCK = block(SurvivalReimaginedModBlocks.FLINTBLOCK);
 		FLINT_TOOL = REGISTRY.register("flint_tool", FlintToolItem::new);
@@ -950,7 +979,7 @@ public class SurvivalReimaginedModItems {
 		EMBEDDED_OBSIDIAN = block(SurvivalReimaginedModBlocks.EMBEDDED_OBSIDIAN);
 		BACKPACK = REGISTRY.register("backpack", BackpackItem::new);
 		GOLD_ROD = REGISTRY.register("gold_rod", GoldRodItem::new);
-		BLOOD_MOON_ZOMBIE_SPAWN_EGG = REGISTRY.register("blood_moon_zombie_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.BLOOD_MOON_ZOMBIE, -8966363, -12046045, new Item.Properties()));
+		BLOOD_MOON_ZOMBIE_SPAWN_EGG = REGISTRY.register("blood_moon_zombie_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.BLOOD_MOON_ZOMBIE, -14150636, -12046045, new Item.Properties()));
 		FLESH = REGISTRY.register("flesh", FleshItem::new);
 		HEART_OF_THE_BLOOD_MOON = REGISTRY.register("heart_of_the_blood_moon", HeartOfTheBloodMoonItem::new);
 		HEART_OF_THE_NETHER = REGISTRY.register("heart_of_the_nether", HeartOfTheNetherItem::new);
@@ -1205,7 +1234,7 @@ public class SurvivalReimaginedModItems {
 		CALAVERITE_BLOCK = block(SurvivalReimaginedModBlocks.CALAVERITE_BLOCK);
 		MANGANITE_ORE = block(SurvivalReimaginedModBlocks.MANGANITE_ORE);
 		DEEPSLATE_MANGANITE_ORE = block(SurvivalReimaginedModBlocks.DEEPSLATE_MANGANITE_ORE);
-		BASALT_MANGANITE_ORE = block(SurvivalReimaginedModBlocks.BASALT_MANGANITE_ORE);
+		BASALT_PYROLUSITE_ORE = block(SurvivalReimaginedModBlocks.BASALT_PYROLUSITE_ORE);
 		MANGANITE_BLOCK = block(SurvivalReimaginedModBlocks.MANGANITE_BLOCK);
 		MANGANITE = REGISTRY.register("manganite", ManganiteItem::new);
 		MANGANITE_NUGGET = REGISTRY.register("manganite_nugget", ManganiteNuggetItem::new);
@@ -1346,6 +1375,35 @@ public class SurvivalReimaginedModItems {
 		PURE_SALT_BLOCK = block(SurvivalReimaginedModBlocks.PURE_SALT_BLOCK);
 		SALT_DEPOSIT = block(SurvivalReimaginedModBlocks.SALT_DEPOSIT);
 		SALT_ROCK = REGISTRY.register("salt_rock", SaltRockItem::new);
+		JEIAIR = block(SurvivalReimaginedModBlocks.JEIAIR);
+		BOAR_SPAWN_EGG = REGISTRY.register("boar_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.BOAR, -13949662, -14410214, new Item.Properties()));
+		SOW_SPAWN_EGG = REGISTRY.register("sow_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.SOW, -13949662, -14410214, new Item.Properties()));
+		PIGLET_SPAWN_EGG = REGISTRY.register("piglet_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.PIGLET, -12111577, -13886446, new Item.Properties()));
+		SMALL_TROUGH = block(SurvivalReimaginedModBlocks.SMALL_TROUGH);
+		MILLSTONE = block(SurvivalReimaginedModBlocks.MILLSTONE);
+		SMALL_PALM_LOG = block(SurvivalReimaginedModBlocks.SMALL_PALM_LOG);
+		PALM_LOG = block(SurvivalReimaginedModBlocks.PALM_LOG);
+		PALM_LOG_BARKED_TOP = block(SurvivalReimaginedModBlocks.PALM_LOG_BARKED_TOP);
+		COCONUT = block(SurvivalReimaginedModBlocks.COCONUT);
+		COCONUT_MATURE = block(SurvivalReimaginedModBlocks.COCONUT_MATURE);
+		PALM_CROWN = block(SurvivalReimaginedModBlocks.PALM_CROWN);
+		PALM_LEAVES = block(SurvivalReimaginedModBlocks.PALM_LEAVES);
+		ALOE_VERA = block(SurvivalReimaginedModBlocks.ALOE_VERA);
+		COCONUT_PALM_PLANK = REGISTRY.register("coconut_palm_plank", CoconutPalmPlankItem::new);
+		COCONUT_PALM_BARK = REGISTRY.register("coconut_palm_bark", CoconutPalmBarkItem::new);
+		COCONUT_SEEDLING = block(SurvivalReimaginedModBlocks.COCONUT_SEEDLING);
+		COCONUT_SHELL = REGISTRY.register("coconut_shell", CoconutShellItem::new);
+		COCONUT_FRUIT = REGISTRY.register("coconut_fruit", CoconutFruitItem::new);
+		STRAWBERRY_PLANT = block(SurvivalReimaginedModBlocks.STRAWBERRY_PLANT);
+		STRAWBERRY = REGISTRY.register("strawberry", StrawberryItem::new);
+		STRAWBERRY_CROP = block(SurvivalReimaginedModBlocks.STRAWBERRY_CROP);
+		BANANA_JUNGLE_LOG = block(SurvivalReimaginedModBlocks.BANANA_JUNGLE_LOG);
+		SMALL_BANANA_JUNGLE_LOG = block(SurvivalReimaginedModBlocks.SMALL_BANANA_JUNGLE_LOG);
+		BANANA_LEAVES = block(SurvivalReimaginedModBlocks.BANANA_LEAVES);
+		BANANA_CLUSTER = block(SurvivalReimaginedModBlocks.BANANA_CLUSTER);
+		BANANA_GROW_BLOCK = block(SurvivalReimaginedModBlocks.BANANA_GROW_BLOCK);
+		BANANA = REGISTRY.register("banana", BananaItemItem::new);
+		GHOST_SPAWN_EGG = REGISTRY.register("ghost_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.GHOST, -12500671, -13421773, new Item.Properties()));
 	}
 
 	// Start of user code block custom items

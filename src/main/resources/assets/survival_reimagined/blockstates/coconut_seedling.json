@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "survival_reimagined:block/coconut_seedling"
+    },
+    "blockstate=1": {
+      "model": "survival_reimagined:block/coconut_plant_blockstate_0"
+    }
+  }
+}

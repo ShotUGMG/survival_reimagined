@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "meadow",
+    "birch_forest",
+    "savanna",
+    "plains",
+    "taiga"
+  ],
+  "features": "survival_reimagined:wild_strawberries",
+  "step": "vegetal_decoration"
+}

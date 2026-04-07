@@ -10,7 +10,7 @@
 
 	[status_effects."paranoia/_fear"]
 		#Allow the player to feel paranoia/fear if in dark areas
-		paranoiaand_fear = true
+		paranoiaand_fear = false
 		#Minimum Light Level needed for Darkness effects to take effect (Default is 0, Range: 0 - 15)
 		darkness_level = 0.0
 		#Minimum Light Level needed for Darkness effects to stop take effect (Default is 5, Range: 0 - 15)

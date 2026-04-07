@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:banana_cluster"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:banana",
+    "count": 3
+  }
+}

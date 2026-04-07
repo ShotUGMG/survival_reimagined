@@ -1,4 +1,8 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "survival_reimagined:banana_grow_block",
+    "survival_reimagined:small_banana_jungle_log",
+    "survival_reimagined:banana_jungle_log"
+  ]
 }

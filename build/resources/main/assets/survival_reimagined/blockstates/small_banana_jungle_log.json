@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "survival_reimagined:block/small_banana_jungle_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "survival_reimagined:block/small_banana_jungle_log"
+    },
+    "axis=z": {
+      "model": "survival_reimagined:block/small_banana_jungle_log",
+      "x": 90
+    }
+  }
+}

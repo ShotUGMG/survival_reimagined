@@ -1,79 +1,91 @@
 {
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2025-10-05 14:00:19 -0700"
+      "unlock_right_away": "2026-03-26 03:41:39 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:kimberlite_layer": {
+    "criteria": {
+      "kimberlite_layer_0": "2026-03-26 03:41:39 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:volcanic_layer": {
+    "criteria": {
+      "volcanic_layer_0": "2026-03-26 03:41:39 -0700"
     },
     "done": true
   },
   "survival_reimagined:survival_reimagined": {
     "criteria": {
-      "survival_reimagined_0": "2025-10-05 14:00:19 -0700"
+      "survival_reimagined_0": "2026-03-26 03:41:39 -0700"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:plains": "2025-10-05 14:00:20 -0700"
+      "minecraft:plains": "2026-03-26 03:41:40 -0700"
     },
     "done": false
   },
-  "survival_reimagined:wood_set": {
+  "create:root": {
     "criteria": {
-      "wood_set_2": "2025-10-05 14:12:51 -0700"
-    },
-    "done": false
-  },
-  "minecraft:recipes/misc/white_dye": {
-    "criteria": {
-      "has_bone_meal": "2025-10-05 14:13:07 -0700"
+      "0": "2026-03-26 03:48:19 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/bone_block": {
+  "minecraft:adventure/root": {
     "criteria": {
-      "has_bone_meal": "2025-10-05 14:13:07 -0700"
+      "killed_something": "2026-03-26 05:21:34 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/charcoal": {
+  "survival_reimagined:blood_moon_hours": {
     "criteria": {
-      "has_log": "2025-10-05 14:14:29 -0700"
+      "blood_moon_hours_0": "2026-03-26 06:45:50 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cherry_planks": {
+  "minecraft:recipes/combat/bow": {
     "criteria": {
-      "has_log": "2025-10-05 14:14:29 -0700"
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cherry_wood": {
+  "minecraft:recipes/tools/fishing_rod": {
     "criteria": {
-      "has_log": "2025-10-05 14:14:29 -0700"
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_planks": {
+  "minecraft:recipes/redstone/tripwire_hook": {
     "criteria": {
-      "has_logs": "2025-11-17 22:13:01 -0800"
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_wood": {
+  "minecraft:recipes/decorations/candle": {
     "criteria": {
-      "has_log": "2025-11-17 22:13:01 -0800"
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
     "done": true
   },
-  "minecraft:husbandry/balanced_diet": {
+  "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
-      "golden_apple": "2025-11-17 22:14:45 -0800"
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
-    "done": false
+    "done": true
   },
-  "minecraft:husbandry/root": {
+  "minecraft:recipes/combat/crossbow": {
     "criteria": {
-      "consumed_item": "2025-11-17 22:14:45 -0800"
+      "has_string": "2026-03-26 06:47:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/loom": {
+    "criteria": {
+      "has_string": "2026-03-26 06:47:32 -0700"
     },
     "done": true
   },

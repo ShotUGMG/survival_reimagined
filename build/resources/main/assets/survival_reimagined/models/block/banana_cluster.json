@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/banana_model_new",
+  "textures": {
+    "all": "survival_reimagined:block/banana_texture_new",
+    "particle": "survival_reimagined:block/banana_texture_new",
+    "0": "survival_reimagined:block/banana_texture_new"
+  },
+  "render_type": "cutout_mipped"
+}

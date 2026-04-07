@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/palm_log_top",
+    "up": "survival_reimagined:block/palm_log_top",
+    "north": "survival_reimagined:block/palm_log",
+    "east": "survival_reimagined:block/palm_log",
+    "south": "survival_reimagined:block/palm_log",
+    "west": "survival_reimagined:block/palm_log",
+    "particle": "survival_reimagined:block/palm_log_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "survival_reimagined:custom/millstone",
+  "textures": {
+    "all": "survival_reimagined:block/millstone",
+    "particle": "survival_reimagined:block/millstone",
+    "8": "minecraft:block/spruce_planks",
+    "9": "minecraft:block/polished_andesite",
+    "10": "minecraft:block/iron_block"
+  },
+  "render_type": "cutout"
+}

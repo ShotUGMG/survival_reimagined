@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/palm_log",
+  "textures": {
+    "all": "survival_reimagined:block/jungle_texture_log",
+    "particle": "survival_reimagined:block/jungle_texture_log",
+    "0": "survival_reimagined:block/jungle_texture_log"
+  },
+  "render_type": "solid"
+}

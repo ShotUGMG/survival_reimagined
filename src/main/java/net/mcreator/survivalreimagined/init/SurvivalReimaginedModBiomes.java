@@ -49,12 +49,16 @@ public class SurvivalReimaginedModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.8f, -0.1f), Climate.Parameter.span(-0.9f, 0.1f), Climate.Parameter.span(-0.11f, 0.33f), Climate.Parameter.span(-0.2f, 0.2f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.8f, -0.1f), Climate.Parameter.span(-0.9f, 0.1f), Climate.Parameter.span(-0.11f, 0.33f), Climate.Parameter.span(-0.2f, 0.2f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.8f, -0.1f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.05f, 0.3f), Climate.Parameter.span(-0.2f, 1f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.8f, -0.1f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-1.05f, 0.3f), Climate.Parameter.span(-0.2f, 1f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.25f, 1f), Climate.Parameter.span(-0.25f, 1f), Climate.Parameter.span(-0.19f, -0.11f), Climate.Parameter.span(-0.5f, 0.5f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.5f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "tropical_coast")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.25f, 1f), Climate.Parameter.span(-0.25f, 1f), Climate.Parameter.span(-0.19f, -0.11f), Climate.Parameter.span(-0.5f, 0.5f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.5f, 0f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "tropical_coast")))));
 					addParameterPoint(parameters,
-							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0f), Climate.Parameter.span(-0.8f, 0.8f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(1.5f, 2.0f),
+							new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0f), Climate.Parameter.span(-0.8f, 0.8f), Climate.Parameter.span(0f, 1f), Climate.Parameter.span(-1f, 0f), Climate.Parameter.span(0.2f, 0.9f),
 									Climate.Parameter.span(0f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "radiated_forest")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
@@ -79,6 +83,8 @@ public class SurvivalReimaginedModBiomes {
 				SurvivalReimaginedModBlocks.SHALE.get().defaultBlockState(), SurvivalReimaginedModBlocks.SHALE.get().defaultBlockState()));
 		customSurfaceRules.add(preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "wisteria_forest")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(),
 				Blocks.DIRT.defaultBlockState()));
+		customSurfaceRules.add(preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("survival_reimagined", "tropical_coast")), Blocks.SAND.defaultBlockState(), Blocks.SAND.defaultBlockState(),
+				Blocks.SAND.defaultBlockState()));
 		if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 			customSurfaceRules.addAll(sequenceRuleSource.sequence());
 			return SurfaceRules.sequence(customSurfaceRules.toArray(SurfaceRules.RuleSource[]::new));
