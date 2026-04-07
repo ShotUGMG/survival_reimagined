@@ -18,10 +18,10 @@ Nether
 
 
  Farming
- - Tropical coasts biome, found on coasts - **implemented**
- - Strawberries, wild strawberries can be found in savannas, plains, birch forest and normal taiga forest and meadow. Harvested Strawberries can be replanted to grow new strawberries. single plant can drop 3-4 strawberries - **implemented**
- - Banana Trees, wild trees can be found in jungles, and bamboo forests and tropical forests. **grow on side of tree - implemented, change leaves to use .JSON block instead of .JAVA block entity class**
- - Palm Trees (Coconut Trees) found on tropical coasts - **implemented, change leaves to use .JSON block instead of .JAVA block entity class**
+ - Tropical coasts biome, found on coasts - ***implemented***
+ - Strawberries, wild strawberries can be found in savannas, plains, birch forest and normal taiga forest and meadow. Harvested Strawberries can be replanted to grow new strawberries. single plant can drop 3-4 strawberries - ***implemented***
+ - Banana Trees, wild trees can be found in jungles, and bamboo forests and tropical forests. grow on side of tree - ***implemented, change leaves to use .JSON block instead of .JAVA block entity class***
+ - Palm Trees (Coconut Trees) found on tropical coasts - ***implemented, change leaves to use .JSON block instead of .JAVA block entity class***
  - Mandarin Orange Citrus Trees found in plains, and lush caves
  - Lemon Citrus Tree found in plains and lush caves
  - Raspberries found in forests and meadows
