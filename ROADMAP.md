@@ -3,10 +3,6 @@ new features 1.4.0
 Nether
  - Toxic atmosphere, black lung status effect
  - soul sand structure, themed around the wither, has specialized rune needed to mine through wither area underneath the normal nether
-
- End
-  - forest end biome, Astral Void Forest, chariote gemstone from this biome is also required to enter the area underneath the nether
-
  - Withering area is richer with netherite
  - Constant Withering Effect & black lung, black can be nullified by gas mask and withering effect can be nullified by anti-withering enchantment (levels 1-3)
  - ambient wither skeletons, very low chance of a wither spawning
@@ -15,6 +11,9 @@ Nether
  - sword has a passive of inflicting the wither effect for 8s
  - wither themed blocks
  - structures (camp ruins, small fortress ruins, jigsaw wither fortress)
+
+ End
+  - forest end biome, Astral Void Forest, chariote gemstone from this biome is also required to enter the area underneath the nether
  
 
 
