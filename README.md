@@ -1,11 +1,9 @@
 #  Survival Reimagined 1.3.0 Update
 ## Generation and Ores
-###  Increased generation depth from -64 to -256
-
+ **Increased generation depth from -64 to -256**
 - Added Volcanic Layer and Kimberlite Layer
    - Volcanic layer generates below -64
    - Kimberlite layer generates below -128
-   
 
 - Ores are now visually real-world accurate
    1. Copper Ores
