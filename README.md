@@ -5,59 +5,77 @@
 - Added Volcanic Layer and Kimberlite Layer
    - Volcanic layer generates below -64
    - Kimberlite layer generates below -128
+   
 
-###  Ores are now visually real-world accurate:
-1. Copper Ores
-   - Malachite
-   - Azurite
-   - Native Copper
-2. Tin Ores
-   - Cassiterite
-3. Iron Ores
-   - Hematite
-   - Magnetite
-4. Managanese Ores
-   - Manganite
-   - Pyrolusite
-5. Gold Ores
-   - Calaverite
-   - Native Gold
-6. Silver Ores (New)
-   - Argentite
-   - Native Silver
-7. Uranium
-   - Uraninite
-   - Uranophane
-8. Titanium
-   - Ilmenite
-9. Lapis Lazuli
-   - Lazurite
-### Added Sulfur and Nitre (Saltpeter)
-   - _Allows crafting of gunpowder if combined with charcoal powder and Mortar & Pestal_
+- Ores are now visually real-world accurate
+   1. Copper Ores
+      - Malachite
+      - Azurite
+      - Native Copper
+   2. Tin Ores
+      - Cassiterite
+   3. Iron Ores
+      - Hematite
+      - Magnetite
+   4. Managanese Ores
+      - Manganite
+      - Pyrolusite
+   5. Gold Ores
+      - Calaverite
+      - Native Gold
+   6. Silver Ores (New)
+      - Argentite
+      - Native Silver
+   7. Uranium
+      - Uraninite
+      - Uranophane
+   8. Titanium
+      - Ilmenite
+   9. Lapis Lazuli
+      - Lazurite
 
-_These varients will display what type of metal it is as a tooltip in-game_
+   _Added Basalt and Kimberlite variants to most ores_
 
-### Added 3 gem ores
+- Added Chemical minerals
+   - Sulfur
+   - Nitre (Saltpeter)
+
+   _Allows crafting of gunpowder if combined with charcoal powder and Mortar & Pestal_
+
+_These variants will display what type of metal it is as a tooltip in-game_
+
+- Added Gems
    - Ruby
-   - Amber
    - Sapphire
-### Added Basalt and Kimberlite ore varients to most ores
+   - Ambee
 
-### Added Stone, Deepslate, Basalt, Kimberlite Stalagmites and Stalagtites
+- Added Rock / stone types
+   - Stone
+   - Deepslate
+   - Basalt
+   - Kimberlite
+
+   _All 4 have a stalagmite and stalactite variant_
 
 ## Rune Magic Infuser and Infusing gear
-### Added Runes for Diamond, Emerald, Amber, Sapphire, Ruby, Lapis
+- Added Runes for:
+   - Diamond
+   - Emerald
+   - Amber
+   - Sapphire
+   - Ruby
+   - Lapis
 
-### Added Rune Magic Infuser (Functional Block)
+- Added Rune Magic Infuser (Functional Block)
 
 _Runes give certain benefits based on what the gem was infused on and what gem was used (Tool, Armor, Weapon)_
 
 ## Wisteria Forest
 - Added Wisteria Forest
-- Wisteria Wood set
-- Wisteria Spider Lily
-- Wisteria Leaf Litter
-- Wisteria Vines
+   - Wisteria Wood set
+   - Wisteria Spider Lily
+   - Wisteria Leaf Litter
+   - Wisteria Vines
 
 ## Progression
 - Added 16 New Advancements to the progression tree
