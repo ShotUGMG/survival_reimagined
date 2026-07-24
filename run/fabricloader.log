@@ -1,4 +1,0 @@
-[17:35:08] [WARN] [FabricLoader/Resolution]: Mod resolution failed
-[17:35:08] [INFO] [FabricLoader/Resolution]: Immediate reason: [HARD_DEP_NO_CANDIDATE continuity 3.0.0+1.21.neoforge {depends connector @ [3.0.0]}, ROOT_FORCELOAD_SINGLE continuity 3.0.0+1.21.neoforge]
-[17:35:08] [INFO] [FabricLoader/Resolution]: Reason: [HARD_DEP continuity 3.0.0+1.21.neoforge {depends connector @ [3.0.0]}]
-[17:35:08] [INFO] [FabricLoader/Resolution]: Fix: add [add:connector 3.0.0 ([[3.0.0,3.0.0]])], remove [], replace []

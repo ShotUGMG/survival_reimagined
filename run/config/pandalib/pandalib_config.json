@@ -1,8 +1,0 @@
-{
-	"debugging": false,
-	"experimentalFeatures": false,
-	"HotReloadConfig": {
-		"configHotReloadDelay": 1000,
-		"enableConfigHotReload": false
-	}
-}
