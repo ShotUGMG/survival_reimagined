@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "Items.RAW_GOLD"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:RoughGold"
-    },
+    "smeltingInputStack": "Items.RAW_GOLD",
+    "smeltingReturnStack": "CUSTOM:RoughGold",
     "name": "gold_ingot_from_smelting_raw_gold",
     "namespace": "minecraft"
   }

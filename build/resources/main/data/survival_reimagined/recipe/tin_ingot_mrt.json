@@ -1,0 +1,20 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_tin"
+    },
+    {
+      "tag": "survival_reimagined:jei_empty_tag"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:tin_ingot",
+      "count": 1
+    }
+  ]
+}

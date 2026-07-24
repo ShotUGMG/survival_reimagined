@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:WhiteGlassShard"
-            },
+            "item": "CUSTOM:WhiteGlassShard",
             "weight": 1,
             "minCount": 3,
             "maxCount": 4,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.STAINED_GLASS#0"
-            },
+            "item": "Blocks.STAINED_GLASS#0",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

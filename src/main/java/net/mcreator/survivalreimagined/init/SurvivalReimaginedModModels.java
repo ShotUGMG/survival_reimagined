@@ -16,6 +16,7 @@ public class SurvivalReimaginedModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelboat2.LAYER_LOCATION, Modelboat2::createBodyLayer);
 		event.registerLayerDefinition(Modeleclipsed_arrow.LAYER_LOCATION, Modeleclipsed_arrow::createBodyLayer);
+		event.registerLayerDefinition(Modelbear.LAYER_LOCATION, Modelbear::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modelpiglet.LAYER_LOCATION, Modelpiglet::createBodyLayer);
 		event.registerLayerDefinition(Modelleaves.LAYER_LOCATION, Modelleaves::createBodyLayer);

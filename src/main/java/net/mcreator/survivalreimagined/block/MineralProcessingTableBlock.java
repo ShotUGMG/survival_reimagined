@@ -1,9 +1,5 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -44,52 +40,13 @@ import net.mcreator.survivalreimagined.block.entity.MineralProcessingTableBlockE
 import io.netty.buffer.Unpooled;
 
 public class MineralProcessingTableBlock extends Block implements EntityBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty REDSTONE_POWER = BooleanProperty.create("redstone_power");
-	private static final VoxelShape SHAPE_1_NORTH = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_1_SOUTH = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_1_EAST = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_1_WEST = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_NORTH = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_SOUTH = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_EAST = box(0, 0, 0, 16, 16, 16);
-	private static final VoxelShape SHAPE_WEST = box(0, 0, 0, 16, 16, 16);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 
 	public MineralProcessingTableBlock() {
-		super(BlockBehaviour.Properties.of().strength(3.5f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 5;
-				return 0;
-			}
-		}.getLightLevel())).requiresCorrectToolForDrops());
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(REDSTONE_POWER, false));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_1_NORTH;
-				case SOUTH -> SHAPE_1_SOUTH;
-				case EAST -> SHAPE_1_EAST;
-				case WEST -> SHAPE_1_WEST;
-				default -> SHAPE_1_NORTH;
-			});
-		}
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
+		super(BlockBehaviour.Properties.of().strength(3.5f).requiresCorrectToolForDrops());
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(REDSTONE_POWER, false).setValue(BLOCKSTATE, 0));
 	}
 
 	@Override
@@ -100,7 +57,10 @@ public class MineralProcessingTableBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(REDSTONE_POWER, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(REDSTONE_POWER, false).setValue(BLOCKSTATE, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

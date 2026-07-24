@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "Items.STICK"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock",
+      "",
+      "CUSTOM:PlantFiber",
+      "Items.STICK"
     ],
-    "recipeReturnStack": {
-      "value": "Items.STONE_AXE"
-    },
+    "recipeReturnStack": "Items.STONE_AXE",
     "name": "stone_axe",
     "namespace": "minecraft"
   }

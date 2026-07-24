@@ -17,40 +17,35 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import com.google.common.collect.ImmutableMap;
+
 public class SmallPalmLogBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
-	private static final VoxelShape SHAPE_X = box(0, 4, 4, 16, 12, 12);
-	private static final VoxelShape SHAPE_Y = box(4, 0, 4, 12, 16, 12);
-	private static final VoxelShape SHAPE_Z = box(4, 4, 0, 12, 12, 16);
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SmallPalmLogBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.CHERRY_WOOD).strength(0.2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			return switch (state.getValue(AXIS)) {
+				case X -> box(0, 4, 4, 16, 12, 12);
+				case Y -> box(4, 0, 4, 12, 16, 12);
+				case Z -> box(4, 4, 0, 12, 12, 16);
+			};
+		});
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (switch (state.getValue(AXIS)) {
-			case X -> SHAPE_X;
-			case Y -> SHAPE_Y;
-			case Z -> SHAPE_Z;
-			default -> SHAPE_Y;
-		});
 	}
 
 	@Override
@@ -61,7 +56,10 @@ public class SmallPalmLogBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(AXIS, context.getClickedFace().getAxis());
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(AXIS, context.getClickedFace().getAxis());
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      },
-      {
-        "value": "CUSTOM:RedstoneNugget"
-      }
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget",
+      "CUSTOM:RedstoneNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RoughRedstone"
-    },
+    "recipeReturnStack": "CUSTOM:RoughRedstone",
     "name": "redstone_ingot_recipe",
     "namespace": "mod"
   }

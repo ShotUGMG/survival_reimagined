@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:Shale"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PoloshedShaleBrickWall"
-    },
+    "stoneCuttingInputStack": "CUSTOM:Shale",
+    "stoneCuttingReturnStack": "CUSTOM:PoloshedShaleBrickWall",
     "name": "polished_shale_brick_wall_scr",
     "namespace": "mod"
   }

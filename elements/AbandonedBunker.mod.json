@@ -1,0 +1,39 @@
+{
+  "_fv": 89,
+  "_type": "structure",
+  "definition": {
+    "structure": "bunker_entrance",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      "Blocks.STRUCTURE_BLOCK"
+    ],
+    "spacing": 45,
+    "separation": 15,
+    "restrictionBiomes": [
+      "void"
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 20,
+    "maxDistanceFromCenter": 128,
+    "jigsawPools": [
+      {
+        "poolName": "stairs",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "bunker_stairs_1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

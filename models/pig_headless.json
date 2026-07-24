@@ -1,9 +1,10 @@
 {
+	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 32],
 	"textures": {
-		"1": "Survival Reborn:entity/pig_legless",
-		"particle": "Survival Reborn:entity/pig_legless"
+		"2": "OneDrive/Desktop/SR_ASSETS/pig_amputated",
+		"particle": "OneDrive/Desktop/SR_ASSETS/pig_amputated"
 	},
 	"elements": [
 		{
@@ -12,12 +13,12 @@
 			"to": [9.35714, 10.35714, 20],
 			"rotation": {"angle": 0, "axis": "z", "origin": [14, 11.35714, 6.07143]},
 			"faces": {
-				"north": {"uv": [9, 4, 11.5, 8], "rotation": 90, "texture": "#1"},
-				"east": {"uv": [11.5, 16, 9, 8], "rotation": 270, "texture": "#1"},
-				"south": {"uv": [11.5, 4, 14, 8], "rotation": 270, "texture": "#1"},
-				"west": {"uv": [16, 16, 13.75, 8], "rotation": 270, "texture": "#1"},
-				"up": {"uv": [13.75, 8, 11.75, 16], "texture": "#1"},
-				"down": {"uv": [7, 16, 9, 8], "texture": "#1"}
+				"north": {"uv": [9, 4, 11.5, 8], "rotation": 90, "texture": "#2"},
+				"east": {"uv": [11.5, 16, 9, 8], "rotation": 270, "texture": "#2"},
+				"south": {"uv": [11.5, 4, 14, 8], "rotation": 270, "texture": "#2"},
+				"west": {"uv": [16, 16, 13.75, 8], "rotation": 270, "texture": "#2"},
+				"up": {"uv": [13.75, 8, 11.75, 16], "texture": "#2"},
+				"down": {"uv": [7, 16, 9, 8], "texture": "#2"}
 			}
 		}
 	],
@@ -60,11 +61,13 @@
 		{
 			"name": "all",
 			"origin": [6, 5, 0],
+			"scope": 0,
 			"color": 0,
 			"children": [
 				{
 					"name": "body",
 					"origin": [6, 18, 3],
+					"scope": 0,
 					"color": 6,
 					"children": [0]
 				}

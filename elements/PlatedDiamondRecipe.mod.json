@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      },
-      {
-        "value": "CUSTOM:DiamondPlatedIngot"
-      }
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot",
+      "CUSTOM:DiamondPlatedIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PlatedDiamondBlock"
-    },
+    "recipeReturnStack": "CUSTOM:PlatedDiamondBlock",
     "name": "plated_diamond_recipe",
     "namespace": "mod"
   }

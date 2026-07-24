@@ -37,7 +37,7 @@ public class UraniniteOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index0 = 0; index0 < (int) (IngotDropAmount + 1); index0++) {
+							for (int index115 = 0; index115 < (int) (IngotDropAmount + 1); index115++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -45,7 +45,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 2, 3); index1++) {
+						for (int index116 = 0; index116 < Mth.nextInt(RandomSource.create(), 2, 3); index116++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -54,7 +54,7 @@ public class UraniniteOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index2 = 0; index2 < (int) (IngotDropAmount + 2); index2++) {
+							for (int index117 = 0; index117 < (int) (IngotDropAmount + 2); index117++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -62,7 +62,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 2, 4); index3++) {
+						for (int index118 = 0; index118 < Mth.nextInt(RandomSource.create(), 2, 4); index118++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -71,7 +71,7 @@ public class UraniniteOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index4 = 0; index4 < (int) (IngotDropAmount + 3); index4++) {
+							for (int index119 = 0; index119 < (int) (IngotDropAmount + 3); index119++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -79,7 +79,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index5 = 0; index5 < Mth.nextInt(RandomSource.create(), 2, 5); index5++) {
+						for (int index120 = 0; index120 < Mth.nextInt(RandomSource.create(), 2, 5); index120++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -94,7 +94,7 @@ public class UraniniteOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index6 = 0; index6 < Mth.nextInt(RandomSource.create(), 1, 3); index6++) {
+						for (int index121 = 0; index121 < Mth.nextInt(RandomSource.create(), 1, 3); index121++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -110,7 +110,7 @@ public class UraniniteOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index7 = 0; index7 < (int) (IngotDropAmount + 2); index7++) {
+							for (int index122 = 0; index122 < (int) (IngotDropAmount + 2); index122++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -118,7 +118,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index8 = 0; index8 < Mth.nextInt(RandomSource.create(), 2, 4); index8++) {
+						for (int index123 = 0; index123 < Mth.nextInt(RandomSource.create(), 2, 4); index123++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -127,7 +127,7 @@ public class UraniniteOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index9 = 0; index9 < (int) (IngotDropAmount + 3); index9++) {
+							for (int index124 = 0; index124 < (int) (IngotDropAmount + 3); index124++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -135,7 +135,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index10 = 0; index10 < Mth.nextInt(RandomSource.create(), 2, 5); index10++) {
+						for (int index125 = 0; index125 < Mth.nextInt(RandomSource.create(), 2, 5); index125++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -144,7 +144,7 @@ public class UraniniteOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index11 = 0; index11 < (int) (IngotDropAmount + 4); index11++) {
+							for (int index126 = 0; index126 < (int) (IngotDropAmount + 4); index126++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -152,7 +152,7 @@ public class UraniniteOresProcedure {
 								}
 							}
 						}
-						for (int index12 = 0; index12 < Mth.nextInt(RandomSource.create(), 2, 6); index12++) {
+						for (int index127 = 0; index127 < Mth.nextInt(RandomSource.create(), 2, 6); index127++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -167,7 +167,7 @@ public class UraniniteOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index13 = 0; index13 < Mth.nextInt(RandomSource.create(), 1, 3); index13++) {
+						for (int index128 = 0; index128 < Mth.nextInt(RandomSource.create(), 1, 3); index128++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);

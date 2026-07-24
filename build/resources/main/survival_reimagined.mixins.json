@@ -4,12 +4,25 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "NoiseGeneratorSettingsMixin",
+    "BiomeSourcePresetMixin",
     "RuneOnItemMixin",
-    "NoiseBasedChunkGeneratorMixin",
     "DimensionTypesMixin",
-    "RockTypeMixin"
+    "RockTypeMixin",
+    "NoiseBasedChunkGeneratorMixin",
+    "CancelTillingMixin",
+    "ComposterDropMixin",
+    "ItemstackFixForMeatItemsMixin"
   ],
-  "client": [],
+  "client": [
+    "PlayerAnimationMixin",
+    "PlayerAnimationRendererMixin",
+    "ItemInHandLayerMixin",
+    "CameraAccessor",
+    "EntityRenderDispatcherMixin",
+    "LivingEntityRendererMixin",
+    "ItemInHandRendererMixin",
+    "LevelRendererMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },

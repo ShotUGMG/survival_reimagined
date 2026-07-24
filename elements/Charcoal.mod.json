@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "TAG:c:fuels/bark_large"
-    },
-    "smeltingReturnStack": {
-      "value": "Items.COAL#1"
-    },
+    "smeltingInputStack": "TAG:c:fuels/bark_large",
+    "smeltingReturnStack": "Items.COAL#1",
     "name": "charcoal",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "dead_sheep",
@@ -10,14 +10,207 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "dead_sheep:default",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "states": [
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "skinned_sheep:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 5.66667,
+            "my": 5.66667,
+            "mz": 0.0,
+            "Mx": 17.66667,
+            "My": 9.66667,
+            "Mz": 4.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": -0.33333,
+            "mz": 0.0,
+            "Mx": 17.66667,
+            "My": 3.66667,
+            "Mz": 4.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": 5.66667,
+            "mz": 12.0,
+            "Mx": 17.66667,
+            "My": 9.66667,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.66667,
+            "my": -0.33333,
+            "mz": 12.0,
+            "Mx": 17.66667,
+            "My": 3.66667,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": -4.33333,
+            "my": 1.66667,
+            "mz": -7.0,
+            "Mx": 1.66667,
+            "My": 7.66667,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 1
+          }
+        ]
+      },
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "nolegs_sheep:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": -4.33333,
+            "my": 1.66667,
+            "mz": -7.0,
+            "Mx": 1.66667,
+            "My": 7.66667,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 2
+          }
+        ]
+      },
+      {
+        "texture": "skinned_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "headless_sheep:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 3
+          }
+        ]
+      },
+      {
+        "texture": "gutted_sheep",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "gutted_sheep:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 1.16667,
+            "my": 0.33334,
+            "mz": -0.83333,
+            "Mx": 7.16667,
+            "My": 8.33334,
+            "Mz": 15.16667,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 4
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "",
-    "particleTexture": "minecraft:white_wool",
+    "particleTexture": "minecraft:redstone_block",
     "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -80,7 +273,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 4,
+        "name": "CUSTOM:carcass_state",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Sheep Carcass",
     "specialInformation": {
       "fixedValue": []
@@ -94,22 +295,19 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
-    "dropAmount": 0,
+    "customDrop": "",
+    "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
+    "hasCustomOpacity": true,
     "lightOpacity": 0,
     "tickRate": 0,
     "tickRandomly": false,
@@ -120,11 +318,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -134,35 +331,28 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "MUD",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "MUD"
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
+    "luminance": {
+      "fixedValue": 0.0
     },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
-    "hasInventory": false,
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
@@ -175,18 +365,10 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "SheepCarcassOnBlockRightClicked"
-    },
-    "onDestroyedByPlayer": {
-      "name": "SheepCarcassBlockDestroyedByPlayer"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

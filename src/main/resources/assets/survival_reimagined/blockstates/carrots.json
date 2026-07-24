@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=1": {
+      "model": "survival_reimagined:block/carrots_0"
+    },
+    "age=2": {
+      "model": "survival_reimagined:block/carrots_1"
+    },
+    "age=3": {
+      "model": "survival_reimagined:block/carrots_2"
+    },
+    "age=0": {
+      "model": "survival_reimagined:block/carrots"
+    }
+  }
+}

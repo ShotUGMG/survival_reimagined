@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:sheep_head",
+    "survival_reimagined:horse_head",
+    "survival_reimagined:pig_head",
+    "survival_reimagined:goat_head",
+    "survival_reimagined:pig_leg",
+    "survival_reimagined:sheep_leg",
+    "survival_reimagined:cow_leg",
+    "survival_reimagined:cow_head",
+    "survival_reimagined:goat_leg",
+    "survival_reimagined:horse_leg"
+  ]
+}

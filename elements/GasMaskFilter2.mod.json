@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HempMesh"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:UsedFilter"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:HempMesh",
+      "",
+      "",
+      "CUSTOM:UsedFilter",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GasMaskFilter"
-    },
+    "recipeReturnStack": "CUSTOM:GasMaskFilter",
     "name": "gas_mask_filter_2",
     "namespace": "mod"
   }

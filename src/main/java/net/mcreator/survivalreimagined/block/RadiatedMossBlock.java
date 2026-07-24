@@ -7,7 +7,6 @@ import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
@@ -17,11 +16,6 @@ import net.mcreator.survivalreimagined.procedures.NeighborStoneBlocksProcedure;
 public class RadiatedMossBlock extends Block implements BonemealableBlock {
 	public RadiatedMossBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(0.1f));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
 	}
 
 	@Override

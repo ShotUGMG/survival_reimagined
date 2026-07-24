@@ -1,63 +1,65 @@
-	["Status Effects".Zombification]
+	[status_effects.zombification]
 		#Allow Zombies to inflict Zombfication
-		Zombification = true
+		zombification = true
 		#Allow the Golden Heart to grant the player immunity to Zombification
-		"Zombification Immunity" = true
+		zombification_immunity = true
 		#Time it takes for Zombification to progress to next stage. Default is 6000 in ticks (5 Minutes)
-		"Zombification Time" = 6000.0
+		zombification_time = 6000.0
 		#Chance for a Zombie to inflict Zombification. Default is 0.25 (25%)
-		"Zombification Chance" = 0.25
+		zombification_chance = 0.25
 
-	["Status Effects"."Paranoia/Fear"]
+	[status_effects."paranoia/_fear"]
 		#Allow the player to feel paranoia/fear if in dark areas
-		"Paranoia and Fear" = true
+		paranoiaand_fear = true
 		#Minimum Light Level needed for Darkness effects to take effect (Default is 0, Range: 0 - 15)
-		"Darkness Level" = 0.0
+		darkness_level = 0.0
 		#Minimum Light Level needed for Darkness effects to stop take effect (Default is 5, Range: 0 - 15)
-		"Light Level" = 5.0
+		light_level = 5.0
 		#Time in ticks for Paranoia to turn into Fear (Default is 1000 in ticks)
-		"Paranoia To Fear Delay" = 1000.0
+		paranoia_to_fear_delay = 1000.0
 
-	["Status Effects"."Binding Sculk"]
+	[status_effects.binding_sculk]
 		#Binding Sculk applied when walking over Sculk
-		"Binding Sculk" = true
+		binding_sculk = true
 
-	[Events."Blood Moon"]
+	[events.blood_moon]
 		#Can Blood Moon happen?
-		"Blood Moon" = true
+		blood_moon = true
 		#Allow Sleeping through Bloodmoon
-		"Bloodmoon Sleep" = false
+		bloodmoon_sleep = false
 		#Disable Zombies and Skeletons spawns during bloodmoon
-		"Disable Normal Mob Spawning" = true
+		disable_normal_mob_spawning = true
+		#Enable/Disable the Bloodmoon skybox VFX
+		blood_moon_vfx = true
 
-		[Events."Blood Moon"."Blood Moon Spawn Chance"]
+		[events.blood_moon.blood_moon_spawn_chance]
 			#Full Moon Bloodmoon chance. Defualt is 0.15 (15%)
-			"Full Moon Chance" = 0.15
+			full_moon_chance = 0.15
 			#Gibbous and Quarter phases chance. Defualt is 0.1 (10%) 
-			"Gibbous/Quarter Chance" = 0.1
+			"gibbous/_quarter_chance" = 0.1
 			#New Moon and crescent phases chance. Defualt is 0.075 (7.5%) 
-			"New Moon/Crescent Chance" = 0.075
+			"new_moon/_crescent_chance" = 0.075
 
-	[Gameplay."Mechanic Overrides"]
+	[gameplay.mechanic_overrides]
 		#Block Breaking Speed. Default is 0.45 (45%) Vanilla is 1 (100%)
-		"Block Break Speed" = 0.45
+		block_break_speed = 0.45
 		#Disable Nether portal override mechanics (reverts to vanilla nether portal)
-		"Vanilla Portal" = false
+		vanilla_portal = false
 
-	[Gameplay.Hunger]
+	[gameplay.hunger]
 		#Disable hunger bar changes (Reverts to vanilla mechanics)
-		"Vanilla Hunger" = false
+		vanilla_hunger = false
 		#Hunger debuffs (Can't jump on 2 drumsticks, slower walk speed on 1 drumstick)
-		"Hunger Debuffs" = true
+		hunger_debuffs = true
 		#Disable Hunger Effect changes (Reverts to Vanilla mechanics)
-		"Vanilla Hunger Effect" = false
+		vanilla_hunger_effect = false
 		#Eating Raw Food gives the player hunger status effect
-		"Raw Food" = true
+		raw_food = true
 		#Allow meat to spoil
-		"Food Spoil" = true
+		food_spoil = true
 
-	["Experimental Features".Bleeding]
+	[experimental_features.bleeding]
 		#Allow Crimson Arachnid to Inflict Bleeding
-		Bleeding = false
+		bleeding = false
 		#Chance to contract Bleeding Effect. Defualt is 0.1 (10%)
 		bleeding_chance = 0.1

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "lit_log": "minecraft:campfire_log_lit",
+        "log": "minecraft:campfire_log",
+        "fire": "minecraft:campfire_fire"
+      }
+    }
+  }
+}

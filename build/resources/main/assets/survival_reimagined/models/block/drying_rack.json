@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/drying_rack",
+  "textures": {
+    "all": "survival_reimagined:block/drying_rack",
+    "particle": "minecraft:block/barrel_bottom"
+  },
+  "render_type": "cutout"
+}

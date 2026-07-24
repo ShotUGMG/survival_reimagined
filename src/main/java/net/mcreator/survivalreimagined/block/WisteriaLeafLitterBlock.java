@@ -1,7 +1,4 @@
-
 package net.mcreator.survivalreimagined.block;
-
-import org.checkerframework.checker.units.qual.s;
 
 import net.neoforged.neoforge.common.util.DeferredSoundType;
 
@@ -34,76 +31,63 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.survivalreimagined.procedures.WisteriaLitterHandlerProcedure;
 import net.mcreator.survivalreimagined.procedures.FlintblockBlockValidPlacementConditionProcedure;
 
+import com.google.common.collect.ImmutableMap;
+
 public class WisteriaLeafLitterBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public WisteriaLeafLitterBlock() {
 		super(BlockBehaviour.Properties.of()
 				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:break/wisteria_litter")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:step/wistera_litter")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:place/wistera_litter")),
 						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:step/wistera_litter")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:place/wistera_litter"))))
-				.instabreak().lightLevel(s -> (new Object() {
-					public int getLightLevel() {
-						if (s.getValue(BLOCKSTATE) == 1)
-							return 0;
-						if (s.getValue(BLOCKSTATE) == 2)
-							return 0;
-						if (s.getValue(BLOCKSTATE) == 3)
-							return 0;
-						return 0;
-					}
-				}.getLightLevel())).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+				.instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(BLOCKSTATE, 0));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(BLOCKSTATE) == 1) {
+				return switch (state.getValue(FACING)) {
+					default -> box(0, 0, 0, 16, 1, 16);
+					case NORTH -> box(0, 0, 0, 16, 1, 16);
+					case EAST -> box(0, 0, 0, 16, 1, 16);
+					case WEST -> box(0, 0, 0, 16, 1, 16);
+				};
+			} else if (state.getValue(BLOCKSTATE) == 2) {
+				return switch (state.getValue(FACING)) {
+					default -> box(0, 0, 0, 16, 1, 16);
+					case NORTH -> box(0, 0, 0, 16, 1, 16);
+					case EAST -> box(0, 0, 0, 16, 1, 16);
+					case WEST -> box(0, 0, 0, 16, 1, 16);
+				};
+			} else if (state.getValue(BLOCKSTATE) == 3) {
+				return switch (state.getValue(FACING)) {
+					default -> box(0, 0, 0, 16, 1, 16);
+					case NORTH -> box(0, 0, 0, 16, 1, 16);
+					case EAST -> box(0, 0, 0, 16, 1, 16);
+					case WEST -> box(0, 0, 0, 16, 1, 16);
+				};
+			}
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 1, 16);
+				case NORTH -> box(0, 0, 0, 16, 1, 16);
+				case EAST -> box(0, 0, 0, 16, 1, 16);
+				case WEST -> box(0, 0, 0, 16, 1, 16);
+			};
+		});
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 1, 16);
-				case NORTH -> box(0, 0, 0, 16, 1, 16);
-				case EAST -> box(0, 0, 0, 16, 1, 16);
-				case WEST -> box(0, 0, 0, 16, 1, 16);
-			};
-		}
-		if (state.getValue(BLOCKSTATE) == 2) {
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 1, 16);
-				case NORTH -> box(0, 0, 0, 16, 1, 16);
-				case EAST -> box(0, 0, 0, 16, 1, 16);
-				case WEST -> box(0, 0, 0, 16, 1, 16);
-			};
-		}
-		if (state.getValue(BLOCKSTATE) == 3) {
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 1, 16);
-				case NORTH -> box(0, 0, 0, 16, 1, 16);
-				case EAST -> box(0, 0, 0, 16, 1, 16);
-				case WEST -> box(0, 0, 0, 16, 1, 16);
-			};
-		}
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 1, 16);
-			case NORTH -> box(0, 0, 0, 16, 1, 16);
-			case EAST -> box(0, 0, 0, 16, 1, 16);
-			case WEST -> box(0, 0, 0, 16, 1, 16);
-		};
 	}
 
 	@Override
@@ -114,7 +98,7 @@ public class WisteriaLeafLitterBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(BLOCKSTATE, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

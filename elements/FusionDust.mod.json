@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:EyeOfEnderFusionDust"
-            },
+            "item": "CUSTOM:EyeOfEnderFusionDust",
             "weight": 10,
             "minCount": 0,
             "maxCount": 1,

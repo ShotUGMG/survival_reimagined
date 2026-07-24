@@ -25,6 +25,10 @@ public class RMIScreen extends AbstractContainerScreen<RMIMenu> implements Survi
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
 	private ImageButton imagebutton_rmi_button;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("survival_reimagined:textures/screens/rmi.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("survival_reimagined:textures/screens/rune_putline.png");
+	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("survival_reimagined:textures/screens/lapis_outline.png");
+	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("survival_reimagined:textures/screens/rmi_unpressable.png");
 
 	public RMIScreen(RMIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -43,8 +47,6 @@ public class RMIScreen extends AbstractContainerScreen<RMIMenu> implements Survi
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/rmi.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -56,10 +58,10 @@ public class RMIScreen extends AbstractContainerScreen<RMIMenu> implements Survi
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/rune_putline.png"), this.leftPos + 80, this.topPos + 41, 0, 0, 16, 16, 16, 16);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/lapis_outline.png"), this.leftPos + 116, this.topPos + 61, 0, 0, 16, 16, 16, 16);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/rmi_unpressable.png"), this.leftPos + 72, this.topPos + 61, 0, 0, 32, 16, 32, 16);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 80, this.topPos + 41, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 116, this.topPos + 61, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(IMAGE_2, this.leftPos + 72, this.topPos + 61, 0, 0, 32, 16, 32, 16);
 		RenderSystem.disableBlend();
 	}
 

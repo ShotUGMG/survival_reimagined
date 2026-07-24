@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawSilver"
-            },
+            "item": "CUSTOM:RawSilver",
             "weight": 1,
             "minCount": 1,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawSilverNugget"
-            },
+            "item": "CUSTOM:RawSilverNugget",
             "weight": 25,
             "minCount": 2,
             "maxCount": 5,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 25,
             "minCount": 3,
             "maxCount": 4,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SilverOre"
-            },
+            "item": "CUSTOM:SilverOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "lush_caves",
+  "features": "survival_reimagined:mandarin_trees_cave",
+  "step": "underground_decoration"
+}

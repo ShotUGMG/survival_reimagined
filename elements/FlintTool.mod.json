@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Flint Tool",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 0.25,
     "attackSpeed": 2.0,
@@ -29,6 +28,7 @@
     "immuneToFire": false,
     "blockDropsTier": "WOOD",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true
   }

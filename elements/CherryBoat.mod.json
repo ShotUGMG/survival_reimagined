@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:BoatPaddles"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:CherryPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.CHERRY_BOAT"
-    },
+    "recipeReturnStack": "Items.CHERRY_BOAT",
     "name": "cherry_boat",
     "namespace": "minecraft"
   }

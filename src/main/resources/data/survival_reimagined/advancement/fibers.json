@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "fibers_0": {
+    "fibers_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:hemp_fiber"
-            ],
+            "items": "survival_reimagined:hemp_fiber",
             "count": {
               "min": 1,
               "max": 64

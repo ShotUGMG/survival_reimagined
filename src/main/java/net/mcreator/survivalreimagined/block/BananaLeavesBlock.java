@@ -23,7 +23,12 @@ public class BananaLeavesBlock extends Block implements EntityBlock {
 	private static final VoxelShape SHAPE = box(4, 0, 4, 12, 14, 12);
 
 	public BananaLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).strength(0.2f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).strength(0.2f).noCollission().isRedstoneConductor((bs, br, bp) -> false));
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
 	}
 
 	@Override
@@ -32,23 +37,8 @@ public class BananaLeavesBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (SHAPE);
 	}
 
 	@Override

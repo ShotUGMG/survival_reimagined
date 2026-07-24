@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:apple_tree_sapling"
+    "survival_reimagined:carrots",
+    "survival_reimagined:raspberry_plant",
+    "survival_reimagined:apple",
+    "survival_reimagined:corn_stalk_bottom",
+    "survival_reimagined:mandarin_fruit",
+    "survival_reimagined:potatoes"
   ]
 }

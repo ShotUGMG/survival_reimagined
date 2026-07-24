@@ -5,7 +5,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -38,13 +40,13 @@ public class MPTPowerProcedure {
 		double sz = 0;
 		sx = -10;
 		found = false;
-		for (int index0 = 0; index0 < 20; index0++) {
+		for (int index15 = 0; index15 < 20; index15++) {
 			sy = -10;
-			for (int index1 = 0; index1 < 20; index1++) {
+			for (int index16 = 0; index16 < 20; index16++) {
 				sz = -10;
-				for (int index2 = 0; index2 < 20; index2++) {
+				for (int index17 = 0; index17 < 20; index17++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE.get()
-							&& ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp3
+							&& (getPropertyByName((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))), "redstone_power") instanceof BooleanProperty _getbp3
 									&& (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getValue(_getbp3)) == true) {
 						found = true;
 						if (entity instanceof ServerPlayer _player) {
@@ -64,5 +66,14 @@ public class MPTPowerProcedure {
 			}
 			sx = sx + 1;
 		}
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      },
-      {
-        "value": "CUSTOM:CherryPlank"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:CherryPlank",
+      "",
+      "CUSTOM:CherryPlank",
+      "CUSTOM:CherryPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CHERRY_PLANKS"
-    },
+    "recipeReturnStack": "Blocks.CHERRY_PLANKS",
     "name": "cherry_planks_block",
     "namespace": "mod"
   }

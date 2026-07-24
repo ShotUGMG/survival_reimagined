@@ -1,21 +1,21 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
-    "toolType": "MultiTool",
+    "toolType": "Special",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "diamond_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Diamond Survival Knife",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 7.5,
     "attackSpeed": 2.0,
@@ -26,14 +26,17 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND"
     ],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
-    "blocksAffected": [],
-    "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "blocksAffected": [
+      "TAG:c:carcasses",
+      "TAG:c:smaller_carcasses",
+      "TAG:c:carcass/equine"
+    ],
+    "attributeModifiers": [],
+    "stayInGridWhenCrafting": true,
+    "damageOnCrafting": true
   }
 }

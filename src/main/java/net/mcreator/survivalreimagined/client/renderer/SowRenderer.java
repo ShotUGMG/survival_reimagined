@@ -10,6 +10,8 @@ import net.mcreator.survivalreimagined.client.model.Modelsow;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class SowRenderer extends MobRenderer<SowEntity, Modelsow<SowEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("survival_reimagined:textures/entities/baor.png");
+
 	public SowRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelsow<SowEntity>(context.bakeLayer(Modelsow.LAYER_LOCATION)), 0.5f);
 	}
@@ -22,6 +24,6 @@ public class SowRenderer extends MobRenderer<SowEntity, Modelsow<SowEntity>> {
 
 	@Override
 	public ResourceLocation getTextureLocation(SowEntity entity) {
-		return ResourceLocation.parse("survival_reimagined:textures/entities/baor.png");
+		return entityTexture;
 	}
 }

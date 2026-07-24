@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      },
-      {
-        "value": "CUSTOM:IronChunk"
-      }
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk",
+      "CUSTOM:IronChunk"
     ],
-    "recipeReturnStack": {
-      "value": "Items.RAW_IRON"
-    },
+    "recipeReturnStack": "Items.RAW_IRON",
     "name": "nine_iron_nuggets",
     "namespace": "mod"
   }

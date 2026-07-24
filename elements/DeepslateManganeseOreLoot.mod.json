@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawManganese"
-            },
+            "item": "CUSTOM:RawManganese",
             "weight": 1,
             "minCount": 0,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ManganeseChunk"
-            },
+            "item": "CUSTOM:ManganeseChunk",
             "weight": 35,
             "minCount": 1,
             "maxCount": 2,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepslateRock"
-            },
+            "item": "CUSTOM:DeepslateRock",
             "weight": 35,
             "minCount": 2,
             "maxCount": 3,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepslateManganeseOre"
-            },
+            "item": "CUSTOM:DeepslateManganeseOre",
             "weight": 100,
             "minCount": 1,
             "maxCount": 1,

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      },
-      {
-        "value": "CUSTOM:DarkOakPlank"
-      }
+      "",
+      "CUSTOM:DarkOakPlank",
+      "CUSTOM:DarkOakPlank",
+      "",
+      "CUSTOM:DarkOakPlank",
+      "CUSTOM:DarkOakPlank",
+      "",
+      "CUSTOM:DarkOakPlank",
+      "CUSTOM:DarkOakPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.DARK_OAK_DOOR"
-    },
+    "recipeReturnStack": "Blocks.DARK_OAK_DOOR",
     "name": "dark_oak_door",
     "namespace": "mod"
   }

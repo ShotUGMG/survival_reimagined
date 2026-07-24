@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.STRING"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "Items.LEATHER"
-      }
+      "Items.STRING",
+      "Items.IRON_NUGGET",
+      "Items.STRING",
+      "Items.LEATHER",
+      "",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Backpack"
-    },
+    "recipeReturnStack": "CUSTOM:Backpack",
     "name": "backpack_recipe",
     "namespace": "mod"
   }

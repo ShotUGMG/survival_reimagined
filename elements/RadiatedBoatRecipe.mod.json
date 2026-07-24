@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:RadiatedPlank",
+      "CUSTOM:RadiatedPlank"
+    ],
+    "recipeReturnStack": "CUSTOM:RadiatedBoat",
+    "name": "radiated_boat_recipe",
+    "namespace": "mod"
+  }
+}

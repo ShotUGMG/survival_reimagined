@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      }
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby",
+      "CUSTOM:Ruby"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfRuby"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfRuby",
     "name": "ruby_block",
     "namespace": "mod"
   }

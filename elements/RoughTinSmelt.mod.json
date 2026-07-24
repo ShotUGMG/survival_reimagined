@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:RawTin"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:RoughTin"
-    },
+    "smeltingInputStack": "CUSTOM:RawTin",
+    "smeltingReturnStack": "CUSTOM:RoughTin",
     "name": "rough_tin_smelt",
     "namespace": "mod"
   }

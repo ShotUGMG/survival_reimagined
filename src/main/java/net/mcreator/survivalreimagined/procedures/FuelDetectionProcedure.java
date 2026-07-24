@@ -14,10 +14,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
-
-import java.util.Calendar;
-
 public class FuelDetectionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") > 0) {
@@ -27,17 +23,11 @@ public class FuelDetectionProcedure {
 			}
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:molds")))
 					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:molds")))) {
-				BronzeGearProcedure.execute(world, x, y, z);
 				BronzeToolsProcedure.execute(world, x, y, z);
-				SteelGearProcedure.execute(world, x, y, z);
-				SteelToolsProcedure.execute(world, x, y, z);
-				DiamondGearProcedure.execute(world, x, y, z);
 				DiamondToolsProcedure.execute(world, x, y, z);
 				IngotsRecipeProcedure.execute(world, x, y, z);
+				PlatesRecipeProcedure.execute(world, x, y, z);
 				RunesProcedure.execute(world, x, y, z);
-				if (Calendar.getInstance().get(Calendar.SECOND) == 30) {
-					SurvivalReimaginedMod.LOGGER.info("Molds");
-				}
 			}
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:melt_items")))
 					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:melt_items")))) {
@@ -54,6 +44,7 @@ public class FuelDetectionProcedure {
 				DiamondIngotRecipeProcedure.execute(world, x, y, z);
 				NetherteRecipeProcedure.execute(world, x, y, z);
 				TuraniteRecipeProcedure.execute(world, x, y, z);
+				LimeRecipeProcedure.execute(world, x, y, z);
 				if (ModList.get().isLoaded("create")) {
 					BrassRecipeProcedure.execute(world, x, y, z);
 					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);

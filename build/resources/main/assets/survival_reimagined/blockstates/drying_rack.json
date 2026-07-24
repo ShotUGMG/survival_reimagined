@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,slots_occupied=1": {
+      "model": "survival_reimagined:block/drying_rack_0"
+    },
+    "facing=north,slots_occupied=2": {
+      "model": "survival_reimagined:block/drying_rack_1"
+    },
+    "facing=north,slots_occupied=3": {
+      "model": "survival_reimagined:block/drying_rack_2"
+    },
+    "facing=north,slots_occupied=0": {
+      "model": "survival_reimagined:block/drying_rack"
+    },
+    "facing=east,slots_occupied=1": {
+      "model": "survival_reimagined:block/drying_rack_0",
+      "y": 90
+    },
+    "facing=east,slots_occupied=2": {
+      "model": "survival_reimagined:block/drying_rack_1",
+      "y": 90
+    },
+    "facing=east,slots_occupied=3": {
+      "model": "survival_reimagined:block/drying_rack_2",
+      "y": 90
+    },
+    "facing=east,slots_occupied=0": {
+      "model": "survival_reimagined:block/drying_rack",
+      "y": 90
+    },
+    "facing=south,slots_occupied=1": {
+      "model": "survival_reimagined:block/drying_rack_0",
+      "y": 180
+    },
+    "facing=south,slots_occupied=2": {
+      "model": "survival_reimagined:block/drying_rack_1",
+      "y": 180
+    },
+    "facing=south,slots_occupied=3": {
+      "model": "survival_reimagined:block/drying_rack_2",
+      "y": 180
+    },
+    "facing=south,slots_occupied=0": {
+      "model": "survival_reimagined:block/drying_rack",
+      "y": 180
+    },
+    "facing=west,slots_occupied=1": {
+      "model": "survival_reimagined:block/drying_rack_0",
+      "y": 270
+    },
+    "facing=west,slots_occupied=2": {
+      "model": "survival_reimagined:block/drying_rack_1",
+      "y": 270
+    },
+    "facing=west,slots_occupied=3": {
+      "model": "survival_reimagined:block/drying_rack_2",
+      "y": 270
+    },
+    "facing=west,slots_occupied=0": {
+      "model": "survival_reimagined:block/drying_rack",
+      "y": 270
+    }
+  }
+}

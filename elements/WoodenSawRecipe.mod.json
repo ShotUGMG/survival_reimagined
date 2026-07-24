@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:PlantFiber",
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "Items.STICK",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WoodenSaw"
-    },
+    "recipeReturnStack": "CUSTOM:WoodenSaw",
     "name": "wooden_saw_recipe",
     "namespace": "mod"
   }

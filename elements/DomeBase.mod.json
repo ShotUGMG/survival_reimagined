@@ -1,27 +1,23 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "dome_base",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 15,
     "separation": 5,
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:RadiantForest"
-      }
+      "CUSTOM:RadiantForest"
     ],
     "terrainAdaptation": "beard_box",
     "generationStep": "UNDERGROUND_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE_WG",
     "useStartHeight": true,
     "startHeightProviderType": "UNIFORM",
-    "startHeightMin": -128,
+    "startHeightMin": -64,
     "startHeightMax": -30,
     "size": 1,
     "maxDistanceFromCenter": 64,

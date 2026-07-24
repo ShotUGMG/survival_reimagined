@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      },
-      {
-        "value": "CUSTOM:RawUraninite"
-      },
-      {
-        "value": "CUSTOM:SteelIngot"
-      },
-      {
-        "value": "CUSTOM:SteelIngot"
-      },
-      {
-        "value": "CUSTOM:RedstoneIngot"
-      },
-      {
-        "value": "CUSTOM:SteelIngot"
-      },
-      {
-        "value": "CUSTOM:SteelIngot"
-      },
-      {
-        "value": "Blocks.STONE#4"
-      },
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
+      "CUSTOM:SteelIngot",
+      "CUSTOM:RawUraninite",
+      "CUSTOM:SteelIngot",
+      "CUSTOM:SteelIngot",
+      "CUSTOM:RedstoneIngot",
+      "CUSTOM:SteelIngot",
+      "CUSTOM:SteelIngot",
+      "Blocks.STONE#4",
+      "CUSTOM:SteelIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MineralProcessingTable"
-    },
+    "recipeReturnStack": "CUSTOM:MineralProcessingTable",
     "name": "mpt_recipe",
     "namespace": "mod"
   }

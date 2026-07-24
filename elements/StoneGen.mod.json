@@ -1,13 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "VEGETAL_DECORATION",
     "restrictionBiomes": [],
-    "generateCondition": {
-      "name": "AddedStoneBiomesGen"
-    },
+    "generateCondition": "AddedStoneBiomesGen",
     "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"53\" y=\"48\"><value name=\"feature\"><block inline=\"false\" type=\"feature_random_patch_simple\"><field name=\"tries\">64</field><field name=\"xzSpread\">16</field><field name=\"ySpread\">3</field><comment h=\"122\" pinned=\"false\" w=\"245\">This block represents a block patch feature. The blocks will only generate in valid positions (for example, grass will never generate on a stone block).Patches of plants should be generated during the VEGETAL_DECORATION stage.</comment><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:StoneRockBloc</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the block being placed.</comment></block></value><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"/><value name=\"condition0\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">-1</field><field name=\"z\">0</field><comment h=\"80\" pinned=\"false\" w=\"160\">Pumpkins can only generate on grass blocks</comment><value name=\"blockSet\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"5\"/><field name=\"block0\">Blocks.GRASS</field><field name=\"block1\">Blocks.SAND#0</field><field name=\"block2\">Blocks.SAND#1</field><field name=\"block3\">Blocks.GRAVEL</field><field name=\"block4\">Blocks.STONE#0</field></block></value></block></value><value name=\"condition1\"><block type=\"block_predicate_is_air\"/></value></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">16</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is so the patch only generates in some of the chunks. The higher the value, the rarer the patch will be</comment><next><block type=\"placement_in_square\"><comment h=\"83\" pinned=\"false\" w=\"182\">We then move each patch horizontally. This way they don't generate only in the corner of the chunk</comment><next><block type=\"placement_heightmap\"><field name=\"heightmap\">MOTION_BLOCKING_NO_LEAVES</field><comment h=\"92\" pinned=\"false\" w=\"165\">We then move the patches at the highest motion blocking block, so that they generate on the surface</comment><next><block type=\"placement_biome_filter\"><comment h=\"80\" pinned=\"false\" w=\"160\">We add a biome filter, so that the patches don't generate outside of the current biome</comment></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

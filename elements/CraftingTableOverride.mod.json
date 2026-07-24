@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "Items.LEATHER"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "Blocks.PLANKS"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      }
+      "TAG:c:planks/single",
+      "Items.LEATHER",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "Blocks.PLANKS",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CRAFTING_TABLE"
-    },
+    "recipeReturnStack": "Blocks.CRAFTING_TABLE",
     "name": "crafting_table",
     "namespace": "minecraft"
   }

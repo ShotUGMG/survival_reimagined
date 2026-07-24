@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "TAG:c:planks/single",
+      "",
+      "TAG:c:planks/single",
+      "CUSTOM:TinIngot",
+      "",
+      "CUSTOM:TinIngot",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single"
+    ],
+    "recipeReturnStack": "CUSTOM:TanningBarrel",
+    "name": "tan_barrel",
+    "namespace": "mod"
+  }
+}

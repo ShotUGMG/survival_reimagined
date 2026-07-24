@@ -46,5 +46,8 @@ public abstract class RockTypeMixin {
 		if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:rock_type/zinc")))) {
 			tooltip.add(Component.translatable("zinc.tooltip").withStyle(ChatFormatting.GRAY));
 		}
+		if (itemstack.is(ItemTags.create(ResourceLocation.parse("c:rock_type/coal")))) {
+			tooltip.add(Component.translatable("coal.tooltip").withStyle(ChatFormatting.GRAY));
+		}
 	}
 }

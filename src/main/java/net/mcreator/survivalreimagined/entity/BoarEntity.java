@@ -4,7 +4,6 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.animal.Animal;
@@ -90,7 +89,7 @@ public class BoarEntity extends Animal {
 
 	@Override
 	public boolean isFood(ItemStack stack) {
-		return Ingredient.of().test(stack);
+		return false;
 	}
 
 	@Override

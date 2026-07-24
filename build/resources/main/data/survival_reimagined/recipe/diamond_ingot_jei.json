@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "tag": "c:alloy/steel_items"
+    },
+    {
+      "tag": "c:alloy/diamond_items"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:rough_plated_diamond",
+      "count": 1
+    }
+  ]
+}

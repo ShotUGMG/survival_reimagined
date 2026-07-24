@@ -2,11 +2,9 @@ package net.mcreator.survivalreimagined.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
@@ -16,7 +14,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -24,7 +21,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.survivalreimagined.procedures.PlayerNearSurvivalProcedure;
 import net.mcreator.survivalreimagined.procedures.PigletFollowMotherProcedure;
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModEntities;
 
 public class PigletEntity extends PathfinderMob {
 	public PigletEntity(EntityType<PigletEntity> type, Level world) {
@@ -86,9 +82,6 @@ public class PigletEntity extends PathfinderMob {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(SurvivalReimaginedModEntities.PIGLET.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)),
-				RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

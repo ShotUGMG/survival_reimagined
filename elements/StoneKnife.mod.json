@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
@@ -8,14 +8,14 @@
     "texture": "stone_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Stone Survival Knife",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.0,
@@ -25,10 +25,17 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [],
+    "repairItems": [
+      "CUSTOM:StoneRock"
+    ],
     "immuneToFire": false,
     "blockDropsTier": "WOOD",
-    "blocksAffected": [],
+    "blocksAffected": [
+      "TAG:c:carcasses",
+      "TAG:c:smaller_carcasses",
+      "TAG:c:carcass/equine"
+    ],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true
   }

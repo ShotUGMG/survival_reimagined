@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SmallStick"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "CUSTOM:SmallStick",
+      "TAG:c:planks/single",
+      "",
+      "TAG:c:planks/single",
+      "",
+      "TAG:c:planks/single",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MortarPestal"
-    },
+    "recipeReturnStack": "CUSTOM:MortarPestal",
     "name": "mortar_recipe",
     "namespace": "mod"
   }

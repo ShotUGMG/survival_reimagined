@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:JunglePlank",
+      "CUSTOM:JunglePlank",
+      "",
+      "CUSTOM:JunglePlank",
+      "CUSTOM:JunglePlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.PLANKS#3"
-    },
+    "recipeReturnStack": "Blocks.PLANKS#3",
     "name": "jungle_planks_block",
     "namespace": "mod"
   }

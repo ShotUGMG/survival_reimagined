@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "furnace_adv_0": {
+    "furnace_adv_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:furnace"
-            ],
+            "items": "minecraft:furnace",
             "count": {
               "min": 1,
               "max": 64

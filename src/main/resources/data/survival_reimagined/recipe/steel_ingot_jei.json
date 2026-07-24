@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "tag": "c:alloy/iron_items"
+    },
+    {
+      "tag": "c:alloy/manganese_items"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:rough_steel",
+      "count": 1
+    }
+  ]
+}

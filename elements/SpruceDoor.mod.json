@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      }
+      "",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank",
+      "",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank",
+      "",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.SPRUCE_DOOR"
-    },
+    "recipeReturnStack": "Items.SPRUCE_DOOR",
     "name": "spruce_door",
     "namespace": "mod"
   }

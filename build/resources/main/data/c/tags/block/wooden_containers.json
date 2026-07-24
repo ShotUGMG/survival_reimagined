@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:barrels/wooden",
+      "required": false
+    },
+    {
+      "id": "#c:chests/wooden",
+      "required": false
+    }
+  ]
+}

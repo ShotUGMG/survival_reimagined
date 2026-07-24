@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:ManganeseChunk"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:ManganeseNugget"
-    },
+    "blastingInputStack": "CUSTOM:ManganeseChunk",
+    "blastingReturnStack": "CUSTOM:ManganeseNugget",
     "name": "manganese_nugget_blasting",
     "namespace": "mod"
   }

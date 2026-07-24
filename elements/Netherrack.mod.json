@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:NetherrackRock"
-      },
-      {
-        "value": "CUSTOM:NetherrackRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:NetherrackRock"
-      },
-      {
-        "value": "CUSTOM:NetherrackRock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:NetherrackRock",
+      "CUSTOM:NetherrackRock",
+      "",
+      "CUSTOM:NetherrackRock",
+      "CUSTOM:NetherrackRock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.NETHERRACK"
-    },
+    "recipeReturnStack": "Blocks.NETHERRACK",
     "name": "netherrack",
     "namespace": "mod"
   }

@@ -19,6 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class RawBlocksProcedure {
@@ -569,6 +570,55 @@ public class RawBlocksProcedure {
 								_stk.shrink(1);
 								_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 							}
+						}
+					}
+				}
+			}
+		}
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() < 60) {
+			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_block/lime_items")))
+					&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_block/lime_items")))
+					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_block/lime_items")))
+							&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_block/lime_items")))) {
+				if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModItems.QUICK_LIME.get()) {
+					if (!world.isClientSide()) {
+						BlockPos _bp = BlockPos.containing(x, y, z);
+						BlockEntity _blockEntity = world.getBlockEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_blockEntity != null) {
+							_blockEntity.getPersistentData().putDouble("BurnTime", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") + 2));
+							_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") - 1));
+						}
+						if (world instanceof Level _level)
+							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+					}
+					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "BurnTime") == 60) {
+						if (!world.isClientSide()) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							BlockEntity _blockEntity = world.getBlockEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_blockEntity != null) {
+								_blockEntity.getPersistentData().putDouble("BurnTime", 0);
+							}
+							if (world instanceof Level _level)
+								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							ItemStack _setstack = new ItemStack(SurvivalReimaginedModItems.QUICK_LIME.get()).copy();
+							_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() + 4);
+							_itemHandlerModifiable.setStackInSlot(3, _setstack);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 0;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+						}
+						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+							int _slotid = 1;
+							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+							_stk.shrink(1);
+							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 						}
 					}
 				}

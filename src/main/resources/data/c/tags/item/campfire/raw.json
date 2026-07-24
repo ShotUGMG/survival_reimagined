@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:raw_salmon",
+    "survival_reimagined:raw_porkchop",
+    "survival_reimagined:corn_on_the_cob",
+    "survival_reimagined:raw_cod",
+    "survival_reimagined:raw_mutton",
+    "survival_reimagined:raw_rabbit",
+    "survival_reimagined:raw_equine",
+    "survival_reimagined:raw_chicken",
+    "survival_reimagined:potato",
+    "survival_reimagined:beef"
+  ]
+}

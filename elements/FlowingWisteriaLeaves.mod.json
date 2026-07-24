@@ -1,8 +1,8 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "wisteria_leaves_1",
+    "texture": "flowering_wisteria_leaves",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,11 +14,13 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "states": [],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Leaves",
     "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -50,14 +52,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -66,6 +64,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
+    "hasCustomOpacity": false,
     "lightOpacity": 1,
     "tickRate": 0,
     "tickRandomly": false,
@@ -76,11 +75,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -90,31 +88,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
+    "soundOnStep": "CHERRY_LEAVES",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "CHERRY_LEAVES"
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
+    "luminance": {
+      "fixedValue": 0.0
     },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -131,15 +122,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRandomUpdateEvent": {
-      "name": "WisteriaLeavesOnRandomClientDisplayTick"
-    },
+    "onRandomUpdateEvent": "WisteriaLeavesOnRandomClientDisplayTick",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

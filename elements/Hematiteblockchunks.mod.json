@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      },
-      {
-        "value": "CUSTOM:HematiteChunk"
-      }
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk",
+      "CUSTOM:HematiteChunk"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HematiteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:HematiteBlock",
     "name": "hematiteblockchunks",
     "namespace": "mod"
   }

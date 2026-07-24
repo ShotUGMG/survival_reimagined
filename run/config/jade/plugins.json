@@ -52,12 +52,23 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
     "block": true,
     "entity": true,
     "entity_variant": true
+  },
+  "dynamictrees": {
+    "rooty_water": true,
+    "pod": true,
+    "fruit": true,
+    "rooty": true,
+    "branch": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -69,5 +80,8 @@
     "registry_name": "OFF",
     "block_properties": false,
     "mod_name": true
+  },
+  "gravestone": {
+    "grave": true
   }
 }

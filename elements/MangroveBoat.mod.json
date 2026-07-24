@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:MangrovePlank"
-      },
-      {
-        "value": "CUSTOM:BoatPaddles"
-      },
-      {
-        "value": "CUSTOM:MangrovePlank"
-      },
-      {
-        "value": "CUSTOM:MangrovePlank"
-      },
-      {
-        "value": "CUSTOM:MangrovePlank"
-      },
-      {
-        "value": "CUSTOM:MangrovePlank"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:MangrovePlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:MangrovePlank",
+      "CUSTOM:MangrovePlank",
+      "CUSTOM:MangrovePlank",
+      "CUSTOM:MangrovePlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.MANGROVE_BOAT"
-    },
+    "recipeReturnStack": "Items.MANGROVE_BOAT",
     "name": "mangrove_boat",
     "namespace": "minecraft"
   }

@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "tag": "c:alloy/andesite_items"
+    },
+    {
+      "tag": "c:alloy/zinc_items"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "create:andesite_alloy",
+      "count": 1
+    }
+  ]
+}

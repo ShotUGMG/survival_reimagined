@@ -1,9 +1,9 @@
 {
   "parent": "survival_reimagined:custom/pig_head",
   "textures": {
-    "all": "survival_reimagined:block/pig",
-    "particle": "survival_reimagined:block/pig_texture",
-    "1": "survival_reimagined:block/pig"
+    "all": "survival_reimagined:block/pig_skinned",
+    "particle": "survival_reimagined:block/pig_skinned",
+    "1": "survival_reimagined:block/pig_skinned"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }

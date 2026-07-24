@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      },
-      {
-        "value": "CUSTOM:RawTitaniumNugget"
-      }
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget",
+      "CUSTOM:RawTitaniumNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RawTitanium"
-    },
+    "recipeReturnStack": "CUSTOM:RawTitanium",
     "name": "nine_nuggets_from_raw_titanium",
     "namespace": "mod"
   }

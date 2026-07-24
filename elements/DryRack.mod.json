@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "",
+      "Items.STICK",
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "CUSTOM:PlantFiber"
+    ],
+    "recipeReturnStack": "CUSTOM:DryingRack",
+    "name": "dry_rack",
+    "namespace": "mod"
+  }
+}

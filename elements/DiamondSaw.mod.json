@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "MultiTool",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Diamond Saw",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "TOOLS"
-      }
+      "TOOLS"
     ],
     "efficiency": 7.5,
     "attackSpeed": 1.0,
@@ -26,13 +25,12 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "Items.DIAMOND"
-      }
+      "Items.DIAMOND"
     ],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": true,
     "damageOnCrafting": true
   }

@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/berry_bush_land",
+  "textures": {
+    "all": "survival_reimagined:block/rasphberry_plant",
+    "particle": "survival_reimagined:block/strawberry_plant_1"
+  },
+  "render_type": "cutout"
+}

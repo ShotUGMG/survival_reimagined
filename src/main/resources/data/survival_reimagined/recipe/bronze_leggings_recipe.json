@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:bronze_plate"
+    },
+    "b": {
+      "item": "minecraft:leather_leggings"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:bronze_armor_leggings",
+    "count": 1
+  }
+}

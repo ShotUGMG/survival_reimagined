@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Radiated Boat",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      "CUSTOM:CreativeTab"
+    ],
+    "entityTexture": "radiated_boat",
+    "itemTexture": "radiated_boat_item"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "TAG:c:metal_rocks/tin"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:RoughTin"
-    },
+    "smeltingInputStack": "TAG:c:metal_rocks/tin",
+    "smeltingReturnStack": "CUSTOM:RoughTin",
     "name": "cassiteritesmelt",
     "namespace": "mod"
   }

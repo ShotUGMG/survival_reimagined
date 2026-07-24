@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "Items.BRICK"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "Items.BRICK"
-      },
-      {
-        "value": "CUSTOM:Crucible"
-      },
-      {
-        "value": "Items.BRICK"
-      },
-      {
-        "value": "Blocks.SMOOTH_STONE"
-      },
-      {
-        "value": "Blocks.SMOOTH_STONE"
-      },
-      {
-        "value": "Blocks.SMOOTH_STONE"
-      }
+      "CUSTOM:TinIngot",
+      "Items.BRICK",
+      "CUSTOM:TinIngot",
+      "Items.BRICK",
+      "CUSTOM:Crucible",
+      "Items.BRICK",
+      "Blocks.SMOOTH_STONE",
+      "Blocks.SMOOTH_STONE",
+      "Blocks.SMOOTH_STONE"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Forge"
-    },
+    "recipeReturnStack": "CUSTOM:Forge",
     "name": "forge_recipe",
     "namespace": "mod"
   }

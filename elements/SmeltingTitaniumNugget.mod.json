@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:RawTitaniumNugget"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:TitaniumNugget"
-    },
+    "smeltingInputStack": "CUSTOM:RawTitaniumNugget",
+    "smeltingReturnStack": "CUSTOM:TitaniumNugget",
     "name": "smelting_titanium_nugget",
     "namespace": "mod"
   }

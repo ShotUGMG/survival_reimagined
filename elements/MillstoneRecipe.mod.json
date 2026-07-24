@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "Items.IRON_INGOT",
+      "TAG:c:planks/single",
+      "Blocks.STONE#0",
+      "Blocks.STONE#0",
+      "Blocks.STONE#0"
+    ],
+    "recipeReturnStack": "CUSTOM:Millstone",
+    "name": "millstone_recipe",
+    "namespace": "mod"
+  }
+}

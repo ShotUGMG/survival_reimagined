@@ -18,6 +18,10 @@ public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRe
 	private final int x, y, z;
 	private final Player entity;
 	private boolean menuStateUpdateActive = false;
+	private static final ResourceLocation BACKGROUND = ResourceLocation.parse("survival_reimagined:textures/screens/metal_refining_table_gui.png");
+	private static final ResourceLocation IMAGE_0 = ResourceLocation.parse("survival_reimagined:textures/screens/plus.png");
+	private static final ResourceLocation IMAGE_1 = ResourceLocation.parse("survival_reimagined:textures/screens/arrow.png");
+	private static final ResourceLocation IMAGE_2 = ResourceLocation.parse("survival_reimagined:textures/screens/hammer_outline.png");
 
 	public MetalRefiningTableGUIScreen(MetalRefiningTableGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -36,8 +40,6 @@ public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRe
 		menuStateUpdateActive = false;
 	}
 
-	private static final ResourceLocation texture = ResourceLocation.parse("survival_reimagined:textures/screens/metal_refining_table_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
@@ -49,10 +51,10 @@ public class MetalRefiningTableGUIScreen extends AbstractContainerScreen<MetalRe
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/plus.png"), this.leftPos + 62, this.topPos + 38, 0, 0, 16, 16, 16, 16);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/arrow.png"), this.leftPos + 98, this.topPos + 37, 0, 0, 16, 16, 16, 16);
-		guiGraphics.blit(ResourceLocation.parse("survival_reimagined:textures/screens/hammer_outline.png"), this.leftPos + 152, this.topPos + 63, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(BACKGROUND, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(IMAGE_0, this.leftPos + 62, this.topPos + 38, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(IMAGE_1, this.leftPos + 98, this.topPos + 37, 0, 0, 16, 16, 16, 16);
+		guiGraphics.blit(IMAGE_2, this.leftPos + 152, this.topPos + 63, 0, 0, 16, 16, 16, 16);
 		RenderSystem.disableBlend();
 	}
 

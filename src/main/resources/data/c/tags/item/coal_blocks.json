@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:anthracite_block",
+    "survival_reimagined:block_of_charcoal",
+    "minecraft:coal_block",
+    "survival_reimagined:liginite_block"
+  ]
+}

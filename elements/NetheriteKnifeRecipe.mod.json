@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smithing",
@@ -11,18 +11,10 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smithingInputStack": {
-      "value": "CUSTOM:DiamondKnife"
-    },
-    "smithingInputAdditionStack": {
-      "value": "Items.NETHERITE_INGOT"
-    },
-    "smithingInputTemplateStack": {
-      "value": "Items.NETHERITE_UPGRADE"
-    },
-    "smithingReturnStack": {
-      "value": "CUSTOM:NetheriteKnife"
-    },
+    "smithingInputStack": "CUSTOM:DiamondKnife",
+    "smithingInputAdditionStack": "Items.NETHERITE_INGOT",
+    "smithingInputTemplateStack": "Items.NETHERITE_UPGRADE",
+    "smithingReturnStack": "CUSTOM:NetheriteKnife",
     "name": "netherite_knife_recipe",
     "namespace": "mod"
   }

@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/farmland",
+  "textures": {
+    "all": "minecraft:block/farmland_moist",
+    "particle": "minecraft:block/farmland",
+    "0": "minecraft:block/farmland_moist",
+    "1": "survival_reimagined:block/wet_low_fertility_soil"
+  },
+  "render_type": "solid"
+}

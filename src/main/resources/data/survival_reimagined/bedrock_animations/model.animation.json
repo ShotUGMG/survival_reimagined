@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"carcass.model.new": {
+			"animation_length": 86.25,
+			"bones": {
+				"right_arm": {
+					"rotation": ["-70 - query.target_x_rotation - math.sin(query.anim_time * 120) * 1", "-query.target_y_rotation - math.sin(query.anim_time * -60) * 3", 0]
+				},
+				"left_arm": {
+					"rotation": ["-70 - query.target_x_rotation - math.sin(query.anim_time * 120) * 1", "-query.target_y_rotation - math.sin(query.anim_time * 60) * 3", 0]
+				}
+			}
+		}
+	}
+}

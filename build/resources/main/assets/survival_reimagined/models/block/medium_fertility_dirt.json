@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/medium_fertilirt_dirt",
+    "up": "survival_reimagined:block/medium_fertilirt_dirt",
+    "north": "survival_reimagined:block/medium_fertilirt_dirt",
+    "east": "survival_reimagined:block/medium_fertilirt_dirt",
+    "south": "survival_reimagined:block/medium_fertilirt_dirt",
+    "west": "survival_reimagined:block/medium_fertilirt_dirt",
+    "particle": "survival_reimagined:block/medium_fertilirt_dirt"
+  },
+  "render_type": "solid"
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      }
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET",
+      "Items.IRON_NUGGET"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RoughIron"
-    },
+    "recipeReturnStack": "CUSTOM:RoughIron",
     "name": "iron_ingot",
     "namespace": "mod"
   }

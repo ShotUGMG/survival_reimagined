@@ -17,7 +17,7 @@ public class SmallTroughOnTickUpdateProcedure {
 				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				if (_bs.getBlock().getStateDefinition().getProperty("portions") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		} else if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() >= 1 && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() <= 3) {
@@ -25,7 +25,7 @@ public class SmallTroughOnTickUpdateProcedure {
 				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				if (_bs.getBlock().getStateDefinition().getProperty("portions") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		} else if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() == 4 || itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() == 5) {
@@ -33,7 +33,7 @@ public class SmallTroughOnTickUpdateProcedure {
 				int _value = 2;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				if (_bs.getBlock().getStateDefinition().getProperty("portions") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		} else if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() >= 6 && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() <= 9) {
@@ -41,7 +41,7 @@ public class SmallTroughOnTickUpdateProcedure {
 				int _value = 3;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				if (_bs.getBlock().getStateDefinition().getProperty("portions") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		} else if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() == 10) {
@@ -49,7 +49,7 @@ public class SmallTroughOnTickUpdateProcedure {
 				int _value = 4;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
-				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+				if (_bs.getBlock().getStateDefinition().getProperty("portions") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}

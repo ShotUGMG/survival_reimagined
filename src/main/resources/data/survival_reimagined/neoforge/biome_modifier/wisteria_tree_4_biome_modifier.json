@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:add_features",
-  "biomes": "survival_reimagined:wisteria_forest",
-  "features": "survival_reimagined:wisteria_tree_4",
-  "step": "vegetal_decoration"
-}

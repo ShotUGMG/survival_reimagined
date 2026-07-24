@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:bronze_plate",
+    "survival_reimagined:steel_plate",
+    "survival_reimagined:diamond_plate",
+    "survival_reimagined:netherite_plate"
+  ]
+}

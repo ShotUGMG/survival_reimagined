@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Generic",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AAFScripture"
-            },
+            "item": "CUSTOM:AAFScripture",
             "weight": 80,
             "minCount": 0,
             "maxCount": 1,

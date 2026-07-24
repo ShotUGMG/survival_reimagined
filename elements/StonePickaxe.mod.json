@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock",
+      "",
+      "CUSTOM:PlantFiber",
+      "",
+      "",
+      "Items.STICK",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Items.STONE_PICKAXE"
-    },
+    "recipeReturnStack": "Items.STONE_PICKAXE",
     "name": "stone_pickaxe",
     "namespace": "minecraft"
   }

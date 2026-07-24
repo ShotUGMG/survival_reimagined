@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:calcite",
+    "minecraft:diorite",
+    {
+      "id": "create:limestone",
+      "required": false
+    },
+    "minecraft:bone_block"
+  ]
+}

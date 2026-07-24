@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RedstoneChunk"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RedstoneNugget"
-    },
+    "blastingInputStack": "CUSTOM:RedstoneChunk",
+    "blastingReturnStack": "CUSTOM:RedstoneNugget",
     "name": "redstone_nugget_b_lasting",
     "namespace": "mod"
   }

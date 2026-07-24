@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/salmon"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:raw_salmon_texture": 1
+      },
+      "model": "survival_reimagined:item/raw_salmon_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_salmon_texture": 2
+      },
+      "model": "survival_reimagined:item/raw_salmon_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_salmon_texture": 3
+      },
+      "model": "survival_reimagined:item/raw_salmon_2"
+    }
+  ]
+}

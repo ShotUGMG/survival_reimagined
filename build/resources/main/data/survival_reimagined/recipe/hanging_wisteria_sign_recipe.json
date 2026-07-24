@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "bbb",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:chain"
+    },
+    "b": {
+      "item": "survival_reimagined:stripped_wisteria_log"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:hanging_wisteria_sign",
+    "count": 6
+  }
+}

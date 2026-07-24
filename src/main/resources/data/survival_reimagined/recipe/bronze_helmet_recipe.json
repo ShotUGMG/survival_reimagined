@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:bronze_plate"
+    },
+    "b": {
+      "item": "minecraft:leather_helmet"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:bronze_armor_helmet",
+    "count": 1
+  }
+}

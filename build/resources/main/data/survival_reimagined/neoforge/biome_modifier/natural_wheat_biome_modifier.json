@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "plains",
+    "sunflower_plains"
+  ],
+  "features": "survival_reimagined:natural_wheat",
+  "step": "vegetal_decoration"
+}

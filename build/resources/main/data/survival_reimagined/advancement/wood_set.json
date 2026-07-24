@@ -15,46 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "wood_set_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:wooden_sword"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
     "wood_set_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:wooden_pickaxe"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "wood_set_2": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:wooden_axe"
-            ],
+            "items": "minecraft:wooden_sword",
             "count": {
               "min": 1,
               "max": 1
@@ -68,25 +34,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:wooden_shovel"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "wood_set_4": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:wooden_hoe"
-            ],
+            "items": "minecraft:wooden_pickaxe",
             "count": {
               "min": 1,
               "max": 1
@@ -100,25 +48,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:wooden_saw"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "wood_set_6": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:wooden_hammer"
-            ],
+            "items": "minecraft:wooden_axe",
             "count": {
               "min": 1,
               "max": 1
@@ -132,25 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:wooden_knife"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "wood_set_8": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:wooden_helmet"
-            ],
+            "items": "minecraft:wooden_shovel",
             "count": {
               "min": 1,
               "max": 1
@@ -164,25 +76,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:wooden_chestplate"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "wood_set_10": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:wooden_leggings"
-            ],
+            "items": "minecraft:wooden_hoe",
             "count": {
               "min": 1,
               "max": 1
@@ -196,9 +90,91 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:wooden_boots"
-            ],
+            "items": "survival_reimagined:wooden_saw",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_hammer",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_knife",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_helmet",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_chestplate",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_leggings",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "wood_set_23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:wooden_boots",
             "count": {
               "min": 1,
               "max": 1

@@ -1,0 +1,20 @@
+{
+  "type": "survival_reimagined:metal_refining",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:obsidian_handle"
+    },
+    {
+      "tag": "survival_reimagined:diamond_knife_blade"
+    },
+    {
+      "tag": "c:tools/hammer"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:diamond_knife",
+      "count": 1
+    }
+  ]
+}

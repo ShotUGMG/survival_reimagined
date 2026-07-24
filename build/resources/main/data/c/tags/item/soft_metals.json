@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:gold_ingot",
+    "minecraft:iron_ingot",
     "survival_reimagined:tin_ingot",
     "minecraft:copper_ingot"
   ]

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "survival_reimagined:ancient_debris_chunk",
+    "minecraft:netherite_scrap",
     "minecraft:ancient_debris"
   ]
 }

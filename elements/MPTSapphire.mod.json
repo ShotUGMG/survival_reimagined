@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "mineral_processing_jei",
+    "ingredients": [
+      "CUSTOM:RoughDiamond",
+      "CUSTOM:ReactorRod"
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "MineralProcessingJEI",
+    "results": [
+      "Items.DIAMOND"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

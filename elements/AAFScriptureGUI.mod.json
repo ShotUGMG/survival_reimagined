@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -25,9 +25,7 @@
         "data": {
           "image": "book_page1.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "Page1"
-          },
+          "displayCondition": "Page1",
           "x": 60,
           "y": 26,
           "locked": true
@@ -38,9 +36,7 @@
         "data": {
           "image": "titanium_text.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page1"
-          },
+          "displayCondition": "Page1",
           "x": 223,
           "y": 177,
           "locked": true
@@ -51,9 +47,7 @@
         "data": {
           "image": "uranium_rod_text.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page1"
-          },
+          "displayCondition": "Page1",
           "x": 223,
           "y": 119,
           "locked": true
@@ -64,9 +58,7 @@
         "data": {
           "image": "book_page2.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 60,
           "y": 26,
           "locked": true
@@ -77,9 +69,7 @@
         "data": {
           "image": "page_2_text1.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 80,
           "y": 45,
           "locked": true
@@ -90,9 +80,7 @@
         "data": {
           "image": "page_2_text2.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 79,
           "y": 75,
           "locked": true
@@ -103,9 +91,7 @@
         "data": {
           "image": "page_2_text3.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 80,
           "y": 103,
           "locked": true
@@ -116,9 +102,7 @@
         "data": {
           "image": "page_2_text4.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 217,
           "y": 45,
           "locked": true
@@ -129,9 +113,7 @@
         "data": {
           "image": "page_2_text5.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 81,
           "y": 133,
           "locked": true
@@ -142,9 +124,7 @@
         "data": {
           "image": "page_2_text6.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 220,
           "y": 57,
           "locked": true
@@ -155,9 +135,7 @@
         "data": {
           "image": "page_2_text7.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 220,
           "y": 86,
           "locked": true
@@ -168,9 +146,7 @@
         "data": {
           "image": "page_2_text8.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 217,
           "y": 115,
           "locked": true
@@ -181,9 +157,7 @@
         "data": {
           "image": "page_2_text9.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 217,
           "y": 141,
           "locked": true
@@ -194,9 +168,7 @@
         "data": {
           "image": "page_2_text10.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 217,
           "y": 151,
           "locked": true
@@ -207,9 +179,7 @@
         "data": {
           "image": "page_2_text12.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 217,
           "y": 168,
           "locked": true
@@ -220,9 +190,7 @@
         "data": {
           "image": "page_2_text13.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page2"
-          },
+          "displayCondition": "Page2",
           "x": 81,
           "y": 161,
           "locked": true
@@ -234,12 +202,8 @@
           "name": "imagebutton_next_page_button_unhovered",
           "image": "next_page_button_unhovered.png",
           "hoveredImage": "next_page_button.png",
-          "onClick": {
-            "name": "NextPage"
-          },
-          "displayCondition": {
-            "name": "NextPageButtonDisplay"
-          },
+          "onClick": "NextPage",
+          "displayCondition": "NextPageButtonDisplay",
           "x": 332,
           "y": 187,
           "locked": true
@@ -251,12 +215,8 @@
           "name": "imagebutton_previous_page_button_unhovered",
           "image": "previous_page_button_unhovered.png",
           "hoveredImage": "previous_page_button.png",
-          "onClick": {
-            "name": "PreviousPage"
-          },
-          "displayCondition": {
-            "name": "PreviousPageButtonDisplay"
-          },
+          "onClick": "PreviousPage",
+          "displayCondition": "PreviousPageButtonDisplay",
           "x": 75,
           "y": 187,
           "locked": true
@@ -269,9 +229,7 @@
           "text": {
             "fixedValue": "Next Page"
           },
-          "displayCondition": {
-            "name": "NextPageButtonDisplay"
-          },
+          "displayCondition": "NextPageButtonDisplay",
           "width": 24,
           "height": 24,
           "x": 332,
@@ -286,9 +244,7 @@
           "text": {
             "fixedValue": "Previous Page"
           },
-          "displayCondition": {
-            "name": "PreviousPageButtonDisplay"
-          },
+          "displayCondition": "PreviousPageButtonDisplay",
           "width": 24,
           "height": 24,
           "x": 75,
@@ -301,21 +257,15 @@
         "data": {
           "image": "page_2_text14.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "Page1"
-          },
+          "displayCondition": "Page1",
           "x": 76,
           "y": 53,
           "locked": true
         }
       }
     ],
-    "onOpen": {
-      "name": "AAFScriptureGUIThisGUIIsOpened"
-    },
-    "onClosed": {
-      "name": "AAFScriptureGUIThisGUIIsOpened"
-    },
+    "onOpen": "AAFScriptureGUIThisGUIIsOpened",
+    "onClosed": "AAFScriptureGUIThisGUIIsOpened",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

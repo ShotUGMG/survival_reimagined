@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/horse_carcass",
+  "textures": {
+    "all": "survival_reimagined:block/horse_white",
+    "particle": "survival_reimagined:block/horse_markings_whitedots"
+  },
+  "render_type": "translucent"
+}

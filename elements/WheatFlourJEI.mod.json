@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "millstone_jei",
+    "ingredients": [
+      "Items.WHEAT"
+    ],
+    "integers": [
+      3
+    ],
+    "strings": [],
+    "recipetype": "MillstoneJEI",
+    "results": [
+      "Items.BREAD"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

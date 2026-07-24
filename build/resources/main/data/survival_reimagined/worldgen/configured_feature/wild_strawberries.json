@@ -14,7 +14,7 @@
                 "data": {
                   "Name": "survival_reimagined:strawberry_plant",
                   "Properties": {
-                    "age": "0"
+                    "age": "3"
                   }
                 },
                 "weight": 8
@@ -23,19 +23,19 @@
                 "data": {
                   "Name": "survival_reimagined:strawberry_plant",
                   "Properties": {
-                    "age": "1"
+                    "age": "4"
                   }
                 },
-                "weight": 3
+                "weight": 5
               },
               {
                 "data": {
                   "Name": "survival_reimagined:strawberry_plant",
                   "Properties": {
-                    "age": "2"
+                    "age": "5"
                   }
                 },
-                "weight": 1
+                "weight": 2
               }
             ]
           }

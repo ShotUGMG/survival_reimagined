@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:cooked_heart",
     "survival_reimagined:heart_item"
   ]
 }

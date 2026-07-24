@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:AcaciaPlank"
-      },
-      {
-        "value": "CUSTOM:BoatPaddles"
-      },
-      {
-        "value": "CUSTOM:AcaciaPlank"
-      },
-      {
-        "value": "CUSTOM:AcaciaPlank"
-      },
-      {
-        "value": "CUSTOM:AcaciaPlank"
-      },
-      {
-        "value": "CUSTOM:AcaciaPlank"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:AcaciaPlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:AcaciaPlank",
+      "CUSTOM:AcaciaPlank",
+      "CUSTOM:AcaciaPlank",
+      "CUSTOM:AcaciaPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.ACACIA_BOAT"
-    },
+    "recipeReturnStack": "Items.ACACIA_BOAT",
     "name": "acacia_boat",
     "namespace": "minecraft"
   }

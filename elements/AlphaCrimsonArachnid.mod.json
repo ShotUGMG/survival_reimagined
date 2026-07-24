@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Alpha Crimson Arachnid",
@@ -44,31 +44,17 @@
       "falpha": 0.0
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ARTHROPOD",
     "attackStrength": 6,
@@ -108,28 +94,14 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "CUSTOM:crimson_arachnid/ambient"
-    },
-    "hurtSound": {
-      "value": "CUSTOM:crimson_arachnid/hurt"
-    },
-    "deathSound": {
-      "value": "CUSTOM:crimson_arachnid/death"
-    },
-    "stepSound": {
-      "value": "entity.spider.step"
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "CUSTOM:crimson_arachnid/ambient",
+    "hurtSound": "CUSTOM:crimson_arachnid/hurt",
+    "deathSound": "CUSTOM:crimson_arachnid/death",
+    "stepSound": "entity.spider.step",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
-    "whenThisMobKillsAnother": {
-      "name": "AlphaCrimsonArachnidThisEntityKillsAnotherOne"
-    },
+    "whenThisMobKillsAnother": "AlphaCrimsonArachnidThisEntityKillsAnotherOne",
     "hasAI": true,
     "aiBase": "Spider",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"0\" y=\"-60\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">CUSTOM:AlphaCrimsonArachnid</field><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.25</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.25</field><field name=\"longmemory\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
@@ -137,17 +109,13 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "Spawning"
-    },
+    "spawningCondition": "Spawning",
     "spawningProbability": 10,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

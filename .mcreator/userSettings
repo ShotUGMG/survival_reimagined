@@ -2,10 +2,27 @@
   "workspacePanelIconSize": "LARGE",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 548,
   "projectBrowserState": {
     "expandedPaths": [
       "[, Survival Reimagined]"
     ]
+  },
+  "leftDockState": {
+    "expandedDock": "project_browser",
+    "dockSizes": {
+      "project_browser": 468,
+      "local_history": 280
+    }
+  },
+  "rightDockState": {
+    "dockSizes": {}
+  },
+  "bottomDockState": {
+    "expandedDock": "console",
+    "dockSizes": {
+      "console": 181,
+      "code_viewer": 292,
+      "debugger": 300
+    }
   }
 }

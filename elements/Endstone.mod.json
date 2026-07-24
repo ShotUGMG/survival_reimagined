@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EndStoneRock"
-      },
-      {
-        "value": "CUSTOM:EndStoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:EndStoneRock"
-      },
-      {
-        "value": "CUSTOM:EndStoneRock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:EndStoneRock",
+      "CUSTOM:EndStoneRock",
+      "",
+      "CUSTOM:EndStoneRock",
+      "CUSTOM:EndStoneRock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.END_STONE"
-    },
+    "recipeReturnStack": "Blocks.END_STONE",
     "name": "endstone",
     "namespace": "mod"
   }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "survival_reimagined:block/slim_cursed_stone_wall"
+    },
+    "facing=east": {
+      "model": "survival_reimagined:block/slim_cursed_stone_wall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "survival_reimagined:block/slim_cursed_stone_wall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "survival_reimagined:block/slim_cursed_stone_wall",
+      "y": 270
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BoatPaddles"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.BIRCH_BOAT"
-    },
+    "recipeReturnStack": "Items.BIRCH_BOAT",
     "name": "birch_boat",
     "namespace": "minecraft"
   }

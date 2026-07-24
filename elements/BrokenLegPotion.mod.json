@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Broken Leg",
@@ -8,14 +8,13 @@
       "value": -1,
       "falpha": 0.0
     },
-    "onAddedSound": {
-      "value": "CUSTOM:limb_remove"
-    },
+    "onAddedSound": "CUSTOM:limb_remove",
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
-    "modifiers": []
+    "modifiers": [],
+    "onActiveTick": "BrokenLegPotionOnEffectActiveTick"
   }
 }

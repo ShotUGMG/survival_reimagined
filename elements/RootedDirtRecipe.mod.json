@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RootedDirtPile"
-      },
-      {
-        "value": "CUSTOM:RootedDirtPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RootedDirtPile"
-      },
-      {
-        "value": "CUSTOM:RootedDirtPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:RootedDirtPile",
+      "CUSTOM:RootedDirtPile",
+      "",
+      "CUSTOM:RootedDirtPile",
+      "CUSTOM:RootedDirtPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.ROOTED_DIRT"
-    },
+    "recipeReturnStack": "Blocks.ROOTED_DIRT",
     "name": "rooted_dirt_recipe",
     "namespace": "mod"
   }

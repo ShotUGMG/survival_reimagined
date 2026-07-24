@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Entity",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.ROTTEN_FLESH"
-            },
+            "item": "Items.ROTTEN_FLESH",
             "weight": 98,
             "minCount": 1,
             "maxCount": 3,

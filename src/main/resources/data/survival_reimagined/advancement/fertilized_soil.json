@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:green_arrow"
+    },
+    "title": {
+      "translate": "advancements.fertilized_soil.title"
+    },
+    "description": {
+      "translate": "advancements.fertilized_soil.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fertilized_soil_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:terrible_farmer"
+}

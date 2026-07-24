@@ -1,13 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "VEGETAL_DECORATION",
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:TropicalCoast"
-      }
+      "CUSTOM:TropicalCoast"
     ],
     "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_bamboo\"><field name=\"probability\">0</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">2</field></block></value><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
   }

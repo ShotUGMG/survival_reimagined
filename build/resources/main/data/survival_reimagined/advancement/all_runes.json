@@ -15,46 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "all_runes_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:sapphire_silver_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
     "all_runes_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:silver_diamond_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "all_runes_2": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:silver_emerald_rune"
-            ],
+            "items": "survival_reimagined:sapphire_silver_rune",
             "count": {
               "min": 1,
               "max": 64
@@ -68,25 +34,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:silver_ruby_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "all_runes_4": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:silver_lapis_rune"
-            ],
+            "items": "survival_reimagined:silver_diamond_rune",
             "count": {
               "min": 1,
               "max": 64
@@ -100,25 +48,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:silver_amber_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "all_runes_6": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:sapphire_gold_rune"
-            ],
+            "items": "survival_reimagined:silver_emerald_rune",
             "count": {
               "min": 1,
               "max": 64
@@ -132,25 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:gold_diamond_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "all_runes_8": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:gold_emerald_rune"
-            ],
+            "items": "survival_reimagined:silver_ruby_rune",
             "count": {
               "min": 1,
               "max": 64
@@ -164,25 +76,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:gold_ruby_rune"
-            ],
-            "count": {
-              "min": 1,
-              "max": 64
-            }
-          }
-        ]
-      }
-    },
-    "all_runes_10": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:gold_lapis_rune"
-            ],
+            "items": "survival_reimagined:silver_lapis_rune",
             "count": {
               "min": 1,
               "max": 64
@@ -196,9 +90,91 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:gold_amber_rune"
-            ],
+            "items": "survival_reimagined:silver_amber_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:sapphire_gold_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:gold_diamond_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:gold_emerald_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:gold_ruby_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:gold_lapis_rune",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    },
+    "all_runes_23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:gold_amber_rune",
             "count": {
               "min": 1,
               "max": 64

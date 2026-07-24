@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "polished_chiseled_cursed_stone"
+      }
+    }
+  }
+}

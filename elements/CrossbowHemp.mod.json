@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "Blocks.TRIPWIRE_HOOK"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      }
+      "Items.STICK",
+      "Items.IRON_INGOT",
+      "Items.STICK",
+      "CUSTOM:PlantFiber",
+      "Blocks.TRIPWIRE_HOOK",
+      "CUSTOM:PlantFiber",
+      "",
+      "Items.STICK",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Items.CROSSBOW"
-    },
+    "recipeReturnStack": "Items.CROSSBOW",
     "name": "crossbow_hemp",
     "namespace": "mod"
   }

@@ -15,8 +15,8 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class AAFRecipesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_items")))
-				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy_items")))) {
+		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy")))
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).is(ItemTags.create(ResourceLocation.parse("c:alloy")))) {
 			AAFPlatedDiamondProcedure.execute(world, x, y, z);
 			AAFNetheriteProcedure.execute(world, x, y, z);
 			AAFTuraniteProcedure.execute(world, x, y, z);

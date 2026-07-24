@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      }
+      "",
+      "TAG:c:planks/single",
+      "",
+      "",
+      "TAG:c:planks/single",
+      "",
+      "",
+      "Items.STICK",
+      "CUSTOM:PlantFiber"
     ],
-    "recipeReturnStack": {
-      "value": "Items.WOODEN_SWORD"
-    },
+    "recipeReturnStack": "Items.WOODEN_SWORD",
     "name": "wooden_sword",
     "namespace": "minecraft"
   }

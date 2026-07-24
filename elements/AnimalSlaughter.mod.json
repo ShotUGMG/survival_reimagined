@@ -1,12 +1,10 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "achievement",
   "definition": {
     "achievementName": "Animal Slaughter",
     "achievementDescription": "Kill an Animal",
-    "achievementIcon": {
-      "value": "Items.BONE"
-    },
+    "achievementIcon": "Items.BONE",
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
@@ -16,9 +14,7 @@
     "rewardRecipes": [],
     "rewardXP": 0,
     "achievementType": "task",
-    "parent": {
-      "value": "CUSTOM:CraftingTable"
-    },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+    "parent": "CUSTOM:CraftingTable",
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"/></next></block></xml>"
   }
 }

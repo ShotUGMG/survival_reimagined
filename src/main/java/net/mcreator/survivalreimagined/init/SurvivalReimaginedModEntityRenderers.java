@@ -21,5 +21,7 @@ public class SurvivalReimaginedModEntityRenderers {
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.SOW.get(), SowRenderer::new);
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.PIGLET.get(), PigletRenderer::new);
 		event.registerEntityRenderer(SurvivalReimaginedModEntities.GHOST.get(), GhostRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.BLACK_BEAR.get(), BlackBearRenderer::new);
+		event.registerEntityRenderer(SurvivalReimaginedModEntities.BROWN_BEAR.get(), BrownBearRenderer::new);
 	}
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "BUILDING",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock",
+      "",
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.COBBLESTONE"
-    },
+    "recipeReturnStack": "Blocks.COBBLESTONE",
     "name": "cobble_stone",
     "namespace": "mod"
   }

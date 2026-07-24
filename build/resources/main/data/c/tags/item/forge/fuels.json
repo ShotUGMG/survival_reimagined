@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:fuels/bark_large",
+      "required": false
+    },
+    "minecraft:coal_block",
+    "minecraft:lava_bucket",
+    {
+      "id": "#c:fuels/single_plank",
+      "required": false
+    },
+    {
+      "id": "#c:fuels/chunks",
+      "required": false
+    },
+    {
+      "id": "#minecraft:coals",
+      "required": false
+    }
+  ]
+}

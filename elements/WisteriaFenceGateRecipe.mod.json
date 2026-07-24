@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "Items.STICK"
-      }
+      "",
+      "",
+      "",
+      "Items.STICK",
+      "CUSTOM:WisteriaPlanks",
+      "Items.STICK",
+      "Items.STICK",
+      "CUSTOM:WisteriaPlanks",
+      "Items.STICK"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WisteriaFenceGate"
-    },
+    "recipeReturnStack": "CUSTOM:WisteriaFenceGate",
     "name": "wisteria_fence_gate_recipe",
     "namespace": "mod"
   }

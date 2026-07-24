@@ -2,15 +2,9 @@
   "replace": false,
   "values": [
     "survival_reimagined:cured_chicken",
-    "survival_reimagined:cured_heart",
     "survival_reimagined:cured_mutton",
-    "survival_reimagined:cured_brain",
     "survival_reimagined:cured_rabbit",
-    "survival_reimagined:cured_stomach",
     "survival_reimagined:cured_porkchop",
-    "survival_reimagined:cured_intestines",
-    "survival_reimagined:cured_steak",
-    "survival_reimagined:cured_liver",
-    "survival_reimagined:cured_lungs"
+    "survival_reimagined:cured_steak"
   ]
 }

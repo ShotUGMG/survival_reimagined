@@ -80,4 +80,6 @@ public class SurvivalReimaginedModSounds {
 	public static final DeferredHolder<SoundEvent, SoundEvent> AMBIENT_PIGLET = REGISTRY.register("ambient/piglet", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "ambient/piglet")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HURT_PIGLET = REGISTRY.register("hurt/piglet", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "hurt/piglet")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SQUEAL_PIGLET = REGISTRY.register("squeal/piglet", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "squeal/piglet")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> BARREL_SEAL = REGISTRY.register("barrel/seal", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "barrel/seal")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MILLSTONE = REGISTRY.register("millstone", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("survival_reimagined", "millstone")));
 }

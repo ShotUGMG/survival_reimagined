@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -43,7 +44,7 @@ public class WisteriaLitterDropsProcedure {
 			return;
 		if ((getEntityGameType(entity) == GameType.CREATIVE) == false) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 0) {
+				if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 0) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 						entityToSpawn.setPickUpDelay(10);
@@ -56,8 +57,8 @@ public class WisteriaLitterDropsProcedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:break/wisteria_litter")), SoundSource.BLOCKS, 1, 1, false);
 						}
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip8 ? blockstate.getValue(_getip8) : -1) == 1) {
-					for (int index0 = 0; index0 < 2; index0++) {
+				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip8 ? blockstate.getValue(_getip8) : -1) == 1) {
+					for (int index26 = 0; index26 < 2; index26++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -71,8 +72,8 @@ public class WisteriaLitterDropsProcedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:break/wisteria_litter")), SoundSource.BLOCKS, 1, 1, false);
 						}
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip12 ? blockstate.getValue(_getip12) : -1) == 2) {
-					for (int index1 = 0; index1 < 3; index1++) {
+				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip12 ? blockstate.getValue(_getip12) : -1) == 2) {
+					for (int index27 = 0; index27 < 3; index27++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -86,8 +87,8 @@ public class WisteriaLitterDropsProcedure {
 							_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:break/wisteria_litter")), SoundSource.BLOCKS, 1, 1, false);
 						}
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1) == 3) {
-					for (int index2 = 0; index2 < 4; index2++) {
+				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1) == 3) {
+					for (int index28 = 0; index28 < 4; index28++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -113,6 +114,15 @@ public class WisteriaLitterDropsProcedure {
 			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
 			if (playerInfo != null)
 				return playerInfo.getGameMode();
+		}
+		return null;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
 		}
 		return null;
 	}

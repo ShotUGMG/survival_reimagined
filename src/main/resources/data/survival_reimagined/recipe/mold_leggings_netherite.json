@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:leggings_mold"
+    },
+    {
+      "item": "survival_reimagined:netherite"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    7,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:netherite_leggings",
+      "count": 1
+    }
+  ]
+}

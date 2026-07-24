@@ -6,64 +6,56 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.survivalreimagined.recipe.ProcessingRecipe;
-import net.mcreator.survivalreimagined.recipe.MetalRefiningRecipe;
-import net.mcreator.survivalreimagined.recipe.ForgingRecipe;
-import net.mcreator.survivalreimagined.recipe.AlloyForgeRecipe;
-import net.mcreator.survivalreimagined.integration.jei.ProcessingJeiCategory;
-import net.mcreator.survivalreimagined.integration.jei.MetalRefiningJeiCategory;
-import net.mcreator.survivalreimagined.integration.jei.ForgingJeiCategory;
-import net.mcreator.survivalreimagined.integration.jei.AlloyForgeJeiCategory;
+import net.mcreator.survivalreimagined.jei_recipes.*;
 
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
-import mezz.jei.api.registration.IGuiHandlerRegistration;
-import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.IModPlugin;
 
+import java.util.stream.Collectors;
 import java.util.Objects;
+import java.util.List;
 
 @JeiPlugin
 public class SurvivalReimaginedModJeiPlugin implements IModPlugin {
-	private static final String UID = "survival_reimagined";
-	public static RecipeType<RecipeHolder<ForgingRecipe>> FORGING_JEI_CATEGORY = RecipeType.create(UID, "forging", (Class<RecipeHolder<ForgingRecipe>>) (Class<?>) ForgingRecipe.class);
-	public static RecipeType<RecipeHolder<ProcessingRecipe>> PROCESSING_JEI_CATEGORY = RecipeType.create(UID, "processing", (Class<RecipeHolder<ProcessingRecipe>>) (Class<?>) ProcessingRecipe.class);
-	public static RecipeType<RecipeHolder<MetalRefiningRecipe>> METAL_REFINING_JEI_CATEGORY = RecipeType.create(UID, "metal_refining", (Class<RecipeHolder<MetalRefiningRecipe>>) (Class<?>) MetalRefiningRecipe.class);
-	public static RecipeType<RecipeHolder<AlloyForgeRecipe>> ALLOY_FORGE_JEI_CATEGORY = RecipeType.create(UID, "alloy_forge", (Class<RecipeHolder<AlloyForgeRecipe>>) (Class<?>) AlloyForgeRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<MillstoneJEIRecipe> MillstoneJEI_Type = new mezz.jei.api.recipe.RecipeType<>(MillstoneJEIRecipeCategory.UID, MillstoneJEIRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<ForgeJEIRecipe> ForgeJEI_Type = new mezz.jei.api.recipe.RecipeType<>(ForgeJEIRecipeCategory.UID, ForgeJEIRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<MetalRefiningRecipe> MetalRefining_Type = new mezz.jei.api.recipe.RecipeType<>(MetalRefiningRecipeCategory.UID, MetalRefiningRecipe.class);
+	public static mezz.jei.api.recipe.RecipeType<MineralProcessingJEIRecipe> MineralProcessingJEI_Type = new mezz.jei.api.recipe.RecipeType<>(MineralProcessingJEIRecipeCategory.UID, MineralProcessingJEIRecipe.class);
 
 	@Override
 	public ResourceLocation getPluginUid() {
-		return ResourceLocation.fromNamespaceAndPath(UID, "jei_plugin");
+		return ResourceLocation.parse("survival_reimagined:jei_plugin");
 	}
 
 	@Override
 	public void registerCategories(IRecipeCategoryRegistration registration) {
-		registration.addRecipeCategories(new ForgingJeiCategory(registration.getJeiHelpers().getGuiHelper()));
-		registration.addRecipeCategories(new ProcessingJeiCategory(registration.getJeiHelpers().getGuiHelper()));
-		registration.addRecipeCategories(new MetalRefiningJeiCategory(registration.getJeiHelpers().getGuiHelper()));
-		registration.addRecipeCategories(new AlloyForgeJeiCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new MillstoneJEIRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new ForgeJEIRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new MetalRefiningRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+		registration.addRecipeCategories(new MineralProcessingJEIRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
 	}
 
 	@Override
 	public void registerRecipes(IRecipeRegistration registration) {
 		RecipeManager recipeManager = Objects.requireNonNull(Minecraft.getInstance().level).getRecipeManager();
-		registration.addRecipes(FORGING_JEI_CATEGORY, recipeManager.getAllRecipesFor(ForgingRecipe.Type.INSTANCE));
-		registration.addRecipes(PROCESSING_JEI_CATEGORY, recipeManager.getAllRecipesFor(ProcessingRecipe.Type.INSTANCE));
-		registration.addRecipes(METAL_REFINING_JEI_CATEGORY, recipeManager.getAllRecipesFor(MetalRefiningRecipe.Type.INSTANCE));
-		registration.addRecipes(ALLOY_FORGE_JEI_CATEGORY, recipeManager.getAllRecipesFor(AlloyForgeRecipe.Type.INSTANCE));
+		List<MillstoneJEIRecipe> MillstoneJEIRecipes = recipeManager.getAllRecipesFor(MillstoneJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(MillstoneJEI_Type, MillstoneJEIRecipes);
+		List<ForgeJEIRecipe> ForgeJEIRecipes = recipeManager.getAllRecipesFor(ForgeJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(ForgeJEI_Type, ForgeJEIRecipes);
+		List<MetalRefiningRecipe> MetalRefiningRecipes = recipeManager.getAllRecipesFor(MetalRefiningRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(MetalRefining_Type, MetalRefiningRecipes);
+		List<MineralProcessingJEIRecipe> MineralProcessingJEIRecipes = recipeManager.getAllRecipesFor(MineralProcessingJEIRecipe.Type.INSTANCE).stream().map(RecipeHolder::value).collect(Collectors.toList());
+		registration.addRecipes(MineralProcessingJEI_Type, MineralProcessingJEIRecipes);
 	}
 
 	@Override
 	public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
-		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.FORGE.get().asItem()), FORGING_JEI_CATEGORY);
-		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE.get().asItem()), PROCESSING_JEI_CATEGORY);
-		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.METAL_REFINING_TABLE.get().asItem()), METAL_REFINING_JEI_CATEGORY);
-		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.ADVANCED_ALLOY_FORGE.get().asItem()), ALLOY_FORGE_JEI_CATEGORY);
-	}
-
-	@Override
-	public void registerGuiHandlers(IGuiHandlerRegistration registration) {
+		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.MILLSTONE.get().asItem()), MillstoneJEI_Type);
+		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.FORGE.get().asItem()), ForgeJEI_Type);
+		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.METAL_REFINING_TABLE.get().asItem()), MetalRefining_Type);
+		registration.addRecipeCatalyst(new ItemStack(SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE.get().asItem()), MineralProcessingJEI_Type);
 	}
 }

@@ -5,7 +5,6 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 public class SurvivalReimaginedConfigConfiguration {
 	public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 	public static final ModConfigSpec SPEC;
-
 	public static final ModConfigSpec.ConfigValue<Boolean> ZOMBIFICATION;
 	public static final ModConfigSpec.ConfigValue<Boolean> IMMUNITY_ZOMBIFICATION;
 	public static final ModConfigSpec.ConfigValue<Double> TIME_ZOMBIFICATION;
@@ -15,14 +14,12 @@ public class SurvivalReimaginedConfigConfiguration {
 	public static final ModConfigSpec.ConfigValue<Double> LIGHT_LEVEL;
 	public static final ModConfigSpec.ConfigValue<Double> PARANOIA_DELAY;
 	public static final ModConfigSpec.ConfigValue<Boolean> BINDING_SCULK;
-
 	public static final ModConfigSpec.ConfigValue<Boolean> BLOOD_MOON;
 	public static final ModConfigSpec.ConfigValue<Boolean> BLOODMOON_SLEEP;
 	public static final ModConfigSpec.ConfigValue<Boolean> DISABLE_MOBS;
 	public static final ModConfigSpec.ConfigValue<Double> FULL_MOON;
 	public static final ModConfigSpec.ConfigValue<Double> PHASES_ONE;
 	public static final ModConfigSpec.ConfigValue<Double> PHASES_TWO;
-
 	public static final ModConfigSpec.ConfigValue<Double> BREAK_SPEED;
 	public static final ModConfigSpec.ConfigValue<Boolean> VANILLA_PORTAL;
 	public static final ModConfigSpec.ConfigValue<Boolean> HUNGER_VANILLA;
@@ -30,12 +27,12 @@ public class SurvivalReimaginedConfigConfiguration {
 	public static final ModConfigSpec.ConfigValue<Boolean> HUNGEREFFECT_VANILLA;
 	public static final ModConfigSpec.ConfigValue<Boolean> HUNGER_RAWFOOD;
 	public static final ModConfigSpec.ConfigValue<Boolean> SPOIL_FOOD;
-
+	public static final ModConfigSpec.ConfigValue<Boolean> WEIGHT;
 	public static final ModConfigSpec.ConfigValue<Boolean> BLEEDING_EFFECT;
 	public static final ModConfigSpec.ConfigValue<Double> BLEED_CHANCE;
-	public static final ModConfigSpec.ConfigValue<Boolean> WEIGHT;
 	public static final ModConfigSpec.ConfigValue<Boolean> BROKEN_LEGS;
 	public static final ModConfigSpec.ConfigValue<Double> BROKEN_LEG_CHANCE;
+	public static final ModConfigSpec.ConfigValue<Boolean> GHOST_SPAWN;
 	static {
 		BUILDER.push("status_effects");
 		BUILDER.push("zombification");
@@ -80,14 +77,21 @@ public class SurvivalReimaginedConfigConfiguration {
 		BUILDER.pop();
 		BUILDER.pop();
 		BUILDER.push("experimental_features");
+		BUILDER.push("difficulty");
+		BUILDER.push("weight");
+		WEIGHT = BUILDER.comment("Enable/Disable Weight System").define("weight_system", true);
+		BUILDER.pop();
 		BUILDER.push("bleeding");
-		BLEEDING_EFFECT = BUILDER.comment("Allow Crimson Arachnid to Inflict Bleeding").define("bleeding", false);
+		BLEEDING_EFFECT = BUILDER.comment("Allow Crimson Arachnid to Inflict Bleeding").define("bleeding", true);
 		BLEED_CHANCE = BUILDER.comment("Chance to contract Bleeding Effect. Defualt is 0.1 (10%)").define("bleeding_chance", (double) 0.1);
 		BUILDER.pop();
-		BUILDER.push("difficulty");
-		WEIGHT = BUILDER.comment("Enable/Disable Weight System").define("weight_system", false);
-		BROKEN_LEGS = BUILDER.comment("Enable/Disable breaking your legs from fall damage").define("broken_legs", false);
+		BUILDER.push("leg_breaking");
+		BROKEN_LEGS = BUILDER.comment("Enable/Disable breaking your legs from fall damage").define("broken_legs", true);
 		BROKEN_LEG_CHANCE = BUILDER.comment("Chance to break your leg from a fall. Defualt is 0.2 (20%)").define("broken_leg_chance", (double) 0.2);
+		BUILDER.pop();
+		BUILDER.pop();
+		BUILDER.push("lore_content");
+		GHOST_SPAWN = BUILDER.comment("Allow Ghosts to spawn").define("enables_ghosts", false);
 		BUILDER.pop();
 		BUILDER.pop();
 

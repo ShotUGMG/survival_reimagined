@@ -1,0 +1,17 @@
+{
+  "type": "survival_reimagined:millstone_jei",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "integers": [
+    3
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:bread",
+      "count": 1
+    }
+  ]
+}

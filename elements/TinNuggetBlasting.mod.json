@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:TinChunk"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:TinNugget"
-    },
+    "blastingInputStack": "CUSTOM:TinChunk",
+    "blastingReturnStack": "CUSTOM:TinNugget",
     "name": "tin_nugget_blasting",
     "namespace": "mod"
   }

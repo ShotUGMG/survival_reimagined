@@ -21,13 +21,13 @@ import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 @EventBusSubscriber
 public class SurvivalReimaginedModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(Registries.MOB_EFFECT, SurvivalReimaginedMod.MODID);
-	public static final DeferredHolder<MobEffect, MobEffect> PARANOIA = REGISTRY.register("paranoia", () -> new ParanoiaMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> FEAR = REGISTRY.register("fear", () -> new FearMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> ZOMBIFICATION = REGISTRY.register("zombification", () -> new ZombificationMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> BINDING_SCULK = REGISTRY.register("binding_sculk", () -> new BindingSculkMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> RADIATION = REGISTRY.register("radiation", () -> new RadiationMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> BLEEDING = REGISTRY.register("bleeding", () -> new BleedingMobEffect());
-	public static final DeferredHolder<MobEffect, MobEffect> BROKEN_LEG_POTION = REGISTRY.register("broken_leg_potion", () -> new BrokenLegPotionMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PARANOIA = REGISTRY.register("paranoia", ParanoiaMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> FEAR = REGISTRY.register("fear", FearMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> ZOMBIFICATION = REGISTRY.register("zombification", ZombificationMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> BINDING_SCULK = REGISTRY.register("binding_sculk", BindingSculkMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> RADIATION = REGISTRY.register("radiation", RadiationMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> BLEEDING = REGISTRY.register("bleeding", BleedingMobEffect::new);
+	public static final DeferredHolder<MobEffect, MobEffect> BROKEN_LEG_POTION = REGISTRY.register("broken_leg_potion", BrokenLegPotionMobEffect::new);
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {

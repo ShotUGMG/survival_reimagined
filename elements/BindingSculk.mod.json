@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Binding Sculk",
@@ -14,11 +14,7 @@
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onActiveTick": {
-      "name": "BindingSculkOnEffectActiveTick"
-    },
-    "activeTickCondition": {
-      "name": "BindingSculkActiveTickCondition"
-    }
+    "onActiveTick": "BindingSculkOnEffectActiveTick",
+    "activeTickCondition": "BindingSculkActiveTickCondition"
   }
 }

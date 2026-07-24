@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:cooked_salmon",
+    "survival_reimagined:cooked_porkchop",
+    "survival_reimagined:cooked_beef",
+    "minecraft:baked_potato",
+    "survival_reimagined:cooked_cod",
+    "survival_reimagined:cooked_equine",
+    "survival_reimagined:cooked_mutton",
+    "survival_reimagined:cooked_corn_on_the_cob",
+    "survival_reimagined:cooked_chicken",
+    "survival_reimagined:cooked_rabbit"
+  ]
+}

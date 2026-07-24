@@ -1,0 +1,17 @@
+{
+  "type": "survival_reimagined:mineral_processing_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_diamond"
+    },
+    {
+      "item": "survival_reimagined:reactor_rod"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:diamond",
+      "count": 1
+    }
+  ]
+}

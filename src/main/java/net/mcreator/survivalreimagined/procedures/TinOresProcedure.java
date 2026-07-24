@@ -37,7 +37,7 @@ public class TinOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index0 = 0; index0 < (int) (IngotDropAmount + 1); index0++) {
+							for (int index45 = 0; index45 < (int) (IngotDropAmount + 1); index45++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -45,7 +45,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 2, 3); index1++) {
+						for (int index46 = 0; index46 < Mth.nextInt(RandomSource.create(), 2, 3); index46++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -54,7 +54,7 @@ public class TinOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index2 = 0; index2 < (int) (IngotDropAmount + 2); index2++) {
+							for (int index47 = 0; index47 < (int) (IngotDropAmount + 2); index47++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -62,7 +62,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 2, 4); index3++) {
+						for (int index48 = 0; index48 < Mth.nextInt(RandomSource.create(), 2, 4); index48++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -71,7 +71,7 @@ public class TinOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index4 = 0; index4 < (int) (IngotDropAmount + 3); index4++) {
+							for (int index49 = 0; index49 < (int) (IngotDropAmount + 3); index49++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -79,7 +79,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index5 = 0; index5 < Mth.nextInt(RandomSource.create(), 2, 5); index5++) {
+						for (int index50 = 0; index50 < Mth.nextInt(RandomSource.create(), 2, 5); index50++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -94,7 +94,7 @@ public class TinOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index6 = 0; index6 < Mth.nextInt(RandomSource.create(), 1, 3); index6++) {
+						for (int index51 = 0; index51 < Mth.nextInt(RandomSource.create(), 1, 3); index51++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -110,7 +110,7 @@ public class TinOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index7 = 0; index7 < (int) (IngotDropAmount + 2); index7++) {
+							for (int index52 = 0; index52 < (int) (IngotDropAmount + 2); index52++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -118,7 +118,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index8 = 0; index8 < Mth.nextInt(RandomSource.create(), 2, 4); index8++) {
+						for (int index53 = 0; index53 < Mth.nextInt(RandomSource.create(), 2, 4); index53++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -127,7 +127,7 @@ public class TinOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index9 = 0; index9 < (int) (IngotDropAmount + 3); index9++) {
+							for (int index54 = 0; index54 < (int) (IngotDropAmount + 3); index54++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -135,7 +135,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index10 = 0; index10 < Mth.nextInt(RandomSource.create(), 2, 5); index10++) {
+						for (int index55 = 0; index55 < Mth.nextInt(RandomSource.create(), 2, 5); index55++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -144,7 +144,7 @@ public class TinOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index11 = 0; index11 < (int) (IngotDropAmount + 4); index11++) {
+							for (int index56 = 0; index56 < (int) (IngotDropAmount + 4); index56++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -152,7 +152,7 @@ public class TinOresProcedure {
 								}
 							}
 						}
-						for (int index12 = 0; index12 < Mth.nextInt(RandomSource.create(), 2, 6); index12++) {
+						for (int index57 = 0; index57 < Mth.nextInt(RandomSource.create(), 2, 6); index57++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -167,7 +167,7 @@ public class TinOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index13 = 0; index13 < Mth.nextInt(RandomSource.create(), 1, 3); index13++) {
+						for (int index58 = 0; index58 < Mth.nextInt(RandomSource.create(), 1, 3); index58++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);

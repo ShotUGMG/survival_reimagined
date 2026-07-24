@@ -1,0 +1,10 @@
+{
+  "parent": "survival_reimagined:custom/farmland",
+  "textures": {
+    "all": "survival_reimagined:block/wet_high_fertility_farmland",
+    "particle": "survival_reimagined:block/high_fertility_farmland",
+    "1": "survival_reimagined:block/wet_high_fertility_dirt",
+    "0": "survival_reimagined:block/wet_high_fertility_farmland"
+  },
+  "render_type": "cutout_mipped"
+}

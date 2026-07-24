@@ -1,12 +1,67 @@
 {
-  "type": "survival_reimagined:structure_feature",
+  "type": "minecraft:simple_random_selector",
   "config": {
-    "structure": "survival_reimagined:wisteria_tree_1",
-    "ignored_blocks": "minecraft:air",
-    "offset": [
-      -8,
-      0,
-      -3
+    "features": [
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:wisteria_tree_1",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              -8,
+              0,
+              -3
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:wisteria_tree_2",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              -6,
+              0,
+              -3
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:wisteria_tree_3",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              -3,
+              0,
+              -5
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "survival_reimagined:structure_feature",
+          "config": {
+            "structure": "survival_reimagined:wisteria_tree_4",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              -6,
+              0,
+              -3
+            ]
+          }
+        },
+        "placement": []
+      }
     ]
   }
 }

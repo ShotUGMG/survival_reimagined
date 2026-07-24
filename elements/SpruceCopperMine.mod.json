@@ -1,23 +1,17 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "spruce_copper_mine_center",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      },
-      {
-        "value": "Blocks.AIR"
-      }
+      "Blocks.STRUCTURE_BLOCK",
+      "Blocks.AIR"
     ],
     "spacing": 30,
     "separation": 15,
     "restrictionBiomes": [
-      {
-        "value": "void"
-      }
+      "void"
     ],
     "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",

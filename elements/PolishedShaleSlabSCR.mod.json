@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:Shale"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:PolishedShaleSlab"
-    },
+    "stoneCuttingInputStack": "CUSTOM:Shale",
+    "stoneCuttingReturnStack": "CUSTOM:PolishedShaleSlab",
     "name": "polished_shale_slab_scr",
     "namespace": "mod"
   }

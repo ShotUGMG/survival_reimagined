@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/pig_headless",
-  "textures": {
-    "all": "survival_reimagined:block/pig_legless",
-    "particle": "survival_reimagined:block/pig_texture",
-    "1": "survival_reimagined:block/pig_legless"
-  },
-  "render_type": "solid"
-}

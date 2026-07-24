@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Sword",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Steel Sword",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 4.0,
     "attackSpeed": 1.6,
@@ -26,13 +25,12 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
+      "CUSTOM:SteelIngot"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

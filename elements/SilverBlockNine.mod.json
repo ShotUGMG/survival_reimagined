@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      },
-      {
-        "value": "CUSTOM:SilverIngot"
-      }
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot",
+      "CUSTOM:SilverIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SilverBlock"
-    },
+    "recipeReturnStack": "CUSTOM:SilverBlock",
     "name": "silver_block_nine",
     "namespace": "mod"
   }

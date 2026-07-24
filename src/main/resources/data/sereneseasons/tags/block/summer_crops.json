@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:hemp"
+    "survival_reimagined:rye_seeds",
+    "survival_reimagined:corn_stalk_bottom",
+    "survival_reimagined:wheat_crop",
+    "survival_reimagined:hemp",
+    "survival_reimagined:spelt_seeds"
   ]
 }

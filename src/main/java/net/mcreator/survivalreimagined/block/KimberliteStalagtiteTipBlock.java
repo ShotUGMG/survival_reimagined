@@ -18,6 +18,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.entity.Mob;
 
 import net.mcreator.survivalreimagined.procedures.StalagtitePlacementProcedure;
 import net.mcreator.survivalreimagined.procedures.KimberliteStalagtiteUpdatesProcedure;
@@ -65,6 +67,11 @@ public class KimberliteStalagtiteTipBlock extends Block {
 	@Override
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.BLOCKED;
 	}
 
 	@Override

@@ -1,10 +1,10 @@
 {
   "mappings": {
     "default": {
+      "name": "default",
       "map": {
-        "1": "pig_gutted"
-      },
-      "name": "default"
+        "2": "pig_gutted"
+      }
     }
   }
 }

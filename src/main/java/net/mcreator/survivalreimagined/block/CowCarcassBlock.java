@@ -1,76 +1,58 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.core.Direction;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.procedures.CowCarcassOnBlockRightClickedProcedure;
-import net.mcreator.survivalreimagined.procedures.CowCarcassBlockDestroyedByPlayerProcedure;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
+import net.mcreator.survivalreimagined.block.entity.CowCarcassBlockEntity;
 
-public class CowCarcassBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 4);
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	private static final VoxelShape SHAPE_1_NORTH = Shapes.or(box(-7, 2, -7, 1, 10, -1), box(4, 8, 13, 16, 12, 17), box(4, 0, 13, 16, 4, 17), box(4, 8, -1, 16, 12, 3), box(4, 0, -1, 16, 4, 3), box(-6, 0, -1, 4, 12, 17));
-	private static final VoxelShape SHAPE_1_SOUTH = Shapes.or(box(15, 2, 17, 23, 10, 23), box(0, 8, -1, 12, 12, 3), box(0, 0, -1, 12, 4, 3), box(0, 8, 13, 12, 12, 17), box(0, 0, 13, 12, 4, 17), box(12, 0, -1, 22, 12, 17));
-	private static final VoxelShape SHAPE_1_EAST = Shapes.or(box(17, 2, -7, 23, 10, 1), box(-1, 8, 4, 3, 12, 16), box(-1, 0, 4, 3, 4, 16), box(13, 8, 4, 17, 12, 16), box(13, 0, 4, 17, 4, 16), box(-1, 0, -6, 17, 12, 4));
-	private static final VoxelShape SHAPE_1_WEST = Shapes.or(box(-7, 2, 15, -1, 10, 23), box(13, 8, 0, 17, 12, 12), box(13, 0, 0, 17, 4, 12), box(-1, 8, 0, 3, 12, 12), box(-1, 0, 0, 3, 4, 12), box(-1, 0, 12, 17, 12, 22));
-	private static final VoxelShape SHAPE_2_NORTH = Shapes.or(box(-7, 2, -7, 1, 10, -1), box(-6, 0, -1, 4, 12, 17));
-	private static final VoxelShape SHAPE_2_SOUTH = Shapes.or(box(15, 2, 17, 23, 10, 23), box(12, 0, -1, 22, 12, 17));
-	private static final VoxelShape SHAPE_2_EAST = Shapes.or(box(17, 2, -7, 23, 10, 1), box(-1, 0, -6, 17, 12, 4));
-	private static final VoxelShape SHAPE_2_WEST = Shapes.or(box(-7, 2, 15, -1, 10, 23), box(-1, 0, 12, 17, 12, 22));
-	private static final VoxelShape SHAPE_3_NORTH = box(-6, 0, -1, 4, 12, 17);
-	private static final VoxelShape SHAPE_3_SOUTH = box(12, 0, -1, 22, 12, 17);
-	private static final VoxelShape SHAPE_3_EAST = box(-1, 0, -6, 17, 12, 4);
-	private static final VoxelShape SHAPE_3_WEST = box(-1, 0, 12, 17, 12, 22);
-	private static final VoxelShape SHAPE_4_NORTH = box(-6, 0, -1, 4, 12, 17);
-	private static final VoxelShape SHAPE_4_SOUTH = box(12, 0, -1, 22, 12, 17);
-	private static final VoxelShape SHAPE_4_EAST = box(-1, 0, -6, 17, 12, 4);
-	private static final VoxelShape SHAPE_4_WEST = box(-1, 0, 12, 17, 12, 22);
-	private static final VoxelShape SHAPE_NORTH = Shapes.or(box(-7, 2, -7, 1, 10, -1), box(-8, 10, -5, -5, 11, -4), box(-8, 1, -5, -5, 2, -4), box(4, 8, 13, 16, 12, 17), box(4, 0, 13, 16, 4, 17), box(4, 8, -1, 16, 12, 3), box(4, 0, -1, 16, 4, 3),
-			box(-6, 0, -1, 4, 12, 17));
-	private static final VoxelShape SHAPE_SOUTH = Shapes.or(box(15, 2, 17, 23, 10, 23), box(21, 10, 20, 24, 11, 21), box(21, 1, 20, 24, 2, 21), box(0, 8, -1, 12, 12, 3), box(0, 0, -1, 12, 4, 3), box(0, 8, 13, 12, 12, 17), box(0, 0, 13, 12, 4, 17),
-			box(12, 0, -1, 22, 12, 17));
-	private static final VoxelShape SHAPE_EAST = Shapes.or(box(17, 2, -7, 23, 10, 1), box(20, 10, -8, 21, 11, -5), box(20, 1, -8, 21, 2, -5), box(-1, 8, 4, 3, 12, 16), box(-1, 0, 4, 3, 4, 16), box(13, 8, 4, 17, 12, 16), box(13, 0, 4, 17, 4, 16),
-			box(-1, 0, -6, 17, 12, 4));
-	private static final VoxelShape SHAPE_WEST = Shapes.or(box(-7, 2, 15, -1, 10, 23), box(-5, 10, 21, -4, 11, 24), box(-5, 1, 21, -4, 2, 24), box(13, 8, 0, 17, 12, 12), box(13, 0, 0, 17, 4, 12), box(-1, 8, 0, 3, 12, 12), box(-1, 0, 0, 3, 4, 12),
-			box(-1, 0, 12, 17, 12, 22));
+import com.google.common.collect.ImmutableMap;
+
+public class CowCarcassBlock extends Block implements EntityBlock {
+	public static final IntegerProperty CARCASS_STATE = IntegerProperty.create("carcass_state", 0, 4);
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public CowCarcassBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 3)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 4)
-					return 0;
-				return 0;
+		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(CARCASS_STATE, 0));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(CARCASS_STATE) == 1) {
+				return Shapes.or(box(-7, 2, -7, 1, 10, -1), box(4, 8, 13, 16, 12, 17), box(4, 0, 13, 16, 4, 17), box(4, 8, -1, 16, 12, 3), box(4, 0, -1, 16, 4, 3), box(-6, 0, -1, 4, 12, 17));
+			} else if (state.getValue(CARCASS_STATE) == 2) {
+				return Shapes.or(box(-7, 2, -7, 1, 10, -1), box(-6, 0, -1, 4, 12, 17));
+			} else if (state.getValue(CARCASS_STATE) == 3) {
+				return box(-6, 0, -1, 4, 12, 17);
+			} else if (state.getValue(CARCASS_STATE) == 4) {
+				return box(-6, 0, -1, 4, 12, 17);
 			}
-		}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+			return Shapes.or(box(-7, 2, -7, 1, 10, -1), box(-8, 10, -5, -5, 11, -4), box(-8, 1, -5, -5, 2, -4), box(4, 8, 13, 16, 12, 17), box(4, 0, 13, 16, 4, 17), box(4, 8, -1, 16, 12, 3), box(4, 0, -1, 16, 4, 3), box(-6, 0, -1, 4, 12, 17));
+		});
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
@@ -89,89 +71,65 @@ public class CowCarcassBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_1_NORTH;
-				case SOUTH -> SHAPE_1_SOUTH;
-				case EAST -> SHAPE_1_EAST;
-				case WEST -> SHAPE_1_WEST;
-				default -> SHAPE_1_NORTH;
-			});
-		}
-		if (state.getValue(BLOCKSTATE) == 2) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_2_NORTH;
-				case SOUTH -> SHAPE_2_SOUTH;
-				case EAST -> SHAPE_2_EAST;
-				case WEST -> SHAPE_2_WEST;
-				default -> SHAPE_2_NORTH;
-			});
-		}
-		if (state.getValue(BLOCKSTATE) == 3) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_3_NORTH;
-				case SOUTH -> SHAPE_3_SOUTH;
-				case EAST -> SHAPE_3_EAST;
-				case WEST -> SHAPE_3_WEST;
-				default -> SHAPE_3_NORTH;
-			});
-		}
-		if (state.getValue(BLOCKSTATE) == 4) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_4_NORTH;
-				case SOUTH -> SHAPE_4_SOUTH;
-				case EAST -> SHAPE_4_EAST;
-				case WEST -> SHAPE_4_WEST;
-				default -> SHAPE_4_NORTH;
-			});
-		}
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
-	}
-
-	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, BLOCKSTATE);
+		builder.add(CARCASS_STATE);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
-	}
-
-	public BlockState rotate(BlockState state, Rotation rot) {
-		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
-	}
-
-	public BlockState mirror(BlockState state, Mirror mirrorIn) {
-		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(CARCASS_STATE, 0);
 	}
 
 	@Override
-	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		CowCarcassBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate, entity);
-		return retval;
+	public ItemStack getCloneItemStack(LevelReader level, BlockPos pos, BlockState state) {
+		return new ItemStack(SurvivalReimaginedModBlocks.COW_CARCASS.get());
 	}
 
 	@Override
-	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
-		super.useWithoutItem(blockstate, world, pos, entity, hit);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-		InteractionResult result = CowCarcassOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate, entity);
-		return result;
+	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
+		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
+		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+	}
+
+	@Override
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		return new CowCarcassBlockEntity(pos, state);
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
+	}
+
+	@Override
+	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
+		if (state.getBlock() != newState.getBlock()) {
+			BlockEntity blockEntity = world.getBlockEntity(pos);
+			if (blockEntity instanceof CowCarcassBlockEntity be) {
+				Containers.dropContents(world, pos, be);
+				world.updateNeighbourForOutputSignal(pos, this);
+			}
+			super.onRemove(state, world, pos, newState, isMoving);
+		}
+	}
+
+	@Override
+	public boolean hasAnalogOutputSignal(BlockState state) {
+		return true;
+	}
+
+	@Override
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+		BlockEntity tileentity = world.getBlockEntity(pos);
+		if (tileentity instanceof CowCarcassBlockEntity be)
+			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
+		else
+			return 0;
 	}
 }

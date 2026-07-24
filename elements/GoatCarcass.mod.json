@@ -1,0 +1,469 @@
+{
+  "_fv": 89,
+  "_type": "block",
+  "definition": {
+    "texture": "goat",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "goat_carcass:default",
+    "rotationMode": 0,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "states": [
+      {
+        "texture": "skinned_goat",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "skinned_goat:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 13.0,
+            "My": 9.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 13.0,
+            "my": 1.0,
+            "mz": 10.0,
+            "Mx": 19.0,
+            "My": 4.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": 13.0,
+            "my": 5.0,
+            "mz": 10.0,
+            "Mx": 19.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 19.0,
+            "My": 8.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": -9.0,
+            "my": 5.0,
+            "mz": -2.0,
+            "Mx": -2.0,
+            "My": 7.0,
+            "Mz": 0.0,
+            "subtract": false
+          },
+          {
+            "mx": -9.0,
+            "my": 2.0,
+            "mz": -2.0,
+            "Mx": -2.0,
+            "My": 4.0,
+            "Mz": 0.0,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 19.0,
+            "My": 4.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 2.0,
+            "mz": -10.0,
+            "Mx": 5.0,
+            "My": 7.0,
+            "Mz": 0.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 1
+          }
+        ]
+      },
+      {
+        "texture": "amputated_goat",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "legless_goat:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 13.0,
+            "My": 9.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": -9.0,
+            "my": 5.0,
+            "mz": -2.0,
+            "Mx": -2.0,
+            "My": 7.0,
+            "Mz": 0.0,
+            "subtract": false
+          },
+          {
+            "mx": -9.0,
+            "my": 2.0,
+            "mz": -2.0,
+            "Mx": -2.0,
+            "My": 4.0,
+            "Mz": 0.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 2.0,
+            "mz": -10.0,
+            "Mx": 5.0,
+            "My": 7.0,
+            "Mz": 0.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 2
+          }
+        ]
+      },
+      {
+        "texture": "amputated_goat",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "headless_goat:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 13.0,
+            "My": 9.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 3
+          }
+        ]
+      },
+      {
+        "texture": "gutted_goat",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "gutted_goat:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": -1.0,
+            "Mx": 13.0,
+            "My": 9.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 4,
+              "name": "CUSTOM:carcass_state",
+              "type": "integer"
+            },
+            "value": 4
+          }
+        ]
+      }
+    ],
+    "animations": [],
+    "itemTexture": "",
+    "particleTexture": "",
+    "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 2.0,
+        "my": 0.0,
+        "mz": -1.0,
+        "Mx": 13.0,
+        "My": 9.0,
+        "Mz": 15.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.0,
+        "my": -1.0,
+        "mz": -2.0,
+        "Mx": 15.0,
+        "My": 10.0,
+        "Mz": 9.0,
+        "subtract": false
+      },
+      {
+        "mx": 13.0,
+        "my": 1.0,
+        "mz": 10.0,
+        "Mx": 19.0,
+        "My": 4.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 13.0,
+        "my": 5.0,
+        "mz": 10.0,
+        "Mx": 19.0,
+        "My": 8.0,
+        "Mz": 13.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 5.0,
+        "mz": 0.0,
+        "Mx": 19.0,
+        "My": 8.0,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": -1.0,
+        "my": -1.0,
+        "mz": -3.0,
+        "Mx": 1.0,
+        "My": 2.0,
+        "Mz": -2.0,
+        "subtract": false
+      },
+      {
+        "mx": -1.0,
+        "my": 7.0,
+        "mz": -3.0,
+        "Mx": 1.0,
+        "My": 10.0,
+        "Mz": -2.0,
+        "subtract": false
+      },
+      {
+        "mx": -9.0,
+        "my": 5.0,
+        "mz": -2.0,
+        "Mx": -2.0,
+        "My": 7.0,
+        "Mz": 0.0,
+        "subtract": false
+      },
+      {
+        "mx": -9.0,
+        "my": 2.0,
+        "mz": -2.0,
+        "Mx": -2.0,
+        "My": 4.0,
+        "Mz": 0.0,
+        "subtract": false
+      },
+      {
+        "mx": 9.0,
+        "my": 1.0,
+        "mz": 0.0,
+        "Mx": 19.0,
+        "My": 4.0,
+        "Mz": 3.0,
+        "subtract": false
+      },
+      {
+        "mx": -2.0,
+        "my": 2.0,
+        "mz": -10.0,
+        "Mx": 5.0,
+        "My": 7.0,
+        "Mz": 0.0,
+        "subtract": false
+      },
+      {
+        "mx": 5.0,
+        "my": 4.5,
+        "mz": -7.0,
+        "Mx": 12.0,
+        "My": 4.5,
+        "Mz": -2.0,
+        "subtract": false
+      }
+    ],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 4,
+        "name": "CUSTOM:carcass_state",
+        "type": "integer",
+        "value": 0
+      }
+    ],
+    "name": "Goat Carcass",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 1.0,
+    "resistance": 1.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
+    "creativeTabs": [
+      "CUSTOM:CreativeTab"
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": "",
+    "dropAmount": 1,
+    "xpAmountMin": 0,
+    "xpAmountMax": 0,
+    "useLootTableForDrops": true,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "hasCustomOpacity": true,
+    "lightOpacity": 0,
+    "tickRate": 0,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "noteBlockInstrument": "harp",
+    "creativePickItem": "",
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
+    "ignitedByLava": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": "MUD",
+    "isCustomSoundType": false,
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
+    "luminance": {
+      "fixedValue": 0.0
+    },
+    "unbreakable": false,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
+    "hasInventory": true,
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 99,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      "TAG:stone_ore_replaceables"
+    ],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

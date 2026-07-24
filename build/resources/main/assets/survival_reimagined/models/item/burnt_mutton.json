@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/burnt_mutton"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:burnt_mutton_texture": 1
+      },
+      "model": "survival_reimagined:item/burnt_mutton_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:burnt_mutton_texture": 2
+      },
+      "model": "survival_reimagined:item/burnt_mutton_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:burnt_mutton_texture": 3
+      },
+      "model": "survival_reimagined:item/burnt_mutton_2"
+    }
+  ]
+}

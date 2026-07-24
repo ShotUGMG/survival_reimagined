@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      },
-      {
-        "value": "CUSTOM:ObsidianRockBlock"
-      }
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock",
+      "CUSTOM:ObsidianRockBlock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.OBSIDIAN"
-    },
+    "recipeReturnStack": "Blocks.OBSIDIAN",
     "name": "obsidian_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Stone cutting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "stoneCuttingInputStack": {
-      "value": "CUSTOM:Shale"
-    },
-    "stoneCuttingReturnStack": {
-      "value": "CUSTOM:ShaleStairs"
-    },
+    "stoneCuttingInputStack": "CUSTOM:Shale",
+    "stoneCuttingReturnStack": "CUSTOM:ShaleStairs",
     "name": "shale_stair_scr",
     "namespace": "mod"
   }

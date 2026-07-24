@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "survival_reimagined:block/rye_stage_1"
+  }
+}

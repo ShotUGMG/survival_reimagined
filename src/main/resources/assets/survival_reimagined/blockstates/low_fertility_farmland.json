@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=7": {
+      "model": "survival_reimagined:block/low_fertility_farmland_0"
+    },
+    "moisture=1": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=0": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=3": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=2": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=5": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=4": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    },
+    "moisture=6": {
+      "model": "survival_reimagined:block/low_fertility_farmland"
+    }
+  }
+}

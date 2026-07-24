@@ -45,7 +45,7 @@ public class BrokenLegProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("You have broken a leg"), true);
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BROKEN_LEG_POTION, 2400, (int) 0.1, false, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BROKEN_LEG_POTION, 2400, (int) 0.1, true, false));
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {

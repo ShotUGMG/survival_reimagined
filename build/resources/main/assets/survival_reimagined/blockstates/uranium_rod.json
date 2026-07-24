@@ -1,16 +1,16 @@
 {
   "variants": {
-    "blockstate=0": {
-      "model": "survival_reimagined:block/uranium_rod"
-    },
     "blockstate=1": {
-      "model": "survival_reimagined:block/uranium_rod_blockstates_blockstate_0"
+      "model": "survival_reimagined:block/uranium_rod_0"
     },
     "blockstate=2": {
-      "model": "survival_reimagined:block/uranium_rod_blockstates_blockstate_1"
+      "model": "survival_reimagined:block/uranium_rod_1"
     },
     "blockstate=3": {
-      "model": "survival_reimagined:block/uranium_rod_blockstates_blockstate_2"
+      "model": "survival_reimagined:block/uranium_rod_2"
+    },
+    "blockstate=0": {
+      "model": "survival_reimagined:block/uranium_rod"
     }
   }
 }

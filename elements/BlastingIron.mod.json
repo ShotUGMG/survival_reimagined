@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "Items.RAW_IRON"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RoughIron"
-    },
+    "blastingInputStack": "Items.RAW_IRON",
+    "blastingReturnStack": "CUSTOM:RoughIron",
     "name": "iron_ingot_from_blasting_raw_iron",
     "namespace": "minecraft"
   }

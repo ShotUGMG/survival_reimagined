@@ -19,7 +19,7 @@ public class ClayHelmetMoldOnTickUpdateProcedure {
 			if (Math.random() < 0.025) {
 				{
 					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockState _bs = SurvivalReimaginedModBlocks.HELMET_MOLD.get().defaultBlockState();
+					BlockState _bs = SurvivalReimaginedModBlocks.METAL_PLATE_MOLD.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Property<?> _propertyOld : _bso.getProperties()) {
 						Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
@@ -38,11 +38,11 @@ public class ClayHelmetMoldOnTickUpdateProcedure {
 						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.fire.extinguish")), SoundSource.BLOCKS, 1, 1, false);
 					}
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y - 2, z))).getBlock() == Blocks.AIR) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y - 2, z))).getBlock() == Blocks.LAVA) {
 				if (Math.random() < 0.05) {
 					{
 						BlockPos _bp = BlockPos.containing(x, y, z);
-						BlockState _bs = SurvivalReimaginedModBlocks.HELMET_MOLD.get().defaultBlockState();
+						BlockState _bs = SurvivalReimaginedModBlocks.METAL_PLATE_MOLD.get().defaultBlockState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Property<?> _propertyOld : _bso.getProperties()) {
 							Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());

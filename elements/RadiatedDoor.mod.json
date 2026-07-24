@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      },
-      {
-        "value": "CUSTOM:RadiantPlanks"
-      }
+      "",
+      "CUSTOM:RadiantPlanks",
+      "CUSTOM:RadiantPlanks",
+      "",
+      "CUSTOM:RadiantPlanks",
+      "CUSTOM:RadiantPlanks",
+      "",
+      "CUSTOM:RadiantPlanks",
+      "CUSTOM:RadiantPlanks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RadiantDoor"
-    },
+    "recipeReturnStack": "CUSTOM:RadiantDoor",
     "name": "radiated_door",
     "namespace": "mod"
   }

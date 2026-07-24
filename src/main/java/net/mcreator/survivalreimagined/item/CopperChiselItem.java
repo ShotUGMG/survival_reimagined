@@ -2,6 +2,7 @@ package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -10,6 +11,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 public class CopperChiselItem extends Item {
 	public CopperChiselItem() {
@@ -37,6 +40,11 @@ public class CopperChiselItem extends Item {
 	@Override
 	public int getEnchantmentValue() {
 		return 2;
+	}
+
+	@Override
+	public boolean isValidRepairItem(ItemStack itemstack, ItemStack repairitem) {
+		return Ingredient.of(new ItemStack(SurvivalReimaginedModItems.COPPER_NUGGET.get())).test(repairitem);
 	}
 
 	@Override

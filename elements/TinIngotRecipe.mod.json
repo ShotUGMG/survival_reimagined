@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      },
-      {
-        "value": "CUSTOM:TinNugget"
-      }
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget",
+      "CUSTOM:TinNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RoughTin"
-    },
+    "recipeReturnStack": "CUSTOM:RoughTin",
     "name": "tin_ingot_recipe",
     "namespace": "mod"
   }

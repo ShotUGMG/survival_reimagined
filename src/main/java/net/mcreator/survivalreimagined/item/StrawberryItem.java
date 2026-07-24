@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.InteractionResult;
 
-import net.mcreator.survivalreimagined.procedures.StrawberryRightclickedOnBlockProcedure;
+import net.mcreator.survivalreimagined.procedures.BerryRightClickedOnBlockProcedure;
 
 public class StrawberryItem extends Item {
 	public StrawberryItem() {
@@ -15,6 +15,6 @@ public class StrawberryItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		return StrawberryRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
+		return BerryRightClickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
 	}
 }

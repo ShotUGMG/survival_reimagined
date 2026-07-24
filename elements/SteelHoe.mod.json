@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Steel Hoe",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "TOOLS"
-      }
+      "TOOLS"
     ],
     "efficiency": 7.0,
     "attackSpeed": 3.0,
@@ -26,13 +25,12 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
+      "CUSTOM:SteelIngot"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "carcass_state=1": {
+      "model": "survival_reimagined:block/goat_carcass_0"
+    },
+    "carcass_state=2": {
+      "model": "survival_reimagined:block/goat_carcass_1"
+    },
+    "carcass_state=3": {
+      "model": "survival_reimagined:block/goat_carcass_2"
+    },
+    "carcass_state=4": {
+      "model": "survival_reimagined:block/goat_carcass_3"
+    },
+    "carcass_state=0": {
+      "model": "survival_reimagined:block/goat_carcass"
+    }
+  }
+}

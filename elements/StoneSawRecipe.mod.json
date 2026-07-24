@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "Items.STICK",
+      "CUSTOM:PlantFiber",
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "CUSTOM:StoneRock",
+      "CUSTOM:StoneRock",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StoneSaw"
-    },
+    "recipeReturnStack": "CUSTOM:StoneSaw",
     "name": "stone_saw_recipe",
     "namespace": "mod"
   }

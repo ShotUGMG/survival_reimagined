@@ -4,6 +4,7 @@ import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -17,8 +18,7 @@ import net.minecraft.core.BlockPos;
 public class RodInSlotProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp3
-						&& (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp3)) == true) {
+				&& (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "redstone_power") instanceof BooleanProperty _getbp3 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp3)) == true) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -39,5 +39,14 @@ public class RodInSlotProcedure {
 				return itemHandler.getStackInSlot(slot);
 		}
 		return ItemStack.EMPTY;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

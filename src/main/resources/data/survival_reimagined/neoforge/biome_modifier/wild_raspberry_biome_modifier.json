@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "birch_forest",
+    "cherry_grove",
+    "flower_forest",
+    "forest",
+    "grove",
+    "taiga"
+  ],
+  "features": "survival_reimagined:wild_raspberry",
+  "step": "vegetal_decoration"
+}

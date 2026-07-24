@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "survival_reimagined:block/rough_chiseled_cursed_stone",
+    "bottom": "survival_reimagined:block/rough_chiseled_cursed_stone",
+    "top": "survival_reimagined:block/rough_chiseled_cursed_stone",
+    "side": "survival_reimagined:block/rough_chiseled_cursed_stone"
+  },
+  "render_type": "solid"
+}

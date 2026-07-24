@@ -22,6 +22,10 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.AAF_SCRIPTURE_GUI.get(), AAFScriptureGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.RMI.get(), RMIScreen::new);
 		event.register(SurvivalReimaginedModMenus.SMALL_TROUGH_GUI.get(), SmallTroughGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.MILLSTONE_GUI.get(), MillstoneGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.CAMPFIRE_GUI.get(), CampfireGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.DRYING_RACK_GUI.get(), DryingRackGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.TANNING_BARREL_GUI.get(), TanningBarrelGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

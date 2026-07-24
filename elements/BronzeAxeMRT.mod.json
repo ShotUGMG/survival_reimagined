@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "metal_refining",
+    "ingredients": [
+      "CUSTOM:RoughIron",
+      "Blocks.AIR",
+      "TAG:c:tools/hammer"
+    ],
+    "integers": [],
+    "strings": [],
+    "recipetype": "MetalRefining",
+    "results": [
+      "Items.IRON_INGOT"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

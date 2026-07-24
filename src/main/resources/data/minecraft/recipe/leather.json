@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:hide",
+    "count": 1
+  }
+}

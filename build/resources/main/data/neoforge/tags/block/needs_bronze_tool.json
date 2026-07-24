@@ -1,17 +1,23 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:pyrolusite_ore",
+    "survival_reimagined:shale_titanium_ore",
+    "survival_reimagined:deepslate_titanium_ore",
+    "survival_reimagined:shale_uraninite_ore",
     "survival_reimagined:titanium_ore",
+    "survival_reimagined:pyrolusite_block",
     "survival_reimagined:uraninite_ore",
     "survival_reimagined:steel_trapdoor",
+    "survival_reimagined:manganite_ore",
     "survival_reimagined:steel_door",
-    "survival_reimagined:shale_titanium_ore",
     "survival_reimagined:block_of_raw_titanium",
-    "survival_reimagined:deepslate_titanium_ore",
     "survival_reimagined:block_of_steel",
+    "survival_reimagined:deepslate_manganite_ore",
+    "survival_reimagined:basalt_pyrolusite_ore",
     "survival_reimagined:block_of_titanium",
-    "survival_reimagined:shale_uraninite_ore",
     "survival_reimagined:deepslate_uraninite_ore",
-    "survival_reimagined:block_of_raw_uraninite"
+    "survival_reimagined:block_of_raw_uraninite",
+    "survival_reimagined:deepslate_pyrolusite_ore"
   ]
 }

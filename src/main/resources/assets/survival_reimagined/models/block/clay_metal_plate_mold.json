@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/clay_helmet_mold",
+  "textures": {
+    "all": "survival_reimagined:block/clay_plate_mold",
+    "particle": "survival_reimagined:block/clay_plate_mold",
+    "23": "survival_reimagined:block/clay_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "age=1": {
+      "model": "survival_reimagined:block/raspberry_plant_0"
+    },
+    "age=2": {
+      "model": "survival_reimagined:block/raspberry_plant_1"
+    },
+    "age=3": {
+      "model": "survival_reimagined:block/raspberry_plant_2"
+    },
+    "age=4": {
+      "model": "survival_reimagined:block/raspberry_plant_3"
+    },
+    "age=5": {
+      "model": "survival_reimagined:block/raspberry_plant_4"
+    },
+    "age=0": {
+      "model": "survival_reimagined:block/raspberry_plant"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package net.mcreator.survivalreimagined.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -25,9 +26,9 @@ public class StrawberryPlantOnBlockRightclickedProcedure {
 		if (entity == null)
 			return InteractionResult.PASS;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
-				&& (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 2) {
+				&& (getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) == 5) {
 			{
-				int _value = 0;
+				int _value = 3;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -42,7 +43,7 @@ public class StrawberryPlantOnBlockRightclickedProcedure {
 					}
 				}
 			});
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 2, 4); index0++) {
+			for (int index157 = 0; index157 < Mth.nextInt(RandomSource.create(), 2, 4); index157++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.STRAWBERRY.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -52,5 +53,14 @@ public class StrawberryPlantOnBlockRightclickedProcedure {
 			return InteractionResult.SUCCESS;
 		}
 		return InteractionResult.FAIL;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

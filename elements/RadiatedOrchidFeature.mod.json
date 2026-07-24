@@ -1,13 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "UNDERGROUND_DECORATION",
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:RadiantForest"
-      }
+      "CUSTOM:RadiantForest"
     ],
     "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_simple_block\"><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:RadiatedOrchid</field></block></value></block></value><next><block type=\"placement_count_on_every_layer\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">64</field></block></value><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">-64</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">30</field></block></value><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_is_air\"/></value><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></xml>"
   }

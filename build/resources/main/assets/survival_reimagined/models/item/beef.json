@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/beef"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:beef_texture": 1
+      },
+      "model": "survival_reimagined:item/beef_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:beef_texture": 2
+      },
+      "model": "survival_reimagined:item/beef_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:beef_texture": 3
+      },
+      "model": "survival_reimagined:item/beef_2"
+    }
+  ]
+}

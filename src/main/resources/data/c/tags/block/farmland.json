@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "minecraft:farmland"
+    "survival_reimagined:low_fertility_farmland",
+    "minecraft:farmland",
+    "survival_reimagined:medium_fertility_soil",
+    "survival_reimagined:high_fertility_soil"
   ]
 }

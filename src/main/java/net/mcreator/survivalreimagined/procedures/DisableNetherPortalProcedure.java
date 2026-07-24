@@ -51,7 +51,7 @@ public class DisableNetherPortalProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.DRAGON_BREATH, (x + 0.5), (y + 0.5), (z + 0.5), 40, 0.1, 0.1, 0.1, 0.1);
+							_level.sendParticles(ParticleTypes.CRIT, (x + 0.5), (y + 0.5), (z + 0.5), 40, 0.1, 0.1, 0.1, 0.1);
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 									"/title @p actionbar [\"\",{\"text\":\"Something happened, but didn't have enough energy to initiate...\",\"color\":\"blue\"}]");

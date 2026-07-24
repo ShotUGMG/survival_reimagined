@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:wheat_seeds",
+    "minecraft:pumpkin_seeds",
+    "survival_reimagined:hemp_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:beetroot_seeds",
+    "survival_reimagined:corn_seeds",
+    "minecraft:wheat_seeds",
+    "survival_reimagined:gold_seeds",
+    "survival_reimagined:silver_seeds",
+    "survival_reimagined:bronze_seeds",
+    "minecraft:melon_seeds"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      },
-      {
-        "value": "CUSTOM:BirchPlank"
-      }
+      "",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank",
+      "",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank",
+      "",
+      "CUSTOM:BirchPlank",
+      "CUSTOM:BirchPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.BIRCH_DOOR"
-    },
+    "recipeReturnStack": "Blocks.BIRCH_DOOR",
     "name": "birch_door",
     "namespace": "mod"
   }

@@ -80,7 +80,7 @@ public class StrawberryPlantBlockEntity extends RandomizableContainerBlockEntity
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Wild Strawberry Plant");
+		return Component.literal("Strawberry Bush");
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      },
-      {
-        "value": "CUSTOM:CopperChunk"
-      }
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk",
+      "CUSTOM:CopperChunk"
     ],
-    "recipeReturnStack": {
-      "value": "Items.RAW_COPPER"
-    },
+    "recipeReturnStack": "Items.RAW_COPPER",
     "name": "nine_copper_nuggets",
     "namespace": "mod"
   }

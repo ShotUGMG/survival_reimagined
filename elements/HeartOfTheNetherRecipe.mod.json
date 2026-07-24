@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:HeartOfTheBloodMoon"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      }
+      "",
+      "",
+      "Items.GOLD_INGOT",
+      "",
+      "CUSTOM:HeartOfTheBloodMoon",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HeartOfTheNether"
-    },
+    "recipeReturnStack": "CUSTOM:HeartOfTheNether",
     "name": "heart_of_the_nether_recipe",
     "namespace": "mod"
   }

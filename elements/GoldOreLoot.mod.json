@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.RAW_GOLD"
-            },
+            "item": "Items.RAW_GOLD",
             "weight": 1,
             "minCount": 0,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GoldChunk"
-            },
+            "item": "CUSTOM:GoldChunk",
             "weight": 25,
             "minCount": 1,
             "maxCount": 2,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 25,
             "minCount": 2,
             "maxCount": 4,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.GOLD_ORE"
-            },
+            "item": "Blocks.GOLD_ORE",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

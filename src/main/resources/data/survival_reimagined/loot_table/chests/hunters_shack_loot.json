@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wheat",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "survival_reimagined:abandoned_bunker",
+              "decoration": "minecraft:red_x",
+              "zoom": 3,
+              "search_radius": 150,
+              "skip_existing_chunks": false
+            },
+            {
+			  "function": "minecraft:set_name",
+			  "name": {
+				"translate": "filled_map.abandoned_bunker"
+			  },
+			  "target": "item_name"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "survival_reimagined:chests/hunters_shack_loot"
+}

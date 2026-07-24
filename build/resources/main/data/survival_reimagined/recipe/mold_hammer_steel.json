@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:hammer_head_mold"
+    },
+    {
+      "item": "survival_reimagined:steel_ingot"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    2,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:steel_hammer_head",
+      "count": 1
+    }
+  ]
+}

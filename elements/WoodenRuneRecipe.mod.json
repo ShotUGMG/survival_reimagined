@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WoodIngot"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WoodIngot"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:WoodIngot",
+      "",
+      "",
+      "CUSTOM:WoodIngot",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WoodenRune"
-    },
+    "recipeReturnStack": "CUSTOM:WoodenRune",
     "name": "wooden_rune_recipe",
     "namespace": "mod"
   }

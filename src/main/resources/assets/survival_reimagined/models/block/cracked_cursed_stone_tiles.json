@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "up": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "north": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "east": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "south": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "west": "survival_reimagined:block/cracked_cursed_stone_tiles",
+    "particle": "survival_reimagined:block/cracked_cursed_stone_tiles"
+  },
+  "render_type": "solid"
+}

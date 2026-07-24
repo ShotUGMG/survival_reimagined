@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "enchantment",
   "definition": {
     "name": "Perpetual Filtering",
@@ -10,13 +10,12 @@
     "damageModifier": 0,
     "incompatibleEnchantments": [],
     "supportedItems": [
-      {
-        "value": "CUSTOM:GasMask.helmet"
-      }
+      "CUSTOM:GasMask.helmet"
     ],
     "isTreasureEnchantment": false,
     "isCurse": false,
     "canGenerateInLootTables": false,
-    "canVillagerTrade": false
+    "canVillagerTrade": false,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"></block></xml>"
   }
 }

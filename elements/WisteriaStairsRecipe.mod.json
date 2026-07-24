@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      },
-      {
-        "value": "CUSTOM:WisteriaPlanks"
-      }
+      "",
+      "",
+      "CUSTOM:WisteriaPlanks",
+      "",
+      "CUSTOM:WisteriaPlanks",
+      "CUSTOM:WisteriaPlanks",
+      "CUSTOM:WisteriaPlanks",
+      "CUSTOM:WisteriaPlanks",
+      "CUSTOM:WisteriaPlanks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WisteriaStairs"
-    },
+    "recipeReturnStack": "CUSTOM:WisteriaStairs",
     "name": "wisteria_stairs_recipe",
     "namespace": "mod"
   }

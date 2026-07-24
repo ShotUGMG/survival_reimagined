@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      },
-      {
-        "value": "Items.NETHERITE_SCRAP"
-      }
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_INGOT",
+      "",
+      "Items.NETHERITE_SCRAP",
+      "Items.NETHERITE_SCRAP",
+      "Items.NETHERITE_SCRAP",
+      "Items.NETHERITE_SCRAP"
     ],
-    "recipeReturnStack": {
-      "value": "Items.NETHERITE_INGOT"
-    },
+    "recipeReturnStack": "Items.NETHERITE_INGOT",
     "name": "netherite_ingot",
     "namespace": "minecraft"
   }

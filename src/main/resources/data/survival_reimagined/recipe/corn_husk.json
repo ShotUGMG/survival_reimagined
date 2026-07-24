@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/knife"
+    },
+    "b": {
+      "item": "survival_reimagined:corn"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:corn_on_the_cob",
+    "count": 1
+  }
+}

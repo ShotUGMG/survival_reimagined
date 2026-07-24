@@ -27,28 +27,18 @@ public class ThinRadiatedVineBaseBlock extends Block {
 	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 16, 13);
 
 	public ThinRadiatedVineBaseBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
-	}
-
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+		super(BlockBehaviour.Properties.of().sound(SoundType.MOSS).strength(1f).noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return (SHAPE).move(offset.x, offset.y, offset.z);
+		return SHAPE.move(offset.x, offset.y, offset.z);
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override

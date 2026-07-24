@@ -1,0 +1,17 @@
+{
+  "type": "survival_reimagined:mineral_processing_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_amber"
+    },
+    {
+      "item": "survival_reimagined:reactor_rod"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:amber",
+      "count": 1
+    }
+  ]
+}

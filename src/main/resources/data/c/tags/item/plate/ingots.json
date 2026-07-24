@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:diamond_plated_ingot",
+    "minecraft:netherite_ingot",
+    "survival_reimagined:steel_ingot",
+    "survival_reimagined:bronze_ingot"
+  ]
+}

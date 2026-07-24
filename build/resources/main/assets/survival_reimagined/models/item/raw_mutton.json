@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/mutton"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:raw_mutton_texture": 1
+      },
+      "model": "survival_reimagined:item/raw_mutton_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_mutton_texture": 2
+      },
+      "model": "survival_reimagined:item/raw_mutton_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_mutton_texture": 3
+      },
+      "model": "survival_reimagined:item/raw_mutton_2"
+    }
+  ]
+}

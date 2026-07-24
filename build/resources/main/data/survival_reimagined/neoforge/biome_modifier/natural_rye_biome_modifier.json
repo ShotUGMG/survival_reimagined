@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "taiga",
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna"
+  ],
+  "features": "survival_reimagined:natural_rye",
+  "step": "vegetal_decoration"
+}

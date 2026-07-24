@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      },
-      {
-        "value": "CUSTOM:UraniumIngot"
-      }
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot",
+      "CUSTOM:UraniumIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfUranium"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfUranium",
     "name": "uranium_block_from_nine_uranium",
     "namespace": "mod"
   }

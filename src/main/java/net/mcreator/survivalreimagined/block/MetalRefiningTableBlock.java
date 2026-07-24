@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
@@ -29,11 +28,6 @@ import io.netty.buffer.Unpooled;
 public class MetalRefiningTableBlock extends Block implements EntityBlock {
 	public MetalRefiningTableBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(3f).instrument(NoteBlockInstrument.BASEDRUM));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
 	}
 
 	@Override

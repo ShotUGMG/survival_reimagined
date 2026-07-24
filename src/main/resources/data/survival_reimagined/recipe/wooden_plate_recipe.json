@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:wood_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:wooden_plate",
+    "count": 1
+  }
+}

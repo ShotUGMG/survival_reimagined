@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.CLAY_BALL"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.CLAY_BALL"
-      },
-      {
-        "value": "Items.WOODEN_HOE"
-      },
-      {
-        "value": "Items.CLAY_BALL"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.CLAY_BALL"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.CLAY_BALL",
+      "",
+      "Items.CLAY_BALL",
+      "Items.WOODEN_HOE",
+      "Items.CLAY_BALL",
+      "",
+      "Items.CLAY_BALL",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ClayHoeBladeMold"
-    },
+    "recipeReturnStack": "CUSTOM:ClayHoeBladeMold",
     "name": "hoe_mold",
     "namespace": "mod"
   }

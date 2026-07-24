@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:rotten_biomatter"
+    },
+    "title": {
+      "translate": "advancements.nitrogen_rich.title"
+    },
+    "description": {
+      "translate": "advancements.nitrogen_rich.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nitrogen_rich_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:rotten_biomatter",
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "survival_reimagined:richer_soil"
+}

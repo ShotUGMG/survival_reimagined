@@ -18,13 +18,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.animal.Salmon;
-import net.minecraft.world.entity.animal.Rabbit;
-import net.minecraft.world.entity.animal.Cod;
-import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.Brain;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -43,7 +37,7 @@ import java.util.function.Supplier;
 @EventBusSubscriber
 public class SurvivalReimaginedModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, SurvivalReimaginedMod.MODID);
-	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(() -> new PlayerVariables()).build());
+	public static final Supplier<AttachmentType<PlayerVariables>> PLAYER_VARIABLES = ATTACHMENT_TYPES.register("player_variables", () -> AttachmentType.serializable(PlayerVariables::new).build());
 	public static double OceansWrathDamageMultiplier = 0;
 	public static AttributeModifier OceansWrath = null;
 
@@ -56,25 +50,25 @@ public class SurvivalReimaginedModVariables {
 	@SubscribeEvent
 	public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player)
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 	}
 
 	@SubscribeEvent
 	public static void onPlayerTickUpdateSyncPlayerVariables(PlayerTickEvent.Post event) {
 		if (event.getEntity() instanceof ServerPlayer player && player.getData(PLAYER_VARIABLES)._syncDirty) {
-			PacketDistributor.sendToPlayersInDimension((ServerLevel) player.level(), new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES), player.getId()));
+			PacketDistributor.sendToPlayer(player, new PlayerVariablesSyncMessage(player.getData(PLAYER_VARIABLES)));
 			player.getData(PLAYER_VARIABLES)._syncDirty = false;
 		}
 	}
@@ -88,23 +82,11 @@ public class SurvivalReimaginedModVariables {
 		clone.DiamondLogicNumber = original.DiamondLogicNumber;
 		clone.ZombificationImmune = original.ZombificationImmune;
 		clone.PlayerPositionSet = original.PlayerPositionSet;
+		clone.NBTPercentage = original.NBTPercentage;
 		if (!event.isWasDeath()) {
 			clone.SpoilTimer = original.SpoilTimer;
 			clone.HungerSprinting = original.HungerSprinting;
 			clone.HungerSwimming = original.HungerSwimming;
-			clone.Beef = original.Beef;
-			clone.Pork = original.Pork;
-			clone.Mutton = original.Mutton;
-			clone.Chicken = original.Chicken;
-			clone.Rabbit = original.Rabbit;
-			clone.Cod = original.Cod;
-			clone.Salmon = original.Salmon;
-			clone.Brain = original.Brain;
-			clone.Heart = original.Heart;
-			clone.Lungs = original.Lungs;
-			clone.Intestines = original.Intestines;
-			clone.Liver = original.Liver;
-			clone.Stomach = original.Stomach;
 			clone.ScrapeHandler = original.ScrapeHandler;
 			clone.ItemCount = original.ItemCount;
 			clone.WeightMediumItems = original.WeightMediumItems;
@@ -117,8 +99,8 @@ public class SurvivalReimaginedModVariables {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData mapdata = MapVariables.get(event.getEntity().level());
-			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			SavedData mapdata = MapVariables.get(player.level());
+			SavedData worlddata = WorldVariables.get(player.level());
 			if (mapdata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
 			if (worlddata != null)
@@ -129,7 +111,7 @@ public class SurvivalReimaginedModVariables {
 	@SubscribeEvent
 	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData worlddata = WorldVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(player.level());
 			if (worlddata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
 		}
@@ -234,6 +216,7 @@ public class SurvivalReimaginedModVariables {
 		public boolean ValueSetBloodMoon = false;
 		public boolean isDay = false;
 		public ItemStack MoldOutput = ItemStack.EMPTY;
+		public boolean BunkerPlaced = false;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -252,6 +235,7 @@ public class SurvivalReimaginedModVariables {
 			ValueSetBloodMoon = nbt.getBoolean("ValueSetBloodMoon");
 			isDay = nbt.getBoolean("isDay");
 			MoldOutput = ItemStack.parseOptional(lookupProvider, nbt.getCompound("MoldOutput"));
+			BunkerPlaced = nbt.getBoolean("BunkerPlaced");
 		}
 
 		@Override
@@ -266,6 +250,7 @@ public class SurvivalReimaginedModVariables {
 			nbt.putBoolean("ValueSetBloodMoon", ValueSetBloodMoon);
 			nbt.putBoolean("isDay", isDay);
 			nbt.put("MoldOutput", MoldOutput.saveOptional(lookupProvider));
+			nbt.putBoolean("BunkerPlaced", BunkerPlaced);
 			return nbt;
 		}
 
@@ -332,19 +317,6 @@ public class SurvivalReimaginedModVariables {
 		public double HungerSwimming = 0;
 		public double GaskMaskDamage = 0;
 		public double GasMaskHeal = 0;
-		public ItemStack Beef = ItemStack.EMPTY;
-		public ItemStack Pork = ItemStack.EMPTY;
-		public ItemStack Mutton = ItemStack.EMPTY;
-		public ItemStack Chicken = ItemStack.EMPTY;
-		public ItemStack Rabbit = ItemStack.EMPTY;
-		public ItemStack Cod = ItemStack.EMPTY;
-		public ItemStack Salmon = ItemStack.EMPTY;
-		public ItemStack Brain = ItemStack.EMPTY;
-		public ItemStack Heart = ItemStack.EMPTY;
-		public ItemStack Lungs = ItemStack.EMPTY;
-		public ItemStack Intestines = ItemStack.EMPTY;
-		public ItemStack Liver = ItemStack.EMPTY;
-		public ItemStack Stomach = ItemStack.EMPTY;
 		public double ScrapeHandler = 0;
 		public double DiamondLogicNumber = 0;
 		public boolean ZombificationImmune = false;
@@ -353,6 +325,7 @@ public class SurvivalReimaginedModVariables {
 		public double HungryProc = 0;
 		public boolean Hungry = false;
 		public boolean PlayerPositionSet = false;
+		public double NBTPercentage = 0;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -362,19 +335,6 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("HungerSwimming", HungerSwimming);
 			nbt.putDouble("GaskMaskDamage", GaskMaskDamage);
 			nbt.putDouble("GasMaskHeal", GasMaskHeal);
-			nbt.put("Beef", Beef.saveOptional(lookupProvider));
-			nbt.put("Pork", Pork.saveOptional(lookupProvider));
-			nbt.put("Mutton", Mutton.saveOptional(lookupProvider));
-			nbt.put("Chicken", Chicken.saveOptional(lookupProvider));
-			nbt.put("Rabbit", Rabbit.saveOptional(lookupProvider));
-			nbt.put("Cod", Cod.saveOptional(lookupProvider));
-			nbt.put("Salmon", Salmon.saveOptional(lookupProvider));
-			nbt.put("Brain", Brain.saveOptional(lookupProvider));
-			nbt.put("Heart", Heart.saveOptional(lookupProvider));
-			nbt.put("Lungs", Lungs.saveOptional(lookupProvider));
-			nbt.put("Intestines", Intestines.saveOptional(lookupProvider));
-			nbt.put("Liver", Liver.saveOptional(lookupProvider));
-			nbt.put("Stomach", Stomach.saveOptional(lookupProvider));
 			nbt.putDouble("ScrapeHandler", ScrapeHandler);
 			nbt.putDouble("DiamondLogicNumber", DiamondLogicNumber);
 			nbt.putBoolean("ZombificationImmune", ZombificationImmune);
@@ -383,6 +343,7 @@ public class SurvivalReimaginedModVariables {
 			nbt.putDouble("HungryProc", HungryProc);
 			nbt.putBoolean("Hungry", Hungry);
 			nbt.putBoolean("PlayerPositionSet", PlayerPositionSet);
+			nbt.putDouble("NBTPercentage", NBTPercentage);
 			return nbt;
 		}
 
@@ -393,19 +354,6 @@ public class SurvivalReimaginedModVariables {
 			HungerSwimming = nbt.getDouble("HungerSwimming");
 			GaskMaskDamage = nbt.getDouble("GaskMaskDamage");
 			GasMaskHeal = nbt.getDouble("GasMaskHeal");
-			Beef = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Beef"));
-			Pork = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Pork"));
-			Mutton = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Mutton"));
-			Chicken = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Chicken"));
-			Rabbit = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Rabbit"));
-			Cod = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Cod"));
-			Salmon = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Salmon"));
-			Brain = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Brain"));
-			Heart = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Heart"));
-			Lungs = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Lungs"));
-			Intestines = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Intestines"));
-			Liver = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Liver"));
-			Stomach = ItemStack.parseOptional(lookupProvider, nbt.getCompound("Stomach"));
 			ScrapeHandler = nbt.getDouble("ScrapeHandler");
 			DiamondLogicNumber = nbt.getDouble("DiamondLogicNumber");
 			ZombificationImmune = nbt.getBoolean("ZombificationImmune");
@@ -414,6 +362,7 @@ public class SurvivalReimaginedModVariables {
 			HungryProc = nbt.getDouble("HungryProc");
 			Hungry = nbt.getBoolean("Hungry");
 			PlayerPositionSet = nbt.getBoolean("PlayerPositionSet");
+			NBTPercentage = nbt.getDouble("NBTPercentage");
 		}
 
 		public void markSyncDirty() {
@@ -421,16 +370,14 @@ public class SurvivalReimaginedModVariables {
 		}
 	}
 
-	public record PlayerVariablesSyncMessage(PlayerVariables data, int player) implements CustomPacketPayload {
+	public record PlayerVariablesSyncMessage(PlayerVariables data) implements CustomPacketPayload {
 		public static final Type<PlayerVariablesSyncMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SurvivalReimaginedMod.MODID, "player_variables_sync"));
-		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> {
-			buffer.writeInt(message.player());
-			buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess()));
-		}, (RegistryFriendlyByteBuf buffer) -> {
-			PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables(), buffer.readInt());
-			message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
-			return message;
-		});
+		public static final StreamCodec<RegistryFriendlyByteBuf, PlayerVariablesSyncMessage> STREAM_CODEC = StreamCodec
+				.of((RegistryFriendlyByteBuf buffer, PlayerVariablesSyncMessage message) -> buffer.writeNbt(message.data().serializeNBT(buffer.registryAccess())), (RegistryFriendlyByteBuf buffer) -> {
+					PlayerVariablesSyncMessage message = new PlayerVariablesSyncMessage(new PlayerVariables());
+					message.data.deserializeNBT(buffer.registryAccess(), buffer.readNbt());
+					return message;
+				});
 
 		@Override
 		public Type<PlayerVariablesSyncMessage> type() {
@@ -439,12 +386,7 @@ public class SurvivalReimaginedModVariables {
 
 		public static void handleData(final PlayerVariablesSyncMessage message, final IPayloadContext context) {
 			if (context.flow() == PacketFlow.CLIENTBOUND && message.data != null) {
-				context.enqueueWork(() -> {
-					Entity player = context.player().level().getEntity(message.player);
-					if (player == null)
-						return;
-					player.getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()));
-				}).exceptionally(e -> {
+				context.enqueueWork(() -> context.player().getData(PLAYER_VARIABLES).deserializeNBT(context.player().registryAccess(), message.data.serializeNBT(context.player().registryAccess()))).exceptionally(e -> {
 					context.connection().disconnect(Component.literal(e.getMessage()));
 					return null;
 				});

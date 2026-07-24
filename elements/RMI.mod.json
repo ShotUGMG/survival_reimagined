@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -21,6 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 165,
           "y": 42,
           "locked": true
@@ -109,12 +110,8 @@
           "name": "imagebutton_rmi_button",
           "image": "rmi_button.png",
           "hoveredImage": "rmi_hovered.png",
-          "onClick": {
-            "name": "Infuse"
-          },
-          "displayCondition": {
-            "name": "DisplayButton"
-          },
+          "onClick": "Infuse",
+          "displayCondition": "DisplayButton",
           "x": 198,
           "y": 98,
           "locked": false
@@ -131,9 +128,7 @@
         }
       }
     ],
-    "onTick": {
-      "name": "RMIWhileThisGUIIsOpenTick"
-    },
+    "onTick": "RMIWhileThisGUIIsOpenTick",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

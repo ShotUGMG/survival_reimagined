@@ -1,13 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "VEGETAL_DECORATION",
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:TropicalCoast"
-      }
+      "CUSTOM:TropicalCoast"
     ],
     "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_tree_simple\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"type\">jungle bush</field><field name=\"base_height\">1</field><field name=\"height_variation_a\">0</field><field name=\"height_variation_b\">0</field><field name=\"force_dirt\">FALSE</field><field name=\"ignore_vines\">TRUE</field><value name=\"dirt\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.GRASS</field></block></value><value name=\"trunk\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:PalmLog</field></block></value><value name=\"foliage\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.LEAVES#3</field></block></value><value name=\"root_placer\"><block type=\"root_placer_none\"></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">10</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">MOTION_BLOCKING</field><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"></mutation><value name=\"condition0\"><block type=\"block_predicate_is_air\"></block></value><value name=\"condition1\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">-1</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.GRASS</field></block></value></block></value></block></value><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></next></block></xml>"
   }

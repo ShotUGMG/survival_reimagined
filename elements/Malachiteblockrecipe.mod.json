@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      },
-      {
-        "value": "CUSTOM:Malachite"
-      }
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite",
+      "CUSTOM:Malachite"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RawMalachiteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:RawMalachiteBlock",
     "name": "malachiteblockrecipe",
     "namespace": "mod"
   }

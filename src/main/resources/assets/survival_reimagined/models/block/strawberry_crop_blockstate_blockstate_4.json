@@ -1,9 +1,0 @@
-{
-  "parent": "survival_reimagined:custom/strawberry_crop_flowering",
-  "textures": {
-    "all": "survival_reimagined:block/strawberry_plant_flowering",
-    "particle": "survival_reimagined:block/strawberry_plant",
-    "1": "survival_reimagined:block/strawberry_plant_flowering"
-  },
-  "render_type": "cutout"
-}

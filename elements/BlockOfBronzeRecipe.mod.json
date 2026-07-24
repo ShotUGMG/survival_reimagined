@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      },
-      {
-        "value": "CUSTOM:BronzeIngot"
-      }
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:BronzeIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfBronze"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfBronze",
     "name": "block_of_bronze_recipe",
     "namespace": "mod"
   }

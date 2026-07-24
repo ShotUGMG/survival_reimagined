@@ -1,4 +1,27 @@
 repositories {
+    maven {
+        name = "CurseMaven"
+        url = "https://cursemaven.com"
+    }
+}
+dependencies {
+    implementation "curse.maven:serene-seasons-291874:6182596"
+}
+
+
+repositories {
+    maven {
+        name = "CurseMaven"
+        url = "https://cursemaven.com"
+    }
+}
+dependencies {
+    compileOnly("curse.maven:dynamictrees-252818:8184894")
+    runtimeOnly("curse.maven:dynamictrees-252818:8184894")
+}
+
+
+repositories {
   maven {
     name = "Progwml6's maven"
     url = "https://dvs1.progwml6.com/files/maven/"

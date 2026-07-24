@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "missing": "skinned_goat"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:diamond_plate"
+    },
+    "b": {
+      "item": "minecraft:leather_boots"
+    }
+  },
+  "result": {
+    "id": "minecraft:diamond_boots",
+    "count": 1
+  }
+}

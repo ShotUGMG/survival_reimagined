@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/skinned_goat",
+  "textures": {
+    "all": "survival_reimagined:block/skinned_goat",
+    "particle": "survival_reimagined:block/goat",
+    "missing": "survival_reimagined:block/skinned_goat"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=7": {
+      "model": "survival_reimagined:block/high_fertility_soil_0"
+    },
+    "moisture=1": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=0": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=3": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=2": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=5": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=4": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    },
+    "moisture=6": {
+      "model": "survival_reimagined:block/high_fertility_soil"
+    }
+  }
+}

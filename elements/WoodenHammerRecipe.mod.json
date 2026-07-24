@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "TAG:c:planks/single",
+      "CUSTOM:PlantFiber",
+      "TAG:c:planks/single",
+      "",
+      "Items.STICK",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:WoodenHammer"
-    },
+    "recipeReturnStack": "CUSTOM:WoodenHammer",
     "name": "wooden_hammer_recipe",
     "namespace": "mod"
   }

@@ -4,7 +4,7 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
 
-import net.mcreator.survivalreimagined.procedures.HempSeedsRightclickedOnBlockProcedure;
+import net.mcreator.survivalreimagined.procedures.SeedsRightclickedOnBlockProcedure;
 
 public class HempSeedsItem extends Item {
 	public HempSeedsItem() {
@@ -14,6 +14,6 @@ public class HempSeedsItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		return HempSeedsRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
+		return SeedsRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer(), context.getItemInHand());
 	}
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:small_anthracite"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:anthracite",
+    "count": 1
+  }
+}

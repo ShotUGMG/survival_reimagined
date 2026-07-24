@@ -10,7 +10,7 @@
 
 	[status_effects."paranoia/_fear"]
 		#Allow the player to feel paranoia/fear if in dark areas
-		paranoiaand_fear = true
+		paranoiaand_fear = false
 		#Minimum Light Level needed for Darkness effects to take effect (Default is 0, Range: 0 - 15)
 		darkness_level = 0.0
 		#Minimum Light Level needed for Darkness effects to stop take effect (Default is 5, Range: 0 - 15)
@@ -29,8 +29,6 @@
 		bloodmoon_sleep = false
 		#Disable Zombies and Skeletons spawns during bloodmoon
 		disable_normal_mob_spawning = true
-		#Enable/Disable the Bloodmoon skybox VFX
-		blood_moon_vfx = true
 
 		[events.blood_moon.blood_moon_spawn_chance]
 			#Full Moon Bloodmoon chance. Defualt is 0.15 (15%)
@@ -60,6 +58,18 @@
 
 	[experimental_features.bleeding]
 		#Allow Crimson Arachnid to Inflict Bleeding
-		bleeding = false
+		bleeding = true
 		#Chance to contract Bleeding Effect. Defualt is 0.1 (10%)
-		bleeding_chance = 0.1
+		bleeding_chance = 0.5
+
+	[experimental_features.difficulty]
+		#Enable/Disable Weight System
+		weight_system = true
+		#Enable/Disable breaking your legs from fall damage
+		broken_legs = true
+		#Chance to break your leg from a fall. Defualt is 0.2 (20%)
+		broken_leg_chance = 0.8
+
+	[experimental_features.lore_content]
+		#Allow Ghosts to spawn
+		enables_ghosts = false

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.GOLD_NUGGET",
+      "",
+      "Items.GOLD_NUGGET",
+      "Blocks.IRON_BLOCK",
+      "Items.GOLD_NUGGET",
+      "",
+      "Items.GOLD_NUGGET",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockPackagingUpgrade"
-    },
+    "recipeReturnStack": "CUSTOM:BlockPackagingUpgrade",
     "name": "bp_recipe",
     "namespace": "mod"
   }

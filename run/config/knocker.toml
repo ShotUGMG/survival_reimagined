@@ -1,0 +1,13 @@
+[serverandclient]
+	#If disabled, spawn rates and mechanics are bound to below options
+	story = true
+	#The more you add, the rarer the Knocker will show up
+	rarity = 1.0
+	#Wether it plays it a sound when the Knocker spawns
+	spawn_sound = false
+	#Controls ambient events such as door opening and steps. The higher the number, the less ambient events will be played
+	inactivity = 1.0
+	#Controls sleep events - The higher the number, the less sleep events will be played
+	sleepevent = 1.0
+	#If disabled, the recommendation message is not shown to new players
+	first_load = true

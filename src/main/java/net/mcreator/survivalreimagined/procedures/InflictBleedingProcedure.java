@@ -5,10 +5,12 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.tags.TagKey;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 
@@ -34,10 +36,14 @@ public class InflictBleedingProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (SurvivalReimaginedConfigConfiguration.BLEEDING_EFFECT.get() == true) {
-			if (sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:blood_moon/spider")))) {
+			if (sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("c:inflicts_bleeding")))
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axe")))
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:axe")))
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:sword")))
+					|| (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:sword")))) {
 				if (Math.random() < (double) SurvivalReimaginedConfigConfiguration.BLEED_CHANCE.get()) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BLEEDING, 120, (int) 0.1, true, false));
+						_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.BLEEDING, 300, (int) 0.1, true, false));
 				}
 			}
 		}

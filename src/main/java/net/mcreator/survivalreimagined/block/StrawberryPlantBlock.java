@@ -1,10 +1,9 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
@@ -16,7 +15,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -31,37 +33,43 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.procedures.StrawberryPlantOnTickUpdateProcedure;
 import net.mcreator.survivalreimagined.procedures.StrawberryPlantOnBlockRightclickedProcedure;
+import net.mcreator.survivalreimagined.procedures.GrowingProcedureProcedure;
+import net.mcreator.survivalreimagined.procedures.BerryBushValidPlacementProcedure;
 import net.mcreator.survivalreimagined.block.entity.StrawberryPlantBlockEntity;
 
+import com.google.common.collect.ImmutableMap;
+
 public class StrawberryPlantBlock extends Block implements EntityBlock {
-	public static final IntegerProperty AGE_2 = BlockStateProperties.AGE_2;
-	private static final VoxelShape SHAPE_1 = box(2, 0, 2, 14, 9, 14);
-	private static final VoxelShape SHAPE_2 = box(2, 0, 2, 14, 9, 14);
-	private static final VoxelShape SHAPE = box(2, 0, 2, 14, 9, 14);
+	public static final IntegerProperty AGE_5 = BlockStateProperties.AGE_5;
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public StrawberryPlantBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).strength(0.2f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(AGE_2) == 1)
-					return 0;
-				if (s.getValue(AGE_2) == 2)
-					return 0;
-				return 0;
+		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).strength(0.2f).noCollission().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		this.registerDefaultState(this.stateDefinition.any().setValue(AGE_5, 0));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(AGE_5) == 1) {
+				return box(5, 0, 5, 12, 16, 12);
+			} else if (state.getValue(AGE_5) == 2) {
+				return box(2, 0, 2, 14, 10, 14);
+			} else if (state.getValue(AGE_5) == 3) {
+				return box(0, 0, 0, 16, 13, 16);
+			} else if (state.getValue(AGE_5) == 4) {
+				return box(0, 0, 0, 16, 13, 16);
+			} else if (state.getValue(AGE_5) == 5) {
+				return box(0, 0, 0, 16, 13, 16);
 			}
-		}.getLightLevel())).noCollission().noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(AGE_2, 0));
+			return box(7, 0, 7, 11, 6, 11);
+		});
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		return shapes.get(state).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -70,25 +78,33 @@ public class StrawberryPlantBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(AGE_2) == 1) {
-			return (SHAPE_1);
-		}
-		if (state.getValue(AGE_2) == 2) {
-			return (SHAPE_2);
-		}
-		return (SHAPE);
-	}
-
-	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(AGE_2);
+		builder.add(AGE_5);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(AGE_2, 0);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(AGE_5, 0);
+	}
+
+	@Override
+	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return BerryBushValidPlacementProcedure.execute(world, x, y, z);
+		}
+		return super.canSurvive(blockstate, worldIn, pos);
+	}
+
+	@Override
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
 	@Override
@@ -97,9 +113,16 @@ public class StrawberryPlantBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.randomTick(blockstate, world, pos, random);
-		StrawberryPlantOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		GrowingProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override

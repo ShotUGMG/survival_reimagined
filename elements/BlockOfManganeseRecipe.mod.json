@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      },
-      {
-        "value": "CUSTOM:ManganeseIngot"
-      }
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot",
+      "CUSTOM:ManganeseIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfManganese"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfManganese",
     "name": "block_of_manganese_recipe",
     "namespace": "mod"
   }

@@ -8,6 +8,11 @@
     "block.minecraft.raw_copper_block": "Native Copper Block",
     "block.minecraft.raw_gold_block": "Native Gold Block",
     "block.minecraft.lapis_ore": "Lazurite Ore",
-    "block.minecraft.deepslate_lapis_ore": "Deepslate Lazurite Ore"
+    "block.minecraft.deepslate_lapis_ore": "Deepslate Lazurite Ore",
+    "item.minecraft.bread": "Wheat Bread",
+    "item.minecraft.coal": "Bituminous",
+    "block.minecraft.coal_block": "Bituminous Block",
+    "block.minecraft.coal_ore": "Bituminous Ore",
+    "block.minecraft.deepslate_coal_ore": "Deepslate Bituminous Ore"
  }
  

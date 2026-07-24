@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:calcite_rock",
+    "minecraft:bone",
+    "survival_reimagined:limestone_rock",
+    "survival_reimagined:diorite_rock"
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "TAG:c:metal_rocks/iron_nuggets"
-    },
-    "blastingReturnStack": {
-      "value": "Items.IRON_NUGGET"
-    },
+    "blastingInputStack": "TAG:c:metal_rocks/iron_nuggets",
+    "blastingReturnStack": "Items.IRON_NUGGET",
     "name": "ironblastnuggets",
     "namespace": "mod"
   }

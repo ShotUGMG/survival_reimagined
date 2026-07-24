@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "TAG:c:metal_rocks/copper"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:RoughCopper"
-    },
+    "smeltingInputStack": "TAG:c:metal_rocks/copper",
+    "smeltingReturnStack": "CUSTOM:RoughCopper",
     "name": "smelt_copper",
     "namespace": "mod"
   }

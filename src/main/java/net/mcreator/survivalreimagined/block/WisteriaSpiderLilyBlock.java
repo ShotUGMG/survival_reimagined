@@ -21,7 +21,13 @@ public class WisteriaSpiderLilyBlock extends Block {
 	private static final VoxelShape SHAPE = box(3, 0, 3, 10, 11, 10);
 
 	public WisteriaSpiderLilyBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false).offsetType(Block.OffsetType.XZ));
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		Vec3 offset = state.getOffset(world, pos);
+		return SHAPE.move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -32,12 +38,6 @@ public class WisteriaSpiderLilyBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		return (SHAPE).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override

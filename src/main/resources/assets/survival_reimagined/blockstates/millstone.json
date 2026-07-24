@@ -1,7 +1,79 @@
 {
   "variants": {
-    "": {
+    "facing=north,full=1": {
+      "model": "survival_reimagined:block/millstone_0"
+    },
+    "facing=north,full=2": {
+      "model": "survival_reimagined:block/millstone_1"
+    },
+    "facing=north,full=3": {
+      "model": "survival_reimagined:block/millstone_2"
+    },
+    "facing=north,full=4": {
+      "model": "survival_reimagined:block/millstone_3"
+    },
+    "facing=north,full=0": {
       "model": "survival_reimagined:block/millstone"
+    },
+    "facing=east,full=1": {
+      "model": "survival_reimagined:block/millstone_0",
+      "y": 90
+    },
+    "facing=east,full=2": {
+      "model": "survival_reimagined:block/millstone_1",
+      "y": 90
+    },
+    "facing=east,full=3": {
+      "model": "survival_reimagined:block/millstone_2",
+      "y": 90
+    },
+    "facing=east,full=4": {
+      "model": "survival_reimagined:block/millstone_3",
+      "y": 90
+    },
+    "facing=east,full=0": {
+      "model": "survival_reimagined:block/millstone",
+      "y": 90
+    },
+    "facing=south,full=1": {
+      "model": "survival_reimagined:block/millstone_0",
+      "y": 180
+    },
+    "facing=south,full=2": {
+      "model": "survival_reimagined:block/millstone_1",
+      "y": 180
+    },
+    "facing=south,full=3": {
+      "model": "survival_reimagined:block/millstone_2",
+      "y": 180
+    },
+    "facing=south,full=4": {
+      "model": "survival_reimagined:block/millstone_3",
+      "y": 180
+    },
+    "facing=south,full=0": {
+      "model": "survival_reimagined:block/millstone",
+      "y": 180
+    },
+    "facing=west,full=1": {
+      "model": "survival_reimagined:block/millstone_0",
+      "y": 270
+    },
+    "facing=west,full=2": {
+      "model": "survival_reimagined:block/millstone_1",
+      "y": 270
+    },
+    "facing=west,full=3": {
+      "model": "survival_reimagined:block/millstone_2",
+      "y": 270
+    },
+    "facing=west,full=4": {
+      "model": "survival_reimagined:block/millstone_3",
+      "y": 270
+    },
+    "facing=west,full=0": {
+      "model": "survival_reimagined:block/millstone",
+      "y": 270
     }
   }
 }

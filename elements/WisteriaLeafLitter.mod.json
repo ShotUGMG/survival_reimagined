@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "block",
   "definition": {
     "texture": "wisteria_leaf_litter_full",
@@ -14,10 +14,115 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "states": [
+      {
+        "texture": "wisteria_leaf_litter_2-4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "wisteria_leaf_litter:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 3,
+              "name": "CUSTOM:blockstate",
+              "type": "integer"
+            },
+            "value": 1
+          }
+        ]
+      },
+      {
+        "texture": "wisteria_leaf_litter_3-4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "wisteria_leaf_litter:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 3,
+              "name": "CUSTOM:blockstate",
+              "type": "integer"
+            },
+            "value": 2
+          }
+        ]
+      },
+      {
+        "texture": "wisteria_leaf_litter_full",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "wisteria_leaf_litter:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 3,
+              "name": "CUSTOM:blockstate",
+              "type": "integer"
+            },
+            "value": 3
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "wisteria_leaf_litter_full",
     "particleTexture": "",
     "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -35,7 +140,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 3,
+        "name": "CUSTOM:blockstate",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Wisteria Leaf Litter",
     "specialInformation": {
       "fixedValue": []
@@ -49,14 +162,10 @@
     "rarity": "COMMON",
     "immuneToFire": false,
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": ""
-    },
+    "customDrop": "",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -65,6 +174,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
+    "hasCustomOpacity": false,
     "lightOpacity": 0,
     "tickRate": 0,
     "tickRandomly": false,
@@ -75,11 +185,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 0,
@@ -89,34 +198,25 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
+    "soundOnStep": "GROUND",
     "isCustomSoundType": true,
-    "soundOnStep": {
-      "value": "GROUND"
+    "breakSound": "CUSTOM:break/wisteria_litter",
+    "fallSound": "CUSTOM:place/wistera_litter",
+    "hitSound": "CUSTOM:step/wistera_litter",
+    "placeSound": "CUSTOM:place/wistera_litter",
+    "stepSound": "CUSTOM:step/wistera_litter",
+    "luminance": {
+      "fixedValue": 0.0
     },
-    "breakSound": {
-      "value": "CUSTOM:break/wisteria_litter"
-    },
-    "fallSound": {
-      "value": "CUSTOM:place/wistera_litter"
-    },
-    "hitSound": {
-      "value": "CUSTOM:step/wistera_litter"
-    },
-    "placeSound": {
-      "value": "CUSTOM:place/wistera_litter"
-    },
-    "stepSound": {
-      "value": "CUSTOM:step/wistera_litter"
-    },
-    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "placingCondition": {
-      "name": "FlintblockBlockValidPlacementCondition"
-    },
+    "placingCondition": "FlintblockBlockValidPlacementCondition",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -133,15 +233,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "WisteriaLitterHandler"
-    },
+    "onRightClicked": "WisteriaLitterHandler",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

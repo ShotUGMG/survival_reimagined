@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      },
-      {
-        "value": "CUSTOM:Argentite"
-      }
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite",
+      "CUSTOM:Argentite"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ArgentiteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:ArgentiteBlock",
     "name": "nineargentite",
     "namespace": "mod"
   }

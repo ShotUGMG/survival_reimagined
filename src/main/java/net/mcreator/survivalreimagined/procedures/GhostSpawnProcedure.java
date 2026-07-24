@@ -20,6 +20,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.survivalreimagined.network.SurvivalReimaginedModVariables;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModEntities;
 import net.mcreator.survivalreimagined.entity.GhostEntity;
+import net.mcreator.survivalreimagined.configuration.SurvivalReimaginedConfigConfiguration;
 
 import javax.annotation.Nullable;
 
@@ -41,75 +42,77 @@ public class GhostSpawnProcedure {
 			return;
 		double PlayerX = 0;
 		double PlayerZ = 0;
-		if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).PlayerPositionSet == false) {
-			PlayerX = entity.getX();
-			PlayerZ = entity.getZ();
-			{
-				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-				_vars.PlayerPositionSet = true;
-				_vars.markSyncDirty();
+		if (SurvivalReimaginedConfigConfiguration.GHOST_SPAWN.get() == true) {
+			if (entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES).PlayerPositionSet == false) {
+				PlayerX = entity.getX();
+				PlayerZ = entity.getZ();
+				{
+					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+					_vars.PlayerPositionSet = true;
+					_vars.markSyncDirty();
+				}
 			}
-		}
-		if (!(!world.getEntitiesOfClass(GhostEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))).inflate(1000 / 2d), e -> true).isEmpty())) {
-			if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable == 0) {
-				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = Math.round(Mth.nextDouble(RandomSource.create(), 0, 4000));
+			if (!(!world.getEntitiesOfClass(GhostEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))).inflate(1000 / 2d), e -> true).isEmpty())) {
+				if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable == 0) {
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = Math.round(Mth.nextDouble(RandomSource.create(), 0, 4000));
+					SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
+				}
+				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance + 1;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-			}
-			SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance + 1;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-			if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance >= SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable) {
-				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = 0;
-				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = 0;
+				if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance >= SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable) {
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = 0;
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = 0;
+					SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
+					if (world instanceof ServerLevel _level) {
+						Entity entityToSpawn = SurvivalReimaginedModEntities.GHOST.get().spawn(_level, BlockPos.containing(PlayerX + Mth.nextDouble(RandomSource.create(), -150, 150),
+								world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) PlayerX, (int) PlayerZ), PlayerZ + Mth.nextDouble(RandomSource.create(), -150, 150)), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+							entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+						}
+					}
+				}
+			} else {
+				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer = SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer + 1;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = SurvivalReimaginedModEntities.GHOST.get().spawn(_level, BlockPos.containing(PlayerX + Mth.nextDouble(RandomSource.create(), -150, 150),
-							world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) PlayerX, (int) PlayerZ), PlayerZ + Mth.nextDouble(RandomSource.create(), -150, 150)), MobSpawnType.MOB_SUMMONED);
-					if (entityToSpawn != null) {
-						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+				if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer == 4000) {
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer = 0;
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = 0;
+					SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = 0;
+					SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
+					if (!(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 1000)).level().isClientSide())
+						(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 1000)).discard();
+					{
+						SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
+						_vars.PlayerPositionSet = false;
+						_vars.markSyncDirty();
 					}
 				}
 			}
-		} else {
-			SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer = SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer + 1;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-			if (SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer == 4000) {
+			if (!world.getEntitiesOfClass(GhostEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))).inflate(30 / 2d), e -> true).isEmpty()) {
+				if (!(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 30)).level().isClientSide())
+					(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 30)).discard();
 				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer = 0;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = 0;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = 0;
 				SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-				if (!(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 1000)).level().isClientSide())
-					(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 1000)).discard();
 				{
 					SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
 					_vars.PlayerPositionSet = false;
 					_vars.markSyncDirty();
 				}
-			}
-		}
-		if (!world.getEntitiesOfClass(GhostEntity.class, new AABB(Vec3.ZERO, Vec3.ZERO).move(new Vec3((entity.getX()), (entity.getY()), (entity.getZ()))).inflate(30 / 2d), e -> true).isEmpty()) {
-			if (!(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 30)).level().isClientSide())
-				(findEntityInWorldRange(world, GhostEntity.class, (entity.getX()), (entity.getY()), (entity.getZ()), 30)).discard();
-			SurvivalReimaginedModVariables.WorldVariables.get(world).GhostDespawnTimer = 0;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnChance = 0;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).GhostSpawnNumberVariable = 0;
-			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-			{
-				SurvivalReimaginedModVariables.PlayerVariables _vars = entity.getData(SurvivalReimaginedModVariables.PLAYER_VARIABLES);
-				_vars.PlayerPositionSet = false;
-				_vars.markSyncDirty();
-			}
-			{
-				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(30 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					if (entityiterator instanceof GhostEntity == true) {
-						for (int index0 = 0; index0 < 15; index0++) {
-							world.addParticle(ParticleTypes.WHITE_SMOKE, (entityiterator.getX() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), (entityiterator.getY() + Mth.nextDouble(RandomSource.create(), 0, 2)),
-									(entityiterator.getZ() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), 0, 0.05, 0);
+				{
+					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
+					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(30 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+						if (entityiterator instanceof GhostEntity == true) {
+							for (int index158 = 0; index158 < 15; index158++) {
+								world.addParticle(ParticleTypes.WHITE_SMOKE, (entityiterator.getX() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), (entityiterator.getY() + Mth.nextDouble(RandomSource.create(), 0, 2)),
+										(entityiterator.getZ() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), 0, 0.05, 0);
+							}
 						}
 					}
 				}
+				MessagesProcedure.execute(entity);
 			}
-			MessagesProcedure.execute(entity);
 		}
 	}
 

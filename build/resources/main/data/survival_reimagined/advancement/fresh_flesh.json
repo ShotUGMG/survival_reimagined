@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "fresh_flesh_0": {
+    "fresh_flesh_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:flesh"
-            ],
+            "items": "survival_reimagined:flesh",
             "count": {
               "min": 1,
               "max": 64

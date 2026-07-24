@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      },
-      {
-        "value": "CUSTOM:RawZincNugget"
-      }
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget",
+      "CUSTOM:RawZincNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:HematiteChunk"
-    },
+    "recipeReturnStack": "CUSTOM:HematiteChunk",
     "name": "nine_sphalerite",
     "namespace": "mod"
   }

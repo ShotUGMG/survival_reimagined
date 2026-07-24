@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:helmet_mold"
+    },
+    {
+      "item": "survival_reimagined:steel_ingot"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    5,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:steel_armor_helmet",
+      "count": 1
+    }
+  ]
+}

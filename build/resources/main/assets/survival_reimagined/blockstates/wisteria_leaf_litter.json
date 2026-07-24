@@ -1,63 +1,63 @@
 {
   "variants": {
+    "facing=north,blockstate=1": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_0"
+    },
+    "facing=north,blockstate=2": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_1"
+    },
+    "facing=north,blockstate=3": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_2"
+    },
     "facing=north,blockstate=0": {
       "model": "survival_reimagined:block/wisteria_leaf_litter"
+    },
+    "facing=east,blockstate=1": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_0",
+      "y": 90
+    },
+    "facing=east,blockstate=2": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_1",
+      "y": 90
+    },
+    "facing=east,blockstate=3": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_2",
+      "y": 90
     },
     "facing=east,blockstate=0": {
       "model": "survival_reimagined:block/wisteria_leaf_litter",
       "y": 90
     },
+    "facing=south,blockstate=1": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_0",
+      "y": 180
+    },
+    "facing=south,blockstate=2": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_1",
+      "y": 180
+    },
+    "facing=south,blockstate=3": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter_2",
+      "y": 180
+    },
     "facing=south,blockstate=0": {
       "model": "survival_reimagined:block/wisteria_leaf_litter",
       "y": 180
     },
-    "facing=west,blockstate=0": {
-      "model": "survival_reimagined:block/wisteria_leaf_litter",
-      "y": 270
-    },
-    "facing=north,blockstate=1": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_0"
-    },
-    "facing=east,blockstate=1": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_0",
-      "y": 90
-    },
-    "facing=south,blockstate=1": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_0",
-      "y": 180
-    },
     "facing=west,blockstate=1": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_0",
+      "model": "survival_reimagined:block/wisteria_leaf_litter_0",
       "y": 270
-    },
-    "facing=north,blockstate=2": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_1"
-    },
-    "facing=east,blockstate=2": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_1",
-      "y": 90
-    },
-    "facing=south,blockstate=2": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_1",
-      "y": 180
     },
     "facing=west,blockstate=2": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_1",
+      "model": "survival_reimagined:block/wisteria_leaf_litter_1",
       "y": 270
     },
-    "facing=north,blockstate=3": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_2"
-    },
-    "facing=east,blockstate=3": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_2",
-      "y": 90
-    },
-    "facing=south,blockstate=3": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_2",
-      "y": 180
-    },
     "facing=west,blockstate=3": {
-      "model": "survival_reimagined:block/leaf_litter_wisteria_blockstate_2",
+      "model": "survival_reimagined:block/wisteria_leaf_litter_2",
+      "y": 270
+    },
+    "facing=west,blockstate=0": {
+      "model": "survival_reimagined:block/wisteria_leaf_litter",
       "y": 270
     }
   }

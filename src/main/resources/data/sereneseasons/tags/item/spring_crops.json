@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:apple_tree_sapling"
+    "survival_reimagined:corn_seeds",
+    "survival_reimagined:mandarin",
+    "survival_reimagined:carrot",
+    "survival_reimagined:raspberry",
+    "survival_reimagined:strawberry",
+    "survival_reimagined:potato",
+    "minecraft:apple"
   ]
 }

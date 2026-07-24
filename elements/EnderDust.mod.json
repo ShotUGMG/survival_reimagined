@@ -1,12 +1,10 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "achievement",
   "definition": {
     "achievementName": "Eye Of Ender Fusion Dust",
     "achievementDescription": "Acquire Eye Of Ender Fusion Dust",
-    "achievementIcon": {
-      "value": "CUSTOM:EyeOfEnderFusionDust"
-    },
+    "achievementIcon": "CUSTOM:EyeOfEnderFusionDust",
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
@@ -16,9 +14,7 @@
     "rewardRecipes": [],
     "rewardXP": 0,
     "achievementType": "task",
-    "parent": {
-      "value": "CUSTOM:NetherHeart"
-    },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">64</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EyeOfEnderFusionDust</field></block></value></block></next></block></xml>"
+    "parent": "CUSTOM:NetherHeart",
+    "triggerxml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"advancement_trigger\" x=\"40\" y=\"80\"><next><block type=\"item_in_inventory\"><value name=\"item\"><block type=\"item_predicate\"><mutation inputs=\"0\"/><field name=\"min\">1</field><field name=\"max\">64</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:EyeOfEnderFusionDust</field></block></value></block></value></block></next></block></xml>"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "CUSTOM:CopperNugget"
-      }
+      "CUSTOM:CopperNugget",
+      "CUSTOM:CopperNugget",
+      "CUSTOM:CopperNugget",
+      "CUSTOM:CopperNugget",
+      "TAG:c:planks/single",
+      "CUSTOM:CopperNugget",
+      "CUSTOM:CopperNugget",
+      "TAG:c:planks/single",
+      "CUSTOM:CopperNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:MetalRefiningTable"
-    },
+    "recipeReturnStack": "CUSTOM:MetalRefiningTable",
     "name": "mrt_recipe",
     "namespace": "mod"
   }

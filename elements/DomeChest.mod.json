@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.AIR"
-            },
+            "item": "Blocks.AIR",
             "weight": 30,
             "minCount": 1,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawUraninite"
-            },
+            "item": "CUSTOM:RawUraninite",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,
@@ -50,9 +46,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawTitanium"
-            },
+            "item": "CUSTOM:RawTitanium",
             "weight": 5,
             "minCount": 1,
             "maxCount": 3,
@@ -64,9 +58,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawUraniniteNugget"
-            },
+            "item": "CUSTOM:RawUraniniteNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -78,9 +70,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawTitaniumNugget"
-            },
+            "item": "CUSTOM:RawTitaniumNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -101,9 +91,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GasMaskFilter"
-            },
+            "item": "CUSTOM:GasMaskFilter",
             "weight": 5,
             "minCount": 1,
             "maxCount": 1,
@@ -115,9 +103,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:UsedFilter"
-            },
+            "item": "CUSTOM:UsedFilter",
             "weight": 10,
             "minCount": 1,
             "maxCount": 3,
@@ -129,9 +115,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:HempMesh"
-            },
+            "item": "CUSTOM:HempMesh",
             "weight": 8,
             "minCount": 1,
             "maxCount": 5,
@@ -152,9 +136,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.BOOK"
-            },
+            "item": "Items.BOOK",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

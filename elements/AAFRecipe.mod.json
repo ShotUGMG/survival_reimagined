@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "Blocks.BLAST_FURNACE"
-      },
-      {
-        "value": "Items.IRON_INGOT"
-      },
-      {
-        "value": "CUSTOM:BlockOfTitanium"
-      },
-      {
-        "value": "CUSTOM:BlockOfSteel"
-      },
-      {
-        "value": "CUSTOM:BlockOfTitanium"
-      }
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.BLAST_FURNACE",
+      "Items.IRON_INGOT",
+      "CUSTOM:BlockOfTitanium",
+      "CUSTOM:BlockOfSteel",
+      "CUSTOM:BlockOfTitanium"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:AdvancedAlloyForge"
-    },
+    "recipeReturnStack": "CUSTOM:AdvancedAlloyForge",
     "name": "aaf_recipe",
     "namespace": "mod"
   }

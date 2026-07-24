@@ -38,7 +38,7 @@ public class IronOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index0 = 0; index0 < (int) (IngotDropAmount + 1); index0++) {
+							for (int index73 = 0; index73 < (int) (IngotDropAmount + 1); index73++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -46,7 +46,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 2, 3); index1++) {
+						for (int index74 = 0; index74 < Mth.nextInt(RandomSource.create(), 2, 3); index74++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -55,7 +55,7 @@ public class IronOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index2 = 0; index2 < (int) (IngotDropAmount + 2); index2++) {
+							for (int index75 = 0; index75 < (int) (IngotDropAmount + 2); index75++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -63,7 +63,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 2, 4); index3++) {
+						for (int index76 = 0; index76 < Mth.nextInt(RandomSource.create(), 2, 4); index76++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -72,7 +72,7 @@ public class IronOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index4 = 0; index4 < (int) (IngotDropAmount + 3); index4++) {
+							for (int index77 = 0; index77 < (int) (IngotDropAmount + 3); index77++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -80,7 +80,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index5 = 0; index5 < Mth.nextInt(RandomSource.create(), 2, 5); index5++) {
+						for (int index78 = 0; index78 < Mth.nextInt(RandomSource.create(), 2, 5); index78++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -95,7 +95,7 @@ public class IronOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index6 = 0; index6 < Mth.nextInt(RandomSource.create(), 1, 3); index6++) {
+						for (int index79 = 0; index79 < Mth.nextInt(RandomSource.create(), 1, 3); index79++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -111,7 +111,7 @@ public class IronOresProcedure {
 					world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 1) {
 						if (Math.random() < 0.5) {
-							for (int index7 = 0; index7 < (int) (IngotDropAmount + 2); index7++) {
+							for (int index80 = 0; index80 < (int) (IngotDropAmount + 2); index80++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -119,7 +119,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index8 = 0; index8 < Mth.nextInt(RandomSource.create(), 2, 4); index8++) {
+						for (int index81 = 0; index81 < Mth.nextInt(RandomSource.create(), 2, 4); index81++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -128,7 +128,7 @@ public class IronOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 2) {
 						if (Math.random() < 0.5) {
-							for (int index9 = 0; index9 < (int) (IngotDropAmount + 3); index9++) {
+							for (int index82 = 0; index82 < (int) (IngotDropAmount + 3); index82++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -136,7 +136,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index10 = 0; index10 < Mth.nextInt(RandomSource.create(), 2, 5); index10++) {
+						for (int index83 = 0; index83 < Mth.nextInt(RandomSource.create(), 2, 5); index83++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -145,7 +145,7 @@ public class IronOresProcedure {
 						}
 					} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.FORTUNE)) == 3) {
 						if (Math.random() < 0.5) {
-							for (int index11 = 0; index11 < (int) (IngotDropAmount + 4); index11++) {
+							for (int index84 = 0; index84 < (int) (IngotDropAmount + 4); index84++) {
 								if (world instanceof ServerLevel _level) {
 									ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Ingot);
 									entityToSpawn.setPickUpDelay(10);
@@ -153,7 +153,7 @@ public class IronOresProcedure {
 								}
 							}
 						}
-						for (int index12 = 0; index12 < Mth.nextInt(RandomSource.create(), 2, 6); index12++) {
+						for (int index85 = 0; index85 < Mth.nextInt(RandomSource.create(), 2, 6); index85++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);
@@ -168,7 +168,7 @@ public class IronOresProcedure {
 								_level.addFreshEntity(entityToSpawn);
 							}
 						}
-						for (int index13 = 0; index13 < Mth.nextInt(RandomSource.create(), 1, 3); index13++) {
+						for (int index86 = 0; index86 < Mth.nextInt(RandomSource.create(), 1, 3); index86++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), Nugget);
 								entityToSpawn.setPickUpDelay(10);

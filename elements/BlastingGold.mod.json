@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "Items.RAW_GOLD"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RoughGold"
-    },
+    "blastingInputStack": "Items.RAW_GOLD",
+    "blastingReturnStack": "CUSTOM:RoughGold",
     "name": "gold_ingot_from_blasting_raw_gold",
     "namespace": "minecraft"
   }

@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:gold_seeds"
+    },
+    "title": {
+      "translate": "advancements.strongest_farmer_of_history.title"
+    },
+    "description": {
+      "translate": "advancements.strongest_farmer_of_history.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "strongest_farmer_of_history_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:seasoned_farmer"
+}

@@ -93,10 +93,7 @@
       ]
     },
     {
-      "rolls": {
-        "min": 1,
-        "max": 15
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",

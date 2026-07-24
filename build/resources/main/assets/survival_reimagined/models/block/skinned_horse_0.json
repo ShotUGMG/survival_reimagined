@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/horse_legless",
+  "textures": {
+    "all": "survival_reimagined:block/skinned_horse",
+    "particle": "survival_reimagined:block/skinned_horse",
+    "1": "survival_reimagined:block/skinned_horse"
+  },
+  "render_type": "solid"
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      },
-      {
-        "value": "CUSTOM:Manganite"
-      }
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite",
+      "CUSTOM:Manganite"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ManganiteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:ManganiteBlock",
     "name": "ninemanganitetoblock",
     "namespace": "mod"
   }

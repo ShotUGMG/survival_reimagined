@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Amber"
-      },
-      {
-        "value": "CUSTOM:CalciteRock"
-      },
-      {
-        "value": "CUSTOM:Ruby"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "Blocks.OBSIDIAN"
-      },
-      {
-        "value": "Items.EMERALD"
-      },
-      {
-        "value": "Blocks.OBSIDIAN"
-      },
-      {
-        "value": "Blocks.OBSIDIAN"
-      },
-      {
-        "value": "Blocks.OBSIDIAN"
-      }
+      "CUSTOM:Amber",
+      "CUSTOM:CalciteRock",
+      "CUSTOM:Ruby",
+      "CUSTOM:Sapphire",
+      "Blocks.OBSIDIAN",
+      "Items.EMERALD",
+      "Blocks.OBSIDIAN",
+      "Blocks.OBSIDIAN",
+      "Blocks.OBSIDIAN"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RuneMagicInfuser"
-    },
+    "recipeReturnStack": "CUSTOM:RuneMagicInfuser",
     "name": "rmi_craft",
     "namespace": "mod"
   }

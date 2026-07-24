@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RoughEmerald"
-            },
+            "item": "CUSTOM:RoughEmerald",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.EMERALD_ORE"
-            },
+            "item": "Blocks.EMERALD_ORE",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

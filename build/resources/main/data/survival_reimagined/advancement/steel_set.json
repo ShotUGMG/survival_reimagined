@@ -15,46 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "steel_set_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_sword"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
     "steel_set_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_pickaxe"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "steel_set_2": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_axe"
-            ],
+            "items": "survival_reimagined:steel_sword",
             "count": {
               "min": 1,
               "max": 1
@@ -68,25 +34,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_shovel"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "steel_set_4": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_hoe"
-            ],
+            "items": "survival_reimagined:steel_pickaxe",
             "count": {
               "min": 1,
               "max": 1
@@ -100,25 +48,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_saw"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "steel_set_6": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_hammer"
-            ],
+            "items": "survival_reimagined:steel_axe",
             "count": {
               "min": 1,
               "max": 1
@@ -132,25 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_knife"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "steel_set_8": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_armor_helmet"
-            ],
+            "items": "survival_reimagined:steel_shovel",
             "count": {
               "min": 1,
               "max": 1
@@ -164,25 +76,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_armor_chestplate"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "steel_set_10": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:steel_armor_leggings"
-            ],
+            "items": "survival_reimagined:steel_hoe",
             "count": {
               "min": 1,
               "max": 1
@@ -196,9 +90,91 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:steel_armor_boots"
-            ],
+            "items": "survival_reimagined:steel_saw",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_hammer",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_knife",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_armor_helmet",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_armor_chestplate",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_armor_leggings",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "steel_set_23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:steel_armor_boots",
             "count": {
               "min": 1,
               "max": 1

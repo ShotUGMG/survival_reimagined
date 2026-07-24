@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      },
-      {
-        "value": "CUSTOM:IlmeniteNugget"
-      }
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget",
+      "CUSTOM:IlmeniteNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Ilmenite"
-    },
+    "recipeReturnStack": "CUSTOM:Ilmenite",
     "name": "ilmenitenuggettoraw",
     "namespace": "mod"
   }

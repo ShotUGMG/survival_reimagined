@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:RawSilverNugget"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:SilverNugget"
-    },
+    "smeltingInputStack": "CUSTOM:RawSilverNugget",
+    "smeltingReturnStack": "CUSTOM:SilverNugget",
     "name": "raw_silver_nuggetto_silver_nugget",
     "namespace": "mod"
   }

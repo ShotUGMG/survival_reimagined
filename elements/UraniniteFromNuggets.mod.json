@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      },
-      {
-        "value": "CUSTOM:RawUraniniteNugget"
-      }
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget",
+      "CUSTOM:RawUraniniteNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RawUraninite"
-    },
+    "recipeReturnStack": "CUSTOM:RawUraninite",
     "name": "uraninite_from_nuggets",
     "namespace": "mod"
   }

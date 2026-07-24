@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/metal_plate",
+  "textures": {
+    "all": "survival_reimagined:block/steel_plate",
+    "particle": "survival_reimagined:block/steel_plate"
+  },
+  "render_type": "solid"
+}

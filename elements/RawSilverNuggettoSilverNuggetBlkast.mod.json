@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RawSilverNugget"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:SilverNugget"
-    },
+    "blastingInputStack": "CUSTOM:RawSilverNugget",
+    "blastingReturnStack": "CUSTOM:SilverNugget",
     "name": "raw_silver_nuggetto_silver_nugget_blkast",
     "namespace": "mod"
   }

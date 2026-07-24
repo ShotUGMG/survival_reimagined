@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/cooked_beef"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:cooked_beef_texture": 1
+      },
+      "model": "survival_reimagined:item/cooked_beef_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:cooked_beef_texture": 2
+      },
+      "model": "survival_reimagined:item/cooked_beef_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:cooked_beef_texture": 3
+      },
+      "model": "survival_reimagined:item/cooked_beef_2"
+    }
+  ]
+}

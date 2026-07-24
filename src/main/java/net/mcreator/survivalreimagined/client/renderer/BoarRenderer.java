@@ -10,6 +10,8 @@ import net.mcreator.survivalreimagined.client.model.Modelboar;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BoarRenderer extends MobRenderer<BoarEntity, Modelboar<BoarEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("survival_reimagined:textures/entities/baor.png");
+
 	public BoarRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelboar<BoarEntity>(context.bakeLayer(Modelboar.LAYER_LOCATION)), 0.5f);
 	}
@@ -22,6 +24,6 @@ public class BoarRenderer extends MobRenderer<BoarEntity, Modelboar<BoarEntity>>
 
 	@Override
 	public ResourceLocation getTextureLocation(BoarEntity entity) {
-		return ResourceLocation.parse("survival_reimagined:textures/entities/baor.png");
+		return entityTexture;
 	}
 }

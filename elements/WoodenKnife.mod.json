@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Special",
@@ -10,13 +10,12 @@
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
     "name": "Wooden Survival Knife",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 2.0,
     "attackSpeed": 1.0,
@@ -26,10 +25,17 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "repairItems": [],
+    "repairItems": [
+      "TAG:c:planks/single"
+    ],
     "immuneToFire": false,
     "blockDropsTier": "WOOD",
-    "blocksAffected": [],
+    "blocksAffected": [
+      "TAG:c:carcasses",
+      "TAG:c:smaller_carcasses",
+      "TAG:c:carcass/equine"
+    ],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": true
   }

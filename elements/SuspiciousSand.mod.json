@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SandPile"
-            },
+            "item": "CUSTOM:SandPile",
             "weight": 10,
             "minCount": 3,
             "maxCount": 4,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:GlassShard"
-            },
+            "item": "CUSTOM:GlassShard",
             "weight": 1,
             "minCount": 0,
             "maxCount": 1,

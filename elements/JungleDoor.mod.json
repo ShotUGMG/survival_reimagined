@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      },
-      {
-        "value": "CUSTOM:JunglePlank"
-      }
+      "",
+      "CUSTOM:JunglePlank",
+      "CUSTOM:JunglePlank",
+      "",
+      "CUSTOM:JunglePlank",
+      "CUSTOM:JunglePlank",
+      "",
+      "CUSTOM:JunglePlank",
+      "CUSTOM:JunglePlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.JUNGLE_DOOR"
-    },
+    "recipeReturnStack": "Items.JUNGLE_DOOR",
     "name": "jungle_door",
     "namespace": "mod"
   }

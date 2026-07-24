@@ -1,7 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "survival_reimagined:block/wisteria_leaves_1",
-    "particle": "survival_reimagined:block/wisteria_leaves_1"
+    "all": "survival_reimagined:block/flowering_wisteria_leaves",
+    "particle": "survival_reimagined:block/flowering_wisteria_leaves"
   }
 }

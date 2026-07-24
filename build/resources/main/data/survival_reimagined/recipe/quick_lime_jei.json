@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "tag": "c:alloy/lime_items"
+    },
+    {
+      "tag": "c:alloy/lime_items"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:quick_lime",
+      "count": 2
+    }
+  ]
+}

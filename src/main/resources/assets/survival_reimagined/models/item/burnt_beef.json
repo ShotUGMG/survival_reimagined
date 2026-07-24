@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/burnt_steak"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:burnt_beef_texture": 1
+      },
+      "model": "survival_reimagined:item/burnt_beef_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:burnt_beef_texture": 2
+      },
+      "model": "survival_reimagined:item/burnt_beef_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:burnt_beef_texture": 3
+      },
+      "model": "survival_reimagined:item/burnt_beef_2"
+    }
+  ]
+}

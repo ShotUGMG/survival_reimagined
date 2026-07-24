@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "23": "clay_block",
-        "7": "clay_helmet_mold"
+        "23": "clay_block"
       },
       "name": "default"
     }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -21,6 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 163,
           "y": 40,
           "locked": false
@@ -72,9 +73,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onTakenFromSlot": {
-            "name": "IronTaken"
-          },
+          "onTakenFromSlot": "IronTaken",
           "x": 241,
           "y": 74,
           "locked": false
@@ -130,12 +129,8 @@
         }
       }
     ],
-    "onTick": {
-      "name": "MetalRefiningTableGUIWhileThisGUIIsOpenTick"
-    },
-    "onClosed": {
-      "name": "MetalRefiningTableGUIThisGUIIsClosed"
-    },
+    "onTick": "MetalRefiningTableGUIWhileThisGUIIsOpenTick",
+    "onClosed": "MetalRefiningTableGUIThisGUIIsClosed",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

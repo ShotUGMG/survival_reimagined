@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "survival_reimagined:block/cursed_stone_bars"
+    },
+    "facing=east": {
+      "model": "survival_reimagined:block/cursed_stone_bars",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "survival_reimagined:block/cursed_stone_bars",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "survival_reimagined:block/cursed_stone_bars",
+      "y": 270
+    }
+  }
+}

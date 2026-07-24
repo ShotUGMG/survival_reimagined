@@ -1,50 +1,50 @@
-/tp @s -580 152 530
-/effect give Dev hunger 30 3
-/effect give Dev minecraft:night_vision
-/effect give Dev minecraft:night_vision infinite
-/give Dev survival_reimagined:strawberry_crop
+/season set early_spring
 /give Dev minecraft:debug_stick
-/gamerule randomTickSpeed 3000
-/gamerule randomTickSpeed 3
-/give Dev survival_reimagined:strawberry_plant
-/season set fall
-/give Dev survival_reimagined:small_banana_jungle_log
-/give Dev survival_reimagined:banana_leaves
-/give Dev survival_reimagined:banana_cluster
+/tick rate 10000
+/season set early_autumn
+/tick rate 10000
+/give Dev survival_reimagined:raspberry_plant
 /give Dev minecraft:debug_stick
-/give Dev survival_reimagined:banana_grow_block
-/gamerule randomTickSpeed 3000
-/gamerule randomTickSpeed 3
-/give Dev survival_reimagined:banana_cluster
-/give Dev survival_reimagined:banana_grow_block
-/give Dev survival_reimagined:banana_jungle_log
-/give Dev survival_reimagined:small_banana_jungle_log
-/give Dev survival_reimagined:banana_leaves
-/give Dev minecraft:structure_block
-/give Dev minecraft:debug_stick
-/place feature survival_reimagined:banana_trees
-/locate biome #c:is_jungle
-/tp @s 1817 101 2122
-/summon survival_reimagined:ghost
-/difficulty easy
-/summon survival_reimagined:ghost
-/difficulty peaceful
-/gamerule randomTickSpeed 3
-/locate biome #c:is_jungle
-/tp @s -1442 95 120
-/give Dev minecraft:debug_stick
-/effect give Dev minecraft:night_vision infinite
-/time set6 d
-/time set day
+/effect give Dev minecraft:strength infinite
+/effect give Dev minecraft:strength infinite 100
+/tick rate 2000
+/tick rate 10000
+/tick rate 20
+/tick rate 5000
 /effect clear
-/give Dev survival_reimagined:ruby
-/give Dev survival_reimagined:rough_ruby
-/difficulty peaceful
-/gamerule doDaylightCycle false
-/difficulty peaceful
-/gamerule doDaylightCycle false
-/summon survival_reimagined:ghost ~50 ~ ~
-/difficulty easy
+/tick rate 10000
+/effect give Dev minecraft:hunger infinite
+/effect clear
+/effect give Dev minecraft:night_vision infinite
+/locate biome #c:is_taiga
+/tp @s 1314 104 -951
+/locate biome minecraft:old_growth_pine_taiga
+/tp @s 3282 90 -2468
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect clear
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect clear
 /time set night
-/event bloodmoon
-/time set day
+/effect give Dev minecraft:resistance infinite 100
+/effect clear
+/effect give Dev minecraft:resistance infinite 100
+/effect clear
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect clear
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect give Dev minecraft:regeneration 3 20
+/tp Dev 0 17 41
+/tp Dev 1 17 41
+/tp Dev -1 17 41
+/effect give Dev minecraft:regeneration infinite 20
+/tp Dev -1 17 41
+/effect give Dev minecraft:regeneration infinite 20
+/tp Dev -1 17 41
+/effect
+/effect clear
+/effect give Dev minecraft:regeneration infinite 20
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect clear
+/effect give Dev survival_reimagined:broken_leg_potion
+/effect clear
+/effect give Dev survival_reimagined:broken_leg_potion

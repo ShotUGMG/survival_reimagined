@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:bronze_seeds"
+    },
+    "title": {
+      "translate": "advancements.professional_farmer.title"
+    },
+    "description": {
+      "translate": "advancements.professional_farmer.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "professional_farmer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:humbe_beginnings"
+}

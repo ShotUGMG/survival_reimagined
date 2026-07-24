@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:campfire/raw",
+      "required": false
+    },
+    {
+      "id": "#c:campfire/cooked",
+      "required": false
+    },
+    {
+      "id": "#c:campfire/burnt",
+      "required": false
+    }
+  ]
+}

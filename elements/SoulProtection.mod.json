@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "enchantment",
   "definition": {
     "name": "Soul Purification",
@@ -10,13 +10,12 @@
     "damageModifier": 0,
     "incompatibleEnchantments": [],
     "supportedItems": [
-      {
-        "value": "TAG:minecraft:foot_armor"
-      }
+      "TAG:minecraft:foot_armor"
     ],
     "isTreasureEnchantment": true,
     "isCurse": false,
     "canGenerateInLootTables": true,
-    "canVillagerTrade": true
+    "canVillagerTrade": true,
+    "effectsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"enchantment_effects_start\" deletable=\"false\" x=\"40\" y=\"80\"></block></xml>"
   }
 }

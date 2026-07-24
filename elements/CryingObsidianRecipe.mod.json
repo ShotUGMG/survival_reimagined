@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CryingObsidianRock"
-      },
-      {
-        "value": "CUSTOM:CryingObsidianRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CryingObsidianRock"
-      },
-      {
-        "value": "CUSTOM:CryingObsidianRock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:CryingObsidianRock",
+      "CUSTOM:CryingObsidianRock",
+      "",
+      "CUSTOM:CryingObsidianRock",
+      "CUSTOM:CryingObsidianRock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CRYING_OBSIDIAN"
-    },
+    "recipeReturnStack": "Blocks.CRYING_OBSIDIAN",
     "name": "crying_obsidian_recipe",
     "namespace": "mod"
   }

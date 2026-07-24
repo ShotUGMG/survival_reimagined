@@ -1,78 +1,78 @@
 {
   "variants": {
-    "facing=north,blockstate=0": {
+    "facing=north,portions=1": {
+      "model": "survival_reimagined:block/small_trough_0"
+    },
+    "facing=north,portions=2": {
+      "model": "survival_reimagined:block/small_trough_1"
+    },
+    "facing=north,portions=3": {
+      "model": "survival_reimagined:block/small_trough_2"
+    },
+    "facing=north,portions=4": {
+      "model": "survival_reimagined:block/small_trough_3"
+    },
+    "facing=north,portions=0": {
       "model": "survival_reimagined:block/small_trough"
     },
-    "facing=east,blockstate=0": {
+    "facing=east,portions=1": {
+      "model": "survival_reimagined:block/small_trough_0",
+      "y": 90
+    },
+    "facing=east,portions=2": {
+      "model": "survival_reimagined:block/small_trough_1",
+      "y": 90
+    },
+    "facing=east,portions=3": {
+      "model": "survival_reimagined:block/small_trough_2",
+      "y": 90
+    },
+    "facing=east,portions=4": {
+      "model": "survival_reimagined:block/small_trough_3",
+      "y": 90
+    },
+    "facing=east,portions=0": {
       "model": "survival_reimagined:block/small_trough",
       "y": 90
     },
-    "facing=south,blockstate=0": {
+    "facing=south,portions=1": {
+      "model": "survival_reimagined:block/small_trough_0",
+      "y": 180
+    },
+    "facing=south,portions=2": {
+      "model": "survival_reimagined:block/small_trough_1",
+      "y": 180
+    },
+    "facing=south,portions=3": {
+      "model": "survival_reimagined:block/small_trough_2",
+      "y": 180
+    },
+    "facing=south,portions=4": {
+      "model": "survival_reimagined:block/small_trough_3",
+      "y": 180
+    },
+    "facing=south,portions=0": {
       "model": "survival_reimagined:block/small_trough",
       "y": 180
     },
-    "facing=west,blockstate=0": {
+    "facing=west,portions=1": {
+      "model": "survival_reimagined:block/small_trough_0",
+      "y": 270
+    },
+    "facing=west,portions=2": {
+      "model": "survival_reimagined:block/small_trough_1",
+      "y": 270
+    },
+    "facing=west,portions=3": {
+      "model": "survival_reimagined:block/small_trough_2",
+      "y": 270
+    },
+    "facing=west,portions=4": {
+      "model": "survival_reimagined:block/small_trough_3",
+      "y": 270
+    },
+    "facing=west,portions=0": {
       "model": "survival_reimagined:block/small_trough",
-      "y": 270
-    },
-    "facing=north,blockstate=1": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_0"
-    },
-    "facing=east,blockstate=1": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_0",
-      "y": 90
-    },
-    "facing=south,blockstate=1": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_0",
-      "y": 180
-    },
-    "facing=west,blockstate=1": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_0",
-      "y": 270
-    },
-    "facing=north,blockstate=2": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_1"
-    },
-    "facing=east,blockstate=2": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_1",
-      "y": 90
-    },
-    "facing=south,blockstate=2": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_1",
-      "y": 180
-    },
-    "facing=west,blockstate=2": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_1",
-      "y": 270
-    },
-    "facing=north,blockstate=3": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_2"
-    },
-    "facing=east,blockstate=3": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_2",
-      "y": 90
-    },
-    "facing=south,blockstate=3": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_2",
-      "y": 180
-    },
-    "facing=west,blockstate=3": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_2",
-      "y": 270
-    },
-    "facing=north,blockstate=4": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_3"
-    },
-    "facing=east,blockstate=4": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_3",
-      "y": 90
-    },
-    "facing=south,blockstate=4": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_3",
-      "y": 180
-    },
-    "facing=west,blockstate=4": {
-      "model": "survival_reimagined:block/small_trough_blockstates_blockstate_3",
       "y": 270
     }
   }

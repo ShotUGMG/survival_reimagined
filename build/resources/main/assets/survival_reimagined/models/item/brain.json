@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "survival_reimagined:item/brain"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:brain_texture": 1
+      },
+      "model": "survival_reimagined:item/brain_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:brain_texture": 2
+      },
+      "model": "survival_reimagined:item/brain_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:brain_texture": 3
+      },
+      "model": "survival_reimagined:item/brain_2"
+    }
+  ]
 }

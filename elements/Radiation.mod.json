@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Radiation",
@@ -14,14 +14,8 @@
     "renderStatusInHUD": false,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "RadiationEffectStartedapplied"
-    },
-    "onActiveTick": {
-      "name": "RadiationOnEffectActiveTick"
-    },
-    "activeTickCondition": {
-      "name": "RadiationActiveTickCondition"
-    }
+    "onStarted": "RadiationEffectStartedapplied",
+    "onActiveTick": "RadiationOnEffectActiveTick",
+    "activeTickCondition": "RadiationActiveTickCondition"
   }
 }

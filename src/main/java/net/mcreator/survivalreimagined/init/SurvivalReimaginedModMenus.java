@@ -31,6 +31,10 @@ public class SurvivalReimaginedModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<AAFScriptureGUIMenu>> AAF_SCRIPTURE_GUI = REGISTRY.register("aaf_scripture_gui", () -> IMenuTypeExtension.create(AAFScriptureGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<RMIMenu>> RMI = REGISTRY.register("rmi", () -> IMenuTypeExtension.create(RMIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<SmallTroughGUIMenu>> SMALL_TROUGH_GUI = REGISTRY.register("small_trough_gui", () -> IMenuTypeExtension.create(SmallTroughGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<MillstoneGUIMenu>> MILLSTONE_GUI = REGISTRY.register("millstone_gui", () -> IMenuTypeExtension.create(MillstoneGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<CampfireGUIMenu>> CAMPFIRE_GUI = REGISTRY.register("campfire_gui", () -> IMenuTypeExtension.create(CampfireGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<DryingRackGUIMenu>> DRYING_RACK_GUI = REGISTRY.register("drying_rack_gui", () -> IMenuTypeExtension.create(DryingRackGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<TanningBarrelGUIMenu>> TANNING_BARREL_GUI = REGISTRY.register("tanning_barrel_gui", () -> IMenuTypeExtension.create(TanningBarrelGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

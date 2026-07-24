@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      },
-      {
-        "value": "CUSTOM:Azurite"
-      }
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite",
+      "CUSTOM:Azurite"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RawAzuriteBlock"
-    },
+    "recipeReturnStack": "CUSTOM:RawAzuriteBlock",
     "name": "azuriteblock",
     "namespace": "mod"
   }

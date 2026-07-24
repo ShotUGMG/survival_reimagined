@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:knife_blade_mold"
+    },
+    {
+      "item": "survival_reimagined:netherite"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:netherite_knife_blade",
+      "count": 1
+    }
+  ]
+}

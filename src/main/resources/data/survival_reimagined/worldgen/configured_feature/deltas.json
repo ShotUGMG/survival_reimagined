@@ -2,7 +2,7 @@
   "type": "minecraft:delta_feature",
   "config": {
     "contents": {
-      "Name": "minecraft:air"
+      "Name": "minecraft:lava"
     },
     "rim": {
       "Name": "minecraft:magma_block"

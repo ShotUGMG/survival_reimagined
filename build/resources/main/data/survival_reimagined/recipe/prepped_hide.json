@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:tools/knife"
+    },
+    "b": {
+      "tag": "c:animal/hide"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:hide",
+    "count": 2
+  }
+}

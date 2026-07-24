@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "millstone",
+        "missing": "minecraft:hay_block_top"
+      }
+    }
+  }
+}

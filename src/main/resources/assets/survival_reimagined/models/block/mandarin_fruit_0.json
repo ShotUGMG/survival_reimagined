@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/mandarin_ripe",
+  "textures": {
+    "all": "survival_reimagined:block/mandarin_block_ripe",
+    "particle": "survival_reimagined:block/mandarin_block_new",
+    "0": "survival_reimagined:block/mandarin_block_ripe"
+  },
+  "render_type": "solid"
+}

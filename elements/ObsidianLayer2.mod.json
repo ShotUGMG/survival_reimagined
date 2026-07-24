@@ -1,0 +1,12 @@
+{
+  "_fv": 89,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": true,
+    "generationStep": "LOCAL_MODIFICATIONS",
+    "restrictionBiomes": [
+      "#minecraft:is_nether"
+    ],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_disk_simple\"><field name=\"half_height\">1</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.OBSIDIAN</field></block></value><value name=\"target\"><block type=\"block_predicate_true\"></block></value><value name=\"radius\"><block type=\"int_provider_uniform\"><field name=\"min\">8</field><field name=\"max\">8</field></block></value></block></value><next><block type=\"placement_count_on_every_layer\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">2</field></block></value><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">-2</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">2</field></block></value></block></next></block></next></block></xml>"
+  }
+}

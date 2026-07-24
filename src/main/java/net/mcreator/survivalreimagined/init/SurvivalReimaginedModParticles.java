@@ -20,5 +20,6 @@ public class SurvivalReimaginedModParticles {
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.RADIATION_PARTICLE_2.get(), RadiationParticle2Particle::provider);
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.FALLING_WISTERIA.get(), FallingWisteriaParticle::provider);
 		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.FALLING_WISTERIA_DARK.get(), FallingWisteriaDarkParticle::provider);
+		event.registerSpriteSet(SurvivalReimaginedModParticleTypes.BLACK_SMOKE.get(), BlackSmokeParticle::provider);
 	}
 }

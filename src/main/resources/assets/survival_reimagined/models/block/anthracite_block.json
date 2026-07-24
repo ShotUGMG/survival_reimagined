@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/block_of_anthracite",
+    "up": "survival_reimagined:block/block_of_anthracite",
+    "north": "survival_reimagined:block/block_of_anthracite",
+    "east": "survival_reimagined:block/block_of_anthracite",
+    "south": "survival_reimagined:block/block_of_anthracite",
+    "west": "survival_reimagined:block/block_of_anthracite",
+    "particle": "survival_reimagined:block/block_of_anthracite"
+  },
+  "render_type": "solid"
+}

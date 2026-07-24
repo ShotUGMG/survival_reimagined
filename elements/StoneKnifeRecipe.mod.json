@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SmallStick"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "CUSTOM:StoneRock",
+      "",
+      "",
+      "CUSTOM:PlantFiber",
+      "",
+      "",
+      "CUSTOM:SmallStick",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StoneKnife"
-    },
+    "recipeReturnStack": "CUSTOM:StoneKnife",
     "name": "stone_knife_recipe",
     "namespace": "mod"
   }

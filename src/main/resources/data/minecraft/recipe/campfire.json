@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "tag": "minecraft:coals"
+    },
+    "c": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:campfire",
+    "count": 1
+  }
+}

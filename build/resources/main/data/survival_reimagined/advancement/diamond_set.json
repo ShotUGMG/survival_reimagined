@@ -15,46 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "diamond_set_0": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:diamond_sword"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
     "diamond_set_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:diamond_pickaxe"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "diamond_set_2": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:diamond_axe"
-            ],
+            "items": "minecraft:diamond_sword",
             "count": {
               "min": 1,
               "max": 1
@@ -68,25 +34,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:diamond_shovel"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "diamond_set_4": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:diamond_hoe"
-            ],
+            "items": "minecraft:diamond_pickaxe",
             "count": {
               "min": 1,
               "max": 1
@@ -100,25 +48,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:diamond_hammer"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "diamond_set_6": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "survival_reimagined:diamond_saw"
-            ],
+            "items": "minecraft:diamond_axe",
             "count": {
               "min": 1,
               "max": 1
@@ -132,25 +62,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:diamond_knife"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "diamond_set_8": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:diamond_helmet"
-            ],
+            "items": "minecraft:diamond_shovel",
             "count": {
               "min": 1,
               "max": 1
@@ -164,25 +76,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:diamond_chestplate"
-            ],
-            "count": {
-              "min": 1,
-              "max": 1
-            }
-          }
-        ]
-      }
-    },
-    "diamond_set_10": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:diamond_leggings"
-            ],
+            "items": "minecraft:diamond_hoe",
             "count": {
               "min": 1,
               "max": 1
@@ -196,9 +90,91 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:diamond_boots"
-            ],
+            "items": "survival_reimagined:diamond_hammer",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_13": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:diamond_saw",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_15": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "survival_reimagined:diamond_knife",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_17": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_helmet",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_19": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_chestplate",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_21": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_leggings",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    },
+    "diamond_set_23": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_boots",
             "count": {
               "min": 1,
               "max": 1

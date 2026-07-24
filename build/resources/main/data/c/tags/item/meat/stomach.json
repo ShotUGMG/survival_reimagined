@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "survival_reimagined:stomach",
-    "survival_reimagined:cooked_stomach"
+    "survival_reimagined:stomach"
   ]
 }

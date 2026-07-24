@@ -1,4 +1,5 @@
 {
+  "format_version": "1.21.11",
   "credit": "Made with Blockbench",
   "texture_size": [
     64,
@@ -513,35 +514,35 @@
     "thirdperson_righthand": {
       "rotation": [
         0,
-        -180,
-        -88
+        90,
+        -90
       ],
       "translation": [
-        -1.75,
-        0,
+        -6,
+        -1,
         0
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        0.8,
+        0.8,
+        0.8
       ]
     },
     "thirdperson_lefthand": {
       "rotation": [
         0,
-        -180,
+        -90,
         90
       ],
       "translation": [
-        1.75,
-        0,
+        -6,
+        -1,
         0
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        0.8,
+        0.8,
+        0.8
       ]
     },
     "firstperson_righthand": {
@@ -620,6 +621,7 @@
         5,
         0
       ],
+      "scope": 0,
       "color": 0,
       "children": [
         {
@@ -629,6 +631,7 @@
             17,
             -5
           ],
+          "scope": 0,
           "color": 1,
           "shade": false,
           "children": [
@@ -642,6 +645,7 @@
             17,
             -5
           ],
+          "scope": 0,
           "color": 2,
           "shade": false,
           "children": [
@@ -655,6 +659,7 @@
             17,
             7
           ],
+          "scope": 0,
           "color": 3,
           "shade": false,
           "children": [
@@ -668,6 +673,7 @@
             17,
             7
           ],
+          "scope": 0,
           "color": 4,
           "shade": false,
           "children": [
@@ -681,6 +687,7 @@
             23,
             -8
           ],
+          "scope": 0,
           "color": 5,
           "shade": false,
           "children": [
@@ -694,6 +701,7 @@
             24,
             2
           ],
+          "scope": 0,
           "color": 6,
           "shade": false,
           "children": [

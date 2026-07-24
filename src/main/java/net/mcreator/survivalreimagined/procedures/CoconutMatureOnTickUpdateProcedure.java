@@ -9,12 +9,7 @@ import net.minecraft.core.BlockPos;
 public class CoconutMatureOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (Math.random() < 0.3) {
-			if ((new Object() {
-				public BlockState with(BlockState _bs, String _property, int _newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-					return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-				}
-			}.with((world.getBlockState(BlockPos.containing(x, y, z))), "blockstate", 2)) == blockstate) {
+			if ((blockStateWithInt((world.getBlockState(BlockPos.containing(x, y, z))), "blockstate", 2)) == blockstate) {
 				{
 					int _value = 1;
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -22,12 +17,7 @@ public class CoconutMatureOnTickUpdateProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-			} else if ((new Object() {
-				public BlockState with(BlockState _bs, String _property, int _newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-					return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-				}
-			}.with((world.getBlockState(BlockPos.containing(x, y, z))), "blockstate", 1)) == blockstate) {
+			} else if ((blockStateWithInt((world.getBlockState(BlockPos.containing(x, y, z))), "blockstate", 1)) == blockstate) {
 				{
 					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -37,5 +27,10 @@ public class CoconutMatureOnTickUpdateProcedure {
 				}
 			}
 		}
+	}
+
+	private static BlockState blockStateWithInt(BlockState blockState, String property, int newValue) {
+		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty(property);
+		return prop instanceof IntegerProperty ip && prop.getPossibleValues().contains(newValue) ? blockState.setValue(ip, newValue) : blockState;
 	}
 }

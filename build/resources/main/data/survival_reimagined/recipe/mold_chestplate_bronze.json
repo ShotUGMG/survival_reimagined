@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:chestplate_mold"
+    },
+    {
+      "item": "survival_reimagined:bronze_ingot"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    8,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:bronze_armor_chestplate",
+      "count": 1
+    }
+  ]
+}

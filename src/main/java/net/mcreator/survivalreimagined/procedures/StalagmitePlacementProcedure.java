@@ -10,7 +10,7 @@ import net.minecraft.core.BlockPos;
 public class StalagmitePlacementProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		if (world.isEmptyBlock(BlockPos.containing(x, y - 1, z))) {
-			for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 3); index0++) {
+			for (int index143 = 0; index143 < Mth.nextInt(RandomSource.create(), 1, 3); index143++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, PointedStonesLootOverridesProcedure.execute(world, x, y, z));
 					entityToSpawn.setPickUpDelay(10);

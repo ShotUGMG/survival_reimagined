@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      },
-      {
-        "value": "CUSTOM:RawTin"
-      }
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin",
+      "CUSTOM:RawTin"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfRawTin"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfRawTin",
     "name": "raw_tin_block",
     "namespace": "mod"
   }

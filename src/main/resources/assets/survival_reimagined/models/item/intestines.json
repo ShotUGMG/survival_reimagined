@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "survival_reimagined:item/intestines"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:intestines_texture": 1
+      },
+      "model": "survival_reimagined:item/intestines_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:intestines_texture": 2
+      },
+      "model": "survival_reimagined:item/intestines_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:intestines_texture": 3
+      },
+      "model": "survival_reimagined:item/intestines_2"
+    }
+  ]
 }

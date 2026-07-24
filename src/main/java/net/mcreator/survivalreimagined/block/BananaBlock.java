@@ -1,65 +1,71 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.procedures.BananaOnTickUpdateProcedure;
-import net.mcreator.survivalreimagined.procedures.BananaClusterDisablePlacementProcedure;
+import net.mcreator.survivalreimagined.procedures.GrowingProcedureProcedure;
+import net.mcreator.survivalreimagined.block.entity.BananaBlockEntity;
 
-public class BananaBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
+import com.google.common.collect.ImmutableMap;
+
+public class BananaBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	private static final VoxelShape SHAPE_1_NORTH = box(4, 4, 14, 12, 12, 20);
-	private static final VoxelShape SHAPE_1_SOUTH = box(4, 4, -4, 12, 12, 2);
-	private static final VoxelShape SHAPE_1_EAST = box(-4, 4, 4, 2, 12, 12);
-	private static final VoxelShape SHAPE_1_WEST = box(14, 4, 4, 20, 12, 12);
-	private static final VoxelShape SHAPE_2_NORTH = box(4, 4, 14, 12, 12, 20);
-	private static final VoxelShape SHAPE_2_SOUTH = box(4, 4, -4, 12, 12, 2);
-	private static final VoxelShape SHAPE_2_EAST = box(-4, 4, 4, 2, 12, 12);
-	private static final VoxelShape SHAPE_2_WEST = box(14, 4, 4, 20, 12, 12);
-	private static final VoxelShape SHAPE_NORTH = box(4, 4, 14, 12, 12, 20);
-	private static final VoxelShape SHAPE_SOUTH = box(4, 4, -4, 12, 12, 2);
-	private static final VoxelShape SHAPE_EAST = box(-4, 4, 4, 2, 12, 12);
-	private static final VoxelShape SHAPE_WEST = box(14, 4, 4, 20, 12, 12);
+	public static final IntegerProperty AGE_2 = BlockStateProperties.AGE_2;
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public BananaBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
-				return 0;
+		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(AGE_2, 0));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(AGE_2) == 1) {
+				return switch (state.getValue(FACING)) {
+					case NORTH -> box(4, 4, 14, 12, 12, 20);
+					case EAST -> box(-4, 4, 4, 2, 12, 12);
+					case WEST -> box(14, 4, 4, 20, 12, 12);
+					default -> box(4, 4, -4, 12, 12, 2);
+				};
+			} else if (state.getValue(AGE_2) == 2) {
+				return switch (state.getValue(FACING)) {
+					case NORTH -> box(4, 4, 14, 12, 12, 20);
+					case EAST -> box(-4, 4, 4, 2, 12, 12);
+					case WEST -> box(14, 4, 4, 20, 12, 12);
+					default -> box(4, 4, -4, 12, 12, 2);
+				};
 			}
-		}.getLightLevel())).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+			return switch (state.getValue(FACING)) {
+				case NORTH -> box(4, 4, 14, 12, 12, 20);
+				case EAST -> box(-4, 4, 4, 2, 12, 12);
+				case WEST -> box(14, 4, 4, 20, 12, 12);
+				default -> box(4, 4, -4, 12, 12, 2);
+			};
+		});
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
@@ -68,45 +74,19 @@ public class BananaBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_1_NORTH;
-				case SOUTH -> SHAPE_1_SOUTH;
-				case EAST -> SHAPE_1_EAST;
-				case WEST -> SHAPE_1_WEST;
-				default -> SHAPE_1_NORTH;
-			});
-		}
-		if (state.getValue(BLOCKSTATE) == 2) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_2_NORTH;
-				case SOUTH -> SHAPE_2_SOUTH;
-				case EAST -> SHAPE_2_EAST;
-				case WEST -> SHAPE_2_WEST;
-				default -> SHAPE_2_NORTH;
-			});
-		}
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
-	}
-
-	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, BLOCKSTATE);
+		builder.add(FACING, AGE_2);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
 		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return super.getStateForPlacement(context).setValue(FACING, Direction.NORTH);
-		return super.getStateForPlacement(context).setValue(FACING, context.getClickedFace());
+			return state.setValue(FACING, Direction.NORTH).setValue(AGE_2, 0);
+		return state.setValue(FACING, context.getClickedFace()).setValue(AGE_2, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -118,24 +98,59 @@ public class BananaBlock extends Block {
 	}
 
 	@Override
-	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
-		if (worldIn instanceof LevelAccessor world) {
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			return BananaClusterDisablePlacementProcedure.execute(world, x, y, z);
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		GrowingProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
+		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
+		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+	}
+
+	@Override
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		return new BananaBlockEntity(pos, state);
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
+	}
+
+	@Override
+	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
+		if (state.getBlock() != newState.getBlock()) {
+			BlockEntity blockEntity = world.getBlockEntity(pos);
+			if (blockEntity instanceof BananaBlockEntity be) {
+				Containers.dropContents(world, pos, be);
+				world.updateNeighbourForOutputSignal(pos, this);
+			}
+			super.onRemove(state, world, pos, newState, isMoving);
 		}
-		return super.canSurvive(blockstate, worldIn, pos);
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
-		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	public boolean hasAnalogOutputSignal(BlockState state) {
+		return true;
 	}
 
 	@Override
-	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.randomTick(blockstate, world, pos, random);
-		BananaOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+		BlockEntity tileentity = world.getBlockEntity(pos);
+		if (tileentity instanceof BananaBlockEntity be)
+			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
+		else
+			return 0;
 	}
 }

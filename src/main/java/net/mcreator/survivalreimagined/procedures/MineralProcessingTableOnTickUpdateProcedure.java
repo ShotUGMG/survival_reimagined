@@ -4,6 +4,7 @@ import net.neoforged.neoforge.items.IItemHandler;
 import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,11 +24,10 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 			RodInSlotProcedure.execute(world, x, y, z);
 		}
 		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:processing/rod_items")))
-				&& ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp4
-						&& (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp4)) == true) {
+				&& (getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "redstone_power") instanceof BooleanProperty _getbp4 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp4)) == true) {
 			MineralProcessingRecipesProcedure.execute(world, x, y, z);
 		}
-		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp6 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp6)) == true) {
+		if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "redstone_power") instanceof BooleanProperty _getbp6 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp6)) == true) {
 			{
 				int _value = 1;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -44,7 +44,7 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
-		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("redstone_power") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp10)) == false
+		if ((getPropertyByName((world.getBlockState(BlockPos.containing(x, y, z))), "redstone_power") instanceof BooleanProperty _getbp10 && (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getbp10)) == false
 				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.DEPLETED_REACTOR_ROD.get()
 				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == ItemStack.EMPTY.getItem() || (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == ItemStack.EMPTY.getItem()) {
 			if (!world.isClientSide()) {
@@ -74,5 +74,14 @@ public class MineralProcessingTableOnTickUpdateProcedure {
 				return itemHandler.getStackInSlot(slot);
 		}
 		return ItemStack.EMPTY;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 }

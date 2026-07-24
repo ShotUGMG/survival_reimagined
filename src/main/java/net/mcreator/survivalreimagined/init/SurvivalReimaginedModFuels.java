@@ -94,5 +94,17 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.PALM_BARK_RU.get())
 			event.setBurnTime(400);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.ANTHRACITE.get())
+			event.setBurnTime(3200);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.SMALL_ANTHRACITE.get())
+			event.setBurnTime(1600);
+		else if (itemstack.getItem() == SurvivalReimaginedModBlocks.ANTHRACITE_BLOCK.get().asItem())
+			event.setBurnTime(28800);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.LIGINITE.get())
+			event.setBurnTime(800);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.SMALL_LIGINITE.get())
+			event.setBurnTime(400);
+		else if (itemstack.getItem() == SurvivalReimaginedModBlocks.LIGINITE_BLOCK.get().asItem())
+			event.setBurnTime(7200);
 	}
 }

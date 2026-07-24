@@ -1,0 +1,26 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forge_jei",
+    "ingredients": [
+      "CUSTOM:IngotMold",
+      "CUSTOM:RoughSilver",
+      "TAG:c:forge/fuels"
+    ],
+    "integers": [
+      1,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "ForgeJEI",
+    "results": [
+      "CUSTOM:SilverIngot"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

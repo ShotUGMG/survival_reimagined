@@ -1,7 +1,5 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -23,77 +21,52 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.survivalreimagined.procedures.CoconutMatureOnTickUpdateProcedure;
 import net.mcreator.survivalreimagined.procedures.CoconutMatureBlockValidPlacementConditionProcedure;
 
+import com.google.common.collect.ImmutableMap;
+
 public class CoconutMatureBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	private static final VoxelShape SHAPE_1_NORTH = box(5, 7, 9, 11, 16, 15);
-	private static final VoxelShape SHAPE_1_SOUTH = box(5, 7, 1, 11, 16, 7);
-	private static final VoxelShape SHAPE_1_EAST = box(1, 7, 5, 7, 16, 11);
-	private static final VoxelShape SHAPE_1_WEST = box(9, 7, 5, 15, 16, 11);
-	private static final VoxelShape SHAPE_2_NORTH = box(5, 7, 9, 11, 16, 15);
-	private static final VoxelShape SHAPE_2_SOUTH = box(5, 7, 1, 11, 16, 7);
-	private static final VoxelShape SHAPE_2_EAST = box(1, 7, 5, 7, 16, 11);
-	private static final VoxelShape SHAPE_2_WEST = box(9, 7, 5, 15, 16, 11);
-	private static final VoxelShape SHAPE_NORTH = box(5, 7, 9, 11, 16, 15);
-	private static final VoxelShape SHAPE_SOUTH = box(5, 7, 1, 11, 16, 7);
-	private static final VoxelShape SHAPE_EAST = box(1, 7, 5, 7, 16, 11);
-	private static final VoxelShape SHAPE_WEST = box(9, 7, 5, 15, 16, 11);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public CoconutMatureBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(0.1f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
-				return 0;
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(0.1f).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(BLOCKSTATE, 0));
+	}
+
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(BLOCKSTATE) == 1) {
+				return switch (state.getValue(FACING)) {
+					case NORTH -> box(5, 7, 9, 11, 16, 15);
+					case EAST -> box(1, 7, 5, 7, 16, 11);
+					case WEST -> box(9, 7, 5, 15, 16, 11);
+					default -> box(5, 7, 1, 11, 16, 7);
+				};
+			} else if (state.getValue(BLOCKSTATE) == 2) {
+				return switch (state.getValue(FACING)) {
+					case NORTH -> box(5, 7, 9, 11, 16, 15);
+					case EAST -> box(1, 7, 5, 7, 16, 11);
+					case WEST -> box(9, 7, 5, 15, 16, 11);
+					default -> box(5, 7, 1, 11, 16, 7);
+				};
 			}
-		}.getLightLevel())).noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+			return switch (state.getValue(FACING)) {
+				case NORTH -> box(5, 7, 9, 11, 16, 15);
+				case EAST -> box(1, 7, 5, 7, 16, 11);
+				case WEST -> box(9, 7, 5, 15, 16, 11);
+				default -> box(5, 7, 1, 11, 16, 7);
+			};
+		});
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_1_NORTH;
-				case SOUTH -> SHAPE_1_SOUTH;
-				case EAST -> SHAPE_1_EAST;
-				case WEST -> SHAPE_1_WEST;
-				default -> SHAPE_1_NORTH;
-			});
-		}
-		if (state.getValue(BLOCKSTATE) == 2) {
-			return (switch (state.getValue(FACING)) {
-				case NORTH -> SHAPE_2_NORTH;
-				case SOUTH -> SHAPE_2_SOUTH;
-				case EAST -> SHAPE_2_EAST;
-				case WEST -> SHAPE_2_WEST;
-				default -> SHAPE_2_NORTH;
-			});
-		}
-		return (switch (state.getValue(FACING)) {
-			case NORTH -> SHAPE_NORTH;
-			case SOUTH -> SHAPE_SOUTH;
-			case EAST -> SHAPE_EAST;
-			case WEST -> SHAPE_WEST;
-			default -> SHAPE_NORTH;
-		});
 	}
 
 	@Override
@@ -104,9 +77,12 @@ public class CoconutMatureBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
 		if (context.getClickedFace().getAxis() == Direction.Axis.Y)
-			return super.getStateForPlacement(context).setValue(FACING, Direction.NORTH);
-		return super.getStateForPlacement(context).setValue(FACING, context.getClickedFace());
+			return state.setValue(FACING, Direction.NORTH).setValue(BLOCKSTATE, 0);
+		return state.setValue(FACING, context.getClickedFace()).setValue(BLOCKSTATE, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

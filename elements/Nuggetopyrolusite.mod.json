@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      },
-      {
-        "value": "CUSTOM:PyrolusiteNugget"
-      }
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget",
+      "CUSTOM:PyrolusiteNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:Pyrolusite"
-    },
+    "recipeReturnStack": "CUSTOM:Pyrolusite",
     "name": "nuggetopyrolusite",
     "namespace": "mod"
   }

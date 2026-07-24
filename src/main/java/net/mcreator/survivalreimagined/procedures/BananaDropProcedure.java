@@ -28,23 +28,19 @@ import javax.annotation.Nullable;
 public class BananaDropProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getState(), event.getPlayer());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		execute(null, world, x, y, z, entity);
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+		execute(null, world, x, y, z, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		if ((getEntityGameType(entity) == GameType.CREATIVE) == false) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (new Object() {
-				public BlockState with(BlockState _bs, String _property, int _newValue) {
-					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-					return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-				}
-			}.with(SurvivalReimaginedModBlocks.BANANA_CLUSTER.get().defaultBlockState(), "blockstate", 2)).getBlock()) {
+			if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip2 ? blockstate.getValue(_getip2) : -1) == 2
+					&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.BANANA_CLUSTER.get()) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.BANANA_CLUSTER.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -61,6 +57,15 @@ public class BananaDropProcedure {
 			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
 			if (playerInfo != null)
 				return playerInfo.getGameMode();
+		}
+		return null;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
 		}
 		return null;
 	}

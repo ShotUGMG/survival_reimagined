@@ -2,6 +2,7 @@ package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -9,7 +10,13 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
+
+import java.util.stream.Stream;
 
 public class StoneKnifeItem extends Item {
 	public StoneKnifeItem() {
@@ -19,7 +26,7 @@ public class StoneKnifeItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 1;
+		return Stream.of(BlockTags.create(ResourceLocation.parse("c:carcasses")), BlockTags.create(ResourceLocation.parse("c:smaller_carcasses")), BlockTags.create(ResourceLocation.parse("c:carcass/equine"))).anyMatch(blockstate::is) ? 4f : 1;
 	}
 
 	@Override
@@ -37,6 +44,11 @@ public class StoneKnifeItem extends Item {
 	@Override
 	public int getEnchantmentValue() {
 		return 2;
+	}
+
+	@Override
+	public boolean isValidRepairItem(ItemStack itemstack, ItemStack repairitem) {
+		return Ingredient.of(new ItemStack(SurvivalReimaginedModItems.STONE_ROCK.get())).test(repairitem);
 	}
 
 	@Override

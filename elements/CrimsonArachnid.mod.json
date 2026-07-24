@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Crimson Arachnid",
@@ -44,31 +44,17 @@
       "falpha": 0.0
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": ""
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ARTHROPOD",
     "attackStrength": 1,
@@ -108,24 +94,12 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": "CUSTOM:crimson_arachnid/ambient"
-    },
-    "hurtSound": {
-      "value": "CUSTOM:crimson_arachnid/hurt"
-    },
-    "deathSound": {
-      "value": "CUSTOM:crimson_arachnid/death"
-    },
-    "stepSound": {
-      "value": "entity.spider.step"
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "CUSTOM:crimson_arachnid/ambient",
+    "hurtSound": "CUSTOM:crimson_arachnid/hurt",
+    "deathSound": "CUSTOM:crimson_arachnid/death",
+    "stepSound": "entity.spider.step",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
     "hasAI": true,
     "aiBase": "Spider",
@@ -134,17 +108,13 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningCondition": {
-      "name": "Spawning"
-    },
+    "spawningCondition": "Spawning",
     "spawningProbability": 80,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,

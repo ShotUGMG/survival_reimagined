@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedSandPile"
-      },
-      {
-        "value": "CUSTOM:RedSandPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:RedSandPile"
-      },
-      {
-        "value": "CUSTOM:RedSandPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:RedSandPile",
+      "CUSTOM:RedSandPile",
+      "",
+      "CUSTOM:RedSandPile",
+      "CUSTOM:RedSandPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.SAND#1"
-    },
+    "recipeReturnStack": "Blocks.SAND#1",
     "name": "red_sand_recipe",
     "namespace": "mod"
   }

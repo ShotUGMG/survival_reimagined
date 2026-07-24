@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "Items.COMPASS"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      },
-      {
-        "value": "CUSTOM:HempPaper"
-      }
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper",
+      "Items.COMPASS",
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper",
+      "CUSTOM:HempPaper"
     ],
-    "recipeReturnStack": {
-      "value": "Items.MAP"
-    },
+    "recipeReturnStack": "Items.MAP",
     "name": "map_recipe",
     "namespace": "mod"
   }

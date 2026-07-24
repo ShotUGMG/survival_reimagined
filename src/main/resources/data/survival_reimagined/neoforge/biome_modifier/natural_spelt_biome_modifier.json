@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "taiga",
+    "birch_forest",
+    "old_growth_birch_forest"
+  ],
+  "features": "survival_reimagined:natural_spelt",
+  "step": "vegetal_decoration"
+}

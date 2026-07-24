@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OakPlank"
-      },
-      {
-        "value": "CUSTOM:OakPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OakPlank"
-      },
-      {
-        "value": "CUSTOM:OakPlank"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:OakPlank",
+      "CUSTOM:OakPlank",
+      "",
+      "CUSTOM:OakPlank",
+      "CUSTOM:OakPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.PLANKS#0"
-    },
+    "recipeReturnStack": "Blocks.PLANKS#0",
     "name": "oak_planks_block",
     "namespace": "mod"
   }

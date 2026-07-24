@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SiltMudPile"
-      },
-      {
-        "value": "CUSTOM:SiltMudPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SiltMudPile"
-      },
-      {
-        "value": "CUSTOM:SiltMudPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:SiltMudPile",
+      "CUSTOM:SiltMudPile",
+      "",
+      "CUSTOM:SiltMudPile",
+      "CUSTOM:SiltMudPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.DIRT#0"
-    },
+    "recipeReturnStack": "Blocks.DIRT#0",
     "name": "silt_coarse_dirt",
     "namespace": "mod"
   }

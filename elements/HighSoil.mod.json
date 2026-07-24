@@ -1,0 +1,10 @@
+{
+  "_fv": 89,
+  "_type": "feature",
+  "definition": {
+    "skipPlacement": false,
+    "generationStep": "LOCAL_MODIFICATIONS",
+    "restrictionBiomes": [],
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_replace_sphere\"><value name=\"targetState\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">Blocks.STONE#0</field></block></value><value name=\"newState\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:HighFertilityDirt</field></block></value><value name=\"radius\"><block type=\"int_provider_uniform\"><field name=\"min\">3</field><field name=\"max\">5</field></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">32</field><next><block type=\"placement_count_on_every_layer\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">2</field></block></value></block></next></block></next></block></xml>"
+  }
+}

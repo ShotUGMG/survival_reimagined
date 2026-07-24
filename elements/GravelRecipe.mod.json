@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:GravelPile"
-      },
-      {
-        "value": "CUSTOM:GravelPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:GravelPile"
-      },
-      {
-        "value": "CUSTOM:GravelPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:GravelPile",
+      "CUSTOM:GravelPile",
+      "",
+      "CUSTOM:GravelPile",
+      "CUSTOM:GravelPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.GRAVEL"
-    },
+    "recipeReturnStack": "Blocks.GRAVEL",
     "name": "gravel_recipe",
     "namespace": "mod"
   }

@@ -21,15 +21,6 @@
         "state": {
           "Name": "survival_reimagined:deepslate_pyrolusite_ore"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "tag_match",
-          "tag": "basalt_ore_replaceables"
-        },
-        "state": {
-          "Name": "survival_reimagined:basalt_pyrolusite_ore"
-        }
       }
     ]
   }

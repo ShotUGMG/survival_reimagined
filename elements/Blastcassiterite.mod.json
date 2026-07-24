@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "TAG:c:metal_rocks/tin"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RoughTin"
-    },
+    "blastingInputStack": "TAG:c:metal_rocks/tin",
+    "blastingReturnStack": "CUSTOM:RoughTin",
     "name": "blastcassiterite",
     "namespace": "mod"
   }

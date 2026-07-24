@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 64,
+    "xz_spread": 12,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "survival_reimagined:raspberry_plant",
+                  "Properties": {
+                    "age": "3"
+                  }
+                },
+                "weight": 8
+              },
+              {
+                "data": {
+                  "Name": "survival_reimagined:raspberry_plant",
+                  "Properties": {
+                    "age": "4"
+                  }
+                },
+                "weight": 5
+              },
+              {
+                "data": {
+                  "Name": "survival_reimagined:raspberry_plant",
+                  "Properties": {
+                    "age": "5"
+                  }
+                },
+                "weight": 2
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt",
+                  "minecraft:grass_block"
+                ],
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

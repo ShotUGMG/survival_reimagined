@@ -1,36 +1,44 @@
 package net.mcreator.survivalreimagined.procedures;
 
-import net.neoforged.neoforge.event.tick.EntityTickEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.bus.api.Event;
-
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.GameType;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.client.multiplayer.PlayerInfo;
+import net.minecraft.client.Minecraft;
 
-import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
+import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
-import javax.annotation.Nullable;
-
-@EventBusSubscriber
 public class BrokenLegPotionOnEffectActiveTickProcedure {
-	@SubscribeEvent
-	public static void onEntityTick(EntityTickEvent.Pre event) {
-		execute(event, event.getEntity());
-	}
-
-	public static void execute(Entity entity) {
-		execute(null, entity);
-	}
-
-	private static void execute(@Nullable Event event, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(SurvivalReimaginedModMobEffects.BROKEN_LEG_POTION)) == true) {
-			entity.getPersistentData().putDouble("Clock", (entity.getPersistentData().getDouble("Clock") + 1));
-			if (entity.getPersistentData().getDouble("Clock") == 200) {
-				entity.getPersistentData().putDouble("Clock", 0);
+		if (getEntityGameType(entity) == GameType.SURVIVAL) {
+			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
+				_livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED)
+						.setBaseValue(((entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity1.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0) / 2));
+			if (entity.isSprinting() == true) {
+				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 2);
 			}
+			SurvivalReimaginedMod.queueServerWork(2, () -> {
+				entity.setSprinting(false);
+			});
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

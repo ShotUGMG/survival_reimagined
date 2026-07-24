@@ -56,16 +56,22 @@
 		#Allow meat to spoil
 		food_spoil = true
 
-	[experimental_features.bleeding]
-		#Allow Crimson Arachnid to Inflict Bleeding
-		bleeding = false
-		#Chance to contract Bleeding Effect. Defualt is 0.1 (10%)
-		bleeding_chance = 0.1
+		[experimental_features.difficulty.weight]
+			#Enable/Disable Weight System
+			weight_system = true
 
-	[experimental_features.difficulty]
-		#Enable/Disable Weight System
-		weight_system = false
-		#Enable/Disable breaking your legs from fall damage
-		broken_legs = false
-		#Chance to break your leg from a fall. Defualt is 0.2 (20%)
-		broken_leg_chance = 0.2
+		[experimental_features.difficulty.bleeding]
+			#Allow Crimson Arachnid to Inflict Bleeding
+			bleeding = true
+			#Chance to contract Bleeding Effect. Defualt is 0.1 (10%)
+			bleeding_chance = 0.1
+
+		[experimental_features.difficulty.leg_breaking]
+			#Enable/Disable breaking your legs from fall damage
+			broken_legs = true
+			#Chance to break your leg from a fall. Defualt is 0.2 (20%)
+			broken_leg_chance = 0.2
+
+	[experimental_features.lore_content]
+		#Allow Ghosts to spawn
+		enables_ghosts = false

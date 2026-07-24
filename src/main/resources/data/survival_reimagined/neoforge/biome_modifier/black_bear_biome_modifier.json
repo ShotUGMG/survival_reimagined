@@ -1,0 +1,22 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "birch_forest",
+    "dark_forest",
+    "forest",
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "snowy_taiga",
+    "taiga",
+    "meadow",
+    "jagged_peaks",
+    "stony_peaks"
+  ],
+  "spawners": {
+    "type": "survival_reimagined:black_bear",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}

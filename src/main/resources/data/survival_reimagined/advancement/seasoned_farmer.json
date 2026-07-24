@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "survival_reimagined:silver_seeds"
+    },
+    "title": {
+      "translate": "advancements.seasoned_farmer.title"
+    },
+    "description": {
+      "translate": "advancements.seasoned_farmer.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "seasoned_farmer_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "survival_reimagined:professional_farmer"
+}

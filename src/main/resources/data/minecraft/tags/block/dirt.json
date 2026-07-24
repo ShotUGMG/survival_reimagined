@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "survival_reimagined:radiated_shale",
-    "survival_reimagined:radiated_moss"
+    "survival_reimagined:radiated_moss",
+    "survival_reimagined:medium_fertility_dirt",
+    "survival_reimagined:medium_fertility_grass",
+    "survival_reimagined:high_fertility_grass",
+    "survival_reimagined:high_fertility_dirt"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "survival_reimagined:block/cursed_stone_slab"
+    },
+    "type=top": {
+      "model": "survival_reimagined:block/cursed_stone_slab_top"
+    },
+    "type=double": {
+      "model": "survival_reimagined:block/cursed_stone_slab_full"
+    }
+  }
+}

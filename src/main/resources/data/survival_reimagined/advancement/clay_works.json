@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "clay_works_0": {
+    "clay_works_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:clay_ball"
-            ],
+            "items": "minecraft:clay_ball",
             "count": {
               "min": 1,
               "max": 64

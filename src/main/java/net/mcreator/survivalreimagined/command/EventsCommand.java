@@ -1,7 +1,5 @@
 package net.mcreator.survivalreimagined.command;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.common.util.FakePlayerFactory;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -20,7 +18,7 @@ import net.mcreator.survivalreimagined.procedures.BloodMoonCommandProcedure;
 public class EventsCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("event").requires(s -> s.hasPermission(2)).then(Commands.literal("reset").executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("event").requires(source -> source.hasPermission(2)).then(Commands.literal("reset").executes(arguments -> {
 			Level world = arguments.getSource().getUnsidedLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();

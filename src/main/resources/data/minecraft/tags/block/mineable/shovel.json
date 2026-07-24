@@ -1,7 +1,12 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:block_of_charcoal",
     "survival_reimagined:nitre_powder",
-    "survival_reimagined:sand_salt_deposit"
+    "survival_reimagined:medium_fertility_dirt",
+    "survival_reimagined:sand_salt_deposit",
+    "survival_reimagined:medium_fertility_grass",
+    "survival_reimagined:high_fertility_grass",
+    "survival_reimagined:high_fertility_dirt"
   ]
 }

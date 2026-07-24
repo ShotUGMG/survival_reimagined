@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "opened=false": {
+      "model": "survival_reimagined:block/tanning_barrel_0"
+    },
+    "opened=true": {
+      "model": "survival_reimagined:block/tanning_barrel"
+    }
+  }
+}

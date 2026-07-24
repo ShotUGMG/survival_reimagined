@@ -10,7 +10,7 @@
 
 	[status_effects."paranoia/_fear"]
 		#Allow the player to feel paranoia/fear if in dark areas
-		paranoiaand_fear = true
+		paranoiaand_fear = false
 		#Minimum Light Level needed for Darkness effects to take effect (Default is 0, Range: 0 - 15)
 		darkness_level = 0.0
 		#Minimum Light Level needed for Darkness effects to stop take effect (Default is 5, Range: 0 - 15)
@@ -61,3 +61,11 @@
 		bleeding = false
 		#Chance to contract Bleeding Effect. Defualt is 0.1 (10%)
 		bleeding_chance = 0.1
+
+	[experimental_features.difficulty]
+		#Enable/Disable Weight System
+		weight_system = false
+		#Enable/Disable breaking your legs from fall damage
+		broken_legs = false
+		#Chance to break your leg from a fall. Defualt is 0.2 (20%)
+		broken_leg_chance = 0.2

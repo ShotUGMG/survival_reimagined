@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -11,9 +11,7 @@
     "enableBoots": true,
     "textureBoots": "steel_boots",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "armorTextureFile": "steel",
     "helmetName": "Steel Helmet",
@@ -56,6 +54,10 @@
     "leggingsItemCustomModelName": "Normal",
     "bootsItemRenderType": 0,
     "bootsItemCustomModelName": "Normal",
+    "helmetTranslucency": false,
+    "bodyTranslucency": false,
+    "leggingsTranslucency": false,
+    "bootsTranslucency": false,
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
@@ -92,13 +94,11 @@
     "enchantability": 10,
     "toughness": 1.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_netherite"
-    },
+    "equipSound": "item.armor.equip_netherite",
     "repairItems": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
-    ]
+      "CUSTOM:SteelIngot"
+    ],
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

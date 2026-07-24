@@ -26,7 +26,7 @@ import net.mcreator.survivalreimagined.block.entity.PalmLeavesBlockEntity;
 
 public class PalmLeavesBlock extends Block implements EntityBlock {
 	public PalmLeavesBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CHERRY_LEAVES).strength(0.2f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.CHERRY_LEAVES).strength(0.2f).noCollission().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

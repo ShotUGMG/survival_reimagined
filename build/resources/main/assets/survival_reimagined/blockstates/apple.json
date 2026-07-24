@@ -1,10 +1,10 @@
 {
   "variants": {
-    "blockstate=0": {
-      "model": "survival_reimagined:block/apple"
+    "age=1": {
+      "model": "survival_reimagined:block/apple_0"
     },
-    "blockstate=1": {
-      "model": "survival_reimagined:block/apple_blockstates_blockstate_0"
+    "age=0": {
+      "model": "survival_reimagined:block/apple"
     }
   }
 }

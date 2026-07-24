@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "CUSTOM:RubyHeart"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Blocks.GOLD_BLOCK"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      }
+      "Items.GOLD_INGOT",
+      "Blocks.GOLD_BLOCK",
+      "Items.GOLD_INGOT",
+      "Blocks.GOLD_BLOCK",
+      "CUSTOM:RubyHeart",
+      "Blocks.GOLD_BLOCK",
+      "Items.GOLD_INGOT",
+      "Blocks.GOLD_BLOCK",
+      "Items.GOLD_INGOT"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:GoldHeart"
-    },
+    "recipeReturnStack": "CUSTOM:GoldHeart",
     "name": "golden_heart_recipe",
     "namespace": "mod"
   }

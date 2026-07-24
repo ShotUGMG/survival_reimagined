@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:AncientDebrisChunk"
-            },
+            "item": "CUSTOM:AncientDebrisChunk",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.ANCIENT_DEBRIS"
-            },
+            "item": "Blocks.ANCIENT_DEBRIS",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

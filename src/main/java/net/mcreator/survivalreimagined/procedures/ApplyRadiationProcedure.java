@@ -7,6 +7,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Slime;
@@ -18,11 +19,13 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMobEffects;
+import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 
 import javax.annotation.Nullable;
 
@@ -41,7 +44,7 @@ public class ApplyRadiationProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ItemStack.EMPTY.getItem()
-				|| (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getDamageValue() == 119) {
+				^ !((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == SurvivalReimaginedModItems.GAS_MASK_HELMET.get())) {
 			if (world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("survival_reimagined:radiated_forest"))) {
 				if (entity instanceof Player) {
 					if (getEntityGameType(entity) == GameType.SURVIVAL || getEntityGameType(entity) == GameType.ADVENTURE) {
@@ -53,17 +56,29 @@ public class ApplyRadiationProcedure {
 					}
 				}
 			}
+		} else if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDouble("FilterPercentage") <= 0) {
+			if (world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("survival_reimagined:radiated_forest"))) {
+				if (entity instanceof Player) {
+					if (getEntityGameType(entity) == GameType.SURVIVAL || getEntityGameType(entity) == GameType.ADVENTURE) {
+						if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(SurvivalReimaginedModMobEffects.RADIATION) ? _livEnt.getEffect(SurvivalReimaginedModMobEffects.RADIATION).getDuration() : 0) == 1
+								^ !(entity instanceof LivingEntity _livEnt25 && _livEnt25.hasEffect(SurvivalReimaginedModMobEffects.RADIATION))) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.RADIATION, 60, (int) 0.1, true, false));
+						}
+					}
+				}
+			}
 		}
 		if (world.getBiome(BlockPos.containing(entity.getX(), entity.getY(), entity.getZ())).is(ResourceLocation.parse("survival_reimagined:radiated_forest"))) {
 			if (entity instanceof Slime || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("minecraft:undead")))) {
-				if (entity instanceof LivingEntity _livEnt21 && _livEnt21.hasEffect(SurvivalReimaginedModMobEffects.RADIATION)) {
+				if (entity instanceof LivingEntity _livEnt33 && _livEnt33.hasEffect(SurvivalReimaginedModMobEffects.RADIATION)) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(SurvivalReimaginedModMobEffects.RADIATION);
 				}
 			} else {
 				if (!(entity instanceof Player)) {
 					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(SurvivalReimaginedModMobEffects.RADIATION) ? _livEnt.getEffect(SurvivalReimaginedModMobEffects.RADIATION).getDuration() : 0) == 1
-							^ !(entity instanceof LivingEntity _livEnt25 && _livEnt25.hasEffect(SurvivalReimaginedModMobEffects.RADIATION))) {
+							^ !(entity instanceof LivingEntity _livEnt37 && _livEnt37.hasEffect(SurvivalReimaginedModMobEffects.RADIATION))) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(SurvivalReimaginedModMobEffects.RADIATION, 60, (int) 0.1, true, false));
 					}

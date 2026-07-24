@@ -262,8 +262,8 @@ public class BronzeToolsProcedure {
 					}
 				}
 			}
-		} else if (((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount() >= 3
-				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() >= 3)
+		} else if (((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount() >= 2
+				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() >= 2)
 				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.HAMMER_HEAD_MOLD.get().asItem()
 						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.HAMMER_HEAD_MOLD.get().asItem())) {
 			if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || !((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_HAMMER_HEAD.get())) {
@@ -298,14 +298,14 @@ public class BronzeToolsProcedure {
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							int _slotid = 0;
 							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-							_stk.shrink(3);
+							_stk.shrink(2);
 							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 						}
 					} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.BRONZE_INGOT.get()) {
 						if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 							int _slotid = 1;
 							ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-							_stk.shrink(3);
+							_stk.shrink(2);
 							_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 						}
 					}

@@ -14,11 +14,6 @@ public class RadiatedLeavesBlock extends LeavesBlock {
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 1;
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 30;
 	}

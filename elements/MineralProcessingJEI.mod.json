@@ -1,0 +1,62 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "mpt_jei.png",
+    "width": 176,
+    "height": 90,
+    "icon": "CUSTOM:MineralProcessingTable",
+    "craftingtables": [
+      "CUSTOM:MineralProcessingTable"
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": false,
+    "enableStringList": false,
+    "disableJeiBorder": false,
+    "title": "Mineral Processing",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 62,
+        "y": 35,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 62,
+        "slotid": 1
+      },
+      {
+        "type": "OUTPUT",
+        "x": 98,
+        "y": 35,
+        "slotid": 0
+      }
+    ],
+    "components": [
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 10,
+          "sprite": "arrow2-sheet.png",
+          "spritesCount": 15,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 206,
+          "y": 140,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

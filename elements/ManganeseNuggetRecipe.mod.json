@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Smelting",
@@ -11,12 +11,8 @@
     "cookingTime": 200,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "smeltingInputStack": {
-      "value": "CUSTOM:ManganeseChunk"
-    },
-    "smeltingReturnStack": {
-      "value": "CUSTOM:ManganeseNugget"
-    },
+    "smeltingInputStack": "CUSTOM:ManganeseChunk",
+    "smeltingReturnStack": "CUSTOM:ManganeseNugget",
     "name": "manganese_nugget_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Uranophane"
-            },
+            "item": "CUSTOM:Uranophane",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:UranophaneNugget"
-            },
+            "item": "CUSTOM:UranophaneNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:UranophaneOre"
-            },
+            "item": "CUSTOM:UranophaneOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

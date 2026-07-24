@@ -10,11 +10,11 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class AppleOakLeavesOnBoneMealSuccessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(BlockPos.containing(x, y - 1, z), (new Object() {
-			public BlockState with(BlockState _bs, String _property, int _newValue) {
-				Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-				return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-			}
-		}.with(SurvivalReimaginedModBlocks.APPLE.get().defaultBlockState(), "blockstate", 1)), 3);
+		world.setBlock(BlockPos.containing(x, y - 1, z), (blockStateWithInt(SurvivalReimaginedModBlocks.APPLE.get().defaultBlockState(), "blockstate", 1)), 3);
+	}
+
+	private static BlockState blockStateWithInt(BlockState blockState, String property, int newValue) {
+		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty(property);
+		return prop instanceof IntegerProperty ip && prop.getPossibleValues().contains(newValue) ? blockState.setValue(ip, newValue) : blockState;
 	}
 }

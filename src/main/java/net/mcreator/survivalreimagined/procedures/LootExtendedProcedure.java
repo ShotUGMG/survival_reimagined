@@ -64,7 +64,7 @@ public class LootExtendedProcedure {
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 3) {
 					if (Math.random() < 0.5) {
-						for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 1, 2); index0++) {
+						for (int index2 = 0; index2 < Mth.nextInt(RandomSource.create(), 1, 2); index2++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(SurvivalReimaginedModItems.FLESH.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -99,7 +99,7 @@ public class LootExtendedProcedure {
 					}
 				} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 3) {
 					if (Math.random() < 0.3) {
-						for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 1, 2); index1++) {
+						for (int index3 = 0; index3 < Mth.nextInt(RandomSource.create(), 1, 2); index3++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(SurvivalReimaginedModItems.BLOOD_MOON_DISC_FRAGMENT.get()));
 								entityToSpawn.setPickUpDelay(10);

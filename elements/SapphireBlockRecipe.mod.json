@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      },
-      {
-        "value": "CUSTOM:Sapphire"
-      }
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire",
+      "CUSTOM:Sapphire"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:SapphireBlock"
-    },
+    "recipeReturnStack": "CUSTOM:SapphireBlock",
     "name": "sapphire_block_recipe",
     "namespace": "mod"
   }

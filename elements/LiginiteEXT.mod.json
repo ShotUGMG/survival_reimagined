@@ -1,0 +1,13 @@
+{
+  "_fv": 89,
+  "_type": "itemextension",
+  "definition": {
+    "item": "CUSTOM:Liginite",
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 800.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

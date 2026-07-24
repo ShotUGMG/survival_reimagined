@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/raw_equine"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:raw_equine_texture": 1
+      },
+      "model": "survival_reimagined:item/raw_equine_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_equine_texture": 2
+      },
+      "model": "survival_reimagined:item/raw_equine_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:raw_equine_texture": 3
+      },
+      "model": "survival_reimagined:item/raw_equine_2"
+    }
+  ]
+}

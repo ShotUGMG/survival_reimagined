@@ -733,5 +733,43 @@
         "stream": false
       }
     ]
+  },
+  "barrel/seal": {
+    "subtitle": "subtitles.barrel/seal",
+    "sounds": [
+      {
+        "name": "survival_reimagined:barrel_close_1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:barrel_close_2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:barrel_close_3",
+        "stream": false
+      }
+    ]
+  },
+  "millstone": {
+    "subtitle": "subtitles.millstone",
+    "sounds": [
+      {
+        "name": "survival_reimagined:millstone_scrape_1",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:millstone_scrape_2",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:millstone_scrape_3",
+        "stream": false
+      },
+      {
+        "name": "survival_reimagined:millstone_scrape_4",
+        "stream": false
+      }
+    ]
   }
 }

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "survival_reimagined:chestnut_horse_field",
+    "survival_reimagined:black_horse_field",
+    "survival_reimagined:dark_brown_horse_field",
+    "survival_reimagined:dark_brown_horse_hide_field",
+    "survival_reimagined:creamy_horse_field",
+    "survival_reimagined:white_horse_hide_field",
+    "survival_reimagined:brown_horse_field",
+    "survival_reimagined:black_horse_hide_field",
+    "survival_reimagined:gray_horse_field",
+    "survival_reimagined:gray_horse_hide_field",
+    "survival_reimagined:creamy_horse_hide_field",
+    "survival_reimagined:chestnut_horse_hide_field",
+    "survival_reimagined:brown_horse_hide_field",
+    "survival_reimagined:white_horse_field"
+  ]
+}

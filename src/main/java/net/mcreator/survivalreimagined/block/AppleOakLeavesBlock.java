@@ -32,11 +32,6 @@ public class AppleOakLeavesBlock extends LeavesBlock implements BonemealableBloc
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 1;
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 30;
 	}
@@ -49,14 +44,14 @@ public class AppleOakLeavesBlock extends LeavesBlock implements BonemealableBloc
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 600);
+		world.scheduleTick(pos, this, 400);
 	}
 
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		AppleOakLeavesOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		world.scheduleTick(pos, this, 600);
+		world.scheduleTick(pos, this, 400);
 	}
 
 	@Override

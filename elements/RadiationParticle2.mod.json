@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "particle",
   "definition": {
     "texture": "radiationflare2",
@@ -10,6 +10,7 @@
     "scale": {
       "fixedValue": 1.0
     },
+    "fixedScale": false,
     "speedFactor": 0.0,
     "gravity": 0.0,
     "maxAge": 6,

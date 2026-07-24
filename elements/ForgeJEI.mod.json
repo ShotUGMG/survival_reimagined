@@ -1,0 +1,83 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "forge_jei.png",
+    "width": 176,
+    "height": 87,
+    "icon": "CUSTOM:Forge",
+    "craftingtables": [
+      "CUSTOM:Forge"
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": true,
+    "enableStringList": false,
+    "disableJeiBorder": false,
+    "title": "Forge",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 71,
+        "y": 36,
+        "slotid": 0
+      },
+      {
+        "type": "INPUT",
+        "x": 89,
+        "y": 36,
+        "slotid": 1
+      },
+      {
+        "type": "INPUT",
+        "x": 26,
+        "y": 62,
+        "slotid": 2
+      },
+      {
+        "type": "OUTPUT",
+        "x": 134,
+        "y": 36,
+        "slotid": 0
+      }
+    ],
+    "components": [
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 5,
+          "sprite": "fuel_meter-sheet-export.png",
+          "spritesCount": 15,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 138,
+          "y": 157,
+          "locked": false
+        }
+      },
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 10,
+          "sprite": "arrow2-sheet.png",
+          "spritesCount": 15,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 238,
+          "y": 143,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

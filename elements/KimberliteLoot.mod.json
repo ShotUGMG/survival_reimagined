@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:KimberliteRock"
-            },
+            "item": "CUSTOM:KimberliteRock",
             "weight": 1,
             "minCount": 2,
             "maxCount": 4,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Kimberlite"
-            },
+            "item": "CUSTOM:Kimberlite",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

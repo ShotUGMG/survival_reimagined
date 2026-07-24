@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/campfire_off",
+  "textures": {
+    "all": "minecraft:block/campfire_log",
+    "particle": "minecraft:block/campfire_log",
+    "log": "minecraft:block/campfire_log"
+  },
+  "render_type": "cutout"
+}

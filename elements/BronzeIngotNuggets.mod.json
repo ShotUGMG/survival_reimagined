@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      },
-      {
-        "value": "CUSTOM:BronzeNugget"
-      }
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget",
+      "CUSTOM:BronzeNugget"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RoughBronze"
-    },
+    "recipeReturnStack": "CUSTOM:RoughBronze",
     "name": "bronze_ingot_nuggets",
     "namespace": "mod"
   }

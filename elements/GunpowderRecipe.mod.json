@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": true,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:CharcoalPowder"
-      },
-      {
-        "value": "CUSTOM:Saltpeter"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SulfurPowder"
-      },
-      {
-        "value": "CUSTOM:MortarPestal"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:CharcoalPowder",
+      "CUSTOM:Saltpeter",
+      "",
+      "CUSTOM:SulfurPowder",
+      "CUSTOM:MortarPestal"
     ],
-    "recipeReturnStack": {
-      "value": "Items.GUNPOWDER"
-    },
+    "recipeReturnStack": "Items.GUNPOWDER",
     "name": "gunpowder_recipe",
     "namespace": "mod"
   }

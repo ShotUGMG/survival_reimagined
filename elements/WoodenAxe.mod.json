@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": "TAG:c:planks/single"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "TAG:c:planks/single",
+      "TAG:c:planks/single",
+      "",
+      "CUSTOM:PlantFiber",
+      "Items.STICK",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "Items.WOODEN_AXE"
-    },
+    "recipeReturnStack": "Items.WOODEN_AXE",
     "name": "wooden_axe",
     "namespace": "minecraft"
   }

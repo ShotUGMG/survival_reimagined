@@ -1,0 +1,17 @@
+{
+  "type": "survival_reimagined:millstone_jei",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "integers": [
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:bonemeal_sr",
+      "count": 3
+    }
+  ]
+}

@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "rmiadv_0": {
+    "rmiadv_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:rune_magic_infuser"
-            ],
+            "items": "survival_reimagined:rune_magic_infuser",
             "count": {
               "min": 1,
               "max": 64

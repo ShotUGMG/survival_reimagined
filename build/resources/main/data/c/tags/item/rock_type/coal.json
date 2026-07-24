@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+  	"survival_reimagined:small_coal_chunk",
+  	"survival_reimagined:small_anthracite",
+  	"survival_reimagined:small_liginite",
+    "survival_reimagined:anthracite",
+    "survival_reimagined:liginite",
+    "minecraft:coal"
+  ]
+}

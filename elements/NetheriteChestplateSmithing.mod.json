@@ -1,0 +1,21 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": "Items.DIAMOND_CHESTPLATE",
+    "smithingInputAdditionStack": "CUSTOM:NetheritePlate",
+    "smithingInputTemplateStack": "Items.NETHERITE_UPGRADE",
+    "smithingReturnStack": "Items.NETHERITE_CHESTPLATE",
+    "name": "netherite_chestplate_smithing",
+    "namespace": "mod"
+  }
+}

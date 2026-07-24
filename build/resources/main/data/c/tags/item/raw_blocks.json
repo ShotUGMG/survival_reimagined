@@ -1,14 +1,21 @@
 {
   "replace": false,
   "values": [
+    "minecraft:diorite",
     "survival_reimagined:raw_azurite_block",
     "survival_reimagined:calaverite_block",
+    {
+      "id": "create:limestone",
+      "required": false
+    },
+    "minecraft:bone_block",
     "survival_reimagined:raw_cassiterite_block",
     "survival_reimagined:raw_silver_block",
     "survival_reimagined:block_of_raw_manganese",
     "survival_reimagined:block_of_raw_redstone",
     "minecraft:raw_gold_block",
     "minecraft:raw_copper_block",
+    "minecraft:calcite",
     "survival_reimagined:magnetite_block",
     "survival_reimagined:hematite_block",
     "minecraft:raw_iron_block",

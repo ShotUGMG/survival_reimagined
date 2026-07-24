@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 2,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TAG:c:tools/knife",
+      "TAG:c:animal/hide",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:Hide",
+    "name": "prepped_hide",
+    "namespace": "mod"
+  }
+}

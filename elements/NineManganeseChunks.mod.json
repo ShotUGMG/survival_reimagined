@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      },
-      {
-        "value": "CUSTOM:ManganeseChunk"
-      }
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk",
+      "CUSTOM:ManganeseChunk"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:RawManganese"
-    },
+    "recipeReturnStack": "CUSTOM:RawManganese",
     "name": "nine_manganese_chunks",
     "namespace": "mod"
   }

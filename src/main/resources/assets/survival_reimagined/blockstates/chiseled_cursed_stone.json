@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "state=1": {
+      "model": "survival_reimagined:block/chiseled_cursed_stone_0"
+    },
+    "state=2": {
+      "model": "survival_reimagined:block/chiseled_cursed_stone_1"
+    },
+    "state=3": {
+      "model": "survival_reimagined:block/chiseled_cursed_stone_2"
+    },
+    "state=0": {
+      "model": "survival_reimagined:block/chiseled_cursed_stone"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:leggings_mold"
+    },
+    {
+      "item": "survival_reimagined:steel"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    7,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:steel_leggings",
+      "count": 1
+    }
+  ]
+}

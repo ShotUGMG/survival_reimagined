@@ -1,101 +1,129 @@
 {
-  "minecraft:recipes/food/cake": {
-    "criteria": {
-      "has_egg": "2026-03-28 18:48:16 -0700"
-    },
-    "done": true
-  },
-  "create:root": {
-    "criteria": {
-      "0": "2026-03-28 18:48:16 -0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2026-03-28 18:40:48 -0700"
+      "unlock_right_away": "2026-04-04 21:48:24 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/cherry_boat": {
+  "survival_reimagined:volcanic_layer": {
     "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/bamboo_raft": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/spruce_boat": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/root": {
-    "criteria": {
-      "consumed_item": "2026-03-28 19:05:50 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/mangrove_boat": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
+      "volcanic_layer_0": "2026-04-04 21:48:24 -0700"
     },
     "done": true
   },
   "survival_reimagined:survival_reimagined": {
     "criteria": {
-      "survival_reimagined_0": "2026-03-28 18:40:48 -0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
+      "survival_reimagined_0": "2026-04-04 21:48:24 -0700"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:savanna_plateau": "2026-03-28 19:01:39 -0700",
-      "minecraft:beach": "2026-03-28 18:48:46 -0700",
-      "minecraft:forest": "2026-03-28 18:41:43 -0700",
-      "minecraft:sparse_jungle": "2026-03-28 19:05:31 -0700",
-      "minecraft:jungle": "2026-03-28 19:06:13 -0700",
-      "minecraft:river": "2026-03-28 18:42:56 -0700",
-      "minecraft:stony_shore": "2026-03-28 19:13:55 -0700",
-      "minecraft:savanna": "2026-03-28 18:40:52 -0700",
-      "minecraft:plains": "2026-03-28 18:42:57 -0700"
+      "minecraft:plains": "2026-04-04 21:48:25 -0700"
     },
     "done": false
   },
-  "minecraft:recipes/transportation/jungle_boat": {
+  "minecraft:recipes/decorations/chest": {
     "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
+      "has_lots_of_items": "2026-04-04 22:21:28 -0700"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/dark_oak_boat": {
+  "minecraft:recipes/building_blocks/stone_bricks": {
     "criteria": {
-      "in_water": "2026-03-28 18:42:48 -0700"
+      "has_stone": "2026-04-04 22:27:32 -0700"
     },
     "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2026-04-04 22:27:32 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:kimberlite_layer": {
+    "criteria": {
+      "kimberlite_layer_0": "2026-04-04 22:28:03 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:wood_set": {
+    "criteria": {
+      "wood_set_2": "2026-04-05 02:24:33 -0700"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

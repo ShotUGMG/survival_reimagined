@@ -11,7 +11,7 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
@@ -21,7 +21,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.Holder;
@@ -30,7 +29,6 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.Util;
 
-import net.mcreator.survivalreimagined.procedures.GasMaskSpecialInformationProcedure;
 import net.mcreator.survivalreimagined.procedures.GasMaskHelmetTickEventProcedure;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModItems;
 import net.mcreator.survivalreimagined.client.model.ModelGas_Mask_Converted;
@@ -55,7 +53,8 @@ public abstract class GasMaskItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 2);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_leather")), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("survival_reimagined:gasmask"))), 0f, 0f);
+			}), 9, DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_leather")), () -> Ingredient.of(new ItemStack(Items.LEATHER)),
+					List.of(new ArmorMaterial.Layer(ResourceLocation.parse("survival_reimagined:gasmask"))), 0f, 0f);
 			registerHelper.register(ResourceLocation.parse("survival_reimagined:gas_mask"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
@@ -93,22 +92,11 @@ public abstract class GasMaskItem extends ArmorItem {
 			super(ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(11)));
 		}
 
-		@Override
-		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
-			return ResourceLocation.parse("survival_reimagined:textures/entities/gasmask_layer_1.png");
-		}
+		private final ResourceLocation armorTexture = ResourceLocation.parse("survival_reimagined:textures/entities/gasmask_layer_1.png");
 
 		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-			super.appendHoverText(itemstack, context, list, flag);
-			Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-			String hoverText = GasMaskSpecialInformationProcedure.execute(entity.level(), itemstack);
-			if (hoverText != null) {
-				for (String line : hoverText.split("\n")) {
-					list.add(Component.literal(line));
-				}
-			}
+		public ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel) {
+			return armorTexture;
 		}
 
 		@Override

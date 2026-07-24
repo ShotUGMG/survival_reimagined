@@ -15,14 +15,12 @@
     "hidden": true
   },
   "criteria": {
-    "aaf_0": {
+    "aaf_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:aaf_scripture"
-            ],
+            "items": "survival_reimagined:aaf_scripture",
             "count": {
               "min": 1,
               "max": 64

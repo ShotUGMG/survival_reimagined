@@ -42,16 +42,11 @@
               "formula": "minecraft:ore_drops"
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
+        },
         {
           "type": "minecraft:item",
-          "name": "minecraft:flint",
-          "weight": 1,
+          "name": "survival_reimagined:flintblock",
+          "weight": 3,
           "conditions": [
             {
               "condition": "minecraft:inverted",

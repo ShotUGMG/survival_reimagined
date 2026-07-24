@@ -25,7 +25,7 @@ public class FruitTreeClockProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world) {
 		SurvivalReimaginedModVariables.WorldVariables.get(world).FruitTree = SurvivalReimaginedModVariables.WorldVariables.get(world).FruitTree + 1;
 		SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
-		if (SurvivalReimaginedModVariables.WorldVariables.get(world).FruitTree == 300) {
+		if (SurvivalReimaginedModVariables.WorldVariables.get(world).FruitTree >= 300) {
 			SurvivalReimaginedModVariables.WorldVariables.get(world).FruitTree = 0;
 			SurvivalReimaginedModVariables.WorldVariables.get(world).markSyncDirty();
 		}

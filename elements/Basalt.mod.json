@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BasaltRock"
-      },
-      {
-        "value": "CUSTOM:BasaltRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:BasaltRock"
-      },
-      {
-        "value": "CUSTOM:BasaltRock"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:BasaltRock",
+      "CUSTOM:BasaltRock",
+      "",
+      "CUSTOM:BasaltRock",
+      "CUSTOM:BasaltRock"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.SMOOTH_BASALT"
-    },
+    "recipeReturnStack": "Blocks.SMOOTH_BASALT",
     "name": "basalt",
     "namespace": "mod"
   }

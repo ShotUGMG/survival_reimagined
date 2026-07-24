@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "millstone_jei",
+    "ingredients": [
+      "CUSTOM:Rye"
+    ],
+    "integers": [
+      3
+    ],
+    "strings": [],
+    "recipetype": "MillstoneJEI",
+    "results": [
+      "CUSTOM:RyeBread"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

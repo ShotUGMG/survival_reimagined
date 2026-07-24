@@ -1,13 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
     "generationStep": "LOCAL_MODIFICATIONS",
     "restrictionBiomes": [
-      {
-        "value": "CUSTOM:RadiantForest"
-      }
+      "CUSTOM:RadiantForest"
     ],
     "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_forest_rock\"><comment h=\"70\" pinned=\"false\" w=\"313\">This block represent a forest rock, like the ones found in Old Growth Taigas. This feature should be added during the LOCAL_MODIFICATIONS step</comment><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"/><field name=\"block\">CUSTOM:RadiatedLeaves</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the block that makes the forest rock.</comment></block></value></block></value><next><block type=\"placement_count_on_every_layer\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">8</field></block></value><next><block type=\"placement_block_predicate_filter\"><value name=\"condition\"><block type=\"block_predicate_all_of\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"2\"/><value name=\"condition0\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">-1</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"3\"/><field name=\"block0\">Blocks.DEEPSLATE</field><field name=\"block1\">CUSTOM:Shale</field><field name=\"block2\">CUSTOM:RadiatedMoss</field></block></value></block></value><value name=\"condition1\"><block type=\"block_predicate_is_air\"/></value></block></value><next><block type=\"placement_biome_filter\"><comment h=\"80\" pinned=\"false\" w=\"160\">We add a biome filter, so that the patches don't generate outside of the current biome</comment></block></next></block></next></block></next></block></xml>"
   }

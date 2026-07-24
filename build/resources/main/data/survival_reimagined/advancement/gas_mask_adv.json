@@ -15,14 +15,12 @@
     "hidden": false
   },
   "criteria": {
-    "gas_mask_adv_0": {
+    "gas_mask_adv_1": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [
-              "survival_reimagined:gas_mask_helmet"
-            ],
+            "items": "survival_reimagined:gas_mask_helmet",
             "count": {
               "min": 1,
               "max": 64

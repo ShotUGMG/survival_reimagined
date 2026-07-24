@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PeatPile"
-      },
-      {
-        "value": "CUSTOM:PeatPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PeatPile"
-      },
-      {
-        "value": "CUSTOM:PeatPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:PeatPile",
+      "CUSTOM:PeatPile",
+      "",
+      "CUSTOM:PeatPile",
+      "CUSTOM:PeatPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.DIRT#0"
-    },
+    "recipeReturnStack": "Blocks.DIRT#0",
     "name": "peat_coarse_dirt",
     "namespace": "mod"
   }

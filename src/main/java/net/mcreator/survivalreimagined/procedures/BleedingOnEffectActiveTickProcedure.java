@@ -13,6 +13,6 @@ public class BleedingOnEffectActiveTickProcedure {
 		if (entity == null)
 			return;
 		entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("survival_reimagined:bleeding_dmg")))), 1);
-		entity.setDeltaMovement(new Vec3(0, 0, 0));
+		entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 0, (entity.getDeltaMovement().z())));
 	}
 }

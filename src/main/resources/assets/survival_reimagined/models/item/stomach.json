@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "survival_reimagined:item/stomach"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:stomach_texture": 1
+      },
+      "model": "survival_reimagined:item/stomach_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:stomach_texture": 2
+      },
+      "model": "survival_reimagined:item/stomach_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:stomach_texture": 3
+      },
+      "model": "survival_reimagined:item/stomach_2"
+    }
+  ]
 }

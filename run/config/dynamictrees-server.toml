@@ -1,0 +1,86 @@
+[seeds]
+	# Default: 1.0
+	# Range: 0.0 ~ 64.0
+	leavesSeedDropRate = 1.0
+	# Default: 0.15
+	# Range: 0.0 ~ 1.0
+	minSeasonalLeavesSeedDropRate = 0.15
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	voluntarySeedDropRate = 0.01
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	minSeasonalVoluntarySeedDropRate = 0.0
+	# Default: 0.16666666666666666
+	# Range: 0.0 ~ 1.0
+	seedPlantRate = 0.16666666666666666
+	# Default: 1200
+	# Range: 0 ~ 6000
+	seedTimeToLive = 1200
+	seedOnlyForest = true
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	seedMinForestness = 0.0
+	climateAffectsFruitsAndPods = true
+
+[trees]
+	# Default: 0.5
+	# Range: 0.0 ~ 16.0
+	treeGrowthMultiplier = 0.5
+	# Default: 1.0
+	# Range: 0.0 ~ 128.0
+	treeHarvestMultiplier = 1.0
+	# Default: 20.0
+	# Range: 1.0 ~ 200.0
+	maxTreeHardness = 20.0
+	# Default: 1.0
+	# Range: 0.0078125 ~ 32.0
+	treeHardnessMultiplier = 1.0
+	dropSticks = true
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	scaleBiomeGrowthRate = 0.5
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	diseaseChance = 0.0
+	# Default: 7
+	# Range: 0 ~ 24
+	maxBranchRotRadius = 7
+	# Default: 40.0
+	# Range: 0.0 ~ 128.0
+	rootyBlockHardnessMultiplier = 40.0
+	#Allowed Values: ROOTED, SUNK, DISABLED
+	swampOaksInWater = "ROOTED"
+	# Default: 1
+	# Range: 1 ~ 512
+	boneMealGrowthPulses = 1
+
+[interaction]
+	isLeavesPassable = false
+	vanillaLeavesCollision = false
+	enableBranchClimbing = true
+	enableCanopyCrash = true
+	#Allowed Values: VANILLA, THICKNESS, VOLUME
+	axeDamageMode = "THICKNESS"
+	enableFallingTrees = true
+	enableFallingTreeDamage = true
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	fallingTreeDamageMultiplier = 1.0
+	dirtBucketPlacesDirt = true
+	sloppyBreakDrops = false
+	# Default: 6
+	# Range: 0 ~ 24
+	minRadiusForStrip = 6
+	enableStripRadiusReduction = true
+	canBoneMealFruit = false
+	canBoneMealPods = true
+	dynamicSaplingDrops = true
+
+[world]
+	generatePodzol = true
+	worldGen = true
+	dimensionsBlacklist = []
+
+[debug]
+	debug = false

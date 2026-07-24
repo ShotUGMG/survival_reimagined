@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -21,6 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 201,
           "y": 43,
           "locked": false
@@ -101,9 +102,7 @@
         "data": {
           "image": "fuel_meter_0.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick14FuelTimer"
-          },
+          "displayCondition": "DisplayTick14FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -114,9 +113,7 @@
         "data": {
           "image": "fuel_meter_1.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick13FuelTimer"
-          },
+          "displayCondition": "DisplayTick13FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -127,9 +124,7 @@
         "data": {
           "image": "fuel_meter_2.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick12FuelTimer"
-          },
+          "displayCondition": "DisplayTick12FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -140,9 +135,7 @@
         "data": {
           "image": "fuel_meter_3.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick11FuelTimer"
-          },
+          "displayCondition": "DisplayTick11FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -153,9 +146,7 @@
         "data": {
           "image": "fuel_meter_4.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick10FuelTimer"
-          },
+          "displayCondition": "DisplayTick10FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -166,9 +157,7 @@
         "data": {
           "image": "fuel_meter_5.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick9FuelTimer"
-          },
+          "displayCondition": "DisplayTick9FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -179,9 +168,7 @@
         "data": {
           "image": "fuel_meter_6.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick8FuelTimer"
-          },
+          "displayCondition": "DisplayTick8FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -192,9 +179,7 @@
         "data": {
           "image": "fuel_meter_7.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick7FuelTimer"
-          },
+          "displayCondition": "DisplayTick7FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -205,9 +190,7 @@
         "data": {
           "image": "fuel_meter_8.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick6FuelTimer"
-          },
+          "displayCondition": "DisplayTick6FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -218,9 +201,7 @@
         "data": {
           "image": "fuel_meter_9.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick5FuelTimer"
-          },
+          "displayCondition": "DisplayTick5FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -231,9 +212,7 @@
         "data": {
           "image": "fuel_meter_10.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick4FuelTimer"
-          },
+          "displayCondition": "DisplayTick4FuelTimer",
           "x": 138,
           "y": 87,
           "locked": false
@@ -244,9 +223,7 @@
         "data": {
           "image": "fuel_meter_11.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick3FuelMeter"
-          },
+          "displayCondition": "DisplayTick3FuelMeter",
           "x": 138,
           "y": 87,
           "locked": false
@@ -257,9 +234,7 @@
         "data": {
           "image": "fuel_meter_12.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick2FuelMeter"
-          },
+          "displayCondition": "DisplayTick2FuelMeter",
           "x": 138,
           "y": 87,
           "locked": false
@@ -270,9 +245,7 @@
         "data": {
           "image": "fuel_meter_13.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick1FuelMeter"
-          },
+          "displayCondition": "DisplayTick1FuelMeter",
           "x": 138,
           "y": 87,
           "locked": false
@@ -283,9 +256,7 @@
         "data": {
           "image": "fuel_meter_14.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick0FuelMeter"
-          },
+          "displayCondition": "DisplayTick0FuelMeter",
           "x": 138,
           "y": 87,
           "locked": false
@@ -296,9 +267,7 @@
         "data": {
           "image": "arrow.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick0BurnTime"
-          },
+          "displayCondition": "DisplayTick0BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -309,9 +278,7 @@
         "data": {
           "image": "arrow2.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick1BurnTime"
-          },
+          "displayCondition": "DisplayTick1BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -322,9 +289,7 @@
         "data": {
           "image": "arrow3.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick2BurnTime"
-          },
+          "displayCondition": "DisplayTick2BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -335,9 +300,7 @@
         "data": {
           "image": "arrow4.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick3BurnTime"
-          },
+          "displayCondition": "DisplayTick3BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -348,9 +311,7 @@
         "data": {
           "image": "arrow5.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick4BurnTime"
-          },
+          "displayCondition": "DisplayTick4BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -361,9 +322,7 @@
         "data": {
           "image": "arrow6.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick5BurnTime"
-          },
+          "displayCondition": "DisplayTick5BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -374,9 +333,7 @@
         "data": {
           "image": "arrow7.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick6BurnTime"
-          },
+          "displayCondition": "DisplayTick6BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -387,9 +344,7 @@
         "data": {
           "image": "arrow8.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick7BurnTime"
-          },
+          "displayCondition": "DisplayTick7BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -400,9 +355,7 @@
         "data": {
           "image": "arrow9.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick8BurnTime"
-          },
+          "displayCondition": "DisplayTick8BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -413,9 +366,7 @@
         "data": {
           "image": "arrow10.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick9BurnTime"
-          },
+          "displayCondition": "DisplayTick9BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -426,9 +377,7 @@
         "data": {
           "image": "arrow11.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick10BurnTime"
-          },
+          "displayCondition": "DisplayTick10BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -439,9 +388,7 @@
         "data": {
           "image": "arrow12.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick11BurnTime"
-          },
+          "displayCondition": "DisplayTick11BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -452,9 +399,7 @@
         "data": {
           "image": "arrow13.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick12BurnTime"
-          },
+          "displayCondition": "DisplayTick12BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -465,9 +410,7 @@
         "data": {
           "image": "arrow14.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick13BurnTime"
-          },
+          "displayCondition": "DisplayTick13BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
@@ -478,21 +421,15 @@
         "data": {
           "image": "arrow15.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplayTick14BurnTime"
-          },
+          "displayCondition": "DisplayTick14BurnTime",
           "x": 238,
           "y": 72,
           "locked": false
         }
       }
     ],
-    "onOpen": {
-      "name": "ForgeGUIThisGUIIsOpened"
-    },
-    "onClosed": {
-      "name": "ForgeGUIThisGUIIsClosed"
-    },
+    "onOpen": "ForgeGUIThisGUIIsOpened",
+    "onClosed": "ForgeGUIThisGUIIsClosed",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

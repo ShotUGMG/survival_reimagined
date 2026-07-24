@@ -1,0 +1,56 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipetype",
+  "definition": {
+    "textureSelector": "millstone_gui_jei.png",
+    "width": 176,
+    "height": 90,
+    "icon": "CUSTOM:Millstone",
+    "craftingtables": [
+      "CUSTOM:Millstone"
+    ],
+    "enableCraftingtable": true,
+    "enableIntList": true,
+    "enableStringList": false,
+    "disableJeiBorder": false,
+    "title": "Millstone JEI",
+    "slotList": [
+      {
+        "type": "INPUT",
+        "x": 80,
+        "y": 21,
+        "slotid": 0
+      },
+      {
+        "type": "OUTPUT",
+        "x": 80,
+        "y": 66,
+        "slotid": 0
+      }
+    ],
+    "components": [
+      {
+        "type": "jei_sprite",
+        "data": {
+          "updateInterval": 10,
+          "sprite": "millstoe_arrow.png",
+          "spritesCount": 8,
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": ""
+          },
+          "x": 205,
+          "y": 146,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

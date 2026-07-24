@@ -1,17 +1,11 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "biome",
   "definition": {
     "name": "Radiated Forest",
-    "groundBlock": {
-      "value": "CUSTOM:RadiatedGrass"
-    },
-    "undergroundBlock": {
-      "value": "CUSTOM:Shale"
-    },
-    "underwaterBlock": {
-      "value": "CUSTOM:Shale"
-    },
+    "groundBlock": "CUSTOM:RadiatedGrass",
+    "undergroundBlock": "CUSTOM:Shale",
+    "underwaterBlock": "CUSTOM:Shale",
     "airColor": {
       "value": -13945298,
       "falpha": 0.0
@@ -36,23 +30,13 @@
       "value": -14137278,
       "falpha": 0.0
     },
-    "ambientSound": {
-      "value": "CUSTOM:ambient/radiated_forest"
-    },
-    "additionsSound": {
-      "value": ""
-    },
-    "music": {
-      "value": "CUSTOM:music/radiant_abyss"
-    },
-    "moodSound": {
-      "value": "ambient.cave"
-    },
+    "ambientSound": "CUSTOM:ambient/radiated_forest",
+    "additionsSound": "",
+    "music": "CUSTOM:music/radiant_abyss",
+    "moodSound": "ambient.cave",
     "moodSoundDelay": 6000,
     "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "CUSTOM:Radiated"
-    },
+    "particleToSpawn": "CUSTOM:Radiated",
     "particlesProbability": 0.19999999999999998,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
@@ -61,7 +45,7 @@
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": -0.3,
-      "max": 0.0
+      "max": 0.3
     },
     "genHumidity": {
       "min": -0.8,
@@ -79,22 +63,18 @@
       "min": 0.0,
       "max": 1.0
     },
+    "genDepth": {
+      "min": 0.75,
+      "max": 1.5
+    },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,
-    "treeStem": {
-      "value": ""
-    },
-    "treeBranch": {
-      "value": ""
-    },
-    "treeVines": {
-      "value": ""
-    },
-    "treeFruits": {
-      "value": ""
-    },
+    "treeStem": "",
+    "treeBranch": "",
+    "treeVines": "",
+    "treeFruits": "",
     "defaultFeatures": [
       "Caves",
       "Ores",
@@ -122,9 +102,7 @@
     "spawnRuinedPortal": "STANDARD",
     "spawnEntries": [
       {
-        "entity": {
-          "value": "EntitySlime"
-        },
+        "entity": "EntitySlime",
         "minGroup": 1,
         "maxGroup": 4,
         "weight": 5,

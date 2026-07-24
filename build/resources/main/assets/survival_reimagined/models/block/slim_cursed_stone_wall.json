@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/cursed_stone_wall",
+  "textures": {
+    "all": "survival_reimagined:block/polished_chiseled_cursed_stone",
+    "particle": "survival_reimagined:block/polished_chiseled_cursed_stone",
+    "0": "survival_reimagined:block/polished_chiseled_cursed_stone"
+  },
+  "render_type": "solid"
+}

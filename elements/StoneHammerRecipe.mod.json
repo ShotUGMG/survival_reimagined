@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": "CUSTOM:PlantFiber"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.STICK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
+      "CUSTOM:StoneRock",
+      "CUSTOM:PlantFiber",
+      "CUSTOM:StoneRock",
+      "",
+      "Items.STICK",
+      "",
+      "",
+      "",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:StoneHammer"
-    },
+    "recipeReturnStack": "CUSTOM:StoneHammer",
     "name": "stone_hammer_recipe",
     "namespace": "mod"
   }

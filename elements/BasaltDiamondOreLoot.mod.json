@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RoughDiamond"
-            },
+            "item": "CUSTOM:RoughDiamond",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:DeepslateRock"
-            },
+            "item": "CUSTOM:DeepslateRock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BasaltDiamondOre"
-            },
+            "item": "CUSTOM:BasaltDiamondOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

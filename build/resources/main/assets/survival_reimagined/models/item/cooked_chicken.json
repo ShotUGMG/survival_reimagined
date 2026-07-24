@@ -1,0 +1,26 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/cooked_chicken"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:cooked_chicken_texture": 1
+      },
+      "model": "survival_reimagined:item/cooked_chicken_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:cooked_chicken_texture": 2
+      },
+      "model": "survival_reimagined:item/cooked_chicken_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:cooked_chicken_texture": 3
+      },
+      "model": "survival_reimagined:item/cooked_chicken_2"
+    }
+  ]
+}

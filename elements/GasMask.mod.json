@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,13 +10,9 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "onHelmetTick": {
-      "name": "GasMaskHelmetTickEvent"
-    },
+    "onHelmetTick": "GasMaskHelmetTickEvent",
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "armorTextureFile": "gasmask",
     "helmetName": "Gas Mask",
@@ -24,8 +20,7 @@
     "leggingsName": "Gas Mask Leggings",
     "bootsName": "Gas Mask Boots",
     "helmetSpecialInformation": {
-      "fixedValue": [],
-      "name": "GasMaskSpecialInformation"
+      "fixedValue": []
     },
     "bodySpecialInformation": {
       "fixedValue": []
@@ -60,6 +55,10 @@
     "leggingsItemCustomModelName": "Normal",
     "bootsItemRenderType": 0,
     "bootsItemCustomModelName": "Normal",
+    "helmetTranslucency": false,
+    "bodyTranslucency": false,
+    "leggingsTranslucency": false,
+    "bootsTranslucency": false,
     "helmetImmuneToFire": false,
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
@@ -96,9 +95,11 @@
     "enchantability": 9,
     "toughness": 0.0,
     "knockbackResistance": 0.0,
-    "equipSound": {
-      "value": "item.armor.equip_leather"
-    },
-    "repairItems": []
+    "equipSound": "item.armor.equip_leather",
+    "repairItems": [
+      "Items.LEATHER"
+    ],
+    "rarity": "COMMON",
+    "attributeModifiers": []
   }
 }

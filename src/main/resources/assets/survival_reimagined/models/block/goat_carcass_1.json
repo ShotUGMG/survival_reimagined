@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/legless_goat",
+  "textures": {
+    "all": "survival_reimagined:block/amputated_goat",
+    "particle": "survival_reimagined:block/goat",
+    "missing": "survival_reimagined:block/amputated_goat"
+  },
+  "render_type": "cutout"
+}

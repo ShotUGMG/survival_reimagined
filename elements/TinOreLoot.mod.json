@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawTin"
-            },
+            "item": "CUSTOM:RawTin",
             "weight": 1,
             "minCount": 0,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 30,
             "minCount": 2,
             "maxCount": 3,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TinOre"
-            },
+            "item": "CUSTOM:TinOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:TinChunk"
-            },
+            "item": "CUSTOM:TinChunk",
             "weight": 30,
             "minCount": 1,
             "maxCount": 2,

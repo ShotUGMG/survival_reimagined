@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "plains",
+  "features": "survival_reimagined:mandarin_trees",
+  "step": "vegetal_decoration"
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:RawTitanium"
-    },
-    "blastingReturnStack": {
-      "value": "CUSTOM:RoughTitanium"
-    },
+    "blastingInputStack": "CUSTOM:RawTitanium",
+    "blastingReturnStack": "CUSTOM:RoughTitanium",
     "name": "blasting_titanium",
     "namespace": "mod"
   }

@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:shovel_head_mold"
+    },
+    {
+      "item": "survival_reimagined:netherite"
+    },
+    {
+      "tag": "c:forge/fuels"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimaged:netherite_shovel_head",
+      "count": 1
+    }
+  ]
+}

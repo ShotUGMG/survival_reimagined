@@ -62,7 +62,7 @@ public class AmberInfusedToolProcedure {
 				if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:logs")))) {
 						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-						for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 2, 4); index0++) {
+						for (int index29 = 0; index29 < Mth.nextInt(RandomSource.create(), 2, 4); index29++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(Items.CHARCOAL));
 								entityToSpawn.setPickUpDelay(10);
@@ -75,7 +75,7 @@ public class AmberInfusedToolProcedure {
 				if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:sands")))) {
 						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-						for (int index1 = 0; index1 < Mth.nextInt(RandomSource.create(), 2, 4); index1++) {
+						for (int index30 = 0; index30 < Mth.nextInt(RandomSource.create(), 2, 4); index30++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.GLASS_SHARD.get()));
 								entityToSpawn.setPickUpDelay(10);

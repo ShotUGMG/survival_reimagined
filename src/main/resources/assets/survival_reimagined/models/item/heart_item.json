@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "survival_reimagined:item/hear_titem"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:heart_item_texture": 1
+      },
+      "model": "survival_reimagined:item/heart_item_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:heart_item_texture": 2
+      },
+      "model": "survival_reimagined:item/heart_item_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:heart_item_texture": 3
+      },
+      "model": "survival_reimagined:item/heart_item_2"
+    }
+  ]
 }

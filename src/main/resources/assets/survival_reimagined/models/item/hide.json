@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/hide"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:hide_dried": 1
+      },
+      "model": "survival_reimagined:item/hide_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:hide_dried": 2
+      },
+      "model": "survival_reimagined:item/hide_1"
+    }
+  ]
+}

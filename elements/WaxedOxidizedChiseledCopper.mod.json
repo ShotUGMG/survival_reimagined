@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:c:tools/chisel"
-      },
-      {
-        "value": "Blocks.COPPER_BLOCK"
-      }
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TAG:c:tools/chisel",
+      "Blocks.COPPER_BLOCK"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.CHISELED_COPPER"
-    },
+    "recipeReturnStack": "Blocks.CHISELED_COPPER",
     "name": "waxed_oxidized_chiseled_copper",
     "namespace": "minecraft"
   }

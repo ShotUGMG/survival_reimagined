@@ -16,42 +16,27 @@ public class PalmCrownOnTickUpdateProcedure {
 		if (Math.random() < 0.3) {
 			if (Math.random() < 0.25) {
 				if (world.isEmptyBlock(BlockPos.containing(x, y, z - 1)) == true) {
-					world.setBlock(BlockPos.containing(x, y, z - 1), (blockStateWithDirection((new Object() {
-						public BlockState with(BlockState _bs, String _property, int _newValue) {
-							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-							return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-						}
-					}.with(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.NORTH)), 3);
+					world.setBlock(BlockPos.containing(x, y, z - 1), (blockStateWithDirection((blockStateWithInt(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.NORTH)), 3);
 				}
 			} else if (Math.random() < 0.25) {
 				if (world.isEmptyBlock(BlockPos.containing(x, y, z + 1)) == true) {
-					world.setBlock(BlockPos.containing(x, y, z + 1), (blockStateWithDirection((new Object() {
-						public BlockState with(BlockState _bs, String _property, int _newValue) {
-							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-							return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-						}
-					}.with(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.SOUTH)), 3);
+					world.setBlock(BlockPos.containing(x, y, z + 1), (blockStateWithDirection((blockStateWithInt(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.SOUTH)), 3);
 				}
 			} else if (Math.random() < 0.25) {
 				if (world.isEmptyBlock(BlockPos.containing(x - 1, y, z)) == true) {
-					world.setBlock(BlockPos.containing(x - 1, y, z), (blockStateWithDirection((new Object() {
-						public BlockState with(BlockState _bs, String _property, int _newValue) {
-							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-							return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-						}
-					}.with(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.WEST)), 3);
+					world.setBlock(BlockPos.containing(x - 1, y, z), (blockStateWithDirection((blockStateWithInt(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.WEST)), 3);
 				}
 			} else {
 				if (world.isEmptyBlock(BlockPos.containing(x + 1, y, z)) == true) {
-					world.setBlock(BlockPos.containing(x + 1, y, z), (blockStateWithDirection((new Object() {
-						public BlockState with(BlockState _bs, String _property, int _newValue) {
-							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty(_property);
-							return _prop instanceof IntegerProperty _ip && _prop.getPossibleValues().contains(_newValue) ? _bs.setValue(_ip, _newValue) : _bs;
-						}
-					}.with(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.EAST)), 3);
+					world.setBlock(BlockPos.containing(x + 1, y, z), (blockStateWithDirection((blockStateWithInt(SurvivalReimaginedModBlocks.COCONUT_MATURE.get().defaultBlockState(), "blockstate", 2)), Direction.EAST)), 3);
 				}
 			}
 		}
+	}
+
+	private static BlockState blockStateWithInt(BlockState blockState, String property, int newValue) {
+		Property<?> prop = blockState.getBlock().getStateDefinition().getProperty(property);
+		return prop instanceof IntegerProperty ip && prop.getPossibleValues().contains(newValue) ? blockState.setValue(ip, newValue) : blockState;
 	}
 
 	private static BlockState blockStateWithDirection(BlockState blockState, Direction newValue) {

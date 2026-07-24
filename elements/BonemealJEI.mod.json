@@ -1,0 +1,22 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "millstone_jei",
+    "ingredients": [
+      "Items.BONE"
+    ],
+    "integers": [
+      1
+    ],
+    "strings": [],
+    "recipetype": "MillstoneJEI",
+    "results": [
+      "CUSTOM:BonemealSR"
+    ],
+    "resultCounts": [
+      3
+    ],
+    "count": 0
+  }
+}

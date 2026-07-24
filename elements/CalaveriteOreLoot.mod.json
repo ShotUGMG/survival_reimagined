@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Calaverite"
-            },
+            "item": "CUSTOM:Calaverite",
             "weight": 2,
             "minCount": 0,
             "maxCount": 1,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CalaveriteNugget"
-            },
+            "item": "CUSTOM:CalaveriteNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CalaveriteOre"
-            },
+            "item": "CUSTOM:CalaveriteOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

@@ -2,6 +2,7 @@ package net.mcreator.survivalreimagined.item;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
@@ -9,7 +10,12 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+
+import java.util.stream.Stream;
 
 public class WoodenKnifeItem extends Item {
 	public WoodenKnifeItem() {
@@ -19,7 +25,7 @@ public class WoodenKnifeItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return 1;
+		return Stream.of(BlockTags.create(ResourceLocation.parse("c:carcasses")), BlockTags.create(ResourceLocation.parse("c:smaller_carcasses")), BlockTags.create(ResourceLocation.parse("c:carcass/equine"))).anyMatch(blockstate::is) ? 2f : 1;
 	}
 
 	@Override
@@ -37,5 +43,10 @@ public class WoodenKnifeItem extends Item {
 	@Override
 	public int getEnchantmentValue() {
 		return 15;
+	}
+
+	@Override
+	public boolean isValidRepairItem(ItemStack itemstack, ItemStack repairitem) {
+		return Ingredient.of(ItemTags.create(ResourceLocation.parse("c:planks/single"))).test(repairitem);
 	}
 }

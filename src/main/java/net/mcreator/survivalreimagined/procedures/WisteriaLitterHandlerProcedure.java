@@ -1,5 +1,6 @@
 package net.mcreator.survivalreimagined.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
@@ -26,13 +27,13 @@ public class WisteriaLitterHandlerProcedure {
 		if (entity == null)
 			return InteractionResult.PASS;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get().asItem()) {
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) < 3) {
+			if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip3 ? blockstate.getValue(_getip3) : -1) < 3) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()) {
 					if (getEntityGameType(entity) == GameType.ADVENTURE || getEntityGameType(entity) == GameType.SURVIVAL) {
 						(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 					}
 					{
-						int _value = (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip11 ? blockstate.getValue(_getip11) : -1) + 1;
+						int _value = (getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip11 ? blockstate.getValue(_getip11) : -1) + 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -53,13 +54,13 @@ public class WisteriaLitterHandlerProcedure {
 				return InteractionResult.FAIL;
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get().asItem()) {
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip20 ? blockstate.getValue(_getip20) : -1) < 3) {
+			if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip20 ? blockstate.getValue(_getip20) : -1) < 3) {
 				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()) {
 					if (getEntityGameType(entity) == GameType.ADVENTURE || getEntityGameType(entity) == GameType.SURVIVAL) {
 						(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).shrink(1);
 					}
 					{
-						int _value = (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip28 ? blockstate.getValue(_getip28) : -1) + 1;
+						int _value = (getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip28 ? blockstate.getValue(_getip28) : -1) + 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
 						BlockState _bs = world.getBlockState(_pos);
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -81,6 +82,15 @@ public class WisteriaLitterHandlerProcedure {
 			}
 		}
 		return InteractionResult.FAIL;
+	}
+
+	private static Property<?> getPropertyByName(BlockState state, String name) {
+		for (Property<?> property : state.getProperties()) {
+			if (property.getName().equals(name)) {
+				return property;
+			}
+		}
+		return null;
 	}
 
 	private static GameType getEntityGameType(Entity entity) {

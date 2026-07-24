@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "survival_reimagined:block/campfire_0"
+    },
+    "lit=false": {
+      "model": "survival_reimagined:block/campfire"
+    }
+  }
+}

@@ -1,23 +1,69 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "apple_mature",
+    "texture": "ripe_apple",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "apple_mature:default",
+    "customModelName": "apple_ripe:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
+    "states": [
+      {
+        "texture": "apple_mature",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "apple_mature:default",
+        "particleTexture": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 5.5,
+            "my": 10.0,
+            "mz": 5.5,
+            "Mx": 10.5,
+            "My": 15.0,
+            "Mz": 10.5,
+            "subtract": false
+          },
+          {
+            "mx": 7.5,
+            "my": 15.0,
+            "mz": 7.5,
+            "Mx": 8.5,
+            "My": 16.0,
+            "Mz": 8.5,
+            "subtract": false
+          }
+        ],
+        "stateMap": [
+          {
+            "property": {
+              "min": 0,
+              "max": 1,
+              "name": "AGE_1",
+              "type": "integer"
+            },
+            "value": 1
+          }
+        ]
+      }
+    ],
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
     "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -26,12 +72,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 5.5,
-        "my": 10.0,
-        "mz": 5.5,
-        "Mx": 10.5,
+        "mx": 6.5,
+        "my": 12.0,
+        "mz": 6.5,
+        "Mx": 9.5,
         "My": 15.0,
-        "Mz": 10.5,
+        "Mz": 9.5,
         "subtract": false
       },
       {
@@ -44,7 +90,15 @@
         "subtract": false
       }
     ],
-    "customProperties": [],
+    "customProperties": [
+      {
+        "min": 0,
+        "max": 1,
+        "name": "AGE_1",
+        "type": "integer",
+        "value": 0
+      }
+    ],
     "name": "Apple",
     "specialInformation": {
       "fixedValue": []
@@ -59,9 +113,7 @@
     "immuneToFire": false,
     "creativeTabs": [],
     "destroyTool": "Not specified",
-    "customDrop": {
-      "value": "Items.APPLE"
-    },
+    "customDrop": "Items.APPLE",
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
@@ -70,9 +122,10 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
+    "hasCustomOpacity": false,
     "lightOpacity": 0,
-    "tickRate": 0,
-    "tickRandomly": true,
+    "tickRate": 20,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -80,11 +133,10 @@
     },
     "colorOnMap": "DEFAULT",
     "noteBlockInstrument": "harp",
-    "creativePickItem": {
-      "value": ""
-    },
+    "creativePickItem": "",
     "offsetType": "XZ",
     "aiPathNodeType": "BLOCKED",
+    "strippingResult": "",
     "ignitedByLava": false,
     "flammability": 0,
     "fireSpreadSpeed": 30,
@@ -93,36 +145,27 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": false,
+    "isNotColidable": true,
+    "soundOnStep": "CROP",
     "isCustomSoundType": false,
-    "soundOnStep": {
-      "value": "CROP"
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
+    "luminance": {
+      "fixedValue": 0.0
     },
-    "breakSound": {
-      "value": ""
-    },
-    "fallSound": {
-      "value": ""
-    },
-    "hitSound": {
-      "value": ""
-    },
-    "placeSound": {
-      "value": ""
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "luminance": 0,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "additionalHarvestCondition": {
-      "name": "AppleAdditionalHarvestCondition"
-    },
+    "additionalHarvestCondition": "AppleAdditionalHarvestCondition",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],
-    "hasInventory": false,
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    },
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -138,18 +181,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "AppleNeighbourBlockChanges"
-    },
-    "onTickUpdate": {
-      "name": "AppleOnTickUpdate"
-    },
+    "onNeighbourBlockChanges": "AppleNeighbourBlockChanges",
+    "onTickUpdate": "GrowingProcedure",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
-      {
-        "value": "TAG:stone_ore_replaceables"
-      }
+      "TAG:stone_ore_replaceables"
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,

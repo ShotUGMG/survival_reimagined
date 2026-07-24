@@ -16,6 +16,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class CrimsonArachnidRenderer extends MobRenderer<CrimsonArachnidEntity, SpiderModel<CrimsonArachnidEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("survival_reimagined:textures/entities/bloodmoon_spider.png");
+
 	public CrimsonArachnidRenderer(EntityRendererProvider.Context context) {
 		super(context, new SpiderModel<CrimsonArachnidEntity>(context.bakeLayer(ModelLayers.SPIDER)), 0.5f);
 		this.addLayer(new RenderLayer<CrimsonArachnidEntity, SpiderModel<CrimsonArachnidEntity>>(this) {
@@ -36,6 +38,6 @@ public class CrimsonArachnidRenderer extends MobRenderer<CrimsonArachnidEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(CrimsonArachnidEntity entity) {
-		return ResourceLocation.parse("survival_reimagined:textures/entities/bloodmoon_spider.png");
+		return entityTexture;
 	}
 }

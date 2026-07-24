@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Bleeding",
@@ -14,14 +14,8 @@
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "BleedingEffectStartedapplied"
-    },
-    "onActiveTick": {
-      "name": "BleedingOnEffectActiveTick"
-    },
-    "activeTickCondition": {
-      "name": "BleedingActiveTickCondition"
-    }
+    "onStarted": "BleedingEffectStartedapplied",
+    "onActiveTick": "BleedingOnEffectActiveTick",
+    "activeTickCondition": "BleedingActiveTickCondition"
   }
 }

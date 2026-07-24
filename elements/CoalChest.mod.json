@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "Items.COAL#0"
-            },
+            "item": "Items.COAL#0",
             "weight": 6,
             "minCount": 4,
             "maxCount": 8,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:SmallCoalChunk"
-            },
+            "item": "CUSTOM:SmallCoalChunk",
             "weight": 9,
             "minCount": 9,
             "maxCount": 14,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.COAL_BLOCK"
-            },
+            "item": "Blocks.COAL_BLOCK",
             "weight": 3,
             "minCount": 1,
             "maxCount": 2,

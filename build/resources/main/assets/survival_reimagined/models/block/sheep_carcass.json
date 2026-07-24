@@ -2,7 +2,7 @@
   "parent": "survival_reimagined:custom/dead_sheep",
   "textures": {
     "all": "survival_reimagined:block/dead_sheep",
-    "particle": "minecraft:block/white_wool",
+    "particle": "minecraft:block/redstone_block",
     "0": "survival_reimagined:block/dead_sheep"
   },
   "render_type": "solid"

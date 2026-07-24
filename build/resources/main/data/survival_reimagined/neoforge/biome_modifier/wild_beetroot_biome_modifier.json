@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "beach",
+    "desert",
+    "savanna"
+  ],
+  "features": "survival_reimagined:wild_beetroot",
+  "step": "vegetal_decoration"
+}

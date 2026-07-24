@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "plains",
+    "sunflower_plains",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "taiga"
+  ],
+  "features": "survival_reimagined:wild_carrots",
+  "step": "vegetal_decoration"
+}

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:liginite",
+    "survival_reimagined:anthracite",
     "minecraft:coal",
     "minecraft:charcoal"
   ]

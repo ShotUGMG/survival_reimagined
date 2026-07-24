@@ -70,11 +70,11 @@ public class SmallAnimalHungerHandlerProcedure {
 			entity.getPersistentData().putDouble("EatDelay", (entity.getPersistentData().getDouble("EatDelay") + 1));
 			entity.getPersistentData().putDouble("EatDelayGrass", (entity.getPersistentData().getDouble("EatDelayGrass") + 1));
 			sx = -8;
-			for (int index0 = 0; index0 < 16; index0++) {
+			for (int index151 = 0; index151 < 16; index151++) {
 				sy = -8;
-				for (int index1 = 0; index1 < 16; index1++) {
+				for (int index152 = 0; index152 < 16; index152++) {
 					sz = -8;
-					for (int index2 = 0; index2 < 16; index2++) {
+					for (int index153 = 0; index153 < 16; index153++) {
 						sz = sz + 1;
 						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == SurvivalReimaginedModBlocks.SMALL_TROUGH.get()) {
 							entity.getPersistentData().putDouble("HungerClock", 0);

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
@@ -11,12 +11,8 @@
     "cookingTime": 100,
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
-    "blastingInputStack": {
-      "value": "CUSTOM:GoldChunk"
-    },
-    "blastingReturnStack": {
-      "value": "Items.GOLD_NUGGET"
-    },
+    "blastingInputStack": "CUSTOM:GoldChunk",
+    "blastingReturnStack": "Items.GOLD_NUGGET",
     "name": "gold_nugget_recipe",
     "namespace": "mod"
   }

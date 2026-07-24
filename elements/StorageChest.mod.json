@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Chest",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:CopperChunk"
-            },
+            "item": "CUSTOM:CopperChunk",
             "weight": 12,
             "minCount": 8,
             "maxCount": 15,
@@ -27,9 +25,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Items.RAW_COPPER"
-            },
+            "item": "Items.RAW_COPPER",
             "weight": 6,
             "minCount": 3,
             "maxCount": 8,
@@ -41,9 +37,7 @@
           },
           {
             "type": "item",
-            "item": {
-              "value": "Blocks.RAW_COPPER_BLOCK"
-            },
+            "item": "Blocks.RAW_COPPER_BLOCK",
             "weight": 3,
             "minCount": 1,
             "maxCount": 2,
@@ -64,9 +58,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BronzePickaxe"
-            },
+            "item": "CUSTOM:BronzePickaxe",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

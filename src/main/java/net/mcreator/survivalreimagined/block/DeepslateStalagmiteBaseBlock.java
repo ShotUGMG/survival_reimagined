@@ -15,6 +15,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.entity.Mob;
 
 import net.mcreator.survivalreimagined.procedures.StalagmitePlacementProcedure;
 import net.mcreator.survivalreimagined.procedures.DeepslateStalagmiteUpdatesProcedure;
@@ -58,6 +60,11 @@ public class DeepslateStalagmiteBaseBlock extends Block {
 	@Override
 	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@Override
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.BLOCKED;
 	}
 
 	@Override

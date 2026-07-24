@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "livingentity",
   "definition": {
     "mobName": "Ghost",
@@ -31,9 +31,7 @@
     ],
     "animations": [
       {
-        "animation": {
-          "value": "CUSTOM:ghostAnimation.idle"
-        },
+        "animation": "CUSTOM:ghostAnimation.idle",
         "speed": 1.0,
         "walking": false,
         "amplitude": 1.0
@@ -54,31 +52,17 @@
     },
     "spawnEggTexture": "",
     "creativeTabs": [
-      {
-        "value": "MISC"
-      }
+      "MISC"
     ],
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
-    "equipmentMainHand": {
-      "value": "CUSTOM:BronzeHoe"
-    },
-    "equipmentOffHand": {
-      "value": ""
-    },
-    "equipmentHelmet": {
-      "value": ""
-    },
-    "equipmentBody": {
-      "value": ""
-    },
-    "equipmentLeggings": {
-      "value": ""
-    },
-    "equipmentBoots": {
-      "value": ""
-    },
+    "equipmentMainHand": "CUSTOM:BronzeHoe",
+    "equipmentOffHand": "",
+    "equipmentHelmet": "",
+    "equipmentBody": "",
+    "equipmentLeggings": "",
+    "equipmentBoots": "",
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
@@ -118,28 +102,14 @@
     "immuneToAnvil": false,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
-    "mobDrop": {
-      "value": ""
-    },
-    "livingSound": {
-      "value": ""
-    },
-    "hurtSound": {
-      "value": "entity.generic.hurt"
-    },
-    "deathSound": {
-      "value": "entity.generic.death"
-    },
-    "stepSound": {
-      "value": ""
-    },
-    "raidCelebrationSound": {
-      "value": ""
-    },
+    "mobDrop": "",
+    "livingSound": "",
+    "hurtSound": "entity.generic.hurt",
+    "deathSound": "entity.generic.death",
+    "stepSound": "",
+    "raidCelebrationSound": "",
     "entityDataEntries": [],
-    "onMobTickUpdate": {
-      "name": "LookAtPlayer"
-    },
+    "onMobTickUpdate": "LookAtPlayer",
     "hasAI": false,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
@@ -147,9 +117,7 @@
     "tameable": false,
     "breedTriggerItems": [],
     "ranged": false,
-    "rangedAttackItem": {
-      "value": ""
-    },
+    "rangedAttackItem": "",
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,

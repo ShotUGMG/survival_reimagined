@@ -1,0 +1,13 @@
+{
+  "_fv": 89,
+  "_type": "itemextension",
+  "definition": {
+    "item": "CUSTOM:SmallAnthracite",
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 1600.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

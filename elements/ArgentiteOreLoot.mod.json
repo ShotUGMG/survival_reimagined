@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:Argentite"
-            },
+            "item": "CUSTOM:Argentite",
             "weight": 3,
             "minCount": 0,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ArgentiteNugget"
-            },
+            "item": "CUSTOM:ArgentiteNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 5,
@@ -59,9 +55,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:StoneRock"
-            },
+            "item": "CUSTOM:StoneRock",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:ArgentiteOre"
-            },
+            "item": "CUSTOM:ArgentiteOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

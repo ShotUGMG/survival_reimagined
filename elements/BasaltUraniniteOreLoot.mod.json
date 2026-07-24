@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "loottable",
   "definition": {
     "type": "Block",
@@ -13,9 +13,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawUraninite"
-            },
+            "item": "CUSTOM:RawUraninite",
             "weight": 1,
             "minCount": 0,
             "maxCount": 2,
@@ -36,9 +34,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:RawUraniniteNugget"
-            },
+            "item": "CUSTOM:RawUraniniteNugget",
             "weight": 15,
             "minCount": 1,
             "maxCount": 3,
@@ -52,16 +48,14 @@
       },
       {
         "minrolls": 1,
-        "maxrolls": 15,
+        "maxrolls": 1,
         "minbonusrolls": 1,
         "maxbonusrolls": 1,
         "hasbonusrolls": false,
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BasaltRock"
-            },
+            "item": "CUSTOM:BasaltRock",
             "weight": 1,
             "minCount": 1,
             "maxCount": 3,
@@ -82,9 +76,7 @@
         "entries": [
           {
             "type": "item",
-            "item": {
-              "value": "CUSTOM:BasaltUraniniteOre"
-            },
+            "item": "CUSTOM:BasaltUraniniteOre",
             "weight": 1,
             "minCount": 1,
             "maxCount": 1,

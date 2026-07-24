@@ -1,20 +1,16 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "structure",
   "definition": {
     "structure": "salt_top",
     "projection": "rigid",
     "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
+      "Blocks.STRUCTURE_BLOCK"
     ],
     "spacing": 30,
     "separation": 15,
     "restrictionBiomes": [
-      {
-        "value": "#minecraft:salt_dome_spawn"
-      }
+      "#minecraft:salt_dome_spawn"
     ],
     "terrainAdaptation": "none",
     "generationStep": "UNDERGROUND_STRUCTURES",
@@ -35,9 +31,7 @@
             "structure": "salt_shaft",
             "projection": "rigid",
             "ignoredBlocks": [
-              {
-                "value": "Blocks.STRUCTURE_BLOCK"
-              }
+              "Blocks.STRUCTURE_BLOCK"
             ]
           }
         ]

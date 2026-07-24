@@ -13,14 +13,13 @@ import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.core.BlockPos;
+import net.minecraft.core.SectionPos;
 
 import net.mcreator.survivalreimagined.procedures.InfuseProcedure;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
 @EventBusSubscriber
 public record RMIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-
 	public static final Type<RMIButtonMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(SurvivalReimaginedMod.MODID, "rmi_buttons"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, RMIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, RMIButtonMessage message) -> {
 		buffer.writeInt(message.buttonID);
@@ -28,6 +27,7 @@ public record RMIButtonMessage(int buttonID, int x, int y, int z) implements Cus
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}, (RegistryFriendlyByteBuf buffer) -> new RMIButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+
 	@Override
 	public Type<RMIButtonMessage> type() {
 		return TYPE;
@@ -45,7 +45,7 @@ public record RMIButtonMessage(int buttonID, int x, int y, int z) implements Cus
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
 		// security measure to prevent arbitrary chunk generation
-		if (!world.hasChunkAt(new BlockPos(x, y, z)))
+		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
 			return;
 		if (buttonID == 0) {
 

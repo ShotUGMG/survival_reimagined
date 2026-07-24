@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "EQUIPMENT",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:BoatPaddles"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      },
-      {
-        "value": "CUSTOM:SprucePlank"
-      }
+      "",
+      "",
+      "",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank",
+      "CUSTOM:SprucePlank"
     ],
-    "recipeReturnStack": {
-      "value": "Items.SPRUCE_BOAT"
-    },
+    "recipeReturnStack": "Items.SPRUCE_BOAT",
     "name": "spruce_boat",
     "namespace": "minecraft"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "potioneffect",
   "definition": {
     "effectName": "Paranoia",
@@ -14,11 +14,7 @@
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onStarted": {
-      "name": "ParanoiaEffectStartedapplied"
-    },
-    "onActiveTick": {
-      "name": "ParanoiaOnEffectActiveTick"
-    }
+    "onStarted": "ParanoiaEffectStartedapplied",
+    "onActiveTick": "ParanoiaOnEffectActiveTick"
   }
 }

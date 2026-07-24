@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SandPile"
-      },
-      {
-        "value": "CUSTOM:SandPile"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:SandPile"
-      },
-      {
-        "value": "CUSTOM:SandPile"
-      }
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:SandPile",
+      "CUSTOM:SandPile",
+      "",
+      "CUSTOM:SandPile",
+      "CUSTOM:SandPile"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.SAND#0"
-    },
+    "recipeReturnStack": "Blocks.SAND#0",
     "name": "sand_recipe",
     "namespace": "mod"
   }

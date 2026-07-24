@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      },
-      {
-        "value": "CUSTOM:WarpedPlank"
-      }
+      "",
+      "CUSTOM:WarpedPlank",
+      "CUSTOM:WarpedPlank",
+      "",
+      "CUSTOM:WarpedPlank",
+      "CUSTOM:WarpedPlank",
+      "",
+      "CUSTOM:WarpedPlank",
+      "CUSTOM:WarpedPlank"
     ],
-    "recipeReturnStack": {
-      "value": "Blocks.WARPED_DOOR"
-    },
+    "recipeReturnStack": "Blocks.WARPED_DOOR",
     "name": "warped_door",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "Items.GOLD_NUGGET"
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:GoldRod"
-      },
-      {
-        "value": "CUSTOM:RedstoneChargedUraniumDust"
-      },
-      {
-        "value": "CUSTOM:GoldRod"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:StoneRock"
-      },
-      {
-        "value": ""
-      }
+      "Items.GOLD_NUGGET",
+      "CUSTOM:StoneRock",
+      "",
+      "CUSTOM:GoldRod",
+      "CUSTOM:RedstoneChargedUraniumDust",
+      "CUSTOM:GoldRod",
+      "",
+      "CUSTOM:StoneRock",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:ReactorRod"
-    },
+    "recipeReturnStack": "CUSTOM:ReactorRod",
     "name": "reactor_rod_recipe",
     "namespace": "mod"
   }

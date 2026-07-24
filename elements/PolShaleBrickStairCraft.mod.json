@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      },
-      {
-        "value": "CUSTOM:PolishedShaleBricks"
-      }
+      "",
+      "",
+      "CUSTOM:PolishedShaleBricks",
+      "",
+      "CUSTOM:PolishedShaleBricks",
+      "CUSTOM:PolishedShaleBricks",
+      "CUSTOM:PolishedShaleBricks",
+      "CUSTOM:PolishedShaleBricks",
+      "CUSTOM:PolishedShaleBricks"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:PolishedShaleBrickStairs"
-    },
+    "recipeReturnStack": "CUSTOM:PolishedShaleBrickStairs",
     "name": "pol_shale_brick_stair_craft",
     "namespace": "mod"
   }

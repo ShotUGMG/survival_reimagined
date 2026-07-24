@@ -12,6 +12,8 @@ import net.mcreator.survivalreimagined.entity.BloodMoonZombieEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class BloodMoonZombieRenderer extends HumanoidMobRenderer<BloodMoonZombieEntity, HumanoidModel<BloodMoonZombieEntity>> {
+	private final ResourceLocation entityTexture = ResourceLocation.parse("survival_reimagined:textures/entities/bloodmoonzombie.png");
+
 	public BloodMoonZombieRenderer(EntityRendererProvider.Context context) {
 		super(context, new HumanoidModel<BloodMoonZombieEntity>(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
@@ -24,6 +26,6 @@ public class BloodMoonZombieRenderer extends HumanoidMobRenderer<BloodMoonZombie
 
 	@Override
 	public ResourceLocation getTextureLocation(BloodMoonZombieEntity entity) {
-		return ResourceLocation.parse("survival_reimagined:textures/entities/bloodmoonzombie.png");
+		return entityTexture;
 	}
 }

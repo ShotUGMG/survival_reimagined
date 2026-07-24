@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "minecraft:block/carrots_stage1",
+    "particle": "minecraft:block/carrots_stage0"
+  },
+  "render_type": "cutout"
+}

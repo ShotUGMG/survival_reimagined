@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Pickaxe",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Steel Pickaxe",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 7.0,
     "attackSpeed": 1.2000000000000002,
@@ -26,17 +25,14 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
+      "CUSTOM:SteelIngot"
     ],
     "immuneToFire": false,
     "blockDropsTier": "DIAMOND",
     "blocksAffected": [
-      {
-        "value": "TAG:minecraft:needs_steel_tool"
-      }
+      "TAG:minecraft:needs_steel_tool"
     ],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

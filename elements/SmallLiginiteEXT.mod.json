@@ -1,0 +1,13 @@
+{
+  "_fv": 89,
+  "_type": "itemextension",
+  "definition": {
+    "item": "CUSTOM:SmallLiginite",
+    "enableFuel": true,
+    "fuelPower": {
+      "fixedValue": 400.0
+    },
+    "hasDispenseBehavior": false,
+    "compostLayerChance": 0.0
+  }
+}

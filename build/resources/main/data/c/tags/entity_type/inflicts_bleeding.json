@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "cave_spider",
+    "vindicator",
+    "survival_reimagined:alpha_crimson_arachnid",
+    "survival_reimagined:crimson_arachnid",
+    "skeleton",
+    "survival_reimagined:brown_bear",
+    "survival_reimagined:black_bear",
+    "polar_bear",
+    "wolf",
+    "vex",
+    "spider"
+  ]
+}

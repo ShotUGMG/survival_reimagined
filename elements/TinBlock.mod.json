@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      },
-      {
-        "value": "CUSTOM:TinIngot"
-      }
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot",
+      "CUSTOM:TinIngot"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:BlockOfTin"
-    },
+    "recipeReturnStack": "CUSTOM:BlockOfTin",
     "name": "tin_block",
     "namespace": "mod"
   }

@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "age=1": {
+      "model": "survival_reimagined:block/wild_rye_0"
+    },
+    "age=2": {
+      "model": "survival_reimagined:block/wild_rye_1"
+    },
+    "age=3": {
+      "model": "survival_reimagined:block/wild_rye_2"
+    },
+    "age=4": {
+      "model": "survival_reimagined:block/wild_rye_3"
+    },
+    "age=5": {
+      "model": "survival_reimagined:block/wild_rye_4"
+    },
+    "age=6": {
+      "model": "survival_reimagined:block/wild_rye_5"
+    },
+    "age=0": {
+      "model": "survival_reimagined:block/wild_rye"
+    }
+  }
+}

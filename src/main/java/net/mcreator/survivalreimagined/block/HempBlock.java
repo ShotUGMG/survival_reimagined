@@ -1,7 +1,4 @@
-
 package net.mcreator.survivalreimagined.block;
-
-import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -11,8 +8,9 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
@@ -20,61 +18,50 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.survivalreimagined.procedures.HempOnTickUpdateProcedure;
-import net.mcreator.survivalreimagined.procedures.HempOnBoneMealSuccessProcedure;
-import net.mcreator.survivalreimagined.procedures.HempCanBoneMealBeUsedOnThisBlockProcedure;
-import net.mcreator.survivalreimagined.procedures.HempBlockValidPlacementConditionProcedure;
+import net.mcreator.survivalreimagined.procedures.GrowingProcedureProcedure;
+import net.mcreator.survivalreimagined.procedures.CropBlockValidPlacementProcedure;
+import net.mcreator.survivalreimagined.block.entity.HempBlockEntity;
 
-public class HempBlock extends Block implements BonemealableBlock {
+import com.google.common.collect.ImmutableMap;
+
+public class HempBlock extends Block implements EntityBlock {
 	public static final IntegerProperty AGE_3 = BlockStateProperties.AGE_3;
+	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public HempBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(AGE_3) == 1)
-					return 0;
-				if (s.getValue(AGE_3) == 2)
-					return 0;
-				if (s.getValue(AGE_3) == 3)
-					return 0;
-				return 0;
-			}
-		}.getLightLevel())).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.CROP).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AGE_3, 0));
 	}
 
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
+	private ImmutableMap<BlockState, VoxelShape> makeShapes() {
+		return this.getShapeForEachState(state -> {
+			if (state.getValue(AGE_3) == 1) {
+				return box(0, 0, 0, 16, 5, 16);
+			} else if (state.getValue(AGE_3) == 2) {
+				return box(0, 0, 0, 16, 12, 16);
+			} else if (state.getValue(AGE_3) == 3) {
+				return box(0, 0, 0, 16, 15.9, 16);
+			}
+			return box(0, 0, 0, 16, 2, 16);
+		});
 	}
 
 	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return shapes.get(state);
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(AGE_3) == 1) {
-			return box(0, 0, 0, 16, 5, 16);
-		}
-		if (state.getValue(AGE_3) == 2) {
-			return box(0, 0, 0, 16, 12, 16);
-		}
-		if (state.getValue(AGE_3) == 3) {
-			return box(0, 0, 0, 16, 16, 16);
-		}
-		return box(0, 0, 0, 16, 2, 16);
 	}
 
 	@Override
@@ -85,7 +72,10 @@ public class HempBlock extends Block implements BonemealableBlock {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(AGE_3, 0);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(AGE_3, 0);
 	}
 
 	@Override
@@ -94,7 +84,7 @@ public class HempBlock extends Block implements BonemealableBlock {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return HempBlockValidPlacementConditionProcedure.execute(world, x, y, z);
+			return CropBlockValidPlacementProcedure.execute(world, x, y, z);
 		}
 		return super.canSurvive(blockstate, worldIn, pos);
 	}
@@ -105,26 +95,59 @@ public class HempBlock extends Block implements BonemealableBlock {
 	}
 
 	@Override
-	public void randomTick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.randomTick(blockstate, world, pos, random);
-		HempOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override
-	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate) {
-		if (worldIn instanceof LevelAccessor world) {
-			return HempCanBoneMealBeUsedOnThisBlockProcedure.execute(blockstate);
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		GrowingProcedureProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
+		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
+		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
+	}
+
+	@Override
+	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+		return new HempBlockEntity(pos, state);
+	}
+
+	@Override
+	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
+		super.triggerEvent(state, world, pos, eventID, eventParam);
+		BlockEntity blockEntity = world.getBlockEntity(pos);
+		return blockEntity != null && blockEntity.triggerEvent(eventID, eventParam);
+	}
+
+	@Override
+	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
+		if (state.getBlock() != newState.getBlock()) {
+			BlockEntity blockEntity = world.getBlockEntity(pos);
+			if (blockEntity instanceof HempBlockEntity be) {
+				Containers.dropContents(world, pos, be);
+				world.updateNeighbourForOutputSignal(pos, this);
+			}
+			super.onRemove(state, world, pos, newState, isMoving);
 		}
-		return false;
 	}
 
 	@Override
-	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
+	public boolean hasAnalogOutputSignal(BlockState state) {
 		return true;
 	}
 
 	@Override
-	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		HempOnBoneMealSuccessProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
+		BlockEntity tileentity = world.getBlockEntity(pos);
+		if (tileentity instanceof HempBlockEntity be)
+			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
+		else
+			return 0;
 	}
 }

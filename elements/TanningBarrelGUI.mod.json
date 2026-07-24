@@ -1,0 +1,387 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tanning_barrel",
+          "text": {
+            "fixedValue": "Tanning Barrel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 177,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tanning_barrel_fluid_tank.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "DisableInteractions"
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "DisableInteractions"
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 133,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false,
+            "name": "DisableInteractions"
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false,
+            "name": "DisableInteractions"
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 68,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_0.5.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite1000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_1.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite2000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_1.5.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite3000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_2.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite4000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_2.5.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite5000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "water_barrel_3.png",
+          "spritesCount": 32,
+          "displayCondition": "Sprite6000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel_0.5.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite1000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel_1.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite2000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel_1.5.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite3000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel_2.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite4000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel_2.5.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite5000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "lime_water_barrel.png",
+          "spritesCount": 32,
+          "displayCondition": "LimeSprite6000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_0.5.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite1000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_1.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite2000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_1.5.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite3000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_2.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite4000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_2.5.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite5000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "tannin_3.png",
+          "spritesCount": 32,
+          "displayCondition": "TanninSprite6000",
+          "spriteIndex": {
+            "fixedValue": 0.0,
+            "name": "SpriteIndex"
+          },
+          "x": 134,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "seal_button_noclick.png",
+          "use1Xscale": false,
+          "x": 198,
+          "y": 96,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_seal_button_active",
+          "image": "seal_button_active.png",
+          "hoveredImage": "seal_button_selected.png",
+          "onClick": "SealBarrel",
+          "displayCondition": "SealButtonDisplay",
+          "x": 197,
+          "y": 95,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 4,
+      "oy": 5,
+      "snapOnGrid": false
+    }
+  }
+}

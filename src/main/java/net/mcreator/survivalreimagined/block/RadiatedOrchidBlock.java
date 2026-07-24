@@ -1,7 +1,5 @@
 package net.mcreator.survivalreimagined.block;
 
-import org.checkerframework.checker.units.qual.s;
-
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
@@ -29,29 +27,19 @@ public class RadiatedOrchidBlock extends Block {
 	private static final VoxelShape SHAPE = box(3, 0, 3, 13, 11, 13);
 
 	public RadiatedOrchidBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().lightLevel(s -> 8).noCollission().noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRASS).instabreak().lightLevel(blockstate -> 8).noCollission().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
 				.offsetType(Block.OffsetType.XZ));
-	}
-
-	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return (SHAPE).move(offset.x, offset.y, offset.z);
+		return SHAPE.move(offset.x, offset.y, offset.z);
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override

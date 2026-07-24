@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "target": {
+      "Name": "minecraft:stone"
+    },
+    "state": {
+      "Name": "survival_reimagined:high_fertility_dirt"
+    },
+    "radius": {
+      "type": "uniform",
+      "min_inclusive": 3,
+      "max_inclusive": 5
+    }
+  }
+}

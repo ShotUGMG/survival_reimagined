@@ -38,28 +38,18 @@ public class ClayCrucibleBlock extends Block {
 			box(4, 1, 4, 5, 3, 12), box(5, 1, 4, 11, 3, 5));
 
 	public ClayCrucibleBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).instabreak().noCollission().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(CAN_BURN, false));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return SHAPE;
 	}
 
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return (SHAPE);
 	}
 
 	@Override
@@ -70,7 +60,10 @@ public class ClayCrucibleBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(CAN_BURN, false);
+		BlockState state = super.getStateForPlacement(context);
+		if (state == null)
+			return null;
+		return state.setValue(CAN_BURN, false);
 	}
 
 	@Override

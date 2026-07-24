@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": "Items.GOLD_INGOT"
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.IRON_NUGGET"
-      },
-      {
-        "value": ""
-      }
+      "",
+      "Items.IRON_NUGGET",
+      "",
+      "Items.IRON_NUGGET",
+      "Items.GOLD_INGOT",
+      "Items.IRON_NUGGET",
+      "",
+      "Items.IRON_NUGGET",
+      ""
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:YieldUpgrade"
-    },
+    "recipeReturnStack": "CUSTOM:YieldUpgrade",
     "name": "yu_recipe",
     "namespace": "mod"
   }

@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -21,6 +21,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
+          "hasShadow": false,
           "x": 150,
           "y": 44,
           "locked": false
@@ -50,9 +51,7 @@
         "data": {
           "image": "arrow.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick"
-          },
+          "displayCondition": "MPTDisplayTick",
           "x": 206,
           "y": 72,
           "locked": false
@@ -97,9 +96,7 @@
         "data": {
           "image": "arrow2.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick1"
-          },
+          "displayCondition": "MPTDisplayTick1",
           "x": 206,
           "y": 72,
           "locked": false
@@ -110,9 +107,7 @@
         "data": {
           "image": "arrow3.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick2"
-          },
+          "displayCondition": "MPTDisplayTick2",
           "x": 206,
           "y": 72,
           "locked": false
@@ -123,9 +118,7 @@
         "data": {
           "image": "arrow4.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick3"
-          },
+          "displayCondition": "MPTDisplayTick3",
           "x": 206,
           "y": 72,
           "locked": false
@@ -136,9 +129,7 @@
         "data": {
           "image": "arrow5.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick4"
-          },
+          "displayCondition": "MPTDisplayTick4",
           "x": 206,
           "y": 72,
           "locked": false
@@ -149,9 +140,7 @@
         "data": {
           "image": "arrow6.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick5"
-          },
+          "displayCondition": "MPTDisplayTick5",
           "x": 206,
           "y": 72,
           "locked": false
@@ -162,9 +151,7 @@
         "data": {
           "image": "arrow7.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick6"
-          },
+          "displayCondition": "MPTDisplayTick6",
           "x": 206,
           "y": 72,
           "locked": false
@@ -175,9 +162,7 @@
         "data": {
           "image": "arrow8.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick7"
-          },
+          "displayCondition": "MPTDisplayTick7",
           "x": 206,
           "y": 72,
           "locked": false
@@ -188,9 +173,7 @@
         "data": {
           "image": "arrow9.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick8"
-          },
+          "displayCondition": "MPTDisplayTick8",
           "x": 206,
           "y": 72,
           "locked": false
@@ -201,9 +184,7 @@
         "data": {
           "image": "arrow10.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick9"
-          },
+          "displayCondition": "MPTDisplayTick9",
           "x": 206,
           "y": 72,
           "locked": false
@@ -214,9 +195,7 @@
         "data": {
           "image": "arrow11.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick10"
-          },
+          "displayCondition": "MPTDisplayTick10",
           "x": 206,
           "y": 72,
           "locked": false
@@ -227,9 +206,7 @@
         "data": {
           "image": "arrow12.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick11"
-          },
+          "displayCondition": "MPTDisplayTick11",
           "x": 206,
           "y": 72,
           "locked": false
@@ -240,9 +217,7 @@
         "data": {
           "image": "arrow13.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick12"
-          },
+          "displayCondition": "MPTDisplayTick12",
           "x": 206,
           "y": 72,
           "locked": false
@@ -253,9 +228,7 @@
         "data": {
           "image": "arrow14.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick13"
-          },
+          "displayCondition": "MPTDisplayTick13",
           "x": 206,
           "y": 72,
           "locked": false
@@ -266,9 +239,7 @@
         "data": {
           "image": "arrow15.png",
           "use1Xscale": false,
-          "displayCondition": {
-            "name": "MPTDisplayTick14"
-          },
+          "displayCondition": "MPTDisplayTick14",
           "x": 206,
           "y": 72,
           "locked": false
@@ -292,9 +263,7 @@
             "fixedValue": "",
             "name": "MPTGUIValue"
           },
-          "displayCondition": {
-            "name": "MPTTooltipDisplay"
-          },
+          "displayCondition": "MPTTooltipDisplay",
           "width": 24,
           "height": 24,
           "x": 202,
@@ -328,12 +297,8 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "MPTGUIThisGUIIsOpened"
-    },
-    "onClosed": {
-      "name": "MPTGUIThisGUIIsClosed"
-    },
+    "onOpen": "MPTGUIThisGUIIsOpened",
+    "onClosed": "MPTGUIThisGUIIsClosed",
     "gridSettings": {
       "sx": 18,
       "sy": 18,

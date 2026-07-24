@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "b b",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "tag": "c:planks/single"
+    },
+    "b": {
+      "item": "survival_reimagined:tin_ingot"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:tanning_barrel",
+    "count": 1
+  }
+}

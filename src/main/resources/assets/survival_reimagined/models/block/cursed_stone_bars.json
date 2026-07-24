@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/cursed_stone_bars",
+  "textures": {
+    "all": "survival_reimagined:block/cursed_stone_window",
+    "particle": "survival_reimagined:block/cursed_stone_window",
+    "0": "survival_reimagined:block/cursed_stone_window"
+  },
+  "render_type": "cutout"
+}

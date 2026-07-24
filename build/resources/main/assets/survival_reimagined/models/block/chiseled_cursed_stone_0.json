@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/polished_chiseled_cursed_stone",
+    "up": "survival_reimagined:block/rough_chiseled_cursed_stone",
+    "north": "survival_reimagined:block/chiseled_cursed_stone_bottom",
+    "east": "survival_reimagined:block/chiseled_cursed_stone_bottom",
+    "south": "survival_reimagined:block/chiseled_cursed_stone_bottom",
+    "west": "survival_reimagined:block/chiseled_cursed_stone_bottom",
+    "particle": "survival_reimagined:block/polished_chiseled_cursed_stone"
+  },
+  "render_type": "solid"
+}

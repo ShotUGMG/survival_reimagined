@@ -1,0 +1,17 @@
+{
+  "type": "survival_reimagined:mineral_processing_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:rough_emerald"
+    },
+    {
+      "item": "survival_reimagined:reactor_rod"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "minecraft:emerald",
+      "count": 1
+    }
+  ]
+}

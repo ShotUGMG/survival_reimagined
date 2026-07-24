@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "survival_reimagined:block/high_fertility_dirt",
+    "top": "minecraft:block/grass_block_top",
+    "side": "survival_reimagined:block/high_fertility_dirt",
+    "overlay": "minecraft:block/grass_block_side_overlay",
+    "particle": "survival_reimagined:block/high_fertility_dirt"
+  },
+  "render_type": "cutout"
+}

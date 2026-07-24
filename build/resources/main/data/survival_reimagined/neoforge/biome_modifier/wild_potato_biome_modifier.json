@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "plains",
+    "sunflower_plains",
+    "sparse_jungle",
+    "grove",
+    "lush_caves"
+  ],
+  "features": "survival_reimagined:wild_potato",
+  "step": "vegetal_decoration"
+}

@@ -2,5 +2,25 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "survival_reimagined:item/lungs"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "survival_reimagined:lungs_texture": 1
+      },
+      "model": "survival_reimagined:item/lungs_0"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:lungs_texture": 2
+      },
+      "model": "survival_reimagined:item/lungs_1"
+    },
+    {
+      "predicate": {
+        "survival_reimagined:lungs_texture": 3
+      },
+      "model": "survival_reimagined:item/lungs_2"
+    }
+  ]
 }

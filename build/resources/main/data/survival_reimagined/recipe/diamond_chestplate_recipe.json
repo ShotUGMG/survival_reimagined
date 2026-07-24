@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:diamond_plate"
+    },
+    "b": {
+      "item": "minecraft:leather_chestplate"
+    }
+  },
+  "result": {
+    "id": "minecraft:diamond_chestplate",
+    "count": 1
+  }
+}

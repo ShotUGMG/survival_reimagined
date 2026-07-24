@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
     "toolType": "Hoe",
@@ -9,13 +9,12 @@
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "name": "Bronze Hoe",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 6.0,
     "attackSpeed": 1.2000000000000002,
@@ -26,13 +25,12 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:BronzeIngot"
-      }
+      "CUSTOM:BronzeIngot"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",
     "blocksAffected": [],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

@@ -1,21 +1,21 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "tool",
   "definition": {
-    "toolType": "MultiTool",
+    "toolType": "Special",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "steel_knife",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Steel Survival Knife",
+    "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
-      {
-        "value": "CUSTOM:CreativeTab"
-      }
+      "CUSTOM:CreativeTab"
     ],
     "efficiency": 7.0,
     "attackSpeed": 2.0,
@@ -26,13 +26,16 @@
       "fixedValue": false
     },
     "repairItems": [
-      {
-        "value": "CUSTOM:SteelIngot"
-      }
+      "CUSTOM:SteelIngot"
     ],
     "immuneToFire": false,
     "blockDropsTier": "IRON",
-    "blocksAffected": [],
+    "blocksAffected": [
+      "TAG:c:carcasses",
+      "TAG:c:smaller_carcasses",
+      "TAG:c:carcass/equine"
+    ],
+    "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false
   }

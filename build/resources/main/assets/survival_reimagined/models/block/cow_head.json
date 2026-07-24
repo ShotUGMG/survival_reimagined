@@ -2,7 +2,7 @@
   "parent": "survival_reimagined:custom/cow_head",
   "textures": {
     "all": "survival_reimagined:block/cow_skinned",
-    "particle": "minecraft:block/redstone_block",
+    "particle": "survival_reimagined:block/cow_skinned",
     "1": "survival_reimagined:block/cow_skinned"
   },
   "render_type": "solid"

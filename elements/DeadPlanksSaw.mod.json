@@ -1,5 +1,5 @@
 {
-  "_fv": 79,
+  "_fv": 89,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -12,37 +12,17 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "TAG:regions_unexplored:barked/dead_logs"
-      },
-      {
-        "value": "TAG:c:tools/saw"
-      }
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "TAG:regions_unexplored:barked/dead_logs",
+      "TAG:c:tools/saw"
     ],
-    "recipeReturnStack": {
-      "value": "CUSTOM:DeadPlank"
-    },
+    "recipeReturnStack": "CUSTOM:DeadPlank",
     "name": "dead_planks_saw",
     "namespace": "mod"
   }

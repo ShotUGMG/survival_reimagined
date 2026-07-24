@@ -46,6 +46,14 @@ public class SurvivalReimaginedModEntities {
 			EntityType.Builder.<GhostEntity>of(GhostEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BlackBearEntity>> BLACK_BEAR = register("black_bear",
+			EntityType.Builder.<BlackBearEntity>of(BlackBearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3)
+
+					.sized(1.8f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<BrownBearEntity>> BROWN_BEAR = register("brown_bear",
+			EntityType.Builder.<BrownBearEntity>of(BrownBearEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3)
+
+					.sized(1.8f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -62,6 +70,8 @@ public class SurvivalReimaginedModEntities {
 		SowEntity.init(event);
 		PigletEntity.init(event);
 		GhostEntity.init(event);
+		BlackBearEntity.init(event);
+		BrownBearEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -73,5 +83,7 @@ public class SurvivalReimaginedModEntities {
 		event.put(SOW.get(), SowEntity.createAttributes().build());
 		event.put(PIGLET.get(), PigletEntity.createAttributes().build());
 		event.put(GHOST.get(), GhostEntity.createAttributes().build());
+		event.put(BLACK_BEAR.get(), BlackBearEntity.createAttributes().build());
+		event.put(BROWN_BEAR.get(), BrownBearEntity.createAttributes().build());
 	}
 }
