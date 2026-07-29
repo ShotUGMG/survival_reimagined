@@ -46997,7 +46997,11 @@
       "CUSTOM:DiamondSawBlade"
     ],
     "ITEMS:minecraft:saplings": [
-      "CUSTOM:AppleTreeSapling"
+      "CUSTOM:AppleTreeSapling",
+      "CUSTOM:RadiatedSapling",
+      "CUSTOM:WisteriaSapling",
+      "CUSTOM:MandarinSapling",
+      "CUSTOM:RedCherrySapling"
     ],
     "ITEMS:c:rmi_compatible/iron": [
       "Items.IRON_SWORD",
@@ -47982,7 +47986,9 @@
       "CUSTOM:CoconutMature",
       "CUSTOM:AppleTreeSapling",
       "CUSTOM:MandarinSapling",
-      "CUSTOM:RedCherrySapling"
+      "CUSTOM:RedCherrySapling",
+      "CUSTOM:RadiatedSapling",
+      "CUSTOM:WisteriaSapling"
     ],
     "BLOCKS:c:fruit_of_tree": [
       "CUSTOM:MandarinFruit",
@@ -48000,7 +48006,9 @@
       "CUSTOM:CoconutSeedling",
       "CUSTOM:AppleTreeSapling",
       "CUSTOM:MandarinSapling",
-      "CUSTOM:RedCherrySapling"
+      "CUSTOM:RedCherrySapling",
+      "CUSTOM:RadiatedSapling",
+      "CUSTOM:WisteriaSapling"
     ],
     "ITEMS:c:forge/fuels": [
       "TAG:c:fuels/bark_large",
@@ -48454,10 +48462,15 @@
       "EntityVex",
       "EntitySkeleton"
     ],
+    "ITEMS:mod:mandarin_logs": [
+      "CUSTOM:MandarinLog",
+      "CUSTOM:StrippedMandarinLog"
+    ],
+    "BLOCKS:c:fruit_placeables": [
+      "TAG:minecraft:leaves"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
-      "~MandarinLog@CUSTOM:MandarinLog",
       "~StrippedMandarinLog@CUSTOM:StrippedMandarinLog",
-      "~MandarinPlanksButton@CUSTOM:MandarinPlanksButton",
       "~MandarinPressurePlate@CUSTOM:MandarinPressurePlate",
       "~MandarinHangingSign@CUSTOM:MandarinHangingSign.wall",
       "~MandarinHangingSign@CUSTOM:MandarinHangingSign",
@@ -48465,6 +48478,7 @@
       "~MandarinSign@CUSTOM:MandarinSign.wall",
       "~MandarinDoor@CUSTOM:MandarinDoor",
       "~MandarinTrapdoor@CUSTOM:MandarinTrapdoor",
+      "~MandarinPlanksButton@CUSTOM:MandarinPlanksButton",
       "~MandarinPlanksFenceGate@CUSTOM:MandarinPlanksFenceGate",
       "~MandarinPlanksFence@CUSTOM:MandarinPlanksFence",
       "~MandarinPlanksSlab@CUSTOM:MandarinPlanksSlab",
@@ -48474,6 +48488,7 @@
       "~TanningBarrel@CUSTOM:TanningBarrel",
       "~DryingRack@CUSTOM:DryingRack",
       "~Campfire@CUSTOM:Campfire",
+      "~MandarinLog@CUSTOM:MandarinLog",
       "~HangingWisteriaSign@CUSTOM:HangingWisteriaSign.wall",
       "~HangingWisteriaSign@CUSTOM:HangingWisteriaSign",
       "~WisteriaSign@CUSTOM:WisteriaSign",
@@ -48762,8 +48777,14 @@
       "~HangingWisteriaSign@CUSTOM:HangingWisteriaSign.wall",
       "~HangingRadiatedSign@CUSTOM:HangingRadiatedSign.wall"
     ],
+    "BLOCKS:minecraft:replaceable": [
+      "~MandarinSapling@CUSTOM:MandarinSapling"
+    ],
     "BLOCKS:minecraft:wooden_fences": [
       "~MandarinPlanksFence@CUSTOM:MandarinPlanksFence"
+    ],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "~MandarinPlanksButton@CUSTOM:MandarinPlanksButton"
     ],
     "BLOCKS:minecraft:wooden_trapdoors": [
       "~MandarinTrapdoor@CUSTOM:MandarinTrapdoor"
@@ -48773,19 +48794,6 @@
     ],
     "BLOCKS:minecraft:wooden_pressure_plates": [
       "~MandarinPressurePlate@CUSTOM:MandarinPressurePlate"
-    ],
-    "BLOCKS:minecraft:wooden_buttons": [
-      "~MandarinPlanksButton@CUSTOM:MandarinPlanksButton"
-    ],
-    "ITEMS:mod:mandarin_logs": [
-      "CUSTOM:MandarinLog",
-      "CUSTOM:StrippedMandarinLog"
-    ],
-    "BLOCKS:minecraft:replaceable": [
-      "~MandarinSapling@CUSTOM:MandarinSapling"
-    ],
-    "BLOCKS:c:fruit_placeables": [
-      "TAG:minecraft:leaves"
     ]
   },
   "tab_element_order": {},
@@ -52578,7 +52586,6 @@
     "mcreatorDependencies": [
       "mixins",
       "serene_seasons",
-      "dynamic_trees",
       "jei"
     ],
     "currentGenerator": "neoforge-1.21.1",
