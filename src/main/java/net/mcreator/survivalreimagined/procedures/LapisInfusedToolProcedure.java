@@ -41,13 +41,13 @@ public class LapisInfusedToolProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("GoldInfused") == true) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes")))) {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:ores")))) {
-						for (int index144 = 0; index144 < 3; index144++) {
+						for (int index172 = 0; index172 < 3; index172++) {
 							if (world instanceof ServerLevel _level)
 								_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 3, 7)));
 						}
 					} else {
 						if (Math.random() < 0.2) {
-							for (int index145 = 0; index145 < 3; index145++) {
+							for (int index173 = 0; index173 < 3; index173++) {
 								if (world instanceof ServerLevel _level)
 									_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 3, 7)));
 							}
@@ -57,13 +57,13 @@ public class LapisInfusedToolProcedure {
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("SilverInfused") == true) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("minecraft:pickaxes")))) {
 					if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:ores")))) {
-						for (int index146 = 0; index146 < 3; index146++) {
+						for (int index174 = 0; index174 < 3; index174++) {
 							if (world instanceof ServerLevel _level)
 								_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 1, 3)));
 						}
 					} else {
 						if (Math.random() < 0.1) {
-							for (int index147 = 0; index147 < 3; index147++) {
+							for (int index175 = 0; index175 < 3; index175++) {
 								if (world instanceof ServerLevel _level)
 									_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 1, 3)));
 							}

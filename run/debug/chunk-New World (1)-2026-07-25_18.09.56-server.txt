@@ -1,0 +1,198 @@
+---- Minecraft Chunk IO Error Report ----
+// Not my proudest moment
+
+Time: 2026-07-25 18:09:56
+Description: Feature placement
+
+java.util.ConcurrentModificationException: null
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229) ~[?:?] {re:mixin}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.SeasonContext.getFruitProductionFactor(SeasonContext.java:83) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.NormalSeasonManager.getFruitProductionFactor(NormalSeasonManager.java:120) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.SeasonHelper.globalSeasonalFruitProductionFactor(SeasonHelper.java:42) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.tree.species.Species.seasonalFruitProductionFactor(Species.java:1822) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext.<init>(PostGenerationContext.java:37) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.JoCode.generate(JoCode.java:218) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.tree.species.Species.generate(Species.java:2170) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.generateTree(DynamicTreeFeature.java:123) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.generateTrees(DynamicTreeFeature.java:80) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.lambda$place$2(DynamicTreeFeature.java:68) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {re:mixin}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.place(DynamicTreeFeature.java:67) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.feature.Feature.place(Feature.java:191) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.feature.ConfiguredFeature.place(ConfiguredFeature.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.lambda$placeWithContext$4(PlacedFeature.java:54) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.placeWithContext(PlacedFeature.java:53) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.placeWithBiomeCheck(PlacedFeature.java:41) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.ChunkGenerator.applyBiomeDecoration(ChunkGenerator.java:396) ~[neoforge-21.1.242.jar%23196!/:?] {re:mixin,re:classloading,pl:mixin:APP:c2me-opts-worldgen-general.mixins.json:random_instances.MixinRedirectAtomicSimpleRandom from mod c2me_opts_worldgen_general,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinChunkGenerator from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-base.mixins.json:access.IChunkGenerator from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStatusTasks.generateFeatures(ChunkStatusTasks.java:154) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStep.apply(ChunkStep.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/c2me_rewrites_chunk_system@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.rewrites.chunksystem.common.statuses.VanillaWorldGenerationDelegate.lambda$upgradeToThis$8(VanillaWorldGenerationDelegate.java:139) ~[c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.93.jar%23271!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.base.common.scheduler.ScheduledTask.run(ScheduledTask.java:22) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.pollTasks(WorkerThread.java:46) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.run(WorkerThread.java:29) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: IO-Worker-1
+Stacktrace:
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229) ~[?:?] {re:mixin}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.SeasonContext.getFruitProductionFactor(SeasonContext.java:83) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.NormalSeasonManager.getFruitProductionFactor(NormalSeasonManager.java:120) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.season.SeasonHelper.globalSeasonalFruitProductionFactor(SeasonHelper.java:42) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.tree.species.Species.seasonalFruitProductionFactor(Species.java:1822) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.systems.genfeature.context.PostGenerationContext.<init>(PostGenerationContext.java:37) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.JoCode.generate(JoCode.java:218) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.tree.species.Species.generate(Species.java:2170) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.generateTree(DynamicTreeFeature.java:123) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.generateTrees(DynamicTreeFeature.java:80) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.lambda$place$2(DynamicTreeFeature.java:68) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {re:mixin}
+	at TRANSFORMER/dynamictrees@1.7.1/com.dtteam.dynamictrees.worldgen.feature.DynamicTreeFeature.place(DynamicTreeFeature.java:67) ~[dynamictrees-252818-8184894.jar%23208!/:1.7.1] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.feature.Feature.place(Feature.java:191) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.feature.ConfiguredFeature.place(ConfiguredFeature.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.lambda$placeWithContext$4(PlacedFeature.java:54) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.placeWithContext(PlacedFeature.java:53) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.placement.PlacedFeature.placeWithBiomeCheck(PlacedFeature.java:41) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.ChunkGenerator.applyBiomeDecoration(ChunkGenerator.java:396) ~[neoforge-21.1.242.jar%23196!/:?] {re:mixin,re:classloading,pl:mixin:APP:c2me-opts-worldgen-general.mixins.json:random_instances.MixinRedirectAtomicSimpleRandom from mod c2me_opts_worldgen_general,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinChunkGenerator from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-base.mixins.json:access.IChunkGenerator from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStatusTasks.generateFeatures(ChunkStatusTasks.java:154) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStep.apply(ChunkStep.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+-- Feature --
+Details:
+	Description: ResourceKey[minecraft:worldgen/placed_feature / dynamictrees:dynamic_tree]
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.ChunkGenerator.applyBiomeDecoration(ChunkGenerator.java:396) ~[neoforge-21.1.242.jar%23196!/:?] {re:mixin,re:classloading,pl:mixin:APP:c2me-opts-worldgen-general.mixins.json:random_instances.MixinRedirectAtomicSimpleRandom from mod c2me_opts_worldgen_general,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinChunkGenerator from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-base.mixins.json:access.IChunkGenerator from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStatusTasks.generateFeatures(ChunkStatusTasks.java:154) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStep.apply(ChunkStep.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/c2me_rewrites_chunk_system@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.rewrites.chunksystem.common.statuses.VanillaWorldGenerationDelegate.lambda$upgradeToThis$8(VanillaWorldGenerationDelegate.java:139) ~[c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.93.jar%23271!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.base.common.scheduler.ScheduledTask.run(ScheduledTask.java:22) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.pollTasks(WorkerThread.java:46) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.run(WorkerThread.java:29) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+
+
+-- Generation --
+Details:
+	CenterX: 29
+	CenterZ: -26
+	Decoration Seed: -646609829905158729
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.ChunkGenerator.applyBiomeDecoration(ChunkGenerator.java:396) ~[neoforge-21.1.242.jar%23196!/:?] {re:mixin,re:classloading,pl:mixin:APP:c2me-opts-worldgen-general.mixins.json:random_instances.MixinRedirectAtomicSimpleRandom from mod c2me_opts_worldgen_general,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinChunkGenerator from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-base.mixins.json:access.IChunkGenerator from mod c2me_base,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStatusTasks.generateFeatures(ChunkStatusTasks.java:154) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.chunk.status.ChunkStep.apply(ChunkStep.java:25) ~[neoforge-21.1.242.jar%23196!/:?] {re:classloading,re:mixin}
+	at TRANSFORMER/c2me_rewrites_chunk_system@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.rewrites.chunksystem.common.statuses.VanillaWorldGenerationDelegate.lambda$upgradeToThis$8(VanillaWorldGenerationDelegate.java:139) ~[c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.93.jar%23271!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.c2me.base.common.scheduler.ScheduledTask.run(ScheduledTask.java:22) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.pollTasks(WorkerThread.java:46) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+	at TRANSFORMER/c2me_base@0.3.0+alpha.0.93+1.21.1/com.ishland.flowsched.executor.WorkerThread.run(WorkerThread.java:29) ~[c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar%23292!/:?] {re:classloading}
+
+
+-- Chunk Info --
+Details:
+	Level: New World (1)
+	Dimension: minecraft:overworld
+	Storage: chunk
+	Position: [29, -26]
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$storeChunkIoError$38(MinecraftServer.java:2040) ~[neoforge-21.1.242.jar%23196!/:?] {re:mixin,pl:accesstransformer:B,re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:APP:ksyxis.mixins.json:MinecraftServerMixin from mod ksyxis,pl:mixin:APP:ponder.mixins.json:accessor.MinecraftServerAccessor from mod ponder,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinMinecraftServer from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-notickvd.mixins.json:MixinMinecraftServer from mod c2me_notickvd,pl:mixin:APP:c2me-rewrites-chunk-system.mixins.json:MixinMinecraftServer from mod c2me_rewrites_chunk_system,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.enhanced_autosave.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinMinecraftServer from mod c2me_opts_scheduling,pl:mixin:A}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {re:mixin}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.11, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 374877136 bytes (357 MiB) / 2151677952 bytes (2052 MiB) up to 8573157376 bytes (8176 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 3800X 8-Core Processor             
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): 3.89
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 3060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12288.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.16.1062
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 34741.00
+	Virtual memory used (MiB): 26720.31
+	Swap memory total (MiB): 2048.00
+	Swap memory used (MiB): 78.64
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 438234.16, total: 1906601.00
+	Space in storage for workdir (MiB): available: 438234.16, total: 1906601.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.43.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.43.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.43.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		c2me-neoforge-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me                          |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar       |Concurrent Chunk Management En|c2me_base                     |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-client-uncapvd-mc1.21.1-0.3.0+alpha.0.93.jar |Concurrent Chunk Management En|c2me_client_uncapvd           |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-chunkio-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-general-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-threading-issues-mc1.21.1-0.3.|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-vanilla-bugs-mc1.21.1-0.3.0+al|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-notickvd-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me_notickvd                 |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-chunkio-mc1.21.1-0.3.0+alpha.0.93.jar   |Concurrent Chunk Management En|c2me_opts_chunkio             |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-dfc-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me_opts_dfc                 |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-general-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-math-mc1.21.1-0.3.0+alpha.0.93.jar      |Concurrent Chunk Management En|c2me_opts_math                |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-allocs-mc1.21.1-0.3.0+alpha.0.93.jar    |Concurrent Chunk Management En|c2me_opts_allocs              |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-natives-math-mc1.21.1-0.3.0+alpha.0.93.j|Concurrent Chunk Management En|c2me_opts_natives_math        |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-scheduling-mc1.21.1-0.3.0+alpha.0.93.jar|Concurrent Chunk Management En|c2me_opts_scheduling          |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-vanilla-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunkio-mc1.21.1-0.3.0+alpha.0.93.ja|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-serializer-mc1.21.1-0.3.0+alph|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_rewrites_chunk_system    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-server-utils-mc1.21.1-0.3.0+alpha.0.93.jar   |Concurrent Chunk Management En|c2me_server_utils             |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-threading-lighting-mc1.21.1-0.3.0+alpha.0.93.|Concurrent Chunk Management En|c2me_threading_lighting       |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		create-1.21.1-6.0.4.jar                           |Create                        |create                        |6.0.4               |Manifest: NOSIGNATURE
+		dynamictrees-252818-8184894.jar                   |Dynamic Trees                 |dynamictrees                  |1.7.1               |Manifest: NOSIGNATURE
+		flywheel-neoforge-1.21.1-1.0.2.jar                |Flywheel                      |flywheel                      |1.0.2               |Manifest: NOSIGNATURE
+		GlitchCore-neoforge-1.21.1-2.1.0.2.jar            |GlitchCore                    |glitchcore                    |2.1.0.2             |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.247.jar               |Just Enough Items             |jei                           |19.21.0.247         |Manifest: NOSIGNATURE
+		Ksyxis-1.4.3.jar                                  |Ksyxis                        |ksyxis                        |1.4.3               |Manifest: NOSIGNATURE
+		lithium-neoforge-0.15.3+mc1.21.1.jar              |Lithium                       |lithium                       |0.15.3+mc1.21.1     |Manifest: NOSIGNATURE
+		neoforge-21.1.242.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.242.jar                             |NeoForge                      |neoforge                      |21.1.242            |Manifest: NOSIGNATURE
+		noisium-neoforge-2.7.0+mc1.21-1.21.1.jar          |Noisium                       |noisium                       |2.7.0+mc1.21-1.21.1 |Manifest: NOSIGNATURE
+		Ponder-NeoForge-1.21.1-1.0.46.jar                 |Ponder                        |ponder                        |1.0.46              |Manifest: NOSIGNATURE
+		serene-seasons-291874-6182596.jar                 |Serene Seasons                |sereneseasons                 |10.1.0.3            |Manifest: NOSIGNATURE
+		main                                              |Survival Reimagined           |survival_reimagined           |1.4.0-BETA-4        |Manifest: NOSIGNATURE
+		ToughAsNails-neoforge-1.21.1-10.1.0.13.jar        |Tough As Nails                |toughasnails                  |10.1.0.13           |Manifest: NOSIGNATURE
+	Crash Report UUID: e1f85800-7fac-43d0-834a-704cfd76b99a
+	FML: 4.0.43
+	NeoForge: 21.1.242
+	Flywheel Backend: flywheel:indirect

@@ -49,7 +49,7 @@ public class LootProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
-					for (int index4 = 0; index4 < Mth.nextInt(RandomSource.create(), 1, 3); index4++) {
+					for (int index32 = 0; index32 < Mth.nextInt(RandomSource.create(), 1, 3); index32++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.HEMP_SEEDS.get()));
 							entityToSpawn.setPickUpDelay(10);

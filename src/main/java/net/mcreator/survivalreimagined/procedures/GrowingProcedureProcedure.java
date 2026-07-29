@@ -119,7 +119,17 @@ public class GrowingProcedureProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
-		} else if (ModList.get().isLoaded("sereneseasons") == false || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("sereneseasons:year_round_crops")))) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putDouble("GrowClockMax", 800);
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -132,12 +142,12 @@ public class GrowingProcedureProcedure {
 			}
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("c:soil")))) {
-			if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip25 ? blockstate.getValue(_getip25) : -1) < (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _max27
-					? _max27.getPossibleValues().stream().max(Integer::compareTo).get()
+			if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip23 ? blockstate.getValue(_getip23) : -1) < (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _max25
+					? _max25.getPossibleValues().stream().max(Integer::compareTo).get()
 					: -1)
 					&& getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "N") > 0 && getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "P") > 0 && getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "K") > 0
-					&& ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _max32
-							? _max32.getPossibleValues().stream().max(Integer::compareTo).get()
+					&& ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock().getStateDefinition().getProperty("moisture") instanceof IntegerProperty _max30
+							? _max30.getPossibleValues().stream().max(Integer::compareTo).get()
 							: -1) <= 7) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
@@ -172,7 +182,7 @@ public class GrowingProcedureProcedure {
 				if (Math.random() < 0.45) {
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						{
-							int _value = (getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip54 ? blockstate.getValue(_getip54) : -1) + 1;
+							int _value = (getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip52 ? blockstate.getValue(_getip52) : -1) + 1;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
 							if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -207,7 +217,7 @@ public class GrowingProcedureProcedure {
 				if (Math.random() < 0.45) {
 					SurvivalReimaginedMod.queueServerWork(1, () -> {
 						{
-							int _value = (getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip63 ? blockstate.getValue(_getip63) : -1) + 1;
+							int _value = (getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip61 ? blockstate.getValue(_getip61) : -1) + 1;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
 							if (_bs.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -329,7 +339,7 @@ public class GrowingProcedureProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:maintains_farmland")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("c:soil")))) {
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "N") <= 0 || getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "P") <= 0 || getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "K") <= 0) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y - 1, z);

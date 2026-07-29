@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="survival_reimagined"
-version="1.4.0-BETA-1"
+version="1.4.0-BETA-4"
 displayName="Survival Reimagined"
 displayURL="https://modrinth.com/mod/survival-reimagined"
 logoFile="logo.png"
@@ -38,13 +38,13 @@ enumExtensions="META-INF/enumextensions.json"
 
 
 [[dependencies.survival_reimagined]]
-    modId="serene_seasons"
+    modId="mixins"
     type="optional"
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.survival_reimagined]]
-    modId="dynamic_trees"
+    modId="serene_seasons"
     type="optional"
     versionRange="[0,)"
     ordering="NONE"

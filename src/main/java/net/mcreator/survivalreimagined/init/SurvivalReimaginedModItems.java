@@ -889,6 +889,31 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> STONE_SALT_DEPOSIT;
 	public static final DeferredItem<Item> BLACK_BEAR_SPAWN_EGG;
 	public static final DeferredItem<Item> BROWN_BEAR_SPAWN_EGG;
+	public static final DeferredItem<Item> SPLINT;
+	public static final DeferredItem<Item> HEMP_BANDAGE;
+	public static final DeferredItem<Item> STRING_BANDAGE;
+	public static final DeferredItem<Item> TEOSINTE;
+	public static final DeferredItem<Item> FRUITING_MANDARIN_LEAVES;
+	public static final DeferredItem<Item> MANDARIN_PLANKS;
+	public static final DeferredItem<Item> MANDARIN_PLANKS_STAIRS;
+	public static final DeferredItem<Item> MANDARIN_PLANKS_SLAB;
+	public static final DeferredItem<Item> MANDARIN_PLANKS_FENCE;
+	public static final DeferredItem<Item> MANDARIN_PLANKS_FENCE_GATE;
+	public static final DeferredItem<Item> MANDARIN_PLANKS_BUTTON;
+	public static final DeferredItem<Item> MANDARIN_TRAPDOOR;
+	public static final DeferredItem<Item> MANDARIN_DOOR;
+	public static final DeferredItem<Item> MANDARIN_SIGN;
+	public static final DeferredItem<Item> MANDARIN_HANGING_SIGN;
+	public static final DeferredItem<Item> MANDARIN_BOAT;
+	public static final DeferredItem<Item> MANDARIN_PLANK;
+	public static final DeferredItem<Item> MANDARIN_PRESSURE_PLATE;
+	public static final DeferredItem<Item> STRIPPED_MANDARIN_LOG;
+	public static final DeferredItem<Item> MANDARIN_BARK;
+	public static final DeferredItem<Item> RED_CHERRY_LEAVES;
+	public static final DeferredItem<Item> FLOWERING_RED_CHERRY_LEAVES;
+	public static final DeferredItem<Item> CHERRIES;
+	public static final DeferredItem<Item> CHERRIES_FRUIT;
+	public static final DeferredItem<Item> RED_CHERRY_SAPLING;
 	static {
 		FLINTBLOCK = block(SurvivalReimaginedModBlocks.FLINTBLOCK);
 		FLINT_TOOL = REGISTRY.register("flint_tool", FlintToolItem::new);
@@ -1750,6 +1775,31 @@ public class SurvivalReimaginedModItems {
 		STONE_SALT_DEPOSIT = block(SurvivalReimaginedModBlocks.STONE_SALT_DEPOSIT);
 		BLACK_BEAR_SPAWN_EGG = REGISTRY.register("black_bear_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.BLACK_BEAR, -13882324, -15790321, new Item.Properties()));
 		BROWN_BEAR_SPAWN_EGG = REGISTRY.register("brown_bear_spawn_egg", () -> new DeferredSpawnEggItem(SurvivalReimaginedModEntities.BROWN_BEAR, -11386310, -14411245, new Item.Properties()));
+		SPLINT = REGISTRY.register("splint", SplintItem::new);
+		HEMP_BANDAGE = REGISTRY.register("hemp_bandage", HempBandageItem::new);
+		STRING_BANDAGE = REGISTRY.register("string_bandage", StringBandageItem::new);
+		TEOSINTE = block(SurvivalReimaginedModBlocks.TEOSINTE);
+		FRUITING_MANDARIN_LEAVES = block(SurvivalReimaginedModBlocks.FRUITING_MANDARIN_LEAVES);
+		MANDARIN_PLANKS = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS);
+		MANDARIN_PLANKS_STAIRS = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_STAIRS);
+		MANDARIN_PLANKS_SLAB = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_SLAB);
+		MANDARIN_PLANKS_FENCE = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_FENCE);
+		MANDARIN_PLANKS_FENCE_GATE = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_FENCE_GATE);
+		MANDARIN_PLANKS_BUTTON = block(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_BUTTON);
+		MANDARIN_TRAPDOOR = block(SurvivalReimaginedModBlocks.MANDARIN_TRAPDOOR);
+		MANDARIN_DOOR = doubleBlock(SurvivalReimaginedModBlocks.MANDARIN_DOOR);
+		MANDARIN_SIGN = signBlock(SurvivalReimaginedModBlocks.MANDARIN_SIGN, SurvivalReimaginedModBlocks.MANDARIN_WALL_SIGN);
+		MANDARIN_HANGING_SIGN = hangingSignBlock(SurvivalReimaginedModBlocks.MANDARIN_HANGING_SIGN, SurvivalReimaginedModBlocks.MANDARIN_WALL_HANGING_SIGN);
+		MANDARIN_BOAT = REGISTRY.register("mandarin_boat", () -> new BoatItem(false, SurvivalReimaginedModBoatTypes.MANDARIN_BOAT_TYPE.getValue(), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+		MANDARIN_PLANK = REGISTRY.register("mandarin_plank", MandarinPlankItem::new);
+		MANDARIN_PRESSURE_PLATE = block(SurvivalReimaginedModBlocks.MANDARIN_PRESSURE_PLATE);
+		STRIPPED_MANDARIN_LOG = block(SurvivalReimaginedModBlocks.STRIPPED_MANDARIN_LOG);
+		MANDARIN_BARK = REGISTRY.register("mandarin_bark", MandarinBarkItem::new);
+		RED_CHERRY_LEAVES = block(SurvivalReimaginedModBlocks.RED_CHERRY_LEAVES);
+		FLOWERING_RED_CHERRY_LEAVES = block(SurvivalReimaginedModBlocks.FLOWERING_RED_CHERRY_LEAVES);
+		CHERRIES = REGISTRY.register("cherries", CherriesItem::new);
+		CHERRIES_FRUIT = block(SurvivalReimaginedModBlocks.CHERRIES_FRUIT);
+		RED_CHERRY_SAPLING = block(SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING);
 	}
 
 	// Start of user code block custom items

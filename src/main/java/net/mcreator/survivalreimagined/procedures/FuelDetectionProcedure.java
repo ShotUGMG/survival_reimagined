@@ -24,6 +24,7 @@ public class FuelDetectionProcedure {
 			if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).is(ItemTags.create(ResourceLocation.parse("c:molds")))
 					|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).is(ItemTags.create(ResourceLocation.parse("c:molds")))) {
 				BronzeToolsProcedure.execute(world, x, y, z);
+				SteelToolsProcedure.execute(world, x, y, z);
 				DiamondToolsProcedure.execute(world, x, y, z);
 				IngotsRecipeProcedure.execute(world, x, y, z);
 				PlatesRecipeProcedure.execute(world, x, y, z);

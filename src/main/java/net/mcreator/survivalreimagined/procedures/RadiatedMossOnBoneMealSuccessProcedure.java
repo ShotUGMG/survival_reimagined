@@ -15,7 +15,7 @@ public class RadiatedMossOnBoneMealSuccessProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double LocXPlus1 = 0;
 		double LocZPlus1 = 0;
-		for (int index5 = 0; index5 < 12; index5++) {
+		for (int index33 = 0; index33 < 12; index33++) {
 			LocXPlus1 = Mth.nextInt(RandomSource.create(), -3, 3);
 			LocZPlus1 = Mth.nextInt(RandomSource.create(), -3, 3);
 			if (world.isEmptyBlock(BlockPos.containing(x + LocXPlus1, y + 1, z + LocZPlus1)) && (world.getBlockState(BlockPos.containing(x + LocXPlus1, y, z + LocZPlus1))).is(BlockTags.create(ResourceLocation.parse("minecraft:dirt")))) {

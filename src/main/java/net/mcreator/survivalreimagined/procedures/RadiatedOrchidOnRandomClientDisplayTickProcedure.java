@@ -15,7 +15,7 @@ public class RadiatedOrchidOnRandomClientDisplayTickProcedure {
 		double PosDecX = 0;
 		double PosDecY = 0;
 		double PosDecZ = 0;
-		for (int index9 = 0; index9 < 20; index9++) {
+		for (int index37 = 0; index37 < 20; index37++) {
 			LocX = Mth.nextInt(RandomSource.create(), -20, 20);
 			LocY = Mth.nextInt(RandomSource.create(), -20, 20);
 			LocZ = Mth.nextInt(RandomSource.create(), -20, 20);

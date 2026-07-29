@@ -58,7 +58,7 @@ public class WisteriaLitterDropsProcedure {
 						}
 					}
 				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip8 ? blockstate.getValue(_getip8) : -1) == 1) {
-					for (int index26 = 0; index26 < 2; index26++) {
+					for (int index54 = 0; index54 < 2; index54++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -73,7 +73,7 @@ public class WisteriaLitterDropsProcedure {
 						}
 					}
 				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip12 ? blockstate.getValue(_getip12) : -1) == 2) {
-					for (int index27 = 0; index27 < 3; index27++) {
+					for (int index55 = 0; index55 < 3; index55++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -88,7 +88,7 @@ public class WisteriaLitterDropsProcedure {
 						}
 					}
 				} else if ((getPropertyByName(blockstate, "blockstate") instanceof IntegerProperty _getip16 ? blockstate.getValue(_getip16) : -1) == 3) {
-					for (int index28 = 0; index28 < 4; index28++) {
+					for (int index56 = 0; index56 < 4; index56++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.WISTERIA_LEAF_LITTER.get()));
 							entityToSpawn.setPickUpDelay(10);

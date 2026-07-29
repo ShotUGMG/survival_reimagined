@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "bcb",
+    "  a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "survival_reimagined:hemp_fiber"
+    },
+    "c": {
+      "item": "survival_reimagined:hemp_mesh"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:splint",
+    "count": 1
+  }
+}

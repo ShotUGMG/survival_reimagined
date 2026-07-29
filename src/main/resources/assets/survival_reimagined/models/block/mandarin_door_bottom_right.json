@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "particle": "survival_reimagined:block/mandarin_door_bottom",
+    "bottom": "survival_reimagined:block/mandarin_door_bottom",
+    "top": "survival_reimagined:block/mandarin_door_top"
+  },
+  "render_type": "cutout"
+}

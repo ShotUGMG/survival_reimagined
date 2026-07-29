@@ -15,6 +15,7 @@
     "renderStatusInHUD": true,
     "isCuredbyHoney": false,
     "modifiers": [],
-    "onActiveTick": "BrokenLegPotionOnEffectActiveTick"
+    "onActiveTick": "BrokenLegPotionOnEffectActiveTick",
+    "onExpired": "BrokenLegPotionEffectExpires"
   }
 }

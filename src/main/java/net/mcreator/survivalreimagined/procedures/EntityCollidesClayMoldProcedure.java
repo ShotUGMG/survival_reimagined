@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 public class EntityCollidesClayMoldProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		world.destroyBlock(BlockPos.containing(x, y, z), false);
-		for (int index0 = 0; index0 < Mth.nextInt(RandomSource.create(), 2, 3); index0++) {
+		for (int index28 = 0; index28 < Mth.nextInt(RandomSource.create(), 2, 3); index28++) {
 			if (world instanceof ServerLevel _level) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.CLAY_BALL));
 				entityToSpawn.setPickUpDelay(10);

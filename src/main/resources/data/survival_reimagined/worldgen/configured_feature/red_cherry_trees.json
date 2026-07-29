@@ -1,0 +1,112 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_provider": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "survival_reimagined:red_cherry_leaves"
+          },
+          "weight": 3
+        },
+        {
+          "data": {
+            "Name": "survival_reimagined:flowering_red_cherry_leaves"
+          },
+          "weight": 1
+        }
+      ]
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:cherry_log"
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "foliage_placer": {
+      "type": "minecraft:cherry_foliage_placer",
+      "height": 4,
+      "offset": 0,
+      "radius": 4,
+      "corner_hole_chance": 0.25,
+      "hanging_leaves_chance": 0.166,
+      "hanging_leaves_extension_chance": 0.333,
+      "wide_bottom_layer_hole_chance": 0.25
+    },
+    "trunk_placer": {
+      "type": "minecraft:cherry_trunk_placer",
+      "base_height": 5,
+      "height_rand_a": 1,
+      "height_rand_b": 0,
+      "branch_count": {
+        "type": "uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 3
+      },
+      "branch_horizontal_length": {
+        "type": "uniform",
+        "min_inclusive": 2,
+        "max_inclusive": 3
+      },
+      "branch_end_offset_from_top": {
+        "type": "minecraft:uniform",
+        "min_inclusive": -1,
+        "max_inclusive": 0
+      },
+      "branch_start_offset_from_top": {
+        "min_inclusive": -4,
+        "max_inclusive": -3
+      }
+    },
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 2
+    },
+    "decorators": [
+      {
+        "type": "minecraft:attached_to_leaves",
+        "block_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "data": {
+                "Name": "survival_reimagined:cherries_fruit",
+                "Properties": {
+                  "age": "0"
+                }
+              },
+              "weight": 10
+            },
+            {
+              "data": {
+                "Name": "survival_reimagined:cherries_fruit",
+                "Properties": {
+                  "age": "2"
+                }
+              },
+              "weight": 4
+            }
+          ]
+        },
+        "probability": 0.7,
+        "exclusion_radius_xz": 1,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "directions": [
+          "down"
+        ]
+      }
+    ]
+  }
+}

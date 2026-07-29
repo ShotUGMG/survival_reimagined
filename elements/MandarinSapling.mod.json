@@ -16,7 +16,7 @@
     "displayFluidOverlay": false,
     "states": [],
     "animations": [],
-    "itemTexture": "",
+    "itemTexture": "mandarin_tree_sapling",
     "particleTexture": "",
     "blockSetType": "OAK",
     "leavesParticleChance": 0.0,

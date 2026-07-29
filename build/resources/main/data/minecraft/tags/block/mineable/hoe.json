@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:red_cherry_leaves",
     "survival_reimagined:thick_radiated_vines_base",
     "survival_reimagined:thick_radiated_vines",
     "survival_reimagined:thin_radiated_vine_base",
+    "survival_reimagined:flowering_red_cherry_leaves",
     "survival_reimagined:radiated_tall_grass",
     "survival_reimagined:thin_radiated_vines"
   ]

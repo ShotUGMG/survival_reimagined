@@ -10,8 +10,8 @@ java.base/java.lang.invoke=cpw.mods.securejarhandler
 java.base/sun.security.util=cpw.mods.securejarhandler
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
--Dlog4j2.configurationFile=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined_2026.2\\build\\moddev\\serverLog4j2.xml
+-Dlog4j2.configurationFile=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\build\\moddev\\serverLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
 -DignoreList=mixinextras-neoforge-0.5.3.jar,client-extra,neoforge-
--DlegacyClassPath.file=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined_2026.2\\build\\moddev\\serverLegacyClasspath.txt
+-DlegacyClassPath.file=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\build\\moddev\\serverLegacyClasspath.txt
 -Dforge.logging.markers=REGISTRIES

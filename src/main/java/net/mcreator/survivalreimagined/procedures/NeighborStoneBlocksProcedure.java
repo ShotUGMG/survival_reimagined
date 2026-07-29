@@ -16,11 +16,11 @@ public class NeighborStoneBlocksProcedure {
 		double sz = 0;
 		double sy = 0;
 		sx = -3;
-		for (int index6 = 0; index6 < 6; index6++) {
+		for (int index34 = 0; index34 < 6; index34++) {
 			sy = -3;
-			for (int index7 = 0; index7 < 6; index7++) {
+			for (int index35 = 0; index35 < 6; index35++) {
 				sz = -3;
-				for (int index8 = 0; index8 < 6; index8++) {
+				for (int index36 = 0; index36 < 6; index36++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(ResourceLocation.parse("c:stones")))) {
 						if (Math.random() < 0.5) {
 							{

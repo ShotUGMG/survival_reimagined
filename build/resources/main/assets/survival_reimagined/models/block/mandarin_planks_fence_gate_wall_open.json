@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "survival_reimagined:block/mandarin_planks",
+    "particle": "survival_reimagined:block/mandarin_planks"
+  },
+  "render_type": "solid"
+}

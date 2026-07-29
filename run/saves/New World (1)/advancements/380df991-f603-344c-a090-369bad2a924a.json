@@ -1,0 +1,21 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-07-28 21:21:04 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:survival_reimagined": {
+    "criteria": {
+      "survival_reimagined_0": "2026-07-28 21:21:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:cherry_grove": "2026-07-28 21:21:06 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3955
+}

@@ -42,7 +42,7 @@ public class CrimsonThreadDropsProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) != 0) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 1) {
 					if (Math.random() < 0.3) {
-						for (int index18 = 0; index18 < Mth.nextInt(RandomSource.create(), 2, 4); index18++) {
+						for (int index46 = 0; index46 < Mth.nextInt(RandomSource.create(), 2, 4); index46++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -52,7 +52,7 @@ public class CrimsonThreadDropsProcedure {
 					}
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 2) {
 					if (Math.random() < 0.35) {
-						for (int index19 = 0; index19 < Mth.nextInt(RandomSource.create(), 3, 5); index19++) {
+						for (int index47 = 0; index47 < Mth.nextInt(RandomSource.create(), 3, 5); index47++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -62,7 +62,7 @@ public class CrimsonThreadDropsProcedure {
 					}
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 3) {
 					if (Math.random() < 0.5) {
-						for (int index20 = 0; index20 < Mth.nextInt(RandomSource.create(), 4, 6); index20++) {
+						for (int index48 = 0; index48 < Mth.nextInt(RandomSource.create(), 4, 6); index48++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -73,7 +73,7 @@ public class CrimsonThreadDropsProcedure {
 				}
 			} else {
 				if (Math.random() < 0.2) {
-					for (int index21 = 0; index21 < Mth.nextInt(RandomSource.create(), 1, 2); index21++) {
+					for (int index49 = 0; index49 < Mth.nextInt(RandomSource.create(), 1, 2); index49++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -86,7 +86,7 @@ public class CrimsonThreadDropsProcedure {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) != 0) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 1) {
 					if (Math.random() < 0.3) {
-						for (int index22 = 0; index22 < Mth.nextInt(RandomSource.create(), 2, 4); index22++) {
+						for (int index50 = 0; index50 < Mth.nextInt(RandomSource.create(), 2, 4); index50++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -96,7 +96,7 @@ public class CrimsonThreadDropsProcedure {
 					}
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 2) {
 					if (Math.random() < 0.35) {
-						for (int index23 = 0; index23 < Mth.nextInt(RandomSource.create(), 3, 5); index23++) {
+						for (int index51 = 0; index51 < Mth.nextInt(RandomSource.create(), 3, 5); index51++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -106,7 +106,7 @@ public class CrimsonThreadDropsProcedure {
 					}
 				} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(world.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.LOOTING)) == 3) {
 					if (Math.random() < 0.5) {
-						for (int index24 = 0; index24 < Mth.nextInt(RandomSource.create(), 4, 6); index24++) {
+						for (int index52 = 0; index52 < Mth.nextInt(RandomSource.create(), 4, 6); index52++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -117,7 +117,7 @@ public class CrimsonThreadDropsProcedure {
 				}
 			} else {
 				if (Math.random() < 0.2) {
-					for (int index25 = 0; index25 < Mth.nextInt(RandomSource.create(), 1, 2); index25++) {
+					for (int index53 = 0; index53 < Mth.nextInt(RandomSource.create(), 1, 2); index53++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(SurvivalReimaginedModItems.CRIMSON_THREAD.get()));
 							entityToSpawn.setPickUpDelay(10);

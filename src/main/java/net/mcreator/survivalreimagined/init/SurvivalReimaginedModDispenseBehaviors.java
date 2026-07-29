@@ -15,6 +15,7 @@ public class SurvivalReimaginedModDispenseBehaviors {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			DispenserBlock.registerBehavior(SurvivalReimaginedModItems.MANDARIN_BOAT.get(), new BoatDispenseItemBehavior(SurvivalReimaginedModBoatTypes.MANDARIN_BOAT_TYPE.getValue()));
 			DispenserBlock.registerBehavior(SurvivalReimaginedModItems.WISTERIA_BOAT.get(), new BoatDispenseItemBehavior(SurvivalReimaginedModBoatTypes.WISTERIA_BOAT_TYPE.getValue()));
 			DispenserBlock.registerBehavior(SurvivalReimaginedModItems.RADIATED_BOAT.get(), new BoatDispenseItemBehavior(SurvivalReimaginedModBoatTypes.RADIATED_BOAT_TYPE.getValue()));
 		});

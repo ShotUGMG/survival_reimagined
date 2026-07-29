@@ -15,6 +15,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.survivalreimagined.procedures.ZombificationEffectExpiresProcedure;
+import net.mcreator.survivalreimagined.procedures.BrokenLegPotionEffectExpiresProcedure;
 import net.mcreator.survivalreimagined.potion.*;
 import net.mcreator.survivalreimagined.SurvivalReimaginedMod;
 
@@ -48,6 +49,8 @@ public class SurvivalReimaginedModMobEffects {
 	private static void expireEffects(Entity entity, MobEffectInstance effectInstance) {
 		if (effectInstance.getEffect().is(ZOMBIFICATION)) {
 			ZombificationEffectExpiresProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		} else if (effectInstance.getEffect().is(BROKEN_LEG_POTION)) {
+			BrokenLegPotionEffectExpiresProcedure.execute(entity);
 		}
 	}
 }

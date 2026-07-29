@@ -45,43 +45,27 @@ public class BlockBrokenProcedure {
 		if (entity == null)
 			return;
 		ItemStack MeatType = ItemStack.EMPTY;
+		ItemStack CarcassType = ItemStack.EMPTY;
 		if ((getEntityGameType(entity) == GameType.CREATIVE) == false) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/beef")))) {
 				MeatType = new ItemStack(SurvivalReimaginedModItems.BEEF.get()).copy();
+				CarcassType = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/mutton")))) {
 				MeatType = new ItemStack(SurvivalReimaginedModItems.RAW_MUTTON.get()).copy();
+				CarcassType = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/pork")))) {
 				MeatType = new ItemStack(SurvivalReimaginedModItems.RAW_PORKCHOP.get()).copy();
+				CarcassType = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.CHICKEN_CARCASS.get()) {
 				MeatType = new ItemStack(SurvivalReimaginedModItems.RAW_CHICKEN.get()).copy();
+				CarcassType = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SKINNED_HORSE.get()) {
 				MeatType = new ItemStack(SurvivalReimaginedModItems.RAW_EQUINE.get()).copy();
+				CarcassType = (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())).copy();
 			}
-			if ((getPropertyByName(blockstate, "carcass_stage") instanceof IntegerProperty _getip13 ? blockstate.getValue(_getip13) : -1) > 0) {
-				if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == (blockStateWithInt((world.getBlockState(BlockPos.containing(x, y, z))), "carcass_stage", 4)).getBlock()) {
-					for (int index3387 = 0; index3387 < Mth.nextInt(RandomSource.create(), 1, 3); index3387++) {
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-						if (world instanceof ServerLevel _level) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(Items.BONE));
-							entityToSpawn.setPickUpDelay(10);
-							_level.addFreshEntity(entityToSpawn);
-						}
-					}
-				}
-			} else if ((blockStateWithInt((world.getBlockState(BlockPos.containing(x, y, z))), "carcass_stage", 1)).is(BlockTags.create(ResourceLocation.parse("c:smaller_carcasses")))) {
-				if ((getPropertyByName(blockstate, "carcass_stage") instanceof IntegerProperty _getip26 ? blockstate.getValue(_getip26) : -1) == 1) {
-					if (world instanceof ServerLevel _level) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
-						entityToSpawn.setPickUpDelay(10);
-						_level.addFreshEntity(entityToSpawn);
-					}
-				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SKINNED_HORSE.get()) {
-				for (int index3388 = 0; index3388 < Mth.nextInt(RandomSource.create(), 1, 3); index3388++) {
+			if ((getPropertyByName(blockstate, "carcass_state") instanceof IntegerProperty _getip23 ? blockstate.getValue(_getip23) : -1) > 0
+					&& !(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/equine")))) {
+				for (int index195 = 0; index195 < Mth.nextInt(RandomSource.create(), 1, 3); index195++) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
 						entityToSpawn.setPickUpDelay(10);
@@ -92,6 +76,44 @@ public class BlockBrokenProcedure {
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
+				}
+			} else {
+				if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/equine")))) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), CarcassType);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				}
+			}
+			if ((blockStateWithInt((world.getBlockState(BlockPos.containing(x, y, z))), "carcass_state", 1)).is(BlockTags.create(ResourceLocation.parse("c:smaller_carcasses")))) {
+				if ((getPropertyByName(blockstate, "carcass_state") instanceof IntegerProperty _getip36 ? blockstate.getValue(_getip36) : -1) == 1) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				}
+			}
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SKINNED_HORSE.get()) {
+				for (int index196 = 0; index196 < Mth.nextInt(RandomSource.create(), 1, 3); index196++) {
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+					if (world instanceof ServerLevel _level) {
+						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(Items.BONE));
+						entityToSpawn.setPickUpDelay(10);
+						_level.addFreshEntity(entityToSpawn);
+					}
+				}
+			} else if (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SKINNED_HORSE.get())
+					&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/equine")))) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (new ItemStack((world.getBlockState(BlockPos.containing(x, y, z))).getBlock())));
+					entityToSpawn.setPickUpDelay(10);
+					_level.addFreshEntity(entityToSpawn);
 				}
 			}
 		}

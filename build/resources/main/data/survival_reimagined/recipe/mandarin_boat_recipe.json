@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "survival_reimagined:mandarin_plank"
+    },
+    "b": {
+      "item": "survival_reimagined:boat_paddles"
+    }
+  },
+  "result": {
+    "id": "survival_reimagined:mandarin_boat",
+    "count": 1
+  }
+}

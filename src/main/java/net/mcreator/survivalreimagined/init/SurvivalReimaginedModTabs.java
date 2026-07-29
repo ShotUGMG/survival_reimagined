@@ -705,6 +705,30 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.STONE_SALT_DEPOSIT.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.BLACK_BEAR_SPAWN_EGG.get());
 				tabData.accept(SurvivalReimaginedModItems.BROWN_BEAR_SPAWN_EGG.get());
+				tabData.accept(SurvivalReimaginedModItems.SPLINT.get());
+				tabData.accept(SurvivalReimaginedModItems.HEMP_BANDAGE.get());
+				tabData.accept(SurvivalReimaginedModItems.STRING_BANDAGE.get());
+				tabData.accept(SurvivalReimaginedModBlocks.TEOSINTE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.FRUITING_MANDARIN_LEAVES.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_STAIRS.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_SLAB.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_FENCE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_FENCE_GATE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PLANKS_BUTTON.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_TRAPDOOR.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_DOOR.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_SIGN.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_HANGING_SIGN.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.MANDARIN_BOAT.get());
+				tabData.accept(SurvivalReimaginedModItems.MANDARIN_PLANK.get());
+				tabData.accept(SurvivalReimaginedModBlocks.MANDARIN_PRESSURE_PLATE.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.STRIPPED_MANDARIN_LOG.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.MANDARIN_BARK.get());
+				tabData.accept(SurvivalReimaginedModBlocks.RED_CHERRY_LEAVES.get().asItem());
+				tabData.accept(SurvivalReimaginedModBlocks.FLOWERING_RED_CHERRY_LEAVES.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.CHERRIES.get());
+				tabData.accept(SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING.get().asItem());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SR_COMPAT_ITEMS = REGISTRY.register("sr_compat_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.survival_reimagined.sr_compat_items")).icon(() -> new ItemStack(SurvivalReimaginedModItems.HEART.get())).displayItems((parameters, tabData) -> {

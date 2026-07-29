@@ -15,25 +15,25 @@ public class AdvancedAlloyForgeOnRandomClientDisplayTickProcedure {
 		if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelCapacity") > 0) {
 			if ((getDirectionFromBlockState(blockstate)) == Direction.NORTH) {
 				if (Math.random() < 0.8) {
-					for (int index10 = 0; index10 < 10; index10++) {
+					for (int index38 = 0; index38 < 10; index38++) {
 						world.addParticle(ParticleTypes.LARGE_SMOKE, (x + Math.random()), y, (z + 1 + Math.random()), 0, 0.2, 0);
 					}
 				}
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.SOUTH) {
 				if (Math.random() < 0.8) {
-					for (int index11 = 0; index11 < 10; index11++) {
+					for (int index39 = 0; index39 < 10; index39++) {
 						world.addParticle(ParticleTypes.LARGE_SMOKE, (x + Math.random()), y, (z - Math.random()), 0, 0.2, 0);
 					}
 				}
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.WEST) {
 				if (Math.random() < 0.8) {
-					for (int index12 = 0; index12 < 10; index12++) {
+					for (int index40 = 0; index40 < 10; index40++) {
 						world.addParticle(ParticleTypes.LARGE_SMOKE, (x + 1 + Math.random()), y, (z + Math.random()), 0, 0.2, 0);
 					}
 				}
 			} else if ((getDirectionFromBlockState(blockstate)) == Direction.EAST) {
 				if (Math.random() < 0.8) {
-					for (int index13 = 0; index13 < 10; index13++) {
+					for (int index41 = 0; index41 < 10; index41++) {
 						world.addParticle(ParticleTypes.LARGE_SMOKE, (x - Math.random()), y, (z + Math.random()), 0, 0.2, 0);
 					}
 				}

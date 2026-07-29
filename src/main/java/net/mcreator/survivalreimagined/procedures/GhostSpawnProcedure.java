@@ -104,7 +104,7 @@ public class GhostSpawnProcedure {
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
 					for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(30 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 						if (entityiterator instanceof GhostEntity == true) {
-							for (int index158 = 0; index158 < 15; index158++) {
+							for (int index186 = 0; index186 < 15; index186++) {
 								world.addParticle(ParticleTypes.WHITE_SMOKE, (entityiterator.getX() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), (entityiterator.getY() + Mth.nextDouble(RandomSource.create(), 0, 2)),
 										(entityiterator.getZ() + Mth.nextDouble(RandomSource.create(), -0.5, 0.5)), 0, 0.05, 0);
 							}

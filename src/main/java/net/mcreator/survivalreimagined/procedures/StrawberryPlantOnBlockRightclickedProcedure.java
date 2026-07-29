@@ -43,7 +43,7 @@ public class StrawberryPlantOnBlockRightclickedProcedure {
 					}
 				}
 			});
-			for (int index157 = 0; index157 < Mth.nextInt(RandomSource.create(), 2, 4); index157++) {
+			for (int index185 = 0; index185 < Mth.nextInt(RandomSource.create(), 2, 4); index185++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.STRAWBERRY.get()));
 					entityToSpawn.setPickUpDelay(10);

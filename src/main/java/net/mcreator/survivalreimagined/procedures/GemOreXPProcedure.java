@@ -38,7 +38,7 @@ public class GemOreXPProcedure {
 			return;
 		if (getEntityGameType(entity) == GameType.SURVIVAL) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("survival_reimagined:ore_drops_xp")))) {
-				for (int index14 = 0; index14 < Mth.nextInt(RandomSource.create(), 1, 3); index14++) {
+				for (int index42 = 0; index42 < Mth.nextInt(RandomSource.create(), 1, 3); index42++) {
 					if (world instanceof ServerLevel _level)
 						_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), (y + 0.5), (z + 0.5), 2));
 				}

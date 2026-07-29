@@ -66,8 +66,8 @@ public class SteelToolsProcedure {
 					}
 				}
 			}
-		} else if (((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModItems.STEEL_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getCount() >= 3
-				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.STEEL_INGOT.get() && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getCount() >= 3)
+		} else if (((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModItems.STEEL_INGOT.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() >= 3
+				|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModItems.STEEL_INGOT.get() && itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() >= 3)
 				&& ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == SurvivalReimaginedModBlocks.PICKAXE_HEAD_MOLD.get().asItem()
 						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == SurvivalReimaginedModBlocks.PICKAXE_HEAD_MOLD.get().asItem())) {
 			if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).getCount() == 0 || !((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == SurvivalReimaginedModItems.STEEL_PICKAXE_HEAD.get())) {

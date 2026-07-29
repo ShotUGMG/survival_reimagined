@@ -122,13 +122,23 @@ public class GrowingProcedureTreeProcedure {
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
 			}
-		} else if (ModList.get().isLoaded("sereneseasons") == false || (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("sereneseasons:year_round_crops")))) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null) {
-					_blockEntity.getPersistentData().putDouble("GrowClockMax", 100);
+					_blockEntity.getPersistentData().putDouble("GrowClockMax", 800);
+				}
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
+		} else {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null) {
+					_blockEntity.getPersistentData().putDouble("GrowClockMax", 200);
 				}
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
@@ -153,6 +163,13 @@ public class GrowingProcedureTreeProcedure {
 						SurvivalReimaginedMod.queueServerWork(1, () -> {
 							if (world instanceof ServerLevel _level)
 								_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("survival_reimagined:mandarin_tree_sapling"))).value().place(_level, _level.getChunkSource().getGenerator(),
+										_level.getRandom(), BlockPos.containing(x, y, z));
+						});
+					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING.get()) {
+						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+						SurvivalReimaginedMod.queueServerWork(1, () -> {
+							if (world instanceof ServerLevel _level)
+								_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("survival_reimagined:rec_cherry_tree_sapling"))).value().place(_level, _level.getChunkSource().getGenerator(),
 										_level.getRandom(), BlockPos.containing(x, y, z));
 						});
 					}
@@ -194,6 +211,13 @@ public class GrowingProcedureTreeProcedure {
 						SurvivalReimaginedMod.queueServerWork(1, () -> {
 							if (world instanceof ServerLevel _level)
 								_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("survival_reimagined:mandarin_tree_sapling"))).value().place(_level, _level.getChunkSource().getGenerator(),
+										_level.getRandom(), BlockPos.containing(x, y, z));
+						});
+					} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING.get()) {
+						world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+						SurvivalReimaginedMod.queueServerWork(1, () -> {
+							if (world instanceof ServerLevel _level)
+								_level.holderOrThrow(ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.parse("survival_reimagined:rec_cherry_tree_sapling"))).value().place(_level, _level.getChunkSource().getGenerator(),
 										_level.getRandom(), BlockPos.containing(x, y, z));
 						});
 					}

@@ -18,4 +18,6 @@ public class SurvivalReimaginedModBoatTypes {
 			(Supplier<Item>) () -> Items.AIR, (Supplier<Item>) () -> Items.STICK, false);
 	public static final EnumProxy<Boat.Type> RADIATED_BOAT_TYPE = new EnumProxy<>(Boat.Type.class, (Supplier<Block>) () -> Blocks.OAK_PLANKS, "survival_reimagined:radiated_boat", SurvivalReimaginedModItems.RADIATED_BOAT,
 			(Supplier<Item>) () -> Items.AIR, (Supplier<Item>) () -> Items.STICK, false);
+	public static final EnumProxy<Boat.Type> MANDARIN_BOAT_TYPE = new EnumProxy<>(Boat.Type.class, (Supplier<Block>) () -> Blocks.OAK_PLANKS, "survival_reimagined:mandarin_boat", SurvivalReimaginedModItems.MANDARIN_BOAT,
+			(Supplier<Item>) () -> Items.AIR, (Supplier<Item>) () -> Items.STICK, false);
 }

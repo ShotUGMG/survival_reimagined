@@ -18,7 +18,7 @@ public class BoarBreedProcedure {
 			return false;
 		if (entity instanceof SowEntity == true) {
 			SurvivalReimaginedMod.queueServerWork(3, () -> {
-				for (int index150 = 0; index150 < Mth.nextInt(RandomSource.create(), 1, 4); index150++) {
+				for (int index178 = 0; index178 < Mth.nextInt(RandomSource.create(), 1, 4); index178++) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = SurvivalReimaginedModEntities.PIGLET.get().spawn(_level, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), MobSpawnType.MOB_SUMMONED);
 						if (entityToSpawn != null) {

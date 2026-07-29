@@ -106,5 +106,7 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(400);
 		else if (itemstack.getItem() == SurvivalReimaginedModBlocks.LIGINITE_BLOCK.get().asItem())
 			event.setBurnTime(7200);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.MANDARIN_BARK.get())
+			event.setBurnTime(400);
 	}
 }

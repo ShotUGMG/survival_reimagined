@@ -28,6 +28,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.survivalreimagined.procedures.MandarinFruitBlockValidPlacementConditionProcedure;
 import net.mcreator.survivalreimagined.procedures.GrowingProcedureProcedure;
+import net.mcreator.survivalreimagined.procedures.FruitNeighbourBlockChangesProcedure;
 import net.mcreator.survivalreimagined.block.entity.MandarinFruitBlockEntity;
 
 import com.google.common.collect.ImmutableMap;
@@ -106,6 +107,12 @@ public class MandarinFruitBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		FruitNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

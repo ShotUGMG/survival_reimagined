@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "survival_reimagined:block/fruiting_mandarin_leaves",
+    "particle": "survival_reimagined:block/fruiting_mandarin_leaves"
+  }
+}

@@ -40,11 +40,11 @@ public class MPTPowerProcedure {
 		double sz = 0;
 		sx = -10;
 		found = false;
-		for (int index15 = 0; index15 < 20; index15++) {
+		for (int index43 = 0; index43 < 20; index43++) {
 			sy = -10;
-			for (int index16 = 0; index16 < 20; index16++) {
+			for (int index44 = 0; index44 < 20; index44++) {
 				sz = -10;
-				for (int index17 = 0; index17 < 20; index17++) {
+				for (int index45 = 0; index45 < 20; index45++) {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == SurvivalReimaginedModBlocks.MINERAL_PROCESSING_TABLE.get()
 							&& (getPropertyByName((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))), "redstone_power") instanceof BooleanProperty _getbp3
 									&& (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getValue(_getbp3)) == true) {

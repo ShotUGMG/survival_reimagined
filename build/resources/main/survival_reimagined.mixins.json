@@ -11,7 +11,8 @@
     "NoiseBasedChunkGeneratorMixin",
     "CancelTillingMixin",
     "ComposterDropMixin",
-    "ItemstackFixForMeatItemsMixin"
+    "ItemstackFixForMeatItemsMixin",
+    "CaveDarknessMixin"
   ],
   "client": [
     "PlayerAnimationMixin",

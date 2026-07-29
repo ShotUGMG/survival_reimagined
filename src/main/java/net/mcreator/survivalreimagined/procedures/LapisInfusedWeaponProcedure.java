@@ -40,14 +40,14 @@ public class LapisInfusedWeaponProcedure {
 				&& (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("LapisInfused") == true) {
 			if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("GoldInfused") == true) {
 				if (Math.random() < 0.2) {
-					for (int index148 = 0; index148 < Mth.nextInt(RandomSource.create(), 1, 3); index148++) {
+					for (int index176 = 0; index176 < Mth.nextInt(RandomSource.create(), 1, 3); index176++) {
 						if (world instanceof ServerLevel _level)
 							_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 3, 7)));
 					}
 				}
 			} else if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("SilverInfused") == true) {
 				if (Math.random() < 0.1) {
-					for (int index149 = 0; index149 < Mth.nextInt(RandomSource.create(), 1, 3); index149++) {
+					for (int index177 = 0; index177 < Mth.nextInt(RandomSource.create(), 1, 3); index177++) {
 						if (world instanceof ServerLevel _level)
 							_level.addFreshEntity(new ExperienceOrb(_level, (x + 0.5), y, (z + 0.5), Mth.nextInt(RandomSource.create(), 1, 3)));
 					}

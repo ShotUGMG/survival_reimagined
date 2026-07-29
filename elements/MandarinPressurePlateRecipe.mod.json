@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "CUSTOM:MandarinPlanks",
+      "CUSTOM:MandarinPlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:MandarinPressurePlate",
+    "name": "mandarin_pressure_plate_recipe",
+    "namespace": "mod"
+  }
+}

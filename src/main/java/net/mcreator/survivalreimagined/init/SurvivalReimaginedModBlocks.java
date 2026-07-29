@@ -394,6 +394,26 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> HORSE_LEG;
 	public static final DeferredBlock<Block> HORSE_HEAD;
 	public static final DeferredBlock<Block> STONE_SALT_DEPOSIT;
+	public static final DeferredBlock<Block> TEOSINTE;
+	public static final DeferredBlock<Block> FRUITING_MANDARIN_LEAVES;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS_STAIRS;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS_SLAB;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS_FENCE;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS_FENCE_GATE;
+	public static final DeferredBlock<Block> MANDARIN_PLANKS_BUTTON;
+	public static final DeferredBlock<Block> MANDARIN_TRAPDOOR;
+	public static final DeferredBlock<Block> MANDARIN_DOOR;
+	public static final DeferredBlock<Block> MANDARIN_SIGN;
+	public static final DeferredBlock<Block> MANDARIN_WALL_SIGN;
+	public static final DeferredBlock<Block> MANDARIN_HANGING_SIGN;
+	public static final DeferredBlock<Block> MANDARIN_WALL_HANGING_SIGN;
+	public static final DeferredBlock<Block> MANDARIN_PRESSURE_PLATE;
+	public static final DeferredBlock<Block> STRIPPED_MANDARIN_LOG;
+	public static final DeferredBlock<Block> RED_CHERRY_LEAVES;
+	public static final DeferredBlock<Block> FLOWERING_RED_CHERRY_LEAVES;
+	public static final DeferredBlock<Block> CHERRIES_FRUIT;
+	public static final DeferredBlock<Block> RED_CHERRY_SAPLING;
 	static {
 		FLINTBLOCK = REGISTRY.register("flintblock", FlintblockBlock::new);
 		STONE_ROCK_BLOC = REGISTRY.register("stone_rock_bloc", StoneRockBlocBlock::new);
@@ -767,6 +787,26 @@ public class SurvivalReimaginedModBlocks {
 		HORSE_LEG = REGISTRY.register("horse_leg", HorseLegBlock::new);
 		HORSE_HEAD = REGISTRY.register("horse_head", HorseHeadBlock::new);
 		STONE_SALT_DEPOSIT = REGISTRY.register("stone_salt_deposit", StoneSaltDepositBlock::new);
+		TEOSINTE = REGISTRY.register("teosinte", TeosinteBlock::new);
+		FRUITING_MANDARIN_LEAVES = REGISTRY.register("fruiting_mandarin_leaves", FruitingMandarinLeavesBlock::new);
+		MANDARIN_PLANKS = REGISTRY.register("mandarin_planks", MandarinPlanksBlock::new);
+		MANDARIN_PLANKS_STAIRS = REGISTRY.register("mandarin_planks_stairs", MandarinPlanksStairsBlock::new);
+		MANDARIN_PLANKS_SLAB = REGISTRY.register("mandarin_planks_slab", MandarinPlanksSlabBlock::new);
+		MANDARIN_PLANKS_FENCE = REGISTRY.register("mandarin_planks_fence", MandarinPlanksFenceBlock::new);
+		MANDARIN_PLANKS_FENCE_GATE = REGISTRY.register("mandarin_planks_fence_gate", MandarinPlanksFenceGateBlock::new);
+		MANDARIN_PLANKS_BUTTON = REGISTRY.register("mandarin_planks_button", MandarinPlanksButtonBlock::new);
+		MANDARIN_TRAPDOOR = REGISTRY.register("mandarin_trapdoor", MandarinTrapdoorBlock::new);
+		MANDARIN_DOOR = REGISTRY.register("mandarin_door", MandarinDoorBlock::new);
+		MANDARIN_SIGN = REGISTRY.register("mandarin_sign", MandarinSignBlock::new);
+		MANDARIN_WALL_SIGN = REGISTRY.register("mandarin_wall_sign", MandarinWallSignBlock::new);
+		MANDARIN_HANGING_SIGN = REGISTRY.register("mandarin_hanging_sign", MandarinHangingSignBlock::new);
+		MANDARIN_WALL_HANGING_SIGN = REGISTRY.register("mandarin_wall_hanging_sign", MandarinWallHangingSignBlock::new);
+		MANDARIN_PRESSURE_PLATE = REGISTRY.register("mandarin_pressure_plate", MandarinPressurePlateBlock::new);
+		STRIPPED_MANDARIN_LOG = REGISTRY.register("stripped_mandarin_log", StrippedMandarinLogBlock::new);
+		RED_CHERRY_LEAVES = REGISTRY.register("red_cherry_leaves", RedCherryLeavesBlock::new);
+		FLOWERING_RED_CHERRY_LEAVES = REGISTRY.register("flowering_red_cherry_leaves", FloweringRedCherryLeavesBlock::new);
+		CHERRIES_FRUIT = REGISTRY.register("cherries_fruit", CherriesFruitBlock::new);
+		RED_CHERRY_SAPLING = REGISTRY.register("red_cherry_sapling", RedCherrySaplingBlock::new);
 	}
 
 	// Start of user code block custom blocks
@@ -789,18 +829,22 @@ public class SurvivalReimaginedModBlocks {
 
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
-			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.HANGING_WISTERIA_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.RADIATED_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.MANDARIN_HANGING_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.WISTERIA_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.MANDARIN_SIGN_WOOD_TYPE);
+			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.HANGING_WISTERIA_SIGN_WOOD_TYPE);
 			Sheets.addWoodType(SurvivalReimaginedModWoodTypes.HANGING_RADIATED_SIGN_WOOD_TYPE);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerSigns(BlockEntityTypeAddBlocksEvent event) {
-		event.modify(BlockEntityType.HANGING_SIGN, HANGING_WISTERIA_SIGN.get(), HANGING_WISTERIA_WALL_SIGN.get());
 		event.modify(BlockEntityType.SIGN, RADIATED_SIGN.get(), RADIATED_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, MANDARIN_HANGING_SIGN.get(), MANDARIN_WALL_HANGING_SIGN.get());
 		event.modify(BlockEntityType.SIGN, WISTERIA_SIGN.get(), WISTERIA_WALL_SIGN.get());
+		event.modify(BlockEntityType.SIGN, MANDARIN_SIGN.get(), MANDARIN_WALL_SIGN.get());
+		event.modify(BlockEntityType.HANGING_SIGN, HANGING_WISTERIA_SIGN.get(), HANGING_WISTERIA_WALL_SIGN.get());
 		event.modify(BlockEntityType.HANGING_SIGN, HANGING_RADIATED_SIGN.get(), HANGING_RADIATED_WALL_SIGN.get());
 	}
 }

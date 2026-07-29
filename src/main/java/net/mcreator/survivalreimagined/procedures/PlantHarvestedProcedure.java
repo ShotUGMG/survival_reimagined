@@ -47,7 +47,7 @@ public class PlantHarvestedProcedure {
 		if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WILD_WHEAT.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WHEAT_CROP.get()) {
 				if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip6 ? blockstate.getValue(_getip6) : -1) == 7) {
-					for (int index159 = 0; index159 < Mth.nextInt(RandomSource.create(), 1, 3); index159++) {
+					for (int index187 = 0; index187 < Mth.nextInt(RandomSource.create(), 1, 3); index187++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.WHEAT_SEEDS.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -70,7 +70,7 @@ public class PlantHarvestedProcedure {
 				}
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WILD_CARROT.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.CARROTS.get()) {
 				if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip18 ? blockstate.getValue(_getip18) : -1) == 3) {
-					for (int index160 = 0; index160 < Mth.nextInt(RandomSource.create(), 2, 4); index160++) {
+					for (int index188 = 0; index188 < Mth.nextInt(RandomSource.create(), 2, 4); index188++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.CARROT.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -87,7 +87,7 @@ public class PlantHarvestedProcedure {
 			} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.POTATOES.get()
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.WILD_POTATOES.get()) {
 				if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip27 ? blockstate.getValue(_getip27) : -1) == 3) {
-					for (int index161 = 0; index161 < Mth.nextInt(RandomSource.create(), 2, 4); index161++) {
+					for (int index189 = 0; index189 < Mth.nextInt(RandomSource.create(), 2, 4); index189++) {
 						if (world instanceof ServerLevel _level) {
 							ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.POTATO.get()));
 							entityToSpawn.setPickUpDelay(10);
@@ -106,7 +106,7 @@ public class PlantHarvestedProcedure {
 					if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip36 ? blockstate.getValue(_getip36) : -1) == (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _max38
 							? _max38.getPossibleValues().stream().max(Integer::compareTo).get()
 							: -1)) {
-						for (int index162 = 0; index162 < Mth.nextInt(RandomSource.create(), 1, 2); index162++) {
+						for (int index190 = 0; index190 < Mth.nextInt(RandomSource.create(), 1, 2); index190++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.CORN.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -134,7 +134,7 @@ public class PlantHarvestedProcedure {
 					if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip47 ? blockstate.getValue(_getip47) : -1) == (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _max49
 							? _max49.getPossibleValues().stream().max(Integer::compareTo).get()
 							: -1)) {
-						for (int index163 = 0; index163 < Mth.nextInt(RandomSource.create(), 1, 2); index163++) {
+						for (int index191 = 0; index191 < Mth.nextInt(RandomSource.create(), 1, 2); index191++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.CORN.get()));
 								entityToSpawn.setPickUpDelay(10);
@@ -162,7 +162,7 @@ public class PlantHarvestedProcedure {
 					if ((getPropertyByName(blockstate, "age") instanceof IntegerProperty _getip58 ? blockstate.getValue(_getip58) : -1) == (blockstate.getBlock().getStateDefinition().getProperty("age") instanceof IntegerProperty _max60
 							? _max60.getPossibleValues().stream().max(Integer::compareTo).get()
 							: -1)) {
-						for (int index164 = 0; index164 < Mth.nextInt(RandomSource.create(), 1, 2); index164++) {
+						for (int index192 = 0; index192 < Mth.nextInt(RandomSource.create(), 1, 2); index192++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), new ItemStack(SurvivalReimaginedModItems.CORN.get()));
 								entityToSpawn.setPickUpDelay(10);

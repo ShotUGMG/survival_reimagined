@@ -22,12 +22,12 @@ public class BrokenLegPotionOnEffectActiveTickProcedure {
 			if (entity instanceof LivingEntity _livingEntity2 && _livingEntity2.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED))
 				_livingEntity2.getAttribute(Attributes.MOVEMENT_SPEED)
 						.setBaseValue(((entity instanceof LivingEntity _livingEntity1 && _livingEntity1.getAttributes().hasAttribute(Attributes.MOVEMENT_SPEED) ? _livingEntity1.getAttribute(Attributes.MOVEMENT_SPEED).getBaseValue() : 0) / 2));
-			if (entity.isSprinting() == true) {
+			if (entity.isSprinting() == true && entity.getPersistentData().getBoolean("Splint") == false) {
 				entity.hurt(new DamageSource(world.holderOrThrow(DamageTypes.GENERIC)), 2);
+				SurvivalReimaginedMod.queueServerWork(2, () -> {
+					entity.setSprinting(false);
+				});
 			}
-			SurvivalReimaginedMod.queueServerWork(2, () -> {
-				entity.setSprinting(false);
-			});
 		}
 	}
 

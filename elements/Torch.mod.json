@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "TAG:minecraft:coals",
+      "",
+      "",
+      "Items.STICK",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "Items.TORCH",
+    "name": "torch",
+    "namespace": "minecraft"
+  }
+}

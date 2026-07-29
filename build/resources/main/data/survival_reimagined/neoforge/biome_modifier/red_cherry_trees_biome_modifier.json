@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "cherry_grove",
+  "features": "survival_reimagined:red_cherry_trees",
+  "step": "vegetal_decoration"
+}

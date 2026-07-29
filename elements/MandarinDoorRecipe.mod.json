@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "CUSTOM:MandarinPlanks",
+      "CUSTOM:MandarinPlanks",
+      "",
+      "CUSTOM:MandarinPlanks",
+      "CUSTOM:MandarinPlanks",
+      "",
+      "CUSTOM:MandarinPlanks",
+      "CUSTOM:MandarinPlanks"
+    ],
+    "recipeReturnStack": "CUSTOM:MandarinDoor",
+    "name": "mandarin_door_recipe",
+    "namespace": "mod"
+  }
+}

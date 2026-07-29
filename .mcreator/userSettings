@@ -4,7 +4,25 @@
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, Survival Reimagined]"
+      "[, Survival Reimagined]",
+      "[, Survival Reimagined, Source (Gradle)]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined\\block]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined\\block, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined\\block\\entity]",
+      "[, Survival Reimagined, Source (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\java\\net\\mcreator\\survivalreimagined\\item]",
+      "[, Survival Reimagined, Resources (Gradle)]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\blockstates]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\models]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\models, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\models\\block]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\models, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\models\\item]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\textures]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\textures, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\textures\\block]",
+      "[, Survival Reimagined, Resources (Gradle), C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\textures, C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\src\\main\\resources\\assets\\survival_reimagined\\textures\\item]",
+      "[, Survival Reimagined, Models]"
     ]
   },
   "leftDockState": {
@@ -18,9 +36,8 @@
     "dockSizes": {}
   },
   "bottomDockState": {
-    "expandedDock": "console",
     "dockSizes": {
-      "console": 181,
+      "console": 506,
       "code_viewer": 292,
       "debugger": 300
     }

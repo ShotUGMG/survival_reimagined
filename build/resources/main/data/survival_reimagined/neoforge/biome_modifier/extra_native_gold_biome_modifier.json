@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_badlands",
+  "features": "survival_reimagined:extra_native_gold",
+  "step": "underground_ores"
+}

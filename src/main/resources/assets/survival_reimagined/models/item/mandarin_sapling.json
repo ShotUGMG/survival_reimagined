@@ -1,22 +1,7 @@
 {
-  "parent": "survival_reimagined:block/mandarin_sapling",
-  "display": {
-    "thirdperson": {
-      "rotation": [
-        10,
-        -45,
-        170
-      ],
-      "translation": [
-        0,
-        1.5,
-        -2.75
-      ],
-      "scale": [
-        0.375,
-        0.375,
-        0.375
-      ]
-    }
-  }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "survival_reimagined:item/mandarin_tree_sapling"
+  },
+  "render_type": "translucent"
 }

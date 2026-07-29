@@ -1,0 +1,29 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "CUSTOM:MandarinPlank",
+      "CUSTOM:BoatPaddles",
+      "CUSTOM:MandarinPlank",
+      "CUSTOM:MandarinPlank",
+      "CUSTOM:MandarinPlank",
+      "CUSTOM:MandarinPlank"
+    ],
+    "recipeReturnStack": "CUSTOM:MandarinBoat",
+    "name": "mandarin_boat_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_fv": 89,
+  "_type": "specialentity",
+  "definition": {
+    "entityType": "Boat",
+    "name": "Mandarin Boat",
+    "rarity": "UNCOMMON",
+    "creativeTabs": [
+      "CUSTOM:CreativeTab"
+    ],
+    "entityTexture": "mandarin_boat",
+    "itemTexture": "mandarin_boat_item"
+  }
+}

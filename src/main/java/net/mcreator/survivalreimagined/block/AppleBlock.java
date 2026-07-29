@@ -29,7 +29,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.survivalreimagined.procedures.GrowingProcedureProcedure;
-import net.mcreator.survivalreimagined.procedures.AppleNeighbourBlockChangesProcedure;
+import net.mcreator.survivalreimagined.procedures.FruitNeighbourBlockChangesProcedure;
 import net.mcreator.survivalreimagined.procedures.AppleAdditionalHarvestConditionProcedure;
 import net.mcreator.survivalreimagined.block.entity.AppleBlockEntity;
 
@@ -102,7 +102,7 @@ public class AppleBlock extends Block implements EntityBlock {
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		AppleNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		FruitNeighbourBlockChangesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

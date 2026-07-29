@@ -44,7 +44,7 @@ public class CoconutBrokenProcedure {
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
-			for (int index154 = 0; index154 < 2; index154++) {
+			for (int index182 = 0; index182 < 2; index182++) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(SurvivalReimaginedModItems.COCONUT_FRUIT.get()));
 					entityToSpawn.setPickUpDelay(10);

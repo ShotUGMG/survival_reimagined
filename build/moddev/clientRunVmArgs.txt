@@ -17,9 +17,9 @@ jdk.naming.dns/com.sun.jndi.dns=java.naming
 -Dcom.sun.management.jmxremote.ssl=false
 -Dcom.sun.management.jmxremote.authenticate=false
 
--Dlog4j2.configurationFile=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined_2026.2\\build\\moddev\\clientLog4j2.xml
+-Dlog4j2.configurationFile=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\build\\moddev\\clientLog4j2.xml
 -Djava.net.preferIPv6Addresses=system
 -DignoreList=mixinextras-neoforge-0.5.3.jar,client-extra,neoforge-
--DlegacyClassPath.file=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined_2026.2\\build\\moddev\\clientLegacyClasspath.txt
+-DlegacyClassPath.file=C:\\Users\\ashto\\MCreatorWorkspaces\\survival_reimagined\\build\\moddev\\clientLegacyClasspath.txt
 -Dneoforge.enableGameTest=true
 -Dforge.logging.markers=REGISTRIES
