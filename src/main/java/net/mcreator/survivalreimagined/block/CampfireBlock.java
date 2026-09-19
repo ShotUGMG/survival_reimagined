@@ -28,8 +28,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.survivalreimagined.procedures.CampfireParticlesProcedure;
 import net.mcreator.survivalreimagined.procedures.CampfireOnTickUpdateProcedure;
-import net.mcreator.survivalreimagined.procedures.CampfireOnRandomClientDisplayTickProcedure;
 import net.mcreator.survivalreimagined.procedures.CampfireOnBlockRightclickedProcedure;
 import net.mcreator.survivalreimagined.procedures.CampfireLuminanceProcedure;
 import net.mcreator.survivalreimagined.procedures.CampfireBlockAddedProcedure;
@@ -96,7 +96,7 @@ public class CampfireBlock extends Block implements EntityBlock {
 	@OnlyIn(Dist.CLIENT)
 	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
-		CampfireOnRandomClientDisplayTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		CampfireParticlesProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 	}
 
 	@Override

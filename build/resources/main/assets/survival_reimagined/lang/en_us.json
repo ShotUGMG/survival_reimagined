@@ -1535,5 +1535,17 @@
   "block.survival_reimagined.flowering_red_cherry_leaves": "Red Cherry Leaves",
   "item.survival_reimagined.cherries": "Cherries",
   "block.survival_reimagined.cherries_fruit": "Cherries",
-  "block.survival_reimagined.red_cherry_sapling": "Red Cherry Sapling"
+  "block.survival_reimagined.red_cherry_sapling": "Red Cherry Sapling",
+  "item.survival_reimagined.dark_cinder_powder": "Dark Cinder Powder",
+  "block.survival_reimagined.dark_cinder": "Dark Cinder",
+  "item.survival_reimagined.dark_cinder_coal": "Dark Cinder Coal",
+  "block.survival_reimagined.crude_torch": "Crude Torch",
+  "block.survival_reimagined.crude_wall_torch": "Crude Torch",
+  "item.survival_reimagined.crude_torch_item": "Crude Torch",
+  "item.survival_reimagined.fire_starter": "Fire Starter",
+  "block.survival_reimagined.burnt_torch": "Burnt Torch",
+  "block.survival_reimagined.burnt_wall_torch": "Burnt Torch",
+  "item.survival_reimagined.rmi_scripture": "Ancient Book Scripture",
+  "gui.survival_reimagined.rmi_scripture_gui.tooltip_previous_page": "Previous Page",
+  "gui.survival_reimagined.rmi_scripture_gui.tooltip_next_page": "Next Page"
 }

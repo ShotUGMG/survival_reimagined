@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:dark_cinder_powder"
+    },
+    {
+      "item": "survival_reimagined:anthracite"
+    },
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "integers": [
+    1,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:dark_cinder_coal",
+      "count": 1
+    }
+  ]
+}

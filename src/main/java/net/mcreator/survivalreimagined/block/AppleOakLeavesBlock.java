@@ -20,10 +20,10 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.BiomeColors;
 
+import net.mcreator.survivalreimagined.procedures.LeavesDropConditionProcedure;
 import net.mcreator.survivalreimagined.procedures.AppleOakLeavesOnTickUpdateProcedure;
 import net.mcreator.survivalreimagined.procedures.AppleOakLeavesOnBoneMealSuccessProcedure;
 import net.mcreator.survivalreimagined.procedures.AppleOakLeavesBoneMealSuccessConditionProcedure;
-import net.mcreator.survivalreimagined.procedures.AppleOakLeavesAdditionalHarvestConditionProcedure;
 import net.mcreator.survivalreimagined.init.SurvivalReimaginedModBlocks;
 
 public class AppleOakLeavesBlock extends LeavesBlock implements BonemealableBlock {
@@ -38,7 +38,7 @@ public class AppleOakLeavesBlock extends LeavesBlock implements BonemealableBloc
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		return super.canHarvestBlock(state, world, pos, player) && AppleOakLeavesAdditionalHarvestConditionProcedure.execute(player.level(), pos.getX(), pos.getY(), pos.getZ(), player);
+		return super.canHarvestBlock(state, world, pos, player) && LeavesDropConditionProcedure.execute(player.level(), pos.getX(), pos.getY(), pos.getZ(), player);
 	}
 
 	@Override

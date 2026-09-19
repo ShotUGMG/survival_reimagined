@@ -1,21 +1,202 @@
 {
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:richer_soil": {
+    "criteria": {
+      "richer_soil_2": "2026-09-16 18:23:38 -0700"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_helmet": "2026-09-16 18:37:01 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_helmet": "2026-09-16 18:37:01 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:radiation_biome": {
+    "criteria": {
+      "radiation_biome_0": "2026-09-16 18:14:12 -0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/crafting_table": {
     "criteria": {
-      "unlock_right_away": "2026-07-28 21:21:04 -0700"
+      "unlock_right_away": "2026-09-16 18:11:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
     },
     "done": true
   },
   "survival_reimagined:survival_reimagined": {
     "criteria": {
-      "survival_reimagined_0": "2026-07-28 21:21:04 -0700"
+      "survival_reimagined_0": "2026-09-16 18:11:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2026-09-16 18:19:00 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2026-09-16 18:26:09 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_helmet": "2026-09-16 18:37:01 -0700"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:cherry_grove": "2026-07-28 21:21:06 -0700"
+      "minecraft:snowy_slopes": "2026-09-16 18:33:08 -0700",
+      "minecraft:beach": "2026-09-16 18:11:38 -0700",
+      "minecraft:dark_forest": "2026-09-16 18:11:42 -0700",
+      "minecraft:forest": "2026-09-16 18:17:43 -0700",
+      "minecraft:mangrove_swamp": "2026-09-16 18:19:47 -0700",
+      "minecraft:sparse_jungle": "2026-09-16 18:21:20 -0700",
+      "minecraft:river": "2026-09-16 18:15:06 -0700",
+      "minecraft:lukewarm_ocean": "2026-09-16 18:14:13 -0700",
+      "minecraft:lush_caves": "2026-09-16 18:12:09 -0700",
+      "minecraft:dripstone_caves": "2026-09-16 18:18:03 -0700",
+      "minecraft:old_growth_birch_forest": "2026-09-16 18:24:38 -0700",
+      "minecraft:deep_dark": "2026-09-16 18:33:12 -0700",
+      "minecraft:ocean": "2026-09-16 18:11:46 -0700",
+      "minecraft:jungle": "2026-09-16 18:14:11 -0700",
+      "minecraft:cherry_grove": "2026-09-16 18:24:53 -0700",
+      "minecraft:meadow": "2026-09-16 18:32:37 -0700",
+      "minecraft:birch_forest": "2026-09-16 18:26:40 -0700",
+      "minecraft:savanna": "2026-09-16 18:17:48 -0700",
+      "minecraft:bamboo_jungle": "2026-09-16 18:11:33 -0700",
+      "minecraft:plains": "2026-09-16 18:18:22 -0700"
     },
     "done": false
+  },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:kimberlite_layer": {
+    "criteria": {
+      "kimberlite_layer_0": "2026-09-16 18:16:08 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:conquered": {
+    "criteria": {
+      "conquered_0": "2026-09-16 18:15:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:volcanic_layer": {
+    "criteria": {
+      "volcanic_layer_0": "2026-09-16 18:16:04 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "survival_reimagined:paranoia_adv": {
+    "criteria": {
+      "paranoia_adv_0": "2026-09-16 18:12:19 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/netherite_armor": {
+    "criteria": {
+      "netherite_armor": "2026-09-16 18:34:52 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-09-16 18:36:37 -0700"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }

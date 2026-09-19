@@ -65,7 +65,7 @@ public class BlockBrokenProcedure {
 			}
 			if ((getPropertyByName(blockstate, "carcass_state") instanceof IntegerProperty _getip23 ? blockstate.getValue(_getip23) : -1) > 0
 					&& !(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("c:carcass/equine")))) {
-				for (int index195 = 0; index195 < Mth.nextInt(RandomSource.create(), 1, 3); index195++) {
+				for (int index167 = 0; index167 < Mth.nextInt(RandomSource.create(), 1, 3); index167++) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
 						entityToSpawn.setPickUpDelay(10);
@@ -96,7 +96,7 @@ public class BlockBrokenProcedure {
 				}
 			}
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == SurvivalReimaginedModBlocks.SKINNED_HORSE.get()) {
-				for (int index196 = 0; index196 < Mth.nextInt(RandomSource.create(), 1, 3); index196++) {
+				for (int index168 = 0; index168 < Mth.nextInt(RandomSource.create(), 1, 3); index168++) {
 					if (world instanceof ServerLevel _level) {
 						ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), MeatType);
 						entityToSpawn.setPickUpDelay(10);

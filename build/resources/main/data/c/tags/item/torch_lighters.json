@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:torch",
+    "survival_reimagined:fire_starter",
+    "minecraft:flint_and_steel",
+    "minecraft:fire_charge"
+  ]
+}

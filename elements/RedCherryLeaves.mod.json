@@ -100,6 +100,7 @@
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
+    "additionalHarvestCondition": "LeavesDropCondition",
     "isBonemealable": false,
     "sensitiveToVibration": false,
     "vibrationalEvents": [],

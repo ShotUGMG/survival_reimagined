@@ -1,0 +1,170 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_cover_rmi.png",
+          "use1Xscale": false,
+          "x": 60,
+          "y": 25,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "book_page2.png",
+          "use1Xscale": false,
+          "x": 60,
+          "y": 26,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_next_page_button_unhovered",
+          "image": "next_page_button.png",
+          "hoveredImage": "",
+          "onClick": "NextPage",
+          "displayCondition": "NextPageButtonDisplay",
+          "x": 332,
+          "y": 187,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_previous_page_button_unhovered",
+          "image": "previous_page_button.png",
+          "hoveredImage": "",
+          "onClick": "PreviousPage",
+          "displayCondition": "PreviousPageButtonDisplay",
+          "x": 75,
+          "y": 187,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_next_page",
+          "text": {
+            "fixedValue": "Next Page"
+          },
+          "displayCondition": "NextPageButtonDisplayRMI",
+          "width": 24,
+          "height": 24,
+          "x": 332,
+          "y": 187,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_previous_page",
+          "text": {
+            "fixedValue": "Previous Page"
+          },
+          "displayCondition": "PreviousPageButtonDisplayRMI",
+          "width": 24,
+          "height": 24,
+          "x": 75,
+          "y": 187,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diamond_text.png",
+          "use1Xscale": false,
+          "x": 93,
+          "y": 53,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rune_text.png",
+          "use1Xscale": false,
+          "x": 152,
+          "y": 54,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rune_icon.png",
+          "use1Xscale": false,
+          "x": 170,
+          "y": 165,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diamond_icon.png",
+          "use1Xscale": false,
+          "x": 178,
+          "y": 171,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sword_icon.png",
+          "use1Xscale": false,
+          "x": 87,
+          "y": 80,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pickaxe_icon.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 80,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "armor_icon.png",
+          "use1Xscale": false,
+          "x": 166,
+          "y": 80,
+          "locked": true
+        }
+      }
+    ],
+    "onOpen": "AAFScriptureGUIThisGUIIsOpened",
+    "onClosed": "AAFScriptureGUIThisGUIIsOpened",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

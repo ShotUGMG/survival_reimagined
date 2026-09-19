@@ -200,8 +200,8 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_next_page_button_unhovered",
-          "image": "next_page_button_unhovered.png",
-          "hoveredImage": "next_page_button.png",
+          "image": "next_page_button.png",
+          "hoveredImage": "",
           "onClick": "NextPage",
           "displayCondition": "NextPageButtonDisplay",
           "x": 332,
@@ -213,8 +213,8 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_previous_page_button_unhovered",
-          "image": "previous_page_button_unhovered.png",
-          "hoveredImage": "previous_page_button.png",
+          "image": "previous_page_button.png",
+          "hoveredImage": "",
           "onClick": "PreviousPage",
           "displayCondition": "PreviousPageButtonDisplay",
           "x": 75,

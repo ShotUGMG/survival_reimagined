@@ -414,6 +414,11 @@ public class SurvivalReimaginedModBlocks {
 	public static final DeferredBlock<Block> FLOWERING_RED_CHERRY_LEAVES;
 	public static final DeferredBlock<Block> CHERRIES_FRUIT;
 	public static final DeferredBlock<Block> RED_CHERRY_SAPLING;
+	public static final DeferredBlock<Block> DARK_CINDER;
+	public static final DeferredBlock<Block> CRUDE_TORCH;
+	public static final DeferredBlock<Block> CRUDE_WALL_TORCH;
+	public static final DeferredBlock<Block> BURNT_TORCH;
+	public static final DeferredBlock<Block> BURNT_WALL_TORCH;
 	static {
 		FLINTBLOCK = REGISTRY.register("flintblock", FlintblockBlock::new);
 		STONE_ROCK_BLOC = REGISTRY.register("stone_rock_bloc", StoneRockBlocBlock::new);
@@ -807,6 +812,11 @@ public class SurvivalReimaginedModBlocks {
 		FLOWERING_RED_CHERRY_LEAVES = REGISTRY.register("flowering_red_cherry_leaves", FloweringRedCherryLeavesBlock::new);
 		CHERRIES_FRUIT = REGISTRY.register("cherries_fruit", CherriesFruitBlock::new);
 		RED_CHERRY_SAPLING = REGISTRY.register("red_cherry_sapling", RedCherrySaplingBlock::new);
+		DARK_CINDER = REGISTRY.register("dark_cinder", DarkCinderBlock::new);
+		CRUDE_TORCH = REGISTRY.register("crude_torch", CrudeTorchBlock::new);
+		CRUDE_WALL_TORCH = REGISTRY.register("crude_wall_torch", CrudeWallTorchBlock::new);
+		BURNT_TORCH = REGISTRY.register("burnt_torch", BurntTorchBlock::new);
+		BURNT_WALL_TORCH = REGISTRY.register("burnt_wall_torch", BurntWallTorchBlock::new);
 	}
 
 	// Start of user code block custom blocks

@@ -100,7 +100,7 @@
     },
     "unbreakable": false,
     "vanillaToolTier": "NONE",
-    "additionalHarvestCondition": "AppleOakLeavesAdditionalHarvestCondition",
+    "additionalHarvestCondition": "LeavesDropCondition",
     "isBonemealable": true,
     "bonemealSuccessCondition": "AppleOakLeavesBoneMealSuccessCondition",
     "onBonemealSuccess": "AppleOakLeavesOnBoneMealSuccess",

@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "aaf_scripture",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -30,7 +31,7 @@
     "attackSpeed": 1.6,
     "specialInformation": {
       "fixedValue": [],
-      "name": "AAFScriptureSpecialInformation"
+      "name": "ScripturesSpecialInformation"
     },
     "glowCondition": {
       "fixedValue": false
@@ -41,6 +42,7 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": "PageDisplayHandler",
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

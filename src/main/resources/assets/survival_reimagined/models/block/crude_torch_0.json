@@ -1,0 +1,8 @@
+{
+  "parent": "survival_reimagined:custom/torch_emission",
+  "textures": {
+    "all": "minecraft:block/torch",
+    "particle": "survival_reimagined:block/unlit_torch"
+  },
+  "render_type": "solid"
+}

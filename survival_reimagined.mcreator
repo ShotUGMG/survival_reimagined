@@ -12225,42 +12225,6 @@
       "path": "~/Mod Elements/Farming/Plants/Apple/Apple/Code"
     },
     {
-      "name": "AppleOakLeavesAdditionalHarvestCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "apple_oak_leaves_additional_harvest_condition",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/AppleOakLeavesAdditionalHarvestConditionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Mod Elements/Farming/Plants/Apple/Tree/Code"
-    },
-    {
       "name": "Charcoal",
       "type": "recipe",
       "compiles": true,
@@ -21387,7 +21351,7 @@
       "name": "AAFScriptureGUI",
       "type": "gui",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "aaf_scripture_gui",
       "metadata": {
         "files": [
@@ -21434,21 +21398,6 @@
       "path": "~/Mod Elements/Progression/Scriptures/AAF/Code/GUIHandlers"
     },
     {
-      "name": "AAFScriptureSpecialInformation",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aaf_scripture_special_information",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/AAFScriptureSpecialInformationProcedure.java"
-        ],
-        "dependencies": []
-      },
-      "path": "~/Mod Elements/Progression/Scriptures/AAF/Code"
-    },
-    {
       "name": "PageDisplayHandler",
       "type": "procedure",
       "compiles": true,
@@ -21462,6 +21411,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -36094,37 +36047,6 @@
       "path": "~/Mod Elements/FoodSystem/Items/FoodItems/Campfire/code"
     },
     {
-      "name": "CampfireOnRandomClientDisplayTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "campfire_on_random_client_display_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/survivalreimagined/procedures/CampfireOnRandomClientDisplayTickProcedure.java"
-        ]
-      },
-      "path": "~/Mod Elements/FoodSystem/Items/FoodItems/Campfire/code"
-    },
-    {
       "name": "CookedBeef",
       "type": "item",
       "compiles": true,
@@ -38230,162 +38152,6 @@
         ]
       },
       "path": "~/Compat/JEI/Forge/Mold/Knife"
-    },
-    {
-      "name": "MoldHelmetBronze",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_helmet_bronze",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_helmet_bronze.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Helmet"
-    },
-    {
-      "name": "MoldHelmetSteel",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_helmet_steel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_helmet_steel.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Helmet"
-    },
-    {
-      "name": "MoldHelmetDiamond",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_helmet_diamond",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_helmet_diamond.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Helmet"
-    },
-    {
-      "name": "MoldChestplateBronze",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_chestplate_bronze",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_chestplate_bronze.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Chestplate"
-    },
-    {
-      "name": "MoldChestplateSteel",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_chestplate_steel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_chestplate_steel.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Chestplate"
-    },
-    {
-      "name": "MoldChestplateDiamond",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_chestplate_diamond",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_chestplate_diamond.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Chestplate"
-    },
-    {
-      "name": "MoldLegsBronze",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_legs_bronze",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_legs_bronze.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Legs"
-    },
-    {
-      "name": "MoldLegsSteel",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_legs_steel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_legs_steel.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Legs"
-    },
-    {
-      "name": "MoldLegsDiamond",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_legs_diamond",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_legs_diamond.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Legs"
-    },
-    {
-      "name": "MoldBootsBronze",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_boots_bronze",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_boots_bronze.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Boots"
-    },
-    {
-      "name": "MoldBootsSteel",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_boots_steel",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_boots_steel.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Boots"
-    },
-    {
-      "name": "MoldBootsDiamond",
-      "type": "jeirecipe",
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "mold_boots_diamond",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/survival_reimagined/recipe/mold_boots_diamond.json"
-        ]
-      },
-      "path": "~/Compat/JEI/Forge/Mold/Boots"
     },
     {
       "name": "MoldHammerBronze",
@@ -44879,9 +44645,7 @@
       "registry_name": "rec_cherry_tree_sapling",
       "metadata": {
         "files": [
-          "src/main/resources/data/survival_reimagined/worldgen/configured_feature/rec_cherry_tree_sapling.json",
-          "src/main/resources/data/survival_reimagined/neoforge/biome_modifier/rec_cherry_tree_sapling_biome_modifier.json",
-          "src/main/resources/data/survival_reimagined/worldgen/placed_feature/rec_cherry_tree_sapling.json"
+          "src/main/resources/data/survival_reimagined/worldgen/configured_feature/rec_cherry_tree_sapling.json"
         ]
       },
       "path": "~/Mod Elements/generation/FruitTrees"
@@ -45138,6 +44902,781 @@
         ]
       },
       "path": "~/Mod Elements/Farming/Plants/Cherries"
+    },
+    {
+      "name": "HideExperimentalWarning",
+      "type": "mixin",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hide_experimental_warning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/mixin/HideExperimentalWarningMixin.java"
+        ]
+      },
+      "path": "~/Mixins"
+    },
+    {
+      "name": "RedCherryTree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_cherry_tree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/neoforge/biome_modifier/red_cherry_tree_biome_modifier.json",
+          "src/main/resources/data/survival_reimagined/worldgen/placed_feature/red_cherry_tree.json",
+          "src/main/resources/data/survival_reimagined/worldgen/configured_feature/red_cherry_tree.json"
+        ]
+      },
+      "path": "~/Mod Elements/Farming/Plants/Cherries"
+    },
+    {
+      "name": "LeavesDropCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaves_drop_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/LeavesDropConditionProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Farming/Plants/Code"
+    },
+    {
+      "name": "DarkCinderPowder",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_powder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/dark_cinder_powder.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/DarkCinderPowderItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinder",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/block/dark_cinder.json",
+          "src/main/resources/assets/survival_reimagined/models/item/dark_cinder.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/DarkCinderBlock.java",
+          "src/main/resources/assets/survival_reimagined/blockstates/dark_cinder.json"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinderCoal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_coal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/dark_cinder_coal.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/DarkCinderCoalItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinderBlobs",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_blobs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/worldgen/configured_feature/dark_cinder_blobs.json",
+          "src/main/resources/data/survival_reimagined/worldgen/placed_feature/dark_cinder_blobs.json",
+          "src/main/resources/data/survival_reimagined/neoforge/biome_modifier/dark_cinder_blobs_biome_modifier.json"
+        ]
+      },
+      "path": "~/Mod Elements/generation/Nether"
+    },
+    {
+      "name": "DarkCinderLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/dark_cinder.json"
+        ]
+      },
+      "path": "~/Mod Elements/LootTables/Piles"
+    },
+    {
+      "name": "CinderCoalRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_coal_recipe",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/CinderCoalRecipeProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/blocks/Utility/Forge/Recipes"
+    },
+    {
+      "name": "DarkCinderCoalEXT",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_coal_ext",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinderParticleParticleVisualScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_particle_particle_visual_scale",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "age",
+            "type": "number"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/DarkCinderParticleParticleVisualScaleProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinderParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/client/particle/DarkCinderParticleParticle.java",
+          "src/main/resources/assets/survival_reimagined/particles/dark_cinder_particle.json"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "DarkCinderOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cinder_on_random_client_display_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/DarkCinderOnRandomClientDisplayTickProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Nether/Cinder"
+    },
+    {
+      "name": "CrudeTorch",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_torch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/blockstates/crude_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/block/crude_torch.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/CrudeTorchBlock.java",
+          "src/main/java/net/mcreator/survivalreimagined/block/entity/CrudeTorchBlockEntity.java",
+          "src/main/resources/assets/survival_reimagined/models/block/crude_torch_0.json",
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/crude_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/item/crude_torch.json"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "CrudeWallTorch",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_wall_torch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/blockstates/crude_wall_torch.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/entity/CrudeWallTorchBlockEntity.java",
+          "src/main/java/net/mcreator/survivalreimagined/block/CrudeWallTorchBlock.java",
+          "src/main/resources/data/survival_reimagined/loot_table/blocks/crude_wall_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/item/crude_wall_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/block/crude_wall_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/block/crude_wall_torch_0.json"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "TorchPlacement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torch_placement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/TorchPlacementProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "PlaceAgainst",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_against",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/PlaceAgainstProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "CrudeTorchItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_torch_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/crude_torch_item.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/CrudeTorchItemItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "FireStarter",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_starter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/fire_starter.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/FireStarterItem.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "BlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/BlockAddedProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "BurntTorch",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_torch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/item/burnt_torch.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/BurntTorchBlock.java",
+          "src/main/resources/assets/survival_reimagined/blockstates/burnt_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/block/burnt_torch.json"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "BurntWallTorch",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnt_wall_torch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/survival_reimagined/models/block/burnt_wall_torch.json",
+          "src/main/resources/assets/survival_reimagined/models/item/burnt_wall_torch.json",
+          "src/main/resources/assets/survival_reimagined/blockstates/burnt_wall_torch.json",
+          "src/main/java/net/mcreator/survivalreimagined/block/BurntWallTorchBlock.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "LitClock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lit_clock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/LitClockProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "LightTorch",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_torch",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/LightTorchProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "TorchLuminance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torch_luminance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/TorchLuminanceProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "TorchParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "torch_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/TorchParticlesProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "CrudeTorchRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crude_torch_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/crude_torch_recipe.json"
+        ]
+      },
+      "path": "~/Mod Elements/Difficulty/Torches"
+    },
+    {
+      "name": "CampfireParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "campfire_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/CampfireParticlesProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/FoodSystem/Items/FoodItems/Campfire/code"
+    },
+    {
+      "name": "CinderCoalJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cinder_coal_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/cinder_coal_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forge/Ingots"
+    },
+    {
+      "name": "BronzePlateJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bronze_plate_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/bronze_plate_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forge/Mold/Plates"
+    },
+    {
+      "name": "SteelPlateJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "steel_plate_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/steel_plate_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forge/Mold/Plates"
+    },
+    {
+      "name": "DiamondPlateJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_plate_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/diamond_plate_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forge/Mold/Plates"
+    },
+    {
+      "name": "NetheritePlateJEI",
+      "type": "jeirecipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "netherite_plate_jei",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/survival_reimagined/recipe/netherite_plate_jei.json"
+        ]
+      },
+      "path": "~/Compat/JEI/Forge/Mold/Plates"
+    },
+    {
+      "name": "ScripturesSpecialInformation",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scriptures_special_information",
+      "metadata": {
+        "return_type": "string",
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/ScripturesSpecialInformationProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures"
+    },
+    {
+      "name": "RMIScripture",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rmi_scripture",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/item/RMIScriptureItem.java",
+          "src/main/resources/assets/survival_reimagined/models/item/rmi_scripture.json",
+          "src/main/java/net/mcreator/survivalreimagined/item/inventory/RMIScriptureInventoryCapability.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/RMI"
+    },
+    {
+      "name": "RMIScriptureGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rmi_scripture_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/client/gui/RMIScriptureGUIScreen.java",
+          "src/main/java/net/mcreator/survivalreimagined/network/RMIScriptureGUIButtonMessage.java",
+          "src/main/java/net/mcreator/survivalreimagined/world/inventory/RMIScriptureGUIMenu.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/RMI"
+    },
+    {
+      "name": "NextPageButtonDisplayRMI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next_page_button_display_rmi",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/NextPageButtonDisplayRMIProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/RMI/Code"
+    },
+    {
+      "name": "PreviousPageButtonDisplayRMI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "previous_page_button_display_rmi",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/survivalreimagined/procedures/PreviousPageButtonDisplayRMIProcedure.java"
+        ]
+      },
+      "path": "~/Mod Elements/Progression/Scriptures/RMI/Code"
     }
   ],
   "variable_elements": [
@@ -47817,7 +48356,8 @@
       "Items.COAL#0",
       "Items.COAL#1",
       "CUSTOM:Liginite",
-      "CUSTOM:Anthracite"
+      "CUSTOM:Anthracite",
+      "CUSTOM:DarkCinderCoal"
     ],
     "BLOCKS:c:farmland": [
       "Blocks.FARMLAND",
@@ -48056,7 +48596,8 @@
     "ITEMS:c:campfire_starters": [
       "Items.FLINT_AND_STEEL",
       "Items.FIRE_CHARGE",
-      "Items.TORCH"
+      "Items.TORCH",
+      "CUSTOM:FireStarter"
     ],
     "BLOCKS:minecraft:shale_ore_replaceables": [
       "CUSTOM:Shale",
@@ -48469,7 +49010,12 @@
     "BLOCKS:c:fruit_placeables": [
       "TAG:minecraft:leaves"
     ],
+    "BLOCKS:minecraft:wall_post_override": [
+      "CUSTOM:CrudeTorch",
+      "CUSTOM:BurntTorch"
+    ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~Campfire@CUSTOM:Campfire",
       "~StrippedMandarinLog@CUSTOM:StrippedMandarinLog",
       "~MandarinPressurePlate@CUSTOM:MandarinPressurePlate",
       "~MandarinHangingSign@CUSTOM:MandarinHangingSign.wall",
@@ -48487,7 +49033,6 @@
       "~WoodenPlate@CUSTOM:WoodenPlate",
       "~TanningBarrel@CUSTOM:TanningBarrel",
       "~DryingRack@CUSTOM:DryingRack",
-      "~Campfire@CUSTOM:Campfire",
       "~MandarinLog@CUSTOM:MandarinLog",
       "~HangingWisteriaSign@CUSTOM:HangingWisteriaSign.wall",
       "~HangingWisteriaSign@CUSTOM:HangingWisteriaSign",
@@ -48591,6 +49136,7 @@
       "~CuredSteak@CUSTOM:CuredSteak"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
+      "~DarkCinder@CUSTOM:DarkCinder",
       "~BlockOfCharcoal@CUSTOM:BlockOfCharcoal",
       "~HighFertilityGrass@CUSTOM:HighFertilityGrass",
       "~HighFertilityDirt@CUSTOM:HighFertilityDirt",
@@ -48741,6 +49287,7 @@
       "~CrimsonArachnid@CUSTOM:CrimsonArachnid"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~FireStarter@CUSTOM:FireStarter",
       "~MortarPestal@CUSTOM:MortarPestal"
     ],
     "BIOMES:minecraft:has_structure/stronghold": [
@@ -48794,6 +49341,12 @@
     ],
     "BLOCKS:minecraft:wooden_pressure_plates": [
       "~MandarinPressurePlate@CUSTOM:MandarinPressurePlate"
+    ],
+    "ITEMS:c:torch_lighters": [
+      "CUSTOM:FireStarter",
+      "Items.FLINT_AND_STEEL",
+      "Items.FIRE_CHARGE",
+      "Items.TORCH"
     ]
   },
   "tab_element_order": {},
@@ -50335,7 +50888,19 @@
       "block.survival_reimagined.flowering_red_cherry_leaves": "Red Cherry Leaves",
       "item.survival_reimagined.cherries": "Cherries",
       "block.survival_reimagined.cherries_fruit": "Cherries",
-      "block.survival_reimagined.red_cherry_sapling": "Red Cherry Sapling"
+      "block.survival_reimagined.red_cherry_sapling": "Red Cherry Sapling",
+      "item.survival_reimagined.dark_cinder_powder": "Dark Cinder Powder",
+      "block.survival_reimagined.dark_cinder": "Dark Cinder",
+      "item.survival_reimagined.dark_cinder_coal": "Dark Cinder Coal",
+      "block.survival_reimagined.crude_torch": "Crude Torch",
+      "block.survival_reimagined.crude_wall_torch": "Crude Torch",
+      "item.survival_reimagined.crude_torch_item": "Crude Torch",
+      "item.survival_reimagined.fire_starter": "Fire Starter",
+      "block.survival_reimagined.burnt_torch": "Burnt Torch",
+      "block.survival_reimagined.burnt_wall_torch": "Burnt Torch",
+      "item.survival_reimagined.rmi_scripture": "Ancient Book Scripture",
+      "gui.survival_reimagined.rmi_scripture_gui.tooltip_previous_page": "Previous Page",
+      "gui.survival_reimagined.rmi_scripture_gui.tooltip_next_page": "Next Page"
     }
   },
   "metadata": {
@@ -51324,6 +51889,15 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "name": "RMI",
+                    "children": [
+                      {
+                        "name": "Code",
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               },
@@ -51800,6 +52374,10 @@
               },
               {
                 "name": "Items",
+                "children": []
+              },
+              {
+                "name": "Torches",
                 "children": []
               }
             ]
@@ -52299,6 +52877,15 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Nether",
+            "children": [
+              {
+                "name": "Cinder",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -52421,23 +53008,11 @@
                         "children": []
                       },
                       {
-                        "name": "Helmet",
-                        "children": []
-                      },
-                      {
-                        "name": "Chestplate",
-                        "children": []
-                      },
-                      {
-                        "name": "Legs",
-                        "children": []
-                      },
-                      {
-                        "name": "Boots",
-                        "children": []
-                      },
-                      {
                         "name": "Hammer",
+                        "children": []
+                      },
+                      {
+                        "name": "Plates",
                         "children": []
                       }
                     ]
@@ -52573,7 +53148,7 @@
   "workspaceSettings": {
     "modid": "survival_reimagined",
     "modName": "Survival Reimagined",
-    "version": "1.4.0-BETA-4",
+    "version": "1.4.0-BETA-5",
     "description": "Harder and a more realistic survival expierence",
     "author": "ShotUGMG",
     "websiteURL": "https://modrinth.com/mod/survival-reimagined",

@@ -13,6 +13,7 @@
     "item.minecraft.coal": "Bituminous",
     "block.minecraft.coal_block": "Bituminous Block",
     "block.minecraft.coal_ore": "Bituminous Ore",
-    "block.minecraft.deepslate_coal_ore": "Deepslate Bituminous Ore"
+    "block.minecraft.deepslate_coal_ore": "Deepslate Bituminous Ore",
+    "block.minecraft.torch": "Eternal Torch"
  }
  

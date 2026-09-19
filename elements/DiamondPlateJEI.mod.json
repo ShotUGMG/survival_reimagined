@@ -1,0 +1,26 @@
+{
+  "_fv": 89,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "forge_jei",
+    "ingredients": [
+      "CUSTOM:BronzeIngot",
+      "CUSTOM:MetalPlateMold",
+      "TAG:minecraft:coals"
+    ],
+    "integers": [
+      4,
+      1,
+      1
+    ],
+    "strings": [],
+    "recipetype": "ForgeJEI",
+    "results": [
+      "CUSTOM:BronzePlate"
+    ],
+    "resultCounts": [
+      1
+    ],
+    "count": 0
+  }
+}

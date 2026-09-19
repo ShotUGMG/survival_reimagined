@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "survival_reimagined:block/dark_cinder_powder",
+    "up": "survival_reimagined:block/dark_cinder_powder",
+    "north": "survival_reimagined:block/dark_cinder_powder",
+    "east": "survival_reimagined:block/dark_cinder_powder",
+    "south": "survival_reimagined:block/dark_cinder_powder",
+    "west": "survival_reimagined:block/dark_cinder_powder",
+    "particle": "survival_reimagined:block/dark_cinder_powder"
+  },
+  "render_type": "solid"
+}

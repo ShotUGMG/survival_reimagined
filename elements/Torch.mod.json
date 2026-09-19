@@ -13,7 +13,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       "",
-      "TAG:minecraft:coals",
+      "CUSTOM:DarkCinderCoal",
       "",
       "",
       "Items.STICK",

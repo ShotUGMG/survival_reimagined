@@ -46,6 +46,7 @@ public class FuelDetectionProcedure {
 				NetherteRecipeProcedure.execute(world, x, y, z);
 				TuraniteRecipeProcedure.execute(world, x, y, z);
 				LimeRecipeProcedure.execute(world, x, y, z);
+				CinderCoalRecipeProcedure.execute(world, x, y, z);
 				if (ModList.get().isLoaded("create")) {
 					BrassRecipeProcedure.execute(world, x, y, z);
 					AndesiteAlloyRecipeProcedure.execute(world, x, y, z);

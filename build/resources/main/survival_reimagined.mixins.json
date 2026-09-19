@@ -12,7 +12,8 @@
     "CancelTillingMixin",
     "ComposterDropMixin",
     "ItemstackFixForMeatItemsMixin",
-    "CaveDarknessMixin"
+    "CaveDarknessMixin",
+    "HideExperimentalWarningMixin"
   ],
   "client": [
     "PlayerAnimationMixin",

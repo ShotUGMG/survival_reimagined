@@ -1,8 +1,10 @@
-
 package net.mcreator.survivalreimagined.world.inventory;
 
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.event.entity.player.PlayerContainerEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.Level;
@@ -22,9 +24,18 @@ import net.mcreator.survivalreimagined.init.SurvivalReimaginedModMenus;
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
-public class AAFScriptureGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
-	public final static HashMap<String, Object> guistate = new HashMap<>();
+@EventBusSubscriber
+public class AAFScriptureGUIMenu extends AbstractContainerMenu implements SurvivalReimaginedModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 22)
+				return null;
+			return super.put(key, value);
+		}
+	};
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
@@ -49,7 +60,6 @@ public class AAFScriptureGUIMenu extends AbstractContainerMenu implements Suppli
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		AAFScriptureGUIThisGUIIsOpenedProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override
@@ -76,7 +86,25 @@ public class AAFScriptureGUIMenu extends AbstractContainerMenu implements Suppli
 		AAFScriptureGUIThisGUIIsOpenedProcedure.execute(world, x, y, z, entity);
 	}
 
-	public Map<Integer, Slot> get() {
-		return customSlots;
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
+	}
+
+	@SubscribeEvent
+	public static void onContainerOpen(PlayerContainerEvent.Open event) {
+		Player entity = event.getEntity();
+		if (event.getContainer() instanceof AAFScriptureGUIMenu menu) {
+			Level world = menu.world;
+			double x = menu.x;
+			double y = menu.y;
+			double z = menu.z;
+			AAFScriptureGUIThisGUIIsOpenedProcedure.execute(world, x, y, z, entity);
+		}
 	}
 }

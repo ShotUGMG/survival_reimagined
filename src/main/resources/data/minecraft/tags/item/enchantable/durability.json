@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "survival_reimagined:fire_starter",
     "survival_reimagined:mortar_pestal"
   ]
 }

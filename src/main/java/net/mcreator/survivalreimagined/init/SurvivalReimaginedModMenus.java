@@ -35,6 +35,7 @@ public class SurvivalReimaginedModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<CampfireGUIMenu>> CAMPFIRE_GUI = REGISTRY.register("campfire_gui", () -> IMenuTypeExtension.create(CampfireGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<DryingRackGUIMenu>> DRYING_RACK_GUI = REGISTRY.register("drying_rack_gui", () -> IMenuTypeExtension.create(DryingRackGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<TanningBarrelGUIMenu>> TANNING_BARREL_GUI = REGISTRY.register("tanning_barrel_gui", () -> IMenuTypeExtension.create(TanningBarrelGUIMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<RMIScriptureGUIMenu>> RMI_SCRIPTURE_GUI = REGISTRY.register("rmi_scripture_gui", () -> IMenuTypeExtension.create(RMIScriptureGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

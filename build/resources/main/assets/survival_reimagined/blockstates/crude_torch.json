@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "survival_reimagined:block/crude_torch_0"
+    },
+    "lit=false": {
+      "model": "survival_reimagined:block/crude_torch"
+    }
+  }
+}

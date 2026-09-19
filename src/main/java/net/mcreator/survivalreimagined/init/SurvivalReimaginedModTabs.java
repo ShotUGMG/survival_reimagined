@@ -729,6 +729,12 @@ public class SurvivalReimaginedModTabs {
 				tabData.accept(SurvivalReimaginedModBlocks.FLOWERING_RED_CHERRY_LEAVES.get().asItem());
 				tabData.accept(SurvivalReimaginedModItems.CHERRIES.get());
 				tabData.accept(SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.DARK_CINDER_POWDER.get());
+				tabData.accept(SurvivalReimaginedModBlocks.DARK_CINDER.get().asItem());
+				tabData.accept(SurvivalReimaginedModItems.DARK_CINDER_COAL.get());
+				tabData.accept(SurvivalReimaginedModItems.CRUDE_TORCH_ITEM.get());
+				tabData.accept(SurvivalReimaginedModItems.FIRE_STARTER.get());
+				tabData.accept(SurvivalReimaginedModItems.RMI_SCRIPTURE.get());
 			}).withSearchBar().build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SR_COMPAT_ITEMS = REGISTRY.register("sr_compat_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.survival_reimagined.sr_compat_items")).icon(() -> new ItemStack(SurvivalReimaginedModItems.HEART.get())).displayItems((parameters, tabData) -> {

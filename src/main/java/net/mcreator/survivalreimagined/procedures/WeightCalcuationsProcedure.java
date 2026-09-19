@@ -1,6 +1,6 @@
 package net.mcreator.survivalreimagined.procedures;
 
-import net.neoforged.neoforge.event.tick.EntityTickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
@@ -25,7 +25,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class WeightCalcuationsProcedure {
 	@SubscribeEvent
-	public static void onEntityTick(EntityTickEvent.Pre event) {
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
 		execute(event, event.getEntity());
 	}
 

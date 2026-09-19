@@ -210,7 +210,7 @@ public class HorseCarcassHandlerProcedure {
 								_level.playLocalSound((x + 0.5), y, (z + 0.5), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("survival_reimagined:limb_remove")), SoundSource.BLOCKS, 1, 1, false);
 							}
 						}
-						for (int index200 = 0; index200 < 4; index200++) {
+						for (int index172 = 0; index172 < 4; index172++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(SurvivalReimaginedModBlocks.HORSE_LEG.get()));
 								entityToSpawn.setPickUpDelay(10);

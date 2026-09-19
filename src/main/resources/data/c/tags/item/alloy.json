@@ -13,6 +13,7 @@
 	"#c:alloy/uranium_items",
 	"#c:alloy/silver_items",
 	"#c:alloy/andesite_items",
-	"#c:alloy/lime_items"
+	"#c:alloy/lime_items",
+	"survival_reimagined:dark_cinder_powder"
   ]
 }

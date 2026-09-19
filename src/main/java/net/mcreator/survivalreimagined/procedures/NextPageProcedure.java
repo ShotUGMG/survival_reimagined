@@ -12,7 +12,7 @@ public class NextPageProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getPersistentData().getDouble("PageNumber") < 2) {
+		if (entity.getPersistentData().getDouble("PageNumber") <= entity.getPersistentData().getDouble("PageNumberMax")) {
 			entity.getPersistentData().putDouble("PageNumber", (entity.getPersistentData().getDouble("PageNumber") + 1));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {

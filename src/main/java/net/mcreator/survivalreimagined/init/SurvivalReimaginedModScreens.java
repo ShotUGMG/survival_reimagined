@@ -26,6 +26,7 @@ public class SurvivalReimaginedModScreens {
 		event.register(SurvivalReimaginedModMenus.CAMPFIRE_GUI.get(), CampfireGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.DRYING_RACK_GUI.get(), DryingRackGUIScreen::new);
 		event.register(SurvivalReimaginedModMenus.TANNING_BARREL_GUI.get(), TanningBarrelGUIScreen::new);
+		event.register(SurvivalReimaginedModMenus.RMI_SCRIPTURE_GUI.get(), RMIScriptureGUIScreen::new);
 	}
 
 	public interface ScreenAccessor {

@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.survivalreimagined.procedures.TextureStateProviderProcedure;
+import net.mcreator.survivalreimagined.item.inventory.RMIScriptureInventoryCapability;
 import net.mcreator.survivalreimagined.item.inventory.BackpackInventoryCapability;
 import net.mcreator.survivalreimagined.item.inventory.AAFScriptureInventoryCapability;
 import net.mcreator.survivalreimagined.item.*;
@@ -914,6 +915,16 @@ public class SurvivalReimaginedModItems {
 	public static final DeferredItem<Item> CHERRIES;
 	public static final DeferredItem<Item> CHERRIES_FRUIT;
 	public static final DeferredItem<Item> RED_CHERRY_SAPLING;
+	public static final DeferredItem<Item> DARK_CINDER_POWDER;
+	public static final DeferredItem<Item> DARK_CINDER;
+	public static final DeferredItem<Item> DARK_CINDER_COAL;
+	public static final DeferredItem<Item> CRUDE_TORCH;
+	public static final DeferredItem<Item> CRUDE_WALL_TORCH;
+	public static final DeferredItem<Item> CRUDE_TORCH_ITEM;
+	public static final DeferredItem<Item> FIRE_STARTER;
+	public static final DeferredItem<Item> BURNT_TORCH;
+	public static final DeferredItem<Item> BURNT_WALL_TORCH;
+	public static final DeferredItem<Item> RMI_SCRIPTURE;
 	static {
 		FLINTBLOCK = block(SurvivalReimaginedModBlocks.FLINTBLOCK);
 		FLINT_TOOL = REGISTRY.register("flint_tool", FlintToolItem::new);
@@ -1800,12 +1811,23 @@ public class SurvivalReimaginedModItems {
 		CHERRIES = REGISTRY.register("cherries", CherriesItem::new);
 		CHERRIES_FRUIT = block(SurvivalReimaginedModBlocks.CHERRIES_FRUIT);
 		RED_CHERRY_SAPLING = block(SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING);
+		DARK_CINDER_POWDER = REGISTRY.register("dark_cinder_powder", DarkCinderPowderItem::new);
+		DARK_CINDER = block(SurvivalReimaginedModBlocks.DARK_CINDER);
+		DARK_CINDER_COAL = REGISTRY.register("dark_cinder_coal", DarkCinderCoalItem::new);
+		CRUDE_TORCH = block(SurvivalReimaginedModBlocks.CRUDE_TORCH);
+		CRUDE_WALL_TORCH = block(SurvivalReimaginedModBlocks.CRUDE_WALL_TORCH);
+		CRUDE_TORCH_ITEM = REGISTRY.register("crude_torch_item", CrudeTorchItemItem::new);
+		FIRE_STARTER = REGISTRY.register("fire_starter", FireStarterItem::new);
+		BURNT_TORCH = block(SurvivalReimaginedModBlocks.BURNT_TORCH);
+		BURNT_WALL_TORCH = block(SurvivalReimaginedModBlocks.BURNT_WALL_TORCH);
+		RMI_SCRIPTURE = REGISTRY.register("rmi_scripture", RMIScriptureItem::new);
 	}
 
 	// Start of user code block custom items
 	// End of user code block custom items
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new RMIScriptureInventoryCapability(stack), RMI_SCRIPTURE.get());
 		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new BackpackInventoryCapability(stack), BACKPACK.get());
 		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new AAFScriptureInventoryCapability(stack), AAF_SCRIPTURE.get());
 	}

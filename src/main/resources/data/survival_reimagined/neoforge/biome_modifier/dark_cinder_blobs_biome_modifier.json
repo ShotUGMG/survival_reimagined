@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "nether_wastes",
+  "features": "survival_reimagined:dark_cinder_blobs",
+  "step": "underground_ores"
+}

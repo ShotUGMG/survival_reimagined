@@ -335,7 +335,7 @@ public class CaracassSkinningProcedure {
 									world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 							}
 							if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CarcassType.getBlock()) {
-								for (int index193 = 0; index193 < 4; index193++) {
+								for (int index165 = 0; index165 < 4; index165++) {
 									if (world instanceof ServerLevel _level) {
 										ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), (getBlockNBTItemStack(world, BlockPos.containing(x, y, z), "LegType")));
 										entityToSpawn.setPickUpDelay(10);
@@ -399,7 +399,7 @@ public class CaracassSkinningProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "SkinProgress") >= 10) {
-						for (int index194 = 0; index194 < Mth.nextInt(RandomSource.create(), 3, 9); index194++) {
+						for (int index166 = 0; index166 < Mth.nextInt(RandomSource.create(), 3, 9); index166++) {
 							if (world instanceof ServerLevel _level) {
 								ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), y, (z + 0.5), HideType);
 								entityToSpawn.setPickUpDelay(10);

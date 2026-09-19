@@ -3,7 +3,7 @@
   "_type": "feature",
   "definition": {
     "skipPlacement": false,
-    "generationStep": "TOP_LAYER_MODIFICATION",
+    "generationStep": "VEGETAL_DECORATION",
     "restrictionBiomes": [
       "cherry_grove"
     ],

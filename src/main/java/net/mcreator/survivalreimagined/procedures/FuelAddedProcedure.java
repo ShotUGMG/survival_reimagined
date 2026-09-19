@@ -61,6 +61,25 @@ public class FuelAddedProcedure {
 								_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 							}
 						}
+					} else if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == SurvivalReimaginedModItems.DARK_CINDER_COAL.get()) {
+						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") <= 560) {
+							if (!world.isClientSide()) {
+								BlockPos _bp = BlockPos.containing(x, y, z);
+								BlockEntity _blockEntity = world.getBlockEntity(_bp);
+								BlockState _bs = world.getBlockState(_bp);
+								if (_blockEntity != null) {
+									_blockEntity.getPersistentData().putDouble("FuelMeter", (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") + 40));
+								}
+								if (world instanceof Level _level)
+									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+							}
+							if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+								int _slotid = 2;
+								ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+								_stk.shrink(1);
+								_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+							}
+						}
 					} else {
 						if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "FuelMeter") <= 590) {
 							if (!world.isClientSide()) {

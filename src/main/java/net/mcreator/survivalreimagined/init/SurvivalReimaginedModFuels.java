@@ -108,5 +108,7 @@ public class SurvivalReimaginedModFuels {
 			event.setBurnTime(7200);
 		else if (itemstack.getItem() == SurvivalReimaginedModItems.MANDARIN_BARK.get())
 			event.setBurnTime(400);
+		else if (itemstack.getItem() == SurvivalReimaginedModItems.DARK_CINDER_COAL.get())
+			event.setBurnTime(4000);
 	}
 }

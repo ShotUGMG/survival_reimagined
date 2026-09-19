@@ -207,7 +207,7 @@
     "onRightClicked": "CampfireOnBlockRightclicked",
     "onBlockAdded": "CampfireBlockAdded",
     "onTickUpdate": "CampfireOnTickUpdate",
-    "onRandomUpdateEvent": "CampfireOnRandomClientDisplayTick",
+    "onRandomUpdateEvent": "CampfireParticles",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

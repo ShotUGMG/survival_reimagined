@@ -21,7 +21,8 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.survivalreimagined.world.inventory.AAFScriptureGUIMenu;
-import net.mcreator.survivalreimagined.procedures.AAFScriptureSpecialInformationProcedure;
+import net.mcreator.survivalreimagined.procedures.ScripturesSpecialInformationProcedure;
+import net.mcreator.survivalreimagined.procedures.PageDisplayHandlerProcedure;
 
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class AAFScriptureItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
 		Entity entity = itemstack.getEntityRepresentation() != null ? itemstack.getEntityRepresentation() : Minecraft.getInstance().player;
-		String hoverText = AAFScriptureSpecialInformationProcedure.execute();
+		String hoverText = ScripturesSpecialInformationProcedure.execute(itemstack);
 		if (hoverText != null) {
 			for (String line : hoverText.split("\n")) {
 				list.add(Component.literal(line));
@@ -67,6 +68,7 @@ public class AAFScriptureItem extends Item {
 				buf.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
 			});
 		}
+		PageDisplayHandlerProcedure.execute(entity, ar.getObject());
 		return ar;
 	}
 }

@@ -120,6 +120,8 @@ public class SurvivalReimaginedModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SkinnedHorseBlockEntity>> SKINNED_HORSE = register("skinned_horse", SurvivalReimaginedModBlocks.SKINNED_HORSE, SkinnedHorseBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CherriesFruitBlockEntity>> CHERRIES_FRUIT = register("cherries_fruit", SurvivalReimaginedModBlocks.CHERRIES_FRUIT, CherriesFruitBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<RedCherrySaplingBlockEntity>> RED_CHERRY_SAPLING = register("red_cherry_sapling", SurvivalReimaginedModBlocks.RED_CHERRY_SAPLING, RedCherrySaplingBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrudeTorchBlockEntity>> CRUDE_TORCH = register("crude_torch", SurvivalReimaginedModBlocks.CRUDE_TORCH, CrudeTorchBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<CrudeWallTorchBlockEntity>> CRUDE_WALL_TORCH = register("crude_wall_torch", SurvivalReimaginedModBlocks.CRUDE_WALL_TORCH, CrudeWallTorchBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -139,6 +141,7 @@ public class SurvivalReimaginedModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BLACK_HORSE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SKINNED_HORSE.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, APPLE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRUDE_WALL_TORCH.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BROWN_HORSE_STOCKINGS.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BROWN_HORSE_WHITE_DOTS.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, METAL_REFINING_TABLE.get(), SidedInvWrapper::new);
@@ -159,6 +162,7 @@ public class SurvivalReimaginedModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BANANA_CLUSTER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, SMALL_TROUGH.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CREAMY_HORSE_STOCKINGS.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CRUDE_TORCH.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RUNE_MAGIC_INFUSER.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BANANA_LEAVES.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, BEETROOT.get(), SidedInvWrapper::new);

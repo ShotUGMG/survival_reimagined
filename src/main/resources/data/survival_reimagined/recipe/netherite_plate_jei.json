@@ -1,0 +1,25 @@
+{
+  "type": "survival_reimagined:forge_jei",
+  "ingredients": [
+    {
+      "item": "survival_reimagined:netherite_ingot"
+    },
+    {
+      "item": "survival_reimagined:metal_plate_mold"
+    },
+    {
+      "tag": "minecraft:coals"
+    }
+  ],
+  "integers": [
+    4,
+    1,
+    1
+  ],
+  "outputs": [
+    {
+      "id": "survival_reimagined:netherite_plate",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "survival_reimagined:custom/torch_wall",
+  "textures": {
+    "all": "survival_reimagined:block/burnt_torch",
+    "particle": "survival_reimagined:block/burnt_torch",
+    "0": "survival_reimagined:block/"
+  },
+  "render_type": "solid"
+}
